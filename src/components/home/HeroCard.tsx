@@ -1,58 +1,49 @@
 import React, { Key } from "react";
 import Link from "next/link";
 import Section from "../Section";
+import { Appointment } from "./Appointments";
 import Image from "next/image";
 
 type Props = {};
 
-export type Appointment = {
-  name: string;
-  src: string;
-  alt: string;
-  url: string;
-};
-
 const appointment: Appointment[] = [
   {
     name: "Chat with Astrologer",
-    src: "/assets/home/icon-01.png",
-    alt: "chat-astrologer",
+    src: "/assets/home/icon-01.svg",
+    alt: "test",
     url: "/chat-astrologer",
   },
   {
     name: "Talk to Astrologer",
-    src: "/assets/home/icon-02.png",
-    alt: "talk-astrologer",
+    src: "/assets/home/icon-02.svg",
+    alt: "test",
     url: "/talk-astrologer",
   },
   {
     name: "Live Astrologers",
-    src: "/assets/home/icon-03.png",
-    alt: "live-astrologer",
+    src: "/assets/home/icon-03.svg",
+    alt: "test",
     url: "/live-astrologer",
   },
   {
     name: "Live video chat",
-    src: "/assets/home/icon-04.png",
-    alt: "videochat-astrologer",
+    src: "/assets/home/icon-04.svg",
+    alt: "test",
     url: "/videochat-astrologer",
   },
 ];
 
-function Appointments({}: Props) {
+function HeroCard({}: Props) {
   return (
-    <div className="bg-[url('/assets/home/horoscope-bg.svg')] bg-cover py-8 lg:py-[46px]">
+    <div className="py-8">
       <Section>
         <div className="">
-          <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-            Appointments
-          </h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid  gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-6">
             {appointment?.map((item: Appointment, index: Key) => (
               <Link
                 key={index}
                 href={item?.url}
-                className="mx-auto flex h-[204px] w-[300px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] bg-black p-4"
+                className="flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl  bg-white/5  p-4"
               >
                 <div className="mx-auto h-[140px] w-[140px]">
                   <Image
@@ -60,10 +51,10 @@ function Appointments({}: Props) {
                     alt={item.alt}
                     width={4195}
                     height={4265}
-                    loading={"lazy"}
+                    loading={"eager"}
                   />
                 </div>
-                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-[#D3B160] lg:text-[14px]">
+                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-white lg:text-[14px]">
                   {item.name}
                 </p>
               </Link>
@@ -75,4 +66,4 @@ function Appointments({}: Props) {
   );
 }
 
-export default Appointments;
+export default HeroCard;

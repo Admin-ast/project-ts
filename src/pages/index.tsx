@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 
+const Hero = dynamic(() => import("@/components/home/Hero"));
 const About = dynamic(() => import("@/components/home/About"));
 const WhoWeAre = dynamic(() => import("@/components/home/WhoWeAre"));
 const Horoscope = dynamic(() => import("@/components/home/Horoscope"));
@@ -13,6 +14,7 @@ const Shop = dynamic(() => import("@/components/home/Shop"));
 export default function Home() {
   return (
     <>
+      <Hero />
       <About />
       <WhoWeAre />
       <Horoscope />
