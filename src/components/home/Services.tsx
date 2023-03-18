@@ -13,15 +13,15 @@ type Service = {
 const services: Service[] = [
   {
     name: "Compatibility",
-    src: "/assets/home/service-1.png",
+    src: "/assets/home/service-1.webp",
   },
   {
     name: "Muhurat",
-    src: "/assets/home/service-2.png",
+    src: "/assets/home/service-2.webp",
   },
   {
     name: "Palm Reading",
-    src: "/assets/home/service-3.png",
+    src: "/assets/home/service-3.webp",
   },
 ];
 
@@ -39,14 +39,14 @@ function Services({}: Props) {
                 key={index}
                 className="overflow-hidden rounded-2xl border-[3px] border-black"
               >
-                <div className="rounded-3xl h-[390px] border-[10px] p-6 border-white">
+                <div className="h-[390px] rounded-3xl border-[10px] border-white p-6">
                   <Image
                     src={item.src}
                     alt={item.name}
                     width={337}
                     height={348}
                     loading={"lazy"}
-                    className="object-contain mx-auto w-full h-full"
+                    className="mx-auto h-full w-full object-contain"
                   />
                 </div>
                 <p className="-mt-5 bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">

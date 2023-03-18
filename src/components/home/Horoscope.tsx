@@ -76,7 +76,7 @@ const cards: Card[] = [
 
 function Horoscope({}: Props) {
   return (
-    <div className="bg-[url('/assets/home/horoscope-bg.svg')] bg-cover py-8 lg:py-[45px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[45px]">
       <Section>
         <div className="">
           <div className="mb-[35px]">

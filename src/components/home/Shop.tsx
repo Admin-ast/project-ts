@@ -13,15 +13,15 @@ type ShoppingList = {
 const shoppingList: ShoppingList[] = [
   {
     name: "Love Score",
-    src: "/assets/home/shop-01.png",
+    src: "/assets/home/shop-01.webp",
   },
   {
     name: "Career Report",
-    src: "/assets/home/shop-02.png",
+    src: "/assets/home/shop-02.webp",
   },
   {
     name: "Gem",
-    src: "/assets/home/shop-03.png",
+    src: "/assets/home/shop-03.webp",
   },
 ];
 

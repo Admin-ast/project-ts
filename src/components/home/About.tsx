@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="bg-[url('/assets/home/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[51px]">
       <Section>
         <div className="">
           <h2 className="mb-[18px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">

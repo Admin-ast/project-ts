@@ -15,25 +15,25 @@ export type Appointment = {
 const appointment: Appointment[] = [
   {
     name: "Chat with Astrologer",
-    src: "/assets/home/icon-01.png",
+    src: "/assets/home/icon-01.webp",
     alt: "chat-astrologer",
     url: "/chat-astrologer",
   },
   {
     name: "Talk to Astrologer",
-    src: "/assets/home/icon-02.png",
+    src: "/assets/home/icon-02.webp",
     alt: "talk-astrologer",
     url: "/talk-astrologer",
   },
   {
     name: "Live Astrologers",
-    src: "/assets/home/icon-03.png",
+    src: "/assets/home/icon-03.webp",
     alt: "live-astrologer",
     url: "/live-astrologer",
   },
   {
     name: "Live video chat",
-    src: "/assets/home/icon-04.png",
+    src: "/assets/home/icon-04.webp",
     alt: "videochat-astrologer",
     url: "/videochat-astrologer",
   },
@@ -41,7 +41,7 @@ const appointment: Appointment[] = [
 
 function Appointments({}: Props) {
   return (
-    <div className="bg-[url('/assets/home/horoscope-bg.svg')] bg-cover py-8 lg:py-[46px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[46px]">
       <Section>
         <div className="">
           <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">

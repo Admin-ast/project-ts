@@ -12,7 +12,7 @@ function WhoWeAre({}: Props) {
         <div className="flex flex-col items-center space-y-4 lg:grid lg:grid-cols-12 lg:space-x-6 lg:space-y-0">
           <div className="col-span-3">
             <Image
-              src="/assets/home/who.png"
+              src="/assets/home/who.webp"
               alt="who"
               width={252}
               height={348}

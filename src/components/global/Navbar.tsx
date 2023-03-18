@@ -7,7 +7,7 @@ type Props = {};
 
 function Navbar({}: Props) {
   return (
-    <div className="bg-[url('/assets/navbar-bg.png')] sticky top-0 w-full">
+    <div className="sticky top-0 z-50 w-full bg-[url('/assets/navbar-bg.webp')]">
       <Section>
         <div className="flex items-center justify-center py-2 lg:justify-between">
           <div className="">
@@ -15,7 +15,7 @@ function Navbar({}: Props) {
               <div className="flex items-center space-x-2">
                 <div className="w-[15%]">
                   <Image
-                    src="/assets/main-logo.png"
+                    src="/assets/main-logo.webp"
                     alt="logo"
                     width={337}
                     height={348}

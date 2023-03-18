@@ -9,25 +9,25 @@ type Props = {};
 const appointment: Appointment[] = [
   {
     name: "Chat with Astrologer",
-    src: "/assets/home/icon-01.svg",
+    src: "/assets/home/hero-icon-01.webp",
     alt: "test",
     url: "/chat-astrologer",
   },
   {
     name: "Talk to Astrologer",
-    src: "/assets/home/icon-02.svg",
+    src: "/assets/home/hero-icon-02.webp",
     alt: "test",
     url: "/talk-astrologer",
   },
   {
     name: "Live Astrologers",
-    src: "/assets/home/icon-03.svg",
+    src: "/assets/home/hero-icon-03.webp",
     alt: "test",
     url: "/live-astrologer",
   },
   {
     name: "Live video chat",
-    src: "/assets/home/icon-04.svg",
+    src: "/assets/home/hero-icon-04.webp",
     alt: "test",
     url: "/videochat-astrologer",
   },
