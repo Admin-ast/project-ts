@@ -40,7 +40,7 @@ type Props = {};
 
 const Check = (props: Props) => {
   return (
-    <div className="mt-4 bg-[url('/assets/cloud-bg.svg')] py-8">
+    <div className="mt-4 bg-[url('/assets/cloud-bg.webp')] py-8">
       <Section>
         <div className="mx-auto max-w-5xl">
           <p className="text text-center text-4xl font-bold text-white">

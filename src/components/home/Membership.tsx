@@ -7,7 +7,7 @@ type Props = {};
 
 function Membership({}: Props) {
   return (
-    <div className="bg-gray-900 bg-cover py-12">
+    <div className="bg-[url('/assets/cloud-bg.webp')] bg-cover py-12">
       <Section>
         <div className="grid grid-cols-2 items-center md:grid-cols-12">
           <div className="order-2 col-span-8 space-y-6 text-center text-white md:order-1 lg:gap-y-[27px] lg:text-left">
