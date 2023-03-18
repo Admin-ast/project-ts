@@ -134,6 +134,7 @@ const Card = (props: Props) => {
                 </p>
                 <Link
                   href={item.url}
+                  aria-label={item.name}
                   className="flex cursor-pointer justify-end font-bold"
                 >
                   Read More
