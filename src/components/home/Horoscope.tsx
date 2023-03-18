@@ -5,72 +5,98 @@ import Section from "../Section";
 
 type Props = {};
 
-type Card = {
+export type Card = {
   link: string;
   src: string;
-  alt: string;
+  name: string;
+  icon: string;
+  id: string;
 };
 
-const cards: Card[] = [
+export const cards: Card[] = [
   {
     link: "/horoscope/aries",
     src: "/assets/home/aries-card.svg",
-    alt: "aries",
+    icon: "/assets/single-horoscope/aries.svg",
+    id: "aries",
+    name: "Aries",
   },
   {
     link: "/horoscope/taurus",
     src: "/assets/home/taurus-card.svg",
-    alt: "taurus",
+    icon: "/assets/single-horoscope/taurus.svg",
+    id: "taurus",
+    name: "Taurus",
   },
   {
     link: "/horoscope/gemini",
     src: "/assets/home/gemini-card.svg",
-    alt: "gemini",
+    icon: "/assets/single-horoscope/gemini.svg",
+    id: "gemini",
+    name: "Gemini",
   },
   {
     link: "/horoscope/cancer",
     src: "/assets/home/cancer-card.svg",
-    alt: "cancer",
+    icon: "/assets/single-horoscope/cancer.svg",
+    id: "cancer",
+    name: "Cancer",
   },
   {
     link: "/horoscope/leo",
     src: "/assets/home/leo-card.svg",
-    alt: "leo",
+    icon: "/assets/single-horoscope/leo.svg",
+    id: "leo",
+    name: "Leo",
   },
   {
     link: "/horoscope/virgo",
     src: "/assets/home/virgo-card.svg",
-    alt: "virgo",
+    icon: "/assets/single-horoscope/virgo.svg",
+    id: "virgo",
+    name: "Virgo",
   },
   {
     link: "/horoscope/libra",
     src: "/assets/home/libra-card.svg",
-    alt: "libra",
+    icon: "/assets/single-horoscope/libra.svg",
+    id: "libra",
+    name: "Libra",
   },
   {
     link: "/horoscope/scorpio",
     src: "/assets/home/scorpio-card.svg",
-    alt: "scorpio",
+    icon: "/assets/single-horoscope/scorpio.svg",
+    id: "scorpio",
+    name: "Scorpio",
   },
   {
     link: "/horoscope/sagittarius",
     src: "/assets/home/sagittarius-card.svg",
-    alt: "sagittarius",
+    icon: "/assets/single-horoscope/sagittarius.svg",
+    id: "sagittarius",
+    name: "Sagittarius",
   },
   {
     link: "/horoscope/capricorn",
     src: "/assets/home/capricorn-card.svg",
-    alt: "capricorn",
+    icon: "/assets/single-horoscope/capricorn.svg",
+    id: "capricorn",
+    name: "Capricorn",
   },
   {
     link: "/horoscope/aquarius",
     src: "/assets/home/aquarius-card.svg",
-    alt: "aquarius",
+    icon: "/assets/single-horoscope/aquarius.svg",
+    id: "aquarius",
+    name: "Aquarius",
   },
   {
     link: "/horoscope/pisces",
     src: "/assets/home/pisces-card.svg",
-    alt: "pisces",
+    icon: "/assets/single-horoscope/pisces.svg",
+    id: "pisces",
+    name: "Pisces",
   },
 ];
 
@@ -93,7 +119,7 @@ function Horoscope({}: Props) {
                 <Link href={item.link}>
                   <Image
                     src={item.src}
-                    alt={item.alt}
+                    alt={item.name}
                     width={210}
                     height={294}
                     loading={"lazy"}
