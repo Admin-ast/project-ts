@@ -31,6 +31,8 @@ const securityHeaders = [
 ];
 const nextConfig = {
   reactStrictMode: true,
+  source: "/:path*",
+  headers: securityHeaders,
 };
 
 module.exports = nextConfig;
