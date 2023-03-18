@@ -10,6 +10,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx pretty-quick --staged ng lint ng test",
+      "pre-push": "ng build --aot true"
+    }
+  },
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "@types/node": "18.15.3",
