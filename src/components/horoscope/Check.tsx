@@ -1,37 +1,43 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { Key } from "react";
 import Section from "../Section";
 
 type Check = {
-  id: number;
+  id: string;
   name: string;
   img: string;
 };
 
 const check: Check[] = [
   {
-    id: 1,
-    name: "Tommorow's Horoscope",
+    id: "tomorrow-horoscope",
+    name: "Tomorrow's Horoscope",
     img: "/assets/horoscope/tommorow.png",
   },
   {
-    id: 2,
+    id: "yesterday-horoscope",
     name: "Yesterday's Horoscope",
     img: "/assets/horoscope/yesterday.png",
   },
   {
-    id: 3,
+    id: "weekly-horoscope",
     name: "Weekly's Horoscope",
     img: "/assets/horoscope/weekly.png",
   },
   {
-    id: 4,
+    id: "monthly-horoscope",
     name: "Monthly Horoscope",
     img: "/assets/horoscope/monthly.png",
   },
   {
-    id: 5,
+    id: "yearly-horoscope",
     name: "Yearly Horoscope",
+    img: "/assets/horoscope/yearly.png",
+  },
+  {
+    id: "daily-horoscope",
+    name: "Daily Horoscope",
     img: "/assets/horoscope/yearly.png",
   },
 ];
@@ -39,6 +45,8 @@ const check: Check[] = [
 type Props = {};
 
 const Check = (props: Props) => {
+  const router = useRouter().pathname;
+  const fin_checkList = check.filter((item) => !router.includes(item.id));
   return (
     <div className="mt-4 bg-[url('/assets/cloud-bg.webp')] py-8">
       <Section>
@@ -47,7 +55,7 @@ const Check = (props: Props) => {
             Also Check
           </p>
           <div className="grid grid-cols-2 items-center gap-4 py-6 sm:grid-cols-2 md:grid-cols-5">
-            {check.map((item: Check, index: Key) => (
+            {fin_checkList.map((item: Check, index: Key) => (
               <div
                 key={index}
                 className="flex w-[142px] flex-col  items-center gap-1 rounded-md bg-[#E2CB85] p-2"

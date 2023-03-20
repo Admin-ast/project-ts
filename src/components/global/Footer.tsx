@@ -91,7 +91,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 7,
     title: "Daily Horoscope",
-    url: "/horoscope",
+    url: "/horoscope/daily-horoscope",
   },
   {
     id: 8,

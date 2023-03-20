@@ -1,17 +1,21 @@
 import React from "react";
-import { useRouter } from "next/router";
-import type { GetServerSideProps } from "next";
-import { cards } from "@/components/home/Horoscope";
-import AboutSign from "@/components/singleHoroscope/AboutSign";
-import Hero from "@/components/singleHoroscope/Hero";
-import ConnectCard from "@/components/common/ConnectCard";
-import SignsCard from "@/components/singleHoroscope/SignsCard";
-import Compatibility from "@/components/singleHoroscope/Compatibility";
-import Faq from "@/components/common/Faq";
+import dynamic from "next/dynamic";
+import { HomeIcon } from "@heroicons/react/24/solid";
+import Section from "@/components/Section";
 
-type Props = {
-  data: any;
-};
+const Hero = dynamic(
+  () => import("@/components/horoscope/daily-horoscope/Hero")
+);
+const Card = dynamic(
+  () => import("@/components/horoscope/daily-horoscope/Card")
+);
+const Faq = dynamic(() => import("@/components/common/Faq"));
+const AboutHoroscope = dynamic(
+  () => import("@/components/horoscope/daily-horoscope/AboutHoroscope")
+);
+const Check = dynamic(() => import("@/components/horoscope/Check"));
+
+type Props = {};
 
 export type Faqs = {
   title: string;
@@ -47,36 +51,27 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const HoroscopeDetails = ({ data }: Props) => {
-  const router = useRouter();
-  // console.log("data", data);
-  const activeSign = cards.filter((item) => item.id === router.query.slug);
-  const remainingSign = cards.filter((item) => item.id !== router.query.slug);
-
+const DailyHoroscope = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <Hero activeSign={activeSign[0]} />
-      <AboutSign
-        activeSign={activeSign[0]}
-        prediction={data?.data?.prediction}
-      />
-      <ConnectCard />
-      <SignsCard cardDetail={remainingSign} />
-      <Compatibility horoscopeType={activeSign[0].name} />
-      <Faq faqDetail={faqsDetail} />
+    <div>
+      <Hero />
+      <div className="bg-[url('/assets/horoscope-bg.webp')] pb-6">
+        <Section>
+          <div className="flex items-center space-x-2">
+            <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
+            <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+              {" "}
+              Daily Horoscope
+            </p>
+          </div>
+        </Section>
+        <Card />
+        <AboutHoroscope />
+        <Check />
+        <Faq faqDetail={faqsDetail} />
+      </div>
     </div>
   );
 };
 
-export default HoroscopeDetails;
-
-export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  const zodiacName = context.query.slug;
-  const response = await fetch(
-    `http://localhost:8000/api/v1/horoscope/${zodiacName}`
-  );
-  const jsonData = await response.json();
-  return {
-    props: { data: jsonData },
-  };
-};
+export default DailyHoroscope;

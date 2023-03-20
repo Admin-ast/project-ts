@@ -28,14 +28,30 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: any) => {
+  const onSubmit1 = async (data: any) => {
+    setMobileNumber(data.phoneNumber);
+    const result = await fetch("http://ticketing.dev/api/users/sign-in", {
+      method: "POST",
+      body: JSON.stringify({
+        mobileNumber: Number(data.phoneNumber),
+        name: "user",
+      }),
+    });
+    const response = result.json();
+    console.log("response is", result, response);
+    setStep(2);
+  };
+  const onSubmit2 = (data: any) => {
     console.log(data);
     setMobileNumber(data.phoneNumber);
-    setStep(2);
   };
 
   const handleChange = (otp: any) => {
     setOtpValue(otp);
+  };
+
+  const handleSubmitOtp = () => {
+    setStep(3);
   };
 
   return (
@@ -87,13 +103,14 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                         <br />
                         code for verification
                       </p>
-                      <Form onSubmit={handleSubmit(onSubmit)}>
+                      <Form onSubmit={handleSubmit(onSubmit1)}>
                         <div className="mt-5">
                           <Input
                             type="string"
                             id="phoneNumber"
                             placeholder="Enter Phone Number"
                             name="phoneNumber"
+                            required={true}
                             maxLength={10}
                             minLength={10}
                             label="Enter your phone number"
@@ -138,23 +155,24 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                       <p className="mx-auto text-center text-[18px]">
                         Enter OTP sent to +91-{mobileNumber}
                       </p>
-                      <Form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="flex w-full justify-center">
-                          <OtpInput
-                            value={otpValue}
-                            onChange={handleChange}
-                            className="mr-2 rounded-md border border-gray-500 bg-transparent p-3 outline-none focus:border-none focus:outline-none"
-                            inputStyle="border-none outline-none"
-                            numInputs={6}
-                          />
-                        </div>
-                        <div className="space-y-2">
-                          {" "}
-                          <Button
-                            className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
-                            btnText="Submit"
-                          />
-                          {/* <p className="text-center text-[13px] text-gray-500">
+
+                      <div className="flex w-full justify-center">
+                        <OtpInput
+                          value={otpValue}
+                          onChange={handleChange}
+                          className="mr-2 rounded-md border border-gray-500 bg-transparent p-3 outline-none focus:border-none focus:outline-none"
+                          inputStyle="border-none outline-none"
+                          numInputs={6}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        {" "}
+                        <Button
+                          onClick={handleSubmitOtp}
+                          className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
+                          btnText="Submit"
+                        />
+                        {/* <p className="text-center text-[13px] text-gray-500">
                             By Signing up, you agree to our{" "}
                             <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
                               Terms of Use
@@ -164,8 +182,7 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                               Privacy Policy
                             </span>
                           </p> */}
-                        </div>
-                      </Form>
+                      </div>
                     </div>
                   </Dialog.Panel>
                 ) : (
@@ -183,45 +200,46 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                       </div>
                     </Dialog.Title>
                     <div className="p-4 lg:px-12 lg:pb-12">
-                      <div className="">
-                        <Input
-                          type="string"
-                          id="firstName"
-                          placeholder=""
-                          name="firstName"
-                          label="First Name"
-                          register={register}
-                        />
-                      </div>
-                      <div className="">
-                        <Input
-                          type="string"
-                          id="lastName"
-                          placeholder=""
-                          name="lastName"
-                          label="Last Name"
-                          register={register}
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        {" "}
-                        <Button
-                          type="button"
-                          className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
-                          btnText="GET OTP -->"
-                        />
-                        <p className="text-center text-[13px] text-gray-500">
-                          By Signing up, you agree to our{" "}
-                          <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
-                            Terms of Use
-                          </span>{" "}
-                          and{" "}
-                          <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
-                            Privacy Policy
-                          </span>
-                        </p>
-                      </div>
-                      {/* </Form> */}
+                      <Form onSubmit={handleSubmit(onSubmit2)}>
+                        <div className="">
+                          <Input
+                            type="string"
+                            id="firstName"
+                            placeholder=""
+                            name="firstName"
+                            label="First Name"
+                            register={register}
+                          />
+                        </div>
+                        <div className="">
+                          <Input
+                            type="string"
+                            id="lastName"
+                            placeholder=""
+                            name="lastName"
+                            label="Last Name"
+                            register={register}
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          {" "}
+                          <Button
+                            type="button"
+                            className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
+                            btnText="GET OTP -->"
+                          />
+                          <p className="text-center text-[13px] text-gray-500">
+                            By Signing up, you agree to our{" "}
+                            <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
+                              Terms of Use
+                            </span>{" "}
+                            and{" "}
+                            <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
+                              Privacy Policy
+                            </span>
+                          </p>
+                        </div>
+                      </Form>
                     </div>
                   </Dialog.Panel>
                 )}
