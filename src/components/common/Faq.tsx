@@ -1,4 +1,4 @@
-import { Faqs } from "@/pages/horoscope";
+import { Faqs } from "@/pages/horoscope/daily-horoscope";
 import React, { Key } from "react";
 import Section from "../Section";
 type Props = {

@@ -1,7 +1,5 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { HomeIcon } from "@heroicons/react/24/solid";
-import Section from "@/components/Section";
 
 const Hero = dynamic(() => import("@/components/horoscope/Hero"));
 
