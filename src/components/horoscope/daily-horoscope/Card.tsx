@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import Section from "../../Section";
 type Props = {};
@@ -18,7 +19,7 @@ const card: CardDetail[] = [
     id: 1,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -26,7 +27,7 @@ const card: CardDetail[] = [
     id: 2,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -34,7 +35,7 @@ const card: CardDetail[] = [
     id: 3,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -42,7 +43,7 @@ const card: CardDetail[] = [
     id: 4,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -50,7 +51,7 @@ const card: CardDetail[] = [
     id: 5,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -58,7 +59,7 @@ const card: CardDetail[] = [
     id: 6,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -66,7 +67,7 @@ const card: CardDetail[] = [
     id: 7,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
@@ -74,13 +75,14 @@ const card: CardDetail[] = [
     id: 8,
     img: "/assets/home/aries-card.svg",
     name: "Aries Daily Horoscope",
-    url: "/horoscope/aries",
+    url: "aries",
     date: "March 21 - April 19",
     note: "Mechanical reactions and going through the motions is just not good enough, you want emotional authentic and greater honesty in relationships even if it is uncomfortable.",
   },
 ];
 
 const Card = (props: Props) => {
+  const router = useRouter();
   return (
     <div className="py-8">
       <Section>
@@ -127,13 +129,13 @@ const Card = (props: Props) => {
               <div className="col-span-8 flex flex-col gap-2 text-justify">
                 <div>
                   <p className="text-[22px] font-bold">{item?.name}</p>
-                  <p>{item?.date}</p>
+                  {/* <p>{item?.date}</p> */}
                 </div>
                 <p>
                   <span className="font-bold">Personal:</span> {item?.note}
                 </p>
                 <Link
-                  href={item.url}
+                  href={`${router.pathname}/${item.url}`}
                   aria-label={item.name}
                   className="flex cursor-pointer justify-end font-bold"
                 >

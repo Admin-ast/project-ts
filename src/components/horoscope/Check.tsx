@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Key } from "react";
 import Section from "../Section";
@@ -56,7 +57,8 @@ const Check = (props: Props) => {
           </p>
           <div className="grid grid-cols-2 items-center gap-4 py-6 sm:grid-cols-2 md:grid-cols-5">
             {fin_checkList.map((item: Check, index: Key) => (
-              <div
+              <Link
+                href={`/horoscope/${item.id}`}
                 key={index}
                 className="flex w-[142px] flex-col  items-center gap-1 rounded-md bg-[#E2CB85] p-2"
               >
@@ -68,7 +70,7 @@ const Check = (props: Props) => {
                   loading={"lazy"}
                 />
                 <p className="px-2 text-center text-black">{item?.name}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
