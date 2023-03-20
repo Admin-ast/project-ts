@@ -4,7 +4,7 @@ import Footer from "./global/Footer";
 import Navbar from "./global/Navbar";
 
 type Props = {
-  children: JSX.Element;
+  children: React.ReactNode;
 };
 
 function Layout({ children }: Props) {
