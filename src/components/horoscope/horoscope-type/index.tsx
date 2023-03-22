@@ -4,16 +4,18 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
 
 const Hero = dynamic(
-  () => import("@/components/horoscope/daily-horoscope/Hero")
+  () => import("@/components/horoscope/horoscope-type/Hero")
 );
 const Card = dynamic(
-  () => import("@/components/horoscope/daily-horoscope/Card")
+  () => import("@/components/horoscope/horoscope-type/Card")
 );
 const Faq = dynamic(() => import("@/components/common/Faq"));
 const AboutHoroscope = dynamic(
-  () => import("@/components/horoscope/daily-horoscope/AboutHoroscope")
+  () => import("@/components/horoscope/horoscope-type/AboutHoroscope")
 );
-const Check = dynamic(() => import("@/components/horoscope/Check"));
+const Check = dynamic(
+  () => import("@/components/horoscope/horoscope-type/Check")
+);
 
 type Props = {};
 
@@ -51,7 +53,7 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const DailyHoroscope = (props: Props) => {
+const HoroscopeType = (props: Props) => {
   return (
     <div>
       <Hero />
@@ -74,4 +76,4 @@ const DailyHoroscope = (props: Props) => {
   );
 };
 
-export default DailyHoroscope;
+export default HoroscopeType;

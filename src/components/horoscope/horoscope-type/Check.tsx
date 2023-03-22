@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Key } from "react";
-import Section from "../Section";
+import Section from "../../Section";
 
 type Check = {
   id: string;
@@ -46,8 +46,8 @@ const check: Check[] = [
 type Props = {};
 
 const Check = (props: Props) => {
-  const router = useRouter().pathname;
-  const fin_checkList = check.filter((item) => !router.includes(item.id));
+  const router = useRouter()?.query?.slug;
+  const fin_checkList = check.filter((item) => !router?.includes(item.id));
   return (
     <div className="mt-4 bg-[url('/assets/cloud-bg.webp')] py-8">
       <Section>

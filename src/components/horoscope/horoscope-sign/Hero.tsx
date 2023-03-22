@@ -1,6 +1,6 @@
+import { Card } from "@/components/home/Horoscope";
 import Image from "next/image";
 import React from "react";
-import { Card } from "../home/Horoscope";
 
 type Props = {
   activeSign: Card;

@@ -1,6 +1,6 @@
+import Section from "@/components/Section";
 import Image from "next/image";
 import React from "react";
-import Section from "../Section";
 
 type Props = {
   horoscopeType: string | string[] | undefined;

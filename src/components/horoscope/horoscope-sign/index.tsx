@@ -1,16 +1,16 @@
 import React from "react";
 import { useRouter } from "next/router";
-import type { GetServerSideProps } from "next";
 import { cards } from "@/components/home/Horoscope";
-import AboutSign from "@/components/singleHoroscope/AboutSign";
-import Hero from "@/components/singleHoroscope/Hero";
+import AboutSign from "@/components/horoscope/horoscope-sign/AboutSign";
+import Hero from "./Hero";
 import ConnectCard from "@/components/common/ConnectCard";
-import SignsCard from "@/components/singleHoroscope/SignsCard";
-import Compatibility from "@/components/singleHoroscope/Compatibility";
+import SignsCard from "./SignsCard";
+import Compatibility from "./Compatibility";
 import Faq from "@/components/common/Faq";
 
 type Props = {
   data: any;
+  slug: string;
 };
 
 export type Faqs = {
@@ -47,11 +47,9 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const HoroscopeDetails = ({ data }: Props) => {
-  const router = useRouter();
-  // console.log("data", data);
-  const activeSign = cards.filter((item) => item.id === router.query.slug);
-  const remainingSign = cards.filter((item) => item.id !== router.query.slug);
+const HoroscopeSign = ({ data, slug }: Props) => {
+  const activeSign = cards.filter((item) => item.id === slug);
+  const remainingSign = cards.filter((item) => item.id !== slug);
 
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
@@ -68,15 +66,4 @@ const HoroscopeDetails = ({ data }: Props) => {
   );
 };
 
-export default HoroscopeDetails;
-
-export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  const zodiacName = context.query.slug;
-  const response = await fetch(
-    `http://api.astrosevatalk.com/api/v1/horoscope/${zodiacName}`
-  );
-  const jsonData = await response.json();
-  return {
-    props: { data: jsonData },
-  };
-};
+export default HoroscopeSign;

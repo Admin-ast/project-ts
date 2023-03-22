@@ -1,6 +1,6 @@
 import React, { Key } from "react";
-import { Card } from "../home/Horoscope";
-import Section from "../Section";
+import { Card } from "../../home/Horoscope";
+import Section from "../../Section";
 
 type Props = {
   activeSign: Card;

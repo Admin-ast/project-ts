@@ -83,6 +83,7 @@ const card: CardDetail[] = [
 
 const Card = (props: Props) => {
   const router = useRouter();
+  const int_slug: String = router?.query?.slug ? router?.query?.slug[0] : "";
   return (
     <div className="py-8">
       <Section>
@@ -134,13 +135,14 @@ const Card = (props: Props) => {
                 <p>
                   <span className="font-bold">Personal:</span> {item?.note}
                 </p>
-                <Link
-                  href={`${router.pathname}/${item.url}`}
-                  aria-label={item.name}
+                <button
+                  onClick={() =>
+                    router.push(`/horoscope/${int_slug}/${item.url}`)
+                  }
                   className="flex cursor-pointer justify-end font-bold"
                 >
                   Read More
-                </Link>
+                </button>
               </div>
             </div>
           ))}

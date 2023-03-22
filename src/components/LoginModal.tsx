@@ -30,15 +30,15 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
   } = useForm();
   const onSubmit1 = async (data: any) => {
     setMobileNumber(data.phoneNumber);
-    const result = await fetch("http://ticketing.dev/api/users/sign-in", {
-      method: "POST",
-      body: JSON.stringify({
-        mobileNumber: Number(data.phoneNumber),
-        name: "user",
-      }),
-    });
-    const response = result.json();
-    console.log("response is", result, response);
+    // const result = await fetch("http://ticketing.dev/api/users/sign-in", {
+    //   method: "POST",
+    //   body: JSON.stringify({
+    //     mobileNumber: Number(data.phoneNumber),
+    //     name: "user",
+    //   }),
+    // });
+    // const response = result.json();
+    // console.log("response is", result, response);
     setStep(2);
   };
   const onSubmit2 = (data: any) => {

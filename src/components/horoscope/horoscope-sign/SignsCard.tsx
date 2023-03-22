@@ -1,8 +1,8 @@
+import { Card } from "@/components/home/Horoscope";
+import Section from "@/components/Section";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Key } from "react";
-import { Card } from "../home/Horoscope";
-import Section from "../Section";
 
 type Props = {
   cardDetail: Card[];

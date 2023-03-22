@@ -35,7 +35,7 @@ const reviews: Review[] = [
 
 function Review({}: Props) {
   return (
-    <div className="bg-[#FFF7E5] py-[39px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-[39px]">
       <Section>
         <div className="">
           <div className="mb-[26px]">

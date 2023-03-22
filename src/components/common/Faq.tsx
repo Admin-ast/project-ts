@@ -1,5 +1,5 @@
-import { Faqs } from "@/pages/horoscope/daily-horoscope";
 import React, { Key } from "react";
+import { Faqs } from "../horoscope/horoscope-sign";
 import Section from "../Section";
 type Props = {
   faqDetail: Faqs;
