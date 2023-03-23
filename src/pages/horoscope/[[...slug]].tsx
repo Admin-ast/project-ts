@@ -10,9 +10,7 @@ type Props = {
 };
 
 function HoroscopeDetail({ signData }: Props) {
-  console.log("sisis", signData);
   const slug = useRouter()?.query?.slug ?? [];
-  console.log("slug is", slug);
   if (slug?.length === 0) {
     return <Horoscope />;
   } else if (slug?.length === 1) {

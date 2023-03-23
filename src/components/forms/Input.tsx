@@ -13,6 +13,7 @@ interface Props {
   onChange?: any;
   disabled?: boolean;
   minLength?: number;
+  className?: string;
 }
 
 function Input({
@@ -27,7 +28,7 @@ function Input({
   minLength,
   placeholder,
   onChange,
-
+  className,
   disabled = false,
 }: Props): ReactElement {
   return (
@@ -39,7 +40,7 @@ function Input({
         <input
           type={type}
           id={id}
-          className="border-1 peer block w-full appearance-none rounded-md border border-gray-400 bg-transparent p-2.5 text-sm text-gray-900 focus:border-[#0B8188] focus:outline-none focus:ring-0"
+          className={`"border-1 focus:ring-0" peer block w-full appearance-none rounded-md border border-gray-400 bg-transparent p-2.5 text-sm text-gray-900 focus:border-[#0B8188] focus:outline-none ${className}`}
           placeholder={placeholder}
           name={name}
           maxLength={maxLength}

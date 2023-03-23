@@ -68,7 +68,7 @@ function TalkAstrologer({}: Props) {
       </div>
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
-          <div className="my-12 lg:space-y-16">
+          <div className="py-12 lg:space-y-16">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
