@@ -48,11 +48,6 @@ function Shop({}: Props) {
                     loading={"lazy"}
                     className="h-full w-full object-contain"
                   />
-                  {/* <img
-                    src={item.src}
-                    alt={item.name}
-                    className="mx-auto h-[390px] w-full rounded-3xl border-[10px] border-white bg-transparent object-contain"
-                  /> */}
                 </div>
                 <p className="bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
                   {item.name}
