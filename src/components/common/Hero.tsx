@@ -23,7 +23,7 @@ function Hero({ icon, text, subText }: Props) {
             </p>
           </div>
           {icon && (
-            <div className="col-span-3 mx-auto flex w-fit justify-center lg:p-20">
+            <div className="col-span-3 mx-auto flex w-fit justify-center lg:p-8">
               <Image
                 src={icon}
                 alt={"chat-icon"}
