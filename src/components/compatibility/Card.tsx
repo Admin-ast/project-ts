@@ -5,12 +5,12 @@ import Section from "../Section";
 
 type Props = {};
 
-type CardDetils = {
+type CardDetails = {
   img: string;
   name: string;
   link: string;
 };
-const cardDetails: CardDetils[] = [
+const cardDetails: CardDetails[] = [
   {
     name: "Love Compatibility",
     img: "/assets/compatibility/love-icon.png",
@@ -37,7 +37,7 @@ const Card = (props: Props) => {
           family, and more with our compatibility reading for all zodiac signs.
         </p>
         <div className="mb-[42px] grid grid-cols-1 gap-6 lg:grid-cols-3">
-          {cardDetails.map((item: CardDetils, index: Key) => (
+          {cardDetails.map((item: CardDetails, index: Key) => (
             <Link
               href={item.link}
               key={index}
