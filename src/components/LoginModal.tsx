@@ -8,6 +8,7 @@ import {
 import { Button, Form, Input } from "./forms";
 import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
+import { getFetcher } from "@/service";
 
 type Props = {
   isOpen?: boolean;
@@ -29,28 +30,31 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
     formState: { errors },
   } = useForm();
   const onSubmit1 = async (data: any) => {
-    setMobileNumber(data.phoneNumber);
-    // const result = await fetch("http://ticketing.dev/api/users/sign-in", {
-    //   method: "POST",
-    //   body: JSON.stringify({
-    //     mobileNumber: Number(data.phoneNumber),
-    //     name: "user",
-    //   }),
-    // });
-    // const response = result.json();
-    // console.log("response is", result, response);
+    setMobileNumber(Number(data.phoneNumber));
+    const body = JSON.stringify({
+      name: "sat",
+      mobileNumber: Number(data.phoneNumber),
+    });
+    console.log("bodu", body);
+    const result = getFetcher("/api/v1/auth/sign-in", body);
+
+    console.log("response is", result);
     setStep(2);
   };
-  const onSubmit2 = (data: any) => {
-    console.log(data);
-    setMobileNumber(data.phoneNumber);
-  };
+  const onSubmit2 = async (data: any) => {};
 
   const handleChange = (otp: any) => {
     setOtpValue(otp);
   };
 
-  const handleSubmitOtp = () => {
+  const handleSubmitOtp = async () => {
+    const body = JSON.stringify({
+      otp: otpValue,
+      mobileNumber: mobileNumber,
+    });
+    const result = getFetcher("/api/v1/auth/verify-otp", body);
+
+    console.log("response is 2-->", result);
     setStep(3);
   };
 
@@ -160,8 +164,9 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                         <OtpInput
                           value={otpValue}
                           onChange={handleChange}
-                          className="mr-2 rounded-md border border-gray-500 bg-transparent p-3 outline-none focus:border-none focus:outline-none"
-                          inputStyle="border-none outline-none"
+                          renderInput={(props) => <input {...props} />}
+                          inputStyle="mr-3 rounded-md border border-gray-500 bg-transparent text-gray-700 text-2xl p-1 w-full text-center"
+                          // inputStyle="border-none outline-none"
                           numInputs={6}
                         />
                       </div>
