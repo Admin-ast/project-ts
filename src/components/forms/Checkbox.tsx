@@ -2,11 +2,11 @@ import React, { ReactElement } from "react";
 
 interface Props {
   register: any;
-  required: boolean;
+  required?: boolean;
   type: string;
   id: string;
   name: string;
-  children: any;
+  children?: any;
   errors: any;
 }
 

@@ -20,15 +20,15 @@ function Select({
   options,
 }: Props): ReactElement {
   return (
-    <div>
+    <div className="space-y-2">
       <label className="block text-sm font-medium text-gray-700" htmlFor={id}>
         {label}
       </label>
-      <div className="mt-1">
+      <div className="pt-1">
         <select
           name={name}
           id={id}
-          className="w-full rounded-lg border border-gray-400 px-4 py-3 text-sm text-gray-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-600"
+          className="w-full rounded-lg border border-gray-400 bg-transparent px-4 py-3 text-sm text-gray-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-600"
           {...register(name, { required })}
         >
           <option value="">Please select {name}</option>
