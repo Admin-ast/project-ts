@@ -1,5 +1,7 @@
-import React from "react";
+import { postFetcher } from "@/service";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import { Button, Checkbox, Form, Input, Select, Textarea } from "../forms";
 
 type Props = {
@@ -15,13 +17,31 @@ function Assignment({
   setCandidateDetails,
   candidateDetails,
 }: Props) {
+  const [error, setError] = useState<any>();
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
-  } = useForm();
-  const onSubmit = (data: any) => console.log(data);
+  } = useForm({ defaultValues: candidateDetails?.assignmentDetails ?? {} });
+
+  const onSubmit = async (data: any) => {
+    const body = JSON.stringify({
+      mobileNumber,
+      assignmentDetails: { ...data },
+    });
+    const result = await postFetcher("/astrologer/register", body);
+    console.log("result", result);
+    if (result.msg === "added successfully") {
+      setCandidateDetails(result?.candidate);
+      toast.success(
+        "Thanks for your registration, Our team will revert back soon!"
+      );
+      setActiveId(1);
+      setCandidateDetails();
+    } else {
+      setError("Something went wrong! Please try after sometime");
+    }
+  };
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>

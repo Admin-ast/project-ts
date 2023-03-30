@@ -26,7 +26,7 @@ function PersonalDetail({
     name: yup
       .string()
       .required("First Name is required")
-      .matches(/^[A-Za-z]+$/, "First name should contain only alphabets")
+      .matches(/^[A-Za-z ]+$/, "First name should contain only alphabets")
       .max(50, "Limit extend"),
     emailId: yup
       .string()
@@ -69,7 +69,6 @@ function PersonalDetail({
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
     const result = await postFetcher("/generate-otp", body);
     if (result.msg === "Otp has been sent successfully on your mobile number") {
-      setCandidateDetails(result?.candidate);
       setPersonalInfo(data);
       setMobileNumber(data.mobileNumber);
       setShowOtp(true);
@@ -93,6 +92,7 @@ function PersonalDetail({
         const body = JSON.stringify(personalInfo);
         const response = await postFetcher("/astrologer/register", body);
         if (response.msg === "added successfully") {
+          setCandidateDetails(response?.candidate);
           setActiveId(2);
         } else {
           setError("Please try after sometime");

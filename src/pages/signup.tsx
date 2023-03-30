@@ -69,6 +69,8 @@ function Signup({}: Props) {
         throw new Error("Unknown Step");
     }
   };
+
+  console.log("dtea", candidateDetails);
   return (
     <>
       <Hero text="Astrologer Login" icon="/assets/signup/hero.png" />

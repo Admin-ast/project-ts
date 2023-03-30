@@ -23,7 +23,7 @@ function OtherDetail({
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues: candidateDetails?.otherDetails ?? {} });
 
   const onSubmit = async (data: any) => {
     const body = JSON.stringify({ mobileNumber, otherDetails: { ...data } });

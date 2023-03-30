@@ -1,5 +1,5 @@
 import { postFetcher } from "@/service";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { MultiSelect } from "react-multi-select-component";
 import { Button, Checkbox, Form, Input, Select } from "../forms";
@@ -25,10 +25,17 @@ function SkillDetail({
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ defaultValues: candidateDetails?.skillDetails ?? {} });
+
+  useEffect(() => {
+    const allDetails = candidateDetails?.skillDetails;
+    if (allDetails) {
+      setPrimarySkills(allDetails?.primarySkills ?? []);
+      setAllSkills(allDetails?.allSkills ?? []);
+      setLanguages(allDetails?.languages ?? []);
+    }
+  }, [candidateDetails]);
   const onSubmit = async (data: any) => {
-    // console.log(data);
-    // setActiveId(3);
     const body = JSON.stringify({
       mobileNumber,
       skillDetails: {
