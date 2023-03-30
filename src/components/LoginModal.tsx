@@ -8,7 +8,8 @@ import {
 import { Button, Form, Input } from "./forms";
 import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
-import { getFetcher } from "@/service";
+import { getFetcher, postFetcher } from "@/service";
+import { toast } from "react-toastify";
 
 type Props = {
   isOpen?: boolean;
@@ -17,7 +18,8 @@ type Props = {
 
 function LoginModal({ isOpen, setIsOpen }: Props) {
   const [step, setStep] = useState(1);
-  const [mobileNumber, setMobileNumber] = useState(9413717889);
+  const [error, setError] = useState<any>();
+  const [mobileNumber, setMobileNumber] = useState<any>();
   const [otpValue, setOtpValue] = useState();
   const closeModal = () => {
     setIsOpen(false);
@@ -30,32 +32,57 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
     formState: { errors },
   } = useForm();
   const onSubmit1 = async (data: any) => {
-    setMobileNumber(Number(data.phoneNumber));
-    const body = JSON.stringify({
-      name: "sat",
-      mobileNumber: Number(data.phoneNumber),
-    });
-    console.log("bodu", body);
-    const result = getFetcher("/api/v1/auth/sign-in", body);
-
-    console.log("response is", result);
-    setStep(2);
+    const body = JSON.stringify({ mobileNumber: data.mobileNumber });
+    const result = await postFetcher("/generate-otp", body);
+    if (result.msg === "Otp has been sent successfully on your mobile number") {
+      setMobileNumber(data.mobileNumber);
+      setStep(2);
+    } else {
+      setError(result.msg);
+    }
   };
-  const onSubmit2 = async (data: any) => {};
+  const onSubmit2 = async (data: any) => {
+    console.log("ddaya", data);
+    const body = JSON.stringify({
+      name: data.firstName + " " + data.lastName,
+      mobileNumber: mobileNumber,
+    });
+    const result = await postFetcher("/auth/profile-update", body, "PUT");
+    if (result?.msg === "updated successfully") {
+      closeModal();
+      toast.success("Login successfully");
+    } else {
+    }
+  };
 
   const handleChange = (otp: any) => {
     setOtpValue(otp);
   };
 
   const handleSubmitOtp = async () => {
-    const body = JSON.stringify({
-      otp: otpValue,
-      mobileNumber: mobileNumber,
-    });
-    const result = getFetcher("/api/v1/auth/verify-otp", body);
-
-    console.log("response is 2-->", result);
-    setStep(3);
+    try {
+      const body = JSON.stringify({
+        otp: otpValue,
+        mobileNumber: mobileNumber,
+      });
+      const result = await postFetcher("/verify-otp", body);
+      if (result.msg === "Otp verified successfully") {
+        const response = await postFetcher("/auth/sign-in", body);
+        if (response.msg === "login successfully" && response.existingUser) {
+          closeModal();
+          toast.success("Login successfully");
+        } else if (
+          response.msg === "login successfully" &&
+          !response.existingUser
+        ) {
+          setStep(3);
+        } else {
+          setError("Please try after sometime");
+        }
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -111,9 +138,9 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                         <div className="mt-5">
                           <Input
                             type="string"
-                            id="phoneNumber"
+                            id="mobileNumber"
                             placeholder="Enter Phone Number"
-                            name="phoneNumber"
+                            name="mobileNumber"
                             required={true}
                             maxLength={10}
                             minLength={10}
@@ -177,16 +204,6 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                           className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
                           btnText="Submit"
                         />
-                        {/* <p className="text-center text-[13px] text-gray-500">
-                            By Signing up, you agree to our{" "}
-                            <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
-                              Terms of Use
-                            </span>{" "}
-                            and{" "}
-                            <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
-                              Privacy Policy
-                            </span>
-                          </p> */}
                       </div>
                     </div>
                   </Dialog.Panel>
@@ -229,9 +246,9 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                         <div className="space-y-2">
                           {" "}
                           <Button
-                            type="button"
+                            type="submit"
                             className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
-                            btnText="GET OTP -->"
+                            btnText="Submit"
                           />
                           <p className="text-center text-[13px] text-gray-500">
                             By Signing up, you agree to our{" "}

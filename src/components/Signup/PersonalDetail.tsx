@@ -101,9 +101,6 @@ function PersonalDetail({
     } catch (err) {
       console.log(err);
     }
-    // const body = JSON.stringify(data);
-    // const result = await postFetcher("/astrologer/register", body);
-    // console.log("result is", result);
   };
 
   return (

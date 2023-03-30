@@ -2,11 +2,13 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const postFetcher = async (
   url: string,
-  body: BodyInit | null | undefined
+  body: BodyInit | null | undefined,
+  method: string = "POST"
 ) => {
+  console.log("methf", method);
   try {
     const result = await fetch(`${baseUrl}${url}`, {
-      method: "POST",
+      method,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
