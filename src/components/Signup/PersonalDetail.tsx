@@ -4,14 +4,23 @@ import { Button, Checkbox, Form, Input } from "../forms";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import OtpInput from "react-otp-input";
+import { postFetcher } from "@/service";
 
 type Props = {
   setActiveId: any;
+  setMobileNumber: any;
+  setCandidateDetails: any;
 };
 
-function PersonalDetail({ setActiveId }: Props) {
+function PersonalDetail({
+  setActiveId,
+  setMobileNumber,
+  setCandidateDetails,
+}: Props) {
   const [showOtp, setShowOtp] = useState(false);
   const [otpValue, setOtpValue] = useState<any>();
+  const [personalInfo, setPersonalInfo] = useState<any>();
+  const [error, setError] = useState<string>();
 
   const FormSchema = yup.object().shape({
     name: yup
@@ -26,7 +35,7 @@ function PersonalDetail({ setActiveId }: Props) {
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
         "Enter valid Email-Id"
       ),
-    phoneNumber: yup
+    mobileNumber: yup
       .string()
       .required("Enter mobile number")
       .matches(/^^[6-9]\d{9}$/, "Enter Valid Mobile No.")
@@ -55,16 +64,47 @@ function PersonalDetail({ setActiveId }: Props) {
     formState: { errors },
   } = useForm({ resolver: yupResolver(FormSchema) });
 
-  const onSubmit = (data: any) => {
-    setShowOtp(true);
-    console.log(data);
+  const onSubmit = async (data: any) => {
+    setPersonalInfo(data);
+    const body = JSON.stringify({ mobileNumber: data.mobileNumber });
+    const result = await postFetcher("/generate-otp", body);
+    if (result.msg === "Otp has been sent successfully on your mobile number") {
+      setCandidateDetails(result?.candidate);
+      setPersonalInfo(data);
+      setMobileNumber(data.mobileNumber);
+      setShowOtp(true);
+    } else {
+      setError(result.msg);
+    }
   };
 
   const handleChange = (otp: any) => {
     setOtpValue(otp);
   };
 
-  console.log("otp", otpValue);
+  const onOtpSubmit = async () => {
+    try {
+      const body = JSON.stringify({
+        otp: otpValue,
+        mobileNumber: personalInfo.mobileNumber,
+      });
+      const result = await postFetcher("/verify-otp", body);
+      if ((result.msg = "Otp verified successfully")) {
+        const body = JSON.stringify(personalInfo);
+        const response = await postFetcher("/astrologer/register", body);
+        if (response.msg === "added successfully") {
+          setActiveId(2);
+        } else {
+          setError("Please try after sometime");
+        }
+      }
+    } catch (err) {
+      console.log(err);
+    }
+    // const body = JSON.stringify(data);
+    // const result = await postFetcher("/astrologer/register", body);
+    // console.log("result is", result);
+  };
 
   return (
     <>
@@ -92,10 +132,10 @@ function PersonalDetail({ setActiveId }: Props) {
               />
               <Input
                 type="string"
-                id="phoneNumber"
+                id="mobileNumber"
                 placeholder=" "
                 maxLength={10}
-                name="phoneNumber"
+                name="mobileNumber"
                 label="Mobile Number*"
                 register={register}
                 errors={errors}
@@ -123,7 +163,7 @@ function PersonalDetail({ setActiveId }: Props) {
             Verify Phone
           </p>
           <p className="text-dark text-center text-base font-bold">
-            Enter OTP sent to +91-{getValues("phoneNumber")}
+            Enter OTP sent to +91-{personalInfo.mobileNumber}
           </p>
           <div className="mx-auto w-fit">
             <OtpInput
@@ -149,10 +189,10 @@ function PersonalDetail({ setActiveId }: Props) {
             </div>
             <Button
               disabled={otpValue?.length !== 6}
-              onClick={() => setActiveId(2)}
+              onClick={onOtpSubmit}
               className={`${
                 otpValue?.length === 6 ? "bg-[#D3B160] " : "bg-[#D3B160] "
-              }  mx-auto rounded-lg border-2 border-black py-3 text-lg font-bold text-gray-700`}
+              }  mx-auto cursor-pointer rounded-lg border-2 border-black py-3 text-lg font-bold text-gray-700`}
               btnText="Verify OTP"
             />
           </div>
@@ -169,7 +209,7 @@ function PersonalDetail({ setActiveId }: Props) {
           {" "}
           Sign up to become an AstroSevaTalk Verified Astrologer
         </p>
-        <p className="text-left text-xl">
+        <p className="text-left lg:text-xl">
           If looking forward to taking your astrology skills online, join
           India’s largest astrology platform, which brings you a tremendous
           opportunity to expand your customer base, both nationally and

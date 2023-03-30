@@ -2,9 +2,19 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Button, Checkbox, Form, Input, Select, Textarea } from "../forms";
 
-type Props = {};
+type Props = {
+  setActiveId: (arg: Number) => void;
+  mobileNumber: string | Number;
+  setCandidateDetails: any;
+  candidateDetails: any;
+};
 
-function Assignment({}: Props) {
+function Assignment({
+  setActiveId,
+  mobileNumber,
+  setCandidateDetails,
+  candidateDetails,
+}: Props) {
   const {
     register,
     handleSubmit,

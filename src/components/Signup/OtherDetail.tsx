@@ -1,106 +1,119 @@
-import React from "react";
+import { postFetcher } from "@/service";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Checkbox, Form, Input, Select, Textarea } from "../forms";
+import { Checkbox, Form, Input, Select, Textarea } from "../forms";
 
-type Props = {};
+type Props = {
+  setActiveId: (arg: Number) => void;
+  mobileNumber: string | number;
+  setCandidateDetails: any;
+  candidateDetails: any;
+};
 
-function OtherDetail({}: Props) {
+function OtherDetail({
+  setActiveId,
+  mobileNumber,
+  setCandidateDetails,
+  candidateDetails,
+}: Props) {
+  const [error, setError] = useState<string | undefined>();
+
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: any) => console.log(data);
+
+  const onSubmit = async (data: any) => {
+    const body = JSON.stringify({ mobileNumber, otherDetails: { ...data } });
+    const result = await postFetcher("/astrologer/register", body);
+    console.log("result", result);
+    if (result.msg === "added successfully") {
+      setCandidateDetails(result?.candidate);
+      setActiveId(4);
+    } else {
+      setError("Something went wrong! Please try after sometime");
+    }
+  };
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <div className="mx-auto grid max-w-sm grid-cols-2 gap-6 rounded-lg bg-[#FFF7E5] p-8 py-12 lg:max-w-4xl">
-        <div>
-          <Input
-            type="string"
-            id="hours"
-            placeholder=" "
-            name="hours"
-            label="Why do you think we should onboard you?*"
-            register={register}
-            errors={errors}
-          />
-        </div>
-
-        <div>
-          <Input
-            type="string"
-            id="hours"
-            placeholder=" "
-            name="hours"
-            label="What is a suitable time for interview?*"
-            register={register}
-            errors={errors}
-          />
-        </div>
-
-        <div>
-          <Input
-            type="string"
-            id="hours"
-            placeholder=" "
-            name="hours"
-            label="Which city do you currently live in?*"
-            register={register}
-            errors={errors}
-          />
-        </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label=""
-            id="language"
-            name="Main source of business(other than astrology)?"
-            register={register}
-            options={[
-              { name: "Own Bussiness", value: "Own Bussiness" },
-              { name: "Job", value: "Job" },
-              { name: "Other", value: "other" },
-            ]}
-          />
-        </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label=""
-            id="language"
-            name="Select your highest qualification"
-            register={register}
-            options={[
-              { name: "Matric", value: "Matric" },
-              { name: "12th", value: "12th" },
-              { name: "Greduate", value: "Greduate" },
-            ]}
-          />
-        </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label=""
-            id="language"
-            name="Degree / Diploma"
-            register={register}
-            options={[
-              { name: "Matric", value: "Matric" },
-              { name: "12th", value: "12th" },
-              { name: "Greduate", value: "Greduate" },
-            ]}
-          />
-        </div>
         <Input
           type="string"
-          id="College"
+          id="whyToOnboard"
           placeholder=" "
-          name="College"
+          name="whyToOnboard"
+          label="Why do you think we should onboard you?*"
+          register={register}
+          errors={errors}
+        />
+        <Input
+          type="string"
+          id="timeForInterview"
+          placeholder=" "
+          name="timeForInterview"
+          label="What is a suitable time for interview?*"
+          register={register}
+          errors={errors}
+        />
+
+        <Input
+          type="string"
+          id="hours"
+          placeholder=" "
+          name="hours"
+          label="Which city do you currently live in?*"
+          register={register}
+          errors={errors}
+        />
+
+        <Select
+          errors={errors}
+          required={true}
+          label="Main source of business(other than astrology)?"
+          id="mainSource"
+          name="mainSource"
+          register={register}
+          options={[
+            { name: "Own Bussiness", value: "Own Bussiness" },
+            { name: "Job", value: "Job" },
+            { name: "Other", value: "other" },
+          ]}
+        />
+
+        <Select
+          errors={errors}
+          required={true}
+          label="Select your highest qualification"
+          id="qualification"
+          name="qualification"
+          register={register}
+          options={[
+            { name: "Metric", value: "Metric" },
+            { name: "12th", value: "12th" },
+            { name: "Graduate", value: "Graduate" },
+          ]}
+        />
+        <Select
+          errors={errors}
+          required={true}
+          label="Degree / Diploma"
+          id="degree"
+          name="degree"
+          register={register}
+          options={[
+            { name: "Matric", value: "Matric" },
+            { name: "12th", value: "12th" },
+            { name: "Greduate", value: "Greduate" },
+          ]}
+        />
+        <Input
+          type="string"
+          id="college"
+          placeholder=" "
+          name="college"
           label="College/School/University*"
           register={register}
           errors={errors}
@@ -116,50 +129,50 @@ function OtherDetail({}: Props) {
         />
         <Input
           type="string"
-          id="Instagram "
+          id="instagram "
           placeholder=" "
-          name="Instagram"
+          name="instagram"
           label="Instagram profile link?"
           register={register}
           errors={errors}
         />
         <Input
           type="string"
-          id="Facebook "
+          id="facebook "
           placeholder=" "
-          name="Facebook"
+          name="facebook"
           label="Facebook profile link?"
           register={register}
           errors={errors}
         />
         <Input
           type="string"
-          id="Youtube "
+          id="youtube "
           placeholder=" "
-          name="Youtube"
+          name="youtube"
           label="Youtube profile link?"
           register={register}
           errors={errors}
         />
         <Input
           type="string"
-          id="Linkdin "
+          id="linkedin "
           placeholder=" "
-          name="Linkdin"
-          label="Linkdin profile link?"
+          name="linkedin"
+          label="Linkedin profile link?"
           register={register}
           errors={errors}
         />
         <Input
           type="string"
-          id="Website "
+          id="website "
           placeholder=" "
-          name="Website"
+          name="website"
           label="Website profile link?"
           register={register}
           errors={errors}
         />
-        <div className="">
+        <div className="space-y-2">
           <p className="">Did anybody refer you to AstroSevaTalk?</p>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
@@ -184,21 +197,20 @@ function OtherDetail({}: Props) {
             </div>
           </div>
         </div>
-
         <Input
           type="string"
-          id="Earning "
+          id="earning "
           placeholder=" "
-          name="Earning"
+          name="earning"
           label="Minimum Earning Expectation from AstroSevaTalk"
           register={register}
           errors={errors}
         />
         <Input
           type="string"
-          id="Max-Earning "
+          id="maxEarning "
           placeholder=" "
-          name="Max-Earning"
+          name="maxEarning"
           label="Maximum Earning Expectation from AstroSevaTalk"
           register={register}
           errors={errors}
@@ -207,9 +219,9 @@ function OtherDetail({}: Props) {
         <div className="col-span-2">
           <Textarea
             type="string"
-            id="Long"
+            id="bio"
             placeholder=" "
-            name="Long"
+            name="bio"
             label="Long Bio"
             register={register}
             errors={errors}

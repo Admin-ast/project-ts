@@ -1,26 +1,56 @@
-import React from "react";
+import { postFetcher } from "@/service";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { MultiSelect } from "react-multi-select-component";
 import { Button, Checkbox, Form, Input, Select } from "../forms";
 
 type Props = {
   setActiveId: (id: number) => void;
+  mobileNumber: any;
+  setCandidateDetails: any;
+  candidateDetails: any;
 };
 
-function SkillDetail({ setActiveId }: Props) {
+function SkillDetail({
+  setActiveId,
+  mobileNumber,
+  setCandidateDetails,
+  candidateDetails,
+}: Props) {
+  const [primarySkills, setPrimarySkills] = useState<any>([]);
+  const [allSkills, setAllSkills] = useState<any>([]);
+  const [languages, setLanguages] = useState<any>([]);
+  const [error, setError] = useState<any>();
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: any) => {
-    console.log(data);
-    setActiveId(3);
+  const onSubmit = async (data: any) => {
+    // console.log(data);
+    // setActiveId(3);
+    const body = JSON.stringify({
+      mobileNumber,
+      skillDetails: {
+        ...data,
+        languages,
+        allSkills,
+        primarySkills,
+      },
+    });
+    const result = await postFetcher("/astrologer/register", body);
+    console.log("result", result);
+    if (result.msg === "added successfully") {
+      setCandidateDetails(result?.candidate);
+      setActiveId(3);
+    } else {
+      setError("Something went wrong! Please try after sometime");
+    }
   };
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
-      <div className="mx-auto grid max-w-sm grid-cols-2 gap-4 rounded-lg bg-[#FFF7E5] p-4 py-12 lg:max-w-4xl">
+      <div className="mx-auto grid max-w-sm grid-cols-2 gap-4 rounded-lg bg-[#FFF7E5] p-4 py-12 lg:max-w-4xl lg:p-16">
         <div className="col-span-2 mx-auto flex flex-col items-center justify-center pb-10">
           <div className="mt-1 flex items-center">
             <span className="inline-block h-20 w-20 overflow-hidden rounded-full  bg-gray-100">
@@ -42,74 +72,75 @@ function SkillDetail({ setActiveId }: Props) {
             <p className="text-xs">(Please upload image below 5mb)</p>
           </label>
         </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label="Gender*"
-            id="gender"
-            name="gender"
-            register={register}
+        <Select
+          errors={errors}
+          required={true}
+          label="Gender*"
+          id="gender"
+          name="gender"
+          register={register}
+          options={[
+            { name: "Male", value: "male" },
+            { name: "Female", value: "female" },
+            { name: "Other", value: "other" },
+          ]}
+        />
+        <Input
+          type="date"
+          id="dob"
+          placeholder=" "
+          name="dob"
+          label="Date of birth*"
+          register={register}
+        />
+        <div className="space-y-2">
+          <label htmlFor="primarySkills" className="text-base">
+            Primary skills*
+          </label>
+          <MultiSelect
             options={[
-              { name: "Male", value: "male" },
-              { name: "Female", value: "female" },
-              { name: "Other", value: "other" },
+              { label: "Vedic", value: "Vedic" },
+              { label: "Nadi", value: "Nadi" },
+              { label: "Vastu", value: "Vastu" },
+              { label: "KP", value: "KP" },
             ]}
+            value={primarySkills}
+            onChange={setPrimarySkills}
+            labelledBy="Primary skills*"
+            className=""
           />
         </div>
-        <div>
-          <Input
-            type="date"
-            id="dob"
-            placeholder=" "
-            name="dob"
-            label="Date of birth*"
-            register={register}
+        <div className="space-y-2">
+          <label htmlFor="primarySkills" className="text-base">
+            All skills*
+          </label>
+          <MultiSelect
+            options={[
+              { label: "Palm Reading", value: "Palm Reading" },
+              { label: "Nadi", value: "Nadi" },
+              { label: "Vastu", value: "Vastu" },
+              { label: "KP", value: "KP" },
+            ]}
+            value={allSkills}
+            onChange={setAllSkills}
+            labelledBy="All skills*"
+            className=""
           />
         </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label="Primary skills*"
-            id="primaryskills"
-            name="primary skills"
-            register={register}
+        <div className="space-y-2">
+          <label htmlFor="primarySkills" className="text-base">
+            Language*
+          </label>
+          <MultiSelect
             options={[
-              { name: "Male", value: "male" },
-              { name: "Female", value: "female" },
-              { name: "Other", value: "other" },
+              { label: "Hindi", value: "Hindi" },
+              { label: "English", value: "English" },
+              { label: "Bengali", value: "Bengali" },
             ]}
-          />
-        </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label="All Skills*"
-            id="allSkills"
-            name="all Skills"
-            register={register}
-            options={[
-              { name: "Male", value: "male" },
-              { name: "Female", value: "female" },
-              { name: "Other", value: "other" },
-            ]}
-          />
-        </div>
-        <div>
-          <Select
-            errors={errors}
-            required={true}
-            label="Language*"
-            id="language"
-            name="language"
-            register={register}
-            options={[
-              { name: "Male", value: "male" },
-              { name: "Female", value: "female" },
-              { name: "Other", value: "other" },
-            ]}
+            value={languages}
+            onChange={setLanguages}
+            labelledBy="Languages"
+            className=""
           />
         </div>
         <Input

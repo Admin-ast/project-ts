@@ -23,17 +23,46 @@ const details = [
 ];
 
 function Signup({}: Props) {
-  const [activeId, setActiveId] = useState(4);
+  const [mobileNumber, setMobileNumber] = useState<any>();
+  const [candidateDetails, setCandidateDetails] = useState<any>();
+  const [activeId, setActiveId] = useState(1);
   const getMainContent = (step: number, setActiveId: any) => {
     switch (step) {
       case 1:
-        return <PersonalDetail setActiveId={setActiveId} />;
+        return (
+          <PersonalDetail
+            setActiveId={setActiveId}
+            setMobileNumber={setMobileNumber}
+            setCandidateDetails={setCandidateDetails}
+          />
+        );
       case 2:
-        return <SkillDetail setActiveId={setActiveId} />;
+        return (
+          <SkillDetail
+            setActiveId={setActiveId}
+            mobileNumber={mobileNumber}
+            setCandidateDetails={setCandidateDetails}
+            candidateDetails={candidateDetails}
+          />
+        );
       case 3:
-        return <OtherDetail />;
+        return (
+          <OtherDetail
+            setActiveId={setActiveId}
+            mobileNumber={mobileNumber}
+            setCandidateDetails={setCandidateDetails}
+            candidateDetails={candidateDetails}
+          />
+        );
       case 4:
-        return <Assignment />;
+        return (
+          <Assignment
+            setActiveId={setActiveId}
+            mobileNumber={mobileNumber}
+            setCandidateDetails={setCandidateDetails}
+            candidateDetails={candidateDetails}
+          />
+        );
       // case 5:
       //   return <Verification />;
       default:
