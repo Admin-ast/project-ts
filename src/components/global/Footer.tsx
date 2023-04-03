@@ -33,27 +33,27 @@ const corporate: Corporate[] = [
   {
     id: 1,
     title: "Refund & Cancellation Policy",
-    url: "/corporate/refund",
+    url: "/corporate-info/refund",
   },
   {
     id: 2,
     title: "Terms & Conditions",
-    url: "/corporate/refund",
+    url: "/corporate-info/refund",
   },
   {
     id: 3,
     title: " Privacy Policy",
-    url: "/corporate/privacy",
+    url: "/corporate-info/privacy",
   },
   {
     id: 4,
     title: " About Us",
-    url: "/corporate/about",
+    url: "/corporate-info/about",
   },
   {
     id: 5,
     title: "Disclaimer",
-    url: "/corporate/disclaimer",
+    url: "/corporate-info/disclaimer",
   },
 ];
 
