@@ -236,7 +236,6 @@ function PersonalDetail({
           you 24/7 just in case you need any assistance.
         </p>
         <p className="text-left text-xl">
-          {" "}
           Having said that, fill out the form on the right to begin your journey
           with Astrotalk.
         </p>

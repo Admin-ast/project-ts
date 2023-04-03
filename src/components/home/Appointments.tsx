@@ -17,13 +17,13 @@ const appointment: Appointment[] = [
     name: "Chat with Astrologer",
     src: "/assets/home/icon-01.webp",
     alt: "chat-astrologer",
-    url: "/chat-astrologer",
+    url: "/chat-with-astrologer",
   },
   {
     name: "Talk to Astrologer",
     src: "/assets/home/icon-02.webp",
     alt: "talk-astrologer",
-    url: "/talk-astrologer",
+    url: "/talk-to-astrologer",
   },
   {
     name: "Live Astrologers",
@@ -35,7 +35,7 @@ const appointment: Appointment[] = [
     name: "Live video chat",
     src: "/assets/home/icon-04.webp",
     alt: "videochat-astrologer",
-    url: "/videochat-astrologer",
+    url: "/live-videochat",
   },
 ];
 
