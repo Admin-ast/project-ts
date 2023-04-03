@@ -18,11 +18,11 @@ const links: Links[] = [
   },
   {
     name: "Chat With Astrologer",
-    url: "/chat-astrologer",
+    url: "/chat-with-astrologer",
   },
   {
     name: "Talk To Astrologer",
-    url: "/talk-astrologer",
+    url: "/talk-to-astrologer",
   },
   {
     name: "Live Astrologer",
@@ -34,19 +34,19 @@ const links: Links[] = [
   },
   {
     name: "Live Video Chat",
-    url: "/videochat-astrologer",
+    url: "/live-video-chat-astrologer",
   },
   {
     name: "Free Kundli",
-    url: "/kundli/free-kundli",
+    url: "/free-kundli",
   },
   {
     name: "Kundli Matching",
-    url: "/kundli/kundli-matching",
+    url: "/kundli-matching",
   },
   {
     name: "Panchang",
-    url: "/panchang",
+    url: "/today-panchang",
   },
   {
     name: "Shubh Muhurat",
