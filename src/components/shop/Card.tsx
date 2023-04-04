@@ -16,7 +16,7 @@ const card = [
   {
     img: "/assets/shop/kundlimatching.svg",
     name: "Kundli Matching",
-    url: "",
+    url: "/shop/kundli-matchingProduct",
   },
   {
     img: "/assets/shop/gemstone.svg",
