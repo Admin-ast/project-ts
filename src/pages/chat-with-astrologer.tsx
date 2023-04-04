@@ -5,6 +5,7 @@ import Button from "@/components/common/Button";
 import Faq from "@/components/common/Faq";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Section from "@/components/Section";
+import Seo from "@/components/Seo";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
 
@@ -52,6 +53,11 @@ const astrologerDetail = {
 function ChatAstrologer({}: Props) {
   return (
     <>
+      <Seo
+        metaTitle="Online Chat with Astrologers  24 x 7 Astrology Consultation | Astrosevatalk"
+        metaDescription="Find out what the stars have in store for you with astrology predictions online. Get personalized horoscopes and daily forecasts for your zodiac sign from experts to help guide you through life's decisions. Unlock the secrets of the universe with astrology predictions online with Astrosevatalk"
+        keywords="astrosevatalk, chat online, Astrology, Astrology today, Astrology in Hindi, Astrology in Tamil, Astrologer, Astrologer today, Astrologer Tamil, Horoscope, Horoscope today, Horoscope daily, Horoscope 2023, Kundli Bhagya, Kundli, Kundli match, Zodiac Signs, match making horoscope, matchmaking marriage, Jyotish, Talk to Astrologer, plam reading, job prediction by date of birth,career prediction by date of birth indian astrology free"
+      />
       <Hero
         text="Chat With Astrologer"
         icon="/assets/appointment/chat-hero.png"

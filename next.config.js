@@ -31,6 +31,9 @@ const securityHeaders = [
 ];
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ["astroseva-talk.s3.amazonaws.com"],
+  },
 };
 
 module.exports = nextConfig;
