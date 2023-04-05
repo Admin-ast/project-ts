@@ -11,7 +11,7 @@ const card = [
   {
     img: "/assets/shop/onlinepuja.svg",
     name: "Online Puja",
-    url: "/shop/puja-product",
+    url: "/shop/online-puja",
   },
   {
     img: "/assets/shop/kundlimatching.svg",
@@ -41,32 +41,32 @@ const card = [
   {
     img: "/assets/shop/healingoil.svg",
     name: "Healing Oil",
-    url: "",
+    url: "/shop/healing",
   },
   {
     img: "/assets/shop/evileye.svg",
     name: "Evil Eye",
-    url: "",
+    url: "/shop/evil-eye",
   },
   {
     img: "/assets/shop/karmareport.svg",
     name: "Karma Report",
-    url: "",
+    url: "/shop/karma",
   },
   {
     img: "/assets/shop/cosmic.svg",
     name: "Cosmic Integration",
-    url: "",
+    url: "/shop/cosmic-integration",
   },
   {
     img: "/assets/shop/thete.svg",
     name: "Theta Healing",
-    url: "",
+    url: "/shop/theta-healing",
   },
   {
     img: "/assets/shop/puja.svg",
     name: "Puja",
-    url: "",
+    url: "/shop/puja-product",
   },
   {
     img: "/assets/shop/gemconsultion.svg",
@@ -76,12 +76,12 @@ const card = [
   {
     img: "/assets/shop/palamistry.svg",
     name: "Palmistry",
-    url: "",
+    url: "/shop/palamistry",
   },
   {
     img: "/assets/shop/lovescore.svg",
     name: "Face Reading",
-    url: "",
+    url: "/shop/facereading",
   },
 ];
 
