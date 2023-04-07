@@ -5,7 +5,6 @@ export const postFetcher = async (
   body: BodyInit | null | undefined,
   method: string = "POST"
 ) => {
-  console.log("methf", method);
   try {
     const result = await fetch(`${baseUrl}${url}`, {
       method,

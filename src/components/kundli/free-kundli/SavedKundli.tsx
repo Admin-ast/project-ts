@@ -7,9 +7,9 @@ function SavedKundli({}: Props) {
   const [isLogin, setIsLogin] = useState(false);
   if (!isLogin) {
     return (
-      <div className="w-full space-y-4">
+      <div className="flex w-full flex-col space-y-4">
         <p className="text-2xl lg:text-[32px]">Saved Kundli</p>
-        <div className="flex flex-col items-center space-y-6 rounded-3xl border-2 border-[#A9A9A9] p-6 lg:h-[464px]">
+        <div className="flex-1 flex-col items-center justify-center space-y-6 rounded-3xl border-2 border-[#A9A9A9] p-6">
           <div className="">
             <Image
               src={"/assets/kundli/free-kundli.png"}

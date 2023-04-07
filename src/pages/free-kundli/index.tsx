@@ -77,7 +77,7 @@ function FreeKundli({}: Props) {
             </div>
           </div>
           <div className="my-8 grid grid-cols-2 gap-y-6 lg:grid-cols-5 lg:gap-6">
-            <div className="col-span-2">
+            <div className="col-span-2 grid">
               <SavedKundli />
             </div>
             <div className="col-span-3">
