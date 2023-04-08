@@ -31,7 +31,7 @@ const card = [
   {
     img: "/assets/shop/kawach.svg",
     name: "Kawach",
-    url: "",
+    url: "/shop/kawach",
   },
   {
     img: "/assets/shop/spell.svg",
