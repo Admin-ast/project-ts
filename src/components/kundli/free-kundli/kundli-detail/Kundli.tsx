@@ -194,7 +194,8 @@ function Kundli({}: Props) {
         tzone: "5.5",
       });
       const result = await postFetcher("/kundli/planets", bodyData);
-      setPlanetDetails(JSON.parse(result?.response));
+      console.log(result);
+      setPlanetDetails(JSON.parse(result?.response ?? ""));
     };
     planetResponse();
   }, []);
