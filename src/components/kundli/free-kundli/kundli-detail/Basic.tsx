@@ -2,6 +2,7 @@ import ConnectCard from "@/components/common/ConnectCard";
 import Section from "@/components/Section";
 import React, { useEffect, useState } from "react";
 import PrimaryTable from "./PrimaryTable";
+import { postFetcher } from "@/service";
 
 type Props = {};
 
@@ -25,34 +26,60 @@ const panchangDetails = {
   Nakshatra: "Chitra",
 };
 
-const avakhadaDetails = {
-  Varna: "Shudra",
-  Vashya: "Nara",
-  Yoni: "Vyaghra",
-  Gan: "Rakshasa",
-  Nadi: "Madhya",
-  Sign: "Virgo",
-  "Sign Lord": "Mercury",
-  "Nakshatra-Charan": "Chitra",
-  Yog: "Ayushman",
-  Karan: "Kaulav",
-  Tithi: "KrishnaDwadashi",
-  Yunja: "Madhya",
-  Tatva: "Earth",
-  Name: "alphabet	Po",
-  Paya: "Silver",
-};
+// const avakhadaDetails = {
+//   Varna: "Shudra",
+//   Vashya: "Nara",
+//   Yoni: "Vyaghra",
+//   Gan: "Rakshasa",
+//   Nadi: "Madhya",
+//   Sign: "Virgo",
+//   "Sign Lord": "Mercury",
+//   "Nakshatra-Charan": "Chitra",
+//   Yog: "Ayushman",
+//   Karan: "Kaulav",
+//   Tithi: "KrishnaDwadashi",
+//   Yunja: "Madhya",
+//   Tatva: "Earth",
+//   Name: "alphabet	Po",
+//   Paya: "Silver",
+// };
 
 function Basic({}: Props) {
   const [basicDetails, setBasicDetails] = useState<any>({});
+  const [avakhadaDetails, setAvakhadaDetails] = useState<any>({});
   // const basicDetails = JSON.parse(localStorage.getItem("kundliData"));
 
   useEffect(() => {
+    let bodyData: any;
     if (typeof window !== "undefined") {
-      const data = localStorage.getItem("kundliData");
-      setBasicDetails(JSON.parse(data ?? ""));
+      console.log("kundilll", localStorage.getItem("kundliData"));
+      bodyData = localStorage.getItem("kundliData");
     }
+    // const bodyData = JSON.stringify({
+    //   day: "10",
+    //   month: "5",
+    //   year: "1990",
+    //   hour: "19",
+    //   min: "55",
+    //   lat: "19.2",
+    //   lon: "25.2",
+    //   tzone: "5.5",
+    // });
+
+    const birthResponse = async () => {
+      const result = await postFetcher("/kundli/birthDetails", bodyData);
+      setBasicDetails(JSON.parse(result?.response ?? ""));
+    };
+
+    const avakhadaResponse = async () => {
+      const result = await postFetcher("/kundli/avakhadaDetails", bodyData);
+      setAvakhadaDetails(JSON.parse(result?.response ?? ""));
+    };
+    birthResponse();
+    avakhadaResponse();
   }, []);
+
+  // console.log(basicDetails?.Latitude);
   return (
     <div className="space-y-6">
       <Section>

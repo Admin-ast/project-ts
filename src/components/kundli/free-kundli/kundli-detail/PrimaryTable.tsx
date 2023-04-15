@@ -8,7 +8,11 @@ function PrimaryTable({ details }: Props) {
     return (
       <tr key={key} className="bg-white text-start odd:bg-[#FFF7E5]">
         <td className="w-1/2 px-6 py-4">{startCase(toLower(key))}</td>
-        <td className="w-1/2 px-6 py-4">{startCase(toLower(details[key]))}</td>
+        <td className="w-1/2 px-6 py-4">
+          {typeof details[key] === "string" && !details[key].includes(":")
+            ? startCase(toLower(details[key]))
+            : details[key]}
+        </td>
       </tr>
     );
   });

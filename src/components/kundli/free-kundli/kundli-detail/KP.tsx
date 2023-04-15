@@ -11,16 +11,21 @@ function KP({}: Props) {
   const [cuspDetails, setCuspDetails] = useState<any>([]);
   useEffect(() => {
     const planetResponse = async () => {
-      const bodyData = JSON.stringify({
-        day: "10",
-        month: "5",
-        year: "1990",
-        hour: "19",
-        min: "55",
-        lat: "19.2",
-        lon: "25.2",
-        tzone: "5.5",
-      });
+      // const bodyData = JSON.stringify({
+      //   day: "10",
+      //   month: "5",
+      //   year: "1990",
+      //   hour: "19",
+      //   min: "55",
+      //   lat: "19.2",
+      //   lon: "25.2",
+      //   tzone: "5.5",
+      // });
+      let bodyData: any;
+      if (typeof window !== "undefined") {
+        console.log("kundilll", localStorage.getItem("kundliData"));
+        bodyData = localStorage.getItem("kundliData");
+      }
       const result = await postFetcher("/kundli/kp_planets", bodyData);
       setKPPlanetDetails(JSON.parse(result?.response));
     };

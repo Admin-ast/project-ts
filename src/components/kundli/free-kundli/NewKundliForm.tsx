@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { numberOptions, monthOptions } from "../../../../utils";
+import Combo from "@/components/common/Combo";
 
 type Props = {};
 
@@ -11,6 +12,7 @@ function NewKundliForm({}: Props) {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
 
@@ -88,8 +90,8 @@ function NewKundliForm({}: Props) {
               options={numberOptions(1, 23)}
             />
             <Select
-              name={"minute"}
-              id="minute"
+              name={"min"}
+              id="min"
               register={register}
               required={true}
               label="Birth Minute*"
@@ -106,7 +108,7 @@ function NewKundliForm({}: Props) {
               options={numberOptions(1, 59)}
             />
             <div className="col-span-3">
-              <Input
+              {/* <Input
                 type={"string"}
                 name={"birthPlace"}
                 id="birthPlace"
@@ -115,7 +117,8 @@ function NewKundliForm({}: Props) {
                 label="Birth Place*"
                 placeholder={"Enter your birth place"}
                 className="!rounded-md"
-              />
+              /> */}
+              <Combo setValue={setValue} />
             </div>
             <button
               type="submit"
