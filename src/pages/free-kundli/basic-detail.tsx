@@ -13,10 +13,10 @@ const tabOptions: Tab = [
   "Basic",
   "Kundli",
   "KP",
-  "Charts",
-  "Astakvarga",
-  "Dasha",
-  "Free Report",
+  // "Charts",
+  // "Astakvarga",
+  // "Dasha",
+  // "Free Report",
 ];
 
 function BasicDetail({}: Props) {
@@ -53,7 +53,7 @@ function BasicDetail({}: Props) {
           <p className="bg-[#f0dba8] py-1 px-2 text-sm">Kundli Details</p>
         </div>
         <Section>
-          <div className="my-6 grid grid-cols-7 justify-between overflow-hidden rounded-lg border border-gray-400">
+          <div className="my-6 grid grid-cols-3 justify-between overflow-hidden rounded-lg border border-gray-400">
             {tabOptions?.map((option: string, index: Key) => (
               <div
                 key={index}

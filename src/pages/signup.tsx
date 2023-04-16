@@ -69,8 +69,6 @@ function Signup({}: Props) {
         throw new Error("Unknown Step");
     }
   };
-
-  console.log("dtea", candidateDetails);
   return (
     <>
       <Hero text="Astrologer Login" icon="/assets/signup/hero.png" />
@@ -111,7 +109,7 @@ function Signup({}: Props) {
                         }`}
                       >
                         {index !== details.length - 1 && (
-                          <div className="absolute top-[6px] left-5 w-44 border-t border-gray-600"></div>
+                          <div className="absolute top-[8px] left-7 w-40 border-t border-gray-600"></div>
                         )}
                       </div>
                     </div>
