@@ -66,27 +66,27 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 2,
     title: "panchang",
-    url: "/panchang",
+    url: "/today-panchang",
   },
   {
     id: 3,
-    title: "live-astrologer",
+    title: "Live Astrologer",
     url: "/live-astrologer",
   },
   {
     id: 4,
-    title: "ChatAstrologer",
-    url: "/chat-astrologer",
+    title: "Chat With Astrologer",
+    url: "/chat-with-astrologer",
   },
   {
     id: 5,
-    title: "TalkAstrologer",
-    url: "/talk-astrologer",
+    title: "Talk With Astrologer",
+    url: "/talk-with-astrologer",
   },
   {
     id: 6,
     title: "FreeKundli",
-    url: "/freekundli",
+    url: "/free-kundli",
   },
   {
     id: 7,
@@ -96,22 +96,22 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 8,
     title: "Live Video Chat",
-    url: "/videochat-astrologer",
+    url: "/live-video-chat",
   },
-  {
-    id: 9,
-    title: "Aries",
-    url: "/horoscopesigns/aries",
-  },
+  // {
+  //   id: 9,
+  //   title: "Aries",
+  //   url: "/horoscopesigns/aries",
+  // },
   {
     id: 10,
     title: "Free Kundli",
-    url: "/kundli/free-kundli",
+    url: "/free-kundli",
   },
   {
     id: 11,
     title: "Kundli Matching",
-    url: "/kundli/kundli-matching",
+    url: "/kundli-matching",
   },
   {
     id: 12,

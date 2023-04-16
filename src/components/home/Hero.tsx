@@ -34,7 +34,7 @@ const links: Links[] = [
   },
   {
     name: "Live Video Chat",
-    url: "/live-video-chat-astrologer",
+    url: "/live-video-chat",
   },
   {
     name: "Free Kundli",
@@ -48,18 +48,18 @@ const links: Links[] = [
     name: "Panchang",
     url: "/today-panchang",
   },
-  {
-    name: "Shubh Muhurat",
-    url: "/muhurat",
-  },
+  // {
+  //   name: "Shubh Muhurat",
+  //   url: "/muhurat",
+  // },
   {
     name: "Compatibility",
     url: "/compatibility",
   },
-  {
-    name: "Learn",
-    url: "",
-  },
+  // {
+  //   name: "Learn",
+  //   url: "",
+  // },
 ];
 
 function Hero({}: Props) {
