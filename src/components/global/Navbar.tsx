@@ -19,7 +19,7 @@ function Navbar({}: Props) {
                 <div className="flex items-center space-x-2">
                   <div className="w-[15%]">
                     <Image
-                      src="/assets/logo-01 1.svg"
+                      src="/assets/main-logo.svg"
                       alt="logo"
                       width={337}
                       height={348}

@@ -26,7 +26,7 @@ function Membership({}: Props) {
           </div>
           <div className="order-1 col-span-4">
             <Image
-              src="/assets/main-logo.webp"
+              src="/assets/main-logo.svg"
               alt="logo"
               width={337}
               height={348}

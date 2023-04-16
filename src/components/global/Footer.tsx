@@ -123,6 +123,11 @@ const importantLinks: ImportantLinks[] = [
     title: "Namakaran Muhurat",
     url: "/namakaranmuhurat",
   },
+  {
+    id: 14,
+    title: "Zodiac signs",
+    url: "/zodic-sign",
+  },
 ];
 
 const social: Social[] = [

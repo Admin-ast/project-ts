@@ -14,7 +14,7 @@ function Layout({ children }: Props) {
         <title>AstroSevaTalk</title>
         <meta name="description" content="Astrology" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/main-logo.webp" />
+        <link rel="icon" href="/assets/main-logo.svg" />
       </Head>
       <div className="flex min-h-screen flex-col font-[roboto]">
         <Navbar />
