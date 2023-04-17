@@ -14,6 +14,7 @@ export const postFetcher = async (
       },
       body,
     });
+
     const response = await result.json();
     return response;
   } catch (err) {
