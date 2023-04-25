@@ -3,10 +3,16 @@ import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
-export default function Combo({ setValue }: any) {
+export default function Combo({
+  setValue,
+  placeholder,
+  className,
+  setPlaceName,
+  setTrigger,
+}: any) {
   const [selected, setSelected] = useState();
-  const [query, setQuery] = useState("");
-  const [filteredPeople, setFilteredPeople] = useState([]);
+  const [query, setQuery] = useState("New Delhi, DL, India");
+  const [filteredLocation, setFilteredLocation] = useState([]);
 
   useEffect(() => {
     const fetchLocation = async () => {
@@ -21,7 +27,7 @@ export default function Combo({ setValue }: any) {
         )
           .then((response) => response.json())
           .then((result) => {
-            setFilteredPeople(result?.features);
+            setFilteredLocation(result?.features);
           })
           .catch((error) => console.log("error", error));
       } else {
@@ -32,22 +38,28 @@ export default function Combo({ setValue }: any) {
 
   const locationSelection = (e: any) => {
     setValue("lat", e?.properties?.lat);
-    setValue("lon", e?.properties?.lat);
+    setValue("lon", e?.properties?.lon);
     setValue("tzone", e?.properties?.timezone?.offset_DST_seconds / 3600);
     // console.log("e", e?.properties?.timezone?.offset_DST_seconds / 3600);
     setSelected(e?.properties?.formatted);
+    setPlaceName(e?.properties?.formatted);
   };
 
   return (
     <div className="">
-      <Combobox value={selected} onChange={(e) => locationSelection(e)}>
+      <Combobox
+        value={selected || "New Delhi, DL, India"}
+        onChange={(e) => locationSelection(e)}
+      >
         <div className="relative">
-          <div className="relative w-full cursor-default overflow-hidden rounded-lg border border-gray-500 text-left focus:!border-none focus:!outline-none focus-visible:ring-0 focus-visible:ring-opacity-0 sm:text-sm">
+          <div className="relative w-full cursor-default overflow-hidden text-left focus:!border-none focus:!outline-none focus-visible:ring-0 focus-visible:ring-opacity-0 sm:text-sm">
             <Combobox.Input
-              className="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"
+              className={className}
               displayValue={selected}
-              placeholder="Enter your birth place"
-              onChange={(event) => setQuery(event.target.value)}
+              placeholder={placeholder}
+              onChange={(event) => {
+                setQuery(event.target.value);
+              }}
             />
             <Combobox.Button className="absolute inset-y-0 right-0 flex items-center pr-2">
               <ChevronDownIcon
@@ -64,12 +76,12 @@ export default function Combo({ setValue }: any) {
             afterLeave={() => setQuery("")}
           >
             <Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-              {filteredPeople.length === 0 && query !== "" ? (
+              {filteredLocation.length === 0 && query !== "" ? (
                 <div className="relative cursor-default select-none py-2 px-4 text-gray-700">
                   Nothing found.
                 </div>
               ) : (
-                filteredPeople.map((person: any, index) => (
+                filteredLocation.map((person: any, index) => (
                   <Combobox.Option
                     key={index}
                     className={({ active }) =>
