@@ -6,7 +6,7 @@ const card = [
   {
     img: "/assets/shop/gemstone/Amethyst.svg",
     name: "896",
-    url: "",
+    url: "/shop/gemstone-details",
     para: "15 Ratti Amethyst",
     para1: "Represent Magic | Mystery | Royalty | Good Judgment.",
   },
