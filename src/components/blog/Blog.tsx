@@ -281,7 +281,7 @@ const Blog = (props: Props) => {
                   className="flex w-[286px] flex-col  rounded-[20px] bg-[#FFF7E5]"
                 >
                   <img
-                    className="h-[151px] w-full rounded-t-[20px]"
+                    className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
                     src="/assets/appointment/live-astro.png"
                     alt=""
                   />
