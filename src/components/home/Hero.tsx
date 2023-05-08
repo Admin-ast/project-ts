@@ -3,9 +3,8 @@ import React, { Key } from "react";
 // import AppointmentsHero from "./AppoinmentsHero";
 import Link from "next/link";
 import HeroCard from "./HeroCard";
-
+import Slider from "../common/Slider";
 type Props = {};
-
 type Links = {
   name: string;
   url: string;
@@ -62,10 +61,19 @@ const links: Links[] = [
   // },
 ];
 
+const slides = [
+  { url: "/assets/home/banner/bannerImage_1.svg" },
+  { url: "/assets/home/banner/bannerImage_2.svg" },
+  { url: "/assets/home/banner/bannerImage_3.svg" },
+  { url: "/assets/home/banner/bannerImage_4.svg" },
+  { url: "/assets/home/banner/bannerImage_5.svg" },
+  { url: "/assets/home/banner/bannerImage_6.svg" },
+];
+
 function Hero({}: Props) {
   const router = useRouter();
   return (
-    <div className=" flex flex-col items-center justify-between space-y-12 bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-8 lg:py-[35px]">
+    <div className="flex flex-col items-center justify-between space-y-12 bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-8 lg:py-[35px]">
       <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
         {links.map((item: Links, index: Key) => (
           <Link key={index} href={item?.url}>
@@ -80,6 +88,9 @@ function Hero({}: Props) {
             </p>
           </Link>
         ))}
+      </div>
+      <div className="w-full px-2 ">
+        <Slider slides={slides} />
       </div>
       <div className="flex h-full flex-col items-center justify-center text-center">
         <p className="mb-3 text-lg font-black text-[#F0C668] lg:mb-[29px] lg:text-[32px]">
