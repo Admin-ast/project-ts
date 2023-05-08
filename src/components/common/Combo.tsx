@@ -42,7 +42,9 @@ export default function Combo({
     setValue("tzone", e?.properties?.timezone?.offset_DST_seconds / 3600);
     // console.log("e", e?.properties?.timezone?.offset_DST_seconds / 3600);
     setSelected(e?.properties?.formatted);
-    setPlaceName(e?.properties?.formatted);
+    if (setPlaceName) {
+      setPlaceName(e?.properties?.formatted);
+    }
   };
 
   return (
