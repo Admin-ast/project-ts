@@ -1,6 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper";
 
 type Props = {
   slides: any;
@@ -9,7 +11,15 @@ type Props = {
 function Slider({ slides }: Props) {
   return (
     <>
-      <Swiper spaceBetween={50} slidesPerView={1}>
+      <Swiper
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+      >
         {slides &&
           slides.length > 0 &&
           slides.map((slide, index) => {
