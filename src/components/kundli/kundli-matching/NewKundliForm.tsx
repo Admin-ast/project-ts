@@ -1,10 +1,11 @@
 import { Form, Input } from "@/components/forms";
+import { useRouter } from "next/router";
 import React from "react";
 import { useForm } from "react-hook-form";
-
 type Props = {};
 
 function NewKundliForm({}: Props) {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -13,6 +14,7 @@ function NewKundliForm({}: Props) {
 
   const onSubmit = (data: any) => {
     console.log("data is", data);
+    router.push("kundli-matching/match-making-details");
   };
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
