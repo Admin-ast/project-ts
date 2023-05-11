@@ -22,7 +22,7 @@ function Layout({ children }: Props) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <div
+        {/* <div
           className="fixed right-8 bottom-8 md:bottom-12 md:right-20"
           title="Chat with us"
         >
@@ -42,7 +42,7 @@ function Layout({ children }: Props) {
               />
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );
