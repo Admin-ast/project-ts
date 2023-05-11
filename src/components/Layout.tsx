@@ -22,12 +22,12 @@ function Layout({ children }: Props) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        {/* <div
+        <div
           className="fixed right-8 bottom-8 md:bottom-12 md:right-20"
-          title="Chat with us"
+          title="Talk to Astro expert"
         >
           <Link
-            href="https://wa.me/9413717889"
+            href="https://wa.me/9040023006"
             className="whatsapp_float"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function Layout({ children }: Props) {
               />
             </div>
           </Link>
-        </div> */}
+        </div>
       </div>
     </>
   );
