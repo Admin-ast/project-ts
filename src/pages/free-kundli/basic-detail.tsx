@@ -1,6 +1,10 @@
+import Ashtakvarga from "@/components/kundli/free-kundli/kundli-detail/Ashtakvarga";
 import Basic from "@/components/kundli/free-kundli/kundli-detail/Basic";
+import Charts from "@/components/kundli/free-kundli/kundli-detail/Charts";
+import Dasha from "@/components/kundli/free-kundli/kundli-detail/Dasha";
 import KP from "@/components/kundli/free-kundli/kundli-detail/KP";
 import Kundli from "@/components/kundli/free-kundli/kundli-detail/Kundli";
+import Report from "@/components/kundli/free-kundli/kundli-detail/Report";
 import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key, useState } from "react";
@@ -13,10 +17,10 @@ const tabOptions: Tab = [
   "Basic",
   "Kundli",
   "KP",
-  // "Charts",
-  // "Astakvarga",
-  // "Dasha",
-  // "Free Report",
+  "Ashtakvarga",
+  "Charts",
+  "Dasha",
+  "Report",
 ];
 
 function BasicDetail({}: Props) {
@@ -30,6 +34,14 @@ function BasicDetail({}: Props) {
         return <Kundli />;
       case 2:
         return <KP />;
+      case 3:
+        return <Ashtakvarga />;
+      case 4:
+        return <Charts />;
+      case 5:
+        return <Dasha />;
+      case 6:
+        return <Report />;
       //   case 4:
       //     return (
       //       <Assignment
@@ -53,7 +65,7 @@ function BasicDetail({}: Props) {
           <p className="bg-[#f0dba8] py-1 px-2 text-sm">Kundli Details</p>
         </div>
         <Section>
-          <div className="my-6 grid grid-cols-3 justify-between overflow-hidden rounded-lg border border-gray-400">
+          <div className="my-6 grid justify-between  overflow-hidden rounded-lg border border-gray-400 md:grid-cols-7">
             {tabOptions?.map((option: string, index: Key) => (
               <div
                 key={index}
