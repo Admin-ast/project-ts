@@ -4,6 +4,7 @@ import Footer from "./global/Footer";
 import Navbar from "./global/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   children: React.ReactNode;
@@ -32,14 +33,9 @@ function Layout({ children }: Props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-12 rounded-full shadow-2xl shadow-gray-900 md:w-16">
-              <Image
-                src="/assets/whatsapp-icon.png"
-                alt="whatsapp"
-                width={3100}
-                height={3100}
-                loading={"lazy"}
-              />
+            <div className="flex space-x-2 rounded-full bg-[#C83000]/90 p-3 px-5 font-semibold text-white shadow-2xl shadow-gray-900">
+              <PhoneIcon className="h-6 w-6 text-white" />
+              <p>Talk to an Expert</p>
             </div>
           </Link>
         </div>
