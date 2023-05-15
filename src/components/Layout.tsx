@@ -4,7 +4,7 @@ import Footer from "./global/Footer";
 import Navbar from "./global/Navbar";
 import Link from "next/link";
 import Image from "next/image";
-import { PhoneIcon } from "@heroicons/react/24/solid";
+import { ChatBubbleLeftIcon, PhoneIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   children: React.ReactNode;
@@ -23,14 +23,21 @@ function Layout({ children }: Props) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <div
-          className="fixed right-8 bottom-8 md:bottom-12 md:right-20"
-          title="Talk to Astro expert"
-        >
+        <div className="fixed right-8 bottom-8 flex flex-col space-y-4 md:bottom-12 md:right-20">
           <Link
             href="https://wa.me/9040023006"
             className="whatsapp_float"
             target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex space-x-2 rounded-full bg-[#C83000]/90 p-3 px-5 font-semibold text-white shadow-2xl shadow-gray-900">
+              <ChatBubbleLeftIcon className="h-6 w-6 text-white" />
+              <p>Chat with an Expert</p>
+            </div>
+          </Link>
+          <Link
+            // href="https://wa.me/9040023006"
+            href="tel:9040023006"
             rel="noopener noreferrer"
           >
             <div className="flex space-x-2 rounded-full bg-[#C83000]/90 p-3 px-5 font-semibold text-white shadow-2xl shadow-gray-900">
