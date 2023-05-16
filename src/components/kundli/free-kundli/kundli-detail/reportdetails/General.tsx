@@ -1,9 +1,11 @@
 import Section from "@/components/Section";
-import React, { Key, useState } from "react";
+import React, { Key, useEffect, useState } from "react";
 import Planetary from "./generaldetails/Planetary";
 import VimshottariDasha from "./generaldetails/VimshottariDasha";
 import Yoga from "./generaldetails/Yoga";
 import GeneralDetails from "./generaldetails/GeneralDetails";
+import { postFetcher } from "@/service";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -18,6 +20,28 @@ const tabOptions: Tab = [
 
 const General = (props: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
+  const [basicDetail, setBasicDetail] = useState<any>();
+  useEffect(() => {
+    let bodyData: any;
+    if (typeof window !== "undefined") {
+      console.log("kundilll", localStorage.getItem("kundliData"));
+      bodyData = localStorage.getItem("kundliData");
+    }
+    const generalResponse = async () => {
+      const result = await postFetcher(
+        "/kundli/general_nakshatra_report",
+        bodyData
+      );
+      console.log(result?.res);
+      if (result?.status) {
+        setBasicDetail(JSON.parse(result?.res ?? ""));
+      } else {
+        toast.error(result.msg);
+      }
+    };
+
+    generalResponse();
+  }, []);
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
@@ -53,7 +77,21 @@ const General = (props: Props) => {
           ))}
         </div>
       </Section>
-      <div>{getMainContent(activeTab)}</div>
+      <Section>
+        {activeTab === 0 && (
+          <div className="space-y-4">
+            {Object.keys(basicDetail).map((key, index) => (
+              <div
+                key={index}
+                className="space-y-1 rounded-xl border border-gray-300 p-4"
+              >
+                <p className="font-semibold">{key}</p>
+                <p>{basicDetail[`${key}`]}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </Section>
     </div>
   );
 };
