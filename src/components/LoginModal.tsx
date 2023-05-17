@@ -14,9 +14,10 @@ import { toast } from "react-toastify";
 type Props = {
   isOpen?: boolean;
   setIsOpen: any;
+  setIsLogged: any;
 };
 
-function LoginModal({ isOpen, setIsOpen }: Props) {
+function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
   const [step, setStep] = useState(1);
   const [error, setError] = useState<any>();
   const [mobileNumber, setMobileNumber] = useState<any>();
@@ -65,21 +66,27 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
         otp: otpValue,
         mobileNumber: mobileNumber,
       });
-      const result = await postFetcher("/verify-otp", body);
-      if (result.msg === "Otp verified successfully") {
-        const response = await postFetcher("/auth/sign-in", body);
-        if (response.msg === "login successfully" && response.existingUser) {
-          closeModal();
-          toast.success("Login successfully");
-        } else if (
-          response.msg === "login successfully" &&
-          !response.existingUser
-        ) {
-          setStep(3);
-        } else {
-          setError("Please try after sometime");
-        }
+      // const result = await postFetcher("/verify-otp", body);
+      // if (result.msg === "Otp verified successfully") {
+      const response = await postFetcher("/auth/sign-in", body);
+      if (response.msg === "login successfully") {
+        closeModal();
+        toast.success("Login successfully");
+        setIsLogged(true);
+      } else if (response.msg === "OTP not verified") {
+        toast.error("wrong OTP");
+      } else {
+        toast.error("Error, Try again Later!");
       }
+      //  else if (
+      //   response.msg === "login successfully" &&
+      //   !response.existingUser
+      // ) {
+      //   setStep(3);
+      // } else {
+      //   setError("Please try after sometime");
+      // }
+      // }
     } catch (err) {
       console.log(err);
     }
@@ -202,7 +209,7 @@ function LoginModal({ isOpen, setIsOpen }: Props) {
                         <Button
                           onClick={handleSubmitOtp}
                           className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
-                          btnText="Submit"
+                          btnText="Login"
                         />
                       </div>
                     </div>

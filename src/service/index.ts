@@ -13,6 +13,7 @@ export const postFetcher = async (
         "Content-Type": "application/json",
       },
       body,
+      credentials: "include",
     });
 
     const response = await result.json();
