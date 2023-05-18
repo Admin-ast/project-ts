@@ -51,7 +51,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
     const result = await postFetcher("/auth/profile-update", body, "PUT");
     if (result?.msg === "updated successfully") {
       closeModal();
-      toast.success("Login successfully");
+      toast.success("Updated successfully");
     } else {
     }
   };
