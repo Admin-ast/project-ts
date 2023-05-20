@@ -5,6 +5,7 @@ import { AiFillFire } from "react-icons/ai";
 import { GrLanguage } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
 import Link from "next/link";
+import { card } from "../../../utils/list";
 
 const categories = [
   {
@@ -103,117 +104,6 @@ const trending = [
   },
 ];
 
-const card = [
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    img: "/assets/appointment/live-astro.png",
-    text: "What to do if a girl has a mangal dosh and a boy does not?",
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-];
-
 type Props = {};
 
 const Blog = (props: Props) => {
@@ -276,8 +166,9 @@ const Blog = (props: Props) => {
             <hr className=" mr-5 w-full border border-[#D9D9D9]" />
             <div className="grid grid-cols-3 gap-5 pt-6">
               {card.map((item, index) => (
-                <div
+                <Link
                   key={index}
+                  href={`/blog/${item?.id}`}
                   className="flex w-[286px] flex-col  rounded-[20px] bg-[#FFF7E5]"
                 >
                   <img
@@ -294,7 +185,7 @@ const Blog = (props: Props) => {
                       <p>March 31,2023</p>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
