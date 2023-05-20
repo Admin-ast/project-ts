@@ -6,7 +6,7 @@ import React from "react";
 
 type Props = {};
 
-function compatibility({}: Props) {
+function Compatibility({}: Props) {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero text="Compatibility" icon="/assets/compatibility/hero-icon.png" />
@@ -24,4 +24,4 @@ function compatibility({}: Props) {
   );
 }
 
-export default compatibility;
+export default Compatibility;

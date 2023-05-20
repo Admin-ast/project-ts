@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Section from "../Section";
+import Link from "next/link";
 
 type Props = {};
 
@@ -46,9 +47,13 @@ const Zodiac = (props: Props) => {
                     woman in your life has everything you need to know from sex,
                     career, home life, gift ideas, and love compatibility.
                   </p>
-                  <button className="mt-4 font-semibold md:mt-0">
+
+                  <Link
+                    className="mt-4 font-semibold md:mt-0"
+                    href={"/compatibility/zodiacMan"}
+                  >
                     CONTINUE READING
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,9 +94,12 @@ const Zodiac = (props: Props) => {
                   your life has everything you need to know from sex, career,
                   home life, gift ideas, and love compatibility.
                 </p>
-                <button className="mt-4 font-semibold md:mt-0">
+                <Link
+                  className="mt-4 font-semibold md:mt-0"
+                  href={"/compatibility/zodiacWomen"}
+                >
                   CONTINUE READING
-                </button>
+                </Link>
               </div>
             </div>
           </div>
