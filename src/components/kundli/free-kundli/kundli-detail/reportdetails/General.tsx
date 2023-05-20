@@ -80,7 +80,7 @@ const General = (props: Props) => {
       <Section>
         {activeTab === 0 && (
           <div className="space-y-4">
-            {Object.keys(basicDetail).map((key, index) => (
+            {Object.keys(basicDetail ?? {}).map((key, index) => (
               <div
                 key={index}
                 className="space-y-1 rounded-xl border border-gray-300 p-4"
