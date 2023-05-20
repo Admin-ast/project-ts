@@ -56,10 +56,10 @@ const links: Links[] = [
     name: "Compatibility",
     url: "/compatibility",
   },
-  // {
-  //   name: "Learn",
-  //   url: "",
-  // },
+  {
+    name: "Blog",
+    url: "/blog",
+  },
 ];
 
 function Hero({}: Props) {
