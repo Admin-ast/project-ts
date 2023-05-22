@@ -47,7 +47,7 @@ function GetPanchang({}: Props) {
     };
     const ashubhaMuhurat = async () => {
       const result = await postFetcher("/panchang/ashubhaMuhurat", bodyData);
-      const data = result?.response ? JSON.parse(result?.response) : "";
+      const data = result?.res ? JSON.parse(result?.res) : "";
       const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
       setAshubhaMuhurat({ abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal });
     };
@@ -74,6 +74,7 @@ function GetPanchang({}: Props) {
               name={"location"}
             /> */}
               <Combo
+                hasDefaultValue={true}
                 setValue={setValue}
                 setPlaceName={setPlaceName}
                 placeholder="Enter City Name"
