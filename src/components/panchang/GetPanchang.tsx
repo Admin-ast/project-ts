@@ -74,6 +74,7 @@ function GetPanchang({}: Props) {
               name={"location"}
             /> */}
               <Combo
+                hasDefaultValue={true}
                 setValue={setValue}
                 setPlaceName={setPlaceName}
                 placeholder="Enter City Name"

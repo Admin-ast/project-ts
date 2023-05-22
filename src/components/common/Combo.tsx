@@ -9,6 +9,7 @@ export default function Combo({
   className,
   setPlaceName,
   setTrigger,
+  hasDefaultValue,
 }: any) {
   const [selected, setSelected] = useState();
   const [query, setQuery] = useState("New Delhi, DL, India");
@@ -50,7 +51,7 @@ export default function Combo({
   return (
     <div className="">
       <Combobox
-        value={selected || "New Delhi, DL, India"}
+        value={selected || (hasDefaultValue && "New Delhi, DL, India")}
         onChange={(e) => locationSelection(e)}
       >
         <div className="relative">
