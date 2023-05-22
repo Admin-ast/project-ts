@@ -34,7 +34,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
   } = useForm();
   const onSubmit1 = async (data: any) => {
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
-    const result = await postFetcher("/generate-otp", body);
+    const result = await postFetcher("/otp/generate-otp", body);
     if (result.msg === "Otp has been sent successfully on your mobile number") {
       setMobileNumber(data.mobileNumber);
       setStep(2);
