@@ -1,23 +1,40 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { numberOptions, monthOptions } from "../../../../utils";
 import { Form, Input, Select } from "@/components/forms";
+import Combo from "@/components/common/Combo";
 
 type Props = {};
 
 function NewKundliForm({}: Props) {
+  const [malePlace, setMalePlace] = useState<any>({});
+  const [femalePlace, setFemalePlace] = useState<any>({});
   const router = useRouter();
   const {
     register,
+    setValue,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data: any) => {
     console.log("data is", data);
+    console.log(malePlace);
     // router.push("kundli-matching/match-making-details");
   };
+  useEffect(() => {
+    setValue("m_lat", malePlace?.lat);
+    setValue("m_lon", malePlace?.lon);
+    setValue("m_tzone", malePlace?.tzone);
+  }, [malePlace.lat]);
+
+  useEffect(() => {
+    setValue("f_lat", femalePlace?.lat);
+    setValue("f_lon", femalePlace?.lon);
+    setValue("f_tzone", femalePlace?.tzone);
+  }, [femalePlace.lat]);
+
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col lg:h-[550px] lg:justify-between">
@@ -31,8 +48,8 @@ function NewKundliForm({}: Props) {
               <div className="flex flex-col gap-2">
                 <Input
                   type={"string"}
-                  name={"pFirstName"}
-                  id="pFirstName"
+                  name={"m_name"}
+                  id="m_name"
                   register={register}
                   required={true}
                   label="Name"
@@ -42,8 +59,8 @@ function NewKundliForm({}: Props) {
 
                 <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3">
                   <Select
-                    name={"day"}
-                    id="day"
+                    name={"m_day"}
+                    id="m_day"
                     register={register}
                     required={true}
                     label="Birth Day*"
@@ -51,8 +68,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 31)}
                   />
                   <Select
-                    name={"month"}
-                    id="month"
+                    name={"m_month"}
+                    id="m_month"
                     register={register}
                     required={true}
                     label="Birth Month*"
@@ -60,8 +77,8 @@ function NewKundliForm({}: Props) {
                     options={monthOptions()}
                   />
                   <Select
-                    name={"year"}
-                    id="year"
+                    name={"m_year"}
+                    id="m_year"
                     register={register}
                     required={true}
                     label="Birth Year*"
@@ -69,8 +86,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1928, 2023)}
                   />
                   <Select
-                    name={"hour"}
-                    id="hour"
+                    name={"m_hour"}
+                    id="m_hour"
                     register={register}
                     required={true}
                     label="Birth Hour*"
@@ -78,8 +95,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 23)}
                   />
                   <Select
-                    name={"min"}
-                    id="min"
+                    name={"m_min"}
+                    id="m_min"
                     register={register}
                     required={true}
                     label="Birth Minute*"
@@ -87,8 +104,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 59)}
                   />
                   <Select
-                    name={"second"}
-                    id="second"
+                    name={"m_second"}
+                    id="m_second"
                     register={register}
                     required={true}
                     label="Birth Second*"
@@ -136,15 +153,11 @@ function NewKundliForm({}: Props) {
                   placeholder={""}
                   className="rounded"
                 /> */}
-                <Input
-                  type={"string"}
-                  name={"pBirthPlace"}
-                  id="pBirthPlace"
-                  register={register}
-                  required={true}
-                  label="Birth Place"
-                  placeholder={""}
-                  className="rounded"
+                <Combo
+                  setValue={setMalePlace}
+                  isMatching={true}
+                  placeholder="Enter your birth place"
+                  className="w-full rounded-lg border border-gray-500 py-3 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"
                 />
                 {/* <Input
                   type={"string"}
@@ -168,8 +181,8 @@ function NewKundliForm({}: Props) {
               <div className="flex flex-col gap-2">
                 <Input
                   type={"string"}
-                  name={"pFirstName"}
-                  id="pFirstName"
+                  name={"f_name"}
+                  id="f_name"
                   register={register}
                   required={true}
                   label="Name"
@@ -178,8 +191,8 @@ function NewKundliForm({}: Props) {
                 />
                 <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3">
                   <Select
-                    name={"day"}
-                    id="day"
+                    name={"f_day"}
+                    id="f_day"
                     register={register}
                     required={true}
                     label="Birth Day*"
@@ -187,8 +200,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 31)}
                   />
                   <Select
-                    name={"month"}
-                    id="month"
+                    name={"f_month"}
+                    id="f_month"
                     register={register}
                     required={true}
                     label="Birth Month*"
@@ -196,8 +209,8 @@ function NewKundliForm({}: Props) {
                     options={monthOptions()}
                   />
                   <Select
-                    name={"year"}
-                    id="year"
+                    name={"f_year"}
+                    id="f_year"
                     register={register}
                     required={true}
                     label="Birth Year*"
@@ -205,8 +218,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1928, 2023)}
                   />
                   <Select
-                    name={"hour"}
-                    id="hour"
+                    name={"f_hour"}
+                    id="f_hour"
                     register={register}
                     required={true}
                     label="Birth Hour*"
@@ -214,8 +227,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 23)}
                   />
                   <Select
-                    name={"min"}
-                    id="min"
+                    name={"f_min"}
+                    id="f_min"
                     register={register}
                     required={true}
                     label="Birth Minute*"
@@ -223,8 +236,8 @@ function NewKundliForm({}: Props) {
                     options={numberOptions(1, 59)}
                   />
                   <Select
-                    name={"second"}
-                    id="second"
+                    name={"f_second"}
+                    id="f_second"
                     register={register}
                     required={true}
                     label="Birth Second*"
@@ -272,15 +285,11 @@ function NewKundliForm({}: Props) {
                   placeholder={""}
                   className="rounded"
                 /> */}
-                <Input
-                  type={"string"}
-                  name={"pBirthPlace"}
-                  id="pBirthPlace"
-                  register={register}
-                  required={true}
-                  label="Birth Place"
-                  placeholder={""}
-                  className="rounded"
+                <Combo
+                  setValue={setFemalePlace}
+                  isMatching={true}
+                  placeholder="Enter your birth place"
+                  className="w-full rounded-lg border border-gray-500 py-3 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"
                 />
                 {/* <Input
                   type={"string"}
