@@ -1,7 +1,9 @@
-import { Form, Input } from "@/components/forms";
 import { useRouter } from "next/router";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { numberOptions, monthOptions } from "../../../../utils";
+import { Form, Input, Select } from "@/components/forms";
+
 type Props = {};
 
 function NewKundliForm({}: Props) {
@@ -14,7 +16,7 @@ function NewKundliForm({}: Props) {
 
   const onSubmit = (data: any) => {
     console.log("data is", data);
-    router.push("kundli-matching/match-making-details");
+    // router.push("kundli-matching/match-making-details");
   };
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
@@ -23,28 +25,78 @@ function NewKundliForm({}: Props) {
           <div className="space-y-4">
             <p className="text-2xl lg:text-[32px]">{`Partner's Detail`}</p>
             <div className="rounded-3xl border-2 border-[#A9A9A9] p-6">
-              <div className="grid-col-1 grid gap-y-2 lg:grid-cols-2 lg:gap-y-3 lg:gap-x-3">
+              <div className=" bg mb-2 w-full rounded-xl border p-3 text-center">
+                {`Boy's Details`}
+              </div>
+              <div className="flex flex-col gap-2">
                 <Input
                   type={"string"}
                   name={"pFirstName"}
                   id="pFirstName"
                   register={register}
                   required={true}
-                  label="First Name"
+                  label="Name"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
-                <Input
-                  type={"string"}
-                  name={"pLastName"}
-                  id="pLastName"
-                  register={register}
-                  required={true}
-                  label="Last Name"
-                  placeholder={""}
-                  className="!rounded-xl"
-                />
-                <Input
+
+                <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3">
+                  <Select
+                    name={"day"}
+                    id="day"
+                    register={register}
+                    required={true}
+                    label="Birth Day*"
+                    errors={errors}
+                    options={numberOptions(1, 31)}
+                  />
+                  <Select
+                    name={"month"}
+                    id="month"
+                    register={register}
+                    required={true}
+                    label="Birth Month*"
+                    errors={errors}
+                    options={monthOptions()}
+                  />
+                  <Select
+                    name={"year"}
+                    id="year"
+                    register={register}
+                    required={true}
+                    label="Birth Year*"
+                    errors={errors}
+                    options={numberOptions(1928, 2023)}
+                  />
+                  <Select
+                    name={"hour"}
+                    id="hour"
+                    register={register}
+                    required={true}
+                    label="Birth Hour*"
+                    errors={errors}
+                    options={numberOptions(1, 23)}
+                  />
+                  <Select
+                    name={"min"}
+                    id="min"
+                    register={register}
+                    required={true}
+                    label="Birth Minute*"
+                    errors={errors}
+                    options={numberOptions(1, 59)}
+                  />
+                  <Select
+                    name={"second"}
+                    id="second"
+                    register={register}
+                    required={true}
+                    label="Birth Second*"
+                    errors={errors}
+                    options={numberOptions(1, 59)}
+                  />
+                </div>
+                {/* <Input
                   type={"string"}
                   name={"pGender"}
                   id="pGender"
@@ -52,7 +104,7 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="Gender"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"string"}
@@ -62,7 +114,7 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="occupation"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"date"}
@@ -72,7 +124,7 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="Date Of Birth"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"Time"}
@@ -82,8 +134,8 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="Time Of Birth"
                   placeholder={""}
-                  className="!rounded-xl"
-                />
+                  className="rounded"
+                /> */}
                 <Input
                   type={"string"}
                   name={"pBirthPlace"}
@@ -92,9 +144,9 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="Birth Place"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
-                <Input
+                {/* <Input
                   type={"string"}
                   name={"pMaritalStatus"}
                   id="pMaritalStatus"
@@ -102,95 +154,144 @@ function NewKundliForm({}: Props) {
                   required={true}
                   label="Marital Status"
                   placeholder={""}
-                  className="!rounded-xl"
-                />
+                  className="rounded"
+                /> */}
               </div>
             </div>
           </div>
           <div className="space-y-4">
             <p className="text-2xl lg:text-[32px]">{`Your Detail`}</p>
             <div className="rounded-3xl border-2 border-[#A9A9A9] p-6">
-              <div className="grid-col-1 grid gap-y-2 lg:grid-cols-2 lg:gap-y-3 lg:gap-x-3">
+              <div className=" bg mb-2 w-full rounded-xl border p-3 text-center">
+                {`Girl's Details`}
+              </div>
+              <div className="flex flex-col gap-2">
                 <Input
                   type={"string"}
-                  name={"firstName"}
-                  id="firstName"
+                  name={"pFirstName"}
+                  id="pFirstName"
                   register={register}
                   required={true}
-                  label="First Name"
+                  label="Name"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
-                <Input
+                <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3">
+                  <Select
+                    name={"day"}
+                    id="day"
+                    register={register}
+                    required={true}
+                    label="Birth Day*"
+                    errors={errors}
+                    options={numberOptions(1, 31)}
+                  />
+                  <Select
+                    name={"month"}
+                    id="month"
+                    register={register}
+                    required={true}
+                    label="Birth Month*"
+                    errors={errors}
+                    options={monthOptions()}
+                  />
+                  <Select
+                    name={"year"}
+                    id="year"
+                    register={register}
+                    required={true}
+                    label="Birth Year*"
+                    errors={errors}
+                    options={numberOptions(1928, 2023)}
+                  />
+                  <Select
+                    name={"hour"}
+                    id="hour"
+                    register={register}
+                    required={true}
+                    label="Birth Hour*"
+                    errors={errors}
+                    options={numberOptions(1, 23)}
+                  />
+                  <Select
+                    name={"min"}
+                    id="min"
+                    register={register}
+                    required={true}
+                    label="Birth Minute*"
+                    errors={errors}
+                    options={numberOptions(1, 59)}
+                  />
+                  <Select
+                    name={"second"}
+                    id="second"
+                    register={register}
+                    required={true}
+                    label="Birth Second*"
+                    errors={errors}
+                    options={numberOptions(1, 59)}
+                  />
+                </div>
+                {/* <Input
                   type={"string"}
-                  name={"lastName"}
-                  id="lastName"
-                  register={register}
-                  required={true}
-                  label="Last Name"
-                  placeholder={""}
-                  className="!rounded-xl"
-                />
-                <Input
-                  type={"string"}
-                  name={"gender"}
-                  id="gender"
+                  name={"pGender"}
+                  id="pGender"
                   register={register}
                   required={true}
                   label="Gender"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"string"}
-                  name={"occupation"}
-                  id="occupation"
+                  name={"pOccupation"}
+                  id="pOccupation"
                   register={register}
                   required={true}
                   label="occupation"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"date"}
-                  name={"dob"}
-                  id="dob"
+                  name={"pDob"}
+                  id="pDob"
                   register={register}
                   required={true}
                   label="Date Of Birth"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
                 <Input
                   type={"Time"}
-                  name={"tob"}
-                  id="tob"
+                  name={"pTob"}
+                  id="pTob"
                   register={register}
                   required={true}
                   label="Time Of Birth"
                   placeholder={""}
-                  className="!rounded-xl"
-                />
+                  className="rounded"
+                /> */}
                 <Input
                   type={"string"}
-                  name={"birthPlace"}
-                  id="birthPlace"
+                  name={"pBirthPlace"}
+                  id="pBirthPlace"
                   register={register}
                   required={true}
                   label="Birth Place"
                   placeholder={""}
-                  className="!rounded-xl"
+                  className="rounded"
                 />
-                <Input
+                {/* <Input
                   type={"string"}
-                  name={"maritalStatus"}
-                  id="maritalStatus"
+                  name={"pMaritalStatus"}
+                  id="pMaritalStatus"
                   register={register}
                   required={true}
                   label="Marital Status"
                   placeholder={""}
-                  className="!rounded-xl"
-                />
+                  className="rounded"
+                /> */}
               </div>
             </div>
           </div>
