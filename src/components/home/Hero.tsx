@@ -96,14 +96,14 @@ function Hero({}: Props) {
       <div className="w-full px-2 ">
         <Slider slides={slides} />
       </div>
-      <div className="flex h-full flex-col items-center justify-center text-center">
+      {/* <div className="flex h-full flex-col items-center justify-center text-center">
         <p className="mb-3 text-lg font-black text-[#F0C668] lg:mb-[29px] lg:text-[32px]">
           PROFESSIONAL ASTROLOGY CONSULTATIONS
         </p>
         <p className="bg-gradient-from-t h-fit bg-gradient-to-b from-[#FDFF44] to-[#C83000] bg-clip-text text-3xl font-black text-transparent lg:text-[75px] lg:leading-[100px]">
           Let the stars Guide you
         </p>
-      </div>
+      </div> */}
       <HeroCard />
     </div>
   );

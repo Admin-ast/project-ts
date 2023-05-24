@@ -22,7 +22,7 @@ function Slider({ slides }: Props) {
       >
         {slides &&
           slides.length > 0 &&
-          slides.map((slide, index) => {
+          slides.map((slide: any, index: any) => {
             return (
               <div key={index}>
                 <SwiperSlide>
