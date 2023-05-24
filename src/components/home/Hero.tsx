@@ -56,6 +56,10 @@ const links: Links[] = [
     url: "/compatibility",
   },
   {
+    name: "Shop",
+    url: "/shop/shop",
+  },
+  {
     name: "Blog",
     url: "/blog",
   },
