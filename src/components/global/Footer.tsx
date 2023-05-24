@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaPinterest,
   FaLinkedin,
+  FaYoutube,
 } from "react-icons/fa";
 import Section from "../Section";
 
@@ -154,7 +155,12 @@ const social: Social[] = [
   {
     icon: <FaLinkedin size={30} />,
     label: "facebook",
-    url: "https://www.linkedin.com/in/astrosevatalk/",
+    url: "https://www.linkedin.com/company/astro-seva-talk/",
+  },
+  {
+    icon: <FaYoutube size={30} />,
+    label: "youtube",
+    url: "https://www.youtube.com/@astrosevatalk",
   },
 ];
 

@@ -2,6 +2,7 @@ import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import React, { Key, useEffect, useState } from "react";
 import SecondaryTable from "./SecondaryTable";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -200,7 +201,11 @@ function Kundli({}: Props) {
       }
       const result = await postFetcher("/kundli/planets", bodyData);
       console.log(result);
-      setPlanetDetails(JSON.parse(result?.response ?? ""));
+      if (result.status) {
+        setPlanetDetails(JSON.parse(result?.res ?? ""));
+      } else {
+        toast.error(result.msg);
+      }
     };
     planetResponse();
   }, []);

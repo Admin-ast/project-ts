@@ -119,6 +119,7 @@ function NewKundliForm({}: Props) {
                 className="!rounded-md"
               /> */}
               <Combo
+                hasDefaultValue={false}
                 setValue={setValue}
                 placeholder="Enter your birth place"
                 className="w-full rounded-lg border border-gray-500 py-3 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"

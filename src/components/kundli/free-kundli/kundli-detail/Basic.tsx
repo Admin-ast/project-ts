@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import React, { useEffect, useState } from "react";
 import PrimaryTable from "./PrimaryTable";
 import { postFetcher } from "@/service";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -55,25 +56,23 @@ function Basic({}: Props) {
       console.log("kundilll", localStorage.getItem("kundliData"));
       bodyData = localStorage.getItem("kundliData");
     }
-    // const bodyData = JSON.stringify({
-    //   day: "10",
-    //   month: "5",
-    //   year: "1990",
-    //   hour: "19",
-    //   min: "55",
-    //   lat: "19.2",
-    //   lon: "25.2",
-    //   tzone: "5.5",
-    // });
-
     const birthResponse = async () => {
       const result = await postFetcher("/kundli/birthDetails", bodyData);
-      setBasicDetails(JSON.parse(result?.response ?? ""));
+      console.log({ result });
+      if (result?.status) {
+        setBasicDetails(JSON.parse(result?.res ?? ""));
+      } else {
+        toast.error(result.msg);
+      }
     };
 
     const avakhadaResponse = async () => {
       const result = await postFetcher("/kundli/avakhadaDetails", bodyData);
-      setAvakhadaDetails(JSON.parse(result?.response ?? ""));
+      if (result?.status) {
+        setAvakhadaDetails(JSON.parse(result?.res ?? ""));
+      } else {
+        toast.error(result.msg);
+      }
     };
     birthResponse();
     avakhadaResponse();

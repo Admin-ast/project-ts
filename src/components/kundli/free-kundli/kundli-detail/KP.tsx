@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import React, { Key, useEffect, useState } from "react";
 import SecondaryTable from "./SecondaryTable";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -27,7 +28,11 @@ function KP({}: Props) {
         bodyData = localStorage.getItem("kundliData");
       }
       const result = await postFetcher("/kundli/kp_planets", bodyData);
-      setKPPlanetDetails(JSON.parse(result?.response));
+      if (result.status) {
+        setKPPlanetDetails(JSON.parse(result?.res));
+      } else {
+        toast.error(result.msg);
+      }
     };
     const cuspResponse = async () => {
       const bodyData = JSON.stringify({
@@ -41,8 +46,11 @@ function KP({}: Props) {
         tzone: "5.5",
       });
       const result = await postFetcher("/kundli/kp_house_cusps", bodyData);
-      console.log("result", result);
-      setCuspDetails(JSON.parse(result?.response));
+      if (result.status) {
+        setCuspDetails(JSON.parse(result?.res));
+      } else {
+        toast.error(result.msg);
+      }
     };
     cuspResponse();
     planetResponse();

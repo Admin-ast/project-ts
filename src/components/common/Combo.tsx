@@ -9,6 +9,8 @@ export default function Combo({
   className,
   setPlaceName,
   setTrigger,
+  isMatching,
+  hasDefaultValue,
 }: any) {
   const [selected, setSelected] = useState();
   const [query, setQuery] = useState("New Delhi, DL, India");
@@ -37,18 +39,38 @@ export default function Combo({
   }, [query]);
 
   const locationSelection = (e: any) => {
-    setValue("lat", e?.properties?.lat);
-    setValue("lon", e?.properties?.lon);
-    setValue("tzone", e?.properties?.timezone?.offset_DST_seconds / 3600);
-    // console.log("e", e?.properties?.timezone?.offset_DST_seconds / 3600);
-    setSelected(e?.properties?.formatted);
-    setPlaceName(e?.properties?.formatted);
+    if (isMatching) {
+      console.log(
+        e?.properties?.lat,
+        e?.properties?.lon,
+        e?.properties?.timezone?.offset_DST_seconds / 3600
+      );
+      setValue({
+        lat: e?.properties?.lat,
+        lon: e?.properties?.lon,
+        tzone: e?.properties?.timezone?.offset_DST_seconds / 3600,
+        place: e?.properties?.formatted,
+      });
+      setSelected(e?.properties?.formatted);
+      if (setPlaceName) {
+        setPlaceName(e?.properties?.formatted);
+      }
+    } else {
+      setValue("lat", e?.properties?.lat);
+      setValue("lon", e?.properties?.lon);
+      setValue("tzone", e?.properties?.timezone?.offset_DST_seconds / 3600);
+      // console.log("e", e?.properties?.timezone?.offset_DST_seconds / 3600);
+      setSelected(e?.properties?.formatted);
+      if (setPlaceName) {
+        setPlaceName(e?.properties?.formatted);
+      }
+    }
   };
 
   return (
     <div className="">
       <Combobox
-        value={selected || "New Delhi, DL, India"}
+        value={selected || (hasDefaultValue && "New Delhi, DL, India")}
         onChange={(e) => locationSelection(e)}
       >
         <div className="relative">

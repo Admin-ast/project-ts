@@ -67,7 +67,7 @@ function PersonalDetail({
   const onSubmit = async (data: any) => {
     setPersonalInfo(data);
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
-    const result = await postFetcher("/generate-otp", body);
+    const result = await postFetcher("/otp/generate-otp", body);
     if (result.msg === "Otp has been sent successfully on your mobile number") {
       setPersonalInfo(data);
       setMobileNumber(data.mobileNumber);
@@ -87,7 +87,7 @@ function PersonalDetail({
         otp: otpValue,
         mobileNumber: personalInfo.mobileNumber,
       });
-      const result = await postFetcher("/verify-otp", body);
+      const result = await postFetcher("/otp/verify-otp", body);
       if ((result.msg = "Otp verified successfully")) {
         const body = JSON.stringify(personalInfo);
         const response = await postFetcher("/astrologer/register", body);
