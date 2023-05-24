@@ -9,7 +9,10 @@ type Props = {};
 
 function NewKundliForm({}: Props) {
   const [malePlace, setMalePlace] = useState<any>({});
-  const [femalePlace, setFemalePlace] = useState<any>({});
+  const [malePlaceName, setMalePlaceName] = useState<any>("");
+
+  const [femalePlace, setFemalePlace] = useState<any>("");
+  const [femalePlaceName, setFemalePlaceName] = useState<any>("");
   const router = useRouter();
   const {
     register,
@@ -19,20 +22,22 @@ function NewKundliForm({}: Props) {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log("data is", data);
-    console.log(malePlace);
-    // router.push("kundli-matching/match-making-details");
+    console.log("data is", JSON.stringify(data));
+    localStorage.setItem("match-making", JSON.stringify(data));
+    router.push("kundli-matching/match-making-details");
   };
   useEffect(() => {
     setValue("m_lat", malePlace?.lat);
     setValue("m_lon", malePlace?.lon);
     setValue("m_tzone", malePlace?.tzone);
+    setValue("m_place", malePlaceName);
   }, [malePlace.lat]);
 
   useEffect(() => {
     setValue("f_lat", femalePlace?.lat);
     setValue("f_lon", femalePlace?.lon);
     setValue("f_tzone", femalePlace?.tzone);
+    setValue("f_place", femalePlaceName);
   }, [femalePlace.lat]);
 
   return (
@@ -155,6 +160,7 @@ function NewKundliForm({}: Props) {
                 /> */}
                 <Combo
                   setValue={setMalePlace}
+                  setPlaceName={setMalePlaceName}
                   isMatching={true}
                   placeholder="Enter your birth place"
                   className="w-full rounded-lg border border-gray-500 py-3 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"
@@ -287,6 +293,7 @@ function NewKundliForm({}: Props) {
                 /> */}
                 <Combo
                   setValue={setFemalePlace}
+                  setPlaceName={setFemalePlaceName}
                   isMatching={true}
                   placeholder="Enter your birth place"
                   className="w-full rounded-lg border border-gray-500 py-3 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:outline-none focus:ring-0"

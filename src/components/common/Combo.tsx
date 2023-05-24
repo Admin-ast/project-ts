@@ -51,6 +51,10 @@ export default function Combo({
         tzone: e?.properties?.timezone?.offset_DST_seconds / 3600,
         place: e?.properties?.formatted,
       });
+      setSelected(e?.properties?.formatted);
+      if (setPlaceName) {
+        setPlaceName(e?.properties?.formatted);
+      }
     } else {
       setValue("lat", e?.properties?.lat);
       setValue("lon", e?.properties?.lon);
