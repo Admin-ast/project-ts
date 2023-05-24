@@ -3,9 +3,10 @@ import Link from "next/link";
 import Section from "../Section";
 import { useEffect, useState } from "react";
 import LoginModal from "../LoginModal";
-import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 import PopoverComp from "../common/Popover";
+// @ts-ignore
+import Cookies from "js-cookie";
 type Props = {};
 
 function Navbar({}: Props) {

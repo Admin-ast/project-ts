@@ -24,7 +24,7 @@ export const monthOptions = () => {
   return months;
 };
 
-let monthOrder = {
+let monthOrder: { [key: string]: string } = {
   "1": "Jan",
   "2": "Feb",
   "3": "Mar",
@@ -39,6 +39,6 @@ let monthOrder = {
   "12": "Dec",
 };
 
-export const returnMonth = (e: any) => {
+export const returnMonth = (e: keyof typeof monthOrder) => {
   return monthOrder[e];
 };
