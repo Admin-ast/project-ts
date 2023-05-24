@@ -139,6 +139,11 @@ const importantLinks: ImportantLinks[] = [
     title: "Planets",
     url: "/planet",
   },
+  {
+    id: 14,
+    title: "Chinese Horoscope",
+    url: "/chines-horoscope",
+  },
 ];
 
 const social: Social[] = [
