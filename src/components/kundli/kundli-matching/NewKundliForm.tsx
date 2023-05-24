@@ -46,6 +46,7 @@ function NewKundliForm({}: Props) {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="space-y-4">
             <p className="text-2xl lg:text-[32px]">{`Partner's Detail`}</p>
+            {/* <p className="text-2xl lg:text-[32px]">{`Fill Up Partner's Detail`}</p> */}
             <div className="rounded-3xl border-2 border-[#A9A9A9] p-6">
               <div className=" bg mb-2 w-full rounded-xl border p-3 text-center">
                 {`Boy's Details`}

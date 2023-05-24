@@ -134,6 +134,11 @@ const importantLinks: ImportantLinks[] = [
     title: "Zodiac signs",
     url: "/zodic-sign",
   },
+  {
+    id: 14,
+    title: "Planets",
+    url: "/planet",
+  },
 ];
 
 const social: Social[] = [
