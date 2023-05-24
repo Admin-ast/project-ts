@@ -86,16 +86,21 @@ const importantLinks: ImportantLinks[] = [
   },
   {
     id: 6,
+    title: "Astrologer Signup",
+    url: "/signup",
+  },
+  {
+    id: 7,
     title: "FreeKundli",
     url: "/free-kundli",
   },
   {
-    id: 7,
+    id: 8,
     title: "Daily Horoscope",
     url: "/horoscope/daily-horoscope",
   },
   {
-    id: 8,
+    id: 9,
     title: "Live Video Chat",
     url: "/live-video-chat",
   },
@@ -229,7 +234,11 @@ function Footer({}: Props) {
                 {social.map((item: Social, index: Key) => (
                   <li key={index} className="cursor-pointer">
                     {" "}
-                    <Link href={item?.url} aria-label={item.label}>
+                    <Link
+                      href={item?.url}
+                      aria-label={item.label}
+                      target="_blank"
+                    >
                       {item?.icon}{" "}
                     </Link>
                   </li>

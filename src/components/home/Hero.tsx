@@ -56,7 +56,7 @@ const links: Links[] = [
     url: "/compatibility",
   },
   {
-    name: "Shop",
+    name: "Astro store-Shop",
     url: "/shop/shop",
   },
   {
