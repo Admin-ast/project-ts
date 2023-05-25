@@ -9,6 +9,7 @@ import Link from "next/link";
 import Blog from "@/components/blog/Blog";
 import Hero from "@/components/appoinments/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import BlogStatic from "@/components/blog/BlogStatic";
 
 type Props = {};
 
@@ -35,7 +36,7 @@ const BlogDesc = (props: Props) => {
           </div>
         </Section>
         <Section>
-          <div className="flex items-start justify-between gap-6 pt-8">
+          <div className="grid grid-cols-1 items-start justify-between gap-6 pt-8 md:flex lg:flex">
             <SideNavBlog />
             <div>
               <Section>
@@ -50,6 +51,7 @@ const BlogDesc = (props: Props) => {
                   />
                   <div className="my-2 text-justify">{blogde[0]?.para}</div>
                 </div>
+                <BlogStatic />
               </Section>
             </div>
           </div>
