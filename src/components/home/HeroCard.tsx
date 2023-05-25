@@ -35,17 +35,17 @@ const appointment: Appointment[] = [
 
 function HeroCard({}: Props) {
   return (
-    <div className="py-8">
+    <div className="bg-[url('/assets/cloud-bg.webp')] bg-cover py-8">
       <Section>
         <div className="">
-          <div className="grid  gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-6">
+          <div className="grid  grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
             {appointment?.map((item: Appointment, index: Key) => (
               <Link
                 key={index}
                 href={item?.url}
-                className="flex h-[204px] w-[190px] flex-col items-center justify-center space-y-2 rounded-2xl  bg-white/5  p-4"
+                className="flex h-[100px] w-[130px] flex-col items-center justify-center space-y-2 rounded-2xl bg-white/5 p-4  sm:h-[135px]  sm:w-[225px]"
               >
-                <div className="mx-auto h-[140px] w-[140px]">
+                <div className="mx-auto h-[60px] w-[45px] sm:h-[100px] sm:w-[79px]">
                   <Image
                     src={item.src}
                     alt={item.alt}

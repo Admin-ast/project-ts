@@ -77,26 +77,27 @@ const slides = [
 function Hero({}: Props) {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center justify-between space-y-12 bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-8 lg:py-[35px]">
-      <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
-        {links.map((item: Links, index: Key) => (
-          <Link key={index} href={item?.url}>
-            <p
-              className={`cursor-pointer text-[20px] font-bold text-white ${
-                router.pathname === item.url
-                  ? "underline decoration-[#B62022] underline-offset-8"
-                  : ""
-              }`}
-            >
-              {item.name}
-            </p>
-          </Link>
-        ))}
-      </div>
-      <div className="w-full px-2 ">
-        <Slider slides={slides} />
-      </div>
-      {/* <div className="flex h-full flex-col items-center justify-center text-center">
+    <div>
+      <div className="flex flex-col items-center justify-between space-y-12 bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-8 lg:py-[35px]">
+        <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
+          {links.map((item: Links, index: Key) => (
+            <Link key={index} href={item?.url}>
+              <p
+                className={`cursor-pointer text-[20px] font-bold text-white ${
+                  router.pathname === item.url
+                    ? "underline decoration-[#B62022] underline-offset-8"
+                    : ""
+                }`}
+              >
+                {item.name}
+              </p>
+            </Link>
+          ))}
+        </div>
+        <div className="w-full px-2 ">
+          <Slider slides={slides} />
+        </div>
+        {/* <div className="flex h-full flex-col items-center justify-center text-center">
         <p className="mb-3 text-lg font-black text-[#F0C668] lg:mb-[29px] lg:text-[32px]">
           PROFESSIONAL ASTROLOGY CONSULTATIONS
         </p>
@@ -104,7 +105,7 @@ function Hero({}: Props) {
           Let the stars Guide you
         </p>
       </div> */}
-      <HeroCard />
+      </div>
     </div>
   );
 }
