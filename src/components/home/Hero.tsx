@@ -78,7 +78,7 @@ function Hero({}: Props) {
   const router = useRouter();
   return (
     <div>
-      <div className="flex flex-col items-center justify-between space-y-2 bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-4 lg:py-[35px]">
+      <div className="flex flex-col items-center justify-between bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-4 md:space-y-10 lg:py-[35px]">
         <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
           {links.map((item: Links, index: Key) => (
             <Link key={index} href={item?.url}>
