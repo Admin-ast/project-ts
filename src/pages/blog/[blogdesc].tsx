@@ -14,7 +14,7 @@ import BlogStatic from "@/components/blog/BlogStatic";
 type Props = {};
 
 const BlogDesc = (props: Props) => {
-  const [blogde, setBlogde] = useState<any>({});
+  const [blogde, setBlogde] = useState<any>([]);
   const router = useRouter();
   const { blogdesc }: any = router.query;
 
@@ -38,24 +38,65 @@ const BlogDesc = (props: Props) => {
         <Section>
           <div className="grid grid-cols-1 items-start justify-between gap-6 pt-8 md:flex lg:flex">
             <SideNavBlog />
-            <div>
+            <div className="">
               <Section>
-                <div className="px-3 md:px-10">
-                  <div className=" text-[32px] font-bold">
-                    {blogde[0]?.text}
+                {blogde?.map((item, index) => (
+                  <div key={index} className="px-3 md:px-10">
+                    <div className=" text-[32px] font-bold">{item.text}</div>
+                    <img
+                      className=" auto mx-auto  rounded-[20px] object-cover object-top md:h-[342px] md:w-[514px]"
+                      src={item.img}
+                      alt=""
+                    />
+                    <div className="my-2 text-justify">{item.para}</div>
                   </div>
-                  <img
-                    className=" auto mx-auto  rounded-[20px] object-cover object-top md:h-[342px] md:w-[514px]"
-                    src={blogde[0]?.img}
-                    alt=""
-                  />
-                  <div className="my-2 text-justify">{blogde[0]?.para}</div>
-                </div>
-                <BlogStatic />
+                ))}
               </Section>
+              <BlogStatic />
             </div>
           </div>
         </Section>
+
+        {/* 
+          <div className="grid grid-cols-1    pt-8 md:flex lg:flex">
+         
+       
+        <div className="">
+        
+         <SideNavBlog />
+          
+              </div>
+      
+          
+             
+            
+            <div className="w-full">
+             
+
+            
+               <Section>
+               {blogde?.map((item,index)=>(
+                <div key={index} className="px-3 md:px-10">
+                
+                  <div className=" text-[32px] font-bold">
+                    {item.text}
+                  </div>
+                  <img
+                    className=" auto mx-auto  rounded-[20px] object-cover object-top md:h-[342px] md:w-[514px]"
+                    src={item.img}
+                    alt=""
+                  />
+                  <div className="my-2 text-justify">{item.para}</div>
+                
+                </div>
+                  ))}
+                
+              </Section>  
+              
+              <BlogStatic />
+            </div>
+            
+          </div> */}
       </div>
     </>
   );

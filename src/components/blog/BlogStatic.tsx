@@ -7,9 +7,10 @@ type Props = {};
 
 const BlogStatic = (props: Props) => {
   return (
-    <div>
+    <div className="">
       {/* ----------------------------------Missing spark in marriage--------------------------------------------------------  */}
-      <div className=" mt-[35px] flex justify-between bg-[#FFF7E5]  ">
+      {/* <div className=""> */}
+      <div className=" mt-[35px] flex justify-between  bg-[#FFF7E5]  ">
         <div className="mt-5">
           <div className="px-2">
             <p className="   text-3xl   font-bold ">
@@ -29,11 +30,12 @@ const BlogStatic = (props: Props) => {
             className=" h-full w-full   "
             src="/assets/blog/bloggirl.png"
             alt="bloggirl"
-            width={100}
+            width={200}
             height={100}
           />
         </div>
       </div>
+      {/* </div> */}
 
       {/* -------------------------MANGAL DOSH___________________________________________________________________ */}
       <Section>

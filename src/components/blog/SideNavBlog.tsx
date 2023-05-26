@@ -4,6 +4,7 @@ import { AiFillFire } from "react-icons/ai";
 import { GrLanguage } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
 import Link from "next/link";
+import Section from "../Section";
 
 function SideNavBlog() {
   const categories = [
@@ -105,7 +106,10 @@ function SideNavBlog() {
 
   return (
     <>
+      {/* <Section> */}
+
       <div className="flex w-[350px] flex-col gap-2 border-r border-[#D9D9D9]">
+        {/* <div className=" border-r border-[#D9D9D9]"> */}
         <div className="flex items-center gap-1">
           <BiCategory size={45} className="" />
           <div>
@@ -151,6 +155,7 @@ function SideNavBlog() {
           <p>ENGLISH</p>
         </div>
       </div>
+      {/* </Section> */}
     </>
   );
 }
