@@ -8,6 +8,11 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
+
+import { SiPrivateinternetaccess } from "react-icons/si";
+import { RiSecurePaymentFill } from "react-icons/ri";
+import { GoVerified } from "react-icons/go";
+
 import Section from "../Section";
 
 type Props = {};
@@ -179,6 +184,21 @@ const social: Social[] = [
   },
 ];
 
+const secure = [
+  {
+    icons: <SiPrivateinternetaccess size={30} />,
+    text: "Private & Confidential",
+  },
+  {
+    icons: <RiSecurePaymentFill size={30} />,
+    text: "Secure Payments",
+  },
+  {
+    icons: <GoVerified size={30} />,
+    text: "Verified Astrologers",
+  },
+];
+
 function Footer({}: Props) {
   return (
     <div className="bg-black py-12 text-white">
@@ -199,7 +219,7 @@ function Footer({}: Props) {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3">
+          <div className="grid lg:grid-cols-4">
             <div className="w-fit space-y-4">
               <p className="text-xl font-semibold">Important Links</p>
               <hr className="my-2   w-32 text-white" />
@@ -252,6 +272,22 @@ function Footer({}: Props) {
                       {item?.icon}{" "}
                     </Link>
                   </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="w-fit space-y-4">
+              <p className="text-xl font-semibold">Secure</p>
+              <hr className="my-2   w-32 text-white" />
+
+              <ul className="flex flex-col gap-4 ">
+                {secure.map((item, index) => (
+                  <div key={index} className="flex flex-col gap-2">
+                    <div className="flex items-center gap-2">
+                      <p>{item?.icons}</p>
+                      <p>{item?.text}</p>
+                    </div>
+                  </div>
                 ))}
               </ul>
             </div>
