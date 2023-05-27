@@ -40,15 +40,21 @@ const BlogDesc = (props: Props) => {
             <SideNavBlog />
             <div className="">
               <Section>
-                {blogde?.map((item, index) => (
+                {blogde?.map((item: any, index: any) => (
                   <div key={index} className="px-3 md:px-10">
                     <div className=" text-[32px] font-bold">{item.text}</div>
                     <img
-                      className=" auto mx-auto  rounded-[20px] object-cover object-top md:h-[342px] md:w-[514px]"
+                      className=" auto mx-auto my-7 rounded-[20px] object-cover object-top md:h-[342px] md:w-[514px]"
                       src={item.img}
                       alt=""
                     />
-                    <div className="my-2 text-justify">{item.para}</div>
+                    {item.para?.map((item: any, index: any) => {
+                      return (
+                        <div key={index} className="my-2 text-justify">
+                          {item}
+                        </div>
+                      );
+                    })}
                   </div>
                 ))}
               </Section>
