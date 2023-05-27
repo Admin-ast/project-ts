@@ -3,20 +3,23 @@ import React, { Key, useState } from "react";
 import Vimshottari from "./dashadetails/Vimshottari";
 import Yogni from "./dashadetails/Yogni";
 
-type Props = {};
+type Props = {
+  majorVdasha: any;
+  majorYogni: any;
+};
 
 type Tab = string[];
 
 const tabOptions: Tab = ["Vimshottari ", "Yogni"];
 
-const Dasha = (props: Props) => {
+const Dasha = ({ majorVdasha, majorYogni }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <Vimshottari />;
+        return <Vimshottari majorVdasha={majorVdasha} />;
       case 1:
-        return <Yogni />;
+        return <Yogni majorYogni={majorYogni} />;
       default:
         throw new Error("Unknown Step");
     }
