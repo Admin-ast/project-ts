@@ -336,10 +336,10 @@ const BlogStatic = (props: Props) => {
           <Image
             src="/assets/blog/raashi.png"
             alt="raashi"
-            width={100}
+            width={200}
             height={187}
             loading={"lazy"}
-            className=" h-full w-full"
+            className=" h-full w-full "
           />
         </div>
       </div>
