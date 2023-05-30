@@ -20,16 +20,16 @@ const appointment: Appointment[] = [
     url: "/talk-to-astrologer",
   },
   {
-    name: "Live Astrologers",
-    src: "/assets/home/hero-icon-03.webp",
-    alt: "test",
-    url: "/live-astrologer",
-  },
-  {
     name: "Live video chat",
     src: "/assets/home/hero-icon-04.webp",
     alt: "test",
     url: "/live-videochat",
+  },
+  {
+    name: "Live Astrologers",
+    src: "/assets/home/hero-icon-03.webp",
+    alt: "test",
+    url: "/live-astrologer",
   },
 ];
 
@@ -54,7 +54,7 @@ function HeroCard({}: Props) {
                     loading={"eager"}
                   />
                 </div>
-                <p className="items-center text-center font-[georgia] text-[10px] font-[700] text-white  md:text-sm lg:text-[14px]">
+                <p className="items-center text-center font-[georgia] text-[12px] font-[700] text-white  md:text-sm lg:text-[14px]">
                   {item.name}
                 </p>
               </Link>
