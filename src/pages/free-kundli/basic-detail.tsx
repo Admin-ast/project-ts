@@ -6,8 +6,9 @@ import KP from "@/components/kundli/free-kundli/kundli-detail/KP";
 import Kundli from "@/components/kundli/free-kundli/kundli-detail/Kundli";
 import Report from "@/components/kundli/free-kundli/kundli-detail/Report";
 import Section from "@/components/Section";
+import { postFetcher } from "@/service";
 import { HomeIcon } from "@heroicons/react/24/solid";
-import React, { Key, useState } from "react";
+import React, { Key, useEffect, useState } from "react";
 
 type Props = {};
 
@@ -24,7 +25,29 @@ const tabOptions: Tab = [
 ];
 
 function BasicDetail({}: Props) {
+  const [majorVdasha, setMajorVdasha] = useState({});
+  const [majorYogni, setMajorYogni] = useState({});
   const [activeTab, setActiveTab] = useState<any>(0);
+  useEffect(() => {
+    const kundli = localStorage.getItem("kundliData");
+    const majorVdasha = async () => {
+      const result = await postFetcher("/major_vdasha", kundli);
+      if (result?.status) {
+        setMajorVdasha(JSON.parse(result?.res && result?.res));
+      }
+    };
+    const majorYogni = async () => {
+      const result = await postFetcher("/major_yogini_dasha", kundli);
+      if (result?.status) {
+        // console.log(JSON.parse(result?.res && result?.res))
+        setMajorYogni(JSON.parse(result?.res && result?.res));
+      }
+    };
+    if (kundli) {
+      majorVdasha();
+      majorYogni();
+    }
+  }, []);
 
   const getMainContent = (step: any) => {
     switch (step) {
@@ -39,7 +62,7 @@ function BasicDetail({}: Props) {
       case 4:
         return <Charts />;
       case 5:
-        return <Dasha />;
+        return <Dasha majorVdasha={majorVdasha} majorYogni={majorYogni} />;
       case 6:
         return <Report />;
       //   case 4:
