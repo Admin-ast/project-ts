@@ -6,6 +6,7 @@ import Yoga from "./generaldetails/Yoga";
 import GeneralDetails from "./generaldetails/GeneralDetails";
 import { postFetcher } from "@/service";
 import { toast } from "react-toastify";
+import Vimshottari from "../dashadetails/Vimshottari";
 
 type Props = {};
 
@@ -49,7 +50,7 @@ const General = (props: Props) => {
       case 1:
         return <Planetary />;
       case 2:
-        return <VimshottariDasha />;
+        return <Vimshottari majorVdasha={{}} />;
       case 3:
         return <Yoga />;
       default:

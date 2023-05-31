@@ -17,9 +17,10 @@
     }
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.13",
+    "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.16",
     "@hookform/resolvers": "^3.0.0",
+    "@mui/material": "^5.13.3",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
