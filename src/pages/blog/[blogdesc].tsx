@@ -48,6 +48,9 @@ const BlogDesc = (props: Props) => {
                       src={item.img}
                       alt=""
                     />
+                    <div className="my-2 text-justify">{item.para}</div>
+                    {/* <div className=" text-[22px] font-semibold">{item.text2}</div>
+                    <div className="my-2 text-justify">{item.para2}</div> */}
                     {item.para?.map((item: any, index: any) => {
                       return (
                         <div key={index} className="my-2 text-justify">
