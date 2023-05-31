@@ -25,7 +25,7 @@ const Yogni = ({ majorYogni }: Props) => {
                 End Date
               </p>
             </div>
-            {majorYogni?.map((item: any, index: any) => {
+            {majorYogni.slice(0, 8)?.map((item: any, index: any) => {
               return (
                 <div
                   key={index}

@@ -41,8 +41,8 @@ export default function TemporaryDrawer({ content, anchor, button }: Props) {
         className="flex w-full justify-end p-2 "
         onClick={toggleDrawer(anchor, false)}
       >
-        <div className="mx-3 text-black">
-          <FaTimes size={30} />
+        <div className="mx-3 text-[35px]">
+          <FaTimes />
         </div>
         {/* <img src="/assets/cross.png" alt="" /> */}
       </div>
