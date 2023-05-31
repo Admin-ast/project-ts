@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Appointments from "@/components/home/Appointments";
 import Astrologer from "@/components/home/Astrologer";
 import Hero from "@/components/home/Hero";
+import HeroCard from "@/components/home/HeroCard";
 import Horoscope from "@/components/home/Horoscope";
 import Membership from "@/components/home/Membership";
 import Review from "@/components/home/Review";
@@ -28,6 +29,7 @@ export default function Home() {
         keywords="astro seva talk ,Best astrologers near me, My horoscope online, Best online astrology website in India, Vastu astrology, Horoscope Astrology, Chat with astrologer, Talk to Astrologer online, Online Astrology, free astrology chat, astroyogi, career horoscope."
       />
       <Hero />
+      <HeroCard />
       <About />
       <WhoWeAre />
       <Appointments />

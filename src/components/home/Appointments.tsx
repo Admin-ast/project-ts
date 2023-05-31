@@ -41,20 +41,20 @@ const appointment: Appointment[] = [
 
 function Appointments({}: Props) {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[46px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-4 lg:py-[30px]">
       <Section>
         <div className="">
           <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
             Appointments
           </h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-2  gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {appointment?.map((item: Appointment, index: Key) => (
               <Link
                 key={index}
                 href={item?.url}
-                className="mx-auto flex h-[204px] w-[300px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] bg-black p-4"
+                className="mx-auto flex h-[120px] w-[150px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] bg-black p-4 md:h-[204px] md:w-[300px]"
               >
-                <div className="mx-auto h-[140px] w-[140px]">
+                <div className="mx-auto h-[50px] w-[50px] md:h-[140px] md:w-[140px]">
                   <Image
                     src={item.src}
                     alt={item.alt}

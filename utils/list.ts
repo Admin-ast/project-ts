@@ -3,13 +3,32 @@ export const card = [
     id: 1,
     img: "/assets/appointment/live-astro.png",
     text: "I was aware of my agressiveness",
+    keyword: "aggressive",
     para: [
-      " Dear readers",
-      "I want to share my experience with Astroseva Talk, an astrology platform that helped me overcome my aggressive behavior. For a long time, I struggled with my temper and found myself losing important relationships because of it. I was aware of my aggressiveness but didn't know how to control it or understand it better.",
-      "That's when I stumbled upon Astroseva Talk on Instagram, and their content intrigued me. I decided to join their platform, and it turned out to be the best decision I made. Their astrologers were not only knowledgeable but also compassionate and non-judgmental. I felt comfortable sharing my problems with them and seeking their guidance.",
-      "I asked them if there were any planetary positions that made me aggressive and if there were any remedies or gemstones that could help me manage my reactions. The astrologers at Astroseva Talk were quick to respond and provided me with a detailed analysis of my birth chart. They pointed out the specific planetary positions that contributed to my aggressive behavior and suggested remedies and gemstones that could help me manage it.",
-      "In addition to this, Astroseva Talk also provided me with a plethora of other facilities, such as chat with astrologer, live astrologer, video chat with astrologer, and daily horoscope. These features helped me stay connected with their astrologers and receive guidance whenever I needed it.",
-      "Overall, I am grateful to Astroseva Talk for helping me overcome my aggressive behavior and changing my life in a positive way. Their solutions were effective, and their astrologers were empathetic and professional. I would highly recommend Astroseva Talk to anyone seeking astrological guidance and support.Visit our website: https://www.AstrosevaTalk.com",
+      { para: " Dear readers", title: "", img: "" },
+      {
+        para: "I want to share my experience with Astroseva Talk, an astrology platform that helped me overcome my aggressive behavior. For a long time, I struggled with my temper and found myself losing important relationships because of it. I was aware of my aggressiveness but didn't know how to control it or understand it better.",
+        title: "",
+        img: "",
+      },
+      {
+        para: "That's when I stumbled upon Astroseva Talk on Instagram, and their content intrigued me. I decided to join their platform, and it turned out to be the best decision I made. Their astrologers were not only knowledgeable but also compassionate and non-judgmental. I felt comfortable sharing my problems with them and seeking their guidance.",
+        title: "",
+        img: "",
+      },
+      {
+        para: "I asked them if there were any planetary positions that made me aggressive and if there were any remedies or gemstones that could help me manage my reactions. The astrologers at Astroseva Talk were quick to respond and provided me with a detailed analysis of my birth chart. They pointed out the specific planetary positions that contributed to my aggressive behavior and suggested remedies and gemstones that could help me manage it.",
+        title: "",
+        img: "",
+      },
+      {
+        para: "In addition to this, Astroseva Talk also provided me with a plethora of other facilities, such as chat with astrologer, live astrologer, video chat with astrologer, and daily horoscope. These features helped me stay connected with their astrologers and receive guidance whenever I needed it.",
+        title: "",
+        img: "",
+      },
+      {
+        para: "Overall, I am grateful to Astroseva Talk for helping me overcome my aggressive behavior and changing my life in a positive way. Their solutions were effective, and their astrologers were empathetic and professional. I would highly recommend Astroseva Talk to anyone seeking astrological guidance and support.Visit our website: https://www.AstrosevaTalk.com",
+      },
     ],
     name: "Kasturi Chaudhary",
     date: "March 31,2023",

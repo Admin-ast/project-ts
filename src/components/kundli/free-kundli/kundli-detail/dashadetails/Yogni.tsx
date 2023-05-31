@@ -2,9 +2,12 @@ import Section from "@/components/Section";
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 
-type Props = {};
+type Props = {
+  majorYogni: any;
+};
 
-const Yogni = (props: Props) => {
+const Yogni = ({ majorYogni }: Props) => {
+  console.log(majorYogni);
   return (
     <div className="mb-20 space-y-20">
       <Section>
@@ -22,42 +25,25 @@ const Yogni = (props: Props) => {
                 End Date
               </p>
             </div>
-            <div className="flex w-full items-center justify-between rounded-[10px] rounded-t">
-              <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                DWH
-              </p>
-              <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                20-12-2022
-              </p>
-              <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                <span>22-22-2000</span>
-                <IoMdArrowDropright />
-              </p>
-            </div>
-            <div className="flex w-full items-center justify-between rounded-[10px] rounded-t ">
-              <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                DWH
-              </p>
-              <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                20-12-2022
-              </p>
-              <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                <span>22-22-2000</span>
-                <IoMdArrowDropright />
-              </p>
-            </div>
-            <div className="flex w-full items-center justify-between rounded-[10px] rounded-t ">
-              <p className="w-[33.33%] border-r-2  border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                DWH
-              </p>
-              <p className="w-[33.33%] border-r-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                20-12-2022
-              </p>
-              <p className="flex w-[33.33%] items-center justify-between  border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
-                <span>22-22-2000</span>
-                <IoMdArrowDropright />
-              </p>
-            </div>
+            {majorYogni?.map((item: any, index: any) => {
+              return (
+                <div
+                  key={index}
+                  className="flex w-full items-center justify-between rounded-[10px] rounded-t"
+                >
+                  <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4 uppercase">
+                    {item?.dasha_name && item?.dasha_name.slice(0, 3)}
+                  </p>
+                  <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                    {item?.start_date && item?.start_date}
+                  </p>
+                  <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                    {item?.end_date && item?.end_date}
+                    <IoMdArrowDropright />
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </Section>
