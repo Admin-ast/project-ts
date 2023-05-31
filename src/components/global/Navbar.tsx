@@ -10,6 +10,7 @@ import TemporaryDrawer from "../common/Drawer";
 // @ts-ignore
 import Cookies from "js-cookie";
 import NavMobileData from "../NavMobileData";
+import { FaBars } from "react-icons/fa";
 type Props = {};
 
 function Navbar({}: Props) {
@@ -43,7 +44,8 @@ function Navbar({}: Props) {
             <TemporaryDrawer
               button={
                 <div className="block md:hidden">
-                  <img src="/assets/hamburger.png" alt="" />
+                  {/* <img src="/assets/hamburger.png" alt="" /> */}
+                  <FaBars size={30} className="text-white" />
                 </div>
               }
               content={<NavMobileData />}
