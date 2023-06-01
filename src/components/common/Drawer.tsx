@@ -3,6 +3,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Divider from "@mui/material/Divider";
+import { FaTimes } from "react-icons/fa";
 type Props = {
   content: any;
   anchor: any;
@@ -40,7 +41,9 @@ export default function TemporaryDrawer({ content, anchor, button }: Props) {
         className="flex w-full justify-end p-2 "
         onClick={toggleDrawer(anchor, false)}
       >
-        <div className="mx-3 text-[35px]">X</div>
+        <div className="mx-3 text-[35px]">
+          <FaTimes />
+        </div>
         {/* <img src="/assets/cross.png" alt="" /> */}
       </div>
       {content}
