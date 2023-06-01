@@ -19,10 +19,29 @@ const BlogDesc = (props: Props) => {
   const { blogdesc }: any = router.query;
 
   useEffect(() => {
-    const result = card.filter((item) => item?.id == blogdesc);
-    setBlogde(result);
+    if (router.query && router.query.blogdesc) {
+      const result = card.filter((item) => item?.id == blogdesc);
+      setBlogde(result);
+    }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router.query]);
+  const findAndReplaceKeywordsInString = (keywordLinks: any, string: any) => {
+    if (!keywordLinks || !string) {
+      return string || "";
+    }
+    keywordLinks &&
+      keywordLinks.forEach(({ key, link }: any) => {
+        console.log(key, link);
+        const regex = new RegExp(`\\b${key}\\b`, "gi");
+        string = string.replace(
+          regex,
+          `<a class="text-[blue]" href="${link}" target="_blank" rel="noopener noreferrer">${key}</a>`
+        );
+      });
+    return <div dangerouslySetInnerHTML={{ __html: string }} />;
+  };
+
   return (
     <>
       <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat ">
@@ -41,6 +60,7 @@ const BlogDesc = (props: Props) => {
             <div className="">
               <Section>
                 {blogde?.map((item: any, index: any) => (
+                  // console.log(item)
                   <div key={index} className="px-3 md:px-10">
                     <div className=" text-[32px] font-bold">{item.text}</div>
                     <img
@@ -48,10 +68,22 @@ const BlogDesc = (props: Props) => {
                       src={item.img}
                       alt=""
                     />
-                    {item.para?.map((item: any, index: any) => {
+                    {item.para?.map((itemTwo: any, index: any) => {
                       return (
-                        <div key={index} className="my-2 text-justify">
-                          {item}
+                        <div key={index} className="my-2 text-justify ">
+                          <div className="text-[22px] font-bold">
+                            {findAndReplaceKeywordsInString(
+                              item.keywords,
+                              itemTwo.title
+                            )}
+                          </div>
+                          <div className="">
+                            <span className="font-bold">{itemTwo.head}</span>
+                            {findAndReplaceKeywordsInString(
+                              item.keywords,
+                              itemTwo.para
+                            )}
+                          </div>
                         </div>
                       );
                     })}
