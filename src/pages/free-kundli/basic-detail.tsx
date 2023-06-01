@@ -28,6 +28,8 @@ function BasicDetail({}: Props) {
   const [majorVdasha, setMajorVdasha] = useState({});
   const [majorYogni, setMajorYogni] = useState({});
   const [activeTab, setActiveTab] = useState<any>(0);
+  const [horoCharts, setHoroCharts] = useState<any>({});
+
   useEffect(() => {
     const kundli = localStorage.getItem("kundliData");
     const majorVdasha = async () => {
@@ -43,7 +45,14 @@ function BasicDetail({}: Props) {
         setMajorYogni(JSON.parse(result?.res && result?.res));
       }
     };
+    const combinedHoros = async () => {
+      const result = await postFetcher("/combinedHoroCharts", kundli);
+      if (result?.state) {
+        setHoroCharts(result.res);
+      }
+    };
     if (kundli) {
+      combinedHoros();
       majorVdasha();
       majorYogni();
     }
@@ -60,7 +69,7 @@ function BasicDetail({}: Props) {
       case 3:
         return <Ashtakvarga />;
       case 4:
-        return <Charts />;
+        return <Charts horoCharts={horoCharts} />;
       case 5:
         return <Dasha majorVdasha={majorVdasha} majorYogni={majorYogni} />;
       case 6:

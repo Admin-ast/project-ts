@@ -3,18 +3,20 @@ import React, { Key, useState } from "react";
 import NorthIndian from "./chartdetails/NorthIndian";
 import SouthIndian from "./chartdetails/SouthIndian";
 
-type Props = {};
+type Props = {
+  horoCharts: any;
+};
 
 type Tab = string[];
 
 const tabOptions: Tab = ["South Indian", "North Indian  "];
 
-const Charts = (props: Props) => {
+const Charts = ({ horoCharts }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <NorthIndian />;
+        return <NorthIndian horoCharts={horoCharts} />;
       case 1:
         return <SouthIndian />;
       default:

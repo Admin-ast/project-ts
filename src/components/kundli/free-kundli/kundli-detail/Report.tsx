@@ -35,7 +35,9 @@ const Report = (props: Props) => {
                 setActiveTab(index);
               }}
               className={`${
-                activeTab === index ? "" : "bg-transparent"
+                activeTab === index
+                  ? "border-b bg-[#D3B160]/40"
+                  : "bg-transparent"
               } cursor-pointer border-gray-400 border-[#D3B160]/40 py-2 text-center transition-colors duration-1000 hover:border-b`}
             >
               {option}

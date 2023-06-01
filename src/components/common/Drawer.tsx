@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Divider from "@mui/material/Divider";
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function TemporaryDrawer({ content, anchor, button }: Props) {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState<any>({
     top: false,
     left: false,
     bottom: false,
@@ -44,15 +44,11 @@ export default function TemporaryDrawer({ content, anchor, button }: Props) {
         <div className="mx-3 text-[35px]">
           <FaTimes />
         </div>
-        {/* <img src="/assets/cross.png" alt="" /> */}
       </div>
       {content}
     </Box>
   );
 
-  {
-    /* {["left", "right", "top", "bottom"].map((anchor) => ( */
-  }
   return (
     <div>
       <React.Fragment key={anchor ? anchor : "left"}>
