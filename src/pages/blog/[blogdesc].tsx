@@ -51,8 +51,15 @@ const BlogDesc = (props: Props) => {
 
                     {item.para?.map((item: any, index: any) => {
                       return (
-                        <div key={index} className="my-2 text-justify">
-                          {item.para}
+                        <div key={index} className="my-2 text-justify ">
+                          <div className="">
+                            <span className="font-bold">{item.head}</span>
+                            {item.para}
+                          </div>
+
+                          <div className="text-[22px] font-bold">
+                            {item.title}
+                          </div>
                         </div>
                       );
                     })}
