@@ -47,10 +47,10 @@ const links: Links[] = [
     name: "Panchang",
     url: "/today-panchang",
   },
-  // {
-  //   name: "Shubh Muhurat",
-  //   url: "/muhurat",
-  // },
+  {
+    name: "Shubh Muhurat",
+    url: "/muhurat",
+  },
   {
     name: "Compatibility",
     url: "/compatibility",
