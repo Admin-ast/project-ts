@@ -43,7 +43,11 @@ function Navbar({}: Props) {
         <Section>
           <div className="flex items-center justify-between py-2 px-2">
             <div className="block text-[25px] text-[white] md:hidden">
-              <FaBars />
+              <TemporaryDrawer
+                content={<NavMobileData />}
+                anchor="left"
+                button={<FaBars />}
+              />
             </div>
 
             <div className="">
