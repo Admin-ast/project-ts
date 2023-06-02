@@ -37,6 +37,7 @@ export const card = [
     id: 2,
     img: "/assets/appointment/live-astro.png",
     text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
+    keywords: [{ key: "business", link: "/" }],
     para: [
       {
         para: "Do I posses the authority  to successfully resolve ongoing business negotiations?For years, I was plagued by the question of whether I possessed the authority to successfully resolve ongoing business negotiations. This question caused me immense stress and anxiety, and I was on the verge of losing everything in my business.",
@@ -71,6 +72,10 @@ export const card = [
     id: 3,
     img: "/assets/appointment/live-astro.png",
     text: "Free 5 minutes Astrology",
+    keywords: [
+      { key: "5 minutes astrology", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
     para: [
       {
         para: "Welcome to AstrosevaTalk,your one-stop destination for all things astrology. If you'relooking for free astrology consultation online, you've come to the right place. Our team ofexpert astrologers is here to provide you with the best astrological guidance and advice, allfrom the comfort of your own home.",
@@ -121,6 +126,7 @@ export const card = [
     id: 4,
     img: "/assets/appointment/live-astro.png",
     text: "Astrological Remedies to get rid of your problems in life",
+    keywords: [{ key: "Astrological Remedies", link: "/" }],
     para: [
       {
         para: "Welcome to Astroseva Talk! We are here to discuss one of the most intriguing aspects of astrology, the remedies that can help you get rid of your problems in life. Astrology is a powerful tool that can help you navigate your life by understanding the positions and movements of celestial bodies in relation to your birth chart. In this blog, we will explore the various astrological remedies that can help you overcome the challenges in your life.",
@@ -166,6 +172,7 @@ export const card = [
     id: 5,
     img: "/assets/appointment/live-astro.png",
     text: "Astroseva Talk & Talk to Astrologer online",
+    keywords: [{ key: "astrology ", link: "/" }],
     para: [
       {
         para: "Welcome to Astroseva Talk,",
@@ -221,6 +228,10 @@ export const card = [
     id: 6,
     img: "/assets/appointment/live-astro.png",
     text: "CHAT WITH US AT ASTROSEVATALK FOR JOB, CAREER, PROMOTIONS, AND MORE ",
+    keywords: [
+      { key: "Job ", link: "/" },
+      { key: "Career ", link: "/" },
+    ],
     para: [
       {
         para: "Have you been struggling your whole life to get your desired job yet all your endeavors are just not paying off? Or you are feeling clueless yet in your life to figure out the best career domain for yourself? If yes then Astrosevatalk astrologers are more than pleased to torch your career path and lead you to your dream career. You are just one click away from finding the hidden career perspective by consulting our world-class astrologers at the Astrosevatalk. Astrosevatalk is home to highly professional and experienced astrologers guiding thousands of struggling individuals in their job or professional space. Don't delay anymore and chat with us today just by one click interaction with the Astrosevatalk astrologers.",
@@ -357,6 +368,10 @@ export const card = [
     id: 7,
     img: "/assets/appointment/live-astro.png",
     text: "Astrological Guidance for Students",
+    keywords: [
+      { key: "Students ", link: "/" },
+      { key: "Guidance", link: "/" },
+    ],
     para: [
       {
         para: "Hey, astrology enthusiasts and students seeking academic success! We have something incredible in store for you. Introducing Astroseva Talk, your ultimate destination for Astrology Guidance for Students! ",
@@ -446,6 +461,10 @@ export const card = [
     id: 8,
     img: "/assets/appointment/live-astro.png",
     text: "Astrology for Mental Health",
+    keywords: [
+      { key: "mental health", link: "/" },
+      { key: "Guidance", link: "/" },
+    ],
     para: [
       {
         para: "Introducing Astroseva Talk, your ultimate destination for astrology enthusiasts seeking to restore balance and harmony in their lives. Are you ready to embark on a journey of self-discovery and mental well-being? Join us as we explore the powerful connection between astrology and mental health.",
@@ -487,6 +506,11 @@ export const card = [
     id: 9,
     img: "/assets/appointment/live-astro.png",
     text: "ASTROSEVATALK CHAT FOR MARRIAGE",
+    keywords: [
+      { key: "marriage", link: "/" },
+      { key: " astro@astrosevatalk.com", link: "/" },
+      { key: "www.astrosevatalk.com", link: "/" },
+    ],
     para: [
       {
         para: "They say that marriages are made in heaven and we only need to wait for the one who is destined to be. So have you just come across your better half or still waiting for the one? What if we can end your anxiety of waiting for your marriage of your destined life partner? Well yes at Astrosevatalk our finest marriage astrologers can definitely predict your marriage window.",
@@ -517,8 +541,18 @@ export const card = [
   {
     id: 10,
     img: "/assets/appointment/live-astro.png",
-    text: "Welcome to Astroseva Talk, ",
+    text: "Best Online Astrology website in India ",
+
+    keywords: [
+      { key: "best online astrology websites in India", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
     para: [
+      {
+        para: "",
+        title: "Welcome to Astroseva Talk,",
+        img: "",
+      },
       {
         para: "Your one-stop destination for all your astrological needs. In this blog post, we are going to talk about the best online astrology websites in India. If you are looking to chat with an astrologer or talk to astrologers online, then keep reading as we have got you covered.",
         title: "",
@@ -587,6 +621,10 @@ export const card = [
     id: 11,
     img: "/assets/appointment/live-astro.png",
     text: "Business Prediction by Expert Astrologers of Astroseva Talk",
+    keywords: [
+      { key: "business", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
     para: [
       {
         para: "Your one-stop destination for all your astrology needs. We are a team of expert astrologers who provide reliable and accurate predictions and solutions to our clients. Our services are designed to help people navigate the ups and downs of life and make informed decisions based on astrological insights.",
@@ -636,6 +674,10 @@ export const card = [
     id: 12,
     img: "/assets/appointment/live-astro.png",
     text: "How healing helps in balance chakras",
+    keywords: [
+      { key: "healing", link: "/" },
+      { key: "helps", link: "/" },
+    ],
     para: [
       {
         head: "",
@@ -755,6 +797,10 @@ export const card = [
     id: 13,
     img: "/assets/appointment/live-astro.png",
     text: "Online chat with Astrologer and 247 Astrology Consultation.",
+    keywords: [
+      { key: "online chat", link: "/" },
+      { key: "consultation", link: "/" },
+    ],
     para: [
       {
         head: "",
@@ -824,6 +870,10 @@ export const card = [
     id: 14,
     img: "/assets/appointment/live-astro.png",
     text: "Importance of Vastu in Home or Office",
+    keywords: [
+      { key: "vastu", link: "/" },
+      { key: "home or office", link: "/" },
+    ],
     para: [
       {
         head: "",
@@ -882,6 +932,10 @@ export const card = [
     id: 15,
     img: "/assets/appointment/live-astro.png",
     text: "Welcome to Astrosevva talk, where we explore the characteristics and traits of zodiac signs.",
+    keywords: [
+      { key: "zodiac", link: "/" },
+      { key: "signs", link: "/" },
+    ],
     para: [
       { head: "", para: "", title: "• Aries (Ram)", img: "" },
       {
@@ -1396,6 +1450,10 @@ export const card = [
     id: 16,
     img: "/assets/appointment/live-astro.png",
     text: "How healing helps in balance chakras?",
+    keywords: [
+      { key: "balance", link: "/" },
+      { key: "chakra", link: "/" },
+    ],
     para: [
       {
         head: "",
@@ -1515,6 +1573,10 @@ export const card = [
     id: 17,
     img: "/assets/appointment/live-astro.png",
     text: "Online Astrology by date of birth",
+    keywords: [
+      { key: "Astrology by date of birth", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
     para: [
       {
         head: "",
@@ -1601,7 +1663,12 @@ export const card = [
   {
     id: 18,
     img: "/assets/appointment/live-astro.png",
-    text: "Solutions of Health Problems in Astrology.docxSolutions of Health Problems in Astrology",
+    text: "Solutions of Health Problems in Astrology",
+    keywords: [
+      { key: "Health Problems", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
     para: [
       {
         head: "",
@@ -1646,7 +1713,11 @@ export const card = [
   {
     id: 19,
     img: "/assets/appointment/live-astro.png",
-    text: "When will I get married astrology predication.docx",
+    text: "When will I get married astrology predication",
+    keywords: [
+      { key: "married ", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
     para: [
       {
         head: "",
