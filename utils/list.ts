@@ -3,7 +3,6 @@ export const card = [
     id: 1,
     img: "/assets/appointment/live-astro.png",
     text: "I was aware of my agressiveness",
-    keywords: [{ key: "aggressive", link: "htis" }],
     para: [
       { para: " Dear readers", title: "", img: "" },
       {
