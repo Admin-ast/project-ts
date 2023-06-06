@@ -66,12 +66,12 @@ const links: Links[] = [
 ];
 
 const slides = [
-  { url: "/assets/home/banner/bannerImage_1.svg" },
-  { url: "/assets/home/banner/bannerImage_2.svg" },
-  { url: "/assets/home/banner/bannerImage_3.svg" },
-  { url: "/assets/home/banner/bannerImage_4.svg" },
-  { url: "/assets/home/banner/bannerImage_5.svg" },
-  { url: "/assets/home/banner/bannerImage_6.svg" },
+  { url: "/assets/home/banner/BUSINESS PROBLEM@2x.svg" },
+  { url: "/assets/home/banner/FINANCIAL ISSUES@2x 1.svg" },
+  { url: "/assets/home/banner/LOVE MARRIAGE@2x.svg" },
+  { url: "/assets/home/banner/love problem@2x.svg" },
+  // { url: "/assets/home/banner/bannerImage_5.svg" },
+  // { url: "/assets/home/banner/bannerImage_6.svg" },
 ];
 
 function Hero({}: Props) {
@@ -79,7 +79,7 @@ function Hero({}: Props) {
   return (
     <div>
       <div className="flex flex-col items-center justify-between bg-[url('/assets/home/home-hero-bg.webp')] bg-cover py-4 md:space-y-10 lg:py-[35px]">
-        <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
+        {/* <div className="mx-auto hidden max-w-5xl flex-wrap items-center justify-center space-x-[30px] lg:flex">
           {links.map((item: Links, index: Key) => (
             <Link key={index} href={item?.url}>
               <p
@@ -93,7 +93,7 @@ function Hero({}: Props) {
               </p>
             </Link>
           ))}
-        </div>
+        </div> */}
         <div className="w-full px-2 ">
           <Slider slides={slides} />
         </div>

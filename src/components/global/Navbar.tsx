@@ -10,10 +10,80 @@ import TemporaryDrawer from "../common/Drawer";
 // @ts-ignore
 import Cookies from "js-cookie";
 import NavMobileData from "../NavMobileData";
+import { useRouter } from "next/router";
 import { FaBars } from "react-icons/fa";
 type Props = {};
 
+type Links = {
+  name: string;
+  url: string;
+};
+
+const links: Links[] = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "Chat With Astrologer",
+    url: "/chat-with-astrologer",
+  },
+  {
+    name: "Talk To Astrologer",
+    url: "/talk-to-astrologer",
+  },
+  {
+    name: "Live Astrologer",
+    url: "/live-astrologer",
+  },
+  {
+    name: "Daily Horoscope",
+    url: "/horoscope/daily-horoscope",
+  },
+  {
+    name: "Live Video Chat",
+    url: "/live-video-chat",
+  },
+  {
+    name: "Free Kundli",
+    url: "/free-kundli",
+  },
+  {
+    name: "Kundli Matching",
+    url: "/kundli-matching",
+  },
+  {
+    name: "Panchang",
+    url: "/today-panchang",
+  },
+  {
+    name: "Shubh Muhurat",
+    url: "/muhurat",
+  },
+  {
+    name: "Compatibility",
+    url: "/compatibility",
+  },
+  {
+    name: "Astro store-Shop",
+    url: "/shop/shop",
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+  },
+  {
+    name: "AstrosevaTalk",
+    url: "",
+  },
+  {
+    name: "Zodiac sign",
+    url: "",
+  },
+];
+
 function Navbar({}: Props) {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
   useEffect(() => {
@@ -42,7 +112,7 @@ function Navbar({}: Props) {
       <div className="sticky top-0 z-10 w-full bg-[url('/assets/navbar-bg.webp')]">
         <Section>
           <div className="flex items-center justify-between py-2 px-2">
-            <div className="block text-[25px] text-[white] md:hidden">
+            <div className="block cursor-pointer text-[25px] text-[white] md:hidden">
               <TemporaryDrawer
                 content={<NavMobileData />}
                 anchor="left"
@@ -66,11 +136,28 @@ function Navbar({}: Props) {
                 </div>{" "}
               </Link>
             </div>
+
+            <div className="mx-auto hidden  flex-wrap items-center  space-x-[16px] space-y-1 lg:flex">
+              {links.map((item: Links, index) => (
+                <Link key={index} href={item?.url}>
+                  <p
+                    className={`cursor-pointer text-[16px] font-bold text-white ${
+                      router.pathname === item.url
+                        ? "underline decoration-[#B62022] underline-offset-8"
+                        : ""
+                    }`}
+                  >
+                    {item.name}
+                  </p>
+                </Link>
+              ))}
+            </div>
+
             <div className=" flex items-center space-x-[27px] text-base font-bold text-white">
-              <div className="hidden items-center gap-4 md:flex">
+              {/* <div className="hidden items-center gap-4 md:flex">
                 <p>AstrosevaTalk+</p>
                 <p className="">ZodiacSign</p>
-              </div>
+              </div> */}
               {!isLogged ? (
                 <button
                   onClick={() => {
