@@ -33,7 +33,7 @@ export default function TemporaryDrawer({ content, anchor, button }: Props) {
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
-      className="superbackImageTwo h-screen"
+      className="superbackImageTwo h-screen bg-[#FFF7E5]"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -41,7 +41,7 @@ export default function TemporaryDrawer({ content, anchor, button }: Props) {
         className="flex w-full justify-end p-2 "
         onClick={toggleDrawer(anchor, false)}
       >
-        <div className="mx-3 text-[35px]">
+        <div className="mx-3 cursor-pointer text-[35px]">
           <FaTimes />
         </div>
       </div>

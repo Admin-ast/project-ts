@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper";
+import Section from "../Section";
 
 type Props = {
   slides: any;
@@ -10,7 +11,7 @@ type Props = {
 
 function Slider({ slides }: Props) {
   return (
-    <>
+    <Section>
       <Swiper
         autoplay={{
           delay: 5000,
@@ -27,7 +28,7 @@ function Slider({ slides }: Props) {
               <div key={index}>
                 <SwiperSlide>
                   {" "}
-                  <div className="flex justify-center">
+                  <div className="flex justify-center md:w-[]">
                     <img src={slide?.url} alt="" />
                   </div>
                 </SwiperSlide>
@@ -35,7 +36,7 @@ function Slider({ slides }: Props) {
             );
           })}
       </Swiper>
-    </>
+    </Section>
   );
 }
 
