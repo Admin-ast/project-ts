@@ -4,20 +4,23 @@ import General from "./reportdetails/General";
 import Remides from "./reportdetails/Remides";
 import Dosha from "./reportdetails/Dosha";
 
-type Props = {};
+type Props = {
+  majorVdasha: any;
+  combinedRemedies: any;
+};
 
 type Tab = string[];
 
 const tabOptions: Tab = ["General", "Remides  ", "Dosha"];
 
-const Report = (props: Props) => {
+const Report = ({ majorVdasha, combinedRemedies }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <General />;
+        return <General majorVdasha={majorVdasha} />;
       case 1:
-        return <Remides />;
+        return <Remides combinedRemedies={combinedRemedies} />;
       case 2:
         return <Dosha />;
       default:

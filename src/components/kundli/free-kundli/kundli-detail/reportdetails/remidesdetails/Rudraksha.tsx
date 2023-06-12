@@ -1,9 +1,11 @@
 import Section from "@/components/Section";
 import React from "react";
 
-type Props = {};
+type Props = {
+  combinedRemedies: any;
+};
 
-const Rudraksha = (props: Props) => {
+const Rudraksha = ({ combinedRemedies }: Props) => {
   return (
     <div className="mb-20  space-y-20">
       <Section>

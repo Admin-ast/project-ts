@@ -18,14 +18,14 @@ const availableHoros = [
   "d9",
   "d10",
   "d12",
-  "16",
-  "20",
-  "24",
-  "27",
-  "30",
-  "40",
-  "45",
-  "60",
+  "d16",
+  "d20",
+  "d24",
+  "d27",
+  "d30",
+  "d40",
+  "d45",
+  "d60",
 ];
 const NorthIndian = ({ horoCharts }: Props) => {
   const [majorYogni, setMajorYogni] = useState({});
@@ -47,7 +47,7 @@ const NorthIndian = ({ horoCharts }: Props) => {
           </div>
 
           {horoCharts &&
-            availableHoros?.map((item: any, index: string) => {
+            availableHoros?.map((item: any, index: number) => {
               return (
                 <div key={index}>
                   <div className="font-semibold capitalize">{item}</div>
