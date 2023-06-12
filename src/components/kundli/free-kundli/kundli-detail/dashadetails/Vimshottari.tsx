@@ -11,36 +11,37 @@ const Vimshottari = ({ majorVdasha }: Props) => {
       <Section>
         <p>Understanding your dasha</p>
         <div className="flex flex-col gap-2 py-4">
-          {majorVdasha?.map((item: any, index: any) => (
-            <div
-              key={index}
-              className="rounded-[10px] border-2 border-slate-300 p-5"
-            >
-              <div className="flex flex-col gap-2  text-justify text-gray-700">
-                <div className="flex items-center justify-between text-slate-900">
-                  <p className="text-lg font-bold">
-                    {item?.planet && item?.planet} Mahadasha
-                  </p>
-                  <div className="flex gap-3">
+          {majorVdasha &&
+            majorVdasha?.map((item: any, index: any) => (
+              <div
+                key={index}
+                className="rounded-[10px] border-2 border-slate-300 p-5"
+              >
+                <div className="flex flex-col gap-2  text-justify text-gray-700">
+                  <div className="flex items-center justify-between text-slate-900">
                     <p className="text-lg font-bold">
-                      {item?.start && item?.start}
-                    </p>{" "}
-                    {" - "}
-                    <p className="text-lg font-bold">
-                      {item?.end && item?.end}
+                      {item?.planet && item?.planet} Mahadasha
                     </p>
+                    <div className="flex gap-3">
+                      <p className="text-lg font-bold">
+                        {item?.start && item?.start}
+                      </p>{" "}
+                      {" - "}
+                      <p className="text-lg font-bold">
+                        {item?.end && item?.end}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    {returnDetails(item?.planet && item?.planet)?.map(
+                      (item: any, index: any) => {
+                        return <div key={index}>{item}</div>;
+                      }
+                    )}
                   </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                  {returnDetails(item?.planet && item?.planet)?.map(
-                    (item: any, index: any) => {
-                      return <div key={index}>{item}</div>;
-                    }
-                  )}
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </Section>
     </div>

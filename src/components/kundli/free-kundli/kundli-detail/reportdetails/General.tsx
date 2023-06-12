@@ -8,7 +8,9 @@ import { postFetcher } from "@/service";
 import { toast } from "react-toastify";
 import Vimshottari from "../dashadetails/Vimshottari";
 
-type Props = {};
+type Props = {
+  majorVdasha: any;
+};
 
 type Tab = string[];
 
@@ -19,7 +21,7 @@ const tabOptions: Tab = [
   "Yoga ",
 ];
 
-const General = (props: Props) => {
+const General = ({ majorVdasha }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const [basicDetail, setBasicDetail] = useState<any>();
   useEffect(() => {
@@ -50,7 +52,7 @@ const General = (props: Props) => {
       case 1:
         return <Planetary />;
       case 2:
-        return <Vimshottari majorVdasha={{}} />;
+        return <Vimshottari majorVdasha={majorVdasha} />;
       case 3:
         return <Yoga />;
       default:
@@ -92,6 +94,7 @@ const General = (props: Props) => {
             ))}
           </div>
         )}
+        <div>{getMainContent(activeTab)}</div>
       </Section>
     </div>
   );
