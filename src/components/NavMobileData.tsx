@@ -45,10 +45,10 @@ const links: Links[] = [
     name: "Panchang",
     url: "/today-panchang",
   },
-  // {
-  //   name: "Shubh Muhurat",
-  //   url: "/muhurat",
-  // },
+  {
+    name: "Shubh Muhurat",
+    url: "/muhurat",
+  },
   {
     name: "Compatibility",
     url: "/compatibility",
@@ -66,11 +66,11 @@ function NavMobileData() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col items-start gap-2 px-2 ">
+    <div className="flex flex-col items-start gap-2  px-2">
       {links.map((item: Links, index: Key) => (
         <Link key={index} href={item?.url}>
           <p
-            className={`cursor-pointer text-[20px] font-bold text-[black] ${
+            className={`cursor-pointer text-[16px] font-bold text-[black] ${
               router.pathname === item.url
                 ? "underline decoration-[#B62022] underline-offset-8"
                 : ""
