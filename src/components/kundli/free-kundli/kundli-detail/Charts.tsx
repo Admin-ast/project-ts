@@ -5,20 +5,55 @@ import SouthIndian from "./chartdetails/SouthIndian";
 
 type Props = {
   horoCharts: any;
+  southHoroCharts: any;
 };
 
 type Tab = string[];
 
-const tabOptions: Tab = ["South Indian", "North Indian  "];
+const tabOptions: Tab = ["North Indian", "South Indian  "];
 
-const Charts = ({ horoCharts }: Props) => {
+const Charts = ({ horoCharts, southHoroCharts }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
+  const availableHoros = [
+    "sun",
+    "moon",
+    "d1",
+    "d2",
+    "d3",
+    "d4",
+    "d5",
+    "d7",
+    "d8",
+    "d9",
+    "d10",
+    "d12",
+    "d16",
+    "d20",
+    "d24",
+    "d27",
+    "d30",
+    "d40",
+    "d45",
+    "d60",
+  ];
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <NorthIndian horoCharts={horoCharts} />;
+        return (
+          <NorthIndian
+            availCharts={availableHoros}
+            horoCharts={horoCharts}
+            showChalit={true}
+          />
+        );
       case 1:
-        return <SouthIndian />;
+        return (
+          <NorthIndian
+            availCharts={availableHoros}
+            horoCharts={southHoroCharts}
+            showChalit={true}
+          />
+        );
       default:
         throw new Error("Unknown Step");
     }

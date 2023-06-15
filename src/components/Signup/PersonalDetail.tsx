@@ -67,7 +67,7 @@ function PersonalDetail({
   const onSubmit = async (data: any) => {
     setPersonalInfo(data);
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
-    const result = await postFetcher("/otp/generate-otp", body);
+    const result = await ("/otp/generate-otp", body);
     if (result.msg === "Otp has been sent successfully on your mobile number") {
       setPersonalInfo(data);
       setMobileNumber(data.mobileNumber);

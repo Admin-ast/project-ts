@@ -4,22 +4,25 @@ import Manglik from "./doshadetails/Manglik";
 import Kalsarpa from "./doshadetails/Kalsarpa";
 import Sadesati from "./doshadetails/Sadesati";
 
-type Props = {};
+type Props = {
+  combinedReportDosha: any;
+};
 
 type Tab = string[];
 
 const tabOptions: Tab = ["Manglik", "Kalsarpa  ", "Sadesati"];
 
-const Dosha = (props: Props) => {
+const Dosha = ({ combinedReportDosha }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
+
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <Manglik />;
+        return <Manglik manglik={combinedReportDosha?.manglik} />;
       case 1:
-        return <Kalsarpa />;
+        return <Kalsarpa kalsarpa={combinedReportDosha?.kalpsarpa} />;
       case 2:
-        return <Sadesati />;
+        return <Sadesati sadesati={combinedReportDosha?.sadesati} />;
       default:
         throw new Error("Unknown Step");
     }
