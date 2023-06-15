@@ -92,10 +92,10 @@
 // export default Review;
 
 import React, { useState } from "react";
-import { StarIcon } from "@heroicons/react/24/solid";
 import Section from "../Section";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 
 // Import Swiper styles
 import "swiper/css";
@@ -116,22 +116,34 @@ type Review = {
 
 const reviews: Review[] = [
   {
-    name: "Bani Sharma",
+    name: "Ruchi Pathak, Indore, MP",
     src: "",
     review:
-      " Astrologer Rohit Shastri ji has helped me with my family issues. I feel really blessed that he has helped me when I actually need some guidance and he suggested me solution.",
+      " ●	I feel short of words to state how thankful I'm to the gem of astrologers at the Astrosevatalk. I was going through extreme distress in my life due to my career and then I randomly came across the Astrosevatalk platform. I had a chat with one of their astrologers who suggested I switch my career toward government jobs. Guess what today I'm working as a village development officer under the state services of MP. I never thought about what was destined for me until my birth chart revealed it for me through the finest astrology services of Astrosevatalk.",
   },
   {
-    name: "Bani Sharma",
+    name: "Hardik Sharma, Delhi",
     src: "",
     review:
-      "Astrologer Rohit Shastri ji has helped me with my family issues. I feel really blessed that he has helped me when I actually need some guidance and he suggested me solution.",
+      "●	I was going through the Rahu Mahadasha which was really troubling all aspects of my life despite trying my level best. Sometimes I was falling into constant depression and at others, my health was deteriorating. My Aunt introduced me to the Astrosevatalk to get my birth chart analysis by some astrologer there. I had a short chat with an astrologer there who suggested me some simple home remedies to nullify the severe effect of Rahu Mahadasha. Guess what? I have been feeling truly at peace and in harmony following those simple home remedies in the form of daily worship.-",
   },
   {
-    name: "Bani Sharma",
+    name: "Shalini Thakur, Mathura",
     src: "",
     review:
-      " Astrologer Rohit Shastri ji has helped me with my family issues. I feel really blessed that he has helped me when I actually need some guidance and he suggested me solution.",
+      " ●	I have the mangal dosha in my Kundali which was causing me extreme stress towards taking the marriage decision. I thankfully came across the Astrosevatalk website and got my birth chart analysis from one of their astrologers. He told me to do some home remedies and pool for 3 months and then advised me to go for the marriage. I followed the suggested solution and I couldn't believe all of a sudden I started getting decent numbers of marriage proposals. Today I'm happily arranged married and living the best of my life",
+  },
+  {
+    name: "Shivani Saha, Ahmedabad",
+    src: "",
+    review:
+      " ●	Astrosevatalk has been the best source of self-reflection for me ever since I started consulting their astrologers. I used to be an unknown person within my own consciousness. A friend of mine suggested me to consult their astrologers and I randomly visited them. Just the 10 minutes of chat session provided me with a clear path as to what I should truly pursue in my life.",
+  },
+  {
+    name: "Pooja, Mumbai",
+    src: "",
+    review:
+      " ●	I just recently got married and had the Kundali milan done by an Astrologer at Astrosevatalk. He did a wonderful job by matching the kundali with ultimate compatibility with my now husband. We are truly living such a blessed and harmonious married life  . Kudos to the Astrosevatalk and their genius Astrologers who are shaping lives for the good.",
   },
 ];
 
@@ -171,10 +183,10 @@ function Review({}: Props) {
               <SwiperSlide key={item.src + index}>
                 <div
                   key={index}
-                  className="items-center space-y-4 overflow-hidden rounded-2xl border border-gray-800 bg-[#FFF7E5] px-9 py-5 lg:flex lg:items-center lg:gap-y-0 lg:gap-x-8 lg:space-y-0"
+                  className="items-center space-y-4 overflow-hidden rounded-2xl border border-gray-800 bg-[#FFF7E5] px-9 py-4 lg:flex lg:items-center lg:gap-y-0 lg:gap-x-8 lg:space-y-0"
                 >
                   <div className="col-span-12 flex items-center space-x-4 lg:col-span-1 lg:items-start">
-                    <div className="h-24 w-24 rounded-full border-[3px] border-black p-0.5">
+                    {/* <div className="h-24 w-24 rounded-full border-[3px] border-black p-0.5">
                       <Image
                         src="/assets/home/review.png"
                         alt={item.name}
@@ -182,15 +194,15 @@ function Review({}: Props) {
                         height={92}
                         loading={"lazy"}
                       />
-                    </div>
+                    </div> */}
                     <div className="space-y-2 lg:hidden">
                       <p className="text-[20px] font-semibold">{item.name}</p>
                       <div className="flex">
-                        <StarIcon className="h-5 w-5 text-[#E9B741]" />
-                        <StarIcon className="h-5 w-5 text-[#E9B741]" />
-                        <StarIcon className="h-5 w-5 text-[#E9B741]" />
-                        <StarIcon className="h-5 w-5 text-[#E9B741]" />
-                        <StarIcon className="h-5 w-5 text-[#E9B741]" />
+                        <FaStar className="h-5 w-5 text-[#E9B741]" />
+                        <FaStar className="h-5 w-5 text-[#E9B741]" />
+                        <FaStar className="h-5 w-5 text-[#E9B741]" />
+                        <FaStar className="h-5 w-5 text-[#E9B741]" />
+                        <FaStar className="h-5 w-5 text-[#E9B741]" />
                       </div>
                     </div>
                   </div>
