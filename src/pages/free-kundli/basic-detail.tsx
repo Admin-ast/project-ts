@@ -29,10 +29,13 @@ function BasicDetail({}: Props) {
   const [majorYogni, setMajorYogni] = useState({});
   const [activeTab, setActiveTab] = useState<any>(0);
   const [horoCharts, setHoroCharts] = useState<any>({});
+  const [southHoroCharts, setSouthHoroCharts] = useState<any>({});
   const [combinedRemedies, setCombinedRemedies] = useState<any>({});
+  const [combinedReportDosha, steCombinedReportDosha] = useState<any>({});
 
   useEffect(() => {
-    const kundli = localStorage.getItem("kundliData");
+    var kundli: any;
+    kundli = localStorage.getItem("kundliData");
     const majorVdasha = async () => {
       const result = await postFetcher("/major_vdasha", kundli);
       if (result?.status) {
@@ -52,13 +55,30 @@ function BasicDetail({}: Props) {
         setHoroCharts(result.res);
       }
     };
+    const combinedSouthHoros = async () => {
+      const newKundli = JSON.parse(kundli);
+      newKundli["chartType"] = "south";
+      const newKundli2 = JSON.stringify(newKundli);
+      const result = await postFetcher("/combinedHoroCharts", newKundli2);
+      if (result?.state) {
+        setSouthHoroCharts(result.res);
+      }
+    };
     const reportRemedies = async () => {
       const result = await postFetcher("/combinedRemedies", kundli);
       if (result?.state) {
         setCombinedRemedies(result.res);
       }
     };
+    const combinedReportDosha = async () => {
+      const result = await postFetcher("/combinedReportDosha", kundli);
+      if (result?.state) {
+        steCombinedReportDosha(result.res);
+      }
+    };
     if (kundli) {
+      combinedSouthHoros();
+      combinedReportDosha();
       combinedHoros();
       majorVdasha();
       majorYogni();
@@ -71,13 +91,17 @@ function BasicDetail({}: Props) {
       case 0:
         return <Basic />;
       case 1:
-        return <Kundli />;
+        return (
+          <Kundli horoCharts={horoCharts} southHoroCharts={southHoroCharts} />
+        );
       case 2:
         return <KP />;
       case 3:
         return <Ashtakvarga />;
       case 4:
-        return <Charts horoCharts={horoCharts} />;
+        return (
+          <Charts horoCharts={horoCharts} southHoroCharts={southHoroCharts} />
+        );
       case 5:
         return <Dasha majorVdasha={majorVdasha} majorYogni={majorYogni} />;
       case 6:
@@ -85,6 +109,7 @@ function BasicDetail({}: Props) {
           <Report
             majorVdasha={majorVdasha}
             combinedRemedies={combinedRemedies}
+            combinedReportDosha={combinedReportDosha}
           />
         );
       //   case 4:

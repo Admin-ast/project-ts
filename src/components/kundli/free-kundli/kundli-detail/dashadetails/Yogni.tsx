@@ -9,20 +9,24 @@ type Props = {
 
 const Yogni = ({ majorYogni }: Props) => {
   const [yogniLevel, setYogniLevel] = useState(0);
-  const [levelOne, setLevelOne] = useState({});
+  const [selectedYogini, setSelectedYogini] = useState({ id: "", name: "" });
+  const [levelOne, setLevelOne] = useState<any>({});
 
   useEffect(() => {
     const kundli = localStorage.getItem("kundliData");
     const majorVdasha = async () => {
-      const result = await postFetcher("/sub_yogini_dasha/1/pingla", kundli);
+      const result = await postFetcher(
+        `/sub_yogini_dasha/${selectedYogini?.id}/${selectedYogini.name}`,
+        kundli
+      );
       if (result?.status) {
         setLevelOne(JSON.parse(result?.res && result?.res));
       }
     };
     if (kundli) {
-      majorVdasha();
+      yogniLevel === 1 && majorVdasha();
     }
-  }, [yogniLevel]);
+  }, [selectedYogini, yogniLevel]);
 
   return (
     <div className="mb-20 space-y-20">
@@ -47,7 +51,12 @@ const Yogni = ({ majorYogni }: Props) => {
                   <div
                     key={index}
                     onClick={() => {
+                      console.log(item);
                       setYogniLevel(1);
+                      setSelectedYogini({
+                        name: item?.dasha_name,
+                        id: item?.dasha_id,
+                      });
                     }}
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >
@@ -65,7 +74,8 @@ const Yogni = ({ majorYogni }: Props) => {
                 );
               })}
             {yogniLevel === 1 &&
-              majorYogni?.slice(0, 8)?.map((item: any, index: any) => {
+              levelOne &&
+              levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
                 return (
                   <div
                     key={index}
@@ -75,6 +85,7 @@ const Yogni = ({ majorYogni }: Props) => {
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >
                     <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4 uppercase">
+                      {selectedYogini && selectedYogini?.name.slice(0, 3)}-
                       {item?.dasha_name && item?.dasha_name.slice(0, 3)}
                     </p>
                     <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
@@ -82,7 +93,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     </p>
                     <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
                       {item?.end_date && item?.end_date}
-                      <IoMdArrowDropright />
                     </p>
                   </div>
                 );

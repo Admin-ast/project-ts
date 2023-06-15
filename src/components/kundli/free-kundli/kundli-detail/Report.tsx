@@ -7,13 +7,18 @@ import Dosha from "./reportdetails/Dosha";
 type Props = {
   majorVdasha: any;
   combinedRemedies: any;
+  combinedReportDosha: any;
 };
 
 type Tab = string[];
 
 const tabOptions: Tab = ["General", "Remides  ", "Dosha"];
 
-const Report = ({ majorVdasha, combinedRemedies }: Props) => {
+const Report = ({
+  majorVdasha,
+  combinedRemedies,
+  combinedReportDosha,
+}: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const getMainContent = (step: any) => {
     switch (step) {
@@ -22,7 +27,7 @@ const Report = ({ majorVdasha, combinedRemedies }: Props) => {
       case 1:
         return <Remides combinedRemedies={combinedRemedies} />;
       case 2:
-        return <Dosha />;
+        return <Dosha combinedReportDosha={combinedReportDosha} />;
       default:
         throw new Error("Unknown Step");
     }
