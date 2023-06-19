@@ -150,7 +150,7 @@ const reviews: Review[] = [
 function Review({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-[#FFF7E5] py-12 lg:py-[38px]">
+    <div className="bg-[#FFF7E5] py-10">
       <Section>
         <div className="space-y-6">
           <div className="mb-[35px]">

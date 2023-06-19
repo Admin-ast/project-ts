@@ -77,26 +77,31 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 import Horoscope from "../home/Horoscope";
+import Link from "next/link";
 
 type Props = {};
 
 type ShoppingList = {
   name: string;
   src: string;
+  url: string;
 };
 
 const shoppingList: ShoppingList[] = [
   {
     name: "Love Score",
     src: "/assets/home/shop-01.webp",
+    url: "/shop/lovescore",
   },
   {
     name: "Career Report",
     src: "/assets/home/shop-02.webp",
+    url: "/",
   },
   {
     name: "Gem",
     src: "/assets/home/shop-03.webp",
+    url: "/shop/gemstone",
   },
 ];
 
@@ -135,24 +140,23 @@ function Shop({}: Props) {
           >
             {shoppingList?.map((item, index) => (
               <SwiperSlide key={item.src + index}>
-                <div
-                  key={index}
-                  className="overflow-hidden rounded-3xl border-[3px] border-black"
-                >
-                  <div className="h-[390px] rounded-t-3xl border-[10px] !border-b-0 border-white">
-                    <Image
-                      src={item.src}
-                      alt={item.name}
-                      width={366}
-                      height={618}
-                      loading={"lazy"}
-                      className="h-full w-full object-contain"
-                    />
+                <Link key={index} href={item?.url}>
+                  <div className="overflow-hidden rounded-3xl border-[3px] border-black">
+                    <div className="h-[390px] rounded-t-3xl border-[10px] !border-b-0 border-white">
+                      <Image
+                        src={item.src}
+                        alt={item.name}
+                        width={366}
+                        height={618}
+                        loading={"lazy"}
+                        className="h-full w-full object-contain"
+                      />
+                    </div>
+                    <p className="bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
+                      {item.name}
+                    </p>
                   </div>
-                  <p className="bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
-                    {item.name}
-                  </p>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
