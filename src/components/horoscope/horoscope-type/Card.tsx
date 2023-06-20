@@ -3,7 +3,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import Section from "../../Section";
-type Props = {};
+import Zodiac from "@/components/compatibility/Zodiac";
+type Props = {
+  horos: any;
+  predictionArray: any;
+  type: any;
+};
 
 type CardDetail = {
   id: number;
@@ -81,9 +86,24 @@ const card: CardDetail[] = [
   },
 ];
 
-const Card = (props: Props) => {
+const Card = ({ horos, predictionArray, type }: Props) => {
   const router = useRouter();
+  // console.log(horos && horos.aries.prediction.personal_life)
   const int_slug: String = router?.query?.slug ? router?.query?.slug[0] : "";
+  const zodaics = [
+    "aries",
+    "taurus",
+    "gemini",
+    "cancer",
+    "leo",
+    "virgo",
+    "libra",
+    "scorpio",
+    "sagittarius",
+    "capricorn",
+    "aquarius",
+    "pisces",
+  ];
   return (
     <div className="py-8">
       <Section>
@@ -111,16 +131,19 @@ const Card = (props: Props) => {
             your life in the right direction. So make sure you give it a read.`}
           </p>
         </div>
-        <div className="grid gap-5 py-16 lg:grid-cols-2">
-          {card.map((item: CardDetail, index: number) => (
+        <div className="mt-4 flex-wrap justify-center gap-5 md:flex">
+          {zodaics.map((item: string, index: number) => (
             <div
               key={index}
-              className=" flex flex-col rounded-2xl border-4 border-black bg-[#FFF7E5] p-6 md:grid md:!w-[570px] md:grid-cols-12 md:gap-6"
+              onClick={() => {
+                router.push(`/horoscope?type=${type}&zodiac=${item}`);
+              }}
+              className=" my-1 flex flex-col rounded-xl border-2 border-black bg-[#FFF7E5] p-4 md:my-0 md:grid md:!w-[570px] md:grid-cols-12 md:gap-6"
             >
-              <div className="col-span-4 bg-red-500">
+              <div className="col-span-4 mx-auto">
                 <Image
-                  src={item.img}
-                  alt={item.name}
+                  src="/assets/home/aries-card.svg"
+                  alt="name"
                   width={132}
                   height={185}
                   loading={"lazy"}
@@ -129,16 +152,25 @@ const Card = (props: Props) => {
               </div>
               <div className="col-span-8 flex flex-col gap-2 text-justify">
                 <div>
-                  <p className="text-[22px] font-bold">{item?.name}</p>
+                  <p className="text-[22px] font-bold capitalize">{item}</p>
                   {/* <p>{item?.date}</p> */}
                 </div>
                 <p>
-                  <span className="font-bold">Personal:</span> {item?.note}
+                  {predictionArray ? (
+                    <span className="">
+                      {horos && horos[item]?.prediction[0]}
+                    </span>
+                  ) : (
+                    <span className="">
+                      <span className="font-semibold"> Personal: </span>
+                      {horos && horos[item]?.prediction?.personal_life}
+                    </span>
+                  )}
                 </p>
                 <button
-                  onClick={() =>
-                    router.push(`/horoscope/${int_slug}/${item.url}`)
-                  }
+                  // onClick={() =>
+                  // router.push(`/horoscope/${int_slug}/${item.url}`)
+                  // }
                   className="flex cursor-pointer justify-end font-bold"
                 >
                   Read More

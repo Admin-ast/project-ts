@@ -23,8 +23,6 @@ function KP({}: Props) {
       if (chalit.status) {
         console.log(JSON.parse(chalit?.res));
         setChalitChart(JSON.parse(chalit?.res));
-      } else {
-        toast.error(result.msg);
       }
       if (result.status) {
         setKPPlanetDetails(JSON.parse(result?.res));
