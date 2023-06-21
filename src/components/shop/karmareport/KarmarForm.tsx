@@ -2,15 +2,24 @@ import Section from "@/components/Section";
 import { Button, Form, Input } from "@/components/forms";
 import React from "react";
 import { useForm } from "react-hook-form";
-type Props = {};
+type FormData = {
+  name: string;
+  dateOfBirth: string;
+  gender: string;
+  birthLocation: string;
+  birthTime: string;
+  email: string;
+};
 
-const KarmarForm = (props: Props) => {
+const KarmarForm = () => {
   const {
     register,
     handleSubmit,
-    setValue,
     formState: { errors },
-  } = useForm();
+  } = useForm<FormData>();
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+  };
   return (
     <div className="mt-[35px]">
       <Section>
@@ -19,28 +28,30 @@ const KarmarForm = (props: Props) => {
             <p className="text-center font-[Georgia] text-[22px] font-bold">
               Enter Your Information
             </p>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit(onSubmit)}>
               <div className=" mt-[35px] gap-[31px]  md:flex lg:flex">
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"name"}
-                    id="name"
-                    register={register}
-                    required={true}
+                    placeholder=""
                     label="First Name"
-                    placeholder={""}
+                    register={register}
+                    type="text"
+                    id="name"
+                    name="name"
+                    errors={errors}
+                    required="First Name is required"
                     className="!rounded-md md:w-[247px] lg:w-[458px]"
                   />
                 </div>
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"gender"}
-                    id="name"
-                    register={register}
-                    required={true}
                     label="Gender"
+                    register={register}
+                    type="text"
+                    id="gender"
+                    name="gender"
+                    errors={errors}
+                    required="Gender is required"
                     placeholder={""}
                     className="!rounded-md md:w-[247px] lg:w-[458px]"
                   />
@@ -49,24 +60,26 @@ const KarmarForm = (props: Props) => {
               <div className="gap-[31px] md:flex lg:flex">
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"name"}
-                    id="name"
+                    label="Date of Birth *"
                     register={register}
-                    required={true}
-                    label="Date Of Birth*"
+                    type="date"
+                    id="dateOfBirth"
+                    name="dateOfBirth"
+                    errors={errors}
+                    required="Date of Birth is required"
                     placeholder={""}
                     className="!rounded-md md:w-[247px] lg:w-[458px]"
                   />
                 </div>
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"gender"}
-                    id="name"
+                    label="Time Of Birth"
+                    name={"timeOfBirth"}
                     register={register}
-                    required={true}
-                    label="Time Of Birth*"
+                    type="time"
+                    id="birthTime"
+                    errors={errors}
+                    required="Birth Time is required"
                     placeholder={""}
                     className="!rounded-md md:w-[247px] lg:w-[458px]"
                   />
@@ -75,34 +88,38 @@ const KarmarForm = (props: Props) => {
 
               <div className="">
                 <Input
-                  type={"string"}
-                  name={"gender"}
-                  id="name"
-                  register={register}
-                  required={true}
                   label="Birth Location"
+                  register={register}
+                  type="text"
+                  id="birthLocation"
+                  name="birthLocation"
+                  errors={errors}
+                  required="Birth Location is required"
                   placeholder={""}
                   className="!rounded-md lg:w-[950px]"
                 />
               </div>
               <div className="">
                 <Input
-                  type={"string"}
-                  name={"gender"}
-                  id="name"
-                  register={register}
-                  required={true}
                   label="Email"
+                  register={register}
+                  type="email"
+                  id="email"
+                  name="email"
+                  errors={errors}
+                  required="Email is required"
                   placeholder={""}
                   className="!rounded-md lg:w-[950px]"
                 />
               </div>
               <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] lg:mt-[103px]">
                 <Button
+                  type="submit"
                   btnText="Add To Cart"
                   className="rounded-[10px] bg-[#D9D9D9] md:px-[100px] lg:px-[100px]"
                 />
                 <Button
+                  type="submit"
                   btnText="Buy Now"
                   className="bg-[#D3B160] md:px-[100px] lg:px-[100px]"
                 />

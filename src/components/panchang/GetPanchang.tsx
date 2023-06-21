@@ -16,6 +16,7 @@ function GetPanchang({}: Props) {
   const [placeName, setPlaceName] = useState<string>("New Delhi, DL, India");
   const [basicPanchang, setBasicPanchang] = useState<any>();
   const [ashubhaMuhurat, setAshubhaMuhurat] = useState<any>();
+  const [planetPos, setPlanetPos] = useState<any>({});
   const {
     register,
     handleSubmit,
@@ -43,17 +44,26 @@ function GetPanchang({}: Props) {
     });
     const basicPanchang = async () => {
       const result = await postFetcher("/panchang/basic-panchang", bodyData);
-      setBasicPanchang(result?.response ? JSON.parse(result?.response) : "");
+      const data = result?.res ? JSON.parse(result?.res) : "";
+      setBasicPanchang(data);
     };
     const ashubhaMuhurat = async () => {
       const result = await postFetcher("/panchang/ashubhaMuhurat", bodyData);
       const data = result?.res ? JSON.parse(result?.res) : "";
+      // console.log(data);
       const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
       setAshubhaMuhurat({ abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal });
     };
+    const planetPosSun = async () => {
+      const result = await postFetcher("/panchang/planetPos", bodyData);
+      const data = result?.res ? JSON.parse(result?.res) : "";
+      console.log(data);
+      setPlanetPos(data);
+    };
+    planetPosSun();
     basicPanchang();
     ashubhaMuhurat();
-  }, [placeName]);
+  }, [getValues, placeName]);
 
   const onSubmit = (data: any) => {
     // console.log({ data });
@@ -118,29 +128,108 @@ function GetPanchang({}: Props) {
               <div className="relative overflow-x-auto border border-gray-400 sm:rounded-lg">
                 <table className="w-full text-left text-base text-gray-900">
                   <tbody>
-                    {basicPanchang &&
-                      Object.keys(basicPanchang)?.map(
-                        (item: any, index: Key) => (
-                          <tr
-                            key={index}
-                            className={`bg-white ${
-                              index !== details.length - 1
-                                ? "border-b border-gray-400"
-                                : ""
-                            }`}
-                          >
-                            <td
-                              // scope="row"
-                              className="border-r border-gray-400 px-6 py-2"
-                            >
-                              {item}
-                            </td>
-                            <td className="px-6 py-2">
-                              {basicPanchang[`${item}`]}
-                            </td>
-                          </tr>
-                        )
-                      )}
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Tithi
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.tithi?.details?.tithi_name &&
+                          basicPanchang.tithi.details.tithi_name}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Nakshatra
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.nakshatra?.details?.nak_name &&
+                          basicPanchang.nakshatra.details.nak_name}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Yoga
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.yog?.details?.yog_name &&
+                          basicPanchang.yog.details.yog_name}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Karna
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.karan?.details?.karan_name &&
+                          basicPanchang.karan.details.karan_name}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Paksha
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.paksha && basicPanchang.paksha}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Weekday
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.day && basicPanchang.day}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Sakha Samvat
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.shaka_samvat &&
+                          basicPanchang.shaka_samvat}
+                      </td>
+                    </tr>
+                    <tr className={`bg-white`}>
+                      <td
+                        // scope="row"
+                        className="border-r border-gray-400 px-6 py-2"
+                      >
+                        Vikram Samvat
+                      </td>
+
+                      <td className="px-6 py-2">
+                        {basicPanchang?.vikram_samvat &&
+                          basicPanchang.vikram_samvat}
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>

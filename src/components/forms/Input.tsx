@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 interface Props {
   label: string;
   register: any;
-  required?: boolean;
+  required?: boolean | string;
   type: string;
   id: string;
   name: string;
@@ -29,6 +29,7 @@ function Input({
   placeholder,
   onChange,
   className,
+
   disabled = false,
 }: Props): ReactElement {
   return (
