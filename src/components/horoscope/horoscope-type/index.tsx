@@ -67,7 +67,7 @@ const HoroscopeType = (props: Props) => {
             </p>
           </div>
         </Section>
-        <Card />
+        {/* <Card /> */}
         <AboutHoroscope />
         <Check />
         <Faq faqDetail={faqsDetail} />

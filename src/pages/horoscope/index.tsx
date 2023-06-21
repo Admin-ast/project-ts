@@ -9,7 +9,7 @@ function Index() {
   const [zodiac, setZodaic] = useState<any>("");
   const [horo, setHoro] = useState<any>({});
   const router = useRouter();
-  const zodaics = [
+  const zodaics: Array<string> = [
     "aries",
     "taurus",
     "gemini",
@@ -18,14 +18,15 @@ function Index() {
     "virgo",
     "libra",
     "scorpio",
-    "saggitarius",
+    "sagittarius",
     "capricorn",
     "aquarius",
     "pisces",
   ];
   const availType = ["yesterday", "today", "tomorrow", "monthly", "yearly"];
   useEffect(() => {
-    const { type, zodiac } = router.query;
+    const type: any = router.query.type;
+    const zodiac: any = router.query.zodiac;
     setLoading(true);
     setHoro(null);
     setType(type);
@@ -81,7 +82,7 @@ function Index() {
                 <option value="virgo">Virgo</option>
                 <option value="libra">Libra</option>
                 <option value="scorpio">Scorpio</option>
-                <option value="saggitarius">Saggitarius</option>
+                <option value="sagittarius">Sagittarius</option>
                 <option value="capricorn">Capricorn</option>
                 <option value="aquarius">Aquarius</option>
                 <option value="pisces">Pisces</option>
