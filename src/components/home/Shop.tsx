@@ -152,7 +152,7 @@ function Shop({}: Props) {
                         className="h-full w-full object-contain"
                       />
                     </div>
-                    <p className="bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
+                    <p className="bg-black py-[14px]  text-center font-[georgia] text-[20px] text-white lg:text-[32px]">
                       {item.name}
                     </p>
                   </div>
