@@ -67,14 +67,14 @@ function PersonalDetail({
   const onSubmit = async (data: any) => {
     setPersonalInfo(data);
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
-    const result = await ("/otp/generate-otp", body);
-    if (result.msg === "Otp has been sent successfully on your mobile number") {
-      setPersonalInfo(data);
-      setMobileNumber(data.mobileNumber);
-      setShowOtp(true);
-    } else {
-      setError(result.msg);
-    }
+    // const result = await ("/otp/generate-otp", body);
+    // if (result.msg  === "Otp has been sent successfully on your mobile number") {
+    //   setPersonalInfo(data);
+    //   setMobileNumber(data.mobileNumber);
+    //   setShowOtp(true);
+    // } else {
+    //   setError(result.msg);
+    // }
   };
 
   const handleChange = (otp: any) => {

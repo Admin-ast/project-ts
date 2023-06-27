@@ -10,13 +10,14 @@ import { postFetcher } from "@/service";
 type Props = {};
 
 const details = [1, 2, 34, 5, 6, 6, 7, 8, 79];
-const timings = [1, 2, 34, 5, 6, 6];
 
 function GetPanchang({}: Props) {
   const [placeName, setPlaceName] = useState<string>("New Delhi, DL, India");
   const [basicPanchang, setBasicPanchang] = useState<any>();
   const [ashubhaMuhurat, setAshubhaMuhurat] = useState<any>();
   const [planetPos, setPlanetPos] = useState<any>({});
+  const [chalitChart, setChalitChart] = useState<any>({});
+
   const {
     register,
     handleSubmit,
@@ -54,12 +55,20 @@ function GetPanchang({}: Props) {
       const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
       setAshubhaMuhurat({ abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal });
     };
+    const chalitChart = async () => {
+      const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
+      if (chalit.status) {
+        console.log(JSON.parse(chalit?.res));
+        setChalitChart(JSON.parse(chalit?.res));
+      }
+    };
     const planetPosSun = async () => {
       const result = await postFetcher("/panchang/planetPos", bodyData);
       const data = result?.res ? JSON.parse(result?.res) : "";
       console.log(data);
       setPlanetPos(data);
     };
+    chalitChart();
     planetPosSun();
     basicPanchang();
     ashubhaMuhurat();
@@ -73,31 +82,15 @@ function GetPanchang({}: Props) {
     <div>
       <div className="bg-[url('/assets/cloud-bg.webp')] py-[55px]">
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <div className="mx-auto grid max-w-7xl grid-cols-12 items-center gap-x-6">
+          <div className="mx-auto md:w-[65%]">
             <div className="col-span-8">
-              {/* <input
-              type="text"
-              id="location"
-              defaultValue={"New Delhi, India"}
-              className={`bg-[#FFF9EA]] w-full appearance-none rounded-xl border border-gray-400 px-12 !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none`}
-              placeholder={"Enter your city"}
-              name={"location"}
-            /> */}
               <Combo
                 hasDefaultValue={true}
                 setValue={setValue}
                 setPlaceName={setPlaceName}
                 placeholder="Enter City Name"
-                className={`bg-[#FFF9EA]] w-full appearance-none rounded-xl border border-gray-400 px-12 !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none`}
+                className={`bg-[#FFF9EA]] appearance-none rounded-xl border border-gray-400 px-12 !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none md:w-full`}
               />
-            </div>
-            <div className="col-span-4">
-              <button
-                type="submit"
-                className="mx-auto w-full rounded-xl border-2 border-gray-900 bg-gradient-to-b from-[#D3B160] to-[#FFE9A1] px-12 py-2 font-semibold text-black lg:text-[22px]"
-              >
-                Get Panchang
-              </button>
             </div>
           </div>
         </Form>
@@ -264,10 +257,14 @@ function GetPanchang({}: Props) {
                     >
                       <td className="px-6 py-4 text-left">{item}</td>
                       <td className="px-6 py-4">
-                        From {ashubhaMuhurat[`${item}`]["start"]}
+                        From{" "}
+                        {ashubhaMuhurat[`${item}`] &&
+                          ashubhaMuhurat[`${item}`]["start"]}
                       </td>
                       <td className="px-6 py-4">
-                        To {ashubhaMuhurat[`${item}`]["end"]}
+                        To{" "}
+                        {ashubhaMuhurat[`${item}`] &&
+                          ashubhaMuhurat[`${item}`]["end"]}
                       </td>
                     </tr>
                   ))}
@@ -279,18 +276,13 @@ function GetPanchang({}: Props) {
               <p className="bg-[#E2CB85] p-5 font-[georgia] text-3xl font-semibold">
                 Lagna Chart at Sunrise
               </p>
-              <div className="bg-[#FFF7E5] p-4">
-                <Image
-                  src={"/assets/panchang/chart.png"}
-                  alt={"astrologer"}
-                  width={300}
-                  height={370}
-                  loading={"lazy"}
-                  className="h-1/2 w-full object-contain"
-                />
-              </div>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: chalitChart && chalitChart.svg && chalitChart.svg,
+                }}
+              ></div>
             </div>
-            <div className="relative overflow-x-auto rounded-2xl bg-[#FFF7E5]">
+            {/* <div className="relative overflow-x-auto rounded-2xl bg-[#FFF7E5]">
               <table className="w-full text-left text-base">
                 <thead className="bg-[#E2CB85] text-center text-gray-900">
                   <tr>
@@ -367,7 +359,7 @@ function GetPanchang({}: Props) {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </div>
           <div className="relative overflow-x-auto rounded-2xl border border-gray-400">
             <table className="w-full text-left text-base">
@@ -388,35 +380,29 @@ function GetPanchang({}: Props) {
                     Rashi
                   </th>
                   <th className="border-r border-gray-400 px-6 py-3 text-base font-medium">
-                    Longtitude
-                  </th>
-                  <th className="border-r border-gray-400 px-6 py-3 text-base font-medium">
                     Nakshaktra
                   </th>
-                  <th className="px-6 py-3 text-base font-medium">Pada</th>
                 </tr>
               </thead>
               <tbody>
-                {timings.map((item, index: Key) => (
-                  <tr
-                    key={index}
-                    className="border-b border-gray-400 bg-white text-center"
-                  >
-                    <td className="border-r border-gray-400 px-6 py-4">
-                      Ascendent
-                    </td>
-                    <td className="border-r border-gray-400 px-6 py-4">
-                      Cancer
-                    </td>
-                    <td className="border-r border-gray-400 px-6 py-4">
-                      17∘27′48″
-                    </td>
-                    <td className="border-r border-gray-400 px-6 py-4">
-                      Shatabhisha
-                    </td>
-                    <td className="px-6 py-4">4</td>
-                  </tr>
-                ))}
+                {planetPos &&
+                  planetPos.length > 0 &&
+                  planetPos.map((item: any, index: Key) => (
+                    <tr
+                      key={index}
+                      className="border-b border-gray-400 bg-white text-center"
+                    >
+                      <td className="border-r border-gray-400 px-6 py-4">
+                        {item.name}
+                      </td>
+                      <td className="border-r border-gray-400 px-6 py-4">
+                        {item.sign}
+                      </td>
+                      <td className="border-r border-gray-400 px-6 py-4">
+                        {item.nakshatra}
+                      </td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </div>

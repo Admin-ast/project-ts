@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
+import { postFetcher } from "@/service";
+import Hero from "@/components/common/Hero";
 
-const Hero = dynamic(
-  () => import("@/components/horoscope/horoscope-type/Hero")
-);
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
 );
@@ -53,10 +52,25 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const HoroscopeType = (props: Props) => {
+const Index = (props: Props) => {
+  const [horos, setHoros] = useState<any>({});
+  useEffect(() => {
+    const horos = async () => {
+      const result = await postFetcher(
+        "/horoscope/combined?type=daily&day=today",
+        ""
+      );
+      if (result?.res) {
+        console.log(result.res);
+        setHoros(result.res);
+      }
+    };
+    horos();
+  }, []);
+
   return (
     <div>
-      <Hero />
+      <Hero text="Today's Horoscope" />
       <div className="bg-[url('/assets/horoscope-bg.webp')] pb-6">
         <Section>
           <div className="flex items-center space-x-2">
@@ -67,7 +81,7 @@ const HoroscopeType = (props: Props) => {
             </p>
           </div>
         </Section>
-        {/* <Card /> */}
+        <Card horos={horos} type="today" predictionArray={false} />
         <AboutHoroscope />
         <Check />
         <Faq faqDetail={faqsDetail} />
@@ -76,4 +90,4 @@ const HoroscopeType = (props: Props) => {
   );
 };
 
-export default HoroscopeType;
+export default Index;

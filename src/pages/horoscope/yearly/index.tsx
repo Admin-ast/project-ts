@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
+import Hero from "@/components/common/Hero";
 
-const Hero = dynamic(
-  () => import("@/components/horoscope/horoscope-type/Hero")
-);
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
 );
@@ -53,21 +51,23 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const HoroscopeType = (props: Props) => {
+const Index = (props: Props) => {
+  const [horos, setHoros] = useState<any>({});
+
   return (
     <div>
-      <Hero />
+      <Hero text="Yearly Horoscope" />
       <div className="bg-[url('/assets/horoscope-bg.webp')] pb-6">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
             <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
               {" "}
-              Daily Horoscope
+              Yearly Horoscope
             </p>
           </div>
         </Section>
-        {/* <Card /> */}
+        <Card horos={horos} type="yearly" predictionArray={false} />
         <AboutHoroscope />
         <Check />
         <Faq faqDetail={faqsDetail} />
@@ -76,4 +76,4 @@ const HoroscopeType = (props: Props) => {
   );
 };
 
-export default HoroscopeType;
+export default Index;
