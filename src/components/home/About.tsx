@@ -12,7 +12,7 @@ function About({}: Props) {
             About US
           </h2>
           <p className="text-justify text-base font-medium">
-            Astrology, type of divination that involves the forecasting of
+            Astrologys, type of divination that involves the forecasting of
             earthly and human events through the observation and interpretation
             of the fixed stars, the Sun, the Moon, and the planets. Devotees
             believe that an understanding of the influence of the planets and
