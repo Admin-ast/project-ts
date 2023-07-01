@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Card from "./Card";
 import Table from "./Table";
+import TimeTable from "./TimeTable";
 
 const Admin = () => {
   return (
@@ -12,6 +13,7 @@ const Admin = () => {
       <div className="">
         <Card />
         <Table />
+        <TimeTable />
       </div>
     </div>
   );

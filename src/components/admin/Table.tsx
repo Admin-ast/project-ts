@@ -53,6 +53,104 @@ const Table = () => {
                 </button>
               </td>
             </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td className="border-b py-2 px-4 lg:text-xl">Report</td>
+              <td className="border-b  py-2 lg:px-40 lg:text-xl">
+                (0.0/query)
+              </td>
+              <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
+                <BsToggleOn className="text-[20px] text-[#CF2927]" />
+              </td>
+              <td className=" border-b ">
+                <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[100px] lg:px-[100px] lg:py-[14px]">
+                  N/A
+                </button>
+              </td>
+            </tr>
 
             {/* Add more rows as needed */}
           </tbody>
