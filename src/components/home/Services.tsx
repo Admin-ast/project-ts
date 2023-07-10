@@ -83,36 +83,29 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 import Horoscope from "../home/Horoscope";
+import Link from "next/link";
 
 type Service = {
   name: string;
   src: string;
+  url: string;
 };
 
 const services: Service[] = [
   {
     name: "Compatibility",
     src: "/assets/home/service-1.webp",
+    url: "/compatibility",
   },
   {
     name: "Muhurat",
     src: "/assets/home/service-2.webp",
+    url: "/muhurat",
   },
   {
     name: "Palm Reading",
     src: "/assets/home/service-3.webp",
-  },
-  {
-    name: "Compatibility",
-    src: "/assets/home/service-1.webp",
-  },
-  {
-    name: "Muhurat",
-    src: "/assets/home/service-2.webp",
-  },
-  {
-    name: "Palm Reading",
-    src: "/assets/home/service-3.webp",
+    url: "/",
   },
 ];
 type Props = {};
@@ -150,19 +143,21 @@ function Services({}: Props) {
           >
             {services.map((item, index) => (
               <SwiperSlide key={item.src + index}>
-                <div className="h-[390px] rounded-3xl border-[10px] border-white p-6">
-                  <Image
-                    src={item.src}
-                    alt={item.name}
-                    width={337}
-                    height={348}
-                    loading={"lazy"}
-                    className="mx-auto h-full w-full object-contain"
-                  />
-                </div>
-                <p className="-mt-5 bg-black py-[14px] px-[90px] text-center font-[georgia] text-white md:text-2xl lg:text-[32px]">
-                  {item.name}
-                </p>
+                <Link key={index} href={item?.url}>
+                  <div className="h-[390px] rounded-3xl border-[10px] border-white p-6">
+                    <Image
+                      src={item.src}
+                      alt={item.name}
+                      width={337}
+                      height={348}
+                      loading={"lazy"}
+                      className="mx-auto h-full w-full object-contain"
+                    />
+                  </div>
+                  <p className="-mt-5 bg-black py-[14px] px-[90px] text-center font-[georgia] text-white md:text-2xl lg:text-[32px]">
+                    {item.name}
+                  </p>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

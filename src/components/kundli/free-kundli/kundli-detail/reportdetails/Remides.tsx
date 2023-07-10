@@ -3,20 +3,22 @@ import React, { Key, useState } from "react";
 import Rudraksha from "./remidesdetails/Rudraksha";
 import Gemstone from "./remidesdetails/Gemstone";
 
-type Props = {};
+type Props = {
+  combinedRemedies: any;
+};
 
 type Tab = string[];
 
 const tabOptions: Tab = ["Rudraksha", "Gemstone"];
 
-const Remides = (props: Props) => {
+const Remides = ({ combinedRemedies }: Props) => {
   const [activeTab, setActiveTab] = useState<any>(0);
   const getMainContent = (step: any) => {
     switch (step) {
       case 0:
-        return <Rudraksha />;
+        return <Rudraksha combinedRemedies={combinedRemedies} />;
       case 1:
-        return <Gemstone />;
+        return <Gemstone combinedRemedies={combinedRemedies} />;
       default:
         throw new Error("Unknown Step");
     }

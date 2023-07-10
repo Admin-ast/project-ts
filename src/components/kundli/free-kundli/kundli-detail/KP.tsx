@@ -9,25 +9,21 @@ type Props = {};
 
 function KP({}: Props) {
   const [KPPlanetDetails, setKPPlanetDetails] = useState<any>([]);
+  const [chalitChart, setChalitChart] = useState<any>({});
   const [cuspDetails, setCuspDetails] = useState<any>([]);
   useEffect(() => {
     const planetResponse = async () => {
-      // const bodyData = JSON.stringify({
-      //   day: "10",
-      //   month: "5",
-      //   year: "1990",
-      //   hour: "19",
-      //   min: "55",
-      //   lat: "19.2",
-      //   lon: "25.2",
-      //   tzone: "5.5",
-      // });
       let bodyData: any;
       if (typeof window !== "undefined") {
         console.log("kundilll", localStorage.getItem("kundliData"));
         bodyData = localStorage.getItem("kundliData");
       }
       const result = await postFetcher("/kundli/kp_planets", bodyData);
+      const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
+      if (chalit.status) {
+        console.log(JSON.parse(chalit?.res));
+        setChalitChart(JSON.parse(chalit?.res));
+      }
       if (result.status) {
         setKPPlanetDetails(JSON.parse(result?.res));
       } else {
@@ -56,12 +52,16 @@ function KP({}: Props) {
     planetResponse();
   }, []);
 
-  console.log(KPPlanetDetails);
-
   return (
     <div className="mb-20 space-y-20">
       <Section>
         <div className="space-y-4">
+          <div>Bhav Chalit Chart</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: chalitChart && chalitChart.svg && chalitChart.svg,
+            }}
+          ></div>
           <div>
             <p className="mb-2 font-medium">Planets</p>
             <div className="relative overflow-x-auto rounded-2xl border border-gray-400">

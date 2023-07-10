@@ -29,13 +29,11 @@ const Blog = (props: Props) => {
                 >
                   <img
                     className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
-                    src="/assets/appointment/live-astro.png"
+                    src={item?.img}
                     alt=""
                   />
                   <div className="flex flex-col gap-4 p-3">
-                    <p className="text-justify text-lg font-bold">
-                      What to do if a girl has a mangal dosh and a boy does not?
-                    </p>
+                    <p className=" text-lg font-bold">{item?.text}</p>
                     <div className="flex items-center justify-between text-[12px] text-slate-500">
                       <p>Kasturi Chaudhary</p>
                       <p>March 31,2023</p>

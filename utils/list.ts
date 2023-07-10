@@ -1,7 +1,7 @@
 export const card = [
   {
     id: 1,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/blog aggresion-01.svg",
     text: "I was aware of my agressiveness",
     para: [
       { para: " Dear readers", title: "", img: "" },
@@ -34,7 +34,7 @@ export const card = [
   },
   {
     id: 2,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation-01-01.svg",
     text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
     keywords: [{ key: "business", link: "/" }],
     para: [
@@ -69,7 +69,7 @@ export const card = [
   },
   {
     id: 3,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/five min free consultation-01.svg",
     text: "Free 5 minutes Astrology",
     keywords: [
       { key: "5 minutes astrology", link: "/" },
@@ -123,7 +123,7 @@ export const card = [
   },
   {
     id: 4,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/astrological remedies to get rid of your problem in life.svg",
     text: "Astrological Remedies to get rid of your problems in life",
     keywords: [{ key: "Astrological Remedies", link: "/" }],
     para: [
@@ -169,7 +169,7 @@ export const card = [
   },
   {
     id: 5,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/astroseva  talk and talk to astrologer online-01.svg",
     text: "Astroseva Talk & Talk to Astrologer online",
     keywords: [{ key: "astrology ", link: "/" }],
     para: [
@@ -225,7 +225,7 @@ export const card = [
 
   {
     id: 6,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/CHAT WITH US AT ASTROSEVA TALK FOR JOB, CAREER, PROMOTION, AND MORE-01-01.svg",
     text: "CHAT WITH US AT ASTROSEVATALK FOR JOB, CAREER, PROMOTIONS, AND MORE ",
     keywords: [
       { key: "Job ", link: "/" },
@@ -365,7 +365,7 @@ export const card = [
   },
   {
     id: 7,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/astrological guidance for student.svg",
     text: "Astrological Guidance for Students",
     keywords: [
       { key: "Students ", link: "/" },
@@ -458,7 +458,7 @@ export const card = [
   },
   {
     id: 8,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/Astrology for Mental Health-01.svg",
     text: "Astrology for Mental Health",
     keywords: [
       { key: "mental health", link: "/" },
@@ -503,7 +503,7 @@ export const card = [
   },
   {
     id: 9,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01.svg",
     text: "ASTROSEVATALK CHAT FOR MARRIAGE",
     keywords: [
       { key: "marriage", link: "/" },
@@ -539,7 +539,7 @@ export const card = [
   },
   {
     id: 10,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/Welcome to Astroseva Talk.svg",
     text: "Best Online Astrology website in India ",
 
     keywords: [
@@ -618,7 +618,7 @@ export const card = [
   },
   {
     id: 11,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/business predictionby expert astrologer of astrosevatalk-01-01.svg",
     text: "Business Prediction by Expert Astrologers of Astroseva Talk",
     keywords: [
       { key: "business", link: "/" },
@@ -671,7 +671,7 @@ export const card = [
   },
   {
     id: 12,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/How healing helps in balance chakras [Recovered]-01-01.svg",
     text: "How healing helps in balance chakras",
     keywords: [
       { key: "healing", link: "/" },
@@ -794,8 +794,8 @@ export const card = [
   },
   {
     id: 13,
-    img: "/assets/appointment/live-astro.png",
-    text: "Online chat with Astrologer and 247 Astrology Consultation.",
+    img: "/assets/blog/Online chat with Astrologer and 24 astrology consultation.svg",
+    text: "Online chat with Astrologer and 24*7 Astrology Consultation.",
     keywords: [
       { key: "online chat", link: "/" },
       { key: "consultation", link: "/" },
@@ -867,7 +867,7 @@ export const card = [
   },
   {
     id: 14,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/Importance of Vastu in Home or Office-01.svg",
     text: "Importance of Vastu in Home or Office",
     keywords: [
       { key: "vastu", link: "/" },
@@ -929,7 +929,7 @@ export const card = [
   },
   {
     id: 15,
-    img: "/assets/appointment/live-astro.png",
+    img: "/assets/blog/zodiac sign blog-01.svg",
     text: "Welcome to Astrosevva talk, where we explore the characteristics and traits of zodiac signs.",
     keywords: [
       { key: "zodiac", link: "/" },
@@ -1835,6 +1835,931 @@ export const card = [
       {
         head: "",
         para: " If you're curious about your future marriage prospects, contact us at Astroseva Talk and please visit website https://www.AstrosevaTalk.com today for a personalized astrology reading. We can help you unlock the secrets of your birth chart and provide you with valuable insights into your romantic future. Thank you for choosing Astroseva Talk for your astrology needs.",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 20,
+    img: "/assets/appointment/live-astro.png",
+    text: "  Astrology free marriage prediction",
+    keywords: [
+      { key: "Marriage Prediction", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Welcome to Astroseva Talk! We are here to discuss a very interesting topic - {`Astrology Free Marriage Prediction.`} Astrology has been used for centuries to predict future events, including marriages. In this blog, we will discuss how astrology can be used to predict marriage and how you can use Astroseva Talk to get your free marriage prediction.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrology is an ancient science that uses the positions of the stars and planets to make predictions about future events. Astrologers believe that the positions of these celestial bodies can have a significant impact on our lives, including our marriages. The position of the stars at the time of our birth can determine the type of person we are and the kind of partner we are likely to attract.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "At Astroseva Talk, we use the latest technology and algorithms to analyze your birth chart and provide you with an accurate and personalized marriage prediction. Our astrologers are highly experienced and trained to provide you with the best possible guidance and advice.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "To get your free marriage prediction, all you have to do is visit our website https://www.AstrosevaTalk.com and provide us with your birth details, including your date of birth, time of birth, and place of birth. Our system will analyze your birth chart and provide you with a personalized marriage prediction based on your unique astrological profile.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Using Astroseva Talk for your free marriage prediction is a great way to get insight into your future marriage. Our astrologers can help you understand the kind of partner you are likely to attract and the challenges you may face in your marriage. Armed with this knowledge, you can take steps to ensure a successful and happy marriage.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "In conclusion, astrology is a powerful tool that can be used to predict future events, including marriages. At Astroseva Talk, we use the latest technology and algorithms to provide you with accurate and personalized marriage predictions. So why wait? Visit our website https://www.AstrosevaTalk.com today and get your free marriage prediction!",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 21,
+    img: "/assets/appointment/live-astro.png",
+    text: "  ASTROLOGY COURSES PRICING",
+    keywords: [
+      { key: "ASTROLOGY COURSES", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "",
+        title: "“Astrology Proficient 8 Days Course Just At 9999”",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Highly recommend courses for those who want to excel at astrology just by taking classes on weekends. The course teaches the whole basics to the advanced concept just in 8 weekend days. Classes are held every weekend on Saturday and Sunday for the 8 days of the weekend. You can start your astrology practice right after the completion of the course and make money in lacs monthly.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "“Expert Astrology 10 Days Course just at 24999”",
+        img: "",
+      },
+      {
+        head: "",
+        para: "The course is the pure value of money to turn Astrology experts in a record 10 days in just 2 hours of daily classes. The course covers all the ancient to modern practices of astrology for making 101% accurate predictions. You can truly reach advanced heights in your astrology career and make lacs of rupees monthly in the practice.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "“Astrology for Beginners Just at Rs 299”",
+        img: "",
+      },
+      {
+        head: "",
+        para: "The course has been designed for all beginners having an interest in making an astrology career. It covers all the basic fundamentals for the duration of 2 months with one class every weekend. The course is highly recommended for those who are under budget constraints and want to cover the fundamentals of astrology. ",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 22,
+    img: "/assets/appointment/live-astro.png",
+    text: "ASTROSEVATALK CLIENT’S REVIEWS ",
+    keywords: [
+      { key: "Astrosevatalk", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "●	I feel short of words to state how thankful I'm to the gem of astrologers at the Astrosevatalk. I was going through extreme distress in my life due to my career and then I randomly came across the Astrosevatalk platform. I had a chat with one of their astrologers who suggested I switch my career toward government jobs. Guess what today I'm working as a village development officer under the state services of MP. I never thought about what was destined for me until my birth chart revealed it for me through the finest astrology services of Astrosevatalk. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "-Ruchi Pathak - Indore, MP",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	I was going through the Rahu Mahadasha which was really troubling all aspects of my life despite trying my level best. Sometimes I was falling into constant depression and at others, my health was deteriorating. My Aunt introduced me to the Astrosevatalk to get my birth chart analysis by some astrologer there. I had a short chat with an astrologer there who suggested me some simple home remedies to nullify the severe effect of Rahu Mahadasha. Guess what? I have been feeling truly at peace and in harmony following those simple home remedies in the form of daily worship.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "- Hardik Sharma, Delhi",
+        img: "",
+      },
+      {
+        head: "",
+        para: "● I have the mangal dosha in my Kundali which was causing me extreme stress towards taking the marriage decision. I thankfully came across the Astrosevatalk website and got my birth chart analysis from one of their astrologers. He told me to do some home remedies and pool for 3 months and then advised me to go for the marriage. I followed the suggested solution and I couldn't believe all of a sudden I started getting decent numbers of marriage proposals. Today I'm happily arranged married and living the best of my life  .",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "-Shalini Thakur, Mathura",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Astrosevatalk has been the best source of self-reflection for me ever since I started consulting their astrologers. I used to be an unknown person within my own consciousness. A friend of mine suggested me to consult their astrologers and I randomly visited them. Just the 10 minutes of chat session provided me with a clear path as to what I should truly pursue in my life.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "- Shivani Saha, Ahmedabad",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Astrosevatalk is one of the most reliable astrology platforms to seek any kind of guidance for any aspect of your life. I consult their astrologers from time to seek astrology predictions for anything in my life. They miraculously predict everything that's coming next in my life and even reveal my present scenario of life. I have taken many major decisions in my life for my business and investments on the basis of their astrology predictions.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "- Nishant Verma, South Delhi",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Life is full of chaos and uncertainty at times giving you no clue to take any firm decision and that has always been my story. Thanks to the 24/7 available astrologers at Astrosevatalk who are there to guide me in all the areas of my life. At times they have guided me to take some major decisions in my life like changing my job, buying a new house, and so on. I would just forever stick to their astrological guidance and incredibly accurate predictions.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "-Kavya Burman, Gurgaon",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	I just recently got married and had the Kundali milan done by an Astrologer at Astrosevatalk. He did a wonderful job by matching the kundali with ultimate compatibility with my now husband. We are truly living such a blessed and harmonious married life  . Kudos to the Astrosevatalk and their genius Astrologers who are shaping lives for the good. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: " ",
+        title: "-Pooja, Mumbai",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 23,
+    img: "/assets/appointment/live-astro.png",
+    text: " Best Astrology courses in India",
+    keywords: [
+      { key: " Course", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "",
+        title: "Welcome to Astroseva Talk!",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrology is an ancient science that has always been fascinating and intriguing to people. It has been around for centuries and has played a significant role in people's lives. In India, astrology is deeply rooted in the culture, and people have always relied on astrologers for guidance and advice. With the advancement of technology and the internet, learning astrology has become more accessible than ever before. Today, you can enroll in some of the best astrology courses in India online.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "Here are some of the best astrology courses in India online offered by Astroseva Talk:",
+        para: "",
+        title: "",
+        img: "",
+      },
+      {
+        head: "1. Basic Astrology Course:",
+        para: "This course is perfect for beginners who are new to the field of astrology. The course covers the basics of astrology, including the zodiac signs, planets, houses, and aspects. The course also includes practical exercises and assignments to help you develop your skills.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "2. Vedic Astrology Course:",
+        para: "Vedic astrology is one of the oldest forms of astrology and is widely practiced in India. This course covers the basics of Vedic astrology, including the nakshatras, dasas, and yogas. The course also includes a detailed study of the birth chart and its significance.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "3. Numerology Course:",
+        para: "Numerology is a branch of astrology that deals with numbers and their significance. This course covers the basics of numerology, including the different types of numbers and their meanings. The course also includes practical exercises and assignments to help you develop your skills.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "4. Tarot Card Reading Course:",
+        para: "Tarot card reading is an ancient divination practice that involves using a deck of cards to gain insight into the past, present, and future. This course covers the basics of tarot card reading, including the different types of cards and their meanings. The course also includes practical exercises and assignments to help you develop your skills.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "5. Palmistry Course:",
+        para: "Palmistry is a branch of astrology that deals with the study of the lines and markings on the palms of the hands. This course covers the basics of palmistry, including the different types of lines and their meanings. The course also includes practical exercises and assignments to help you develop your skills.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "Conclusion:",
+        para: "Learning astrology can be a life-changing experience. It can help you gain a deeper understanding of yourself and the world around you. Astroseva Talk is one of the best platforms for learning astrology online in India please visit website https://www.AstrosevaTalk.com They offer a wide range of courses, including basic astrology, Vedic astrology, numerology, tarot card reading, and palmistry. So, whether you are a beginner or an experienced astrologer, Astroseva Talk has a course for you.",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 24,
+    img: "/assets/appointment/live-astro.png",
+    text: " career",
+    keywords: [
+      { key: "career", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Welcome to Astroseva Talk, where we use astrology to help guide you in making important career decisions. Many people believe that astrology can provide insights into various aspects of our lives, including our career paths. In this blog post, we will explore the topic of career prediction by date of birth and how Astroseva Talk can help.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrology is a study of the alignment of celestial bodies and their influence on human lives. It is believed that each person's date of birth has a unique set of planetary positions, which can provide valuable insights into their personality traits, strengths, weaknesses, and potential career paths. With the help of Astrology, you can discover your natural talents and abilities, and make informed decisions about your career.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "At Astroseva Talk, we offer birth chart analysis and career prediction services to help our clients make informed decisions about their professional lives. By analyzing the positions of the planets and other celestial bodies in a person's birth chart, our astrologers can identify potential career paths that are aligned with their strengths and interests.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "For example, if you were born with a strong Sun placement, you may have a natural talent for leadership and entrepreneurship. On the other hand, if your Moon is in a prominent position, you may have a natural inclination towards creative fields such as art, writing, or music. Similarly, the position of other planets such as Mars, Venus, and Jupiter can provide valuable insights into your career potential.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Another tool that we use at Astroseva Talk is the Transit Chart, which predicts the planetary movements and their impact on your career. By analyzing the Transit Chart, we can identify the favorable and unfavorable periods for career growth, and advise you on the best time to take important career-related decisions.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "In addition to career prediction services, Astroseva Talk also offers career counseling and coaching services. Our experienced career coaches can help you identify your strengths and weaknesses, set career goals, and develop a plan to achieve them.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "At Astroseva Talk, we believe that everyone has the potential to achieve their career goals. By using astrology as a tool, we can help you unlock your full potential and find a career path that is aligned with your unique talents and interests.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "In conclusion, if you're looking for career guidance or are curious about what the stars have in store for your professional life, Astroseva Talk is here to help. Our experienced astrologers and career coaches are ready to provide you with the insights and guidance you need to make informed career decisions. Contact us visit our website https://www.AstrosevaTalk.com today to learn more about our services and how we can help you achieve your career goals.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Thank you for choosing Astroseva Talk for your career prediction needs. We look forward to helping you achieve success in your professional life.",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 25,
+    img: "/assets/appointment/live-astro.png",
+    text: " DISCOVER THE BENEFITS OF ONLINE ASTROLOGY CONSULTATION",
+    keywords: [
+      { key: "Astrosevatalk", link: "/" },
+      { key: "chat with an expert", link: "/" },
+      { key: "talk to astrologer", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Do you believe in the magic of astrological predictions but feel too tired of visiting the astrologers around? If such is the case then Astrosevatalk presents revolutionary online astrology consultancy services. At Astrosevatalk one can discover the benefits of online astrology consultation right from the comfort of home. So gone are the days when astrology was all about visiting the local astrologers or pundits in a physical manner. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrosevatalk is a fully digital or online platform to seek astrological predictions or solutions for any of your life's problems. All you need to do is just visit us on the online platform of Astrosevatalk and consult with the desired astrologer in a matter of just a minute.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "What is Online Astrology Consultancy at Astrosevatalk?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrosevatalk is the fastest-growing online platform for astrology consultancy services and is open not just to India but to anyone across the world. The platform works as an aggregator to bring both the astrologers and the clients under one umbrella. As a client or native one can visit the Astrosevatalk platform and connect with the astrologers to seek the astrology predictions. Being a fully online platform Astrosevatalk is far more convenient than visiting any offline astrologer by paying a physical visit. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "We have the finest experts in Astrology on the platform who have years of experience in astrology to make 101% true predictions. Whether you are going through a career struggle, marriage issues, health, and any other aspects, we assure you the guaranteed solution by astrology at Astrosevatalk. Guess what we are much cheaper and more affordable in our fees than any other local astrologers around. Also, we have the time to time offers for our clients to offer huge discounts on all our astrology services. You can share and recommend us to your friends, family, and relatives to explore astrology's power.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "How to Chat with Astrologers at Astrosevatalk?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Chatting with the astrologers at Astrosevatalk is quite a straightforward and simple task for anyone. All you need to do is just visit us at the Astrosevatalk website and land on our home page. You can then follow the above-mentioned steps to connect with the astrologers.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Visit us at the Astrosevatalk portal with your computer or mobile",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	On the home page, you will see an option as chat with an expert or  talk to astrologer.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	You need to tap on either of these options to redirect yourself to the chatting window.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Now you will see the catalogue of our available astrologers and you can choose any of them.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "●	Once you choose the astrologer then you can simply talk to the astrologer both by chatting or calling option.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "So as you can see it's just a matter of a few steps to connect with an astrologer at the Astrosevatalk. You can smoothly connect with us and get the spot on 101% accurate astrological predictions. We offer astrologer solutions that change the lives of our clients for good. No more delays to visit Astrosevatalk and find the life-changing astrological predictions today",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 26,
+    img: "/assets/appointment/live-astro.png",
+    text: " DISCOVER TRUSTED ONLINE ASTROLOGERS",
+    keywords: [
+      { key: "Astrosevatalk", link: "/" },
+      { key: "chat with an expert", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Are you sick of consulting online astrologers and getting bogus predictions and solutions that work for nothing? If yes then you need to discover trusted online astrologers who can truly unlock the magic of astrology to change your life. Astrosevatalk is the genuine and fastest-growing online astrology platform that you can certainly trust for 101% true astrology predictions. The portal has a pool of the finest astrologers not just from India but across the world. They have both the education and the experience to change your life with their birth chart readings. All you need to do is just visit us at the Astrosevatalk today and explore the true life-changing magic of online astrology.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "How Does Astrosevatalk Work?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrosevatalk is basically an online astrology platform that brings both the astrologers and the native or clients under one roof. The platform has a massive pool of astrologers registered and offering astrology consultancy services at Astrosevatalk. The natives basically need to visit the Astrosevatalk platform and then simply connect with any of these astrologers. Subsequently, the natives can ask questions concerning any problems in their lives or get true astrology predictions. The process is simple and much more convenient than visiting any offline astrologer around. At Astrosevatalk we ensure rather to guarantee 101% accurate astrological predictions. We are not just more accurate but also more affordable than most online astrology platforms available on the internet.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "Online Astrology Services at Astrosevatalk",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrosevatalk is the home to getting 101% accurate astrological predictions and solutions for all the areas in your life. Our astrologers are highly knowledgeable and experienced in every domain of life. You can connect with them whether it is about the struggle in your career, love life, marriage problems, business failures, health, and anything else. The specialty of our platform is that it has dedicated astrologers that have expertise in a particular domain of life. For instance, a financial astrologer can help you with your financial matters of wealth, money, investments, etc. In a similar manner, career astrologers can guide you in exploring your best-suited career. All you need to do is just to visit us at Astrosevatalk and connect with any of our astrologers today.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "How to Chat with Astrologers at Astrosevatalk?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Connecting or chatting with the astrologers at Astrosevatalk is much easier than you can ever imagine. The platform is very simple to use even for those who have never explored online astrology before. You can visit us at the Astrosevatalk platform by following our URL https://astrosevatalk.com/and landing on the home page of the portal. There you will see an option as Chat with Astrologers and you just need to tap on the same. After that, it will redirect you to our available astrologers and you can choose any of them. You will be now connected with our astrologer to ask any questions or seek the solution to any problems in your life. You can also follow us at the social media handles of Astrosevatalk such as Instagram, YouTube, Facebook etc, and enjoy daily free horoscope predictions. Feel free to share Astrosevatalk with your friends family and relatives etc and help them in changing their lives by the magic of astrology. ",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 27,
+    img: "/assets/appointment/live-astro.png",
+    text: "GAIN INSIGHTS FROM YOUR FINANCIAL HOROSCOPE",
+    keywords: [
+      { key: "Astrosevatalk", link: "/" },
+      { key: "chat with an expert", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "We all deal with the money and finance-related aspects of our lives and make money-related decisions. Often we make wrong decisions that cause us financial loss in the long run or even by the end of the month itself. Do you want to gain insights from your financial horoscope to take your day-to-day financial decisions and prosper in your life? If yes then financial astrology at Astrosevatalk is something that can definitely guide you in this aspect of your life. At Astrosevatalk one can check out the day-to-day financial horoscope to make money-related decisions in one's day-to-day life. You can also chat with our Astrologers at Astrosevatalk to gain personalized money matter-related insights from your birth chart.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "What are the Financial Insights from Horoscope?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Simply put the financial insights from the horoscope are taking the financial guidance from one's birth chart. It involves analyzing the planetary position of various planets responsible for one's financial aspects. Upon reading the birth chart an Astrologer is able to predict the financial position aspects of one's life. For instance, an Astrologer can predict the auspicious period during which one can get financial gain from several activities. It also includes making the prediction of financial gains from the business, professions, and other possible activities that one can indulge in. At the Astrosevatalk we provide the daily insights of financial gains for the natives on the basis of their birth chart and zodiacs.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title:
+          "Chat with Astrologers and Make Financial Gains at Astrosevatalk",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrosevatalk is a genuine platform that is having Financial experts and astrologers making money-related predictions for the native. Our astrologers make 101% accurate predictions to predict the inflow of wealth for clients. Money matters always require sheer guidance to make the right decisions at the right time. Taking money-related decisions at the right time is always possible with the help of astrology. It is simply for the reason that the planetary position in one's birth chart can directly influence the financial gains of the individual. Our astrologers at Astrosevatalk can guide you in money matters after analyzing your birth chart. They would guide you to make the right decision for your job, business, investments, trading, etc to get the maximum financial gains.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "How to Chat with Astrologers for Financial Insights?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Chatting with  Astrologers at Astrosevatalk is a cakewalk for any individual seeking financial insights and other astrology predictions. All you need to do is visit the official website of Astrosevatalk and come to its home page. There you need to simply tap or click on the chat with astrologer option to connect with an astrologer. You will also have the option to scroll through the various available astrologers and connect with the desired one. Once you are connected with an astrologer by chat or call then you can simply ask your finance-related or other questions from the astrologer. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "You will be provided with comprehensive insights on all your money matters so that you can take the right decisions to prosper in your life. You can also ask investment, business, or profession-related questions and get 101% true insights from astrologers. Feel free to visit us and also follow Astrosevatalk's social media handles such as YouTube, Facebook, Instagram, etc for daily money or finance-related horoscope",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 28,
+    img: "/assets/appointment/live-astro.png",
+    text: " Todays horoscope for health and wellness",
+    keywords: [
+      { key: "health", link: "/" },
+      { key: "wellness", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Your go-to website for all things astrology and wellness. We provide daily horoscopes, personalized consultations, and a platform to chat with expert astrologers. Today, we'll be discussing the daily horoscope for health and wellness.Health is one of the most essential aspects of life. A sound body and mind allow us to pursue our goals and passions with vigour. However, maintaining good health can be a daunting task. There are countless factors that can affect our physical and mental wellbeing, including stress, diet, exercise, and sleep. This is where astrology can provide valuable insights.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "At Astroseva Talk, we believe that astrology can be a powerful tool for understanding our bodies and minds. Our expert astrologers can offer health predictions based on your zodiac sign and the current astrological transits. By consulting with us, you can gain a deeper understanding of your unique strengths and challenges when it comes to health and wellness.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Now, let's dive into the daily health horoscope for each zodiac sign:",
+        title: "",
+        img: "",
+      },
+      {
+        head: "1.	Aries (Mar 21-Apr 19):",
+        para: " Today, you may be feeling a bit restless and impatient. Make sure to channel this energy into a productive activity, like a challenging workout or a long walk.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "2.	Taurus (Apr 20-May 20):",
+        para: " Your body may be craving some indulgence today. While it's important to treat yourself occasionally, make sure not to overdo it. Stick to moderation and balance.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "3.	Gemini (May 21-Jun 20):",
+        para: " Your mind and body are closely connected today. Make sure to take breaks throughout the day to stretch and move around. This will help you stay focused and energized.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "4.	Cancer (Jun 21-Jul 22):",
+        para: " You may be feeling more emotional than usual today. Make sure to take care of your mental health by practicing mindfulness or talking to a trusted friend.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "5.	Leo (Jul 23-Aug 22):",
+        para: " Today is a great day to focus on your physical fitness. Try a new workout or challenge yourself to reach a new fitness goal.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "6.	Virgo (Aug 23-Sep 22):",
+        para: " Your attention to detail can be a double-edged sword today. While it's important to pay attention to your health, make sure not to obsess over minor issues.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "7.	Libra (Sep 23-Oct 22):",
+        para: "  Your social life may be taking a toll on your health today. Make sure to set boundaries and prioritize your own needs.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "8.	Scorpio (Oct 23-Nov 21):",
+        para: " Your intuition may be heightened today. Trust your gut when it comes to making health decisions, but make sure to consult with a medical professional as well.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "9.	Sagittarius (Nov 22-Dec 21): ",
+        para: "Your adventurous spirit may be urging you to try something new today. Make sure to stay safe and listen to your body's limits.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "10.	Capricorn (Dec 22-Jan 19):",
+        para: " You may be feeling more disciplined than usual today. Use this energy to stick to your health goals and routines.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "11.	Aquarius (Jan 20-Feb 18):",
+        para: " Your independent streak may be causing you to neglect your health. Remember to prioritize self-care and seek support when needed.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "12.	Pisces (Feb 19-Mar 20):",
+        para: " Your creativity can be a valuable asset when it comes to maintaining good health. Try a new form of self-expression, like dance or art, to boost your wellbeing.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "By consulting with Astroseva Talk expert astrologers, you can receive personalized health predictions based on your unique astrological profile. Our platform also allows you to chat with astrologers in real-time, providing you with valuable guidance and support. Visit our website https://www.AstrosevaTalk.com  today to learn more and start your journey towards optimal health and wellness.",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 29,
+    img: "/assets/appointment/live-astro.png",
+    text: "  UNVEILING THE POWER OF ASTROLOGY CONSULTATION ONLINE ",
+    keywords: [
+      { key: "power", link: "/" },
+      { key: "Astrosevatalk", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Are you still walking the distances just to have some absurd astrology from the local amateur astrologers? Well, then you are definitely in dire need of unveiling the power of astrology consultation online at Astrosevatalk. Astrosevatalk is an online revolutionary astrology platform that connects the finest astrologers in the world with their clients. The platform comes with a sheer vision of making astrology highly convenient to the masses from the comfort of home. With the same vision, Astrosevatalk is serving its clients with 101% accurate astrology predictions on a 24/7 basis. You are just one chat or call away to explore the true potential of astrology that could change your life for the good.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "What is Online Astrology Consultation at Astrosevatalk?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "The online astrology consultation at Astrosevatalk is simply seeking astrology services in a digital manner. Simply put in online astrology the native just needs to connect with the astrologer at Astrosevatalk by using the chat or the calling methods. It is a one-click-based process that happens from the comfort of one's home. Online Astrology consultation at Astrosevatalk is much more convenient and affordable than going to offline astrologers. ",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Furthermore, the platform has highly experienced and truly educated astrologers who make the utmost accurate astrology predictions. You can connect with astrologers there whether it's about the struggle in your career, love, marriage, business losses, health issues, etc. Our astrologers at the Astrosevatalk have occult science-based solutions for all your problems that work like magic in the harmony of stars.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "",
+        title: "How to Chat Online with Astrologers at Astrosevatalk?",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Chatting with the astrologers at Astrosevatalk is the cakewalk for any individual since it's simple to follow 30 seconds process. Any individual of any age with basic knowledge of the internet and smartphone or computer can easily chat with our Astrologers. Here below we are simplifying the whole process in some steps.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Visit the Astrosevatalk official website by using your smartphone or computer device.On the home page of the website, there will be an option as Chat with Astrologers. Click on the same option and it will redirect you to our available astrologers at the time.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "You can subscribe and choose to connect with the desired astrologer from the catalogs.Once you choose the astrologer then you will be connected with that particular astrologer.You can now ask your questions to the astrologer or get accurate predictions from the astrologer for your specific or overall areas of life.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Don't make a delay and hurry to explore the power of online astrology at Astrosevatalk. Our astrologers are more than happy to guide you in any aspect of your life. They simply work with the vision of changing lives for the good through Astrology and Astrosevatalk makes it simpler. Feel free to follow us on our social media handles such as Instagram, Facebook, YouTube, etc for daily astrology or horoscope predictions.",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 30,
+    img: "/assets/appointment/live-astro.png",
+    text: " When is the best time to launch a business according to astrology",
+    keywords: [
+      { key: "business", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Your go-to website for astrology-related topics and consultation services. In this blog, we'll explore the best time to launch a business based on astrology, so if you're an entrepreneur or planning to become one, keep reading!",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrology is the study of celestial bodies' movements and their influence on human affairs and natural world phenomena. Many people believe that astrology can provide insights into the best timing for various events, including business launches. While astrology isn't a definitive guide to success, it can help you make informed decisions and increase your chances of success.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "So, when is the best time to launch a business according to astrology? The answer lies in understanding the different astrological factors that influence a business's success.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Firstly, let's talk about the sun's position. The sun represents our ego, self-expression, and vitality. In astrology, the sun's position is divided into 12 zodiac signs, and each sign has its unique characteristics. When launching a business, it's essential to choose a time when the sun is in a sign that aligns with your business's goals and values. For example, if you're launching a business related to health and wellness, a sun in Virgo or Pisces would be ideal, as these signs are associated with healing and spirituality.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Next, let's consider the moon's position. The moon represents our emotions, instincts, and intuition. In astrology, the moon's position changes every two to three days, and each position has its unique influence. When launching a business, it's important to choose a time when the moon is in a sign that aligns with your business's objectives. For instance, if you're launching a business related to technology or innovation, a moon in Aquarius would be ideal, as this sign is associated with innovation and new ideas.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Another important astrological factor to consider is Mercury retrograde. Mercury retrograde occurs when the planet Mercury appears to move backward in its orbit, and it's often associated with communication and technology problems. During this time, it's generally advised to avoid launching a business or making important decisions. However, if you can't avoid launching your business during Mercury retrograde, it's essential to take extra care with communication and technology-related matters.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Lastly, it's important to consider your birth chart and the planetary transits at the time of your business launch. Your birth chart can provide insights into your strengths and weaknesses as an entrepreneur, and planetary transits can give you a sense of the energy surrounding your business launch. A skilled astrologer can help you interpret your birth chart and guide you on the best timing for your business launch.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "In conclusion, astrology can provide valuable insights into the best timing for your business launch. By considering factors such as the sun's position, the moon's position, Mercury retrograde, and your birth chart, you can make informed decisions and increase your chances of success. If you want to talk to astrologers or live astrologers online for more insights, visit our website https://www.AstrosevaTalk.com and chat with astrologer for better clarity and understanding.We hope you found this blog informative and helpful. Don't hesitate to reach out to us if you have any questions or if you want to book a consultation with one of our online astrologers. Good luck with your business launch!",
+        title: "",
+        img: "",
+      },
+    ],
+    name: "Kasturi Chaudhary",
+    date: "March 31,2023",
+  },
+  {
+    id: 31,
+    img: "/assets/appointment/live-astro.png",
+    text: " When will I get married astrology prediction",
+    keywords: [
+      { key: "astrology", link: "/" },
+      { key: "predictions", link: "/" },
+      { key: "https://www.AstrosevaTalk.com", link: "/" },
+    ],
+
+    para: [
+      {
+        head: "",
+        para: "Welcome to Astroseva Talk, where we offer astrology predictions and insights into your future. One of the most common questions we receive is When will I get married? This question is a major concern for many people, as marriage is one of the most important events in our lives.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Astrology has been used for centuries to predict important events in our lives, including marriage. While there is no one-size-fits-all answer to this question, astrology can provide valuable insights into the timing of your marriage.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "Firstly, it's important to understand that astrological predictions are based on the positions of the planets and stars at the time of your birth. This information is used to create your birth chart, which can reveal important insights about your personality, strengths, weaknesses, and future.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "When it comes to marriage, astrologers typically look at the positions of Venus and Mars, the planets of love and passion. The placement of these planets in your birth chart can indicate your romantic inclinations and potential for marriage.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "In addition to Venus and Mars, astrologers also consider the seventh house of the birth chart, which governs marriage and partnerships. The planets and signs that are present in this house can provide further insight into your marriage prospects.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "However, it's important to note that astrology is not a guarantee of when or if you will get married. Free will and personal choices also play a role in shaping our future.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "So, when will you get married according to astrology? It's difficult to provide a definitive answer without a thorough analysis of your birth chart. However, there are some general indications based on your zodiac sign.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "1.	Aries:",
+        para: "You may get married at a young age, but could also experience delays due to your impatience.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "2.	Taurus :",
+        para: "You value stability and commitment, and may get married later in life after establishing a strong foundation.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "3.	Gemini:",
+        para: "You enjoy variety and may have multiple marriages or partnerships in your lifetime.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "4.	Cancer:",
+        para: " You value emotional connection and may have a traditional marriage with a partner who shares your family values.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "5.	Leo:",
+        para: "You enjoy being in the spotlight and may have a grand, dramatic wedding.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "6.	Virgo:",
+        para: "You may be picky about your partner and take your time to find the right match.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "7.	Libra:",
+        para: "You value harmony and balance in your relationships, and may have a beautiful, romantic wedding.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "8.	Scorpio:",
+        para: "You have intense emotions and may experience a transformative marriage that changes you on a deep level.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "9.	Sagittarius: ",
+        para: "You value freedom and may be hesitant to commit to marriage, but could also have a marriage that allows for independence.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "10.	Capricorn:",
+        para: "You are practical and may choose to get married for financial or societal reasons.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "11.	Aquarius :",
+        para: "You value intellectual connection and may have a unique, unconventional marriage.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "12.	Pisces:",
+        para: "You are sensitive and may have a dreamy, romantic wedding with a partner who shares your spiritual values.",
+        title: "",
+        img: "",
+      },
+      {
+        head: "",
+        para: "If you're curious about your future marriage prospects, contact us at Astroseva Talk and please visit website https://www.AstrosevaTalk.com today for a personalized astrology reading. We can help you unlock the secrets of your birth chart and provide you with valuabl insights into your romantic future. Thank you for choosing Astroseva Talk for your astrology needs.",
         title: "",
         img: "",
       },

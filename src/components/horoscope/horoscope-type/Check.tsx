@@ -12,33 +12,33 @@ type Check = {
 
 const check: Check[] = [
   {
-    id: "tomorrow-horoscope",
-    name: "Tomorrow's Horoscope",
-    img: "/assets/horoscope/tommorow.png",
-  },
-  {
-    id: "yesterday-horoscope",
+    id: "yesterday",
     name: "Yesterday's Horoscope",
     img: "/assets/horoscope/yesterday.png",
   },
   {
-    id: "weekly-horoscope",
-    name: "Weekly's Horoscope",
-    img: "/assets/horoscope/weekly.png",
+    id: "today",
+    name: "Today's Horoscope",
+    img: "/assets/horoscope/yearly.png",
   },
   {
-    id: "monthly-horoscope",
+    id: "tomorrow",
+    name: "Tomorrow's Horoscope",
+    img: "/assets/horoscope/tommorow.png",
+  },
+  // {
+  //   id: "weekly-horoscope",
+  //   name: "Weekly's Horoscope",
+  //   img: "/assets/horoscope/weekly.png",
+  // },
+  {
+    id: "monthly",
     name: "Monthly Horoscope",
     img: "/assets/horoscope/monthly.png",
   },
   {
-    id: "yearly-horoscope",
+    id: "yearly",
     name: "Yearly Horoscope",
-    img: "/assets/horoscope/yearly.png",
-  },
-  {
-    id: "daily-horoscope",
-    name: "Daily Horoscope",
     img: "/assets/horoscope/yearly.png",
   },
 ];
