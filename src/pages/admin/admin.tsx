@@ -1,4 +1,4 @@
-import Admin from "@/components/admin/admin";
+import Admin from "@/components/admin/Admin";
 import React from "react";
 
 type Props = {};

@@ -77,29 +77,27 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
   ];
 
   return (
-    <Section>
-      <div className=" grid grid-cols-1 gap-[40px] lg:grid-cols-3  ">
-        {cardItems.map((item, index) => (
-          <div
-            key={index}
-            className="`${className}` rounded-[15px]  bg-[#B4871DF0] p-[10px]"
-          >
-            <p className="text-bold text-base text-white ">{item?.title}</p>
-            <p className="text-xs  text-white ">{item?.charges}</p>
-            <p className="text-xs  text-white ">{item?.deliver}</p>
-            <p className="text-bold text-base text-white ">{item?.users}</p>
-            <div className="flex justify-between">
-              {/* <div className=""></div> */}
-              <p className="text-bold text-base text-white ">{item?.user}</p>
-              <BsToggleOn className="text-[30px] text-[#CF2927]" />
-            </div>
-
-            <p className="text-xs  text-white ">{item?.line1}</p>
-            <p className="text-xs  text-white ">{item?.line2}</p>
+    <div className=" grid grid-cols-1 gap-[40px] lg:grid-cols-3 ">
+      {cardItems.map((item, index) => (
+        <div
+          key={index}
+          className="`${className}` rounded-[15px]  bg-[#B4871DF0] p-[10px]"
+        >
+          <p className="text-bold text-base text-white ">{item?.title}</p>
+          <p className="text-xs  text-white ">{item?.charges}</p>
+          <p className="text-xs  text-white ">{item?.deliver}</p>
+          <p className="text-bold text-base text-white ">{item?.users}</p>
+          <div className="flex justify-between">
+            {/* <div className=""></div> */}
+            <p className="text-bold text-base text-white ">{item?.user}</p>
+            <BsToggleOn className="text-[30px] text-[#CF2927]" />
           </div>
-        ))}
-      </div>
-    </Section>
+
+          <p className="text-xs  text-white ">{item?.line1}</p>
+          <p className="text-xs  text-white ">{item?.line2}</p>
+        </div>
+      ))}
+    </div>
   );
 };
 
