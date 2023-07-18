@@ -12,6 +12,9 @@ import Cookies from "js-cookie";
 import NavMobileData from "../NavMobileData";
 import { useRouter } from "next/router";
 import { FaBars } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import CartDrawer from "../shop/minicart/CartDrawer";
+import MainPage from "../shop/minicart/MainPage";
 type Props = {};
 
 type Links = {
@@ -189,6 +192,9 @@ function Navbar({}: Props) {
                 />
               )}
               {/* onClick={handleLogout} */}
+              <div className="mt-2">
+                <MainPage />
+              </div>
             </div>
           </div>
         </Section>

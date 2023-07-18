@@ -246,7 +246,10 @@ const KawachCard = (props: Props) => {
                   </div>
                   <div className="flex flex-col justify-between">
                     <p className="py-4 font-bold">{item?.para}</p>
-                    <div className="  ml-24  flex justify-end">
+                    <div className="   flex gap-5">
+                      <button className="rounded-md border-2 border-black bg-[#EED387] px-6 py-2 font-bold hover:bg-[#F9B800]">
+                        Add To Cart
+                      </button>
                       <button className="rounded-md border-2 border-black bg-[#EED387] px-6 py-2 font-bold hover:bg-[#F9B800]">
                         BUY
                       </button>
