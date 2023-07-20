@@ -12,7 +12,7 @@ const LoveForm = (props: Props) => {
     setValue,
     formState: { errors },
   } = useForm();
-
+  const onSubmit = (data: unknown) => console.log(data);
   return (
     <div className="mt-[35px] ">
       <Section>
@@ -22,7 +22,7 @@ const LoveForm = (props: Props) => {
               <p className="text-center font-[Georgia] text-[22px] font-bold">
                 Enter Your Information
               </p>
-              <Form onSubmit={handleSubmit}>
+              <Form onSubmit={handleSubmit(onSubmit)}>
                 <div className=" mt-[35px] gap-[31px]  md:flex lg:flex">
                   <div className="">
                     <Input
@@ -40,7 +40,7 @@ const LoveForm = (props: Props) => {
                     <Input
                       type={"string"}
                       name={"gender"}
-                      id="name"
+                      id="gender"
                       register={register}
                       required={true}
                       label="Gender"
@@ -52,9 +52,9 @@ const LoveForm = (props: Props) => {
                 <div className="gap-[31px] md:flex lg:flex">
                   <div className="">
                     <Input
-                      type={"string"}
-                      name={"name"}
-                      id="name"
+                      type={"date"}
+                      name={"dateofbirth"}
+                      id="dobirth"
                       register={register}
                       required={true}
                       label="Date Of Birth*"
@@ -64,9 +64,9 @@ const LoveForm = (props: Props) => {
                   </div>
                   <div className="">
                     <Input
-                      type={"string"}
-                      name={"gender"}
-                      id="name"
+                      type={"time"}
+                      name={"timeofbirth"}
+                      id="tobirth"
                       register={register}
                       required={true}
                       label="Time Of Birth*"
@@ -79,8 +79,8 @@ const LoveForm = (props: Props) => {
                 <div className="">
                   <Input
                     type={"string"}
-                    name={"gender"}
-                    id="name"
+                    name={"birthlocation"}
+                    id="location"
                     register={register}
                     required={true}
                     label="Birth Location"
@@ -90,9 +90,9 @@ const LoveForm = (props: Props) => {
                 </div>
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"gender"}
-                    id="name"
+                    type={"email"}
+                    name={"email"}
+                    id="email"
                     register={register}
                     required={true}
                     label="Email"
@@ -107,7 +107,7 @@ const LoveForm = (props: Props) => {
               <p className="text-center font-[Georgia] text-[22px] font-bold">
                 Enter Your {`Partner's`} Information
               </p>
-              <Form onSubmit={handleSubmit}>
+              <Form onSubmit={handleSubmit(onSubmit)}>
                 <div className="mt-[35px] gap-[31px] md:flex lg:flex ">
                   <div className="">
                     <Input
@@ -125,7 +125,7 @@ const LoveForm = (props: Props) => {
                     <Input
                       type={"string"}
                       name={"gender"}
-                      id="name"
+                      id="gender"
                       register={register}
                       required={true}
                       label="Gender"
@@ -137,9 +137,9 @@ const LoveForm = (props: Props) => {
                 <div className="gap-[31px] md:flex lg:flex">
                   <div className="">
                     <Input
-                      type={"string"}
-                      name={"name"}
-                      id="name"
+                      type={"date"}
+                      name={"dateofbirth"}
+                      id="dobirth"
                       register={register}
                       required={true}
                       label="Date Of Birth*"
@@ -149,9 +149,9 @@ const LoveForm = (props: Props) => {
                   </div>
                   <div className="">
                     <Input
-                      type={"string"}
-                      name={"gender"}
-                      id="name"
+                      type={"time"}
+                      name={"timeofbirth"}
+                      id="tobirth"
                       register={register}
                       required={true}
                       label="Time Of Birth*"
@@ -164,8 +164,8 @@ const LoveForm = (props: Props) => {
                 <div className="">
                   <Input
                     type={"string"}
-                    name={"gender"}
-                    id="name"
+                    name={"birthlocation"}
+                    id="location"
                     register={register}
                     required={true}
                     label="Birth Location"
@@ -175,9 +175,9 @@ const LoveForm = (props: Props) => {
                 </div>
                 <div className="">
                   <Input
-                    type={"string"}
-                    name={"gender"}
-                    id="name"
+                    type={"email"}
+                    name={"email"}
+                    id="email"
                     register={register}
                     required={true}
                     label="Email"
