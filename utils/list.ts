@@ -34,7 +34,7 @@ export const card = [
   },
   {
     id: 2,
-    img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation-01-01.svg",
+    img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation C-01-01.svg",
     text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
     keywords: [{ key: "business", link: "/" }],
     para: [
@@ -123,7 +123,7 @@ export const card = [
   },
   {
     id: 4,
-    img: "/assets/blog/astrological remedies to get rid of your problem in life.svg",
+    img: "/assets/blog/ASTROLOGICAL REMEDIES TO GETRID OF YOUR LIFE PROBLEM-01-01.svg",
     text: "Astrological Remedies to get rid of your problems in life",
     keywords: [{ key: "Astrological Remedies", link: "/" }],
     para: [
@@ -365,7 +365,7 @@ export const card = [
   },
   {
     id: 7,
-    img: "/assets/blog/astrological guidance for student.svg",
+    img: "/assets/blog/Astrological Guidance for Students-01-01.svg",
     text: "Astrological Guidance for Students",
     keywords: [
       { key: "Students ", link: "/" },
@@ -503,7 +503,7 @@ export const card = [
   },
   {
     id: 9,
-    img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01.svg",
+    img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01-01.svg",
     text: "ASTROSEVATALK CHAT FOR MARRIAGE",
     keywords: [
       { key: "marriage", link: "/" },
@@ -929,7 +929,7 @@ export const card = [
   },
   {
     id: 15,
-    img: "/assets/blog/zodiac sign blog-01.svg",
+    img: "/assets/blog/Welcome to Astroseva Talk [Recovered]-01-01.svg",
     text: "Welcome to Astrosevva talk, where we explore the characteristics and traits of zodiac signs.",
     keywords: [
       { key: "zodiac", link: "/" },
@@ -1445,131 +1445,9 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
+
   {
     id: 16,
-    img: "/assets/appointment/live-astro.png",
-    text: "How healing helps in balance chakras?",
-    keywords: [
-      { key: "balance", link: "/" },
-      { key: "chakra", link: "/" },
-    ],
-    para: [
-      {
-        head: "",
-        para: "Healing is an ancient practice that has been used for thousands of years to promote physical, emotional, and spiritual wellbeing. One of the ways healings can be beneficial is by balancing the chakras.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Chakras are energy centres located throughout the body that regulate the flow of vital energy, or prana. When these chakras are blocked or imbalanced, it can lead to physical and emotional problems.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Healing practices such as Reiki, meditation, and yoga can help to unblock and balance the chakras. Astroseva talks is a great platform to learn about these practices and incorporate them into your daily routine.",
-        title:
-          "Let's take a closer look at each chakra and how healing can help to balance them:",
-        img: "",
-      },
-      {
-        head: "• Root Chakra:",
-        para: " The root chakra is located at the base of the spine and is associated with feelings of safety and security. Healing practices that can help to balance this chakra include grounding exercises, such as walking barefoot in nature, and using essential oils such as patchouli or cedarwood.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Sacral Chakra:",
-        para: " The sacral chakra is located in the lower abdomen and is associated with creativity and pleasure. Healing practices that can help to balance this chakra include practicing yoga poses such as pigeon pose, and using essential oils such as orange or ylang-ylang.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Solar Plexus Chakra:",
-        para: " The solar plexus chakra is located in the upper abdomen and is associated with personal power and self-esteem. Healing practices that can help to balance this chakra include practicing breathing exercises, such as diaphragmatic breathing, and using essential oils such as lemon or peppermint.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Heart Chakra:",
-        para: " The heart chakra is located in the center of the chest and is associated with love and compassion. Healing practices that can help to balance this chakra include practicing heart-opening yoga poses, such as camel pose, and using essential oils such as rose or lavender.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Throat Chakra:",
-        para: " The throat chakra is located in the throat and is associated with communication and self-expression. Healing practices that can help to balance this chakra include practicing chanting or singing, and using essential oils such as eucalyptus or tea tree.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Third Eye Chakra:",
-        para: " The third eye chakra is located in the centre of the forehead and is associated with intuition and wisdom. Healing practices that can help to balance this chakra include practicing mindfulness meditation and using essential oils such as frankincense or sandalwood.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Crown Chakra:",
-        para: " The crown chakra is located at the top of the head and is associated with spiritual connection and enlightenment. Healing practices that can help to balance this chakra include practicing gratitude meditation and using essential oils such as lavender or jasmine.",
-        title: "Benefits of Chakra Balancing",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Balancing your chakras can have many benefits for your physical, emotional, and spiritual health. Some of the most common benefits include:",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Reduced stress and anxiety:",
-        para: " Balancing your chakras can help to reduce stress and anxiety, which can improve your overall quality of life.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Improved physical health:",
-        para: " Balancing your chakras can help to improve your physical health by promoting better circulation, reducing inflammation, and boosting your immune system.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Increased energy and vitality:",
-        para: " Balancing your chakras can help to increase your energy and vitality, which can improve your productivity and overall well-being.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Enhanced emotional well-being:",
-        para: " Balancing your chakras can help to enhance your emotional well-being by promoting feelings of peace, happiness, and contentment.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "• Improved spiritual connection:",
-        para: " Balancing your chakras can help to improve your spiritual connection by promoting a sense of oneness with the universe and a deeper understanding of your place in it.",
-        title: "",
-        img: "",
-      },
-      { head: "", para: "", title: "Conclusion", img: "" },
-      {
-        head: "",
-        para: "In conclusion, balancing your chakras through healing can have many benefits for your physical, emotional, and spiritual health. There are many different healing modalities that can be used to balance your chakras, including Reiki, acupuncture, meditation, and yoga. By taking steps to balance your chakras, you can improve your overall quality of life and promote optimal wellness.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Thank you for reading this post on How Healing Helps in Balancing Chakras for Astroseva Talks. If you're interested in learning more about chakra balancing or healing, please feel free to browse our website for more information.",
-        title: "",
-        img: "",
-      },
-    ],
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
-  {
-    id: 17,
     img: "/assets/appointment/live-astro.png",
     text: "Online Astrology by date of birth",
     keywords: [
@@ -1660,7 +1538,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 18,
+    id: 17,
     img: "/assets/appointment/live-astro.png",
     text: "Solutions of Health Problems in Astrology",
     keywords: [
@@ -1710,8 +1588,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 19,
-    img: "/assets/appointment/live-astro.png",
+    id: 18,
+    img: "/assets/blog/when will i get married.png",
     text: "When will I get married astrology predication",
     keywords: [
       { key: "married ", link: "/" },
@@ -1843,7 +1721,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 20,
+    id: 19,
     img: "/assets/appointment/live-astro.png",
     text: "  Astrology free marriage prediction",
     keywords: [
@@ -1893,7 +1771,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 21,
+    id: 20,
     img: "/assets/appointment/live-astro.png",
     text: "  ASTROLOGY COURSES PRICING",
     keywords: [
@@ -1943,7 +1821,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 22,
+    id: 21,
     img: "/assets/appointment/live-astro.png",
     text: "ASTROSEVATALK CLIENT’S REVIEWS ",
     keywords: [
@@ -2041,7 +1919,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 23,
+    id: 22,
     img: "/assets/appointment/live-astro.png",
     text: " Best Astrology courses in India",
     keywords: [
@@ -2109,8 +1987,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 24,
-    img: "/assets/appointment/live-astro.png",
+    id: 23,
+    img: "/assets/blog/.svg",
     text: " career",
     keywords: [
       { key: "career", link: "/" },
@@ -2177,7 +2055,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 25,
+    id: 24,
     img: "/assets/appointment/live-astro.png",
     text: " DISCOVER THE BENEFITS OF ONLINE ASTROLOGY CONSULTATION",
     keywords: [
@@ -2270,7 +2148,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 26,
+    id: 25,
     img: "/assets/appointment/live-astro.png",
     text: " DISCOVER TRUSTED ONLINE ASTROLOGERS",
     keywords: [
@@ -2327,7 +2205,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 27,
+    id: 26,
     img: "/assets/appointment/live-astro.png",
     text: "GAIN INSIGHTS FROM YOUR FINANCIAL HOROSCOPE",
     keywords: [
@@ -2391,7 +2269,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 28,
+    id: 27,
     img: "/assets/appointment/live-astro.png",
     text: " Todays horoscope for health and wellness",
     keywords: [
@@ -2502,7 +2380,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 29,
+    id: 28,
     img: "/assets/appointment/live-astro.png",
     text: "  UNVEILING THE POWER OF ASTROLOGY CONSULTATION ONLINE ",
     keywords: [
@@ -2571,7 +2449,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 30,
+    id: 29,
     img: "/assets/appointment/live-astro.png",
     text: " When is the best time to launch a business according to astrology",
     keywords: [
@@ -2632,144 +2510,10 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
-  {
-    id: 31,
-    img: "/assets/appointment/live-astro.png",
-    text: " When will I get married astrology prediction",
-    keywords: [
-      { key: "astrology", link: "/" },
-      { key: "predictions", link: "/" },
-      { key: "https://www.AstrosevaTalk.com", link: "/" },
-    ],
 
-    para: [
-      {
-        head: "",
-        para: "Welcome to Astroseva Talk, where we offer astrology predictions and insights into your future. One of the most common questions we receive is When will I get married? This question is a major concern for many people, as marriage is one of the most important events in our lives.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Astrology has been used for centuries to predict important events in our lives, including marriage. While there is no one-size-fits-all answer to this question, astrology can provide valuable insights into the timing of your marriage.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Firstly, it's important to understand that astrological predictions are based on the positions of the planets and stars at the time of your birth. This information is used to create your birth chart, which can reveal important insights about your personality, strengths, weaknesses, and future.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "When it comes to marriage, astrologers typically look at the positions of Venus and Mars, the planets of love and passion. The placement of these planets in your birth chart can indicate your romantic inclinations and potential for marriage.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "In addition to Venus and Mars, astrologers also consider the seventh house of the birth chart, which governs marriage and partnerships. The planets and signs that are present in this house can provide further insight into your marriage prospects.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "However, it's important to note that astrology is not a guarantee of when or if you will get married. Free will and personal choices also play a role in shaping our future.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "So, when will you get married according to astrology? It's difficult to provide a definitive answer without a thorough analysis of your birth chart. However, there are some general indications based on your zodiac sign.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "1.	Aries:",
-        para: "You may get married at a young age, but could also experience delays due to your impatience.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "2.	Taurus :",
-        para: "You value stability and commitment, and may get married later in life after establishing a strong foundation.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "3.	Gemini:",
-        para: "You enjoy variety and may have multiple marriages or partnerships in your lifetime.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "4.	Cancer:",
-        para: " You value emotional connection and may have a traditional marriage with a partner who shares your family values.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "5.	Leo:",
-        para: "You enjoy being in the spotlight and may have a grand, dramatic wedding.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "6.	Virgo:",
-        para: "You may be picky about your partner and take your time to find the right match.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "7.	Libra:",
-        para: "You value harmony and balance in your relationships, and may have a beautiful, romantic wedding.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "8.	Scorpio:",
-        para: "You have intense emotions and may experience a transformative marriage that changes you on a deep level.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "9.	Sagittarius: ",
-        para: "You value freedom and may be hesitant to commit to marriage, but could also have a marriage that allows for independence.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "10.	Capricorn:",
-        para: "You are practical and may choose to get married for financial or societal reasons.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "11.	Aquarius :",
-        para: "You value intellectual connection and may have a unique, unconventional marriage.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "12.	Pisces:",
-        para: "You are sensitive and may have a dreamy, romantic wedding with a partner who shares your spiritual values.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "If you're curious about your future marriage prospects, contact us at Astroseva Talk and please visit website https://www.AstrosevaTalk.com today for a personalized astrology reading. We can help you unlock the secrets of your birth chart and provide you with valuabl insights into your romantic future. Thank you for choosing Astroseva Talk for your astrology needs.",
-        title: "",
-        img: "",
-      },
-    ],
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
   {
-    id: 32,
-    img: "/assets/appointment/live-astro.png",
+    id: 30,
+    img: "/assets/blog/How can we predict childbirth using Vedic astrology-01.svg",
     text: "HOW CAN WE PREDICT CHILDBIRTH USING VEDIC ASTROLOGY",
     keywords: [
       { key: "childbirth", link: "/" },
@@ -2854,7 +2598,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 33,
+    id: 31,
     img: "/assets/appointment/live-astro.png",
     text: "HOW CAN YOU CHOOSE A LUCKY MOBILE NUMBER USING NUMEROLOGY ",
     keywords: [
@@ -2904,7 +2648,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 34,
+    id: 32,
     img: "/assets/appointment/live-astro.png",
     text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
     keywords: [
@@ -2998,8 +2742,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 35,
-    img: "/assets/appointment/live-astro.png",
+    id: 33,
+    img: "/assets/blog/Which zodiac signs are the most annoying-01.svg",
     text: "WHICH ZODIAC SIGNS ARE THE MOST ANNOYING? ",
     keywords: [
       { key: "zodiac", link: "/" },
@@ -3087,8 +2831,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 36,
-    img: "/assets/appointment/live-astro.png",
+    id: 34,
+    img: "/assets/blog/Which zodiac signs are the most evil in 2023-01.svg",
     text: "WHICH ZODIAC SIGNS ARE THE MOST EVIL IN 2023 ",
     keywords: [
       { key: "zodiac", link: "/" },
@@ -3175,7 +2919,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 37,
+    id: 35,
     img: "/assets/appointment/live-astro.png",
     text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
     keywords: [
@@ -3273,98 +3017,10 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
-  {
-    id: 38,
-    img: "/assets/appointment/live-astro.png",
-    text: "HOW CAN WE PREDICT CHILDBIRTH USING VEDIC ASTROLOGY  ",
-    keywords: [
-      { key: "childbirth", link: "/" },
-      { key: "vedic", link: "/" },
-      { key: "astrology", link: "/" },
-      { key: "Astrosevatalk", link: "/" },
-      { key: "AstrosevaTalk.com", link: "/" },
-    ],
 
-    para: [
-      {
-        head: "",
-        para: "Becoming a parent is the dream for most of us and we cordially look forward to the event of childbirth. Do you know that astrology can provide you insight into your childbirth probable window? Yes at Astrosevatalk you can definitely gain the childbirth predictions from our ace astrologers. Reading your birth chart our astrologers can make almost certain analyses for the birth of a child in your life.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Childbirth is one of the happiest events in the lives of every parent around the world. It is that phase of life that most of us reach sooner or later in our lives. At Astrosevatalk our astrologers can predict the exact period of childbirth for married couples. They can also provide astrological remedies or solutions for those couples who are having hardships in conceiving the baby. Our vision at Astrosevatalk is to bless every couple with the most beautiful feeling of being the parents having insight from astrology.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "",
-        title: "Child Birth Prediction in Astrology",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Childbirth prediction in astrology is something that has been very common since the ancient age. Astrology has been widely used across India to predict the potential period of childbirth by reading the birth chart of the native. There are certain aspects in one's birth chart that are used by our astrologers to make childbirth predictions. The natal chart of the native provides insight into several traits of personality including the period of childbirth. ",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Other than this the fifth house in the native birth chart is also highly associated with the birth chart. This house represents the children, fertility factors, and other associated elements of childbirth. Furthermore, the constant movement or the transitions of the planets also reveal the probable indications of childbirth for the native. It is highly recommended to get the birth chart analyzed by our expert Astrologer at Astrosevatalk to unlock the childbirth predictions and know about the accurate window of childbirth.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "",
-        title: "How to Chat with Astrologers for Childbirth Prediction?",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Getting the childbirth prediction from our expert astrologers at the Astrosevatalk is now just possible in a few minutes. All you need to do is to follow the simple process to chat with an astrologer at the portal. It is a simple process and anyone can follow it by the below-mentioned steps.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Visit Astrosevatalk.com here and land at the homepage of the portal.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	There you will see an option as chat with astrologer or chat with an expert",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Click on any of these options and you will be redirected to our available astrologers.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	You can now choose any of the available astrologers at the portal and start interacting to get the childbirth prediction.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Chatting with an astrologer at the Astrosevatalk is easier than one can ever think. It just takes a few minutes to connect with the astrologer and get the 101% accurate childbirth prediction in your life. You can also follow us on our social media platform to get the daily horoscope prediction for childbirth and other predictions. Feel free to share the Astrosevatalk portal with friends and family etc to let them witness the life-changing magic of astrology. ",
-        title: "",
-        img: "",
-      },
-    ],
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
   {
-    id: 39,
-    img: "/assets/appointment/live-astro.png",
+    id: 36,
+    img: "/assets/blog/Can astrology predict why you're facing problems in your career-01.svg",
     text: "CAN ASTROLOGY PREDICT WHY YOU ARE FACING PROBLEMS IN YOUR CAREER  ",
     keywords: [
       { key: "predict", link: "/" },
@@ -3422,8 +3078,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 40,
-    img: "/assets/appointment/live-astro.png",
+    id: 37,
+    img: "/assets/blog/Is your life partner pre-decided-01.svg",
     text: "IS YOUR LIFE PARTNER PRE-DECIDED   ",
     keywords: [
       { key: "life partner", link: "/" },
@@ -3487,8 +3143,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 41,
-    img: "/assets/appointment/live-astro.png",
+    id: 38,
+    img: "/assets/blog/Which zodiac signs are the most incompatible-01.svg",
     text: " WHICH ZODIAC SIGNS ARE THE MOST INCOMPATIBLE   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
@@ -3570,8 +3226,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 42,
-    img: "/assets/appointment/live-astro.png",
+    id: 39,
+    img: "/assets/blog/Which zodiac signs lead a luxurious life-01-01.svg",
     text: "     WHICH ZODIAC SIGNS LEAD A LUXURIOUS LIFE   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
@@ -3648,8 +3304,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 43,
-    img: "/assets/appointment/live-astro.png",
+    id: 40,
+    img: "/assets/blog/How can marriage lines create problems in marriage-01-01.svg",
     text: " HOW CAN MARRIAGE LINES CREATE PROBLEMS IN MARRIAGE   ",
     keywords: [
       { key: "Marriage", link: "/" },
@@ -3737,8 +3393,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 44,
-    img: "/assets/appointment/live-astro.png",
+    id: 41,
+    img: "/assets/blog/How will your love life be according to your zodiac sign.svg",
     text: "HOW WILL YOUR LOVE LIFE BE ACCORDING TO YOUR ZODIAC SIGN    ",
     keywords: [
       { key: "love", link: "/" },
@@ -3856,8 +3512,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 45,
-    img: "/assets/appointment/live-astro.png",
+    id: 42,
+    img: "/assets/blog/Should you marry your boyfriend despite your astrologer's warning about your horoscope mismatch-01.svg",
     text: " SHOULD YOU MARRY YOUR BOYFRIEND DESPITE YOUR ASTROLGER’S WARNING ABOUT YOUR HOROSCOPE MISMATCH   ",
     keywords: [
       { key: "MARRY YOUR BOYFRIEND ", link: "/" },
@@ -3964,7 +3620,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 46,
+    id: 43,
     img: "/assets/appointment/live-astro.png",
     text: " WHY IS THE LOVE FOR YOUR TWIN FLAME SO STRONG   ",
     keywords: [
@@ -4047,8 +3703,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 47,
-    img: "/assets/appointment/live-astro.png",
+    id: 44,
+    img: "/assets/blog/How can the auspicious and inauspicious position of Mars bring big changes in life-01.svg",
     text: "HOW CAN THE AUSPICIOUS AND INAUSPICIOUS POSITION OF MARS BRING BIG CHANGES IN LIFE?  ",
     keywords: [
       { key: "AUSPICIOUS AND INAUSPICIOUS POSITION", link: "/" },
@@ -4173,8 +3829,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 48,
-    img: "/assets/appointment/live-astro.png",
+    id: 45,
+    img: "/assets/blog/no marriage.png",
     text: " WHAT ARE THE INDICATIONS OF NO MARRIAGE IN VEDIC ASTROLOGY?   ",
     keywords: [
       { key: "Marriage", link: "/" },
@@ -4268,8 +3924,8 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 49,
-    img: "/assets/appointment/live-astro.png",
+    id: 46,
+    img: "/assets/blog/pisces soulmates.png",
     text: " WHICH ZODIAC SIGNS ARE PISCES SOULMATES   ",
     keywords: [
       { key: "Zodiac Signs", link: "/" },
