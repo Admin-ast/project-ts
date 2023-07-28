@@ -4,7 +4,7 @@ import { BsToggleOn } from "react-icons/bs";
 
 const Table = () => {
   return (
-    <div className="">
+    <div className="shadow-[0px 4px 4px 0px] bg-[#FFF]">
       <table className="mt-[35px]  w-full border-collapse">
         <thead>
           <tr>

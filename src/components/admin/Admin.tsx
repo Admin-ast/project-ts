@@ -4,6 +4,8 @@ import Card from "./Card";
 import Table from "./Table";
 import TimeTable from "./TimeTable";
 
+import MultipleWork from "./MultipleWork";
+
 const Admin = () => {
   return (
     <div className="lg:flex ">
@@ -14,6 +16,7 @@ const Admin = () => {
         <Card />
         <Table />
         <TimeTable />
+        <MultipleWork />
       </div>
     </div>
   );

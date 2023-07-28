@@ -81,7 +81,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
       {cardItems.map((item, index) => (
         <div
           key={index}
-          className="`${className}` rounded-[15px]  bg-[#B4871DF0] p-[10px]"
+          className="`${className}` rounded-[15px]  bg-[#B4871DF0] bg-gradient-to-r from-blue-500 to-green-500 p-[10px]"
         >
           <p className="text-bold text-base text-white ">{item?.title}</p>
           <p className="text-xs  text-white ">{item?.charges}</p>
