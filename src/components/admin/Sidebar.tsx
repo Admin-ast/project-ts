@@ -1,74 +1,22 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Section from "../Section";
-import { AiFillCaretDown } from "react-icons/ai";
 
 type Props = {};
 
 const Sidebar = (props: Props) => {
-  const Dashboard = [
-    {
-      title: "Dashboard",
-      url: "/admin/admin",
-    },
-    {
-      title: "Order History",
-      url: "/",
-    },
-    {
-      title: "Earnings",
-      url: "/",
-    },
-    {
-      title: "Wallet",
-      url: "/admin/wallet",
-    },
-    {
-      title: "Offers",
-      url: "/admin/offer",
-    },
-    {
-      title: "Remedies",
-      url: "/admin/remedies",
-    },
-    {
-      title: "Wait List",
-      url: "/admin/waitlist",
-    },
-    {
-      title: "My Reviews",
-      url: "/admin/review",
-    },
-    {
-      title: "InMail",
-      url: "/",
-    },
-    {
-      title: "Live Events",
-      url: "/",
-    },
-    {
-      title: "My Followers",
-      url: "/",
-    },
-    {
-      title: "Loyal Club Members",
-      url: "/",
-    },
-    {
-      title: "Support Chat",
-      url: "/",
-    },
-    {
-      title: "Settings",
-      url: "/",
-    },
-  ];
+  const [orderHistoryOpen, setOrderHistoryOpen] = useState(false);
+  const [supportChatOpen, setSupportChatOpen] = useState(false);
 
-  const [isOrderHistoryOpen, setIsOrderHistoryOpen] = useState(false);
+  const toggleOrderHistory = () => {
+    setOrderHistoryOpen((prev) => !prev);
+  };
 
+  const toggleSupportChat = () => {
+    setSupportChatOpen((prev) => !prev);
+  };
   return (
-    <div className="border-r-4 border-[#D9D9D9]">
+    <div className="    border-r-4 border-[#D9D9D9] ">
       <Section>
         <div className="grid items-center justify-center py-[50px]  ">
           <img
@@ -78,64 +26,99 @@ const Sidebar = (props: Props) => {
           />
           <p className="text-center text-[25px] text-black">Dulis</p>
         </div>
-        <div className="mx-[16px] border-[1px] border-[#D9D9D9] "></div>
-        {Dashboard.map((item, index) => (
-          <div key={index}>
-            {item.title === "Order History" ? (
-              <>
-                <div
-                  className="flex cursor-pointer justify-center gap-10 py-[20px]"
-                  onClick={() => setIsOrderHistoryOpen(!isOrderHistoryOpen)}
-                >
-                  <p className="text-center text-2xl text-black">
-                    {item.title}
-                  </p>
-                  <p className="mt-3 text-base text-black">
-                    {" "}
-                    <AiFillCaretDown />
-                  </p>
-                </div>
-                {isOrderHistoryOpen && (
-                  <>
-                    <Link
-                      href="/admin/callhistory"
-                      className="mx-auto mt-2 block px-4 py-2 text-black  "
-                    >
-                      Call History
-                    </Link>
-                    <Link
-                      href="/admin/chathistory"
-                      className="mx-auto mt-2 block px-4 py-2 text-black  "
-                    >
-                      Chat History
-                    </Link>
-                    <Link
-                      href="/admin/reporthistory"
-                      className="mx-auto mt-2 block px-4 py-2 text-black  "
-                    >
-                      Report History
-                    </Link>
-                    <Link
-                      href="/admin/astrosevatalkhistory"
-                      className="mx-auto mt-2 block px-4 py-2 text-black  "
-                    >
-                      AstrosevaTalk History
-                    </Link>
-                  </>
-                )}
-              </>
-            ) : (
-              <Link href={item?.url}>
-                <div className="py-[20px]">
-                  <p className="text-center text-2xl text-black">
-                    {item?.title}
-                  </p>
-                </div>
-              </Link>
+        <div className="border-[#D9D9D9]] mx-[16px] border-[1px]"></div>
+        <ul>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[15px] font-[Roboto] text-[24px]">
+            <Link href="/admin/admin">Dashboard</Link>
+          </li>
+
+          <li className=" border-b-[1px] border-[#D9D9D9] py-[15px] font-[Roboto] text-[24px]">
+            <button
+              className="flex px-6 md:px-[220px] lg:px-10  "
+              onClick={toggleOrderHistory}
+            >
+              <span className="px-[50px]">Order History</span>
+              <span className={orderHistoryOpen ? "rotate-90 transform" : ""}>
+                &#9662;
+              </span>
+            </button>
+            {orderHistoryOpen && (
+              <ul className="">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="/admin/callhistory">Call History</Link>
+                </li>
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="/admin/chathistory">Chat History</Link>
+                </li>
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="/admin/reporthistory">Report History</Link>
+                </li>
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="/admin/astrosevatalkhistory">
+                    AstrosevaTalk Mall History
+                  </Link>
+                </li>
+              </ul>
             )}
-            <div className="border-[#D9D9D9]] mx-[16px] border-[1px]"></div>
-          </div>
-        ))}
+          </li>
+
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/">Earnings</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/wallet">Wallet</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/offer">Offers</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/remedies">Remedies</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/waitlist">Wait List</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/review">My Reviews</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/inmail">InMail</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/liveevents">Live Events</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/myfollower">My Followers</Link>
+          </li>
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/admin/loyalclubmembers">Loyal Club Members</Link>
+          </li>
+
+          <li className=" border-b-[1px] border-[#D9D9D9] py-[15px] font-[Roboto] text-[24px]">
+            <button
+              className="flex w-full gap-4 px-16 md:px-[240px] lg:px-20 "
+              onClick={toggleSupportChat}
+            >
+              <span className="">Support Chat</span>
+              <span className={supportChatOpen ? "rotate-90 transform" : ""}>
+                &#9662;
+              </span>
+            </button>
+            {supportChatOpen && (
+              <ul className="">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="#">Customer Support</Link>
+                </li>
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+                  <Link href="#">Chat with Own Assistant</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+
+          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[10px] font-[Roboto] text-[24px]">
+            <Link href="/">Settings</Link>
+          </li>
+        </ul>
       </Section>
     </div>
   );
