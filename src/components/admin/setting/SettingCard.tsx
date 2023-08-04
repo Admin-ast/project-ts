@@ -2,6 +2,7 @@ import React from "react";
 import GridItem from "./GridItems";
 import Link from "next/link";
 import PhoneNumber from "./phone number/PhoneNumber";
+import ImportantContact from "./important contacts/ImportantContact";
 
 type Props = {};
 const items = [
@@ -55,8 +56,9 @@ const items = [
 
 const SettingCard = (props: Props) => {
   return (
-    <div className="grid-cols-4 px-5 lg:grid">
+    <div className="grid-cols-4 gap-5 px-5 lg:grid">
       <PhoneNumber />
+      <ImportantContact />
     </div>
   );
 };
