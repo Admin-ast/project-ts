@@ -5,6 +5,8 @@ import Table from "./Table";
 import TimeTable from "./TimeTable";
 
 import MultipleWork from "./MultipleWork";
+import CeoMsgs from "./dashboard footer/CeoMsgs";
+import Icons from "./dashboard footer/Icons";
 
 const Admin = () => {
   return (
@@ -20,8 +22,18 @@ const Admin = () => {
         <div className="mt-[30px] lg:w-3/4">
           <Card />
           <Table />
+          <div className="border-b-[2px] border-[#D9D9D9] p-2"></div>
           <TimeTable />
           <MultipleWork />
+          <div className="lg:flex  ">
+            <div className="lg:w-2/3">
+              <CeoMsgs />
+            </div>
+            <div className="px-5 lg:w-1/3">
+              {" "}
+              <Icons />
+            </div>
+          </div>
         </div>
       </div>
     </div>

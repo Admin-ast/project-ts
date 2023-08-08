@@ -4,12 +4,12 @@ import GridItem from "./GridItems";
 
 const items = [
   {
-    imageUrl: "/assets/admin/call.svg",
+    imageUrl: "/assets/admin/call.png",
     text: "Call",
     linkUrl: "/",
   },
   {
-    imageUrl: "/assets/admin/chat.svg",
+    imageUrl: "/assets/admin/chat.png",
     text: "Chat",
     linkUrl: "/",
   },

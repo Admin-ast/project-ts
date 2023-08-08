@@ -248,7 +248,7 @@ const Sidebar = (props: Props) => {
           </li>
 
           <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[24px]">
-            <Link href="/">Settings</Link>
+            <Link href="/astrologeradmin/setting">Settings</Link>
           </li>
         </ul>
       </Section>

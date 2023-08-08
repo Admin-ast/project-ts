@@ -4,9 +4,9 @@ function Textarea(props: any) {
   const { name, id, className, rows, placeholder, label, showTools, register } =
     props;
   return (
-    <div className="mb-4 w-full">
+    <div className=" w-full">
       <div className="rounded-b-lg bg-transparent">
-        <label className="mb-1 block text-base" htmlFor={id}>
+        <label className=" block text-base" htmlFor={id}>
           {label}
         </label>
         <textarea
