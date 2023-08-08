@@ -3,6 +3,12 @@ import GridItem from "./GridItems";
 import Link from "next/link";
 import PhoneNumber from "./phone number/PhoneNumber";
 import ImportantContact from "./important contacts/ImportantContact";
+import TrendingVideosCard from "./trending videos/TrendingVideosCard";
+import TermsCard from "./terms & conditions/TermsCard";
+import ChangeRequestCard from "./change request/ChangeRequestCard";
+import GalleryCard from "./gallery/GalleryCard";
+import DownloadFormCard from "./download form/DownloadFormCard";
+import ReferCard from "./refer/ReferCard";
 
 type Props = {};
 const items = [
@@ -56,9 +62,17 @@ const items = [
 
 const SettingCard = (props: Props) => {
   return (
-    <div className="grid-cols-4 gap-5 px-5 lg:grid">
+    <div className="mt-[20px] grid-cols-4 gap-5 px-5 lg:grid">
       <PhoneNumber />
       <ImportantContact />
+
+      <TrendingVideosCard />
+      <TermsCard />
+      <ChangeRequestCard />
+      <DownloadFormCard />
+
+      <GalleryCard />
+      <ReferCard />
     </div>
   );
 };

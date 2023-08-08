@@ -77,7 +77,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
   ];
 
   return (
-    <div className=" grid grid-cols-1 gap-[40px] lg:grid-cols-3 ">
+    <div className=" grid grid-cols-1 gap-[40px] md:grid-cols-2 lg:grid-cols-3">
       {cardItems.map((item, index) => (
         <div
           key={index}

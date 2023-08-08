@@ -17,7 +17,7 @@ const HeaderCard = (props: Props) => {
         </Link>
       </div>
       <div className="flex h-[116px] w-[236px] items-center justify-center rounded-[15px] bg-[#ef976f]">
-        <Link href="/admin/astrosevatalkmall">
+        <Link href="/admin/astrosevatalkmall/allproducts">
           <p className="text-center font-[Georgia] text-[25px] font-bold">
             AstrosevaTalk Mall
           </p>
