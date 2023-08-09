@@ -25,7 +25,7 @@ const Astrologers = (props: Props) => {
               <p className="text-[20px] font-bold">Astrologers</p>
             </div>
             <div className="">
-              <CommonBtns />
+              <CommonBtns className="" />
             </div>
           </div>
 
