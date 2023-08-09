@@ -1,4 +1,4 @@
-const baseUrl =  "https://api.astrosevatalk.com/api/v1";
+const baseUrl =  "http://52.55.97.212:8000/api/v1";
 
 export const postFetcher = async (
   url: string,
