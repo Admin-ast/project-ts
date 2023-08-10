@@ -154,6 +154,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
             closeModal();
             toast.success("Login successfully");
             setIsLogged(true);
+            setSigned(false);
             
           } else  {
             toast.error(response.msg);
@@ -162,7 +163,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
          login();
       }
      
-    },[signed]);
+    },[signed,token,mobileNumber,closeModal,setIsLogged]);
 
     return (
       <>

@@ -27,7 +27,6 @@ const General = ({ majorVdasha }: Props) => {
   useEffect(() => {
     let bodyData: any;
     if (typeof window !== "undefined") {
-      console.log("kundilll", localStorage.getItem("kundliData"));
       bodyData = localStorage.getItem("kundliData");
     }
     const generalResponse = async () => {

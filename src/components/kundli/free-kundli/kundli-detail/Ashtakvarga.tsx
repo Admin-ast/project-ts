@@ -14,23 +14,14 @@ const Ashtakvarga = (props: Props) => {
   const [asthtak, setAshtak] = useState<any>({});
   const [ob, setob] = useState<any>({});
   
-  const color = "red";
-  const detailbodyData = JSON.stringify({
-    day: "10",
-    month: "5",
-    year: "1990",
-    hour: "19",
-    min: "55",
-    lat: "19.2",
-    lon: "25.2",
-    tzone: "5.5",
-    planet: "sav"
-  });
+  
   useEffect(() => {
     const planetResponse = async () => {
       let bodyData: any;
-      // detailbodyData['planet'] = "sav";
-      const getashtakvarga = await postFetcher("/kundli/ashtakvarga", detailbodyData);
+      if (typeof window !== "undefined") {
+        bodyData = localStorage.getItem("kundliData");
+      }
+      const getashtakvarga = await postFetcher("/kundli/ashtakvarga", bodyData);
 
       if (getashtakvarga.status) {
 
@@ -106,7 +97,7 @@ const Ashtakvarga = (props: Props) => {
                <tr>
                { Object.entries( ashtakvargadetail.ashtak_points ).map( ( [key, value] ) => {
         return (   // PROBLEM SHOULD RETURN
-          <tr>
+          <tr key={key}>
             <tr className="border-b border-gray-400 bg-white border-r border-gray-400 px-6 py-4">
             <p className="border-r border-gray-400 px-6 py-4"> <strong> { key } </strong> </p>
             </tr>
@@ -114,7 +105,7 @@ const Ashtakvarga = (props: Props) => {
             { Object.entries( value || "" ).map( ( [key, value] ) => {
         return (   // PROBLEM SHOULD RETURN
           
-            <td className="border-r border-gray-400 px-6 py-4">{ key }</td>
+            <td className="border-r border-gray-400 px-6 py-4" key={key}>{ key }</td>
           
           
         );
@@ -125,7 +116,7 @@ const Ashtakvarga = (props: Props) => {
             { Object.entries( value || "" ).map( ( [key, value] ) => {
         return (   // PROBLEM SHOULD RETURN
           
-            <td className="border-r border-gray-400 px-6 py-4">{ value }</td>
+            <td className="border-r border-gray-400 px-6 py-4" key={key}>{ value }</td>
           
           
         );

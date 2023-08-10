@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 
 interface Props {
+  id?:string,
   btnText: string;
   className?: string;
   isLoading?: boolean;
@@ -10,6 +11,7 @@ interface Props {
 }
 
 function Button({
+  id="1",
   btnText,
   className,
   isLoading = false,
