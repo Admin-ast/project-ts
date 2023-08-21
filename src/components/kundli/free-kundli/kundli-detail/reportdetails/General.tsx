@@ -36,7 +36,7 @@ const General = ({ majorVdasha }: Props) => {
       );
       console.log(result?.res);
       if (result?.status) {
-        setBasicDetail(JSON.parse(result?.res ?? ""));
+        setBasicDetail(result?.res ?? "");
       } else {
         toast.error(result.msg);
       }

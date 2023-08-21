@@ -17,7 +17,7 @@ function NewKundliForm({}: Props) {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log("data is", data);
+    
     localStorage.setItem("kundliData", JSON.stringify(data));
     router.push("/free-kundli/basic-detail");
   };
@@ -87,7 +87,7 @@ function NewKundliForm({}: Props) {
               required={true}
               label="Birth Hour*"
               errors={errors}
-              options={numberOptions(1, 23)}
+              options={numberOptions(0, 23)}
             />
             <Select
               name={"min"}
@@ -96,7 +96,7 @@ function NewKundliForm({}: Props) {
               required={true}
               label="Birth Minute*"
               errors={errors}
-              options={numberOptions(1, 59)}
+              options={numberOptions(0, 59)}
             />
             <Select
               name={"second"}
@@ -105,7 +105,7 @@ function NewKundliForm({}: Props) {
               required={true}
               label="Birth Second*"
               errors={errors}
-              options={numberOptions(1, 59)}
+              options={numberOptions(0, 59)}
             />
             <div className="col-span-3">
               {/* <Input

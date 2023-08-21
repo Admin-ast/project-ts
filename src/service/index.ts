@@ -1,4 +1,4 @@
-const baseUrl =  "http://52.55.97.212:8000/api/v1";
+const baseUrl =  "http://localhost:8000/api/v1";
 
 export const postFetcher = async (
   url: string,
@@ -9,8 +9,10 @@ export const postFetcher = async (
     
     const result = await fetch(`${baseUrl}${url}`, {
       method,
+      mode:'cors',
+      cache:"no-store",
       headers: { 
-        Accept: "application/json",
+        Accept:  "application/json",
         "Content-Type": "application/json",
       },
       body,
@@ -29,8 +31,8 @@ export const getFetcher = async (url: string) => {
   try {
     const result = await fetch(`${baseUrl}${url}`, {
       method: "GET",
+      cache:"no-store",
       headers: {
-        mode:'no-cors',
         Accept: "application/json",
         "Content-Type": "application/json",
       },

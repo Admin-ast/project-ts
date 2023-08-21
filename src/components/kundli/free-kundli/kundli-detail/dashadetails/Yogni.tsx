@@ -11,27 +11,22 @@ const Yogni = ({ majorYogni }: Props) => {
   const [yogniLevel, setYogniLevel] = useState(0);
   const [selectedYogini, setSelectedYogini] = useState({ id: "", name: "" });
   const [levelOne, setLevelOne] = useState<any>({});
-  
+
   useEffect(() => {
     const kundli = localStorage.getItem("kundliData");
-    if(yogniLevel === 0){
-       setYogniLevel(1);
-    }
     const majorVdasha = async () => {
       const result = await postFetcher(
         `/sub_yogini_dasha/${yogniLevel}/${selectedYogini.name}`,
         kundli
       );
       if (result?.status) {
-       
-        setLevelOne(JSON.parse(result?.res && result?.res));
+        setLevelOne(result?.res && result?.res);
       }
-
     };
-    console.log("selected",yogniLevel);
     if (kundli) {
        majorVdasha();
     }
+    console.log(yogniLevel);
   }, [selectedYogini, yogniLevel]);
 
   return (
@@ -57,7 +52,6 @@ const Yogni = ({ majorYogni }: Props) => {
                   <div
                     key={index}
                     onClick={() => {
-
                       setYogniLevel(1);
                       setSelectedYogini({
                         name: item?.dasha_name,
@@ -79,7 +73,7 @@ const Yogni = ({ majorYogni }: Props) => {
                   </div>
                 );
               })}
-              {yogniLevel === 1 &&
+            {yogniLevel === 1 &&
               levelOne &&
               levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
                 return (
@@ -87,10 +81,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     key={index}
                     onClick={() => {
                       setYogniLevel(2);
-                      setSelectedYogini({
-                        name: item?.dasha_name,
-                        id: item?.dasha_id,
-                      });
                     }}
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >
@@ -103,7 +93,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     </p>
                     <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
                       {item?.end_date && item?.end_date}
-                      <IoMdArrowDropright />
                     </p>
                   </div>
                 );
@@ -116,10 +105,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     key={index}
                     onClick={() => {
                       setYogniLevel(3);
-                      setSelectedYogini({
-                        name: item?.dasha_name,
-                        id: item?.dasha_id,
-                      });
                     }}
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >
@@ -132,7 +117,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     </p>
                     <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
                       {item?.end_date && item?.end_date}
-                      <IoMdArrowDropright />
                     </p>
                   </div>
                 );
@@ -145,10 +129,6 @@ const Yogni = ({ majorYogni }: Props) => {
                     key={index}
                     onClick={() => {
                       setYogniLevel(4);
-                      setSelectedYogini({
-                        name: item?.dasha_name,
-                        id: item?.dasha_id,
-                      });
                     }}
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >
@@ -161,16 +141,11 @@ const Yogni = ({ majorYogni }: Props) => {
                     </p>
                     <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
                       {item?.end_date && item?.end_date}
-                      <IoMdArrowDropright />
                     </p>
                   </div>
                 );
               })}
-               
           </div>
-        </div>
-        <div className="my-1 p-3 rounded-t-[10px] bg-[#ffffe0]">
-                <p>Note: MAN: Mangala, PIN: Pingala, DHA: Dhanya, BHR: Bhramari, BHA: Bhadrika, ULK: Ulka, SID: Siddha, SAN: Sankata </p>
         </div>
         {Boolean(yogniLevel) && (
           <div

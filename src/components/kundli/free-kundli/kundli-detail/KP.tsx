@@ -4,6 +4,9 @@ import { postFetcher } from "@/service";
 import React, { Key, useEffect, useState } from "react";
 import SecondaryTable from "./SecondaryTable";
 import { toast } from "react-toastify";
+import Loading from "@/components/common/Loading";
+import Image from "next/image";
+import Canvas from "@/components/canvas/Canvas";
 
 type Props = {};
 
@@ -15,6 +18,11 @@ function KP({ }: Props) {
   const [KPHouseSignificator, setKPHouseSignificator] = useState<any>([]);
   const [KPPlanetSignificator, setKPPlanetSignificator] = useState<any>([]);
   const [KPDetails, setKPDetails] = useState<any>([]);
+  const [ischartLoaded, setchartLoaded] = useState(false);
+  const [iscustLoaded, setcustLoaded] = useState(false);
+  const [isplanetLoaded, setplanetLoaded] = useState(false);
+  const [isgetLoaded, setgetLoaded] = useState(false);
+  const [jsonobj, setjsonobj] = useState(String);
   useEffect(() => {
     const planetResponse = async () => {
       let bodyData: any;
@@ -23,61 +31,94 @@ function KP({ }: Props) {
         bodyData = localStorage.getItem("kundliData");
       }
       const result = await postFetcher("/kundli/kp_planets", bodyData);
-      const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
-      const getbirthChart = await postFetcher("/horo_chart_image/d1", bodyData);
+      if (result?.status) {
+        setKPPlanetDetails(result?.res);
+        setplanetLoaded(true);
+      } else {
+        toast.error(result.msg);
+      }
+    };
+    
+    const chartResponse = async () => {
+      let bodyData: any;
+      if (typeof window !== "undefined") {
+
+        bodyData = localStorage.getItem("kundliData");
+      }
+      const chalit = await postFetcher("/kundli/kp_birth_chart", bodyData);
+      
+      if (chalit?.status) {
+
+        setChalitChart(chalit?.res);
+      }
+
+    };
+
+    const chart1Response = async () => {
+      let bodyData: any;
+      if (typeof window !== "undefined") {
+
+        bodyData = localStorage.getItem("kundliData");
+        const getbirthChart = await postFetcher("/horo_chart_image/d1", bodyData);
+        if (getbirthChart?.status) {
+          setBirthChart(getbirthChart?.res);
+          setchartLoaded(true);
+        }
+      }
+    }
+
+    const get = async () => {
+      let bodyData: any;
+      if (typeof window !== "undefined") {
+
+        bodyData = localStorage.getItem("kundliData");
+      }
+
       const getKPHouseSignificator = await postFetcher("/kundli/kp_house_significator", bodyData);
       const getKPPlanetSignificator = await postFetcher("/kundli/kp_planet_significator", bodyData);
-
-
-
-      if (chalit.status) {
-
-        setChalitChart(JSON.parse(chalit?.res));
-      }
-
-      if (result.status) {
-        setKPPlanetDetails(JSON.parse(result?.res));
-      } else {
-        toast.error(result.msg);
-      }
-      if (getbirthChart.status) {
-        setBirthChart(JSON.parse(getbirthChart?.res));
-      }
-      if (getKPHouseSignificator.status) {
-        const KPHouseSignificatorget = JSON.stringify(getKPHouseSignificator?.res);
-        setKPHouseSignificator(JSON.parse(getKPHouseSignificator?.res));
+      if (getKPHouseSignificator?.status) {
+        setKPHouseSignificator(getKPHouseSignificator?.res);
 
       }
-      if (getKPPlanetSignificator.status) {
-        setKPPlanetSignificator(JSON.parse(getKPPlanetSignificator?.res));
+      if (getKPPlanetSignificator?.status) {
+        setKPPlanetSignificator(getKPPlanetSignificator?.res);
       }
-
     };
+
+
+
+
+
     const cuspResponse = async () => {
-      const bodyData = JSON.stringify({
-        day: "10",
-        month: "5",
-        year: "1990",
-        hour: "19",
-        min: "55",
-        lat: "19.2",
-        lon: "25.2",
-        tzone: "5.5",
-      });
+      let bodyData: any;
+      if (typeof window !== "undefined") {
+
+        bodyData = localStorage.getItem("kundliData");
+      }
       const result = await postFetcher("/kundli/kp_house_cusps", bodyData);
-      if (result.status) {
-        setCuspDetails(JSON.parse(result?.res));
+      if (result?.status) {
+        setCuspDetails(result?.res);
+        setcustLoaded(true);
       } else {
-        toast.error(result.msg);
+        toast.error(result?.msg);
       }
     };
-    cuspResponse();
-    planetResponse();
-  }, []);
+    chartResponse();
+    chart1Response();
+    if (ischartLoaded) {
+      planetResponse();
+    }
+    if (iscustLoaded) {
+      get();
+    }
+    if (isplanetLoaded) {
+      cuspResponse();
+    }
+  }, [ischartLoaded, isplanetLoaded, iscustLoaded, isgetLoaded]);
   if (Object.keys(chalitChart).length === 0) {
     return (
-      <div>
-        Loading...
+      <div className="content-center">
+        <Loading />
       </div>
     )
   }
@@ -89,19 +130,29 @@ function KP({ }: Props) {
             <div className="grid grid-cols-12 gap-1">
               <div className="col-span-6">
                 <div>Bhav Chalit Chart</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: chalitChart && chalitChart,
-                  }}
-                ></div>
+                {Object.keys(chalitChart).length === 0 ? (<div>
+                  <div className="content-center">Image
+                    <Loading />
+                  </div></div>) : (<div>
+                    
+                    <Canvas width={350} height={350} birthchart = {chalitChart}></Canvas>
+
+                  </div>)}
+
               </div>
               <div className="col-span-6">
                 <div>Birth Chart</div>
-                <div
+                {Object.keys(chalitChart).length === 0 ? (<div>
+                  <div className="content-center">
+                    <Loading />
+                  </div></div>) : (<div>
+                    <div
                   dangerouslySetInnerHTML={{
                     __html: birthChart && birthChart.svg && birthChart.svg,
                   }}
                 ></div>
+                  </div>)}
+               
               </div>
             </div>
             <div>
@@ -236,11 +287,11 @@ function KP({ }: Props) {
                               {item.house_id}
                             </td>
                             <td className="border-r border-gray-400 px-6 py-4">
-                              {item.significators.map((item1:any, index1:any) => {
+                              {item.significators.map((item1: any, index1: any) => {
                                 if (index1 === 0) {
                                   return <>{item1}</>
                                 }
-                                return <><br />{item1}</>
+                                return <>, {item1}</>
                               })
                               }
                             </td>
@@ -280,7 +331,7 @@ function KP({ }: Props) {
                               {item.planet_name}
                             </td>
                             <td className="border-r border-gray-400 px-6 py-4">
-                              {item.significators.map((item1:any, index1:any) => {
+                              {item.significators.map((item1: any, index1: any) => {
                                 if (index1 === 0) {
                                   return <>{item1}</>
                                 }

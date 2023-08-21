@@ -22,7 +22,7 @@ const Yoga = (props: Props) => {
 
       if (vasrhsphalyoga.status) {
         console.log(vasrhsphalyoga?.res);
-        setYogaDetails(JSON.parse(vasrhsphalyoga?.res));
+        setYogaDetails(vasrhsphalyoga?.res);
       } else {
         toast.error(vasrhsphalyoga.msg);
       }

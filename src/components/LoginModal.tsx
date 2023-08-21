@@ -90,7 +90,9 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
 
         console.error(error);
       });
-
+      if(step == 1){
+        setStep(3);
+      }
     /* const result = await postFetcher("/otp/generate-otp", body);
      if (result.msg === "Otp has been sent successfully on your mobile number") {
        setMobileNumber(data.mobileNumber);
@@ -99,6 +101,8 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
        setError(result.msg);
      } */
    }; 
+
+
     const onSubmit2 = async (data: any) => {
       console.log("ddaya", data);
       const body = JSON.stringify({
@@ -113,7 +117,14 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
       }
     };
 
-    const handleChange = (otp: any) => {
+    const handleSubmitOtp = async () => {
+        // const result = await postFetcher("/verify-otp", body);
+        // if (result.msg === "Otp verified successfully") {
+          closeModal();
+          toast.success("Login successfully");
+          setIsLogged(true);
+      }
+     const handleChange = (otp: any) => {
       
       setOtpValue(otp);
       setVerficationCode(otp);
@@ -192,7 +203,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  {step === 1 ? (
+                  {step === 1  ? (
                     <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
                       <Dialog.Title
                         as="h3"
@@ -281,14 +292,76 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                         <div className="space-y-2">
                           {" "}
                           <Button
-                            id="login"                            
+                            id="login"
+                            onClick={handleSubmitOtp}                            
                             className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
                             btnText="Login"
                           />
                         </div>
                       </div>
                     </Dialog.Panel>
-                  ) : (
+                  ) :  step === 3 ?
+                  (
+                    <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
+                      <Dialog.Title
+                        as="h3"
+                        className="text-dark bg-primary relative bg-black/80 py-2 text-lg font-medium leading-6"
+                      >
+                        <p className="text-center text-white">
+                          Sending Otp to your phone
+                        </p>
+                        <div className="absolute right-4 top-2">
+                          <XMarkIcon
+                            onClick={closeModal}
+                            className="w-6 cursor-pointer font-bold text-white hover:text-gray-100"
+                          />
+                        </div>
+                      </Dialog.Title>
+                      <div className="p-4 lg:px-12 lg:pb-12">
+                        <p className="mx-auto text-center text-[18px]">
+                          Sending Otp to your phone...
+                          <br />
+                          Wait...
+                        </p>
+                        <Form>
+                          <div className="mt-5 invisible">
+                            <Input
+                              type="string"
+                              id="mobileNumber"
+                              placeholder="Enter Phone Number"
+                              name="mobileNumber"
+                              required={true}
+                              maxLength={10}
+                              minLength={10}
+                              label="Enter your phone number"
+                              register={register}
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            {" "}
+                            <Button
+                              id="send-code-button"
+                              type="button"
+                              onClick={handleSubmit(onSubmit1)}
+                              className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold invisible"
+                              btnText="GET OTP -->"
+                            />
+                            <p className="text-center text-[13px] text-gray-500">
+                              By Signing up, you agree to our{" "}
+                              <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
+                                Terms of Use
+                              </span>{" "}
+                              and{" "}
+                              <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">
+                                Privacy Policy
+                              </span>
+                            </p>
+                          </div>
+                        </Form>
+                      </div>
+                    </Dialog.Panel>
+                  ) :
+                  (
                     <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
                       <Dialog.Title
                         as="h3"

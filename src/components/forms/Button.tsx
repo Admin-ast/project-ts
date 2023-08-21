@@ -5,7 +5,7 @@ interface Props {
   btnText: string;
   className?: string;
   isLoading?: boolean;
-  type?: any;
+  type?: "submit" | "reset" | "button",
   onClick?: any;
   disabled?: boolean;
 }

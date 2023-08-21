@@ -16,34 +16,45 @@ const Ashtakvarga = (props: Props) => {
   
   
   useEffect(() => {
-    const planetResponse = async () => {
+    const planetResponse =  async () => {
       let bodyData: any;
+      let ashtakvargaData:any;
       if (typeof window !== "undefined") {
         bodyData = localStorage.getItem("kundliData");
+        ashtakvargaData = localStorage.getItem("ashtakvarga");
       }
+      if(!ashtakvargaData){
       const getashtakvarga = await postFetcher("/kundli/ashtakvarga", bodyData);
+      
 
-      if (getashtakvarga.status) {
+      if (getashtakvarga?.status) {
 
-        setashtakvargadetail( JSON.parse(getashtakvarga?.res));
+        setashtakvargadetail( getashtakvarga?.res);
+        if(typeof window !== "undefined"){
+          localStorage.setItem("ashtakvarga",getashtakvarga?.res);
+        }
 
         
       }
+    }
+    else{
+      setashtakvargadetail(ashtakvargaData);
+    }
 
       
     };
 
 
     planetResponse();
-  }, [ashtakvargadetail]);
+  },[]);
   if(Object.keys(ashtakvargadetail).length > 0){
 
   }
   else{
     return (
-      <tr>
+      <div>
         Loading ...
-      </tr>
+      </div>
     )
   }
 
@@ -98,8 +109,8 @@ const Ashtakvarga = (props: Props) => {
                { Object.entries( ashtakvargadetail.ashtak_points ).map( ( [key, value] ) => {
         return (   // PROBLEM SHOULD RETURN
           <tr key={key}>
-            <tr className="border-b border-gray-400 bg-white border-r border-gray-400 px-6 py-4">
-            <p className="border-r border-gray-400 px-6 py-4"> <strong> { key } </strong> </p>
+            <tr  className="border-b border-gray-400 bg-white border-r border-gray-400 px-6 py-4">
+             <td>  <p className="border-r border-gray-400 px-6 py-4"> <strong> { key } </strong> </p> </td>
             </tr>
             <tr className="border-b border-gray-400 bg-white">
             { Object.entries( value || "" ).map( ( [key, value] ) => {
@@ -123,7 +134,7 @@ const Ashtakvarga = (props: Props) => {
       }
       ) }
               </tr>
-            <td>{  }</td>
+
           </tr>
         );
       }

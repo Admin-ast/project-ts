@@ -60,7 +60,7 @@ function Basic({}: Props) {
       const result = await postFetcher("/kundli/birthDetails", bodyData);
       console.log({ result });
       if (result?.status) {
-        setBasicDetails(JSON.parse(result?.res ?? ""));
+        setBasicDetails(result?.res ?? "");
       } else {
         toast.error(result.msg);
       }
@@ -69,7 +69,7 @@ function Basic({}: Props) {
     const avakhadaResponse = async () => {
       const result = await postFetcher("/kundli/avakhadaDetails", bodyData);
       if (result?.status) {
-        setAvakhadaDetails(JSON.parse(result?.res ?? ""));
+        setAvakhadaDetails(result?.res ?? "");
       } else {
         toast.error(result.msg);
       }
