@@ -3,10 +3,14 @@ import React from "react";
 import Sidebar from "../dashboard/Sidebar";
 // import ChatSupportCard from './chat support/ChatSupportCard'
 import ManagementCard from "./ManagementCard";
+import Link from "next/link";
 
 type Props = {};
 
 const Management = (props: Props) => {
+  const styles = {
+    backgroundImage: "linear-gradient(90deg, #FF0000 50%, #00FF00 50%)",
+  };
   return (
     <div className="">
       <div
@@ -18,41 +22,42 @@ const Management = (props: Props) => {
           <Sidebar />
         </div>
         <div className="grid grid-cols-1  gap-4  px-10 md:grid-cols-3 lg:w-3/4 lg:grid-cols-5  ">
-          <ManagementCard
-            icon="/assets/admin/management/chat.png"
-            text="Chat Support"
-            className="bg-[#cbd3b2]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/customerservice.png"
-            text="Customer service manager"
-            className="bg-[#FF6730]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/group.png"
-            text="Team Manager"
-            className="bg-[#3E5DAB]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/profile.png"
-            text="Manager"
-            className="bg-[#EED387]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/user.png"
-            text="Super admin"
-            className="bg-[#FFCD57]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/insta.png"
-            text="Posts"
-            className="bg-[#FF0009]"
-          />
-          <ManagementCard
-            icon="/assets/admin/management/music.png"
-            text="Media"
-            className="bg-[#E48F93]"
-          />
+          <Link href="/">
+            {" "}
+            <ManagementCard
+              icon="/assets/admin/management/chat.png"
+              text="Chat Support"
+              className="bg-gradient-to-b from-[#cbd3b2] to-[#72B4D7] "
+            />
+          </Link>
+          <Link href="/">
+            <ManagementCard
+              icon="/assets/admin/management/customerservice.png"
+              text="Customer service manager"
+              className="bg-gradient-to-b from-[#FF6730] to-[#E48F93] "
+            />
+          </Link>
+          <Link href="/">
+            <ManagementCard
+              icon="/assets/admin/management/group.png"
+              text="Team Manager"
+              className="bg-gradient-to-b from-[#3E5DAB] to-[#72B4D7] "
+            />
+          </Link>
+          <Link href="/">
+            <ManagementCard
+              icon="/assets/admin/management/profile.png"
+              text="Manager"
+              className="bg-gradient-to-b from-[#EED387] to-[#CA2127] "
+            />
+          </Link>
+          <Link href="/">
+            <ManagementCard
+              icon="/assets/admin/management/user.png"
+              text="Super admin"
+              className="bg-gradient-to-b from-[#00AF1C] to-[#FFCD57] "
+            />
+          </Link>
         </div>
       </div>
     </div>
