@@ -1,4 +1,4 @@
-const baseUrl =  "http://localhost:8000/api/v1";
+const baseUrl =  "https://api.astrosevatalk.com/api/v1";
 
 export const postFetcher = async (
   url: string,
@@ -9,8 +9,6 @@ export const postFetcher = async (
     
     const result = await fetch(`${baseUrl}${url}`, {
       method,
-      mode:'cors',
-      cache:"no-store",
       headers: { 
         Accept:  "application/json",
         "Content-Type": "application/json",
