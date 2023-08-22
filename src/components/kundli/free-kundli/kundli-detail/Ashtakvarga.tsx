@@ -21,25 +21,19 @@ const Ashtakvarga = (props: Props) => {
       let ashtakvargaData:any;
       if (typeof window !== "undefined") {
         bodyData = localStorage.getItem("kundliData");
-        ashtakvargaData = localStorage.getItem("ashtakvarga");
+       
       }
-      if(!ashtakvargaData){
+      
       const getashtakvarga = await postFetcher("/kundli/ashtakvarga", bodyData);
       
 
       if (getashtakvarga?.status) {
-
+        
         setashtakvargadetail( getashtakvarga?.res);
-        if(typeof window !== "undefined"){
-          localStorage.setItem("ashtakvarga",getashtakvarga?.res);
-        }
-
+        
         
       }
-    }
-    else{
-      setashtakvargadetail(ashtakvargaData);
-    }
+       
 
       
     };

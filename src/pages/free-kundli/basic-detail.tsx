@@ -39,14 +39,14 @@ function BasicDetail({}: Props) {
     const majorVdasha = async () => {
       const result = await postFetcher("/major_vdasha", kundli);
       if (result?.status) {
-        setMajorVdasha(result?.res && result?.res);
+        setMajorVdasha(JSON.parse(result?.res && result?.res));
       }
     };
     const majorYogni = async () => {
       const result = await postFetcher("/major_yogini_dasha", kundli);
       if (result?.status) {
         // console.log(JSON.parse(result?.res && result?.res))
-        setMajorYogni(result?.res && result?.res);
+        setMajorYogni(JSON.parse(result?.res && result?.res));
       }
     };
     const combinedHoros = async () => {

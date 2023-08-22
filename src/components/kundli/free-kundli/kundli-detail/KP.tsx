@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import Loading from "@/components/common/Loading";
 import Image from "next/image";
 import Canvas from "@/components/canvas/Canvas";
+import ChartCanvas from "@/components/canvas/ChartCanvas";
 
 type Props = {};
 
@@ -17,34 +18,23 @@ function KP({ }: Props) {
   const [birthChart, setBirthChart] = useState<any>({});
   const [KPHouseSignificator, setKPHouseSignificator] = useState<any>([]);
   const [KPPlanetSignificator, setKPPlanetSignificator] = useState<any>([]);
-  const [KPDetails, setKPDetails] = useState<any>([]);
-  const [ischartLoaded, setchartLoaded] = useState(false);
-  const [iscustLoaded, setcustLoaded] = useState(false);
-  const [isplanetLoaded, setplanetLoaded] = useState(false);
-  const [isgetLoaded, setgetLoaded] = useState(false);
-  const [jsonobj, setjsonobj] = useState(String);
-  useEffect(() => {
-    const planetResponse = async () => {
+    useEffect(() => {
       let bodyData: any;
       if (typeof window !== "undefined") {
 
         bodyData = localStorage.getItem("kundliData");
       }
-      const result = await postFetcher("/kundli/kp_planets", bodyData);
-      if (result?.status) {
-        setKPPlanetDetails(result?.res);
-        setplanetLoaded(true);
-      } else {
-        toast.error(result.msg);
+         
+    const kpPlanetResponse = async () => {
+      const kpPlanet = await postFetcher("/kundli/kp_planets",bodyData);
+      if(kpPlanet?.status){
+        setKPPlanetDetails(kpPlanet?.res);
       }
-    };
+    }  
     
     const chartResponse = async () => {
-      let bodyData: any;
-      if (typeof window !== "undefined") {
-
-        bodyData = localStorage.getItem("kundliData");
-      }
+      
+      
       const chalit = await postFetcher("/kundli/kp_birth_chart", bodyData);
       
       if (chalit?.status) {
@@ -55,24 +45,21 @@ function KP({ }: Props) {
     };
 
     const chart1Response = async () => {
-      let bodyData: any;
-      if (typeof window !== "undefined") {
-
-        bodyData = localStorage.getItem("kundliData");
-        const getbirthChart = await postFetcher("/horo_chart_image/d1", bodyData);
+      
+      
+        const getbirthChart = await postFetcher("/horo_chart/d1", bodyData);
+        
         if (getbirthChart?.status) {
+          console.log(getbirthChart?.res);
           setBirthChart(getbirthChart?.res);
-          setchartLoaded(true);
+          
         }
-      }
+      
     }
 
     const get = async () => {
-      let bodyData: any;
-      if (typeof window !== "undefined") {
-
-        bodyData = localStorage.getItem("kundliData");
-      }
+      
+      
 
       const getKPHouseSignificator = await postFetcher("/kundli/kp_house_significator", bodyData);
       const getKPPlanetSignificator = await postFetcher("/kundli/kp_planet_significator", bodyData);
@@ -90,31 +77,24 @@ function KP({ }: Props) {
 
 
     const cuspResponse = async () => {
-      let bodyData: any;
-      if (typeof window !== "undefined") {
-
-        bodyData = localStorage.getItem("kundliData");
-      }
+      
+      
       const result = await postFetcher("/kundli/kp_house_cusps", bodyData);
       if (result?.status) {
         setCuspDetails(result?.res);
-        setcustLoaded(true);
-      } else {
+              } else {
         toast.error(result?.msg);
       }
     };
     chartResponse();
     chart1Response();
-    if (ischartLoaded) {
-      planetResponse();
-    }
-    if (iscustLoaded) {
+    kpPlanetResponse();
+   
       get();
-    }
-    if (isplanetLoaded) {
+    
       cuspResponse();
-    }
-  }, [ischartLoaded, isplanetLoaded, iscustLoaded, isgetLoaded]);
+    
+  }, []);
   if (Object.keys(chalitChart).length === 0) {
     return (
       <div className="content-center">
@@ -142,15 +122,14 @@ function KP({ }: Props) {
               </div>
               <div className="col-span-6">
                 <div>Birth Chart</div>
-                {Object.keys(chalitChart).length === 0 ? (<div>
+                {Object.keys(birthChart).length === 0 ? (<div>
                   <div className="content-center">
                     <Loading />
                   </div></div>) : (<div>
-                    <div
-                  dangerouslySetInnerHTML={{
-                    __html: birthChart && birthChart.svg && birthChart.svg,
-                  }}
-                ></div>
+                    
+            <ChartCanvas width={350} height={350} birthchart = {birthChart}></ChartCanvas>
+
+                
                   </div>)}
                
               </div>

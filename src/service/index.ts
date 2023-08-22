@@ -28,12 +28,7 @@ export const postFetcher = async (
 export const getFetcher = async (url: string) => {
   try {
     const result = await fetch(`${baseUrl}${url}`, {
-      method: "GET",
-      cache:"no-store",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
+        
     });
     const response = await result.json();
     return response;
