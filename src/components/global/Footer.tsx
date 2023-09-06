@@ -119,7 +119,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 7,
     title: "Solar eclipse",
-    url: "",
+    url: "/footer/solareclipse",
   },
   {
     id: 8,

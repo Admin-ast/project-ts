@@ -8,17 +8,16 @@ type Props = {
 
 const ManagementCard = ({ icon, text, className = "" }: Props) => {
   return (
-    <div className=" h-[135px] w-[183px] ">
-      <div className="  cursor-pointer  rounded-[10px] p-10 shadow-2xl">
+    <div className=" ">
+      <div className="  cursor-pointer  rounded-[10px] p-10 shadow-2xl ">
         <div
-          className={`m-auto h-[82px] w-[82px] rounded-[100%] py-4 ${className}`}
+          className={`mx-16 flex h-[78px] w-[78px] items-center justify-center rounded-full py-4 md:mx-6 lg:mx-6 ${className}`}
         >
-          <img src={`${icon}`} alt="Card Image" className="  mx-auto mb-8 " />
-
-          <p className=" flex items-center justify-center whitespace-nowrap text-[13px] font-bold ">
-            {`${text}`}
-          </p>
+          <img src={`${icon}`} alt="Card Image" className="    " />
         </div>
+        <p className=" mt-2 flex items-center justify-center whitespace-nowrap text-[13px] font-bold ">
+          {`${text}`}
+        </p>
       </div>
     </div>
   );

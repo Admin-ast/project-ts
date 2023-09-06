@@ -25,7 +25,7 @@ const Form = (props: Props) => {
             id="name"
             name="name"
             errors={errors}
-            required="Name for the attribute"
+            // required="Name for the attribute"
             className=""
           />
         </div>
@@ -39,7 +39,7 @@ const Form = (props: Props) => {
             id="name"
             name="name"
             errors={errors}
-            required="Name for the attribute"
+            // required="Name for the attribute"
             className=""
           />
         </div>
