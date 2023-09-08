@@ -1,10 +1,26 @@
 import Hero from "@/components/common/Hero";
+import Durmurtham from "@/components/panchang/Durmurtham";
 import GetPanchang from "@/components/panchang/GetPanchang";
 import Karna from "@/components/panchang/Karna";
 import Nakshtra from "@/components/panchang/Nakshtra";
+import Panchang from "@/components/panchang/Panchang";
+import RahuKaal from "@/components/panchang/RahuKaal";
+import Amavsya from "@/components/panchang/significance/Amavsya";
+import Asthami from "@/components/panchang/significance/Asthami";
+import Chaturdashi from "@/components/panchang/significance/Chaturdashi";
+import Chaturthi from "@/components/panchang/significance/Chaturthi";
+import Dashmi from "@/components/panchang/significance/Dashmi";
+import Ekadashi from "@/components/panchang/significance/Ekadashi";
+import Navami from "@/components/panchang/significance/Navami";
+import Panchami from "@/components/panchang/significance/Panchami";
+import Saptami from "@/components/panchang/significance/Saptami";
+import Sashimi from "@/components/panchang/significance/Sashimi";
+import Significance from "@/components/panchang/significance/Significance";
 import Tithi from "@/components/panchang/Tithi";
 import Today from "@/components/panchang/Today";
 import Vaar from "@/components/panchang/Vaar";
+import Varjyam from "@/components/panchang/Varjyam";
+import WhyPanchang from "@/components/panchang/WhyPanchang";
 import WhyUse from "@/components/panchang/WhyUse";
 import Yoga from "@/components/panchang/Yoga";
 import Section from "@/components/Section";
@@ -31,12 +47,28 @@ function TodayPanchang({}: Props) {
       </div>
       <Today />
       <GetPanchang />
+      <Panchang />
       <WhyUse />
-      <Vaar />
       <Tithi />
       <Nakshtra />
       <Yoga />
       <Karna />
+      <Vaar />
+      <RahuKaal />
+      <Varjyam />
+      <Durmurtham />
+      <Significance />
+      <Chaturthi />
+      <Panchami />
+      <Sashimi />
+      <Saptami />
+      <Asthami />
+      <Navami />
+      <Dashmi />
+      <Ekadashi />
+      <Chaturdashi />
+      <Amavsya />
+      <WhyPanchang />
     </div>
   );
 }
