@@ -7,48 +7,15 @@ function Karna({}: Props) {
   return (
     <Section>
       <div className="flex flex-col space-y-6 py-8 lg:py-[51px]">
-        <h2 className="mb-[18px] text-center font-[georgia] text-2xl font-semibold md:text-[36px]">
-          Karna
+        <h2 className="mb-[18px]  font-[georgia] text-2xl font-semibold md:text-[36px]">
+          ● Karan
         </h2>
         <div className="flex flex-col space-y-4">
           <div>
             <p>
-              {`Half of Tithi is called 'Karna'. In each Tithi, there are two
-                Karans and in total, we have 11 Karnas in total. Four of them
-                occur just once a month and are called the Fixed Karanas:
-                Kintughna, Chatushpada, Sakuni and Naga`}
-            </p>
-            <p>
-              The other seven are movable Karanas. They follow one another in a
-              fixed rotation: Bava, Balava, Kaulava, Taitila, Gara, Vanija and
-              Vishti.
+              {`Karan is another fundamental unit of time in the Panchang which is used to describe the date. Karan is considered to be the half of the tithi in the context of its value. There are 30 tithis in the lunar month and thus with a simple calculation, there can be 60 Karan in the same lunar month. The significance of the Karna is just like the tithi or the Nakshatras in its core aspects. In the Vedic culture, the karna is used in conjunction with the tithi and Nakshatras to find the auspicious date and time of the month for a specific event or occasion. The panchang calendar can show all the Karan dates and timing in one place so the users to choose the ideal Karna date.`}
             </p>
           </div>
-          <div className="flex gap-4 md:gap-8">
-            <div className="flex flex-col gap-1">
-              <p className="font-semibold">Movable Karan</p>
-              <p>Bava</p>
-              <p>Balava</p>
-              <p>Kaulava</p>
-              <p>Taitila</p>
-              <p>Gara</p>
-              <p>Vanij</p>
-              <p>Vishti or Bhadra</p>
-            </div>
-            <div className="flex flex-col gap-1">
-              <p className="font-semibold">Fixed Karan</p>
-              <p>Sakuni</p>
-              <p> Kintughna</p>
-              <p>Chatushpada</p>
-              <p> Naag</p>
-            </div>
-          </div>
-          <p>
-            Each of the Karanas is said to have its own influence and
-            interpretation. ‘Vishti’ is considered the most inauspicious karana.
-            No important or new work is done during the period of this
-            karana.    
-          </p>
         </div>
       </div>
     </Section>

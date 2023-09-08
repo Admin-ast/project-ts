@@ -1,16 +1,16 @@
+import Section from "@/components/Section";
 import React from "react";
-import Section from "../Section";
 
 type Props = {};
 
-const Tithi = (props: Props) => {
+const Chaturthi = (props: Props) => {
   return (
-    <div className="bg-[#FFF7E5] py-8">
+    <div className=" py-8">
       <Section>
         <div className="flex flex-col space-y-6">
           <p className=" font-[georgia] text-2xl font-bold md:text-4xl">
             {" "}
-            ● Tithis
+            ● Chaturthi
           </p>
           <div className="text-justify">
             <p>
@@ -34,4 +34,4 @@ const Tithi = (props: Props) => {
   );
 };
 
-export default Tithi;
+export default Chaturthi;

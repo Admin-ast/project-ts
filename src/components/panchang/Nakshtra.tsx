@@ -3,79 +3,63 @@ import Section from "../Section";
 
 type Props = {};
 
-const nakshtraDetail: string[] = [
-  "Ashvini/Aswini",
-  "Bharani",
-  "Krittika/Krithika",
-  "Rohini",
-  "Mrigashirsha",
-  "Ardra",
-  "Punarvasu",
-  "Pushya",
-  "Ashlesha",
-  "Magha",
-  "Purva Phalguni",
-  "Uttara Phalguni",
-  "Hasta",
-  "Chitra",
-  "Swati",
-  "Vishakha",
-  "Anuradha",
-  "Jyeshtha",
-  "Mula",
-  "Purva Ashadha",
-  "Uttara Ashadha",
-  "Shravana",
-  "Dhanishtha",
-  "Shatabhisha",
-  "Purva Bhadrapada",
-  "Uttara Bhadrapada",
-  "Revati",
-];
+// const nakshtraDetail: string[] = [
+//   "Ashvini/Aswini",
+//   "Bharani",
+//   "Krittika/Krithika",
+//   "Rohini",
+//   "Mrigashirsha",
+//   "Ardra",
+//   "Punarvasu",
+//   "Pushya",
+//   "Ashlesha",
+//   "Magha",
+//   "Purva Phalguni",
+//   "Uttara Phalguni",
+//   "Hasta",
+//   "Chitra",
+//   "Swati",
+//   "Vishakha",
+//   "Anuradha",
+//   "Jyeshtha",
+//   "Mula",
+//   "Purva Ashadha",
+//   "Uttara Ashadha",
+//   "Shravana",
+//   "Dhanishtha",
+//   "Shatabhisha",
+//   "Purva Bhadrapada",
+//   "Uttara Bhadrapada",
+//   "Revati",
+// ];
 
 const Nakshtra = (props: Props) => {
   return (
     <div className="py-8  lg:py-[51px]">
       <Section>
         <div className="flex flex-col space-y-6">
-          <p className="text-center font-[georgia] text-2xl font-bold md:text-4xl">
-            Nakshatra
+          <p className=" font-[georgia] text-2xl font-bold md:text-4xl">
+            ● Nakshatra
           </p>
           <div className="flex flex-col gap-2 text-justify">
             <p>
-              {` Another important constituent of Today's panchang is Nakshatra.
-              For the unaware, nakshatras are nothing but constellations donning
-              the sky. There are as many as 27 Nakshatras in astrology and all
-              of them are ruled by some God. Naksahstra were invented by the
-              Vedic astrologer to simply further divide the 12 zodiac signs into
-              27 parts for better reading and categorising their different
-              aspects. Nakshatra most of the time is considered the most
-              important element of Panchang reading.`}
+              {` Nakshatra is a very popular term used in Vedic astrology and also can be easily found in the Panchang. Nakshatra in the Vedic astrology is basically used to refer to the Lunar mansion or the constellation. The term has been derived from the Naksha where Naksha means the map and the tara means star. It can thus be interpreted as the map of stars in the cosmos and there are 27 Nakshatras that take place at various times. When a person is born he/she is said to be born under the specific Nakshatra and accordingly, the zodiac sign for the person is determined. Moreover, in the Hindu culture, the Nakshatra timing can also be chosen for the happening of various auspicious events and ceremonies.`}
                
             </p>
-            <p>
-              When we divide the 12 zodiac signs into 27 nakshatras, each
-              nakshatra contains thirteen degrees and twenty minutes of the
-              zodiac. You could be born in any of the 27 nakshatras as
-              nakshatras change every one day. Nakshatra are divided into three
-              types: Deva, Manuj and Rakshas. As the name suggests, Rakshas
-              nakshatras and inauspicious while the remaining bring auspicious
-              results for the native most of the time.
-            </p>
           </div>
-          <div className="flex flex-col gap-2 text-justify">
+          {/* <div className="flex flex-col gap-2 text-justify">
             <div className="flex flex-col gap-2">
               <p className="font-semibold">
                 Here are the names of all 27 nakshatras in astrology:
               </p>
               <p> No. English Name Devanagari</p>
             </div>
-            <ul className="grid grid-cols-5 gap-2">
+             <ul className="grid grid-cols-5 gap-2">
               {nakshtraDetail.map((item: string, index: Key) => (
                 <li key={index}>{item}</li>
               ))}
-            </ul>
-          </div>
+            </ul> 
+          </div>  */}
         </div>
       </Section>
     </div>
