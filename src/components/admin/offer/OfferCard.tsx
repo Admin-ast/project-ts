@@ -33,7 +33,7 @@ const OfferCard = ({
           <ToggleSwitch />
         </div>
         <div className="flex">
-          <p className="">Display Name:</p>
+          <p className="font-bold">Display Name:</p>
           <p className="">({`${displayName}`})</p>
         </div>
 

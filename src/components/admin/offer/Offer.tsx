@@ -20,7 +20,7 @@ const Offer = (props: Props) => {
         </div>
         <div className="mt-[45px] lg:w-3/4">
           <div className="flex items-center justify-center ">
-            <p className="flex items-center justify-center rounded-[43px] bg-[#CF2927] px-16  font-bold text-white lg:h-[63px] lg:w-[400px]">
+            <p className="flex items-center justify-center rounded-[43px] bg-[#CF2927] px-16  font-bold text-white lg:h-[63px] ">
               OFFERS
             </p>
           </div>

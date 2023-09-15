@@ -1,6 +1,7 @@
 import React from "react";
 
 type Props = {
+  New: string;
   country: string;
   offer: string;
   order: number;
@@ -22,6 +23,7 @@ type Props = {
 };
 
 const HistoryCard = ({
+  New,
   country,
   offer,
   order,
@@ -43,12 +45,13 @@ const HistoryCard = ({
   return (
     <div className="rounded-[15px]  border-b-[7px]  border-b-[#DC6563]">
       <div className="px-5 py-5 ">
-        <div className="">
-          <p className="text-blue-700">{country}</p>
+        <div className="flex gap-[2px]">
+          <p className="text-blue-700">{`${New}`}</p>
+          <p className="text-blue-700 ">({country})</p>
         </div>
 
-        <p className="text-[#FF7646]">{offer}</p>
-        <p className="font-bold">
+        <p className="text-left text-[#FF7646]">{offer}</p>
+        <p className="text-left font-bold">
           Order ID: <span>{`${order}`}</span>
         </p>
         <div className="flex justify-between">
@@ -92,8 +95,8 @@ const HistoryCard = ({
           <p className="font-bold">Status: </p>
           <span className="text-green-700">{`${status}`}</span>
         </div>
-        <div className="">
-          <button className="w-[132px] rounded-[10px] border-[1px] border-[#FF0600] py-2  font-semibold">
+        <div className="flex">
+          <button className=" rounded-[10px] border-[1px] border-[#FF0600]  px-5 py-2  font-semibold">
             {btn1}
           </button>
         </div>

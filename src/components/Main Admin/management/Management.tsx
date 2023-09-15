@@ -22,7 +22,7 @@ const Management = (props: Props) => {
           <Sidebar />
         </div>
         <div className="grid grid-cols-1  gap-4  px-10 md:grid-cols-3 lg:w-3/4 lg:grid-cols-5  ">
-          <Link href="/">
+          <Link href="/admin/management/chatsupport">
             {" "}
             <ManagementCard
               icon="/assets/admin/management/chat.png"
@@ -30,21 +30,21 @@ const Management = (props: Props) => {
               className="bg-gradient-to-b from-[#cbd3b2] to-[#72B4D7] "
             />
           </Link>
-          <Link href="/">
+          <Link href="/admin/management/customerservice">
             <ManagementCard
               icon="/assets/admin/management/customerservice.png"
               text="Customer service manager"
               className="bg-gradient-to-b from-[#FF6730] to-[#E48F93] "
             />
           </Link>
-          <Link href="/">
+          <Link href="/admin/management/teammanager">
             <ManagementCard
               icon="/assets/admin/management/group.png"
               text="Team Manager"
               className="bg-gradient-to-b from-[#3E5DAB] to-[#72B4D7] "
             />
           </Link>
-          <Link href="/">
+          <Link href="/admin/management/manager">
             <ManagementCard
               icon="/assets/admin/management/profile.png"
               text="Manager"

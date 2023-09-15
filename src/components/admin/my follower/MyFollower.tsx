@@ -17,7 +17,7 @@ const MyFollower = (props: Props) => {
           <Sidebar />
         </div>
         <div className="mt-[45px] lg:w-3/4">
-          <div className="grid items-center justify-center gap-2 gap-10 md:flex lg:flex ">
+          <div className="grid items-center justify-center  gap-10 md:flex lg:flex ">
             <p className="border-[ border-2 bg-[#D9D9D9] px-5 py-2">
               Number of Followers:767
             </p>

@@ -12,7 +12,7 @@ const ReportHistoryCard = () => {
   return (
     <div className="flex ">
       <button
-        className={`rounded-[10px] rounded-r py-2 px-[100px] font-bold ${
+        className={`rounded-[10px] rounded-r py-2 px-10 font-bold md:px-[100px] lg:px-[100px] ${
           activeBtn === "pending" ? "bg-red-500" : "bg-gray-500"
         }`}
         onClick={handleToggle}
@@ -20,7 +20,7 @@ const ReportHistoryCard = () => {
         Pending
       </button>
       <button
-        className={`rounded-[10px] rounded-l py-2 px-[100px] font-bold ${
+        className={`rounded-[10px] rounded-l py-2 px-10 font-bold md:px-[100px] lg:px-[100px] ${
           activeBtn === "completed" ? "bg-red-500" : "bg-gray-500"
         }`}
         onClick={handleToggle}
