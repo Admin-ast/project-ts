@@ -23,6 +23,7 @@ const ChatHistory = (props: Props) => {
           <div className="mt-[30px] grid gap-[45px] md:grid-cols-2 lg:grid-cols-3">
             <div className="shadow-2xl">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -44,6 +45,7 @@ const ChatHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -65,6 +67,7 @@ const ChatHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -86,6 +89,7 @@ const ChatHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}

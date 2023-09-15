@@ -25,14 +25,29 @@ const AllProducts = (props: Props) => {
               <p className="text-[20px] font-bold">AstrosevaTalk Mall</p>
             </div>
 
-            <div className="flex gap-5">
+            <div className="gap-5 md:flex lg:flex">
               <Link
                 href="/admin/astrosevatalkmall/allproducts"
-                className=" mt-16 rounded-[10px] py-2 font-bold lg:px-10"
+                className=" mt-16 rounded-[10px] border-[1px] border-[#da6468] py-2 px-5 font-bold  hover:bg-[#da6468]"
               >
                 All
               </Link>
-              <CommonBtns className="rounded-[10px] border-[1px] border-[#DA6468] py-2 lg:px-10" />
+
+              <div className="mt-[65px] grid grid-rows-2 gap-10 md:flex lg:flex">
+                <Link href="/admin/astrosevatalkmall/addnew">
+                  {" "}
+                  <button
+                    className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10 `}
+                  >
+                    Add New
+                  </button>
+                </Link>
+                <button
+                  className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10  `}
+                >
+                  Bulk Delete
+                </button>
+              </div>
               <Btns />
             </div>
           </div>

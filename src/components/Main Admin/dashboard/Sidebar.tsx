@@ -37,7 +37,7 @@ const Sidebar = (props: Props) => {
         <div className="">
           <ul>
             <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
-              <Link href="/astrologeradmin/admin">Dashboard</Link>
+              <Link href="/admin/dashboard">Dashboard</Link>
             </li>
 
             <li className=" border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
@@ -130,7 +130,7 @@ const Sidebar = (props: Props) => {
               )}
             </li>
             <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
-              <Link href="/admin/management">Management</Link>
+              <Link href="/admin/management/management">Management</Link>
             </li>
 
             <li className=" border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">

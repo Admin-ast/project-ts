@@ -5,7 +5,7 @@ type Props = {};
 
 const HeaderCard = (props: Props) => {
   return (
-    <div className="grid gap-5 px-10 py-[30px] md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-16  px-10 py-[30px] md:grid-cols-2 lg:grid-cols-4">
       <div className="flex h-[116px] w-[236px] items-center justify-center rounded-[15px] bg-[#ecdcb6]">
         <Link href="/admin/user">
           <p className="font-[Georgia] text-[25px] font-bold ">Users</p>

@@ -23,7 +23,7 @@ const Table = (props: Props) => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full table-fixed border-collapse border border-gray-300">
+      <table className="min-w-full divide-y divide-gray-200 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
         <thead>
           <tr className="bg-gray-200">
             <th className="w-1/6 border border-gray-300 px-4 py-2">Order ID</th>

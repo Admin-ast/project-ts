@@ -1,39 +1,3 @@
-// import React, { useState } from 'react';
-// import ChatWindow from './ChatWindow';
-// import ContactSidebar from './ContactSidebar';
-
-// const contacts = [
-//     { name: 'Alice', lastMessage: 'Hey there!' },
-//     { name: 'Bob', lastMessage: 'What\'s up?' },
-//     // Add more contacts here...
-//   ];
-
-// const messages = [
-//   { text: 'Hello!', isSender: true },
-//   { text: 'Hi there!', isSender: false },
-//   // Add more messages here...
-// ];
-
-// const ChatWithOwnAssistant = () => {
-//     const [selectedContact, setSelectedContact] = useState<number | null>(null);
-
-//     return (
-//       <div className="flex h-screen">
-//         <ContactSidebar
-//           contacts={contacts}
-//           onSelectContact={(index) => setSelectedContact(index)}
-//         />
-//         <ChatWindow
-//         messages={messages}
-//         //   messages={selectedContact !== null ? contacts[selectedContact].messages : []}
-//         />
-//       </div>
-//     );
-//   };
-
-// export default ChatWithOwnAssistant;
-
-// pages/index.tsx
 import React, { useState } from "react";
 import ContactList from "./ContactList";
 import ChatWindow from "./ChatWindow";

@@ -18,7 +18,7 @@ const HeaderNav = (props: Props) => {
     setActiveLink(link === activeLink ? "" : link);
   };
   return (
-    <div className=" flex font-bold ">
+    <div className=" font-bold md:flex lg:flex ">
       {links.map((link, index) => (
         <button
           key={index}

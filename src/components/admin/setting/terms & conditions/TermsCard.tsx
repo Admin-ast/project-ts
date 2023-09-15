@@ -16,7 +16,7 @@ const TermsCard = (props: Props) => {
             />
 
             <p className=" whitespace-nowrap text-center font-bold ">
-              Trending Videos
+              Terms & Conditions
             </p>
           </div>
         </div>

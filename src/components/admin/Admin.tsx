@@ -19,7 +19,7 @@ const Admin = () => {
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="mt-[30px] lg:w-3/4">
+        <div className="mt-[30px] px-4  lg:w-3/4">
           <Card />
           <Table />
           <div className="border-b-[2px] border-[#D9D9D9] p-2"></div>

@@ -17,12 +17,13 @@ const CallingHistory = (props: Props) => {
         </div>
         <div className="mt-[45px] text-center lg:w-3/4">
           {" "}
-          <span className="mt-[45px] rounded-[43px] bg-[#CF2927]  px-16 py-4 text-xl font-bold text-white lg:px-[300px]">
+          <span className="mt-[45px] rounded-[43px] bg-[#CF2927]  px-10 py-4 text-xl font-bold text-white ">
             CALLING HISTORY
           </span>
           <div className="mt-[30px] grid gap-[45px] md:grid-cols-2 lg:grid-cols-3 ">
             <div className="shadow-2xl ">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -44,6 +45,7 @@ const CallingHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -65,6 +67,7 @@ const CallingHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl ">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}
@@ -86,6 +89,7 @@ const CallingHistory = (props: Props) => {
             </div>
             <div className="shadow-2xl ">
               <HistoryCard
+                New="New"
                 country="India"
                 offer="Offer Applied"
                 order={12345}

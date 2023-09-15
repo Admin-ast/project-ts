@@ -33,11 +33,11 @@ const RemediesCard = ({
     <div className=" rounded-[15px] border-b-[7px]  border-b-[#DC6563] shadow-md">
       <div className="px-5 py-5 ">
         <div className="flex gap-1">
-          <p className="">Category name:</p>
+          <p className="font-semibold">Category name:</p>
           <p className="text-[#CDB06F]">{`${categoryName}`}</p>
         </div>
 
-        <p className="text-sm  font-semibold">
+        <p className="  text-left font-semibold">
           Product name:{" "}
           <span className="text-[#CDB06F]">{`${productName}`}</span>
         </p>
