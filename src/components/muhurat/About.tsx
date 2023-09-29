@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../Section";
+import Image from "next/image";
 
 type Props = {};
 
@@ -114,10 +115,11 @@ const About = (props: Props) => {
             </div>
 
             <div className="flex flex-col  gap-3">
-              <img
-                className="h=[318px] w-[258px]"
-                src="/assets/Rectangle 154.png"
-                alt=""
+              <Image
+                src="/assets/appointment/live-astro.png"
+                alt="muhurat"
+                width={258}
+                height={318}
               />
               <p className="text-center">Talk to our best Astrologers</p>
             </div>

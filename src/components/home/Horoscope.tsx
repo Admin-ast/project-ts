@@ -16,87 +16,87 @@ export type Card = {
 export const cards: Card[] = [
   {
     link: "/horoscope/daily-horoscope/aries",
-    src: "/assets/home/aries-card.svg",
+    src: "/assets/kundli/aries.png",
     icon: "/assets/single-horoscope/aries.svg",
     id: "aries",
     name: "Aries",
   },
   {
     link: "/horoscope/daily-horoscope/taurus",
-    src: "/assets/home/taurus-card.svg",
+    src: "/assets/kundli/taurus.png",
     icon: "/assets/single-horoscope/taurus.svg",
     id: "taurus",
     name: "Taurus",
   },
   {
     link: "/horoscope/daily-horoscope/gemini",
-    src: "/assets/home/gemini-card.svg",
+    src: "/assets/kundli/gemini.png",
     icon: "/assets/single-horoscope/gemini.svg",
     id: "gemini",
     name: "Gemini",
   },
   {
     link: "/horoscope/daily-horoscope/cancer",
-    src: "/assets/home/cancer-card.svg",
+    src: "/assets/kundli/cancer.png",
     icon: "/assets/single-horoscope/cancer.svg",
     id: "cancer",
     name: "Cancer",
   },
   {
     link: "/horoscope/daily-horoscope/leo",
-    src: "/assets/home/leo-card.svg",
+    src: "/assets/kundli/leo.png",
     icon: "/assets/single-horoscope/leo.svg",
     id: "leo",
     name: "Leo",
   },
   {
     link: "/horoscope/daily-horoscope/virgo",
-    src: "/assets/home/virgo-card.svg",
+    src: "/assets/kundli/virgo.png",
     icon: "/assets/single-horoscope/virgo.svg",
     id: "virgo",
     name: "Virgo",
   },
   {
     link: "/horoscope/daily-horoscope/libra",
-    src: "/assets/home/libra-card.svg",
+    src: "/assets/kundli/libra.png",
     icon: "/assets/single-horoscope/libra.svg",
     id: "libra",
     name: "Libra",
   },
   {
     link: "/horoscope/daily-horoscope/scorpio",
-    src: "/assets/home/scorpio-card.svg",
+    src: "/assets/kundli/scorpio.png",
     icon: "/assets/single-horoscope/scorpio.svg",
     id: "scorpio",
     name: "Scorpio",
   },
   {
     link: "/horoscope/daily-horoscope/sagittarius",
-    src: "/assets/home/sagittarius-card.svg",
+    src: "/assets/kundli/sagittarius.png",
     icon: "/assets/single-horoscope/sagittarius.svg",
     id: "sagittarius",
     name: "Sagittarius",
   },
   {
     link: "/horoscope/daily-horoscope/capricorn",
-    src: "/assets/home/capricorn-card.svg",
+    src: "/assets/kundli/capricorn.png",
     icon: "/assets/single-horoscope/capricorn.svg",
     id: "capricorn",
     name: "Capricorn",
   },
   {
     link: "/horoscope/daily-horoscope/aquarius",
-    src: "/assets/home/aquarius-card.svg",
+    src: "/assets/kundli/aquarius.png",
     icon: "/assets/single-horoscope/aquarius.svg",
     id: "aquarius",
     name: "Aquarius",
   },
   {
     link: "/horoscope/daily-horoscope/pisces",
-    src: "/assets/home/pisces-card.svg",
+    src: "/assets/kundli/pieces.png",
     icon: "/assets/single-horoscope/pisces.svg",
     id: "pisces",
-    name: "Pisces",
+    name: "Pieces",
   },
 ];
 
@@ -120,11 +120,14 @@ function Horoscope({}: Props) {
                   <Image
                     src={item.src}
                     alt={item.name}
-                    width={210}
-                    height={294}
+                    width={168}
+                    height={169}
                     loading={"lazy"}
                   />
                 </Link>
+                <p className="flex items-center justify-center text-[32px] lg:text-[40px]">
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>

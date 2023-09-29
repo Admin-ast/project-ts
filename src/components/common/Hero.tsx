@@ -10,15 +10,15 @@ type Props = {
 
 function Hero({ icon, text, subText }: Props) {
   return (
-    <div className="relative bg-[url('/assets/bg-inner-page.webp')] bg-cover py-8 lg:py-[35px]">
+    <div className="relative bg-gradient-to-b from-[#ffb04d] to-[#dd4327] bg-cover py-8 lg:h-[490px] lg:py-[35px]">
       <Section>
-        <div className=" justify-center lg:grid lg:grid-cols-12">
+        <div className=" justify-center  lg:grid lg:grid-cols-12">
           <div className="col-span-3"></div>
-          <div className="col-span-6 flex h-full flex-col items-center justify-center text-center">
-            <p className="font-[georgia] text-3xl font-black text-white lg:mb-[29px] lg:text-5xl">
+          <div className="col-span-6 flex h-full flex-col items-center justify-center  text-center">
+            <p className="font-[georgia] text-3xl font-black text-white lg:mt-[121px] lg:text-5xl">
               {text}
             </p>
-            <p className="font-[georgia] text-[22px] font-black text-white lg:mb-[29px]">
+            <p className="font-[georgia] text-[22px] font-black text-white lg:mt-[25px]">
               {subText}
             </p>
           </div>
@@ -27,7 +27,7 @@ function Hero({ icon, text, subText }: Props) {
               <Image
                 src={icon}
                 alt={"chat-icon"}
-                width={340}
+                width={383}
                 height={295}
                 loading={"lazy"}
                 className="h-full w-full object-contain"

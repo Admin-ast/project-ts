@@ -50,12 +50,15 @@ const astrologerDetail = {
 function LiveVideoChat({}: Props) {
   return (
     <>
-      <Hero text="Live Video Chat" icon="/assets/appointment/live-hero.png" />
+      <Hero
+        text="Live Video Chat with Astrologers"
+        icon="/assets/appointment/live-hero.png"
+      />
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
               Live Video Chat
             </p>
           </div>
@@ -88,6 +91,7 @@ function LiveVideoChat({}: Props) {
                 contribute to their earnings by the means of donations.
               </p>
             </div>
+
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>

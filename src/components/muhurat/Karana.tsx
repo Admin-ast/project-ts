@@ -6,7 +6,7 @@ type Props = {};
 const Karana = (props: Props) => {
   return (
     <div>
-      <div className="flex flex-col gap-5 bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="flex flex-col gap-5 bg-[url('/horoscope-bg.svg')] bg-cover py-8 shadow-xl lg:py-[51px]">
         <div>
           <Section>
             <div className="flex flex-col space-y-6 text-justify">
@@ -40,7 +40,7 @@ const Karana = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="bg-[#FFF7E5]">
+        <div className=" bg-white">
           <Section>
             <div className="flex flex-col space-y-6 py-8 text-justify">
               <p className="text-center text-[36px] font-bold">

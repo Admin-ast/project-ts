@@ -11,9 +11,9 @@ function About({}: Props) {
           <div className="flex flex-col space-y-4 text-center">
             <p className="text-2xl font-bold md:text-[36px] ">
               {" "}
-              Kundli For Future Predictions
+              Kundli Matching: Kundly Gun Milan
             </p>
-            <p className="text-[22px]">Get Your Kundli by Date of Birth</p>
+            <p className="text-[22px]">A friend or a foe?</p>
           </div>
           <div className="flex flex-col text-justify">
             <p>
@@ -67,14 +67,14 @@ function About({}: Props) {
           </div>
         </div>
       </Section>
-      <div className="bg-[#FFF7E5] py-6">
+      <div className="bg-gradient-to-b from-[#fb7038] to-[#e36351] py-6 shadow-xl">
         <Section>
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-8 text-white">
             <p className="text-center text-2xl font-bold md:text-[36px] ">
               {" "}
               How To Create a Free Online Janam Kundli?
             </p>
-            <div className="flex flex-col text-justify">
+            <div className="flex flex-col text-justify text-[16px] ">
               <p>
                 {`The Kundli of a person is one of the most sought aspects of
                 astrology. A Kundali entails the details about the positions of

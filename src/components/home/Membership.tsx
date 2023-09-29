@@ -7,10 +7,10 @@ type Props = {};
 
 function Membership({}: Props) {
   return (
-    <div className="bg-[url('/assets/cloud-bg.webp')] bg-cover py-12">
+    <div className="bg-gradient-to-b from-[#fa7039] to-[#dd615f] bg-cover py-12">
       <Section>
         <div className="grid grid-cols-2 items-center md:grid-cols-12">
-          <div className="order-2 col-span-8 space-y-6 text-center text-white md:order-1 lg:gap-y-[27px] lg:text-left">
+          <div className="order-2 col-span-8 space-y-6 text-center  md:order-1 lg:gap-y-[27px] lg:text-left">
             <p className="font-[georgia] text-3xl font-semibold lg:text-[40px]">
               Your Customized Membership
             </p>
@@ -20,7 +20,7 @@ function Membership({}: Props) {
               astrological guidance at your fingertips.
             </p>
             <Button
-              text="Plans & Pricing"
+              text="See Plans & Pricing"
               className="mx-auto bg-white !text-2xl !font-medium !text-black lg:mx-0"
             />
           </div>

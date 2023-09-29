@@ -15,25 +15,25 @@ export type Appointment = {
 const appointment: Appointment[] = [
   {
     name: "Chat with Astrologer",
-    src: "/assets/home/icon-01.webp",
+    src: "/assets/home/icon-01.png",
     alt: "chat-astrologer",
     url: "/chat-with-astrologer",
   },
   {
     name: "Talk to Astrologer",
-    src: "/assets/home/icon-02.webp",
+    src: "/assets/home/icon-02.png",
     alt: "talk-astrologer",
     url: "/talk-to-astrologer",
   },
   {
     name: "Live Astrologers",
-    src: "/assets/home/icon-03.webp",
+    src: "/assets/home/icon-03.png",
     alt: "live-astrologer",
     url: "/live-astrologer",
   },
   {
     name: "Live video chat",
-    src: "/assets/home/icon-04.webp",
+    src: "/assets/home/icon-04.png",
     alt: "videochat-astrologer",
     url: "/live-videochat",
   },
@@ -47,12 +47,12 @@ function Appointments({}: Props) {
           <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
             Appointments
           </h2>
-          <div className="grid grid-cols-2  gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2  gap-6 bg-white sm:grid-cols-2 lg:grid-cols-4">
             {appointment?.map((item: Appointment, index: Key) => (
               <Link
                 key={index}
                 href={item?.url}
-                className="mx-auto flex h-[120px] w-[150px] flex-col items-center justify-center space-y-2 rounded-2xl border-[3px] border-[#D3B160] bg-black p-4 md:h-[204px] md:w-[300px]"
+                className="mx-auto flex h-[120px] w-[150px] flex-col items-center justify-center space-y-2 rounded-2xl p-4  shadow-xl md:h-[204px] md:w-[300px]"
               >
                 <div className="mx-auto h-[50px] w-[50px] md:h-[140px] md:w-[140px]">
                   <Image
@@ -63,7 +63,7 @@ function Appointments({}: Props) {
                     loading={"lazy"}
                   />
                 </div>
-                <p className="items-center text-center font-[georgia] text-sm font-[700]  text-[#D3B160] lg:text-[14px]">
+                <p className="items-center text-center font-[georgia] text-sm font-bold  lg:text-xl">
                   {item.name}
                 </p>
               </Link>

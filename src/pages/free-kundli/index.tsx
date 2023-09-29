@@ -1,11 +1,14 @@
+import AlsoCheck from "@/components/common/AlsoCheck";
 import ConnectCard from "@/components/common/ConnectCard";
 import Faq from "@/components/common/Faq";
 import Hero from "@/components/common/Hero";
+import TodaysHoroscope from "@/components/common/TodaysHoroscope";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import About from "@/components/kundli/free-kundli/About";
 import NewKundliForm from "@/components/kundli/free-kundli/NewKundliForm";
 import SavedKundli from "@/components/kundli/free-kundli/SavedKundli";
 import Section from "@/components/Section";
+import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
 type Props = {};
@@ -44,6 +47,16 @@ function FreeKundli({}: Props) {
         subText="Get instant and accurate Janam Kundli"
         icon="/assets/kundli/free-kundli-icon.png"
       />
+      <div className="bg-[#F5F5F5] py-2">
+        <Section>
+          <div className="flex items-center space-x-2">
+            <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
+            <p className="bg-[#D3B160] p-1 px-4 text-[10px] font-medium">
+              Talk To Astrologer
+            </p>
+          </div>
+        </Section>
+      </div>
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
           <div className="flex flex-col space-y-8 py-5 pt-16">
@@ -88,6 +101,8 @@ function FreeKundli({}: Props) {
         <ConnectCard />
         <About />
         <Faq faqDetail={faqsDetail} />
+        <AlsoCheck />
+        <TodaysHoroscope />
       </div>
     </>
   );

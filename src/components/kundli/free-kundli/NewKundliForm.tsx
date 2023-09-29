@@ -22,7 +22,7 @@ function NewKundliForm({}: Props) {
     router.push("/free-kundli/basic-detail");
   };
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 ">
       <p className="text-2xl lg:text-[32px]">New Kundli</p>
       <div className="rounded-3xl border-2 border-[#A9A9A9] p-6">
         <Form onSubmit={handleSubmit(onSubmit)}>
@@ -127,7 +127,7 @@ function NewKundliForm({}: Props) {
             </div>
             <button
               type="submit"
-              className="mx-auto mt-3 w-fit rounded-md border-2 border-gray-900 bg-gradient-to-b from-[#D3B160] to-[#FFE9A1] px-12 py-2 text-center font-semibold text-black lg:col-span-3 lg:text-[22px]"
+              className="mx-auto mt-3 w-fit rounded-md bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] px-12 py-2 text-center font-semibold text-white lg:col-span-3 lg:text-[22px]"
             >
               Generate the Kundli
             </button>

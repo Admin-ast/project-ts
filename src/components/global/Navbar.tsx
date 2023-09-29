@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 import Section from "../Section";
@@ -21,69 +20,6 @@ type Links = {
   name: string;
   url: string;
 };
-
-const links: Links[] = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "Chat With Astrologer",
-    url: "/chat-with-astrologer",
-  },
-  {
-    name: "Talk To Astrologer",
-    url: "/talk-to-astrologer",
-  },
-  {
-    name: "Live Astrologer",
-    url: "/live-astrologer",
-  },
-  {
-    name: "Daily Horoscope",
-    url: "/horoscope/today",
-  },
-  {
-    name: "Live Video Chat",
-    url: "/live-video-chat",
-  },
-  {
-    name: "Free Kundli",
-    url: "/free-kundli",
-  },
-  {
-    name: "Kundli Matching",
-    url: "/kundli-matching",
-  },
-  {
-    name: "Panchang",
-    url: "/today-panchang",
-  },
-  {
-    name: "Shubh Muhurat",
-    url: "/muhurat",
-  },
-  {
-    name: "Compatibility",
-    url: "/compatibility",
-  },
-  {
-    name: "Astro store-Shop",
-    url: "/shop/shop",
-  },
-  {
-    name: "Blog",
-    url: "/blog",
-  },
-  {
-    name: "AstrosevaTalk",
-    url: "",
-  },
-  {
-    name: "Zodiac sign",
-    url: "",
-  },
-];
 
 function Navbar({}: Props) {
   const router = useRouter();
@@ -112,10 +48,10 @@ function Navbar({}: Props) {
         />
       )}
 
-      <div className="sticky top-0 z-10 w-full bg-[url('/assets/navbar-bg.webp')]">
+      <div className="sticky top-0 z-10 w-full bg-white ">
         <Section>
-          <div className="flex items-center justify-between py-2 px-2">
-            <div className="block cursor-pointer text-[25px] text-[white] md:hidden">
+          <div className="flex items-center  py-2 px-2">
+            <div className="block cursor-pointer text-[25px] lg:hidden ">
               <TemporaryDrawer
                 content={<NavMobileData />}
                 anchor="left"
@@ -124,14 +60,14 @@ function Navbar({}: Props) {
             </div>
 
             <div className="">
-              <Link href="/" className="text-2xl font-black text-white">
-                <div className="flex items-center justify-center md:justify-start">
+              <Link href="/" className="text-2xl font-black ">
+                <div className="flex items-center justify-center gap-[7px] md:justify-start">
                   <div className="w-[15%]">
                     <Image
-                      src="/assets/main-logo.svg"
+                      src="/assets/mainlogo.png"
                       alt="logo"
-                      width={337}
-                      height={348}
+                      width={400}
+                      height={300}
                       loading={"eager"}
                     />
                   </div>
@@ -140,27 +76,24 @@ function Navbar({}: Props) {
               </Link>
             </div>
 
-            <div className="mx-auto hidden  flex-wrap items-center  space-x-[16px] space-y-1 lg:flex">
-              {links.map((item: Links, index) => (
-                <Link key={index} href={item?.url}>
-                  <p
-                    className={`cursor-pointer text-[16px] font-bold text-white ${
-                      router.pathname === item.url
-                        ? "underline decoration-[#B62022] underline-offset-8"
-                        : ""
-                    }`}
-                  >
-                    {item.name}
-                  </p>
-                </Link>
-              ))}
+            <div className="w-full lg:relative">
+              <div className=" mt-[38px] hidden gap-[29px] text-[16px] font-bold lg:flex ">
+                <Link href="/talk-to-astrologer">Talk To Astrologer</Link>
+                <Link href="/chat-with-astrologer">Chat With Astrologer</Link>
+                <Link href="/">AstrosevaTalk +</Link>
+                <Link href="/">Zodiac sign</Link>
+              </div>
+              <div className=" mt-[26px] hidden gap-[29px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">
+                <Link href="/free-kundli">Free Kundli</Link>
+                <Link href="/kundli-matching">Kundli Matching</Link>
+                <Link href="/live-astrologer">Live Astrologers</Link>
+                <Link href="/horoscope/today">Horoscope</Link>
+                <Link href="/muhurat">Shubh Muhurat</Link>
+                <Link href="/blog">Blog</Link>
+              </div>
             </div>
 
-            <div className=" flex items-center space-x-[27px] text-base font-bold text-white">
-              {/* <div className="hidden items-center gap-4 md:flex">
-                <p>AstrosevaTalk+</p>
-                <p className="">ZodiacSign</p>
-              </div> */}
+            <div className=" flex items-center space-x-[27px] text-base font-bold ">
               {!isLogged ? (
                 <button
                   onClick={() => {
@@ -191,7 +124,7 @@ function Navbar({}: Props) {
                   }
                 />
               )}
-              {/* onClick={handleLogout} */}
+
               <div className="mt-2">
                 <MainPage />
               </div>

@@ -26,11 +26,13 @@ export default function Home() {
       <HeroCard />
       <About />
       <WhoWeAre />
-      <Appointments />
-      {/* <Horoscope /> */}
+      <Horoscope />
       <Services />
-      <Astrologer />
+      <Appointments />
       <Shop />
+
+      <Astrologer />
+
       <Review />
       <Membership />
     </>
