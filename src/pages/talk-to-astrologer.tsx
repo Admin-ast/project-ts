@@ -52,15 +52,12 @@ const astrologerDetail = {
 function TalkAstrologer({}: Props) {
   return (
     <>
-      <Hero
-        text="Talk To Astrologer"
-        icon="/assets/appointment/talk-hero.png"
-      />
+      <Hero text="Talk To Astrologer" icon="" />
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium">
               Talk To Astrologer
             </p>
           </div>
@@ -72,11 +69,14 @@ function TalkAstrologer({}: Props) {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
-                  <AppointmentCard detail={astrologerDetail} service={"Call"} />
+                  <AppointmentCard detail={astrologerDetail} service={"Talk"} />
                 </div>
               ))}
             </div>
-            <Button text="View More" className="mx-auto lg:text-[28px]" />
+            <Button
+              text="View More"
+              className="mx-auto bg-[#ff3f24] lg:text-[28px]"
+            />
           </div>
         </Section>
         <Consultation />

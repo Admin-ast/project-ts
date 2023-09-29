@@ -6,16 +6,20 @@ type Props = {};
 const Consultation = (props: Props) => {
   return (
     <div>
-      <div className="bg-[url('/assets/cloud-bg.webp')] bg-cover py-8 lg:py-[49px]">
+      <div
+        className="
+     bg-[] 
+      bg-cover py-8 lg:py-[49px]"
+      >
         <Section>
           <div className="space-y-6">
-            <div className="text-center font-[georgia] text-white">
+            <div className="text-center font-[georgia] ">
               <h2 className="text-[32px] font-bold">
                 How Talking to an astrologer can help you?
               </h2>
               <h3 className="text-2xl">Best online astrology consultation</h3>
             </div>
-            <p className="text-justify text-[20px] text-white">
+            <p className="text-justify text-[20px] font-[500] ">
               There’s literally no point in overthinking about your concerns
               when the solution to them is just a call away. AstroSevatalk
               brings to you a pool of over 500+ astrologers with whom you can

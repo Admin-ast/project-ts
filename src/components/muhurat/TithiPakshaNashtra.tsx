@@ -27,7 +27,7 @@ const TithiPakshaNashtra = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="bg-[#FFF7E5]">
+        <div className="bg-white shadow-xl">
           <Section>
             <div className="flex flex-col space-y-6 py-8 text-justify">
               <p className="text-center text-[36px] font-bold">

@@ -1,69 +1,3 @@
-// import Image from "next/image";
-// import React, { Key } from "react";
-// import Button from "../common/Button";
-// import Section from "../Section";
-
-// type Props = {};
-
-// type ShoppingList = {
-//   name: string;
-//   src: string;
-// };
-
-// const shoppingList: ShoppingList[] = [
-//   {
-//     name: "Love Score",
-//     src: "/assets/home/shop-01.webp",
-//   },
-//   {
-//     name: "Career Report",
-//     src: "/assets/home/shop-02.webp",
-//   },
-//   {
-//     name: "Gem",
-//     src: "/assets/home/shop-03.webp",
-//   },
-// ];
-
-// function Shop({}: Props) {
-//   return (
-//     <div className="bg-[#FFF7E5] py-12 lg:py-[38px]">
-//       <Section>
-//         <div className="">
-//           <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-//             Shop
-//           </h2>
-//           <div className="mb-[42px] grid grid-cols-1 gap-6 lg:grid-cols-3">
-//             {shoppingList.map((item: ShoppingList, index: Key) => (
-//               <div
-//                 key={index}
-//                 className="overflow-hidden rounded-3xl border-[3px] border-black"
-//               >
-//                 <div className="h-[390px] rounded-t-3xl border-[10px] !border-b-0 border-white">
-//                   <Image
-//                     src={item.src}
-//                     alt={item.name}
-//                     width={366}
-//                     height={618}
-//                     loading={"lazy"}
-//                     className="h-full w-full object-contain"
-//                   />
-//                 </div>
-//                 <p className="bg-black py-[14px] px-[90px] text-center font-[georgia] text-2xl text-white lg:text-[32px]">
-//                   {item.name}
-//                 </p>
-//               </div>
-//             ))}
-//           </div>
-//           <Button text="View More" className="mx-auto lg:text-[28px]" />
-//         </div>
-//       </Section>
-//     </div>
-//   );
-// }
-
-// export default Shop;
-
 import React, { useState } from "react";
 import Section from "../Section";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -78,6 +12,7 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import Horoscope from "../home/Horoscope";
 import Link from "next/link";
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
 type Props = {};
 
@@ -90,17 +25,17 @@ type ShoppingList = {
 const shoppingList: ShoppingList[] = [
   {
     name: "Love Score",
-    src: "/assets/home/shop-01.webp",
+    src: "/assets/shop/lovescore.svg",
     url: "/shop/lovescore",
   },
   {
     name: "Career Report",
-    src: "/assets/home/shop-02.webp",
+    src: "/assets/shop/carreereport.svg",
     url: "/",
   },
   {
-    name: "Gem",
-    src: "/assets/home/shop-03.webp",
+    name: "Gemstone",
+    src: "/assets/shop/gemstone.svg",
     url: "/shop/gemstone",
   },
 ];
@@ -108,7 +43,7 @@ const shoppingList: ShoppingList[] = [
 function Shop({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-[#FFF7E5] py-12 lg:py-[38px]">
+    <div className=" py-12 lg:py-[38px]">
       <Section>
         <div className="space-y-6">
           <div className="mb-[35px]">
@@ -142,7 +77,7 @@ function Shop({}: Props) {
               <SwiperSlide key={item.src + index}>
                 <Link key={index} href={item?.url}>
                   <div className="overflow-hidden rounded-3xl border-[3px] border-black">
-                    <div className="h-[390px] rounded-t-3xl border-[10px] !border-b-0 border-white">
+                    <div className="rounded-t-3xl border-[10px] !border-b-0 border-white lg:h-[390px]">
                       <Image
                         src={item.src}
                         alt={item.name}
@@ -152,7 +87,7 @@ function Shop({}: Props) {
                         className="h-full w-full object-contain"
                       />
                     </div>
-                    <p className="bg-black py-[14px]  text-center font-[georgia] text-[20px] text-white lg:text-[32px]">
+                    <p className="bg-[#ca2127] py-[14px]  text-center font-[georgia] text-[20px] text-white lg:text-[32px]">
                       {item.name}
                     </p>
                   </div>
@@ -160,17 +95,23 @@ function Shop({}: Props) {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="relative z-20 -mt-2 flex items-center justify-center space-x-4">
-            <button className="prev cursor-pointer" aria-label="prev">
-              <PlayIcon
-                className={`h-10 w-10 rotate-180 rounded-full border-2 border-black p-2 text-black `}
-              />
+          <div className=" flex items-center justify-center  lg:relative lg:bottom-[250px] ">
+            <div className="z-10  lg:absolute   lg:left-[-100px]">
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className={`text-[40px]    text-black  `} />
+              </button>
+            </div>
+
+            <div className="z-10 lg:absolute     lg:left-[1290px] ">
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className={`text-[40px]    text-black  `} />
+              </button>{" "}
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]   text-[28px] font-bold text-white">
+              View More
             </button>
-            <button className="next cursor-pointer" aria-label="next">
-              <PlayIcon
-                className={`h-10 w-10 rounded-full border-2 border-black p-2 text-black `}
-              />
-            </button>{" "}
           </div>
         </div>
       </Section>

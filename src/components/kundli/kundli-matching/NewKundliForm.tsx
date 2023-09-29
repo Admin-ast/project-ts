@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { numberOptions, monthOptions } from "../../../../utils";
 import { Form, Input, Select } from "@/components/forms";
 import Combo from "@/components/common/Combo";
+import LoveForm from "@/components/shop/lovescore/LoveForm";
+import LoveScore from "@/components/shop/lovescore/LoveScore";
 
 type Props = {};
 
@@ -315,7 +317,7 @@ function NewKundliForm({}: Props) {
         </div>
         <button
           type="submit"
-          className="mx-auto mt-3 w-full rounded-xl border-2 border-gray-900 bg-gradient-to-b from-[#D3B160] to-[#FFE9A1] px-12 py-2 text-center font-semibold text-black lg:col-span-2 lg:text-[22px]"
+          className="mx-auto mt-3 w-full rounded-xl  bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] px-12 py-2 text-center font-semibold text-white lg:col-span-2 lg:text-[22px]"
         >
           Match Kundli
         </button>

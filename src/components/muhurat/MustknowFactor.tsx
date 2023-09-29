@@ -6,7 +6,7 @@ type Props = {};
 const MustknowFactor = (props: Props) => {
   return (
     <div>
-      <div className=" bg-black bg-cover py-8 lg:py-[48px]">
+      <div className=" bg-gradient-to-b from-[#f96e37] to-[#D32E27] bg-cover py-8 lg:py-[48px]">
         <Section>
           <div className="flex flex-col space-y-6 text-justify text-white">
             <p className="text-center text-xl font-bold md:text-3xl">

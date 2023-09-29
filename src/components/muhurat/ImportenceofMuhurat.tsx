@@ -6,7 +6,7 @@ type Props = {};
 const ImportenceofMuhurat = (props: Props) => {
   return (
     <div>
-      <div className="bg-[#FFF7E5] py-8">
+      <div className="bg-white py-8 shadow-xl">
         <Section>
           <div className="flex flex-col space-y-6">
             <div>

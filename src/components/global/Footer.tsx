@@ -476,7 +476,7 @@ const secure = [
 
 function Footer({}: Props) {
   return (
-    <div className="bg-black py-12 text-white">
+    <div className=" bg-black py-12 text-white">
       <Section>
         <div className="space-y-6">
           <div className="flex flex-col gap-4">
@@ -499,7 +499,7 @@ function Footer({}: Props) {
               <p className="text-xl font-semibold">Important Links</p>
               <hr className="my-2   w-32 text-white" />
 
-              <ul className="flex flex-col gap-4 ">
+              <ul className="flex flex-col gap-4  ">
                 {importantLinks.map((item: ImportantLinks, index: Key) => (
                   <li
                     key={index}

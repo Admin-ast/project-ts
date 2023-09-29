@@ -7,9 +7,9 @@ type Props = {};
 
 function WhoWeAre({}: Props) {
   return (
-    <div className="bg-[#FFF7E5] py-12">
+    <div className=" py-12 shadow-xl">
       <Section>
-        <div className="flex flex-col items-center space-y-4 lg:grid lg:grid-cols-12 lg:space-x-6 lg:space-y-0">
+        <div className="flex flex-col items-center space-y-4 lg:grid lg:grid-cols-12 lg:space-x-6  lg:space-y-0">
           <div className="col-span-3">
             <Image
               src="/assets/home/who.webp"
@@ -50,7 +50,7 @@ function WhoWeAre({}: Props) {
               nations. Though often regarded as a science throughout its
               history, astrology is widely considered today to be diametrica.
             </p>
-            <Button text="Contact Us" className="mx-auto" />
+            <Button text="Contact Us" className="mx-auto bg-[#ff301a]" />
           </div>
         </div>
       </Section>

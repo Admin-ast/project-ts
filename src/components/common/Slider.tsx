@@ -20,6 +20,7 @@ function Slider({ slides }: Props) {
         modules={[Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
+        className="rounded-[30px]"
       >
         {slides &&
           slides.length > 0 &&
@@ -28,7 +29,7 @@ function Slider({ slides }: Props) {
               <div key={index}>
                 <SwiperSlide>
                   {" "}
-                  <div className="flex justify-center md:w-[]">
+                  <div className="flex justify-center md:w-[] ">
                     <img src={slide?.url} alt="" />
                   </div>
                 </SwiperSlide>
