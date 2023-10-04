@@ -24,7 +24,7 @@ function Select({
       <label className="block text-sm font-medium text-gray-700" htmlFor={id}>
         {label}
       </label>
-      <div className="pt-1">
+      <div className="pt-1 text-[#D9D9D9]">
         <select
           name={name}
           id={id}
@@ -34,7 +34,7 @@ function Select({
           {/* <option value="">Please select {name}</option> */}
 
           {options?.map((opt: any, index: number) => (
-            <option key={index} value={opt.value}>
+            <option key={index} value={opt.value} className="text-black">
               {opt.name}
             </option>
           ))}

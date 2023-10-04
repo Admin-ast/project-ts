@@ -1,4 +1,6 @@
 import AppointmentCard from "@/components/appoinments/AppointmentCard";
+import CardPopup from "@/components/appoinments/Popup";
+
 import Consultation from "@/components/appoinments/Consultation";
 import Hero from "@/components/appoinments/Hero";
 import Button from "@/components/common/Button";
@@ -80,6 +82,7 @@ function TalkAstrologer({}: Props) {
           </div>
         </Section>
         <Consultation />
+        {/* <CardPopup btn="Calling"/> */}
         <Faq faqDetail={faqsDetail} />
       </div>
     </>

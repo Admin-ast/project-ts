@@ -9,71 +9,71 @@ type Props = {
 const Compatibility = ({ horoscopeType }: Props) => {
   const compareCards = [
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: `/assets/single-horoscope/aries.svg`,
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: `/assets/kundli/aries.png`,
       btn: `${horoscopeType} And Aries`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/taurus.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/taurus.png",
       btn: `${horoscopeType} And Taurus`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/gemini.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/gemini.png",
       btn: `${horoscopeType} And Gemini`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/cancer.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/cancer.png",
       btn: `${horoscopeType} And Cancer`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/leo.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/leo.png",
       btn: `${horoscopeType} And leo`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/virgo.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/virgo.png",
       btn: `${horoscopeType} And Virgo`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/libra.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/libra.png",
       btn: `${horoscopeType} And Libra`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/scorpio.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/scorpio.png",
       btn: `${horoscopeType} And Scorpio`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/sagittarius.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/sagittarius.png",
       btn: `${horoscopeType} And Sagittarius`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/capricon.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/capricorn.png",
       btn: `${horoscopeType} And Capricon`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/acquarius.svg",
-      btn: `${horoscopeType} And Acquarius`,
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/aquarius.png",
+      btn: `${horoscopeType} And Aquarius`,
     },
     {
-      src: `/assets/single-horoscope/${horoscopeType}.svg`,
-      src1: "/assets/single-horoscope/pisces.svg",
+      src: `/assets/kundli/${horoscopeType}.png`,
+      src1: "/assets/kundli/pisces.png",
       btn: `${horoscopeType} And Pisces`,
     },
   ];
   return (
-    <div className="mb-4 bg-[url('/assets/cloud-bg.webp')] bg-cover py-12 lg:py-20">
+    <div className="mb-4  bg-cover py-12 lg:py-20">
       <Section>
         <div>
-          <p className="pb-10 text-center text-2xl font-bold text-white md:text-4xl">
+          <p className="pb-10 text-center text-2xl font-bold  md:text-4xl">
             {horoscopeType} Compatibility With Other Signs
           </p>
         </div>
@@ -81,7 +81,7 @@ const Compatibility = ({ horoscopeType }: Props) => {
           {compareCards?.map((item, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
               <div className="flex space-x-6">
-                <div className=" flex h-[115px] w-[123px] items-center justify-center rounded-2xl border-b-2 border-b-[#e7bb55]  bg-black">
+                <div className=" flex h-[115px] w-[123px] items-center justify-center rounded-2xl border-b-2 border-r-2 border-b-[#DC6563] border-r-[#DC6563]  ">
                   <div className="h-[108px] w-[84px]">
                     <Image
                       src={item.src}
@@ -92,7 +92,7 @@ const Compatibility = ({ horoscopeType }: Props) => {
                     />
                   </div>
                 </div>
-                <div className=" flex h-[115px] w-[123px] items-center justify-center rounded-2xl border-b-2 border-b-[#e7bb55]  bg-black">
+                <div className=" flex h-[115px] w-[123px] items-center justify-center rounded-2xl border-b-2 border-r-2 border-b-[#DC6563] border-r-[#DC6563] ">
                   <div className="h-[108px] w-[84px]">
                     <Image
                       src={item.src1}
@@ -105,7 +105,7 @@ const Compatibility = ({ horoscopeType }: Props) => {
                 </div>
               </div>
               <div className="w-[272px]">
-                <button className="w-full rounded-md bg-gradient-to-b from-[#D3B160] to-[#FFE9A1] py-1 px-5 text-[18px] font-medium text-black">
+                <button className="w-full rounded-md bg-[#DC6563] py-1 px-5 text-[18px] font-medium text-white ">
                   {item?.btn}
                 </button>
               </div>

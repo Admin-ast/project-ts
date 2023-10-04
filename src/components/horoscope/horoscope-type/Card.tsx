@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Section from "../../Section";
 import Zodiac from "@/components/compatibility/Zodiac";
+
 type Props = {
   horos: any;
   predictionArray: any;
@@ -138,7 +139,7 @@ const Card = ({ horos, predictionArray, type }: Props) => {
               onClick={() => {
                 router.push(`/horoscope?type=${type}&zodiac=${item}`);
               }}
-              className=" my-1 flex flex-col rounded-xl border-2 border-black bg-[#FFF7E5] p-4 md:my-0 md:grid md:!w-[570px] md:grid-cols-12 md:gap-6"
+              className=" my-1 flex flex-col rounded-xl border-2 border-[#DC6563]  p-4 md:my-0 md:grid md:!w-[570px] md:grid-cols-12 md:gap-6"
             >
               <div className="col-span-4 mx-auto">
                 <Image
