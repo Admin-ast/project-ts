@@ -1,10 +1,13 @@
 import React from "react";
-import { Button, Form, Input } from "../forms";
+import { Button, Form, Input, Textarea } from "../forms";
 import { useForm } from "react-hook-form";
 
-type Props = {};
+type Props = {
+  text: string;
+  className: string;
+};
 
-const CallIntakeForm = (props: Props) => {
+const CallIntakeForm = ({ text, className }: Props) => {
   const {
     register,
     handleSubmit,
@@ -14,10 +17,15 @@ const CallIntakeForm = (props: Props) => {
   const onSubmit = (data: any) => console.log(data);
   console.log(errors);
   return (
-    <div className="border-[1px] border-[#D9D9D9] px-8 py-4 lg:w-2/3">
-      <p className="text-center text-[22px] font-bold">Call Intake Form</p>
+    <div
+      className={`border-[1px] border-[#D9D9D9] px-8  py-4 lg:w-2/3 ${className}`}
+    >
+      <div className="">
+        <p className="text-center text-[36px] font-bold ">{text}</p>
+      </div>
+
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <div className="gap-[89.56px] lg:flex ">
+        <div className="mt-[76px] gap-[89.56px] lg:flex">
           <div className="w-full">
             <label
               htmlFor=""
@@ -178,7 +186,7 @@ const CallIntakeForm = (props: Props) => {
               Topic Of Concern
             </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
+              className=" h-[150px]  text-[16px] font-bold text-white"
               type="string"
               id="hours"
               placeholder=""

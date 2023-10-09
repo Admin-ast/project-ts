@@ -9,7 +9,7 @@ const CallIntake = (props: Props) => {
   return (
     <div className="gap-[16px] lg:flex">
       <MoreAstrologer />
-      <CallIntakeForm />
+      <CallIntakeForm text="Call Intake Form" className="" />
       <AstrologerDetails />
     </div>
   );

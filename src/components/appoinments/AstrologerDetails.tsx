@@ -3,12 +3,12 @@ import React from "react";
 import { Button } from "../forms";
 
 type Props = {
-  id: number;
-  src: string;
-  name: string;
-  speciality: any;
-  languages: any;
-  experience: string;
+  // id: number;
+  // src: string;
+  // name: string;
+  // speciality: any;
+  // languages: any;
+  // experience: string;
 };
 const astrologerDetail = [
   {

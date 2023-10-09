@@ -90,9 +90,9 @@ function Popup({ btn, detail, onClose }: Props) {
           />
         </div>
         <div className=" w-96 rounded-lg p-4 ">
-          <p>Name: {name}</p>
-          <p>Expertise: {expertise}</p>
-          <p>Language: {language}</p>
+          <p> {name}</p>
+          <p> {expertise}</p>
+          <p> {language}</p>
           <div className="flex justify-between">
             <p>Experience: {experience} years</p>
             <button

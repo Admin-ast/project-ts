@@ -1,4 +1,5 @@
 import AppointmentCard from "@/components/appoinments/AppointmentCard";
+import ChatCard from "@/components/chat/ChatCard";
 import Consultation from "@/components/appoinments/Consultation";
 import Hero from "@/components/appoinments/Hero";
 import Button from "@/components/common/Button";
@@ -78,7 +79,7 @@ function ChatAstrologer({}: Props) {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
-                  <AppointmentCard detail={astrologerDetail} service={"Chat"} />
+                  <ChatCard detail={astrologerDetail} service={"Chat"} />
                 </div>
               ))}
             </div>
