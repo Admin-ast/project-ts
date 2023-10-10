@@ -10,7 +10,13 @@ const CallIntake = (props: Props) => {
     <div className="gap-[16px] lg:flex">
       <MoreAstrologer />
       <CallIntakeForm text="Call Intake Form" className="" />
-      <AstrologerDetails />
+      <AstrologerDetails
+        name="Anupam"
+        speciality="Vedic, Vastu, Face reading "
+        rate="Rate your experience"
+        language="English, Hindi, Punjabi "
+        experience=" 3 years"
+      />
     </div>
   );
 };

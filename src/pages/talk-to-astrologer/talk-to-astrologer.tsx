@@ -1,5 +1,4 @@
 import AppointmentCard from "@/components/appoinments/AppointmentCard";
-import CardPopup from "@/components/appoinments/Popup";
 
 import Consultation from "@/components/appoinments/Consultation";
 import Hero from "@/components/appoinments/Hero";
@@ -9,6 +8,7 @@ import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
+import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
 
 type Props = {};
 
@@ -68,6 +68,7 @@ function TalkAstrologer({}: Props) {
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
           <div className="py-12 lg:space-y-16">
+            <DetailNavbar bal={10} />
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
@@ -77,12 +78,12 @@ function TalkAstrologer({}: Props) {
             </div>
             <Button
               text="View More"
-              className="mx-auto bg-[#ff3f24] lg:text-[28px]"
+              className="mx-auto bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
             />
           </div>
         </Section>
         <Consultation />
-        {/* <CardPopup btn="Calling"/> */}
+
         <Faq faqDetail={faqsDetail} />
       </div>
     </>

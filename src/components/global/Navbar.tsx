@@ -78,7 +78,9 @@ function Navbar({}: Props) {
 
             <div className="w-full lg:relative">
               <div className=" mt-[38px] hidden gap-[29px] text-[16px] font-bold lg:flex ">
-                <Link href="/talk-to-astrologer">Talk To Astrologer</Link>
+                <Link href="/talk-to-astrologer/talk-to-astrologer">
+                  Talk To Astrologer
+                </Link>
                 <Link href="/chat-with-astrologer">Chat With Astrologer</Link>
                 <Link href="/astrosevatalk">AstrosevaTalk +</Link>
                 <Link href="/">Zodiac sign</Link>
