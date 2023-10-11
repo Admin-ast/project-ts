@@ -160,7 +160,7 @@ function Review({}: Props) {
                   width={108}
                   height={108}
                   loading={"lazy"}
-                  className="rounded-full border-4 border-black"
+                  className="rounded-full border-4 border-[#DC6563]"
                 />
               </div>
               <div className="w-full ">

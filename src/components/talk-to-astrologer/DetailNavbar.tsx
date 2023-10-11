@@ -4,6 +4,7 @@ import { AiOutlineBars, AiOutlineSearch } from "react-icons/ai";
 import { FaFilter } from "react-icons/fa";
 import { Input } from "../forms";
 import Section from "../Section";
+import Filter from "./Filter";
 
 type Props = {
   bal: number;
@@ -14,14 +15,15 @@ const DetailNavbar = ({ bal }: Props) => {
     <Section>
       <div className="justify-center  gap-[13px]  lg:flex  ">
         <p className="py-2">Available Balance:Rs{bal}</p>
-        <Link href="">
+        <Link href="/talk-to-astrologer/price">
           <div className="rounded-[5px] border-[1px] border-[#00AF1C] px-2 py-2">
             <p className="text-[#00AF1C]">Recharge</p>
           </div>
         </Link>
         <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9] px-2 py-2 ">
-          <p className="text-[#D9D9D9]">Filter</p>
-          <FaFilter className="text-[#D9D9D9]" />
+          {/* <p className="text-[#D9D9D9]">Filter</p>
+          <FaFilter className="text-[#D9D9D9]" /> */}
+          <Filter />
         </div>
         <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9] px-2 py-2 ">
           <p className="text-[#D9D9D9]">Sort by</p>

@@ -9,6 +9,7 @@ import Section from "@/components/Section";
 import Seo from "@/components/Seo";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
+import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
 
 type Props = {};
 
@@ -67,7 +68,7 @@ function ChatAstrologer({}: Props) {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
               Chat With Astrologer
             </p>
           </div>
@@ -76,6 +77,8 @@ function ChatAstrologer({}: Props) {
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
           <div className="py-12 lg:space-y-16">
+            <DetailNavbar bal={10} />
+
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
@@ -83,7 +86,10 @@ function ChatAstrologer({}: Props) {
                 </div>
               ))}
             </div>
-            <Button text="View More" className="mx-auto lg:text-[28px]" />
+            <Button
+              text="View More"
+              className="mx-auto bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
+            />
           </div>
         </Section>
         <Consultation />

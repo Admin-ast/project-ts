@@ -42,7 +42,7 @@ type Props = {};
 function Services({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-white ">
+    <div className="bg-white  ">
       <Section>
         <div className="">
           <div className="space-y-6">
@@ -74,7 +74,7 @@ function Services({}: Props) {
               {services.map((item, index) => (
                 <SwiperSlide key={item.src + index}>
                   <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl border-[10px] border-white">
+                    <div className=" rounded-3xl  border-[3px] border-[#DC6563]">
                       <Image
                         src={item.src}
                         alt={item.name}

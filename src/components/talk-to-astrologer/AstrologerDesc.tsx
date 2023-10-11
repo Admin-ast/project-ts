@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Section from "../Section";
 import ThreeDots from "./ThreeDots";
+import Rating from "./Rating";
 
 type Props = {
   waitTime: string;
@@ -24,7 +25,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
   return (
     <div className="">
       <Section>
-        <div className="rounded-[15px] border-[1px] border-[#DC6563]">
+        <div className="items-center justify-center rounded-[15px] border-[1px] border-[#DC6563] py-8 md:flex">
           {AstrologersList.map((item, index) => (
             <div key={index} className="gap-[91px] px-8 lg:flex ">
               <div className=" mt-[53px]">
@@ -34,8 +35,8 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   width={294}
                   height={294}
                 />
-                <div className="mt-[34px] flex h-[58px] justify-center ">
-                  <button className="rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] font-[Roboto] text-[28px] font-bold text-white lg:px-16">
+                <div className="mt-[34px] flex h-[58px]  justify-center ">
+                  <button className="rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] px-8 font-[Roboto] text-[28px] font-bold text-white lg:px-16">
                     Follow
                   </button>
                 </div>
@@ -50,7 +51,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   Exp:{item.experience}
                 </p>
                 <p className="font-[Roboto] text-[24px] ">Rs:{item.price}</p>
-                <div className="flex gap-[34px]">
+                <div className="gap-[34px] md:flex lg:flex">
                   <div className="flex items-center">
                     <Image
                       src="/assets/talk-to-astrologer/chat.png"
@@ -77,8 +78,8 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   </div>
                 </div>
 
-                <div className="mt-[76px] flex gap-[34px]">
-                  <div className="flex items-center gap-[48px] rounded-[10px] border-[1px] border-[#DC6563] px-4">
+                <div className="mt-[76px] gap-[34px] md:flex lg:flex">
+                  <div className="flex  items-center gap-[48px] rounded-[10px] border-[1px] border-[#DC6563] px-4">
                     <Image
                       src="/assets/talk-to-astrologer/chat.png"
                       alt="chat"
@@ -93,7 +94,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                     </div>
                   </div>
                   <div className="">
-                    <div className="flex items-center  gap-[48px] rounded-[10px] border-[1px] border-[#DC6563] px-4">
+                    <div className="flex  items-center  gap-[48px] rounded-[10px] border-[1px] border-[#DC6563] px-4">
                       <Image
                         src="/assets/talk-to-astrologer/call.png"
                         alt="chat"
@@ -115,6 +116,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
               </div>
             </div>
           ))}
+          <div className="lg:flex"></div>
         </div>
       </Section>
     </div>

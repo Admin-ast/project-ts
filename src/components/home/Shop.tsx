@@ -76,7 +76,7 @@ function Shop({}: Props) {
             {shoppingList?.map((item, index) => (
               <SwiperSlide key={item.src + index}>
                 <Link key={index} href={item?.url}>
-                  <div className="overflow-hidden rounded-3xl border-[3px] border-black">
+                  <div className="overflow-hidden rounded-3xl border-[3px] border-[#DC6563]">
                     <div className="rounded-t-3xl border-[10px] !border-b-0 border-white lg:h-[390px]">
                       <Image
                         src={item.src}

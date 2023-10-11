@@ -59,7 +59,8 @@ const HoroscopeSign = ({ data, slug }: Props) => {
         prediction={data?.data?.prediction}
       />
       <ConnectCard />
-      <SignsCard cardDetail={remainingSign} />
+      {/* <SignsCard cardDetail={remainingSign} /> */}
+      <SignsCard />
       <Compatibility horoscopeType={activeSign[0].name} />
       <Faq faqDetail={faqsDetail} />
     </div>

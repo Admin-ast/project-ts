@@ -17,7 +17,7 @@ const AstrologerDetails = ({
   rate,
 }: Props) => {
   return (
-    <div className="lg:w-1/3">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] lg:w-1/3">
       <div className="flex items-center justify-center">
         <div className="mt-[53px]">
           <Image
@@ -35,7 +35,7 @@ const AstrologerDetails = ({
         <p className="">Experience:{experience}</p>
       </div>
       <div className="flex items-center justify-center">
-        <button className="mt-[58px] h-[38px] rounded-lg bg-[#CA2127] py-1 px-4 text-base font-semibold text-white">
+        <button className="mt-[58px] h-[38px] rounded-lg bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-1 px-4 text-[22px] font-semibold text-white">
           {rate}
         </button>
       </div>

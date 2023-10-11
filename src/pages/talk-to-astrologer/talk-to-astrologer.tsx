@@ -78,7 +78,7 @@ function TalkAstrologer({}: Props) {
             </div>
             <Button
               text="View More"
-              className="mx-auto bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
+              className="mx-auto mt-[88px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
             />
           </div>
         </Section>

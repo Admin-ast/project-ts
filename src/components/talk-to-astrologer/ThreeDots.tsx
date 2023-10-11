@@ -2,6 +2,7 @@
 import { useState } from "react";
 // import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
 import { ChevronDownIcon, ChevronUpDownIcon } from "@heroicons/react/24/solid";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const ThreeDots = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,20 +15,19 @@ const ThreeDots = () => {
     <div className="relative">
       <button
         onClick={toggleOptions}
-        className="flex items-center space-x-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 focus:outline-none"
+        className="z-10    flex  rounded-lg py-2 text-white "
       >
         {isOpen ? (
-          <ChevronDownIcon className="h-5 w-5" />
+          <BsThreeDotsVertical className="h-10 w-10 text-black  " />
         ) : (
-          <ChevronUpDownIcon className="h-5 w-5" />
+          <BsThreeDotsVertical className="h-10 w-10 text-black " />
         )}
-        <span>{isOpen ? "Close" : "Report & Block"}</span>
+        <span>{isOpen ? "" : ""}</span>
       </button>
       {isOpen && (
-        <div className="absolute top-10 right-0 z-10 rounded-lg border border-gray-300 bg-white p-4 shadow-lg">
+        <div className="absolute top-12 right-10 z-10   flex h-[48px] w-[188px] items-center justify-center bg-[#D9D9D9] text-[24px] shadow-lg">
           {/* Replace this with your Report & Block options */}
-          <div>Report Option</div>
-          <div>Block Option</div>
+          <div>Report & Block</div>
         </div>
       )}
     </div>
