@@ -11,13 +11,13 @@ const appointment: Appointment[] = [
     name: "Chat with Astrologer",
     src: "/assets/home/hero-icon-01.webp",
     alt: "test",
-    url: "/chat-with-astrologer",
+    url: "/chat-with-astrologer/chat-with-astrologer",
   },
   {
     name: "Talk to Astrologer",
     src: "/assets/home/hero-icon-02.webp",
     alt: "test",
-    url: "/talk-to-astrologer",
+    url: "/talk-to-astrologer/talk-to-astrologer",
   },
   {
     name: "Live video chat",

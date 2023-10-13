@@ -728,7 +728,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 3,
     title: "Live Astrologer",
-    url: "/live-astrologer",
+    url: "/live-astrologer/live-astrologer",
   },
   {
     id: 4,
@@ -753,7 +753,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 8,
     title: "Daily Horoscope",
-    url: "/horoscope/daily-horoscope",
+    url: "/horoscope/daily",
   },
   {
     id: 9,

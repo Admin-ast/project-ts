@@ -8,7 +8,7 @@ type Props = {
 
 const SimilarConsultantsCard = ({ name, spec }: Props) => {
   return (
-    <div className="flex h-[174px] w-[186px]  items-center justify-center rounded-[20px] shadow-lg">
+    <div className="flex h-[174px] w-[186px]   items-center justify-center rounded-[20px] shadow-lg">
       <div className="">
         <Image
           src="/assets/admin/Dashboard_image.png"

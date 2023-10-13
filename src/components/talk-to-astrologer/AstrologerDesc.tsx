@@ -23,9 +23,9 @@ const AstrologersList = [
 
 const AstrologerDesc = ({ waitTime }: Props) => {
   return (
-    <div className="">
+    <div className="mt-[30px] bg-[url('/assets/horoscope-bg.webp')] ">
       <Section>
-        <div className="items-center justify-center rounded-[15px] border-[1px] border-[#DC6563] py-8 md:flex">
+        <div className="items-center justify-center  rounded-[15px] border-[1px] border-[#DC6563] bg-white py-8 md:flex">
           {AstrologersList.map((item, index) => (
             <div key={index} className="gap-[91px] px-8 lg:flex ">
               <div className=" mt-[53px]">

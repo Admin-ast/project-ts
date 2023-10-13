@@ -5,9 +5,37 @@ import MuhuratDate from "@/components/muhurat/Namakaran/MuhuratDate";
 import Note from "@/components/muhurat/Namakaran/Note";
 import Section from "@/components/Section";
 import Hero from "@/components/appoinments/Hero";
+import Faq from "@/components/common/Faq";
+import { Faqs } from "@/components/horoscope/horoscope-sign";
+import AlsoCheck from "@/components/common/AlsoCheck";
+import TodaysHoroscope from "@/components/common/TodaysHoroscope";
 
 type Props = {};
-
+const faqsDetail: Faqs = {
+  title: "Chat With Astrologer - FAQs",
+  faq: [
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+  ],
+};
 const Muhurat = (props: Props) => {
   return (
     <div>
@@ -23,6 +51,9 @@ const Muhurat = (props: Props) => {
       <About />
       <MuhuratDate />
       <Note />
+      <Faq faqDetail={faqsDetail} />
+      <AlsoCheck />
+      <TodaysHoroscope />
     </div>
   );
 };

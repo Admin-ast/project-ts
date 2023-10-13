@@ -6,7 +6,7 @@ type Props = {};
 const MuhuratDate = (props: Props) => {
   return (
     <div>
-      <div className="mt-4 bg-[url('/chat-bg.svg')]  bg-cover  py-8 lg:py-[51px]">
+      <div className="mt-4 bg-[url('/assets/home/cloud.png')]  bg-cover  py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -89,7 +89,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b] py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -143,7 +143,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[#FFF7E5]  py-8 lg:py-[51px]">
+      <div className=" bg-[url('/assets/horoscope-bg.webp')] py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -197,7 +197,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="bg-[url('/assets/home/cloud.png')] bg-cover py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -251,7 +251,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="mt-4 bg-[url('/chat-bg.svg')]  bg-cover  py-8 lg:py-[51px]">
+      <div className="mt-4 bg-[url('/assets/horoscope-bg.webp')]  bg-cover  py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -305,12 +305,12 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b] py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
               <h2 className=" text-center text-xl font-semibold sm:text-2xl  lg:text-[36px]">
-                june 2023: Auspicious Muhurat for Namkaran
+                June 2023: Auspicious Muhurat for Namkaran
               </h2>
             </div>
             <div className="flex flex-col items-center justify-between rounded-xl border-2 border-[#A9A9A9] md:flex-row">
@@ -359,7 +359,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[#FFF7E5]  py-8 lg:py-[51px]">
+      <div className="bg-[url('/assets/horoscope-bg.webp')]  py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -413,7 +413,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="bg-[url('/assets/home/cloud.png')] bg-cover py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -467,7 +467,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="mt-4 bg-[url('/chat-bg.svg')]  bg-cover  py-8 lg:py-[51px]">
+      <div className="mt-4 bg-[url('/assets/horoscope-bg.webp')]  bg-cover  py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -521,7 +521,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className=" bg-gradient-to-b from-[#fb7038] to-[#df625b] bg-cover py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -575,7 +575,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[#FFF7E5]  py-8 lg:py-[51px]">
+      <div className="bg-[url('/assets/horoscope-bg.webp')]  py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">
@@ -629,7 +629,7 @@ const MuhuratDate = (props: Props) => {
         </Section>
       </div>
 
-      <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+      <div className="bg-[url('/assets/home/cloud.png')] bg-cover py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col gap-5 text-black">
             <div className="">

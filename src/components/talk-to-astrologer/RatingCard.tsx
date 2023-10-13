@@ -10,7 +10,7 @@ interface RatingCardProps {
 
 const RatingCard = ({ rating, totalRating }: RatingCardProps) => {
   return (
-    <div className="px-8">
+    <div className="bg-white px-8">
       <p className="text-[36px] font-bold">Rating & Review</p>
       <div className="gap-[108px] md:flex lg:flex">
         <div className="">

@@ -25,6 +25,8 @@ function Navbar({}: Props) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
+  const [horroscopeOpen, setHorroscopeOpen] = useState(false);
+
   useEffect(() => {
     const accessToken = Cookies.get("accessToken");
     const refreshToken = Cookies.get("refreshToken");
@@ -37,6 +39,10 @@ function Navbar({}: Props) {
     Cookies.remove("refreshToken");
     toast.success("Logout successfully");
     setIsLogged(false);
+  };
+
+  const toggleHorroscope = () => {
+    setHorroscopeOpen((prev) => !prev);
   };
   return (
     <>
@@ -90,8 +96,62 @@ function Navbar({}: Props) {
               <div className=" mt-[26px] hidden gap-[29px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
-                <Link href="/live-astrologer">Live Astrologers</Link>
-                <Link href="/horoscope/today">Horoscope</Link>
+                <Link href="live-astrologer/live-astrologer">
+                  Live Astrologers
+                </Link>
+                {/* <Link href="/horoscope/today">Horoscope</Link> */}
+
+                <ul className="">
+                  <li className="">
+                    <button className="flex    " onClick={toggleHorroscope}>
+                      <span className="">Horoscope</span>
+                      <span className={horroscopeOpen ? " transform" : ""}>
+                        &#9662;
+                      </span>
+                    </button>
+                    {horroscopeOpen && (
+                      <div className="relative  z-10 px-2 shadow-xl">
+                        <div className="absolute rounded-[20px] bg-white lg:w-[300px]">
+                          <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/yearly">Horoscope 2023</Link>
+                          </div>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/daily">{`Today's Horroscope`}</Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/daily">
+                              Weekly Horoscope
+                            </Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/monthly">
+                              Monthly Horoscope
+                            </Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/yearly">
+                              Yearly Horoscope
+                            </Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/daily">Daily Horoscope</Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/tomorrow">
+                              {`Tomorrow's Horoscope`}
+                            </Link>
+                          </li>
+                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <Link href="/horoscope/yesterday">
+                              {`Yesterday's Horoscope`}
+                            </Link>
+                          </li>
+                        </div>
+                      </div>
+                    )}
+                  </li>
+                </ul>
+
                 <Link href="/muhurat">Shubh Muhurat</Link>
                 <Link href="/blog">Blog</Link>
               </div>

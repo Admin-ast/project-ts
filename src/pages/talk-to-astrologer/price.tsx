@@ -1,3 +1,4 @@
+import MinBalance from "@/components/talk-to-astrologer/MinBalance";
 import Money from "@/components/talk-to-astrologer/Money";
 import React from "react";
 

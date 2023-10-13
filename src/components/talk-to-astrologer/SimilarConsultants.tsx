@@ -6,7 +6,7 @@ type Props = {};
 
 const SimilarConsultants = (props: Props) => {
   return (
-    <div className="">
+    <div className="bg-white">
       <div className="rounded-[15px] border-[1px] border-[#DC6563] py-4 ">
         <p
           className="mt-[30px] text-center font-[Georgia]

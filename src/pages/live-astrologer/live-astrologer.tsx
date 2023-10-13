@@ -6,6 +6,7 @@ import Faq from "@/components/common/Faq";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import React, { Key } from "react";
 
 type Props = {};
@@ -38,6 +39,7 @@ const faqsDetail: Faqs = {
 
 const astrologersDetails = [1, 2, 3, 4, 5, 6, 7, 1, 2];
 const astrologerDetail = {
+  sign: "Tarot",
   name: "Aakash Shah",
   expertise: "Vedic, Vastu, Face reading",
   experience: 3,
@@ -91,7 +93,9 @@ function LiveAstrologer({}: Props) {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 ">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
-                  <LiveCard detail={astrologerDetail} />
+                  <Link href="/live-astrologer/tarot-live-astrologer">
+                    <LiveCard detail={astrologerDetail} />
+                  </Link>
                 </div>
               ))}
             </div>

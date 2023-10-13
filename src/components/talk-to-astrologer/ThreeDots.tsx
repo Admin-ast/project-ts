@@ -12,7 +12,7 @@ const ThreeDots = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative flex justify-end">
       <button
         onClick={toggleOptions}
         className="z-10    flex  rounded-lg py-2 text-white "

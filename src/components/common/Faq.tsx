@@ -9,7 +9,7 @@ const Faq = ({ faqDetail }: Props) => {
   return (
     <div>
       <Section>
-        <div className="py-8">
+        <div className="bg-[url('/assets/horoscope-bg.webp')] py-8">
           <div className="text-center font-[georgia]">
             <p className="text-[36px] font-bold">{faqDetail.title}</p>
           </div>
