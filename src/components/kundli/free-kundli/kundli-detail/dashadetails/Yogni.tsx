@@ -16,16 +16,17 @@ const Yogni = ({ majorYogni }: Props) => {
     const kundli = localStorage.getItem("kundliData");
     const majorVdasha = async () => {
       const result = await postFetcher(
-        `/sub_yogini_dasha/${selectedYogini?.id}/${selectedYogini.name}`,
+        `/sub_yogini_dasha/${yogniLevel}/${selectedYogini.name}`,
         kundli
       );
       if (result?.status) {
-        setLevelOne(JSON.parse(result?.res && result?.res));
+        setLevelOne(result?.res && result?.res);
       }
     };
     if (kundli) {
-      yogniLevel === 1 && majorVdasha();
+      majorVdasha();
     }
+    console.log(yogniLevel);
   }, [selectedYogini, yogniLevel]);
 
   return (
@@ -51,7 +52,6 @@ const Yogni = ({ majorYogni }: Props) => {
                   <div
                     key={index}
                     onClick={() => {
-                      console.log(item);
                       setYogniLevel(1);
                       setSelectedYogini({
                         name: item?.dasha_name,
@@ -80,7 +80,55 @@ const Yogni = ({ majorYogni }: Props) => {
                   <div
                     key={index}
                     onClick={() => {
-                      setYogniLevel(1);
+                      setYogniLevel(2);
+                    }}
+                    className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
+                  >
+                    <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4 uppercase">
+                      {selectedYogini && selectedYogini?.name.slice(0, 3)}-
+                      {item?.dasha_name && item?.dasha_name.slice(0, 3)}
+                    </p>
+                    <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                      {item?.start_date && item?.start_date}
+                    </p>
+                    <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                      {item?.end_date && item?.end_date}
+                    </p>
+                  </div>
+                );
+              })}
+            {yogniLevel === 2 &&
+              levelOne &&
+              levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
+                return (
+                  <div
+                    key={index}
+                    onClick={() => {
+                      setYogniLevel(3);
+                    }}
+                    className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
+                  >
+                    <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4 uppercase">
+                      {selectedYogini && selectedYogini?.name.slice(0, 3)}-
+                      {item?.dasha_name && item?.dasha_name.slice(0, 3)}
+                    </p>
+                    <p className="w-[33.33%] border-r-2 border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                      {item?.start_date && item?.start_date}
+                    </p>
+                    <p className="flex w-[33.33%] items-center justify-between border-b-2 border-[#ccc] pb-[10px] pr-[10px] pt-[10px] pl-4">
+                      {item?.end_date && item?.end_date}
+                    </p>
+                  </div>
+                );
+              })}
+            {yogniLevel === 3 &&
+              levelOne &&
+              levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
+                return (
+                  <div
+                    key={index}
+                    onClick={() => {
+                      setYogniLevel(4);
                     }}
                     className="flex w-full cursor-pointer items-center justify-between rounded-[10px] rounded-t"
                   >

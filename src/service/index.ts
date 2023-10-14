@@ -1,4 +1,4 @@
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+const baseUrl = "https://api.astrosevatalk.com/api/v1";
 
 export const postFetcher = async (
   url: string,
@@ -25,13 +25,7 @@ export const postFetcher = async (
 
 export const getFetcher = async (url: string) => {
   try {
-    const result = await fetch(`${baseUrl}${url}`, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
+    const result = await fetch(`${baseUrl}${url}`, {});
     const response = await result.json();
     return response;
   } catch (err) {

@@ -1,15 +1,17 @@
 import React, { ReactElement } from "react";
 
 interface Props {
+  id?: string;
   btnText: string;
   className?: string;
   isLoading?: boolean;
-  type?: any;
+  type?: "submit" | "reset" | "button";
   onClick?: any;
   disabled?: boolean;
 }
 
 function Button({
+  id = "1",
   btnText,
   className,
   isLoading = false,
@@ -20,6 +22,7 @@ function Button({
   return (
     <div>
       <button
+        id={id}
         disabled={disabled}
         type={type}
         onClick={onClick}

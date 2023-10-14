@@ -14,13 +14,6 @@ import { getFetcher } from "@/service";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const apiCall = async () => {
-      const result = await getFetcher("/");
-      console.log("result is", result);
-    };
-    apiCall();
-  }, []);
   return (
     <>
       <Seo
