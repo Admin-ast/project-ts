@@ -98,15 +98,15 @@ const Card = (props: Props) => {
             </p>
           </div>
           <div>
-            <div className="] grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+            <div className=" grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
               {card.map((item, index) => (
                 <Link
                   key={index}
                   href={item?.url}
-                  className="flex w-[280px]  flex-col rounded-t-xl border-2 border-black"
+                  className="flex w-[280px]  flex-col rounded-t-xl border-2 border-[#DC6563]"
                 >
                   <img className="h-[280px] w-full" src={item?.img} alt="" />
-                  <p className="bg-black py-3 text-center text-2xl font-medium text-white">
+                  <p className="bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
                     {item?.name}
                   </p>
                 </Link>
