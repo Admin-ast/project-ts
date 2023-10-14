@@ -23,7 +23,7 @@ const NorthIndian = ({ horoCharts, availCharts, showChalit }: Props) => {
               <div
                 dangerouslySetInnerHTML={{
                   __html:
-                    horoCharts["chalit"] && JSON.parse(horoCharts["chalit"]),
+                    horoCharts["chalit"] && horoCharts["chalit"],
                 }}
               ></div>
             </div>
@@ -37,7 +37,7 @@ const NorthIndian = ({ horoCharts, availCharts, showChalit }: Props) => {
                   <div
                     dangerouslySetInnerHTML={{
                       __html:
-                        horoCharts[item] && JSON.parse(horoCharts[item])?.svg,
+                        horoCharts[item] && horoCharts[item]?.svg,
                     }}
                   ></div>
                 </div>

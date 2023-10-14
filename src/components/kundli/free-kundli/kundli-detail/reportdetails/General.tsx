@@ -27,7 +27,6 @@ const General = ({ majorVdasha }: Props) => {
   useEffect(() => {
     let bodyData: any;
     if (typeof window !== "undefined") {
-      console.log("kundilll", localStorage.getItem("kundliData"));
       bodyData = localStorage.getItem("kundliData");
     }
     const generalResponse = async () => {
@@ -37,7 +36,7 @@ const General = ({ majorVdasha }: Props) => {
       );
       console.log(result?.res);
       if (result?.status) {
-        setBasicDetail(JSON.parse(result?.res ?? ""));
+        setBasicDetail(result?.res ?? "");
       } else {
         toast.error(result.msg);
       }

@@ -42,18 +42,26 @@ function Kundli({ horoCharts, southHoroCharts }: Props) {
   useEffect(() => {
     const planetResponse = async () => {
       let bodyData: any;
+      let kundliplanet:any;
       if (typeof window !== "undefined") {
         console.log("kundilll", localStorage.getItem("kundliData"));
         bodyData = localStorage.getItem("kundliData");
+        kundliplanet = localStorage.getItem("kundliplanet");
       }
+      if(!kundliplanet){
       const result = await postFetcher("/kundli/planets", bodyData);
       console.log(result);
       if (result.status) {
-        setPlanetDetails(JSON.parse(result?.res ?? ""));
+        setPlanetDetails(result?.res ?? "");
+        localStorage.setItem("kundliplanet",planetDetails);
       } else {
         toast.error(result.msg);
       }
-    };
+    }
+    else{
+      setPlanetDetails(localStorage.getItem("kundliplanet"));
+    }
+  }
     planetResponse();
   }, []);
 

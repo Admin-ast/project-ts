@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
 interface Props {
-  onSubmit: any;
+  onSubmit?: any;
   children: any;
 }
 

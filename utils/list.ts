@@ -4249,7 +4249,7 @@ export const card = [
     id: 6,
     url: "chat-with-us-at-astrosevatalk-for-job-career-promotions-and-more",
     img: "/assets/blog/CHAT WITH US AT ASTROSEVA TALK FOR JOB, CAREER, PROMOTION, AND MORE-01-01.svg",
-    text: "CHAT WITH US AT ASTROSEVATALK FOR JOB, CAREER, PROMOTIONS, AND MORE ",
+    text: "Chat with us at AstrosevaTalk for job,career,promotions,and more  ",
     keywords: [
       { key: "Job ", link: "/" },
       { key: "Career ", link: "/" },
@@ -4530,7 +4530,7 @@ export const card = [
     id: 9,
     url: "astrosevatalk-chat-for-marriage",
     img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01-01.svg",
-    text: "ASTROSEVATALK CHAT FOR MARRIAGE",
+    text: "AstrosevaTalk chat for marriage ",
     keywords: [
       { key: "marriage", link: "/" },
       { key: " astro@astrosevatalk.com", link: "/" },
@@ -5480,8 +5480,7 @@ export const card = [
 
   {
     id: 16,
-    url: "online-astrology-by-date-of-birth",
-    img: "/assets/appointment/live-astro.png",
+
     text: "Online Astrology by date of birth",
     keywords: [
       { key: "Astrology by date of birth", link: "/" },
@@ -5572,8 +5571,7 @@ export const card = [
   },
   {
     id: 17,
-    url: "solutions-of-health-problems-in-astrology",
-    img: "/assets/appointment/live-astro.png",
+
     text: "Solutions of Health Problems in Astrology",
     keywords: [
       { key: "Health Problems", link: "/" },
@@ -5757,8 +5755,7 @@ export const card = [
   },
   {
     id: 19,
-    url: "astrology-free-marriage-prediction",
-    img: "/assets/appointment/live-astro.png",
+
     text: "  Astrology free marriage prediction",
     keywords: [
       { key: "Marriage Prediction", link: "/" },
@@ -5808,9 +5805,7 @@ export const card = [
   },
   {
     id: 20,
-    url: "astrology-courses-pricing",
-    img: "/assets/appointment/live-astro.png",
-    text: "  ASTROLOGY COURSES PRICING",
+
     keywords: [
       { key: "ASTROLOGY COURSES", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -5857,109 +5852,100 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
-  {
-    id: 21,
-    url: "astrosevatalk-clients-reviews",
-    img: "/assets/appointment/live-astro.png",
-    text: "ASTROSEVATALK CLIENT’S REVIEWS ",
-    keywords: [
-      { key: "Astrosevatalk", link: "/" },
-      { key: "https://www.AstrosevaTalk.com", link: "/" },
-    ],
 
-    para: [
-      {
-        head: "",
-        para: "●	I feel short of words to state how thankful I'm to the gem of astrologers at the Astrosevatalk. I was going through extreme distress in my life due to my career and then I randomly came across the Astrosevatalk platform. I had a chat with one of their astrologers who suggested I switch my career toward government jobs. Guess what today I'm working as a village development officer under the state services of MP. I never thought about what was destined for me until my birth chart revealed it for me through the finest astrology services of Astrosevatalk. ",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "-Ruchi Pathak - Indore, MP",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	I was going through the Rahu Mahadasha which was really troubling all aspects of my life despite trying my level best. Sometimes I was falling into constant depression and at others, my health was deteriorating. My Aunt introduced me to the Astrosevatalk to get my birth chart analysis by some astrologer there. I had a short chat with an astrologer there who suggested me some simple home remedies to nullify the severe effect of Rahu Mahadasha. Guess what? I have been feeling truly at peace and in harmony following those simple home remedies in the form of daily worship.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "- Hardik Sharma, Delhi",
-        img: "",
-      },
-      {
-        head: "",
-        para: "● I have the mangal dosha in my Kundali which was causing me extreme stress towards taking the marriage decision. I thankfully came across the Astrosevatalk website and got my birth chart analysis from one of their astrologers. He told me to do some home remedies and pool for 3 months and then advised me to go for the marriage. I followed the suggested solution and I couldn't believe all of a sudden I started getting decent numbers of marriage proposals. Today I'm happily arranged married and living the best of my life  .",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "-Shalini Thakur, Mathura",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Astrosevatalk has been the best source of self-reflection for me ever since I started consulting their astrologers. I used to be an unknown person within my own consciousness. A friend of mine suggested me to consult their astrologers and I randomly visited them. Just the 10 minutes of chat session provided me with a clear path as to what I should truly pursue in my life.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "- Shivani Saha, Ahmedabad",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Astrosevatalk is one of the most reliable astrology platforms to seek any kind of guidance for any aspect of your life. I consult their astrologers from time to seek astrology predictions for anything in my life. They miraculously predict everything that's coming next in my life and even reveal my present scenario of life. I have taken many major decisions in my life for my business and investments on the basis of their astrology predictions.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "- Nishant Verma, South Delhi",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Life is full of chaos and uncertainty at times giving you no clue to take any firm decision and that has always been my story. Thanks to the 24/7 available astrologers at Astrosevatalk who are there to guide me in all the areas of my life. At times they have guided me to take some major decisions in my life like changing my job, buying a new house, and so on. I would just forever stick to their astrological guidance and incredibly accurate predictions.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "-Kavya Burman, Gurgaon",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	I just recently got married and had the Kundali milan done by an Astrologer at Astrosevatalk. He did a wonderful job by matching the kundali with ultimate compatibility with my now husband. We are truly living such a blessed and harmonious married life  . Kudos to the Astrosevatalk and their genius Astrologers who are shaping lives for the good. ",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: " ",
-        title: "-Pooja, Mumbai",
-        img: "",
-      },
-    ],
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
+
+  //   para: [
+  //     {
+  //       head: "",
+  //       para: "●	I feel short of words to state how thankful I'm to the gem of astrologers at the Astrosevatalk. I was going through extreme distress in my life due to my career and then I randomly came across the Astrosevatalk platform. I had a chat with one of their astrologers who suggested I switch my career toward government jobs. Guess what today I'm working as a village development officer under the state services of MP. I never thought about what was destined for me until my birth chart revealed it for me through the finest astrology services of Astrosevatalk. ",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "-Ruchi Pathak - Indore, MP",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	I was going through the Rahu Mahadasha which was really troubling all aspects of my life despite trying my level best. Sometimes I was falling into constant depression and at others, my health was deteriorating. My Aunt introduced me to the Astrosevatalk to get my birth chart analysis by some astrologer there. I had a short chat with an astrologer there who suggested me some simple home remedies to nullify the severe effect of Rahu Mahadasha. Guess what? I have been feeling truly at peace and in harmony following those simple home remedies in the form of daily worship.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "- Hardik Sharma, Delhi",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "● I have the mangal dosha in my Kundali which was causing me extreme stress towards taking the marriage decision. I thankfully came across the Astrosevatalk website and got my birth chart analysis from one of their astrologers. He told me to do some home remedies and pool for 3 months and then advised me to go for the marriage. I followed the suggested solution and I couldn't believe all of a sudden I started getting decent numbers of marriage proposals. Today I'm happily arranged married and living the best of my life  .",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "-Shalini Thakur, Mathura",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Astrosevatalk has been the best source of self-reflection for me ever since I started consulting their astrologers. I used to be an unknown person within my own consciousness. A friend of mine suggested me to consult their astrologers and I randomly visited them. Just the 10 minutes of chat session provided me with a clear path as to what I should truly pursue in my life.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "- Shivani Saha, Ahmedabad",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Astrosevatalk is one of the most reliable astrology platforms to seek any kind of guidance for any aspect of your life. I consult their astrologers from time to seek astrology predictions for anything in my life. They miraculously predict everything that's coming next in my life and even reveal my present scenario of life. I have taken many major decisions in my life for my business and investments on the basis of their astrology predictions.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "- Nishant Verma, South Delhi",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Life is full of chaos and uncertainty at times giving you no clue to take any firm decision and that has always been my story. Thanks to the 24/7 available astrologers at Astrosevatalk who are there to guide me in all the areas of my life. At times they have guided me to take some major decisions in my life like changing my job, buying a new house, and so on. I would just forever stick to their astrological guidance and incredibly accurate predictions.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "-Kavya Burman, Gurgaon",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	I just recently got married and had the Kundali milan done by an Astrologer at Astrosevatalk. He did a wonderful job by matching the kundali with ultimate compatibility with my now husband. We are truly living such a blessed and harmonious married life  . Kudos to the Astrosevatalk and their genius Astrologers who are shaping lives for the good. ",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: " ",
+  //       title: "-Pooja, Mumbai",
+  //       img: "",
+  //     },
+  //   ],
+  //   name: "Kasturi Chaudhary",
+  //   date: "March 31,2023",
+  // },
   {
     id: 22,
-    url: "/best-astrology-courses-in-india",
-    img: "/assets/appointment/live-astro.png",
+
     text: " Best Astrology courses in India",
     keywords: [
       { key: " Course", link: "/" },
@@ -6027,8 +6013,7 @@ export const card = [
   },
   {
     id: 23,
-    url: "/career",
-    img: "/assets/blog/.svg",
+
     text: " career",
     keywords: [
       { key: "career", link: "/" },
@@ -6096,9 +6081,7 @@ export const card = [
   },
   {
     id: 24,
-    url: "/discover-the-benefits-of-online-astrology-consultation",
-    img: "/assets/appointment/live-astro.png",
-    text: " DISCOVER THE BENEFITS OF ONLINE ASTROLOGY CONSULTATION",
+
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -6190,9 +6173,7 @@ export const card = [
   },
   {
     id: 25,
-    url: "/discover-trusted-online-astrologers",
-    img: "/assets/appointment/live-astro.png",
-    text: " DISCOVER TRUSTED ONLINE ASTROLOGERS",
+
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -6248,9 +6229,7 @@ export const card = [
   },
   {
     id: 26,
-    url: "gain-insights-from-your-financial-horoscope",
-    img: "/assets/appointment/live-astro.png",
-    text: "GAIN INSIGHTS FROM YOUR FINANCIAL HOROSCOPE",
+
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -6313,8 +6292,7 @@ export const card = [
   },
   {
     id: 27,
-    url: "/todays-horoscope-for-health-and-wellness",
-    img: "/assets/appointment/live-astro.png",
+
     text: " Todays horoscope for health and wellness",
     keywords: [
       { key: "health", link: "/" },
@@ -6425,9 +6403,7 @@ export const card = [
   },
   {
     id: 28,
-    url: "/unveiling-the-power-of-astrology-consultation-online",
-    img: "/assets/appointment/live-astro.png",
-    text: "  UNVEILING THE POWER OF ASTROLOGY CONSULTATION ONLINE ",
+
     keywords: [
       { key: "power", link: "/" },
       { key: "Astrosevatalk", link: "/" },
@@ -6495,8 +6471,7 @@ export const card = [
   },
   {
     id: 29,
-    url: "/when-is-the-best-time-to-launch-a-business-according-to-astrology",
-    img: "/assets/appointment/live-astro.png",
+
     text: " When is the best time to launch a business according to astrology",
     keywords: [
       { key: "business", link: "/" },
@@ -6561,7 +6536,7 @@ export const card = [
     id: 30,
     url: "/how-can-we-predict-childbirth-using-vedic-astrology",
     img: "/assets/blog/How can we predict childbirth using Vedic astrology-01.svg",
-    text: "HOW CAN WE PREDICT CHILDBIRTH USING VEDIC ASTROLOGY",
+    text: "How can we predict childbirth using vedic astrology",
     keywords: [
       { key: "childbirth", link: "/" },
       { key: "AstrosevaTalk.com", link: "/" },
@@ -6646,9 +6621,7 @@ export const card = [
   },
   {
     id: 31,
-    url: "/how-can-you-choose-a-lucky-mobile-number-using-numerology",
-    img: "/assets/appointment/live-astro.png",
-    text: "HOW CAN YOU CHOOSE A LUCKY MOBILE NUMBER USING NUMEROLOGY ",
+
     keywords: [
       { key: "numerology", link: "/" },
       { key: "AstrosevaTalk.com", link: "/" },
@@ -6697,9 +6670,7 @@ export const card = [
   },
   {
     id: 32,
-    url: "what-tarot-card-means-someone-loves-you",
-    img: "/assets/appointment/live-astro.png",
-    text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
+
     keywords: [
       { key: "tarot", link: "/" },
       { key: "love", link: "/" },
@@ -6794,7 +6765,7 @@ export const card = [
     id: 33,
     url: "/which-zodiac-signs-are-the-most-annoying",
     img: "/assets/blog/Which zodiac signs are the most annoying-01.svg",
-    text: "WHICH ZODIAC SIGNS ARE THE MOST ANNOYING? ",
+    text: "Which zodiac signs are the most annoying? ",
     keywords: [
       { key: "zodiac", link: "/" },
       { key: "signs", link: "/" },
@@ -6884,7 +6855,7 @@ export const card = [
     id: 34,
     url: "which-zodiac-signs-are-the-most-evil-in-2023",
     img: "/assets/blog/Which zodiac signs are the most evil in 2023-01.svg",
-    text: "WHICH ZODIAC SIGNS ARE THE MOST EVIL IN 2023 ",
+    text: "Which zodiac signs are the most evil in 2023 ",
     keywords: [
       { key: "zodiac", link: "/" },
       { key: "evil", link: "/" },
@@ -6969,112 +6940,103 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
-  {
-    id: 35,
-    url: "/what-tarot-card-means-someone-loves-you",
-    img: "/assets/appointment/live-astro.png",
-    text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
-    keywords: [
-      { key: "tarot", link: "/" },
-      { key: "love", link: "/" },
-      { key: "AstrosevaTalk.com", link: "/" },
-    ],
 
-    para: [
-      {
-        head: "",
-        para: "Tarot reading is based upon the magic of cards that can truly predict the 360-degree insight into the life of the person. Do you know that a mere tarot card can actually reveal whether someone loves you or not? Yes, a specific card from the deck of tarot cards can truly answer if someone is having a secret crush or the immense feelings towards you. This may seem weird to those who haven't explored the magic of tarot cards. We urge you to have some faith in the magic of tarot cards and you will find all the love-related answers for yourself.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "",
-        title: "What is a Tarot Card Love Prediction?",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Tarot card love predictions are basically getting the love insight into the life of the person by using the card. There are 78 cards in the tarot reading system that are divided into the 22 major arcana and the 56 minor arcana cards. All these cards represent the certain areas of life including the love angles. Yes, it is possible to know the current areas of a person's love life and predict the future loving relationship. For instance, you can get the answers for love marriage, arranged marriage, love compatibility, and so on other aspects.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "",
-        title: "Which Tarot Card Can Predict My Lover?",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Well if you are wondering if the tarot card can predict that whether someone is loving you secretly? You don't need to wonder because a tarot card can truly answer it for you. There is the Tarot card called The Lovers Card which holds all the love life answers for you. If you pick this card from the deck of the tarot then the tarot reading expert can answer all your love life-related questions for you. For instance, you can ask if someone loves you without your knowledge, if the person is compatible or meant for you, and even when will that person propose to you or get married to you.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Here below are the features of the Lovers Card in tarot reading prediction.",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Hidden Love Crush",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Love Harmony and Compatibility",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Romantic and Emotional Connections",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Love Life Choices and Decisions",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "●	Infatuation and Lust in Relationship",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "",
-        title: "Chat with Tarot Experts and Know Your Secret Crush",
-        img: "",
-      },
-      {
-        head: "",
-        para: "You can now quickly find out if someone is having a secret crush on you or if your soul mate is around somewhere. All you need to do is just to visit us at Astrosevatalk where you can find the highly experienced tarot experts. You can consult with them and find all your love-related answers with the magic of tarot cards. These cards have the potential to unlock the hidden love secrets for you with 101% accuracy. ",
-        title: "",
-        img: "",
-      },
-      {
-        head: "",
-        para: "Our tarot readers are helping thousands of clients in exploring the various love life aspects. The card you choose can define and decide the love direction of your life. It can guide you in reaching your soul mate and living your love life to the fullest. So make no procrastination and visit us at Astrosevatalk and find the person having a secret crush on you. You can also follow Astrosevatalk's social media platforms such as YouTube, Facebook, Instagram, etc for daily horoscope and astrology predictions.",
-        title: "",
-        img: "",
-      },
-    ],
-    name: "Kasturi Chaudhary",
-    date: "March 31,2023",
-  },
+
+  //   para: [
+  //     {
+  //       head: "",
+  //       para: "Tarot reading is based upon the magic of cards that can truly predict the 360-degree insight into the life of the person. Do you know that a mere tarot card can actually reveal whether someone loves you or not? Yes, a specific card from the deck of tarot cards can truly answer if someone is having a secret crush or the immense feelings towards you. This may seem weird to those who haven't explored the magic of tarot cards. We urge you to have some faith in the magic of tarot cards and you will find all the love-related answers for yourself.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "",
+  //       title: "What is a Tarot Card Love Prediction?",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "Tarot card love predictions are basically getting the love insight into the life of the person by using the card. There are 78 cards in the tarot reading system that are divided into the 22 major arcana and the 56 minor arcana cards. All these cards represent the certain areas of life including the love angles. Yes, it is possible to know the current areas of a person's love life and predict the future loving relationship. For instance, you can get the answers for love marriage, arranged marriage, love compatibility, and so on other aspects.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "",
+  //       title: "Which Tarot Card Can Predict My Lover?",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "Well if you are wondering if the tarot card can predict that whether someone is loving you secretly? You don't need to wonder because a tarot card can truly answer it for you. There is the Tarot card called The Lovers Card which holds all the love life answers for you. If you pick this card from the deck of the tarot then the tarot reading expert can answer all your love life-related questions for you. For instance, you can ask if someone loves you without your knowledge, if the person is compatible or meant for you, and even when will that person propose to you or get married to you.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "Here below are the features of the Lovers Card in tarot reading prediction.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Hidden Love Crush",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Love Harmony and Compatibility",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Romantic and Emotional Connections",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Love Life Choices and Decisions",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "●	Infatuation and Lust in Relationship",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "",
+  //       title: "Chat with Tarot Experts and Know Your Secret Crush",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "You can now quickly find out if someone is having a secret crush on you or if your soul mate is around somewhere. All you need to do is just to visit us at Astrosevatalk where you can find the highly experienced tarot experts. You can consult with them and find all your love-related answers with the magic of tarot cards. These cards have the potential to unlock the hidden love secrets for you with 101% accuracy. ",
+  //       title: "",
+  //       img: "",
+  //     },
+  //     {
+  //       head: "",
+  //       para: "Our tarot readers are helping thousands of clients in exploring the various love life aspects. The card you choose can define and decide the love direction of your life. It can guide you in reaching your soul mate and living your love life to the fullest. So make no procrastination and visit us at Astrosevatalk and find the person having a secret crush on you. You can also follow Astrosevatalk's social media platforms such as YouTube, Facebook, Instagram, etc for daily horoscope and astrology predictions.",
+  //       title: "",
+  //       img: "",
+  //     },
+  //   ],
+  //   name: "Kasturi Chaudhary",
+  //   date: "March 31,2023",
+  // },
 
   {
     id: 36,
     url: "/can-astrology-predict-why-you-are-facing-problems-in-your-career",
     img: "/assets/blog/Can astrology predict why you're facing problems in your career-01.svg",
-    text: "CAN ASTROLOGY PREDICT WHY YOU ARE FACING PROBLEMS IN YOUR CAREER  ",
+    text: "Can astrology predict why you are facing problems in your career  ",
     keywords: [
       { key: "predict", link: "/" },
       { key: "problems", link: "/" },
@@ -7134,7 +7096,7 @@ export const card = [
     id: 37,
     url: "/is-your-life-partner-pre-decided",
     img: "/assets/blog/Is your life partner pre-decided-01.svg",
-    text: "IS YOUR LIFE PARTNER PRE-DECIDED   ",
+    text: "Is your life partner pre-decided   ",
     keywords: [
       { key: "life partner", link: "/" },
       { key: "pre-decided", link: "/" },
@@ -7200,7 +7162,7 @@ export const card = [
     id: 38,
     url: "/which-zodiac-signs-are-the-most-incompatible",
     img: "/assets/blog/Which zodiac signs are the most incompatible-01.svg",
-    text: " WHICH ZODIAC SIGNS ARE THE MOST INCOMPATIBLE   ",
+    text: " Which zodiac signs are the most incompatible   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
       { key: "incompatible", link: "/" },
@@ -7284,7 +7246,7 @@ export const card = [
     id: 39,
     url: "/which-zodiac-signs-lead-a-luxurious-life",
     img: "/assets/blog/Which zodiac signs lead a luxurious life-01-01.svg",
-    text: "     WHICH ZODIAC SIGNS LEAD A LUXURIOUS LIFE   ",
+    text: "     Which zodiac signs lead a luxurious life   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
       { key: "luxurious life", link: "/" },
@@ -7363,7 +7325,7 @@ export const card = [
     id: 40,
     url: "/how-can-marriage-lines-create-problems-in-marriage-",
     img: "/assets/blog/How can marriage lines create problems in marriage-01-01.svg",
-    text: " HOW CAN MARRIAGE LINES CREATE PROBLEMS IN MARRIAGE   ",
+    text: " How can marriage lines create problems in marriage   ",
     keywords: [
       { key: "Marriage", link: "/" },
       { key: "problems", link: "/" },
@@ -7453,7 +7415,7 @@ export const card = [
     id: 41,
     url: "/how-will-your-love-life-be-according-to-your-zodiac-sign",
     img: "/assets/blog/How will your love life be according to your zodiac sign.svg",
-    text: "HOW WILL YOUR LOVE LIFE BE ACCORDING TO YOUR ZODIAC SIGN    ",
+    text: "How will your love life be according to your zodiac sign    ",
     keywords: [
       { key: "love", link: "/" },
       { key: "life", link: "/" },
@@ -7573,7 +7535,7 @@ export const card = [
     id: 42,
     url: "/should-you-marry-your-boyfriend-despite-your-astrolgers-warning-about-your-horoscope-mismatch",
     img: "/assets/blog/Should you marry your boyfriend despite your astrologer's warning about your horoscope mismatch-01.svg",
-    text: " SHOULD YOU MARRY YOUR BOYFRIEND DESPITE YOUR ASTROLGER’S WARNING ABOUT YOUR HOROSCOPE MISMATCH   ",
+    text: " Should you marry your boyfriend despite your astrolger’s warning about your horoscope mismatch   ",
     keywords: [
       { key: "MARRY YOUR BOYFRIEND ", link: "/" },
       { key: "ASTROLGER’S WARNING ", link: "/" },
@@ -7680,9 +7642,7 @@ export const card = [
   },
   {
     id: 43,
-    url: "/why-is-the-love-for-your-twin-flame-so-strong",
-    img: "/assets/appointment/live-astro.png",
-    text: " WHY IS THE LOVE FOR YOUR TWIN FLAME SO STRONG   ",
+
     keywords: [
       { key: "LOVE FOR YOUR TWIN", link: "/" },
       { key: "SO STRONG", link: "/" },
@@ -7766,7 +7726,7 @@ export const card = [
     id: 44,
     url: "/how-can-the-auspicious-and-inauspicious-position-of-mars-bring-big-changes-in-life",
     img: "/assets/blog/How can the auspicious and inauspicious position of Mars bring big changes in life-01.svg",
-    text: "HOW CAN THE AUSPICIOUS AND INAUSPICIOUS POSITION OF MARS BRING BIG CHANGES IN LIFE?  ",
+    text: "How can the auspicious and inauspicious position of mars bring big changes in life?  ",
     keywords: [
       { key: "AUSPICIOUS AND INAUSPICIOUS POSITION", link: "/" },
       { key: "MARS", link: "/" },
@@ -7893,7 +7853,7 @@ export const card = [
     id: 45,
     url: "/what-are-the-indications-of-no-marriage-in-vedic-astrology",
     img: "/assets/blog/no marriage.png",
-    text: " WHAT ARE THE INDICATIONS OF NO MARRIAGE IN VEDIC ASTROLOGY?   ",
+    text: " What are the indications of no marriage in vedic astrology?   ",
     keywords: [
       { key: "Marriage", link: "/" },
       { key: "vedic Astrology", link: "/" },
@@ -7989,7 +7949,7 @@ export const card = [
     id: 46,
     url: "/which-zodiac-signs-are-pisces-soulmates",
     img: "/assets/blog/pisces soulmates.png",
-    text: " WHICH ZODIAC SIGNS ARE PISCES SOULMATES   ",
+    text: " Which zodiac signs are pisces soulmates   ",
     keywords: [
       { key: "Zodiac Signs", link: "/" },
       { key: "Pisces Soulmate", link: "/" },
