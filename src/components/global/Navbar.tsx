@@ -92,8 +92,9 @@ function Navbar({}: Props) {
                 </Link>
                 <Link href="/astrosevatalk">AstrosevaTalk +</Link>
                 <Link href="/">Zodiac sign</Link>
+                <Link href="/shop/shop">Shop</Link>
               </div>
-              <div className=" mt-[26px] hidden gap-[29px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">
+              <div className=" mt-[26px] hidden gap-[20px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
                 <Link href="live-astrologer/live-astrologer">
@@ -153,6 +154,7 @@ function Navbar({}: Props) {
                 </ul>
 
                 <Link href="/muhurat">Shubh Muhurat</Link>
+                <Link href="/muhurat">Book A Pooja</Link>
                 <Link href="/blog">Blog</Link>
               </div>
             </div>
