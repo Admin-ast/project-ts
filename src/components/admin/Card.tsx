@@ -1,6 +1,7 @@
 import React from "react";
 import { BsToggle2Off, BsToggleOn } from "react-icons/bs";
 import Section from "../Section";
+import ToggleSwitch from "./offer/ToggleSwitch";
 
 // type Props = {
 //     title:string,
@@ -81,7 +82,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
       {cardItems.map((item, index) => (
         <div
           key={index}
-          className="`${className}` rounded-[15px]  bg-[#B4871DF0] bg-gradient-to-r from-blue-500 to-green-500 p-[10px]"
+          className="`${className}` rounded-[15px]  bg-[#B4871DF0] bg-gradient-to-b from-[#efc1ac] to-[#ef946b] p-[10px]"
         >
           <p className="text-bold text-base text-white ">{item?.title}</p>
           <p className="text-xs  text-white ">{item?.charges}</p>
@@ -90,7 +91,8 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
           <div className="flex justify-between">
             {/* <div className=""></div> */}
             <p className="text-bold text-base text-white ">{item?.user}</p>
-            <BsToggleOn className="text-[30px] text-[#CF2927]" />
+            {/* <BsToggleOn className="text-[30px] text-[#CF2927]" /> */}
+            <ToggleSwitch />
           </div>
 
           <p className="text-xs  text-white ">{item?.line1}</p>

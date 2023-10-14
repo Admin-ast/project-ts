@@ -1,6 +1,7 @@
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
 type Props = {
   detail: {
@@ -18,6 +19,7 @@ type Props = {
 function AppointmentCard({ detail, service }: Props) {
   const { name, expertise, experience, language, orders, ratings, isPremium } =
     detail;
+
   return (
     <div className="relative flex justify-evenly space-x-4 overflow-hidden rounded-xl border-4 border-[#DC6563]  p-4">
       {isPremium && (
@@ -56,9 +58,11 @@ function AppointmentCard({ detail, service }: Props) {
         </div>
         <div className="flex items-center justify-between">
           <p className="text-base font-semibold ">Free</p>
-          <button className="rounded-lg bg-[#CA2127] py-1 px-4 text-base font-semibold text-white">
-            {service}
-          </button>
+          <Link href="/talk-to-astrologer/talk">
+            <button className="rounded-lg bg-[#CA2127] py-1 px-4 text-base font-semibold text-white">
+              {service}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

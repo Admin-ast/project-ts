@@ -1,8 +1,41 @@
 import Section from "@/components/Section";
+import ConnectCard from "@/components/common/ConnectCard";
+import Faq from "@/components/common/Faq";
 import Hero from "@/components/common/Hero";
+import Horoscope from "@/components/home/Horoscope";
+import { Faqs } from "@/components/horoscope/horoscope-sign";
+import Compatibility from "@/components/horoscope/horoscope-sign/Compatibility";
+import SignsCard from "@/components/horoscope/horoscope-sign/SignsCard";
 import { postFetcher } from "@/service";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+
+const faqsDetail: Faqs = {
+  title: "Chat With Astrologer - FAQs",
+  faq: [
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+    {
+      ques: "How can I connect with an astrologer on chat?",
+      ans: "To chat with astrologer online, you simply need to recharge your wallet and find the 'Chat with Astrologer' section on our app or website. Once you click on it, you can choose from hundreds of astrologers you can chat with at your convenience.    ",
+    },
+  ],
+};
+
 function Index() {
   const [loading, setLoading] = useState<any>(false);
   const [type, setType] = useState<any>("");
@@ -57,7 +90,7 @@ function Index() {
 
   return (
     <>
-      <Hero text="Horoscope" />
+      <Hero text=" Horoscope" />
       <Section>
         <div className="my-5 justify-start  gap-5 md:flex">
           <div>
@@ -171,7 +204,12 @@ function Index() {
             </>
           )}
         </div>
+        <ConnectCard />
+        <SignsCard />
+
+        <Compatibility horoscopeType="Aries" />
       </Section>
+      <Faq faqDetail={faqsDetail} />
     </>
   );
 }

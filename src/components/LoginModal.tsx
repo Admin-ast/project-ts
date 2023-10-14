@@ -120,10 +120,10 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                 leaveTo="opacity-0 scale-95"
               >
                 {step === 1 ? (
-                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
+                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all lg:max-w-lg">
                     <Dialog.Title
                       as="h3"
-                      className="text-dark bg-primary relative bg-black/80 py-2 text-lg font-medium leading-6"
+                      className="text-dark bg-primary relative bg-[#DC6563] py-2 text-lg font-medium leading-6"
                     >
                       <p className="text-center text-white">
                         Continue with Phone
@@ -158,7 +158,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                         <div className="space-y-2">
                           {" "}
                           <Button
-                            className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
+                            className="mx-auto w-full rounded-lg bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-2 text-lg font-bold text-white"
                             btnText="GET OTP -->"
                           />
                           <p className="text-center text-[13px] text-gray-500">
@@ -215,7 +215,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                     </div>
                   </Dialog.Panel>
                 ) : (
-                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
+                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl  text-left align-middle shadow-xl transition-all lg:max-w-lg">
                     <Dialog.Title
                       as="h3"
                       className="text-dark bg-primary relative bg-black/80 py-2 text-lg font-medium leading-6"

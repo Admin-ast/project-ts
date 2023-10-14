@@ -4,6 +4,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import Hero from "@/components/common/Hero";
+import AlsoCheck from "@/components/common/AlsoCheck";
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -83,7 +84,7 @@ const Index = (props: Props) => {
         </Section>
         <Card horos={horos} type="today" predictionArray={false} />
         <AboutHoroscope />
-        <Check />
+        <AlsoCheck />
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>
