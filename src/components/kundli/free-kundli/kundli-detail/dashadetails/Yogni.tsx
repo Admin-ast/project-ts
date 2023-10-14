@@ -24,7 +24,7 @@ const Yogni = ({ majorYogni }: Props) => {
       }
     };
     if (kundli) {
-       majorVdasha();
+      majorVdasha();
     }
     console.log(yogniLevel);
   }, [selectedYogini, yogniLevel]);
@@ -97,7 +97,7 @@ const Yogni = ({ majorYogni }: Props) => {
                   </div>
                 );
               })}
-              {yogniLevel === 2 &&
+            {yogniLevel === 2 &&
               levelOne &&
               levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
                 return (
@@ -121,7 +121,7 @@ const Yogni = ({ majorYogni }: Props) => {
                   </div>
                 );
               })}
-              {yogniLevel === 3 &&
+            {yogniLevel === 3 &&
               levelOne &&
               levelOne.sub_dasha?.slice(0, 8)?.map((item: any, index: any) => {
                 return (

@@ -1,17 +1,17 @@
 import React, { ReactElement } from "react";
 
 interface Props {
-  id?:string,
+  id?: string;
   btnText: string;
   className?: string;
   isLoading?: boolean;
-  type?: "submit" | "reset" | "button",
+  type?: "submit" | "reset" | "button";
   onClick?: any;
   disabled?: boolean;
 }
 
 function Button({
-  id="1",
+  id = "1",
   btnText,
   className,
   isLoading = false,

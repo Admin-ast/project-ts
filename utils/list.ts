@@ -5853,7 +5853,6 @@ export const card = [
     date: "March 31,2023",
   },
 
-
   //   para: [
   //     {
   //       head: "",
@@ -6940,7 +6939,6 @@ export const card = [
     name: "Kasturi Chaudhary",
     date: "March 31,2023",
   },
-
 
   //   para: [
   //     {

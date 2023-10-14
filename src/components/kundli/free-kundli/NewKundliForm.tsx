@@ -17,7 +17,6 @@ function NewKundliForm({}: Props) {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    
     localStorage.setItem("kundliData", JSON.stringify(data));
     router.push("/free-kundli/basic-detail");
   };

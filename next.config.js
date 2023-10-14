@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const dns = require("dns");
-dns.setDefaultResultOrder("ipv4first")
+dns.setDefaultResultOrder("ipv4first");
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -35,8 +35,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["astroseva-talk.s3.amazonaws.com"],
-    minimumCacheTTL:60,
-    crossOrigin:'anonymouss',
+    minimumCacheTTL: 60,
+    crossOrigin: "anonymouss",
   },
 };
 

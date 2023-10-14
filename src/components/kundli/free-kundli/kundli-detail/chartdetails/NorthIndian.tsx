@@ -22,8 +22,7 @@ const NorthIndian = ({ horoCharts, availCharts, showChalit }: Props) => {
               <div className="font-semibold">Chalit</div>
               <div
                 dangerouslySetInnerHTML={{
-                  __html:
-                    horoCharts["chalit"] && horoCharts["chalit"],
+                  __html: horoCharts["chalit"] && horoCharts["chalit"],
                 }}
               ></div>
             </div>
@@ -36,8 +35,7 @@ const NorthIndian = ({ horoCharts, availCharts, showChalit }: Props) => {
                   <div className="font-semibold capitalize">{item}</div>
                   <div
                     dangerouslySetInnerHTML={{
-                      __html:
-                        horoCharts[item] && horoCharts[item]?.svg,
+                      __html: horoCharts[item] && horoCharts[item]?.svg,
                     }}
                   ></div>
                 </div>

@@ -14,7 +14,6 @@ import { getFetcher } from "@/service";
 import { useEffect } from "react";
 
 export default function Home() {
-  
   return (
     <>
       <Seo
