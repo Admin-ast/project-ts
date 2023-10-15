@@ -58,12 +58,12 @@ const PujaCard = (props: Props) => {
               {card.map((item, index) => (
                 <div
                   key={index}
-                  className="flex gap-8 rounded-xl bg-[#FFF7E5] p-2"
+                  className="flex gap-8 rounded-xl bg-white p-2 shadow-xl"
                 >
-                  <div className="rounded-[15px] border-2 border-black">
+                  <div className="rounded-[15px] border-2 border-[#DC6563]">
                     <Link href={item?.url}>
                       <img src={item?.img} alt="" />
-                      <p className="rounded-b-[12px] bg-black text-center font-bold text-white">
+                      <p className="rounded-b-[12px] bg-[#DC6563] text-center font-bold text-white">
                         rs.{item?.name}
                       </p>
                     </Link>
@@ -73,7 +73,7 @@ const PujaCard = (props: Props) => {
                       Chaitra Navratri Group Puja (Hanuman Anushthan)
                     </p>
                     <div className="  ml-24  flex justify-end">
-                      <button className="rounded-md border-2 border-black bg-[#EED387] px-6 py-2 font-bold hover:bg-[#F9B800]">
+                      <button className="rounded-md  bg-gradient-to-b from-[#fb7038] to-[#df625b] px-6 py-2 font-bold text-white hover:bg-[#F9B800]">
                         BUY
                       </button>
                     </div>

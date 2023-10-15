@@ -7,7 +7,7 @@ const DetailsNote = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat pb-8">
       <div className="flex flex-col gap-5">
-        <div className=" bg-[#FFF7E5] py-6 text-justify">
+        <div className=" bg-white py-6 text-justify shadow-xl">
           <Section>
             <div className="flex flex-col gap-5">
               <p className="text-center text-[32px] font-bold">
@@ -36,7 +36,7 @@ const DetailsNote = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="bg-[url('/assets/cloud-bg.webp')] bg-cover  bg-repeat py-6 text-justify text-white">
+        <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b]  bg-repeat py-6 text-justify text-white">
           <Section>
             <div className="flex flex-col gap-5">
               <p className="text-center text-[32px] font-bold">
@@ -64,7 +64,7 @@ const DetailsNote = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className=" bg-[#FFF7E5] py-6 text-justify">
+        <div className=" bg-white py-6 text-justify shadow-xl">
           <Section>
             <div className="flex flex-col gap-5">
               <p className="text-center text-[32px] font-bold">

@@ -47,11 +47,11 @@ const Footer = (props: Props) => {
               <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] lg:mt-[103px]">
                 <Button
                   btnText="Add To Cart"
-                  className="rounded-[10px] bg-[#D9D9D9] md:px-[100px] lg:px-[100px]"
+                  className="rounded-[10px] bg-[#D9D9D9] text-white md:px-[100px] lg:px-[100px] "
                 />
                 <Button
                   btnText="Buy Now"
-                  className="bg-[#D3B160] md:px-[100px] lg:px-[100px]"
+                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] text-white md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </div>
