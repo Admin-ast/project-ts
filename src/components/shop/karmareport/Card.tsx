@@ -26,7 +26,7 @@ type Props = {
 
 const Card = ({ title }: Props) => {
   return (
-    <div className="mt-[35px] bg-[#fff7e5] lg:py-[51px]">
+    <div className="mt-[35px] shadow-2xl lg:py-[51px]">
       <Section>
         <div>
           <div className="">
@@ -43,10 +43,10 @@ const Card = ({ title }: Props) => {
                 <Link
                   key={index}
                   href={item?.url}
-                  className="flex w-[280px]  flex-col rounded-t-xl border-2 border-black"
+                  className="flex w-[280px]  flex-col rounded-[10px] rounded-t-xl border-2 border-[#DC6563]"
                 >
-                  <img className="h-[280px] w-full" src={item?.img} alt="" />
-                  <p className="bg-black py-3 text-center text-2xl font-medium text-white">
+                  <img className=" object-contain " src={item?.img} alt="" />
+                  <p className="rounded-[10px] bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
                     {item?.name}
                   </p>
                 </Link>

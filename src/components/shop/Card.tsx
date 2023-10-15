@@ -103,10 +103,14 @@ const Card = (props: Props) => {
                 <Link
                   key={index}
                   href={item?.url}
-                  className="flex w-[280px]  flex-col rounded-t-xl border-2 border-[#DC6563]"
+                  className="flex w-[280px] flex-col rounded-[10px] rounded-t-xl border-2 border-[#DC6563]"
                 >
-                  <img className="h-[280px] w-full" src={item?.img} alt="" />
-                  <p className="bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
+                  <img
+                    className="h-full w-full object-contain"
+                    src={item?.img}
+                    alt=""
+                  />
+                  <p className="rounded-[10px] bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
                     {item?.name}
                   </p>
                 </Link>
