@@ -1,13 +1,16 @@
+import AppointmentCard from "@/components/appoinments/AppointmentCard";
+
 import Consultation from "@/components/appoinments/Consultation";
 import Hero from "@/components/appoinments/Hero";
-import LiveCard from "@/components/appoinments/LiveCard";
 import Button from "@/components/common/Button";
 import Faq from "@/components/common/Faq";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
 import React, { Key } from "react";
+import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
+import Link from "next/link";
+import LiveCard from "@/components/appoinments/LiveCard";
 
 type Props = {};
 
@@ -37,9 +40,10 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const astrologersDetails = [1, 2, 3, 4, 5, 6, 7, 1, 2];
+const astrologersDetails = [
+  1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7,
+];
 const astrologerDetail = {
-  sign: "Tarot",
   name: "Aakash Shah",
   expertise: "Vedic, Vastu, Face reading",
   experience: 3,
@@ -49,10 +53,10 @@ const astrologerDetail = {
   isPremium: true,
 };
 
-function LiveAstrologer({}: Props) {
+function OurAstrologer({}: Props) {
   return (
     <>
-      <Hero text="Live Astrologer" icon="/assets/appointment/live-hero.png" />
+      <Hero text="Our Astrologer" icon="/assets/appointment/live-hero.png" />
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -109,4 +113,4 @@ function LiveAstrologer({}: Props) {
   );
 }
 
-export default LiveAstrologer;
+export default OurAstrologer;

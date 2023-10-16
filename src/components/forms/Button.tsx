@@ -26,7 +26,7 @@ function Button({
         disabled={disabled}
         type={type}
         onClick={onClick}
-        className={`focus:ring-primary flex w-full items-center justify-center rounded-full border border-transparent px-4 py-1 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 md:mx-auto lg:mx-auto lg:py-2 ${className}`}
+        className={`focus:ring-primary flex w-full items-center justify-center rounded-[10px]  border border-transparent px-4 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 md:mx-auto lg:mx-auto lg:py-2 ${className}`}
       >
         <div
           className={`${

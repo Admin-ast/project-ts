@@ -91,7 +91,7 @@ const Blog = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
       <Section>
-        <div className="justify-between gap-6 md:flex lg:flex lg:items-start">
+        <div className="justify-between  gap-6 md:flex lg:flex lg:items-start">
           <SideNavBlog />
 
           <div className="flex w-full flex-col gap-2">
@@ -99,13 +99,13 @@ const Blog = (props: Props) => {
               <FaSearch />
               <p>Let’s find what you are looking for</p>
             </div>
-            <hr className="mr-5 w-full border border-[#D9D9D9]" />
-            <div className="grid gap-5  pt-6 lg:grid-cols-3">
+            <hr className=" w-full border border-[#D9D9D9] shadow-xl" />
+            <div className="grid pt-6 md:px-16  lg:grid-cols-3 lg:gap-5 lg:px-1 ">
               {currentItems.map((item, index) => (
                 <Link
                   key={index}
                   href={`/blog/${item?.id}`}
-                  className="flex w-[286px] flex-col rounded-[20px] bg-[#FFF7E5]"
+                  className="flex w-[286px] flex-col rounded-[20px] bg-white"
                 >
                   <img
                     className="h-[151px] w-full rounded-t-[20px] object-cover object-top"

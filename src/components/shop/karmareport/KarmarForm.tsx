@@ -112,7 +112,7 @@ const KarmarForm = () => {
                   className="!rounded-md lg:w-[950px]"
                 />
               </div>
-              <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] lg:mt-[103px]">
+              <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] text-white lg:mt-[103px]">
                 <Button
                   type="submit"
                   btnText="Add To Cart"
@@ -121,7 +121,7 @@ const KarmarForm = () => {
                 <Button
                   type="submit"
                   btnText="Buy Now"
-                  className="bg-[#D3B160] md:px-[100px] lg:px-[100px]"
+                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </Form>

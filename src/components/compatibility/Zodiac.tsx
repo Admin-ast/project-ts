@@ -8,7 +8,7 @@ type Props = {};
 const Zodiac = (props: Props) => {
   return (
     <>
-      <div className="bg-[#FFF7E5] py-8 lg:py-[51px]">
+      <div className="bg-white py-8 shadow-xl lg:py-[51px]">
         <Section>
           <div className="">
             <p className="pb-8 text-center text-2xl font-semibold md:text-[40px]">
@@ -17,7 +17,7 @@ const Zodiac = (props: Props) => {
             <div>
               <p className="text-[32px]">Zodiac Man</p>
               <div className="flex flex-col gap-6 md:flex-row">
-                <div className="flex h-[272px] items-center justify-center rounded-xl bg-black md:w-2/4">
+                <div className="flex h-[272px] items-center justify-center rounded-xl  md:w-2/4">
                   <Image
                     src={"/assets/compatibility/men.png"}
                     alt={"men"}
@@ -65,7 +65,7 @@ const Zodiac = (props: Props) => {
           <div>
             <p className="text-[32px]">Zodiac Women</p>
             <div className="flex flex-col gap-6 md:flex-row">
-              <div className="flex h-[272px] items-center  justify-center rounded-xl bg-black md:w-2/4">
+              <div className="flex h-[272px] items-center  justify-center rounded-xl  md:w-2/4">
                 <Image
                   src={"/assets/compatibility/women.png"}
                   alt={"men"}

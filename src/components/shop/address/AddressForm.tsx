@@ -180,7 +180,7 @@ const AddressForm = () => {
                 <Button
                   type="submit"
                   btnText="Save Address"
-                  className="bg-[#D3B160] font-bold md:px-[100px] lg:px-[100px]"
+                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] font-bold text-white md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </Form>
