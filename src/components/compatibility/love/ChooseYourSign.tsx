@@ -10,64 +10,88 @@ type Props = {
 const ChooseSign = ({ headText }: Props) => {
   const cardDetails = [
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-01_2.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/aries",
+      src: "/assets/kundli/aries.png",
+      icon: "/assets/single-horoscope/aries.svg",
+      id: "aries",
+      name: "Aries",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-02_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/taurus",
+      src: "/assets/kundli/taurus.png",
+      icon: "/assets/single-horoscope/taurus.svg",
+      id: "taurus",
+      name: "Taurus",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-03_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/gemini",
+      src: "/assets/kundli/gemini.png",
+      icon: "/assets/single-horoscope/gemini.svg",
+      id: "gemini",
+      name: "Gemini",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-04_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/cancer",
+      src: "/assets/kundli/cancer.png",
+      icon: "/assets/single-horoscope/cancer.svg",
+      id: "cancer",
+      name: "Cancer",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-05_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/leo",
+      src: "/assets/kundli/leo.png",
+      icon: "/assets/single-horoscope/leo.svg",
+      id: "leo",
+      name: "Leo",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-06_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/virgo",
+      src: "/assets/kundli/virgo.png",
+      icon: "/assets/single-horoscope/virgo.svg",
+      id: "virgo",
+      name: "Virgo",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-07_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/libra",
+      src: "/assets/kundli/libra.png",
+      icon: "/assets/single-horoscope/libra.svg",
+      id: "libra",
+      name: "Libra",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-08_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/scorpio",
+      src: "/assets/kundli/scorpio.png",
+      icon: "/assets/single-horoscope/scorpio.svg",
+      id: "scorpio",
+      name: "Scorpio",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-09_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/sagittarius",
+      src: "/assets/kundli/sagittarius.png",
+      icon: "/assets/single-horoscope/sagittarius.svg",
+      id: "sagittarius",
+      name: "Sagittarius",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-10_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/capricorn",
+      src: "/assets/kundli/capricorn.png",
+      icon: "/assets/single-horoscope/capricorn.svg",
+      id: "capricorn",
+      name: "Capricorn",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-11_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/aquarius",
+      src: "/assets/kundli/aquarius.png",
+      icon: "/assets/single-horoscope/aquarius.svg",
+      id: "aquarius",
+      name: "Aquarius",
     },
     {
-      name: "",
-      img: "/assets/compatibility/love/shines-12_1.png",
-      link: "",
+      link: "/horoscope/daily-horoscope/pisces",
+      src: "/assets/kundli/pieces.png",
+      icon: "/assets/single-horoscope/pisces.svg",
+      id: "pisces",
+      name: "Pieces",
     },
   ];
   return (
@@ -79,16 +103,17 @@ const ChooseSign = ({ headText }: Props) => {
             <Link
               href={item.link}
               key={index}
-              className="flex flex-col justify-end border-black bg-[#000000]"
+              className="flex flex-col justify-end "
             >
               <div className="mx-auto">
                 <Image
-                  src={item.img}
+                  src={item.src}
                   alt={item.name}
                   width={171}
                   height={238}
                   loading={"lazy"}
                 />
+                <p className="text-center text-[40px]">{item.name}</p>
               </div>
             </Link>
           ))}

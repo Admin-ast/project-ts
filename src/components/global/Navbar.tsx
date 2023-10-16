@@ -91,7 +91,7 @@ function Navbar({}: Props) {
                   Chat With Astrologer
                 </Link>
                 <Link href="/astrosevatalk">AstrosevaTalk +</Link>
-                <Link href="/">Zodiac sign</Link>
+                <Link href="/zodic-sign">Zodiac sign</Link>
                 <Link href="/shop/shop">Shop</Link>
               </div>
               <div className=" mt-[26px] hidden gap-[20px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">

@@ -41,7 +41,7 @@ const Card = (props: Props) => {
             <Link
               href={item.link}
               key={index}
-              className="overflow-hidden rounded-3xl border-[3px] border-black bg-[#FFF7E5]"
+              className="overflow-hidden rounded-3xl border-[3px] border-[#Dc6563] bg-white"
             >
               <div className="mx-auto h-[275px] w-[150px]">
                 <Image
@@ -52,7 +52,7 @@ const Card = (props: Props) => {
                   loading={"lazy"}
                 />
               </div>
-              <p className="bg-black py-[14px] px-[90px] text-center text-2xl text-white lg:text-[20px]">
+              <p className="bg-[#DC6563] py-[14px] px-[90px] text-center text-2xl text-white lg:text-[20px]">
                 {item.name}
               </p>
             </Link>

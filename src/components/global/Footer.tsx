@@ -826,7 +826,7 @@ const importantLinks2: ImportantLinks2[] = [
   {
     id: 1,
     title: "Astro Reviews",
-    url: "/astro-reviews",
+    url: "/review/review",
   },
   {
     id: 2,

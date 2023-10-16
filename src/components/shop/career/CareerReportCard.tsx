@@ -1,6 +1,6 @@
-import React from "react";
 import Section from "@/components/Section";
 import Link from "next/link";
+import React from "react";
 
 const card = [
   {
@@ -12,7 +12,7 @@ const card = [
 
 type Props = {};
 
-const PalamistryCard = (props: Props) => {
+const CareerReportCard = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
       <Section>
@@ -34,7 +34,9 @@ const PalamistryCard = (props: Props) => {
                     </Link>
                   </div>
                   <div className="flex flex-col justify-between">
-                    <p className="py-4 font-bold">Kundali Matching</p>
+                    <p className="py-4 font-bold">
+                      Evil Eye (Nazar Lagna) For Relationships
+                    </p>
                     <div className="  ml-24  flex justify-end">
                       <button className="rounded-md bg-gradient-to-b from-[#fb7038] to-[#df625b] px-6 py-2 font-bold text-white hover:bg-[#F9B800]">
                         BUY
@@ -51,4 +53,4 @@ const PalamistryCard = (props: Props) => {
   );
 };
 
-export default PalamistryCard;
+export default CareerReportCard;

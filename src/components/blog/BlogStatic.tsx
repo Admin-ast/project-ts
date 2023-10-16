@@ -21,17 +21,26 @@ const BlogStatic = (props: Props) => {
             </p>
           </div>
 
-          <div className=" mt-[25px] mb-[48px]  bg-[#E2CB85] ">
-            <p className=" px-2 text-base font-semibold">First Chat Free</p>
+          <div className=" mt-[25px] mb-[48px]  bg-[#DC6563] ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="842"
+              height="28"
+              viewBox="0 0 842 28"
+              fill="none"
+            >
+              <path d="M0 0L842 1L826 28H0V0Z" fill="#DC6563" />
+            </svg>
+            <p className="  text-base font-semibold">First Chat Free</p>
           </div>
         </div>
-        <div className=" flex-end flex  bg-[#E2CB85]">
+        <div className=" flex-end flex h-[187px] w-[112px] bg-[#DC6563]">
           <Image
             className=" h-full w-full   "
             src="/assets/blog/bloggirl.png"
             alt="bloggirl"
-            width={200}
-            height={100}
+            width={112}
+            height={187}
           />
         </div>
       </div>
@@ -322,17 +331,17 @@ const BlogStatic = (props: Props) => {
         </div>
       </Section>
       {/* --------------------------------------Problems in Marriage---------------------------------------------------------- */}
-      <div className=" mt-[30px] flex justify-between bg-[#FFF7E5] ">
+      <div className=" mt-[30px] flex justify-between bg-[#f8e0e0] ">
         <div className="mt-5 px-[33px]">
           <p className="  text-3xl font-bold ">Problems in Marriage?</p>
           <p className=" mt-[11px] text-base">Get solutions from astrologers</p>
           <div className="mt-[25px] ">
-            <button className="mb-[24px] rounded-[10px] bg-[#E2CB85] px-10 py-3 text-base font-semibold ">
+            <button className="mb-[24px] rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#df625b] px-10 py-3 text-base font-semibold text-white ">
               First Chat Free
             </button>
           </div>
         </div>
-        <div className=" bg-[#E2CB85]">
+        <div className=" bg-[#DC6563]">
           <Image
             src="/assets/blog/raashi.png"
             alt="raashi"
@@ -441,7 +450,7 @@ const BlogStatic = (props: Props) => {
 
       {/* ---------------------------------Connect with astrologer------------------------------------------------------------ */}
 
-      <div className=" mt-[30px] bg-[#FFF7E5] ">
+      <div className=" mt-[30px] bg-white shadow-xl ">
         <div className=" ">
           <p className="text-center font-[georgia] text-xl font-bold  ">
             Connect with an Astrologer on Call or Chat for more personalised
@@ -449,30 +458,28 @@ const BlogStatic = (props: Props) => {
           </p>
         </div>
         <div className="mt-[30px]  mb-5 flex justify-center md:gap-5 lg:gap-10 ">
-          <div className="w-[190px] rounded-[20px] border-4 border-[#D3B160] bg-[#000000] ">
+          <div className="w-[190px] rounded-[20px] border-[4px] border-[#DC6563] bg-white shadow-xl ">
             <div className="">
               <Image
-                src="/assets/blog/chatIcon.png"
+                src="/assets/home/icon-01.png"
                 alt="chatIcon"
                 width={100}
                 height={80}
                 className="m-auto"
               />
-              <p className="text-center font-bold text-[#D3B160]">
-                Chat with Astrologer
-              </p>
+              <p className="text-center font-bold ">Chat with Astrologer</p>
             </div>
           </div>
-          <div className="w-[190px] rounded-[20px] border-4 border-[#D3B160] bg-[#000000]">
+          <div className="w-[190px] rounded-[20px] border-[4px] border-[#DC6563] bg-white shadow-xl">
             <div className="">
               <Image
-                src="/assets/blog/callIcon.png"
+                src="/assets/home/icon-02.png"
                 alt="callIcon"
                 width={100}
                 height={80}
                 className="m-auto"
               />
-              <p className=" w-[171px] text-center text-[16px] font-bold text-[#D3B160]">
+              <p className=" w-[171px] text-center text-[16px] font-bold ">
                 Talk to Astrologer
               </p>
             </div>
