@@ -7,9 +7,10 @@ type Props = {
   headText: string;
   cardDetails: any;
   subText: string;
+  btn: string;
 };
 
-const ChooseSign = ({ headText, cardDetails, subText }: Props) => {
+const ChooseSign = ({ headText, cardDetails, subText, btn }: Props) => {
   return (
     <Section>
       <div className="space-y-6 py-8  lg:py-[50px]">
@@ -19,7 +20,7 @@ const ChooseSign = ({ headText, cardDetails, subText }: Props) => {
             <Link
               href={item.link}
               key={index}
-              className=" flex w-full max-w-[400px] flex-col justify-end rounded-b-[20px]  rounded-t-3xl border-black  bg-[#000000] md:w-[278px]"
+              className=" flex w-full max-w-[400px] flex-col justify-end rounded-b-[20px]  rounded-t-3xl border-[3px] border-[#DC6563]  bg-white shadow-xl md:w-[278px]"
             >
               <div className="mx-auto h-[80%] py-5 ">
                 <Image
@@ -30,7 +31,7 @@ const ChooseSign = ({ headText, cardDetails, subText }: Props) => {
                   loading={"lazy"}
                 />
               </div>
-              <p className="rounded-[10px] bg-color_gold py-[11px]  text-center font-bold text-black lg:text-[22px]">
+              <p className="rounded-[10px] bg-[#DC6563] py-[11px]  text-center font-bold text-white lg:text-[22px]">
                 {item.name}
               </p>
             </Link>
@@ -38,6 +39,9 @@ const ChooseSign = ({ headText, cardDetails, subText }: Props) => {
         </div>
       </div>
       <div>{subText}</div>
+      <div className="mx-auto mt-5 w-fit cursor-pointer rounded-2xl border  bg-gradient-to-b from-[#fb7038]  to-[#df625b] py-3 px-10 text-center text-[22px] font-bold text-white">
+        {btn}
+      </div>
     </Section>
   );
 };

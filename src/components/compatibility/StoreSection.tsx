@@ -21,7 +21,7 @@ const Store = ({ cardDetails }: Props) => {
             key={index}
             className=" flex w-[90%] max-w-[400px] flex-col justify-end rounded-b-[20px]  rounded-t-3xl border-[3px] border-[#DC6563]  md:w-[300px]"
           >
-            <div className="h-full w-full">
+            <div className="">
               <Image
                 unoptimized
                 src={item.img}
