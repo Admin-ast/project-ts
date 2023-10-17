@@ -3,14 +3,13 @@ import Link from "next/link";
 import React, { Key } from "react";
 import Section from "../../Section";
 
-type Props = {};
+type Props = {
+  // btn:string;
+};
 
 const WorkCompatibilityMatches = ({}: Props) => {
   return (
     <Section>
-      <div className="mx-auto mt-5 w-fit cursor-pointer rounded-2xl border border-black bg-color_gold py-3 px-10 text-center text-[22px] font-bold">
-        Try Another Match
-      </div>
       <div className="space-y-6 py-8  lg:py-[50px]">
         <div className="text-center text-[36px] font-bold">
           More Work Compatibility Matches

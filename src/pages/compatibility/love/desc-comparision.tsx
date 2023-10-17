@@ -1,15 +1,22 @@
 import Section from "@/components/Section";
-import Hero from "@/components/common/Hero";
-import ChooseSign from "@/components/compatibility/love/ChooseYourSign";
+import Hero from "@/components/compatibility/Hero";
 import Store from "@/components/compatibility/StoreSection";
+import Header from "@/components/compatibility/love/Header";
+import WorkCompatibilityMatches from "@/components/compatibility/work/WorkCompatibilityMatching";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+
 type Props = {};
 
-function Compatibility({}: Props) {
+const desccomparision = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <Hero text="Love Compatibility" icon="/assets/compatibility/comp1.png" />
+    <div className="">
+      <Hero
+        icons="/assets/kundli/taurus.png"
+        text="Virgo And Taurus Love Compatibility"
+        icon="/assets/kundli/virgo.png"
+      />
+
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -20,15 +27,8 @@ function Compatibility({}: Props) {
           </div>
         </Section>
       </div>
-      <Section>
-        <div className="mt-5">
-          Find out if you and your love interest or partner are soul mates, best
-          friends, or a recipe for disaster. But no fear - even opposites can
-          attract. Find out how you fare now.
-        </div>
-        <ChooseSign headText="Choose Your Sign" />
-      </Section>
-
+      <Header head="Virgo And Taurus Love Compatibility" />
+      <WorkCompatibilityMatches />
       <Store
         cardDetails={[
           {
@@ -50,6 +50,6 @@ function Compatibility({}: Props) {
       />
     </div>
   );
-}
+};
 
-export default Compatibility;
+export default desccomparision;

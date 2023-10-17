@@ -1,15 +1,21 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
-import ChooseSign from "@/components/compatibility/love/ChooseYourSign";
 import Store from "@/components/compatibility/StoreSection";
+import Comp from "@/components/compatibility/love/Comp";
+
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+
 type Props = {};
 
-function Compatibility({}: Props) {
+const WorkDynamic = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <Hero text="Zodiac Women" icon="/assets/compatibility/love/7-01.png" />
+    <div className="">
+      <Hero
+        text="Work Compatibility"
+        subText=""
+        icon="/assets/compatibility/work/aw-01.png"
+      />
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
           <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
@@ -19,16 +25,11 @@ function Compatibility({}: Props) {
         </div>
       </div>
       <Section>
-        <div className="mt-5">
-          When trying to understand that female-identified person in your life,
-          their zodiac sign is the door into their personal style, as well as
-          what makes them tick. This in-depth horoscope guide about the zodiac
-          woman in your life has everything you need to know from sex, career,
-          home life, gift ideas, and love compatibility.
-        </div>
-        <ChooseSign headText="Choose Your Sign" />
+        <Comp
+          headText="Choose 2 Signs To Create Your Match"
+          subText="Do you make an outstanding team or will working together be a real pain? Know how to interact most effectively with all your colleagues, bosses, and partners."
+        />
       </Section>
-
       <Store
         cardDetails={[
           {
@@ -50,6 +51,6 @@ function Compatibility({}: Props) {
       />
     </div>
   );
-}
+};
 
-export default Compatibility;
+export default WorkDynamic;
