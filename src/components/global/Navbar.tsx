@@ -54,7 +54,7 @@ function Navbar({}: Props) {
         />
       )}
 
-      <div className="sticky top-0 z-10 w-full bg-white ">
+      <div className="sticky top-0 z-10 w-full bg-white shadow-xl ">
         <Section>
           <div className="flex items-center  py-2 px-2">
             <div className="block cursor-pointer text-[25px] lg:hidden ">

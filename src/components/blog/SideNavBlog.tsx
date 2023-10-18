@@ -5,6 +5,8 @@ import { GrLanguage } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
 import Link from "next/link";
 import Section from "../Section";
+import Comp from "../compatibility/love/Comp";
+import SideNavFooter from "./SideNavFooter";
 
 function SideNavBlog() {
   const categories = [
@@ -153,6 +155,12 @@ function SideNavBlog() {
           <p>ALL LANGUAGES</p>
           <p>HINDI</p>
           <p>ENGLISH</p>
+        </div>
+        <div className="">
+          <SideNavFooter
+            headText="Are You Compatible?"
+            subText="Choose your and your partner's zodiac sign to check compatibility"
+          />
         </div>
       </div>
       {/* </Section> */}

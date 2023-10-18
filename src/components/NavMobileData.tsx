@@ -14,24 +14,24 @@ const links: Links[] = [
     url: "/",
   },
   {
-    name: "Chat With Astrologer",
-    url: "/chat-with-astrologer",
-  },
-  {
     name: "Talk To Astrologer",
-    url: "/talk-to-astrologer",
+    url: "/talk-to-astrologer/talk-to-astrologer",
   },
   {
-    name: "Live Astrologer",
-    url: "/live-astrologer",
+    name: "Chat With Astrologer",
+    url: "/chat-with-astrologer/chat-with-astrologer",
   },
   {
-    name: "Daily Horoscope",
-    url: "/horoscope/daily-horoscope",
+    name: "AstrosevaTalk +",
+    url: "/astrosevatalk",
   },
   {
-    name: "Live Video Chat",
-    url: "/live-video-chat",
+    name: "Zodiac sign",
+    url: "/zodic-sign",
+  },
+  {
+    name: "Astro store-Shop",
+    url: "/shop/shop",
   },
   {
     name: "Free Kundli",
@@ -42,20 +42,29 @@ const links: Links[] = [
     url: "/kundli-matching",
   },
   {
-    name: "Panchang",
-    url: "/today-panchang",
+    name: "Live Astrologer",
+    url: "live-astrologer/live-astrologer",
   },
+  {
+    name: "Daily Horoscope",
+    url: "/horoscope/daily",
+  },
+  // {
+  //   name: "Live Video Chat",
+  //   url: "/live-video-chat",
+  // },
+
   {
     name: "Shubh Muhurat",
     url: "/muhurat",
   },
+  // {
+  //   name: "Compatibility",
+  //   url: "/compatibility",
+  // },
   {
-    name: "Compatibility",
-    url: "/compatibility",
-  },
-  {
-    name: "Astro store-Shop",
-    url: "/shop/shop",
+    name: "Book A Pooja",
+    url: "/muhurat",
   },
   {
     name: "Blog",
