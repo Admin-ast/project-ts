@@ -49,13 +49,13 @@ const BlogDesc = (props: Props) => {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
               Blog
             </p>
           </div>
         </Section>
         <Section>
-          <div className="grid grid-cols-1 items-start justify-between gap-6 pt-8 md:flex lg:flex">
+          <div className=" gap-6 pt-8 md:flex lg:flex">
             <SideNavBlog />
             <div className="">
               <Section>

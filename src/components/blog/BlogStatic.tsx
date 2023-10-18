@@ -3,6 +3,11 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import { BsDot } from "react-icons/bs";
 import Link from "next/link";
+import Astrologer from "../home/Astrologer";
+import BlogsBy from "./BlogsBy";
+import RelatedBlogs from "./RelatedBlogs";
+import RecentBlogs from "./RecentBlogs";
+import OurAstrologer from "./OurAstrologer";
 type Props = {};
 
 const BlogStatic = (props: Props) => {
@@ -10,7 +15,7 @@ const BlogStatic = (props: Props) => {
     <div className="">
       {/* ----------------------------------Missing spark in marriage--------------------------------------------------------  */}
       {/* <div className=""> */}
-      <div className=" mt-[35px] flex justify-between  bg-[#FFF7E5]  ">
+      <div className=" mt-[35px] justify-between bg-[#FFF7E5]  lg:flex  ">
         <div className="mt-5">
           <div className="px-2">
             <p className="   text-3xl   font-bold ">
@@ -22,7 +27,7 @@ const BlogStatic = (props: Props) => {
           </div>
 
           <div className=" mt-[25px] mb-[48px]  bg-[#DC6563] ">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="842"
               height="28"
@@ -30,7 +35,7 @@ const BlogStatic = (props: Props) => {
               fill="none"
             >
               <path d="M0 0L842 1L826 28H0V0Z" fill="#DC6563" />
-            </svg>
+            </svg> */}
             <p className="  text-base font-semibold">First Chat Free</p>
           </div>
         </div>
@@ -48,7 +53,7 @@ const BlogStatic = (props: Props) => {
 
       {/* -------------------------MANGAL DOSH___________________________________________________________________ */}
       <Section>
-        <div className="mt-[35px] ">
+        <div className="mt-[35px]  ">
           <div className=" ">
             <p className="mt-[35px] text-center  text-3xl font-bold">
               What creates Mangal Dosha in Kundli?
@@ -106,7 +111,7 @@ const BlogStatic = (props: Props) => {
             </p>
           </div>
 
-          <div className="">
+          <div className="lg:flex">
             <p className="mt-[10px] text-justify text-base">
               Some remedies to reduce the negative effects of Mangal Dosha
               include performing puja and homa for Lord Hanuman or Lord
@@ -485,6 +490,12 @@ const BlogStatic = (props: Props) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="">
+        <BlogsBy heading="Blogs By Kasturi Chaudhary" />
+        <RelatedBlogs />
+        <RecentBlogs />
+        <OurAstrologer heading="Our Astrologer" />
       </div>
     </div>
   );
