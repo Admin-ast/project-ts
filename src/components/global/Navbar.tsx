@@ -25,7 +25,7 @@ function Navbar({}: Props) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
-  const [horroscopeOpen, setHorroscopeOpen] = useState(false);
+  const [horoScopeOpen, setHoroScopeOpen] = useState(false);
 
   useEffect(() => {
     const accessToken = Cookies.get("accessToken");
@@ -41,8 +41,8 @@ function Navbar({}: Props) {
     setIsLogged(false);
   };
 
-  const toggleHorroscope = () => {
-    setHorroscopeOpen((prev) => !prev);
+  const toggleHoroscope = () => {
+    setHoroScopeOpen((prev) => !prev);
   };
   return (
     <>
@@ -83,7 +83,7 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full lg:relative">
-              <div className=" mt-[38px] hidden gap-[29px] text-[16px] font-bold lg:flex ">
+              <div className=" mt-[38px] hidden text-[16px] font-bold lg:flex lg:gap-[29px] ">
                 <Link href="/talk-to-astrologer/talk-to-astrologer">
                   Talk To Astrologer
                 </Link>
@@ -104,51 +104,82 @@ function Navbar({}: Props) {
 
                 <ul className="">
                   <li className="">
-                    <button className="flex    " onClick={toggleHorroscope}>
+                    <button className="flex    " onClick={toggleHoroscope}>
                       <span className="">Horoscope</span>
-                      <span className={horroscopeOpen ? " transform" : ""}>
+                      <span className={horoScopeOpen ? " transform" : ""}>
                         &#9662;
                       </span>
                     </button>
-                    {horroscopeOpen && (
-                      <div className="relative  z-10 px-2 shadow-xl">
-                        <div className="absolute rounded-[20px] bg-white lg:w-[300px]">
-                          <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/yearly">Horoscope 2023</Link>
+                    {horoScopeOpen && (
+                      <ul className="">
+                        <div className="relative  z-10 px-2 shadow-xl">
+                          <div className="absolute rounded-[20px] bg-white lg:w-[300px]">
+                            <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                              <li onClick={toggleHoroscope}>
+                                <Link href="/horoscope/yearly">
+                                  Horoscope 2023
+                                </Link>
+                              </li>
+                            </div>
+
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/daily">{`Today's Horroscope`}</Link>
+                            </li>
+
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/daily">
+                                Weekly Horoscope
+                              </Link>
+                            </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/monthly">
+                                Monthly Horoscope
+                              </Link>
+                            </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/yearly">
+                                Yearly Horoscope
+                              </Link>
+                            </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/daily">
+                                Daily Horoscope
+                              </Link>
+                            </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/tomorrow">
+                                {`Tomorrow's Horoscope`}
+                              </Link>
+                            </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/horoscope/yesterday">
+                                {`Yesterday's Horoscope`}
+                              </Link>
+                            </li>
                           </div>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/daily">{`Today's Horroscope`}</Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/daily">
-                              Weekly Horoscope
-                            </Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/monthly">
-                              Monthly Horoscope
-                            </Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/yearly">
-                              Yearly Horoscope
-                            </Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/daily">Daily Horoscope</Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/tomorrow">
-                              {`Tomorrow's Horoscope`}
-                            </Link>
-                          </li>
-                          <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
-                            <Link href="/horoscope/yesterday">
-                              {`Yesterday's Horoscope`}
-                            </Link>
-                          </li>
                         </div>
-                      </div>
+                      </ul>
                     )}
                   </li>
                 </ul>

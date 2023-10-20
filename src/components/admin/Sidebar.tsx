@@ -29,7 +29,7 @@ const Sidebar = (props: Props) => {
           />
           <p className="text-center text-[25px] text-black">Dulis</p>
         </div>
-        <div className="border-[#D9D9D9]] mx-[16px] border-[1px]"></div>
+        <div className="mx-[16px] border-[1px] border-[#D9D9D9]"></div>
         <ul>
           <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[24px] hover:bg-[#DC6563]">
             <Link href="/astrologeradmin/admin">Dashboard</Link>

@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="my-10 flex flex-col space-y-8 text-base">
+    <div className="my-10 flex flex-col space-y-8 bg-[url('/assets/horoscope-bg.webp')] text-base ">
       <Section>
         <div className="flex flex-col space-y-8">
           <div className="flex flex-col space-y-4 text-center">
@@ -18,7 +18,7 @@ function About({}: Props) {
           <div className="flex flex-col text-justify">
             <p>
               {`The Kundli of a person is one of the most sought aspects of
-                astrology. A Kundli entails the details about the positions of
+        0        astrology. A Kundli entails the details about the positions of
                 stars and planets at the time of your birth based on which
                 further predictions are made. And with further predictions, we
                 mean predictions about different aspects of one's life like

@@ -131,8 +131,12 @@ function BasicDetail({}: Props) {
       <div className=" bg-gray-100 py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
           <HomeIcon className="h-5 w-5 bg-gray-300 p-1 text-gray-900" />
-          <p className="bg-gray-300 py-1 px-2 text-sm">Free Kundli</p>
-          <p className="bg-[#f0dba8] py-1 px-2 text-sm">Kundli Details</p>
+          <p className="bg-[#DC6563] py-1 px-2 text-sm text-white">
+            Free Kundli
+          </p>
+          <p className="bg-[#DC6563] py-1 px-2 text-sm text-white">
+            Kundli Details
+          </p>
         </div>
         <Section>
           <div className="my-6 grid justify-between  overflow-hidden rounded-lg border border-gray-400 md:grid-cols-7">

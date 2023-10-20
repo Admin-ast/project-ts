@@ -7,7 +7,13 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+type Props = {
+  detail: {
+    img: string;
+    name: string;
+  };
+};
+
 const faqsDetail: Faqs = {
   title: "Chat With Astrologer - FAQs",
   faq: [
@@ -34,7 +40,8 @@ const faqsDetail: Faqs = {
   ],
 };
 
-const TarotLiveVideoChat = (props: Props) => {
+const TarotLiveVideoChat = ({ detail }: Props) => {
+  const { img, name } = detail;
   return (
     <>
       <Hero
@@ -55,7 +62,7 @@ const TarotLiveVideoChat = (props: Props) => {
         <div className="mt-[115px] grid items-center justify-center gap-[20px] md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
             <Image
-              src={"/assets/appointment/live-astro.png"}
+              src={img}
               alt={"chat-icon"}
               width={300}
               height={370}
@@ -73,6 +80,9 @@ const TarotLiveVideoChat = (props: Props) => {
               >
                 <circle cx="6" cy="6" r="6" fill="#8A1316" />
               </svg>
+            </div>
+            {/* <div className="absolute bottom-[42px] right-[108px]">
+              <p className="text-[36px] text-white font-[Roboto] font-semibold ">{name}</p>
             </div>
           </div>
           <div className="relative">
@@ -140,6 +150,7 @@ const TarotLiveVideoChat = (props: Props) => {
                 <circle cx="6" cy="6" r="6" fill="#8A1316" />
               </svg>
             </div>
+          </div> */}
           </div>
         </div>
       </Section>

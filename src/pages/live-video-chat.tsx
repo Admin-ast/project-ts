@@ -59,7 +59,7 @@ function LiveVideoChat({}: Props) {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
               Live Video Chat with Astrologers
             </p>
           </div>
@@ -102,7 +102,10 @@ function LiveVideoChat({}: Props) {
                 </div>
               ))}
             </div>
-            <Button text="View More" className="mx-auto lg:text-[28px]" />
+            <Button
+              text="View More"
+              className="mx-auto bg-gradient-to-b from-[#fb7038] to-[#df625b] lg:text-[28px]"
+            />
           </div>
         </Section>
         <Consultation />

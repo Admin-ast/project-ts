@@ -23,13 +23,13 @@ const appointment: Appointment[] = [
     name: "Live video chat",
     src: "/assets/home/hero-icon-04.webp",
     alt: "test",
-    url: "/live-videochat",
+    url: "/live-video-chat",
   },
   {
     name: "Live Astrologers",
     src: "/assets/home/hero-icon-03.webp",
     alt: "test",
-    url: "/live-astrologer",
+    url: "/live-astrologer/live-astrologer",
   },
 ];
 

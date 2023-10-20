@@ -51,15 +51,15 @@ function FreeKundli({}: Props) {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
               Free Kundli
             </p>
           </div>
         </Section>
       </div>
-      <div className="bg-[url('/assets/horoscope-bg.webp')]">
+      <div className="">
         <Section>
-          <div className="flex flex-col space-y-8 py-5 pt-16">
+          <div className="flex flex-col space-y-8 bg-[url('/assets/horoscope-bg.webp')] py-5 pt-16">
             <p className="text-center text-2xl font-bold md:text-5xl">
               Free Kundli Online
             </p>
@@ -89,7 +89,7 @@ function FreeKundli({}: Props) {
               </p>
             </div>
           </div>
-          <div className="my-8 grid grid-cols-2 gap-y-6 lg:grid-cols-5 lg:gap-6">
+          <div className="my-8 grid grid-cols-2 gap-y-6 bg-[url('/assets/horoscope-bg.webp')] lg:grid-cols-5 lg:gap-6">
             <div className="col-span-2 grid">
               <SavedKundli />
             </div>

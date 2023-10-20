@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../Section";
+import Table from "./Table";
 
 type Props = {};
 
@@ -27,10 +28,23 @@ const Diffrentmuhurat = (props: Props) => {
             </div>
           </div>
           <div className="flex flex-col  gap-3">
-            <img
-              className="h=[318px] w-[258px]"
-              src="/Rectangle 154.png"
-              alt=""
+            <Table
+              ftitle1="Rudra"
+              ftitleResult1="Inauspicious"
+              ftitle2="Rudra"
+              ftitleResult2="Inauspicious"
+              ftitle3="Rudra"
+              ftitleResult3="Inauspicious"
+              ftitle4="Rudra"
+              ftitleResult4="Inauspicious"
+              stitle1="Rudra"
+              stitleResult1="Inauspicious"
+              stitle2="Rudra"
+              stitleResult2="Inauspicious"
+              stitle3="Rudra"
+              stitleResult3="Inauspicious"
+              stitle4="Rudra"
+              stitleResult4="Inauspicious"
             />
           </div>
         </div>

@@ -17,25 +17,25 @@ const appointment: Appointment[] = [
     name: "Chat with Astrologer",
     src: "/assets/home/icon-01.png",
     alt: "chat-astrologer",
-    url: "/chat-with-astrologer",
+    url: "/chat-with-astrologer/chat-with-astrologer",
   },
   {
     name: "Talk to Astrologer",
     src: "/assets/home/icon-02.png",
     alt: "talk-astrologer",
-    url: "/talk-to-astrologer",
+    url: "/talk-to-astrologer/talk-to-astrologer",
   },
   {
     name: "Live Astrologers",
     src: "/assets/home/icon-03.png",
     alt: "live-astrologer",
-    url: "/live-astrologer",
+    url: "/live-astrologer/live-astrologer",
   },
   {
     name: "Live video chat",
     src: "/assets/home/icon-04.png",
     alt: "videochat-astrologer",
-    url: "/live-videochat",
+    url: "/live-video-chat",
   },
 ];
 
