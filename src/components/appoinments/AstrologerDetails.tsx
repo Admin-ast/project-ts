@@ -7,6 +7,7 @@ type Props = {
   language: string;
   experience: string;
   rate: string;
+  className: string;
 };
 
 const AstrologerDetails = ({
@@ -15,9 +16,10 @@ const AstrologerDetails = ({
   language,
   experience,
   rate,
+  className,
 }: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] lg:w-1/3">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] ">
       <div className="flex items-center justify-center">
         <div className="mt-[53px]">
           <Image

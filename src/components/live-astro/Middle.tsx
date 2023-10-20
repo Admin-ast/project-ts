@@ -1,21 +1,34 @@
 import Image from "next/image";
 import React from "react";
+import Icons from "./Icons";
 
 type Props = {};
 
 const Middle = (props: Props) => {
   return (
-    <div className="lg:width-[400px] mt-[100px] rounded-[200%] lg:h-[400px] lg:w-2/3">
-      <div className="md:flex md:items-center md:justify-center ">
+    <div className=" mt-[100px] rounded-[200%]  ">
+      <div className="grid items-center  justify-center gap-[20px] bg-white py-8 shadow-xl md:flex lg:relative">
+        <div className="flex  h-[132px] w-[132px] items-center justify-center rounded-[20px] bg-[#DC6563] lg:absolute lg:top-[10px] lg:right-[0px]">
+          <Image
+            src={"/assets/appointment/live-astro.png"}
+            alt={"chat-icon"}
+            width={91}
+            height={91}
+            loading={"lazy"}
+            className=" rounded-[100%]  object-contain"
+          />
+        </div>
+
         <Image
           src={"/assets/appointment/live-astro.png"}
           alt={"chat-icon"}
-          width={300}
+          width={200}
           height={370}
           loading={"lazy"}
-          className=" rounded-[50%]   object-contain"
+          className=" rounded-[100%]   object-contain"
         />
       </div>
+      <Icons />
     </div>
   );
 };

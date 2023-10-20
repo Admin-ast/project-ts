@@ -8,7 +8,7 @@ const Consultation = (props: Props) => {
     <div>
       <div
         className="
-     bg-[] 
+        bg-[url('/assets/home/cloud.png')] 
       bg-cover py-8 lg:py-[49px]"
       >
         <Section>

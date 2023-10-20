@@ -6,7 +6,7 @@ const card = [
   {
     img: "/assets/shop/lovescore.svg",
     name: "Love Score",
-    url: "",
+    url: "/shop/lovescore",
   },
   {
     img: "/assets/shop/onlinepuja.svg",
@@ -26,7 +26,7 @@ const card = [
   {
     img: "/assets/shop/carreereport.svg",
     name: "Career Report",
-    url: "",
+    url: "shop/careerreport",
   },
   {
     img: "/assets/shop/kawach.svg",

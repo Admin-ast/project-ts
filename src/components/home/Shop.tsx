@@ -31,7 +31,7 @@ const shoppingList: ShoppingList[] = [
   {
     name: "Career Report",
     src: "/assets/shop/carreereport.svg",
-    url: "/",
+    url: "/shop/career-report",
   },
   {
     name: "Gemstone",

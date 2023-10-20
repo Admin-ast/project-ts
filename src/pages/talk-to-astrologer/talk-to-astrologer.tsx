@@ -9,6 +9,7 @@ import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
 import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
+import Calling from "@/components/talk-to-astrologer/Calling";
 
 type Props = {};
 
@@ -59,7 +60,7 @@ function TalkAstrologer({}: Props) {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
               Talk To Astrologer
             </p>
           </div>

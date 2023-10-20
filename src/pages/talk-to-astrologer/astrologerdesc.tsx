@@ -17,7 +17,7 @@ const astrologerdesc = (props: Props) => {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
               Talk To Astrologer
             </p>
           </div>
