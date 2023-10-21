@@ -25,7 +25,7 @@ const Table = () => {
             <td className="border-b py-2 px-4 lg:text-xl">Report</td>
             <td className="border-b  py-2 lg:px-20 lg:text-xl">(0.0/query)</td>
             <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
-              <ToggleSwitch />
+              <ToggleSwitch className="bg-[#00AF1C]" anyName="bg-[#CF2927]" />
             </td>
             <td className=" border-b ">
               <button className="bg-[gray] px-[25px] text-lg text-white md:px-[70px]  lg:py-[14px]">
@@ -37,7 +37,7 @@ const Table = () => {
             <td className="border-b py-2 px-4 lg:text-xl">Report</td>
             <td className="border-b  py-2 lg:px-20 lg:text-xl">(0.0/query)</td>
             <td className="border-b py-2 px-8 lg:px-60 lg:text-xl">
-              <ToggleSwitch />
+              <ToggleSwitch className="bg-[#00AF1C]" anyName="bg-[#CF2927]" />
             </td>
             <td className=" border-b ">
               <button className="bg-[#00AF1C] px-[25px] text-lg text-white md:px-[70px]  lg:py-[14px]">

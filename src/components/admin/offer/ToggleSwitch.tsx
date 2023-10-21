@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 
-type Props = {};
+type Props = {
+  className: string;
+  anyName: string;
+};
 
-const ToggleSwitch = (props: Props) => {
+const ToggleSwitch = ({ className, anyName }: Props) => {
   const [isOn, setIsOn] = useState(false);
 
   const handleToggle = () => {
@@ -12,7 +15,7 @@ const ToggleSwitch = (props: Props) => {
     <div className="w-[60px]">
       <label
         className={`flex cursor-pointer items-center rounded-full px-2 py-1 text-xs font-semibold ${
-          isOn ? "bg-green-500" : "bg-gray-300"
+          isOn ? `${className}` : `${anyName}`
         }`}
       >
         <input
@@ -29,7 +32,7 @@ const ToggleSwitch = (props: Props) => {
         ></div>
         {/* Text */}
         <span className={`ml-2 text-white ${isOn ? "" : "text-gray-700"}`}>
-          {isOn ? "ON" : "OFF"}
+          {isOn ? "" : ""}
         </span>
       </label>
     </div>

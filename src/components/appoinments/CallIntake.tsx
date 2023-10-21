@@ -16,6 +16,7 @@ const CallIntake = (props: Props) => {
         rate="Rate your experience"
         language="English, Hindi, Punjabi "
         experience=" 3 years"
+        className=""
       />
     </div>
   );

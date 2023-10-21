@@ -15,13 +15,15 @@ const shop = (props: Props) => {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
+            <p className="bg-[#DC6563]  p-1 px-4 text-[10px] font-medium text-white">
               Shop
             </p>
           </div>
         </Section>
       </div>
-      <Card />
+      <div className="px-8">
+        <Card />
+      </div>
     </div>
   );
 };
