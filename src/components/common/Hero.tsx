@@ -10,7 +10,7 @@ type Props = {
 
 function Hero({ icon, text, subText }: Props) {
   return (
-    <div className="relative bg-gradient-to-b from-[#ffb04d] to-[#dd4327] bg-cover py-8 lg:h-[490px] lg:py-[35px]">
+    <div className="relative h-[300px] bg-gradient-to-b from-[#ffb04d] to-[#dd4327] bg-cover ">
       <Section>
         <div className=" justify-center  lg:grid lg:grid-cols-12">
           <div className="col-span-3"></div>

@@ -30,7 +30,7 @@ const OfferCard = ({
             <p className="">{`${offerName}`}</p>
           </div>
 
-          <ToggleSwitch />
+          <ToggleSwitch className="bg-[#00AF1C]" anyName="bg-[#CF2927]" />
         </div>
         <div className="flex">
           <p className="font-bold">Display Name:</p>

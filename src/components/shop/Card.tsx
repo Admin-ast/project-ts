@@ -26,7 +26,7 @@ const card = [
   {
     img: "/assets/shop/carreereport.svg",
     name: "Career Report",
-    url: "shop/careerreport",
+    url: "/shop/career-report",
   },
   {
     img: "/assets/shop/kawach.svg",
