@@ -1,7 +1,19 @@
 import React from "react";
-import { Button, Form, Input, Textarea } from "../forms";
-import { useForm } from "react-hook-form";
 
+import { useForm } from "react-hook-form";
+import { Button, Form, Input } from "../forms";
+
+type FormData = {
+  fname: string;
+  lname: string;
+  gender: string;
+  dob: string;
+  tob: string;
+  toc: string;
+  bplace: string;
+  mstatus: string;
+  occupation: string;
+};
 type Props = {
   text: string;
   className: string;
@@ -12,13 +24,18 @@ const CallIntakeForm = ({ text, className }: Props) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<FormData>();
 
-  const onSubmit = (data: any) => console.log(data);
-  console.log(errors);
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+  };
+
   return (
     <div
-      className={`border-[1px] border-[#D9D9D9] px-8  py-4 lg:w-2/3 ${className}`}
+      className={`border-[1px] border-[#D9D9D9] px-8  py-4 lg:w-2/3
+     
+      
+       ${className} `}
     >
       <div className="">
         <p className="text-center text-[36px] font-bold ">{text}</p>
@@ -27,178 +44,134 @@ const CallIntakeForm = ({ text, className }: Props) => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <div className="mt-[76px] gap-[89.56px] lg:flex">
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              First Name
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="fname"
               placeholder=""
-              name="hours"
-              label=""
+              name="fname"
+              label=" First Name"
               register={register}
               errors={errors}
+              required="FirstName is required"
             />
           </div>
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Last Name
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="lname"
               placeholder=""
-              name="hours"
-              label=""
+              name="lname"
+              label=" Last Name"
               register={register}
               errors={errors}
+              required="LastName is required"
             />
           </div>
         </div>
         <div className="gap-[89.56px] lg:flex ">
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Gender
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="gender"
               placeholder=""
-              name="hours"
-              label=""
+              name="gender"
+              label="Gender"
               register={register}
               errors={errors}
+              required="Gender is required"
             />
           </div>
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Occupation
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="occupation"
               placeholder=""
-              name="hours"
-              label=""
+              name="occupation"
+              label=" Occupation"
               register={register}
               errors={errors}
+              required="Occupation is required"
             />
           </div>
         </div>
         <div className="gap-[89.56px]  lg:flex">
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Date Of Birth
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="dob"
               placeholder=""
-              name="hours"
-              label=""
+              name="dob"
+              label=" Date Of Birth"
               register={register}
               errors={errors}
+              required="Date of birth is required"
             />
           </div>
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Time Of Birth
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="tob"
               placeholder=""
-              name="hours"
-              label=""
+              name="tob"
+              label=" Time Of Birth"
               register={register}
               errors={errors}
+              required="Time Of Birth is required"
             />
           </div>
         </div>
         <div className="gap-[89.56px]  lg:flex">
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Birth Place
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="bplace"
               placeholder=""
-              name="hours"
-              label=""
+              name="bplace"
+              label="Birth Place"
               register={register}
               errors={errors}
+              required="Birth Place is required"
             />
           </div>
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Marital Status
-            </label>
             <Input
-              className=" h-[50px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[50px]  text-[16px] font-bold "
+              type="text"
+              id="mstatus"
               placeholder=""
-              name="hours"
-              label=""
+              name="mstatus"
+              label=" Marital Status"
               register={register}
               errors={errors}
+              required=" Marital Status is required"
             />
           </div>
         </div>
         <div className="  ">
           <div className="w-full">
-            <label
-              htmlFor=""
-              className="font-[Georgia]  sm:text-base md:text-2xl lg:text-[22px]"
-            >
-              Topic Of Concern
-            </label>
             <Input
-              className=" h-[150px]  text-[16px] font-bold text-white"
-              type="string"
-              id="hours"
+              className=" h-[150px]  text-[16px] font-bold "
+              type="text"
+              id="toc"
               placeholder=""
-              name="hours"
-              label=""
+              name="toc"
+              label=" Topic Of Concern"
               register={register}
               errors={errors}
+              required=" Topic Of Concern is required"
             />
           </div>
 
           <div className="mt-[30.48px] flex items-center justify-center">
             <Button
+              type="submit"
               className="bg-gradient-to-b from-[#FF7646]  to-[#FF0600] text-[16px] font-[500] text-white"
               btnText="Start Call With Anupam "
             />
