@@ -176,10 +176,10 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                     </div>
                   </Dialog.Panel>
                 ) : step === 2 ? (
-                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-[#FFF7E5] text-left align-middle shadow-xl transition-all lg:max-w-lg">
+                  <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all lg:max-w-lg">
                     <Dialog.Title
                       as="h3"
-                      className="text-dark bg-primary relative bg-black/80 py-2 text-lg font-medium leading-6"
+                      className="text-dark bg-primary relative bg-[#DC6563] py-2 text-lg font-medium leading-6"
                     >
                       <p className="text-center text-white">Verify Phone</p>
                       <div className="absolute left-4 top-2">
@@ -208,7 +208,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                         {" "}
                         <Button
                           onClick={handleSubmitOtp}
-                          className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
+                          className="text-dark mx-auto w-full rounded-lg bg-gradient-to-b from-[#fb7038] to-[#df625b] py-2 text-lg font-bold"
                           btnText="Login"
                         />
                       </div>
@@ -218,7 +218,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                   <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl  text-left align-middle shadow-xl transition-all lg:max-w-lg">
                     <Dialog.Title
                       as="h3"
-                      className="text-dark bg-primary relative bg-black/80 py-2 text-lg font-medium leading-6"
+                      className="text-dark bg-primary relative bg-[#DC6563] py-2 text-lg font-medium leading-6"
                     >
                       <p className="text-center text-white">Enter Your Name</p>
                       <div className="absolute left-4 top-2">
@@ -254,7 +254,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                           {" "}
                           <Button
                             type="submit"
-                            className="text-dark mx-auto w-full rounded-lg bg-[#E2CB85] py-2 text-lg font-bold"
+                            className="text-dark mx-auto w-full rounded-lg bg-gradient-to-b from-[#fb7038] to-[#df625b] py-2 text-lg font-bold"
                             btnText="Submit"
                           />
                           <p className="text-center text-[13px] text-gray-500">
