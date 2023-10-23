@@ -83,7 +83,7 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full lg:relative">
-              <div className=" mt-[38px] hidden text-[16px] font-bold lg:flex lg:gap-[29px] ">
+              <div className=" mt-[38px] hidden text-[16px] font-bold lg:flex lg:gap-[20px] ">
                 <Link href="/talk-to-astrologer/talk-to-astrologer">
                   Talk To Astrologer
                 </Link>
