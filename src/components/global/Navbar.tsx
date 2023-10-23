@@ -44,6 +44,9 @@ function Navbar({}: Props) {
   const toggleHoroscope = () => {
     setHoroScopeOpen((prev) => !prev);
   };
+  const toggleLogin = () => {
+    setIsLogged((prev) => !prev);
+  };
   return (
     <>
       {isOpen && (
@@ -72,7 +75,7 @@ function Navbar({}: Props) {
                     <Image
                       src="/assets/mainlogo.png"
                       alt="logo"
-                      width={400}
+                      width={117}
                       height={300}
                       loading={"eager"}
                     />
@@ -82,8 +85,8 @@ function Navbar({}: Props) {
               </Link>
             </div>
 
-            <div className="w-full lg:relative">
-              <div className=" mt-[38px] hidden text-[16px] font-bold lg:flex lg:gap-[20px] ">
+            <div className="w-full ">
+              <div className=" mt-[38px] hidden justify-evenly  px-12 font-bold lg:flex  ">
                 <Link href="/talk-to-astrologer/talk-to-astrologer">
                   Talk To Astrologer
                 </Link>
@@ -93,8 +96,73 @@ function Navbar({}: Props) {
                 <Link href="/astrosevatalk">AstrosevaTalk +</Link>
                 <Link href="/zodic-sign">Zodiac sign</Link>
                 <Link href="/shop/shop">Shop</Link>
+                <div className=" flex   text-base  ">
+                  {!isLogged ? (
+                    <button
+                      onClick={() => {
+                        setIsOpen(true);
+                      }}
+                    >
+                      <Image
+                        src="/assets/home/login.svg"
+                        alt={"chat-icon"}
+                        width={20}
+                        height={20}
+                        loading={"lazy"}
+                        className="w-full object-contain"
+                      />
+                    </button>
+                  ) : (
+                    <PopoverComp
+                      button={
+                        <Image
+                          src="/assets/home/user.png"
+                          alt={"chat-icon"}
+                          width={30}
+                          height={40}
+                          loading={"lazy"}
+                          className="w-full object-contain"
+                        />
+                      }
+                      content={
+                        <div className="flex flex-col gap-2 whitespace-nowrap px-5 py-5 text-left font-normal text-[black] ">
+                          <Link href="/notification">
+                            <div className="cursor-pointer">Notificaton</div>
+                          </Link>
+                          <Link href="/">
+                            <div className="cursor-pointer">
+                              Wallet Transactions
+                            </div>
+                          </Link>
+                          <Link href="/astrologeradmin/astrosevatalkhistory">
+                            <div className="cursor-pointer">Order History</div>
+                          </Link>
+                          <Link href="/astrologeradmin/customersupport">
+                            <div className="cursor-pointer">
+                              Customer Support Chat
+                            </div>
+                          </Link>
+
+                          <div
+                            onClick={handleLogout}
+                            className="cursor-pointer"
+                          >
+                            Logout
+                          </div>
+                          <Link href="/notification">
+                            <div className="cursor-pointer">
+                              Logout From Other Devices
+                            </div>
+                          </Link>
+                        </div>
+                      }
+                    />
+                  )}
+
+                  <div className="mt-2">{/* <MainPage /> */}</div>
+                </div>
               </div>
-              <div className=" mt-[26px] hidden gap-[20px] text-[16px] font-bold lg:relative lg:right-[130px] lg:flex ">
+              <div className=" mt-[26px] hidden w-full justify-evenly font-bold  lg:flex ">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
                 <Link href="live-astrologer/live-astrologer">
@@ -187,43 +255,6 @@ function Navbar({}: Props) {
                 <Link href="/muhurat">Shubh Muhurat</Link>
                 <Link href="/muhurat">Book A Pooja</Link>
                 <Link href="/blog">Blog</Link>
-              </div>
-            </div>
-
-            <div className=" flex items-center space-x-[27px] text-base font-bold ">
-              {!isLogged ? (
-                <button
-                  onClick={() => {
-                    setIsOpen(true);
-                  }}
-                >
-                  Login
-                </button>
-              ) : (
-                <PopoverComp
-                  button={
-                    <Image
-                      src="/assets/home/user.png"
-                      alt={"chat-icon"}
-                      width={40}
-                      height={40}
-                      loading={"lazy"}
-                      className="w-full object-contain"
-                    />
-                  }
-                  content={
-                    <div className="flex flex-col gap-2 whitespace-nowrap px-5 py-5 text-left font-normal text-[black]">
-                      <div className="cursor-pointer">Edit Profile</div>
-                      <div onClick={handleLogout} className="cursor-pointer">
-                        Logout
-                      </div>
-                    </div>
-                  }
-                />
-              )}
-
-              <div className="mt-2">
-                <MainPage />
               </div>
             </div>
           </div>
