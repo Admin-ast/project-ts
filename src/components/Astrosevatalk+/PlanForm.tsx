@@ -24,8 +24,8 @@ const PlanForm = () => {
 
           <div className="">
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className="lg:ml-[120px]  ">
-                <div className="md:w-[310px] lg:w-[430px] ">
+              <div className="lg:  ">
+                <div className=" ">
                   <Select
                     label="Billing Period"
                     name="Choose "
@@ -42,7 +42,7 @@ const PlanForm = () => {
                 </div>
 
                 <div className="mt-[20px] grid-cols-2  gap-[40px] sm:flex md:grid lg:grid">
-                  <div className=" lg:w-[430px] ">
+                  <div className="  ">
                     <label
                       htmlFor=""
                       className="font-[Georgia] text-white sm:text-base md:text-2xl lg:text-[22px] "
@@ -60,7 +60,7 @@ const PlanForm = () => {
                       errors={errors}
                     />
                   </div>
-                  <div className="lg:w-[430px] ">
+                  <div className="">
                     <label
                       htmlFor=""
                       className="font-[Georgia] text-white sm:text-base md:text-2xl lg:text-[22px]"
@@ -78,7 +78,7 @@ const PlanForm = () => {
                       errors={errors}
                     />
                   </div>
-                  <div className="lg:w-[430px] ">
+                  <div className=" ">
                     <Select
                       label="Gender"
                       name="dev"
@@ -93,7 +93,7 @@ const PlanForm = () => {
                       errors={errors}
                     />
                   </div>
-                  <div className="lg:w-[430px] ">
+                  <div className=" ">
                     <Select
                       label="Birth Location"
                       name="dev"
@@ -108,7 +108,7 @@ const PlanForm = () => {
                       errors={errors}
                     />
                   </div>
-                  <div className="lg:w-[430px]">
+                  <div className="lg">
                     <label
                       htmlFor=""
                       className="font-[Georgia] text-white sm:text-base md:text-2xl lg:text-[22px]"
@@ -126,7 +126,7 @@ const PlanForm = () => {
                       errors={errors}
                     />
                   </div>
-                  <div className="lg:w-[430px]">
+                  <div className="lg">
                     <label
                       htmlFor=""
                       className="font-[Georgia] text-white sm:text-base md:text-2xl lg:text-[22px]"
@@ -153,7 +153,7 @@ const PlanForm = () => {
                     Enter Your Email Address
                   </label>
                   <Input
-                    className="h-[50px] bg-[#333233] text-[16px] font-bold text-white lg:w-[990px]"
+                    className="h-[50px] bg-[#333233] text-[16px] font-bold text-white "
                     type="string"
                     id="hours"
                     placeholder=""
@@ -163,7 +163,7 @@ const PlanForm = () => {
                     errors={errors}
                   />
                 </div>
-                <div className="m-auto mt-[100px] mb-[30px] h-[51px] w-[236px] rounded-[10px]  bg-white font-[Georgia] font-bold leading-[25px] lg:ml-[400px] ">
+                <div className="w- mt-[100px] mb-[30px] flex h-[51px] justify-center rounded-[10px]  bg-white font-[Georgia] font-bold leading-[25px]  ">
                   <Button className="text-xl  " btnText="Buy Now" />
                 </div>
               </div>

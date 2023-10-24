@@ -1,4 +1,5 @@
 // import React, { Key, ReactElement } from "react";
+
 // import Link from "next/link";
 // import {
 //   FaFacebook,
@@ -61,7 +62,7 @@
 //   {
 //     id: 2,
 //     title: "Terms & Conditions",
-//     url: "/corporate-info/refund",
+//     url: "/corporate-info/terms",
 //   },
 //   {
 //     id: 3,
@@ -81,7 +82,7 @@
 //   {
 //     id: 6,
 //     title: "Pricing Policy",
-//     url: "/",
+//     url: "/corporate-info/pricing-policy",
 //   },
 // ];
 
@@ -99,17 +100,17 @@
 //   {
 //     id: 3,
 //     title: "Live Astrologer",
-//     url: "/live-astrologer",
+//     url: "/live-astrologer/live-astrologer",
 //   },
 //   {
 //     id: 4,
 //     title: "Chat With Astrologer",
-//     url: "/chat-with-astrologer",
+//     url: "/chat-with-astrologer/chat-with-astrologer",
 //   },
 //   {
 //     id: 5,
 //     title: "Talk With Astrologer",
-//     url: "/talk-with-astrologer",
+//     url: "/talk-to-astrologer/talk-to-astrologer",
 //   },
 //   {
 //     id: 6,
@@ -124,7 +125,7 @@
 //   {
 //     id: 8,
 //     title: "Daily Horoscope",
-//     url: "/horoscope/daily-horoscope",
+//     url: "/horoscope/daily",
 //   },
 //   {
 //     id: 9,
@@ -169,27 +170,27 @@
 //   {
 //     id: 17,
 //     title: "Love problem",
-//     url: "",
+//     url: "/love-problem",
 //   },
 //   {
 //     id: 18,
 //     title: "Festival calendar",
-//     url: "",
+//     url: "/festival-calender",
 //   },
 //   {
 //     id: 19,
 //     title: "Marriage problem",
-//     url: "",
+//     url: "/marriage-problem",
 //   },
 //   {
 //     id: 20,
 //     title: "Mole astrology",
-//     url: "",
+//     url: "/mole-astrology",
 //   },
 //   {
 //     id: 21,
 //     title: "Horary chart peridiction",
-//     url: "/",
+//     url: "/horary-chart-peridiction",
 //   },
 // ];
 
@@ -197,62 +198,62 @@
 //   {
 //     id: 1,
 //     title: "Astro Reviews",
-//     url: "/",
+//     url: "/review/review",
 //   },
 //   {
 //     id: 2,
 //     title: "Kaal Sarp Dosha",
-//     url: "/",
+//     url: "/kaal-sarp-dosha",
 //   },
 //   {
 //     id: 3,
 //     title: "Pitra Dosha",
-//     url: "/",
+//     url: "/pitra-dosha",
 //   },
 //   {
 //     id: 4,
 //     title: "Mangla Dosha",
-//     url: "/",
+//     url: "/mangla-dosha",
 //   },
 //   {
 //     id: 5,
 //     title: "Shani sade shati dosha",
-//     url: "/",
+//     url: "/shani-sade-shati-dosha",
 //   },
 //   {
 //     id: 6,
 //     title: "Child Astrology",
-//     url: "/",
+//     url: "/child-astrology",
 //   },
 //   {
 //     id: 7,
 //     title: "Child education",
-//     url: "/",
+//     url: "/child-education",
 //   },
 //   {
 //     id: 8,
 //     title: "Luck gem stones",
-//     url: "/",
+//     url: "/luck-gem-stones",
 //   },
 //   {
 //     id: 9,
 //     title: "27 Nakshatra",
-//     url: "/",
+//     url: "/nakshatra",
 //   },
 //   {
 //     id: 10,
 //     title: "Numerology",
-//     url: "/",
+//     url: "/numerology",
 //   },
 //   {
 //     id: 11,
 //     title: "Mantras",
-//     url: "/",
+//     url: "/mantras",
 //   },
 //   {
 //     id: 12,
 //     title: "Job promotion",
-//     url: "/",
+//     url: "/job-promotion",
 //   },
 //   {
 //     id: 13,
@@ -262,7 +263,7 @@
 //   {
 //     id: 14,
 //     title: "Web stories",
-//     url: "/",
+//     url: "/web-stories",
 //   },
 //   {
 //     id: 15,
@@ -272,32 +273,32 @@
 //   {
 //     id: 16,
 //     title: "Tarot",
-//     url: "/",
+//     url: "/tarot",
 //   },
 //   {
 //     id: 17,
 //     title: "Collaboration",
-//     url: "/",
+//     url: "/collaboration",
 //   },
 //   {
 //     id: 18,
 //     title: "Vastu",
-//     url: "",
+//     url: "vastu",
 //   },
 //   {
 //     id: 19,
 //     title: "16 direction vastu",
-//     url: "",
+//     url: "16-direction-vastu",
 //   },
 //   {
 //     id: 20,
 //     title: "Money problem vastu",
-//     url: "",
+//     url: "money-problem-vastu",
 //   },
 //   {
 //     id: 21,
 //     title: "Parshan kundali prediction",
-//     url: "",
+//     url: "parshan-kundali-prediction",
 //   },
 // ];
 
@@ -305,124 +306,124 @@
 //   {
 //     id: 1,
 //     title: "Planetary transit",
-//     url: "/",
+//     url: "/planetary-transit",
 //   },
 //   {
 //     id: 2,
 //     title: "Amawasya 2023",
-//     url: "/",
+//     url: "/amawasya",
 //   },
 //   {
 //     id: 3,
 //     title: "Purnima 2023",
-//     url: "/",
+//     url: "/purnima",
 //   },
 //   {
 //     id: 4,
 //     title: "Exam result",
-//     url: "/",
+//     url: "/exam-result",
 //   },
 //   {
 //     id: 5,
 //     title: "Love relation",
-//     url: "/",
+//     url: "/love-relation",
 //   },
 //   {
 //     id: 6,
 //     title: "Love successful remedies",
-//     url: "/",
+//     url: "/love-successful-remedies",
 //   },
 //   {
 //     id: 7,
 //     title: "Baby name suggestions",
-//     url: "/",
+//     url: "/baby-name-suggestions",
 //   },
 //   {
 //     id: 8,
 //     title: "Lal kitab remedies",
-//     url: "/",
+//     url: "/lal-kitab0remedies",
 //   },
 //   {
 //     id: 9,
 //     title: "Gemestones reports",
-//     url: "/",
+//     url: "/gemestones-reports",
 //   },
 //   {
 //     id: 10,
 //     title: "Astroseva Talk  Tv",
-//     url: "/",
+//     url: "/astroseva-talk-tv",
 //   },
 //   {
 //     id: 11,
 //     title: "Money problem",
-//     url: "/",
+//     url: "/money-problem",
 //   },
 //   {
 //     id: 12,
 //     title: "Love problem",
-//     url: "/",
+//     url: "/love-problem",
 //   },
 //   {
 //     id: 13,
 //     title: "Marriage problem",
-//     url: "/shop/shop",
+//     url: "/marriage-problem",
 //   },
 //   {
 //     id: 14,
 //     title: "Child birth problem",
-//     url: "/",
+//     url: "/child-birth-problem",
 //   },
 //   {
 //     id: 15,
 //     title: "Study in abroad",
-//     url: "/",
+//     url: "/study-in-abroad",
 //   },
 //   {
 //     id: 16,
 //     title: "Settle in abroad",
-//     url: "/",
+//     url: "/settle-in-abroad",
 //   },
 //   {
 //     id: 17,
 //     title: "Job promotion",
-//     url: "/",
+//     url: "/job-promotion",
 //   },
 //   {
 //     id: 18,
 //     title: "Court cases",
-//     url: "/",
+//     url: "/court-cases",
 //   },
 //   {
 //     id: 19,
 //     title: "Divorce in marriage",
-//     url: "/",
+//     url: "/divorce-in-marriage",
 //   },
 //   {
 //     id: 20,
 //     title: "Money recovery",
-//     url: "/",
+//     url: "/money-recovery",
 //   },
 //   {
 //     id: 21,
 //     title: "Loan repayment",
-//     url: "/",
+//     url: "/loan-repayment",
 //   },
 // ];
 // const importantLinks4: ImportantLinks4[] = [
 //   {
 //     id: 1,
 //     title: "Money debt",
-//     url: "/",
+//     url: "/money-debt",
 //   },
 //   {
 //     id: 2,
 //     title: "V rat calendar",
-//     url: "/",
+//     url: "/v-rat-calendar",
 //   },
 //   {
 //     id: 3,
 //     title: "Lunar calendar",
-//     url: "/",
+//     url: "/lunar-calendar",
 //   },
 // ];
 
@@ -618,8 +619,10 @@
 //             </div>
 //           </div>
 //         </div>
+//         <p className="mt-8 text-center">
+//           Copyright@2023 V Business IT consultant services{" "}
+//         </p>
 //       </Section>
-//       <p className="text-center mt-8">Copyright@2023 AstrosevaTalk Services Private Limited(Formerly V Business IT consultant service)All Rights Reserved </p>
 //     </div>
 //   );
 // }
@@ -778,7 +781,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 13,
     title: "Namakaran Muhurat",
-    url: "/namakaranmuhurat",
+    url: "/footer/namakaranmuhurat",
   },
   {
     id: 14,
@@ -826,47 +829,47 @@ const importantLinks2: ImportantLinks2[] = [
   {
     id: 1,
     title: "Astro Reviews",
-    url: "/review/review",
+    url: "/astro-reviews",
   },
   {
     id: 2,
     title: "Kaal Sarp Dosha",
-    url: "/kaal-sarp-dosha",
+    url: "/footer/kaal-sarp-dosha",
   },
   {
     id: 3,
     title: "Pitra Dosha",
-    url: "/pitra-dosha",
+    url: "/footer/pitra-dosha",
   },
   {
     id: 4,
     title: "Mangla Dosha",
-    url: "/mangla-dosha",
+    url: "/footer/mangla-dosha",
   },
   {
     id: 5,
     title: "Shani sade shati dosha",
-    url: "/shani-sade-shati-dosha",
+    url: "/footer/shani-sade-shati-dosha",
   },
   {
     id: 6,
     title: "Child Astrology",
-    url: "/child-astrology",
+    url: "/footer/child-astrology",
   },
   {
     id: 7,
     title: "Child education",
-    url: "/child-education",
+    url: "/footer/child-education",
   },
   {
     id: 8,
     title: "Luck gem stones",
-    url: "/luck-gem-stones",
+    url: "/footer/luck-gem-stones",
   },
   {
     id: 9,
     title: "27 Nakshatra",
-    url: "/nakshatra",
+    url: "/footer/nakshatra",
   },
   {
     id: 10,

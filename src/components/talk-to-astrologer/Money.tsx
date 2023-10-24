@@ -47,11 +47,11 @@ const Money = ({ amount }: Props) => {
         <div className="mt-[25px] grid gap-[34px]  px-10 md:grid-cols-2 lg:grid-cols-5 ">
           {amountCard.map((item, index) => (
             <div key={index} className="">
-              <div className="h-[117px] w-[228px] rounded-[15px] border-[1px] border-[#DC6563] shadow-xl">
+              <div className="h-[117px]  rounded-[15px] border-[1px] border-[#DC6563] shadow-xl">
                 <p className="flex items-center justify-center font-[Roboto] text-[30px] font-bold">
                   RS {item.money}
                 </p>
-                <div className="mt-[32px] h-[38px] w-[228px] rounded-b-[15px] bg-[#DC6563]">
+                <div className="mt-[32px] h-[38px]  rounded-b-[15px] bg-[#DC6563]">
                   <p className="text-center text-[20px] text-white ">
                     Rs {item.extra} Extra
                   </p>

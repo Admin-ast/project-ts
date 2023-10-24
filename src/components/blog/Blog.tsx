@@ -105,7 +105,7 @@ const Blog = (props: Props) => {
                 <Link
                   key={index}
                   href={`/blog/${item?.id}`}
-                  className="flex w-[286px] flex-col rounded-[20px] bg-white"
+                  className="flex  flex-col rounded-[20px] bg-white"
                 >
                   <img
                     className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
