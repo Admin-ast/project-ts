@@ -33,7 +33,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="First Name"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                   <div className="">
@@ -45,7 +45,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Gender"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md"
                     />
                   </div>
                 </div>
@@ -59,7 +59,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Date Of Birth*"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                   <div className="">
@@ -71,7 +71,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Time Of Birth*"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="First Name"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                   <div className="">
@@ -130,7 +130,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Gender"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Date Of Birth*"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                   <div className="">
@@ -156,7 +156,7 @@ const LoveForm = (props: Props) => {
                       required={true}
                       label="Time Of Birth*"
                       placeholder={""}
-                      className="!rounded-md md:w-[247px] lg:w-[247px]"
+                      className="!rounded-md "
                     />
                   </div>
                 </div>

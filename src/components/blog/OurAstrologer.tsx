@@ -34,7 +34,7 @@ const OurAstrologer = ({ heading }: Props) => {
           <Link
             key={index}
             href={`/blog/${item?.id}`}
-            className="flex w-[286px] flex-col  rounded-[20px] bg-white shadow-xl"
+            className="flex  flex-col  rounded-[20px] bg-white shadow-xl"
           >
             <div className="ml-20 h-[99px] w-[99px] rounded-full border-[5px] border-[#DC6563] ">
               <Image

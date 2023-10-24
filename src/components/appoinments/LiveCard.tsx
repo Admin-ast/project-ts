@@ -11,7 +11,7 @@ type Props = {
 function LiveCard({ detail }: Props) {
   return (
     <>
-      <div className="relative  mx-auto h-96 w-[300px] cursor-pointer items-center rounded-3xl">
+      <div className="relative  mx-auto h-96  cursor-pointer items-center rounded-3xl">
         <Image
           src={"/assets/appointment/live-astro.png"}
           alt={"chat-icon"}

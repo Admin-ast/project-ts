@@ -39,9 +39,9 @@ const Table = ({
 }: Props) => {
   return (
     <div
-      className={`grid w-full gap-[83px] px-4 py-8 text-black md:px-16 lg:grid-cols-2 lg:px-32 `}
+      className={`grid w-full gap-[83px] px-4 py-8 text-black md:px-16 lg:grid-cols-2 lg:px-32  `}
     >
-      <div className="  rounded-[20px] border-[#A9A9A9]  lg:w-1/2">
+      <div className="  rounded-[20px] border-[#A9A9A9]  ">
         <div className="overflow-x-auto">
           <table className="border-[#A9A9A9]-collapse min-w-full table-fixed border">
             <thead>
@@ -76,7 +76,7 @@ const Table = ({
           </table>
         </div>
       </div>
-      <div className="rounded-[20px] border-[#A9A9A9]  lg:w-1/2">
+      <div className="rounded-[20px] border-[#A9A9A9]  ">
         <div className="overflow-x-auto ">
           <table className="min-w-full table-fixed border-collapse">
             <thead>
