@@ -106,8 +106,8 @@ function Navbar({}: Props) {
                       <Image
                         src="/assets/home/login.svg"
                         alt={"chat-icon"}
-                        width={20}
-                        height={20}
+                        width={10}
+                        height={10}
                         loading={"lazy"}
                         className="w-full object-contain"
                       />
@@ -162,7 +162,7 @@ function Navbar({}: Props) {
                   <div className="mt-2">{/* <MainPage /> */}</div>
                 </div>
               </div>
-              <div className=" mt-[26px] hidden w-full justify-evenly font-bold  lg:flex ">
+              <div className=" mt-[16px] hidden w-full justify-evenly font-bold  lg:flex ">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
                 <Link href="live-astrologer/live-astrologer">

@@ -76,11 +76,11 @@ function Astrologer({}: Props) {
               },
               768: {
                 slidesPerView: 3,
-                spaceBetween: 40,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 40,
+                spaceBetween: 20,
               },
             }}
             autoplay={{
@@ -91,9 +91,9 @@ function Astrologer({}: Props) {
           >
             {astrologers?.map((item, index) => (
               <SwiperSlide key={item.src + index}>
-                <div className="z-10 mt-6 flex flex-col items-center justify-center space-y-4 rounded-2xl bg-white py-4 px-6 shadow-xl">
-                  <div className="h-[120px] w-[120px] rounded-full border-[3px] border-[#D3B160]">
-                    <div className="rounded-full border-[6px] border-[#FEE8A0]">
+                <div className=" mt-6 flex  flex-col items-center justify-center  space-y-4 rounded-2xl bg-white py-4 px-6 shadow-xl">
+                  <div className="h-[120px]   rounded-full ">
+                    <div className="rounded-full border-[6px] border-[#DC6563]">
                       <Image
                         src="/assets/home/review.png"
                         alt={item.name}
@@ -112,14 +112,14 @@ function Astrologer({}: Props) {
             ))}
           </Swiper>
 
-          <div className=" flex items-center justify-center  lg:relative lg:bottom-[150px] ">
-            <div className="z-10  lg:absolute   lg:left-[-40px]">
+          <div className=" flex items-center justify-center  ">
+            <div className=" ">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className={`text-[40px]    text-black  `} />
               </button>
             </div>
 
-            <div className="z-10 lg:absolute     lg:left-[1250px] ">
+            <div className="  ">
               <button className="next cursor-pointer">
                 <AiFillCaretRight className={`text-[40px]    text-black  `} />
               </button>{" "}
