@@ -253,7 +253,7 @@ function Navbar({}: Props) {
                 </ul>
 
                 <Link href="/muhurat">Shubh Muhurat</Link>
-                <Link href="/muhurat">Book A Pooja</Link>
+                <Link href="/shop/online-puja">Book A Pooja</Link>
                 <Link href="/blog">Blog</Link>
               </div>
             </div>

@@ -64,7 +64,7 @@ const links: Links[] = [
   // },
   {
     name: "Book A Pooja",
-    url: "/muhurat",
+    url: "/shop/online-puja",
   },
   {
     name: "Blog",
@@ -81,7 +81,7 @@ function NavMobileData() {
           <p
             className={`cursor-pointer text-[16px] font-bold text-[black] ${
               router.pathname === item.url
-                ? "underline decoration-[#B62022] underline-offset-8"
+                ? "underline decoration-[#DC6563] underline-offset-8"
                 : ""
             }`}
           >
