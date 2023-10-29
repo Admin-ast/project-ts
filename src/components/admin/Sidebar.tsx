@@ -40,27 +40,25 @@ const Sidebar = (props: Props) => {
               className="flex  md:px-[210px] lg:px-10  "
               onClick={toggleOrderHistory}
             >
-              <span className="px-[98px] hover:bg-[#DC6563]">
-                Order History
-              </span>
+              <span className="px-[48px] ">Order History</span>
               <span className={orderHistoryOpen ? " transform" : ""}>
                 &#9662;
               </span>
             </button>
             {orderHistoryOpen && (
-              <ul className="">
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+              <ul className="bg-[#D9D9D9] font-[Georgia] text-[20px] ">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9]   hover:bg-[#DC6563]">
                   <Link href="/astrologeradmin/callhistory">Call History</Link>
                 </li>
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9]  hover:bg-[#DC6563]">
                   <Link href="/astrologeradmin/chathistory">Chat History</Link>
                 </li>
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9]  hover:bg-[#DC6563]">
                   <Link href="/astrologeradmin/reporthistory">
                     Report History
                   </Link>
                 </li>
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9]  hover:bg-[#DC6563]">
                   <Link href="/astrologeradmin/astrosevatalkhistory">
                     AstrosevaTalk History
                   </Link>
@@ -107,19 +105,17 @@ const Sidebar = (props: Props) => {
               className="flex w-full gap-4 px-16 md:px-[240px] lg:px-20 "
               onClick={toggleSupportChat}
             >
-              <span className="hover:bg-[#DC6563] lg:px-[50px]">
-                Support Chat
-              </span>
-              <span className={supportChatOpen ? " transform" : ""}>
+              <span className=" ">Support Chat</span>
+              <span className={supportChatOpen ? " transform " : ""}>
                 &#9662;
               </span>
             </button>
             {supportChatOpen && (
-              <ul className="">
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+              <ul className="bg-[#A9A9A9] font-[Georgia] text-[20px]">
+                <li className="flex items-center justify-around border-[#D9D9D9] border-b-[1x]    hover:bg-[#DC6563]">
                   <Link href="#">Customer Support</Link>
                 </li>
-                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                <li className="flex items-center justify-around border-b-[1px] border-[#D9D9D9]    hover:bg-[#DC6563]">
                   <Link href="/astrologeradmin/chatwithownassistant">
                     Chat with Own Assistant
                   </Link>

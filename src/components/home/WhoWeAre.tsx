@@ -50,7 +50,10 @@ function WhoWeAre({}: Props) {
               nations. Though often regarded as a science throughout its
               history, astrology is widely considered today to be diametrica.
             </p>
-            <Button text="Contact Us" className="mx-auto bg-[#ff301a]" />
+            <Button
+              text="Contact Us"
+              className="mx-auto bg-gradient-to-b from-[#fb7038] to-[#df625b]"
+            />
           </div>
         </div>
       </Section>
