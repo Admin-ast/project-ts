@@ -4017,7 +4017,7 @@
 
 export const card = [
   {
-    id: 1,
+    id: "i_was_aware_of_my_agressiveness",
     url: "/i-was-aware-of-my-agressiveness",
     img: "/assets/blog/blog aggresion-01.svg",
     text: "I was aware of my agressiveness",
@@ -4051,7 +4051,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 2,
+    id: "do_i_posses_the_authority_to_successfully_resolve_ongoing_business_negotiations",
     url: "do-i-posses-the-authority-to-successfully-resolve-ongoing-business-negotiations",
     img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation C-01-01.svg",
     text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
@@ -4087,7 +4087,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 3,
+    id: "free_5_minutes_astrology",
     url: "free-5-minutes-astrology",
     img: "/assets/blog/five min free consultation-01.svg",
     text: "Free 5 minutes Astrology",
@@ -4142,7 +4142,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 4,
+    id: "astrological_remedies_to_get_rid_your_problems_in_life",
     url: "astrological-remedies-to-get-rid-of-your-problems-in-life",
     img: "/assets/blog/ASTROLOGICAL REMEDIES TO GETRID OF YOUR LIFE PROBLEM-01-01.svg",
     text: "Astrological Remedies to get rid of your problems in life",
@@ -4189,7 +4189,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 5,
+    id: "astroseva_talk_to_astrologer_online",
     url: "astroseva-talk-to-astrologer-online",
     img: "/assets/blog/astroseva  talk and talk to astrologer online-01.svg",
     text: "Astroseva Talk & Talk to Astrologer online",
@@ -4246,7 +4246,7 @@ export const card = [
   },
 
   {
-    id: 6,
+    id: "chat_with_us_at_astrosevatalk_for_job_career_promotions_and_more",
     url: "chat-with-us-at-astrosevatalk-for-job-career-promotions-and-more",
     img: "/assets/blog/CHAT WITH US AT ASTROSEVA TALK FOR JOB, CAREER, PROMOTION, AND MORE-01-01.svg",
     text: "Chat with us at AstrosevaTalk for job,career,promotions,and more  ",
@@ -4387,7 +4387,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 7,
+    id: "astrological_guidance_for_students",
     url: "astrological-guidance-for-students",
     img: "/assets/blog/Astrological Guidance for Students-01-01.svg",
     text: "Astrological Guidance for Students",
@@ -4481,7 +4481,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 8,
+    id: "astrology_for_mental_health",
     url: "astrology-for-mental-health",
     img: "/assets/blog/Astrology for Mental Health-01.svg",
     text: "Astrology for Mental Health",
@@ -4527,7 +4527,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 9,
+    id: "astrosevatalk_chat_for_marriage",
     url: "astrosevatalk-chat-for-marriage",
     img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01-01.svg",
     text: "AstrosevaTalk chat for marriage ",
@@ -4564,7 +4564,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 10,
+    id: "best_online_astrology_website_in_India",
     url: "best-online-astrology-website-in-India",
     img: "/assets/blog/Welcome to Astroseva Talk.svg",
     text: "Best Online Astrology website in India ",
@@ -4644,7 +4644,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 11,
+    id: "business_prediction_by_expert_astrologers_of_astroseva_talk",
     url: "business-prediction-by-expert-astrologers-of-astroseva-talk",
     img: "/assets/blog/business predictionby expert astrologer of astrosevatalk-01-01.svg",
     text: "Business Prediction by Expert Astrologers of Astroseva Talk",
@@ -4698,7 +4698,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 12,
+    id: "how_healing_helps_in_balance_chakras",
     url: "how-healing-helps-in-balance-chakras",
     img: "/assets/blog/How healing helps in balance chakras [Recovered]-01-01.svg",
     text: "How healing helps in balance chakras",
@@ -4822,7 +4822,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 13,
+    id: "online_chat_with_astrologer_and_astrology_consultation",
     url: "online-chat-with-astrologer-and-astrology-consultation",
     img: "/assets/blog/Online chat with Astrologer and 24 astrology consultation.svg",
     text: "Online chat with Astrologer and 24*7 Astrology Consultation.",
@@ -4896,7 +4896,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 14,
+    id: "importance_of_vastu_in_home_or_office",
     url: "importance-of-vastu-in-home-or-office",
     img: "/assets/blog/Importance of Vastu in Home or Office-01.svg",
     text: "Importance of Vastu in Home or Office",
@@ -4959,7 +4959,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 15,
+    id: "welcome_to_astrosevva_talk_where_we_explore_the_characteristics_and_traits_of_zodiac_signs",
     url: "welcome-to-astrosevva-talk-where-we-explore-the-characteristics-and-traits-of-zodiac-signs",
     img: "/assets/blog/Welcome to Astroseva Talk [Recovered]-01-01.svg",
     text: "Welcome to Astrosevva talk, where we explore the characteristics and traits of zodiac signs.",
@@ -5479,7 +5479,7 @@ export const card = [
   },
 
   {
-    id: 16,
+    id: "online_astrology_by_date_of_birth",
     url: "online-astrology-by-date-of-birth",
     img: "/assets/blog/online astrology by date of birth.svg",
     text: "Online Astrology by date of birth",
@@ -5571,7 +5571,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 17,
+    id: "solutions_of_health_problems_in_astrology",
     url: "solutions-of-health-problems-in-astrology",
     img: "/assets/blog/solutions of health problems in astrology.png",
     text: "Solutions of Health Problems in Astrology",
@@ -5622,7 +5622,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 18,
+    id: "when_will_i_get_married_astrology_predication",
     url: "when-will-i-get-married-astrology-predication",
     img: "/assets/blog/when will i get married.png",
     text: "When will I get married astrology predication",
@@ -5756,7 +5756,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 19,
+    id: "astrology_free_marriage_prediction",
     img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01.svg",
     url: "Astrology free marriage prediction",
     text: "  Astrology free marriage prediction",
@@ -5807,7 +5807,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 20,
+    id: "astrology_courses_pricing",
     url: "astrology-courses-pricing",
     img: "/assets/blog/Astrology Courses pricing.png",
     text: "  ASTROLOGY COURSES PRICING",
@@ -5859,7 +5859,7 @@ export const card = [
   },
 
   {
-    id: 21,
+    id: "best_astrology_courses_in_india",
     url: "/best-astrology-courses-in-india",
     img: "/assets/blog/best astrology courses.png",
     text: " Best Astrology courses in India",
@@ -5928,7 +5928,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 22,
+    id: "career",
     url: "/career",
     img: "/assets/blog/career.png",
     text: " career",
@@ -5997,7 +5997,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 23,
+    id: "discover_the_benefits_of_online_astrology_consultation",
     url: "/discover-the-benefits-of-online-astrology-consultation",
     img: "/assets/blog/Discover the benefits of online consultancy.png",
     text: " DISCOVER THE BENEFITS OF ONLINE ASTROLOGY CONSULTATION",
@@ -6091,7 +6091,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 24,
+    id: "discover_trusted_online_astrologers",
     url: "/discover-trusted-online-astrologers",
     img: "/assets/blog/discover trusted online astrologer.jpg",
     text: " DISCOVER TRUSTED ONLINE ASTROLOGERS",
@@ -6149,7 +6149,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 25,
+    id: "gain_insights_from_your_financial_horoscope",
     url: "gain-insights-from-your-financial-horoscope",
     img: "/assets/blog/Gain insights from your financial horoscope.png",
     text: "GAIN INSIGHTS FROM YOUR FINANCIAL HOROSCOPE",
@@ -6214,7 +6214,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 26,
+    id: "todays_horoscope_for_health_and_wellness",
 
     url: "/todays-horoscope-for-health-and-wellness",
     img: "/assets/blog/today's horoscope for health and wellness.png",
@@ -6327,7 +6327,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 27,
+    id: "unveiling_the_power_of_astrology_consultation_online",
     url: "/unveiling-the-power-of-astrology-consultation-online",
     img: "/assets/blog/unveiling the cosmos@2x.png",
     text: "  UNVEILING THE POWER OF ASTROLOGY CONSULTATION ONLINE ",
@@ -6397,7 +6397,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 28,
+    id: "when_is_the_best_time_to_launch_a_business_according_to_astrology",
     url: "/when-is-the-best-time-to-launch-a-business-according-to-astrology",
     img: "/assets/blog/when is the best time to launch a business according to astrology.png",
     text: " When is the best time to launch a business according to astrology",
@@ -6461,7 +6461,7 @@ export const card = [
   },
 
   {
-    id: 29,
+    id: "how_can_we_predict_childbirth_using_vedic_astrology",
     url: "/how-can-we-predict-childbirth-using-vedic-astrology",
     img: "/assets/blog/How can we predict childbirth using Vedic astrology-01.svg",
     text: "How can we predict childbirth using vedic astrology",
@@ -6548,7 +6548,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 30,
+    id: "how_can_you_choose_a_lucky_mobile_number_using_numerology",
     url: "/how-can-you-choose-a-lucky-mobile-number-using-numerology",
     img: "/assets/blog/how can you choose a lucky mobile number.png",
     text: "HOW CAN YOU CHOOSE A LUCKY MOBILE NUMBER USING NUMEROLOGY ",
@@ -6599,7 +6599,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 31,
+    id: "what_tarot_card_means_someone_loves_you",
     url: "what-tarot-card-means-someone-loves-you",
     img: "/assets/blog/WHICH tarot card means that someone loves you-01.svg",
     text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
@@ -6694,7 +6694,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 32,
+    id: "which_zodiac_signs_are_the_most_annoying",
     url: "/which-zodiac-signs-are-the-most-annoying",
     img: "/assets/blog/Which zodiac signs are the most annoying-01.svg",
     text: "Which zodiac signs are the most annoying? ",
@@ -6784,7 +6784,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 33,
+    id: "which_zodiac_signs_are_the_most_evil_in_2023",
     url: "which-zodiac-signs-are-the-most-evil-in-2023",
     img: "/assets/blog/Which zodiac signs are the most evil in 2023-01.svg",
     text: "Which zodiac signs are the most evil in 2023 ",
@@ -6874,7 +6874,7 @@ export const card = [
   },
 
   {
-    id: 34,
+    id: "can_astrology_predict_why_you_are_facing_problems_in_your_career",
     url: "/can-astrology-predict-why-you-are-facing-problems-in-your-career",
     img: "/assets/blog/Can astrology predict why you're facing problems in your career-01.svg",
     text: "Can astrology predict why you are facing problems in your career  ",
@@ -6934,7 +6934,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 35,
+    id: "is_your_life_partner_pre_decided",
     url: "/is-your-life-partner-pre-decided",
     img: "/assets/blog/Is your life partner pre-decided-01.svg",
     text: "Is your life partner pre-decided   ",
@@ -7000,7 +7000,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 36,
+    id: "which_zodiac_signs_are_the_most_incompatible",
     url: "/which-zodiac-signs-are-the-most-incompatible",
     img: "/assets/blog/Which zodiac signs are the most incompatible-01.svg",
     text: " Which zodiac signs are the most incompatible   ",
@@ -7084,7 +7084,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 37,
+    id: "which_zodiac_signs_lead_a_luxurious_life",
     url: "/which-zodiac-signs-lead-a-luxurious-life",
     img: "/assets/blog/Which zodiac signs lead a luxurious life-01-01.svg",
     text: "     Which zodiac signs lead a luxurious life   ",
@@ -7163,7 +7163,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 38,
+    id: "how_can_marriage_lines_create_problems_in_marriage",
     url: "/how-can-marriage-lines-create-problems-in-marriage-",
     img: "/assets/blog/How can marriage lines create problems in marriage-01-01.svg",
     text: " How can marriage lines create problems in marriage   ",
@@ -7253,7 +7253,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 39,
+    id: "how_will_your_love_life_be_according_to_your_zodiac_sign",
     url: "/how-will-your-love-life-be-according-to-your-zodiac-sign",
     img: "/assets/blog/How will your love life be according to your zodiac sign.svg",
     text: "How will your love life be according to your zodiac sign    ",
@@ -7373,7 +7373,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 40,
+    id: "should_you_marry_your_boyfriend_despite_your_astrolgers_warning_about_your_horoscope_mismatch",
     url: "/should-you-marry-your-boyfriend-despite-your-astrolgers-warning-about-your-horoscope-mismatch",
     img: "/assets/blog/Should you marry your boyfriend despite your astrologer's warning about your horoscope mismatch-01.svg",
     text: " Should you marry your boyfriend despite your astrolger’s warning about your horoscope mismatch   ",
@@ -7482,7 +7482,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 41,
+    id: "why_is_the_love_for_your_twin_flame_so_strong",
     url: "/why-is-the-love-for-your-twin-flame-so-strong",
     img: "/assets/blog/Why is the love for your twin flame so strong-01-01.png",
     text: " WHY IS THE LOVE FOR YOUR TWIN FLAME SO STRONG   ",
@@ -7566,7 +7566,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 42,
+    id: "how_can_the_auspicious_and_inauspicious_position_of_mars_bring_big_changes_in_life",
     url: "/how-can-the-auspicious-and-inauspicious-position-of-mars-bring-big-changes-in-life",
     img: "/assets/blog/How can the auspicious and inauspicious position of Mars bring big changes in life-01.svg",
     text: "How can the auspicious and inauspicious position of mars bring big changes in life?  ",
@@ -7693,7 +7693,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 43,
+    id: "what_are_the_indications_of_no_marriage_in_vedic_astrology",
     url: "/what-are-the-indications-of-no-marriage-in-vedic-astrology",
     img: "/assets/blog/no marriage.png",
     text: " What are the indications of no marriage in vedic astrology?   ",
@@ -7789,7 +7789,7 @@ export const card = [
     date: "March 31,2023",
   },
   {
-    id: 44,
+    id: "which_zodiac_signs_are_pisces_soulmates",
     url: "/which-zodiac-signs-are-pisces-soulmates",
     img: "/assets/blog/pisces soulmates.png",
     text: " Which zodiac signs are pisces soulmates   ",
