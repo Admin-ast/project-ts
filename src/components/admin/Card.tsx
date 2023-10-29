@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsToggle2Off, BsToggleOn } from "react-icons/bs";
 import Section from "../Section";
 import ToggleSwitch from "./offer/ToggleSwitch";
+import Popup from "./admin/Popup";
+import Link from "next/link";
 
 // type Props = {
 //     title:string,
@@ -14,6 +16,11 @@ import ToggleSwitch from "./offer/ToggleSwitch";
 // }
 
 const Card = ({ title, charges, deliver, users, user, para }: any) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
   const card1 = [
     {
       title: "Special offer to attract new users!",
@@ -94,7 +101,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="font-bold">{items.title}</p>
             <div className="mt-[85px] flex justify-between">
               <ToggleSwitch className="bg-[#00AF1C]" anyName="bg-[#CF2927]" />
-              <button className="bg-white px-2 text-[12px] font-bold">
+              <button className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]">
                 View Discount
               </button>
             </div>
@@ -110,7 +117,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="font-bold">{items.title}</p>
             <p className="text-[12px]">{items.charges}</p>
 
-            <button className="mt-[62px] bg-white px-2 text-[12px] font-bold">
+            <button className="mt-[62px] bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]">
               Click Here
             </button>
           </div>
@@ -126,9 +133,18 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="text-[12px]">{items.charges}</p>
             <p className="text-[12px]">{items.deliver}</p>
             <div className="mt-[49px] flex justify-between">
-              <button className="bg-white px-2 text-[12px] font-bold">
+              <button
+                onClick={togglePopup}
+                className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]"
+              >
                 Show More
               </button>
+              <Popup isOpen={isPopupOpen} onClose={togglePopup} />
+              {/* <div
+      className={`fixed top-0 left-0 w-screen h-screen transition-opacity ${
+        isPopupOpen ? "opacity-50" : "opacity-0 pointer-events-none"
+      } bg-gray-500`}
+    ></div> */}
             </div>
           </div>
         ))}
@@ -143,9 +159,11 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="text-[12px]">{items.charges}</p>
 
             <div className="mt-[52px] flex justify-between">
-              <button className="bg-white px-2 text-[12px] font-bold">
-                Show More
-              </button>
+              <Link href="/astrologeradmin/performance-dashboard">
+                <button className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]">
+                  Show More
+                </button>
+              </Link>
             </div>
           </div>
         ))}
@@ -160,7 +178,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="text-[12px]">{items.charges}</p>
             <p className="text-[12px]">{items.deliver}</p>
             <div className="mt-[32px] flex justify-between">
-              <button className="bg-white px-2 text-[12px] font-bold">
+              <button className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]">
                 Show More
               </button>
             </div>
