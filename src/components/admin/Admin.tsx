@@ -22,6 +22,7 @@ const Admin = () => {
         <div className="mt-[30px] px-4  lg:w-3/4">
           <Card />
           <Table />
+
           <div className="border-b-[2px] border-[#D9D9D9] p-2"></div>
           <TimeTable />
           <MultipleWork />
