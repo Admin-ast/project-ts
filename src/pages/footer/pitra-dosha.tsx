@@ -23,7 +23,9 @@ const pitradosha = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">PITRA DOSHA </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            PITRA DOSHA{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             Pitra dosha is often termed as the curse from forefathers and often
             we begin to have hatred even to our ancestors. However, in reality,
@@ -41,7 +43,7 @@ const pitradosha = (props: Props) => {
             of our proficient astrologers.{" "}
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">What is Pitra Dosha?</p>
           <p className="mt-[10px] text-[18px]">
             A pitta dosha is the ill karmic dosha present in the birth chart of
@@ -57,7 +59,7 @@ const pitradosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">Signs/Impact of Pitra Dosha</p>
           <p className="mt-[10px] text-[18px]">
             The presence of pitta dosha will certainly show its influence on the
@@ -92,7 +94,7 @@ const pitradosha = (props: Props) => {
             individual in some other aspects as well.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             The Causes Behind the Pitra Dosha?
           </p>
@@ -132,7 +134,7 @@ const pitradosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">General Remedies of Pitra Dosha</p>
           <p className="mt-[10px] text-[18px]">
             In Vedic astrology, the pitra dosha has been said to be a highly

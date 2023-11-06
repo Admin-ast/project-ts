@@ -23,7 +23,9 @@ const childastrology = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">CHILD ASTROLOGY </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            CHILD ASTROLOGY{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             Every child is special and comes with several mysterious aspects
             concerning their future. The parents from conceiving the child to
@@ -45,7 +47,7 @@ const childastrology = (props: Props) => {
             the precise child astrology predictions.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">What is Child Astrology? </p>
           <p className="mt-[10px] text-[18px]">
             In simple straightforward words, the child astrology is all about
@@ -60,7 +62,7 @@ const childastrology = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">Child Astrology & Birth Signs </p>
           <p className="mt-[10px] text-[18px]">
             In astrology, the Birth sign is used as the major aspect of making
@@ -73,7 +75,7 @@ const childastrology = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Aries Birth Sign Baby (21st March- 19th April)
           </p>
@@ -88,7 +90,7 @@ const childastrology = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Taurus Birth Sign Baby (20th April- 20th May)
           </p>
@@ -103,7 +105,7 @@ const childastrology = (props: Props) => {
             personalities born under this sign.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Gemini Birth Sign Baby ( 21st May- 20th June)
           </p>
@@ -118,7 +120,7 @@ const childastrology = (props: Props) => {
             personalities born under this sign.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Cancer Baby ( 21st June- 22nd July)
           </p>
@@ -134,7 +136,7 @@ const childastrology = (props: Props) => {
             personalities.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Leo Birth Sign Baby (23rd July-22nd August)
           </p>
@@ -148,7 +150,7 @@ const childastrology = (props: Props) => {
             the two famous personalities born under this sign.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Virgo Birth Sign Baby (23rd August- 22nd September)
           </p>
@@ -156,13 +158,8 @@ const childastrology = (props: Props) => {
             {` The virgo babies are born with the tendency to seek perfection and they are shy and calm in their personality. Virgos have the real character of being honest and they simply can't fake feelings at all. This is the reason why Virgos struggle to make friends since they can't find real people like themselves. The other part of their personality includes their caring nature and compassionate nature. They tend to keep their people much closer to themselves and always share the home bonding with them. Keanu Reaves and Ni Jackson are the famous personalities born under this sign.`}
           </p>
         </div>
-        <div className="mt-[10px]">
-          <p className=" text-3xl font-bold">
-            Libra Birth Sign Baby (23rd September-22nd October)
-          </p>
-          <p className="mt-[10px] text-[18px]"></p>
-        </div>
-        <div className="mt-[10px]">
+
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Scorpion Birth Sign Baby (23rd October-21st November)
           </p>
@@ -176,7 +173,7 @@ const childastrology = (props: Props) => {
             famous personalities born under this sign.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Sagittarius Birth Sign Baby (22nd November-21st December)
           </p>
@@ -190,7 +187,7 @@ const childastrology = (props: Props) => {
             themselves on their feelings.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Capricorn Birth Sign Baby (22nd December-19th January)
           </p>
@@ -204,7 +201,7 @@ const childastrology = (props: Props) => {
             Carrey are the famous personalities who were born under this sign.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">
             Pisces Birth Sign Baby (19th February-20th March)
           </p>

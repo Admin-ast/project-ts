@@ -23,7 +23,7 @@ const solareclipse = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="mt-[20px] text-center text-3xl font-bold">
+          <p className="text-center text-3xl font-bold">
             SOLAR ECLIPSE, DATES, DAYS&TIMINGS{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -43,7 +43,7 @@ const solareclipse = (props: Props) => {
             phenomena accordingly in the religious faith aspects.
           </p>
         </div>
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">What is the Solar Eclipse?</p>
           <p className="mt-[10px] text-[18px]">
             In simple language, a Solar eclipse is the phenomenon where the moon
@@ -66,7 +66,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Significance of Solar Eclipse in Vedic Astrology ( Surya Grahan)
           </p>
@@ -91,7 +91,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Precautions in the Solar Eclipse
           </p>
@@ -116,7 +116,7 @@ const solareclipse = (props: Props) => {
             sun or the moonlight so as to bring positive outcomes.
           </p>
         </div>
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Sutak Kaal Guidelines in Solar Eclipse
           </p>
@@ -154,7 +154,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Impact of Solar Eclipse on Zodiac Signs
           </p>
@@ -293,7 +293,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             General Health Guidelines During Solar Eclipse
           </p>
@@ -339,7 +339,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Special Guidelines for the Pregnant Women for Solar Eclipse
           </p>
@@ -382,7 +382,7 @@ const solareclipse = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[25px] mb-[35px]">
+        <div className="mt-[10px]">
           <p className=" text-3xl font-bold">
             Chat with Astrologers on Astrosevatalk for More Insight on the Solar
             Eclipse

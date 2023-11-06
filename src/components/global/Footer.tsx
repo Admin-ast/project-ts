@@ -150,7 +150,7 @@
 //   {
 //     id: 13,
 //     title: "Namakaran Muhurat",
-//     url: "/namakaranmuhurat",
+//     url: "/footer/namakaranmuhurat",
 //   },
 //   {
 //     id: 14,
@@ -198,47 +198,47 @@
 //   {
 //     id: 1,
 //     title: "Astro Reviews",
-//     url: "/review/review",
+//     url: "/astro-reviews",
 //   },
 //   {
 //     id: 2,
 //     title: "Kaal Sarp Dosha",
-//     url: "/kaal-sarp-dosha",
+//     url: "/footer/kaal-sarp-dosha",
 //   },
 //   {
 //     id: 3,
 //     title: "Pitra Dosha",
-//     url: "/pitra-dosha",
+//     url: "/footer/pitra-dosha",
 //   },
 //   {
 //     id: 4,
 //     title: "Mangla Dosha",
-//     url: "/mangla-dosha",
+//     url: "/footer/mangla-dosha",
 //   },
 //   {
 //     id: 5,
 //     title: "Shani sade shati dosha",
-//     url: "/shani-sade-shati-dosha",
+//     url: "/footer/shani-sade-shati-dosha",
 //   },
 //   {
 //     id: 6,
 //     title: "Child Astrology",
-//     url: "/child-astrology",
+//     url: "/footer/child-astrology",
 //   },
 //   {
 //     id: 7,
 //     title: "Child education",
-//     url: "/child-education",
+//     url: "/footer/child-education",
 //   },
 //   {
 //     id: 8,
 //     title: "Luck gem stones",
-//     url: "/luck-gem-stones",
+//     url: "/footer/luck-gem-stones",
 //   },
 //   {
 //     id: 9,
 //     title: "27 Nakshatra",
-//     url: "/nakshatra",
+//     url: "/footer/nakshatra",
 //   },
 //   {
 //     id: 10,
@@ -771,17 +771,17 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 11,
     title: "Kundli Matching",
-    url: "/kundli-matching",
+    url: "/footer/kundali-match",
   },
   {
     id: 12,
     title: "Shubh Muhurat",
-    url: "/muhurat",
+    url: "/footer/subh-muhurat",
   },
   {
     id: 13,
     title: "Namakaran Muhurat",
-    url: "/footer/namakaranmuhurat",
+    url: "/footer/namakran-muhurat",
   },
   {
     id: 14,
@@ -801,7 +801,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 17,
     title: "Love problem",
-    url: "/love-problem",
+    url: "/footer/love-problem",
   },
   {
     id: 18,
@@ -864,7 +864,7 @@ const importantLinks2: ImportantLinks2[] = [
   {
     id: 8,
     title: "Luck gem stones",
-    url: "/footer/luck-gem-stones",
+    url: "/footer/luck-gemstones",
   },
   {
     id: 9,
@@ -874,17 +874,17 @@ const importantLinks2: ImportantLinks2[] = [
   {
     id: 10,
     title: "Numerology",
-    url: "/numerology",
+    url: "/footer/numerology",
   },
   {
     id: 11,
     title: "Mantras",
-    url: "/mantras",
+    url: "/footer/mantras",
   },
   {
     id: 12,
     title: "Job promotion",
-    url: "/job-promotion",
+    url: "/footer/job-promotion",
   },
   {
     id: 13,
@@ -924,7 +924,7 @@ const importantLinks2: ImportantLinks2[] = [
   {
     id: 20,
     title: "Money problem vastu",
-    url: "money-problem-vastu",
+    url: "/money-problem-vastu",
   },
   {
     id: 21,
@@ -937,7 +937,7 @@ const importantLinks3: ImportantLinks3[] = [
   {
     id: 1,
     title: "Planetary transit",
-    url: "/planetary-transit",
+    url: "/footer/planetary-transit",
   },
   {
     id: 2,
@@ -952,12 +952,12 @@ const importantLinks3: ImportantLinks3[] = [
   {
     id: 4,
     title: "Exam result",
-    url: "/exam-result",
+    url: "/footer/exam-result",
   },
   {
     id: 5,
     title: "Love relation",
-    url: "/love-relation",
+    url: "/footer/love-relation",
   },
   {
     id: 6,
@@ -967,7 +967,7 @@ const importantLinks3: ImportantLinks3[] = [
   {
     id: 7,
     title: "Baby name suggestions",
-    url: "/baby-name-suggestions",
+    url: "/footer/baby-name-suggestions",
   },
   {
     id: 8,
@@ -987,55 +987,46 @@ const importantLinks3: ImportantLinks3[] = [
   {
     id: 11,
     title: "Money problem",
-    url: "/money-problem",
+    url: "/footer/money-problem",
   },
+
   {
     id: 12,
-    title: "Love problem",
-    url: "/love-problem",
-  },
-  {
-    id: 13,
-    title: "Marriage problem",
-    url: "/marriage-problem",
-  },
-  {
-    id: 14,
     title: "Child birth problem",
     url: "/child-birth-problem",
   },
   {
-    id: 15,
+    id: 13,
     title: "Study in abroad",
-    url: "/study-in-abroad",
+    url: "/footer/study-in-abroad",
+  },
+  {
+    id: 14,
+    title: "Settle in abroad",
+    url: "/footer/settle-in-abroad",
+  },
+  {
+    id: 15,
+    title: "Job promotion",
+    url: "/footer/job-promotion",
   },
   {
     id: 16,
-    title: "Settle in abroad",
-    url: "/settle-in-abroad",
+    title: "Court cases",
+    url: "/footer/court-cases",
   },
   {
     id: 17,
-    title: "Job promotion",
-    url: "/job-promotion",
-  },
-  {
-    id: 18,
-    title: "Court cases",
-    url: "/court-cases",
-  },
-  {
-    id: 19,
     title: "Divorce in marriage",
     url: "/divorce-in-marriage",
   },
   {
-    id: 20,
+    id: 18,
     title: "Money recovery",
     url: "/money-recovery",
   },
   {
-    id: 21,
+    id: 19,
     title: "Loan repayment",
     url: "/loan-repayment",
   },
@@ -1044,7 +1035,7 @@ const importantLinks4: ImportantLinks4[] = [
   {
     id: 1,
     title: "Money debt",
-    url: "/money-debt",
+    url: "/footer/money-debt",
   },
   {
     id: 2,

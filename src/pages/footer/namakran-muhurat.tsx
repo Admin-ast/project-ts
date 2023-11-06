@@ -16,14 +16,16 @@ const namakaramuhurat = (props: Props) => {
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
           <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-          <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
+          <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium ">
             NAMAKRAN MUHURAT
           </p>
         </div>
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">NAMAKRAN MUHURAT </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            NAMAKRAN MUHURAT{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             Are you seeking the most auspicious muhurat to name your newly born?
             After all, for how long will you keep calling your kid with the
@@ -38,7 +40,7 @@ const namakaramuhurat = (props: Props) => {
             auspicious periods of the Namakran muhurta.{" "}
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">What is Namkaran Muhurat? </p>
           <p className="mt-[10px] text-[18px]">
             The Namakran muhurat is the specific period that is considered
@@ -57,7 +59,7 @@ const namakaramuhurat = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             How Does Namkaran Muhurat Work ?
           </p>
@@ -80,7 +82,7 @@ const namakaramuhurat = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Why is Namakran Muhurat Significant?
           </p>
@@ -96,7 +98,7 @@ const namakaramuhurat = (props: Props) => {
             in Hinduism across the country.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">
             Check out the Namakran Muhurta for your Child at Astrosevatalk
           </p>
