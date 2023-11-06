@@ -23,7 +23,9 @@ const mangladosha = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">MANGAL DOSHA </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            MANGAL DOSHA{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             Mangal dosha is one of the most discussed and widely popular dosha
             in Vedic astrology that we often get to hear. As the name suggests
@@ -42,7 +44,7 @@ const mangladosha = (props: Props) => {
             eliminate the mangal dosha from the {`native's`} life.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             A Brief Understanding of Mangal Dosha
           </p>
@@ -63,7 +65,7 @@ const mangladosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">Why Does Mangal Dosha Happen?</p>
           <p className="mt-[10px] text-[18px]">
             Well, the mangal dosha being the highly inauspicious dosha has its
@@ -85,7 +87,7 @@ const mangladosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Impact/Influence of Mangal Dosha
           </p>
@@ -127,8 +129,8 @@ const mangladosha = (props: Props) => {
             professional life.
           </p>
           <p className="mt-[10px] text-[18px]">
-            ● 12thThe house placement of Mars will determine the spending habits
-            of the natives.
+            ● 12th The house placement of Mars will determine the spending
+            habits of the natives.
           </p>
           <p className="mt-[10px] text-[18px]">
             Kindly note that all of these above-mentioned issues of mangal dosha
@@ -137,7 +139,7 @@ const mangladosha = (props: Props) => {
             place.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">
             Neutralization of Mangal Dosha Effect
           </p>

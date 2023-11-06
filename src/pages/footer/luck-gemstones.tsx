@@ -23,7 +23,9 @@ const luckgemstones = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">LUCK GEMSTONES </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            LUCK GEMSTONES{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             Gemstones have been widely used in Vedic astrology for their
             influence over all the zodiac signs in different forms. People who
@@ -51,7 +53,7 @@ const luckgemstones = (props: Props) => {
             of all the natives.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">1. Aries Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Aries is the first zodiac sign and this gemstone finds its perfect
@@ -64,7 +66,7 @@ const luckgemstones = (props: Props) => {
             Aries natives.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">2. Taurus Lucy Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Taurus is although the exotic bull sign yet its actual properties
@@ -78,7 +80,7 @@ const luckgemstones = (props: Props) => {
             brings much-needed stability to the natives.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">3. Gemini Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Gemini is an air sign and it goes well with the Agate gemstone in
@@ -89,7 +91,7 @@ const luckgemstones = (props: Props) => {
             in all aspects of their lives.{" "}
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">4. Cancer Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Cancer is the water gemstone and it makes its profound connection
@@ -100,7 +102,7 @@ const luckgemstones = (props: Props) => {
             profoundly.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">5. Leo Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Leo is the fire sign and {`it's`} perfectly complemented by the
@@ -112,7 +114,7 @@ const luckgemstones = (props: Props) => {
             profoundly.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">6. Virgo Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Virgo is another earthly sign which finds its sheer compatibility
@@ -123,7 +125,7 @@ const luckgemstones = (props: Props) => {
             amount of focus to those who feel diverted from the path of life.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">7. Libra Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Libra is another air sign zodiac which goes well with the peridot
@@ -136,7 +138,7 @@ const luckgemstones = (props: Props) => {
             in the family and maintain love and fairness all the way around.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">8. Scorpio Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Topaz is the ideal gemstone for all the natives born under the
@@ -149,7 +151,7 @@ const luckgemstones = (props: Props) => {
             growth.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">9. Sagittarius Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             The radiant turquoise is the lucky gemstone for all the natives born
@@ -161,7 +163,7 @@ const luckgemstones = (props: Props) => {
             spiritual and the materialistic journey of life.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">10. Capricorn Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Capricorn is the earthly sign and it thrives with the Garnet
@@ -174,7 +176,7 @@ const luckgemstones = (props: Props) => {
             themselves deeply.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">11. Aquarius Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Aquarius is the air sign and it is compatible with the amethyst
@@ -185,7 +187,7 @@ const luckgemstones = (props: Props) => {
             becomes having the inner self clarity most joyfully.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">12. Pisces Lucky Gemstone </p>
           <p className="mt-[10px] text-[18px]">
             Pisces is the last birth sign in our list and it is the water sign
@@ -198,7 +200,7 @@ const luckgemstones = (props: Props) => {
             gemstone further enhances the similar traits in their personality.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">Conclusion</p>
           <p className="mt-[10px] text-[18px]">
             Gemstones are highly auspicious for those who believe in their

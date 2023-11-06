@@ -23,11 +23,13 @@ const kaalsarpdosha = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">KAAL SARP DOSHA </p>
-          <p className="mt-[10px] text-[18px]">
-            {` Do you often wonder why you arent getting the fable results despite having the healthy placement of the planets in your birth chart? Well, there can be the probability of the kaal sarp dosha in your birth chart which is the cause of several types of misfortunes. Kaal Sarp dosha is one of the least known yet highly inauspicious dosha in one's birth chart. Often it happens that most of us are not even aware of the presence of this dosha in our birth chart. {" "}`}
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            KAAL SARP DOSHA{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
+            {` Do you often wonder why you arent getting the fable results despite having the healthy placement of the planets in your birth chart? Well, there can be the probability of the kaal sarp dosha in your birth chart which is the cause of several types of misfortunes. Kaal Sarp dosha is one of the least known yet highly inauspicious dosha in one's birth chart. Often it happens that most of us are not even aware of the presence of this dosha in our birth chart.`}
+          </p>
+          <p className="mt-[25px] text-[18px]">
             At Astrosevatalk we have the systematic assessment of the kaal sarp
             dosha by analyzing the birthchart of the native. The astrologers at
             Astrosevatalk also offer the 100% solution or the nivaran of kaal
@@ -37,7 +39,7 @@ const kaalsarpdosha = (props: Props) => {
             late.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">What Is Kal Sarp Dosha?</p>
           <p className="mt-[10px] text-[18px]">
             As the name suggests the Kaal sarp dosha is concerned with the ill
@@ -59,7 +61,7 @@ const kaalsarpdosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Impact & Influence of Kaal Sarp Dosha
           </p>
@@ -78,7 +80,7 @@ const kaalsarpdosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">
             Chat with Astrologers and get the Kaal Sarp Dosha Remedies
           </p>

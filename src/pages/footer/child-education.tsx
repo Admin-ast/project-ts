@@ -23,13 +23,15 @@ const childeducation = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">CHILD EDUCATION </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            CHILD EDUCATION{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
-            {` Astrology has been a vast domain having its applications in all areas of our lives including the education sector. In fact in the present time, Astrology has become the pathfinder for most in terms of their educational pursuit. If you have kids who are just getting started with their education then you can certainly have logical insight into their education prospects. It is often seen that most parents worry too much about about about concerned with their children's education. Of course, every parent wants the best possible and the right path of education for their kids. This is where astrology can come forward with its dedicated role to guide parents in finding the right path of education for their kids from a very early age. {" "}`}
+            {` Astrology has been a vast domain having its applications in all areas of our lives including the education sector. In fact in the present time, Astrology has become the pathfinder for most in terms of their educational pursuit. If you have kids who are just getting started with their education then you can certainly have logical insight into their education prospects. It is often seen that most parents worry too much about about about concerned with their children's education. Of course, every parent wants the best possible and the right path of education for their kids. This is where astrology can come forward with its dedicated role to guide parents in finding the right path of education for their kids from a very early age.`}
           </p>
         </div>
         <div className="">
-          <p className="text-center text-3xl font-bold">
+          <p className="mt-[25px] text-center text-3xl font-bold">
             Astrology in Child Education{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -37,7 +39,7 @@ const childeducation = (props: Props) => {
           </p>
         </div>
         <div className="">
-          <p className="text-center text-3xl font-bold">
+          <p className="mt-[25px] text-center text-3xl font-bold">
             How Does Astrology Work for Child Education?{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -94,8 +96,8 @@ const childeducation = (props: Props) => {
             significantly education and profession of the child.
           </p>
         </div>
-        <div className="">
-          <p className="text-center text-3xl font-bold">
+        <div className="mt-[25px] mb-[35px]">
+          <p className="text-center text-3xl font-bold ">
             Chat with Astrologers for Your {`Child's`} Education Prediction
           </p>
           <p className="mt-[10px] text-[18px]">

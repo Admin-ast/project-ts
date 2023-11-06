@@ -24,12 +24,12 @@ const PlanForm = () => {
 
           <div className="">
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className="lg:  ">
+              <div className="  ">
                 <div className=" ">
                   <Select
                     label="Billing Period"
-                    name="Choose "
-                    id="lol"
+                    name="bperiod "
+                    id="bperiod"
                     register={register}
                     required={true}
                     options={[
@@ -52,9 +52,9 @@ const PlanForm = () => {
                     <Input
                       className=" h-[50px] bg-[#333233] text-[16px] font-bold text-white "
                       type="string"
-                      id="hours"
+                      id="fname"
                       placeholder=""
-                      name="hours"
+                      name="fName"
                       label=""
                       register={register}
                       errors={errors}
@@ -70,24 +70,24 @@ const PlanForm = () => {
                     <Input
                       className=" h-[50px] bg-[#333233] text-[16px] font-bold text-white"
                       type="string"
-                      id="hours"
+                      id="lname"
                       placeholder=""
-                      name="hours"
+                      name="lName"
                       label=""
                       register={register}
                       errors={errors}
                     />
                   </div>
-                  <div className=" ">
+                  <div className="">
                     <Select
                       label="Gender"
                       name="dev"
-                      id="lol"
+                      id="gender"
                       register={register}
                       required={true}
                       options={[
-                        { label: "Option 1", value: "option1" },
-                        { label: "Option 2", value: "option2" },
+                        { label: "Male", value: "Male" },
+                        { label: "Female", value: "Female" },
                         // Add your options here
                       ]}
                       errors={errors}
@@ -96,8 +96,8 @@ const PlanForm = () => {
                   <div className=" ">
                     <Select
                       label="Birth Location"
-                      name="dev"
-                      id="lol"
+                      name="bLocation"
+                      id="blocation"
                       register={register}
                       required={true}
                       options={[
@@ -118,9 +118,9 @@ const PlanForm = () => {
                     <Input
                       className=" h-[50px] bg-[#333233] text-[16px] font-bold text-white"
                       type="string"
-                      id="hours"
+                      id="dob"
                       placeholder=""
-                      name="hours"
+                      name="dob"
                       label=""
                       register={register}
                       errors={errors}
@@ -136,9 +136,9 @@ const PlanForm = () => {
                     <Input
                       className=" h-[50px] bg-[#333233] text-[16px] font-bold text-white"
                       type="string"
-                      id="hours"
+                      id="tob"
                       placeholder=""
-                      name="hours"
+                      name="tob"
                       label=""
                       register={register}
                       errors={errors}
@@ -155,16 +155,16 @@ const PlanForm = () => {
                   <Input
                     className="h-[50px] bg-[#333233] text-[16px] font-bold text-white "
                     type="string"
-                    id="hours"
+                    id="email"
                     placeholder=""
-                    name="hours"
+                    name="email"
                     label=""
                     register={register}
                     errors={errors}
                   />
                 </div>
-                <div className="w- mt-[100px] mb-[30px] flex h-[51px] justify-center rounded-[10px]  bg-white font-[Georgia] font-bold leading-[25px]  ">
-                  <Button className="text-xl  " btnText="Buy Now" />
+                <div className=" mt-[100px] mb-[30px] flex h-[51px] items-center justify-center rounded-[10px]  bg-white font-[Georgia] font-bold leading-[25px]  ">
+                  <Button className="text-xl   " btnText="Buy Now" />
                 </div>
               </div>
             </Form>

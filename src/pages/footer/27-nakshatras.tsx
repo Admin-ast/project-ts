@@ -23,7 +23,9 @@ const nakshatra = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">27 Nakshatras </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            27 Nakshatras{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             {`Nakshatra is the familiar terminology in Vedic astrology which holds
             immense significance. It is the term that is used to denote the
@@ -36,10 +38,10 @@ const nakshatra = (props: Props) => {
             associated the moon takes 28 days to move into a zodiac sign and
             marks its stay for the 2,3 days in the sign. Moon is the ruler of
             all the Nakshatras and thus these Nakshatras can largely determine
-            the life predictions of the native.{" "}`}
+            the life predictions of the native.`}
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">Significance of Nakshatra </p>
           <p className="mt-[10px] text-[18px]">
             In Vedic astrology, the whole concept of Nakshatras is highly
@@ -58,7 +60,7 @@ const nakshatra = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">How Do I Know My Nakshatra?</p>
           <p className="mt-[10px] text-[18px]">
             Well, to figure out your Nakshatra you simply need to have accurate
@@ -74,7 +76,7 @@ const nakshatra = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Types of Nakshatra in Vedic Astrology
           </p>
@@ -127,7 +129,7 @@ const nakshatra = (props: Props) => {
             overall behaviour.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Nakshatras Vs the Zodiac Signs in the Vedic Astrology
           </p>
@@ -150,7 +152,7 @@ const nakshatra = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">
             Role and Significance of Nakshatras in Vedic Astrology
           </p>

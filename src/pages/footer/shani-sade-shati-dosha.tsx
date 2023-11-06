@@ -23,7 +23,9 @@ const shanisadeshatidosha = (props: Props) => {
       </div>
       <Section>
         <div className="">
-          <p className="text-center text-3xl font-bold">SHANI SADE SATI </p>
+          <p className="mt-[20px] text-center text-3xl font-bold">
+            SHANI SADE SATI{" "}
+          </p>
           <p className="mt-[10px] text-[18px]">
             The astrological phenomena of Shani sade sati is one of the highly
             known across the Hindu mythology belief. It is also one of the most
@@ -43,7 +45,7 @@ const shanisadeshatidosha = (props: Props) => {
             such doshas in the {`native's`} birth chart.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">What is Shani Sade Sati?</p>
           <p className="mt-[10px] text-[18px]">
             Shani sade sati is an Astrological phenomenon or the event in which
@@ -60,7 +62,7 @@ const shanisadeshatidosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">Significance of Shani Sade Sati</p>
           <p className="mt-[10px] text-[18px]">
             Shani Sade Sati in the Hindu or Vedic astrology mythology is known
@@ -77,7 +79,7 @@ const shanisadeshatidosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className=" text-3xl font-bold">
             Influence/Impact of Shani Sade Sati
           </p>
@@ -94,7 +96,7 @@ const shanisadeshatidosha = (props: Props) => {
             individual.
           </p>
         </div>
-        <div className="mt-[10px]">
+        <div className="mt-[25px]">
           <p className="mt-[10px] text-[20px]">
             1. First Phase of Shani Sade Sati
           </p>
@@ -142,7 +144,7 @@ const shanisadeshatidosha = (props: Props) => {
           </p>
         </div>
 
-        <div className="mt-[10px]">
+        <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">Remedies for Shani Sade Sati</p>
           <p className="mt-[10px] text-[18px]">
             Just like any other inauspicious or challenging dosha in Vedic
