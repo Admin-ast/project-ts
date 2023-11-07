@@ -20,14 +20,13 @@ const performanceDashboard = (props: Props) => {
         </div>
         <div className="mt-[45px] lg:w-3/4">
           <div className="grid  items-center justify-center gap-10 md:flex lg:flex ">
-            <p className="flex items-center justify-center rounded-[43px] bg-[#CF2927] px-16 font-[Roboto] text-[24px] font-bold text-white lg:h-[63px] ">
+            <p className="flex items-center justify-center rounded-[43px] bg-[#CF2927] px-16 font-[Roboto] text-[18px] font-bold text-white md:text-[24px] lg:h-[63px] lg:text-[24px] ">
               Performance Dashboard
             </p>
           </div>
           <div className="w-full">
             <Header />
             <CardBoard />
-            <PerformanceInformation />
           </div>
         </div>
       </div>

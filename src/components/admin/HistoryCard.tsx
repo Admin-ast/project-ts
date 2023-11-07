@@ -71,11 +71,12 @@ const HistoryCard = ({
           <span>{`${dob}`}</span>
         </div>
 
-        <div className="flex justify-between">
-          <p className="font-bold">
-            POB: <span>{`${pob}`}</span>
-          </p>
-          <button className="mr-5 rounded-[10px] border-[1px] border-[#FF0600] px-5 py-1">
+        <div className="flex justify-between gap-1">
+          <div className="flex">
+            <p className="font-bold">POB:</p>
+            <span>{`${pob}`}</span>
+          </div>
+          <button className="rounded-[10px] border-[1px] border-[#FF0600] px-1 py-[1px]">
             {copy}
           </button>
         </div>
@@ -102,10 +103,10 @@ const HistoryCard = ({
         </div>
 
         <div className="mt-[20px] flex gap-10">
-          <button className="rounded-[10px] border-[1px] border-[#FF0600] bg-[#FF7646] px-10 py-2 font-semibold text-white">
+          <button className="rounded-[10px] border-[1px] border-[#FF0600] bg-[#FF7646] px-2 py-2 font-semibold text-white">
             {btn2}
           </button>
-          <button className="rounded-[10px] border-[1px] border-[#FF0600] px-10 py-2 font-semibold">
+          <button className="rounded-[10px] border-[1px] border-[#FF0600] px-2 py-2 font-semibold">
             {btn3}
           </button>
         </div>

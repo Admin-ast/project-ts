@@ -8,8 +8,8 @@ const CallingHistory = (props: Props) => {
   return (
     <div className="">
       <div
-        className="h-[78px]
-     w-full bg-[#d12627cc]"
+        className="from-0%
+     to-68% h-[78px] w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
       ></div>
       <div className="lg:flex">
         <div className="lg:w-1/4">
@@ -17,7 +17,7 @@ const CallingHistory = (props: Props) => {
         </div>
         <div className="mt-[45px] text-center lg:w-3/4">
           {" "}
-          <span className="mt-[45px] rounded-[43px] bg-[#CF2927]  px-10 py-4 text-xl font-bold text-white ">
+          <span className="mt-[45px] rounded-[43px] bg-[#DC6563]  px-10 py-4 text-xl font-bold text-white ">
             CALLING HISTORY
           </span>
           <div className="mt-[30px] grid gap-[45px] md:grid-cols-2 lg:grid-cols-3 ">

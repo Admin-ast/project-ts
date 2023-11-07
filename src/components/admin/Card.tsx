@@ -17,8 +17,12 @@ import Link from "next/link";
 
 const Card = ({ title, charges, deliver, users, user, para }: any) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPolicyPopupOpen, setIsPolicyPopupOpen] = useState(false);
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
+  };
+  const togglePolicyPopup = () => {
+    setIsPolicyPopupOpen(!isPolicyPopupOpen);
   };
 
   const card1 = [
@@ -134,17 +138,21 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="text-[12px]">{items.deliver}</p>
             <div className="mt-[49px] flex justify-between">
               <button
-                onClick={togglePopup}
+                onClick={togglePolicyPopup}
                 className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]"
               >
                 Show More
               </button>
-              <Popup isOpen={isPopupOpen} onClose={togglePopup} />
-              {/* <div
-      className={`fixed top-0 left-0 w-screen h-screen transition-opacity ${
-        isPopupOpen ? "opacity-50" : "opacity-0 pointer-events-none"
-      } bg-gray-500`}
-    ></div> */}
+              <Popup
+                heading="Important Policies"
+                isOpen={isPolicyPopupOpen}
+                onClose={togglePolicyPopup}
+              />
+              <div
+                className={`fixed top-0 left-0 h-screen w-screen transition-opacity ${
+                  isPopupOpen ? "opacity-50" : "pointer-events-none opacity-0"
+                } bg-gray-500`}
+              ></div>
             </div>
           </div>
         ))}
@@ -178,9 +186,22 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
             <p className="text-[12px]">{items.charges}</p>
             <p className="text-[12px]">{items.deliver}</p>
             <div className="mt-[32px] flex justify-between">
-              <button className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]">
+              <button
+                onClick={togglePopup}
+                className="bg-white px-2 text-[12px] font-bold hover:bg-[#DC6563]"
+              >
                 Show More
               </button>
+              <Popup
+                heading="Notice Board"
+                isOpen={isPopupOpen}
+                onClose={togglePopup}
+              />
+              <div
+                className={`fixed top-0 left-0 h-screen w-screen transition-opacity ${
+                  isPopupOpen ? "opacity-50" : "pointer-events-none opacity-0"
+                } bg-gray-500`}
+              ></div>
             </div>
           </div>
         ))}

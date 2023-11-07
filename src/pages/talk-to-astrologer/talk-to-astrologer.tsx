@@ -10,6 +10,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
 import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
 import Calling from "@/components/talk-to-astrologer/Calling";
+import SkillDetail from "@/components/Signup/SkillDetail";
 
 type Props = {};
 
