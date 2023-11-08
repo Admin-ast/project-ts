@@ -9,7 +9,7 @@ type Props = {};
 
 const Astrologers = (props: Props) => {
   return (
-    <div className="">
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div
         className="h-[78px]
    w-full bg-[#d12627cc]"

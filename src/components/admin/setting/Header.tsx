@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -19,7 +20,9 @@ const Header = ({ firstBtn, secondBtn, thirdBtn, className = "" }: Props) => {
         <div
           className={`rounded-[5px] border-[1px] border-[#d12627cc] bg-[#FFFFFF] px-4 py-2 font-bold ${className}`}
         >
-          <button className="">{`${secondBtn}`}</button>
+          <Link href="/astrologeradmin/live-event-dp">
+            <button className="">{`${secondBtn}`}</button>
+          </Link>
         </div>
       </div>
       <div

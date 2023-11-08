@@ -12,14 +12,14 @@ const Admin = () => {
   return (
     <div className="">
       <div
-        className="h-[78px]
-     w-full bg-[#d12627cc]"
+        className="from-0%
+     to-68% h-[78px] w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
       ></div>
       <div className="lg:flex ">
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="mt-[30px] px-4  lg:w-3/4">
+        <div className="mt-[30px] h-screen  overflow-y-auto px-4 lg:w-3/4">
           <Card />
           <Table />
 

@@ -52,13 +52,13 @@ const AstrosevaTalkHistorycard = ({
           <p className="font-bold">Quantity: </p>
           <span>{`${quantity}`}</span>
         </div>
-        <div className="flex">
-          <p className="font-bold">{`${date}`} </p>
+        <div className="flex text-[#A9A9A9]">
+          <p className="">{`${date}`} </p>
           <span>{`${time}`}</span>
         </div>
         <div className="flex">
           <p className="font-bold">Status: </p>
-          <span>{`${status}`}</span>
+          <span className="text-[#3E5DAB]">{`${status}`}</span>
         </div>
       </div>
     </div>

@@ -19,14 +19,14 @@ const ProductTags = (props: Props) => {
           </div>
         </div>
         <div className="border-b-[1px] border-[#A9A9A9] "></div>
-        <div className="mt-2 justify-between px-2 md:flex lg:flex ">
+        <div className="mt-2 justify-between  md:flex lg:flex ">
           <input
             type="text"
             name=""
             id=""
             className="rounded-[5px] border-[1px] border-[#A9A9A9] px-5"
           />
-          <button className="border-[1px] border-[#DC6563] px-5 text-base text-[#DC6563]">
+          <button className="border-[1px] border-[#DC6563]  text-base text-[#DC6563]">
             Add
           </button>
         </div>

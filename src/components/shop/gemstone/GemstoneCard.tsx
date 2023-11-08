@@ -13,7 +13,7 @@ const card = [
   {
     img: "/assets/shop/onlinepuja.svg",
     name: "222",
-    url: "",
+    url: "/",
     para: "15 Ratti Amethyst",
     para1: "Represent Magic | Mystery | Royalty | Good Judgment.",
   },

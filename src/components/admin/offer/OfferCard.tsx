@@ -27,19 +27,19 @@ const OfferCard = ({
         <div className="flex justify-between">
           <div className="">
             <p className="font-bold">Offer Name:</p>
-            <p className="">{`${offerName}`}</p>
+            <p className="text-[#3E5DAB]">{`${offerName}`}</p>
           </div>
 
           <ToggleSwitch className="bg-[#00AF1C]" anyName="bg-[#CF2927]" />
         </div>
         <div className="flex">
           <p className="font-bold">Display Name:</p>
-          <p className="">({`${displayName}`})</p>
+          <p className="text-[#00AF1C]">{`${displayName}`}</p>
         </div>
 
         <div className="flex">
           <p className="font-bold">UserType: </p>
-          <span className="text-green-700">{`${userType}`}</span>
+          <span className="text-[#00AF1C]">{`${userType}`}</span>
         </div>
 
         <div className="grid grid-cols-1">
@@ -50,7 +50,7 @@ const OfferCard = ({
             <p className="font-bold">AT Share: </p>
           </div>
           <div className="flex items-center">
-            <p>{`${atShare}`}</p>
+            <p className="text-[#00AF1C]">{`${atShare}`}</p>
             <p className="mx-1">|</p>
             <p className="font-bold">Customer Pays: </p>
             <p>{`${customerPays}`}</p>

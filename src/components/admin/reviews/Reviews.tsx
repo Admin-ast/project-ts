@@ -16,16 +16,18 @@ const Reviews = (props: Props) => {
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="min-h-screen px-10 lg:w-3/4">
-          <div className="mt-[45px] grid items-center justify-center gap-[81px] md:flex lg:flex">
+        <div className=" px-10 lg:w-3/4">
+          <div className="mt-[45px] grid items-center  gap-[81px] md:flex lg:flex">
             {" "}
-            <button className="rounded-[6px] border-[1px] border-red-700 py-2 lg:px-10">
+            <button className="rounded-[6px] border-[1px] border-red-700 py-2 lg:px-5">
               Show all reviews
             </button>
-            <span className=" rounded-[43px] bg-[#CF2927] px-16 py-4 text-xl font-bold text-white lg:px-[200px]">
-              MY REWIES
-            </span>
-            <button className="rounded-[6px] border-[1px] border-red-700 py-2 lg:px-10">
+            <div className="flex items-center justify-center">
+              <p className=" rounded-[43px] bg-[#DC6563] py-2 text-center text-xl font-bold text-white md:px-[50px] lg:px-[50px] ">
+                MY REVIEWS
+              </p>
+            </div>
+            <button className="rounded-[6px] border-[1px] border-red-700 py-2 lg:px-5">
               My Reviews
             </button>
           </div>

@@ -42,19 +42,19 @@ const Table = (props: Props) => {
         <tbody>
           {Data.map((item) => (
             <tr key={item.orderId} className="bg-white hover:bg-gray-100">
-              <td className="w-1/5 border border-gray-300 px-4 py-2">
+              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#3E5DAB]">
                 {item.orderId}
               </td>
               <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.description}
               </td>
-              <td className="w-1/5 border border-gray-300 px-4 py-2">
+              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#CA2127]">
                 {item.category}
               </td>
               <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.transactionAmount}
               </td>
-              <td className="w-1/5 border border-gray-300 px-4 py-2">
+              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#A9A9A9]">
                 {item.dateTime}
               </td>
             </tr>

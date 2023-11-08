@@ -13,9 +13,9 @@ type Props = {
 
 const UsersCard = ({ id, name, Name, service, date }: Props) => {
   return (
-    <div className="mt-[25px] flex items-center justify-center rounded-[15px] border-b-[7px]  border-b-[#DC6563]  shadow-md">
+    <div className="mt-[25px] flex items-center justify-center rounded-[15px] border-b-[7px]  border-b-[#DC6563]  bg-white shadow-xl">
       <div className="px-5 py-5 ">
-        <div className="flex gap-10">
+        <div className="flex ">
           <p className="font-bold">
             Order ID: <span className=""> {`${id}`}</span>
           </p>

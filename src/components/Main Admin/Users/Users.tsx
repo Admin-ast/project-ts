@@ -9,7 +9,7 @@ type Props = {};
 
 const Users = (props: Props) => {
   return (
-    <div className="">
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div
         className="h-[78px]
    w-full bg-[#d12627cc]"
@@ -18,7 +18,7 @@ const Users = (props: Props) => {
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="min-h-screen px-10 lg:w-3/4">
+        <div className="min-h-screen  px-10 lg:w-3/4">
           <div className="flex gap-10">
             <div className="mt-12 flex items-center justify-center gap-4">
               <FaUserAlt className="h-[55px] w-[49px] text-[#a9a9a9]" />

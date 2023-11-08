@@ -16,7 +16,7 @@ const TrendingVideosCard = (props: Props) => {
             />
 
             <p className=" whitespace-nowrap text-center font-bold ">
-              Trending Videos
+              Training Videos
             </p>
           </div>
         </div>

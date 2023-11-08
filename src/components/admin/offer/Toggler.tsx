@@ -13,16 +13,16 @@ const Toggler = (props: Props) => {
   return (
     <div className="flex ">
       <button
-        className={`rounded-[10px] rounded-r py-2 px-5 font-bold text-white md:px-[100px] lg:px-[100px] ${
-          activeBtn === "pending" ? "bg-red-500" : "bg-gray-500"
+        className={`rounded-l-[10px]  py-2 px-5 font-bold text-white md:px-[100px] lg:px-[100px] ${
+          activeBtn === "pending" ? "bg-[#DC6563]" : "bg-[#D9D9D9]"
         }`}
         onClick={handleToggle}
       >
         Call & Chat
       </button>
       <button
-        className={`rounded-[10px] rounded-l py-2 px-5 font-bold text-white md:px-[100px] lg:px-[100px] ${
-          activeBtn === "completed" ? "bg-red-500" : "bg-gray-500"
+        className={`rounded-r-[10px] py-2 px-5 font-bold text-white md:px-[100px] lg:px-[100px] ${
+          activeBtn === "completed" ? "bg-[#DC6563]" : "bg-[#D9D9D9]"
         }`}
         onClick={handleToggle}
       >

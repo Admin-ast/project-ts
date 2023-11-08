@@ -4,9 +4,10 @@ import { useState } from "react";
 interface PopupProps {
   isOpen: boolean;
   onClose: () => void;
+  heading: string;
 }
 
-const Popup = ({ isOpen, onClose }: PopupProps) => {
+const Popup = ({ isOpen, onClose, heading }: PopupProps) => {
   return (
     <div
       className={`fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center transition-opacity ${
@@ -20,7 +21,7 @@ const Popup = ({ isOpen, onClose }: PopupProps) => {
         ></button>
         <div className="">
           <div className="flex items-center justify-center font-[Georgia] text-[30px] font-bold">
-            <p className="">Notice Board</p>
+            <p className="">{heading}</p>
           </div>
 
           <div className="mt-10 text-justify">

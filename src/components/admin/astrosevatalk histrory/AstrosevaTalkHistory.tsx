@@ -8,8 +8,8 @@ const AstrosevaTalkHistory = (props: Props) => {
   return (
     <div className="">
       <div
-        className="h-[78px]
-     w-full bg-[#d12627cc]"
+        className="from-0%
+     to-68% h-[78px] w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
       ></div>
       <div className="lg:flex ">
         <div className="lg:w-1/4">
@@ -18,7 +18,7 @@ const AstrosevaTalkHistory = (props: Props) => {
         <div className="min-h-screen lg:w-3/4">
           <div className="flex items-center justify-center">
             {" "}
-            <span className="mt-[45px] rounded-[43px] bg-[#CF2927]  py-4 px-10 text-xl font-bold text-white">
+            <span className="mt-[45px] rounded-[43px] bg-[#DC6563]  py-4 px-10 text-xl font-bold text-white">
               ASTROSEVATALK HISTORY
             </span>
           </div>
