@@ -9,7 +9,7 @@ type Props = {
 
 const VideoCard = ({ title, imageUrl }: Props) => {
   return (
-    <div className="relative w-[243px] overflow-hidden rounded-lg border-b-[7px] border-[#DC6563] bg-white shadow-md ">
+    <div className="relative  overflow-hidden rounded-lg border-b-[7px] border-[#DC6563] bg-white shadow-md ">
       <div className="">
         <img className="h-48 w-full object-cover" src={imageUrl} alt={title} />
       </div>

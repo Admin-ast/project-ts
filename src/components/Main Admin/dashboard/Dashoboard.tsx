@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import HeaderCard from "./HeaderCard";
+import EarningReport from "./EarningReport";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ const Dashoboard = (props: Props) => {
         </div>
         <div className="">
           <HeaderCard />
+          <EarningReport />
         </div>
       </div>
     </div>

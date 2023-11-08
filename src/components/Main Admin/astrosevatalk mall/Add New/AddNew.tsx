@@ -22,39 +22,41 @@ const AddNew = (props: Props) => {
           <Sidebar />
         </div>
 
-        <div className="min-h-screen px-10 lg:w-3/4">
-          <div className=" gap-10 md:flex lg:flex">
-            <div className="mt-16 items-center justify-center gap-4 md:flex lg:flex">
-              <p className="text-[20px] font-bold">AstrosevaTalk Mall</p>
-            </div>
-
-            <div className="grid grid-rows-1 gap-5 md:flex lg:flex ">
-              <Link
-                href="/admin/astrosevatalkmall/allproducts"
-                className=" mt-2 rounded-[10px] border-[1px] border-[#DA6468] py-2 text-center font-bold hover:bg-[#DA6468] md:mt-16 md:px-5 lg:mt-16 lg:px-10"
-              >
-                All
-              </Link>
-              <div className="mt-[65px] grid grid-rows-2 gap-10 md:flex lg:flex">
-                <Link href="/admin/astrosevatalkmall/addnew">
-                  {" "}
-                  <button
-                    className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10 `}
-                  >
-                    Add New
-                  </button>
-                </Link>
-                <button
-                  className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10  `}
-                >
-                  Bulk Delete
-                </button>
+        <div className=" lg:w-3/4">
+          <div className="flex gap-2">
+            <div className="  md:flex lg:flex">
+              <div className="mt-16 items-center   md:flex lg:flex">
+                <p className="text-[20px] font-bold">AstrosevaTalk Mall</p>
               </div>
-              <Btns />
+
+              <div className="grid grid-rows-1  md:flex lg:flex ">
+                <Link
+                  href="/admin/astrosevatalkmall/allproducts"
+                  className=" mt-2 rounded-[10px] border-[1px] border-[#DA6468] py-2 text-center font-bold hover:bg-[#DA6468] md:mt-16 md:px-5 lg:mt-16 lg:px-10"
+                >
+                  All
+                </Link>
+                <div className="mt-[65px] grid grid-rows-2  md:flex lg:flex">
+                  <Link href="/admin/astrosevatalkmall/addnew">
+                    {" "}
+                    <button
+                      className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10 `}
+                    >
+                      Add New
+                    </button>
+                  </Link>
+                  <button
+                    className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10  `}
+                  >
+                    Bulk Delete
+                  </button>
+                </div>
+                <Btns />
+              </div>
             </div>
           </div>
 
-          <div className="gap-5 lg:flex">
+          <div className="gap-[1px] lg:flex">
             <div className="mt-16 lg:w-2/3">
               <AddNewForm />
             </div>

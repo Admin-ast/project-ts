@@ -17,7 +17,7 @@ const Sidebar = (props: Props) => {
     setSupportChatOpen((prev) => !prev);
   };
   return (
-    <div className="    h-screen overflow-y-auto border-r-4 border-[#D9D9D9]">
+    <div className="    overflow-y-auto border-r-4 border-[#D9D9D9] lg:h-screen">
       <Section>
         <div className="grid items-center justify-center py-[50px]  ">
           <Image

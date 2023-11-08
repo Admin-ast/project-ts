@@ -1184,7 +1184,10 @@ function Footer({}: Props) {
               </div>
 
               <div className="w-fit space-y-2">
-                <p className="text-xl font-semibold">Contact Us</p>
+                <Link href="/contact-us">
+                  {" "}
+                  <p className="text-xl font-semibold">Contact Us</p>
+                </Link>
                 <hr className="my-2   w-32 text-white" />
                 <ul className="flex flex-col gap-4 ">
                   <li className="">We are available to 24*7 chat support.</li>

@@ -19,13 +19,13 @@ const AllProducts = (props: Props) => {
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="min-h-screen px-10 lg:w-3/4">
-          <div className="flex gap-10">
+        <div className="min-h-screen  lg:w-3/4">
+          <div className="flex ">
             <div className="mt-16 flex items-center justify-center gap-4">
               <p className="text-[20px] font-bold">AstrosevaTalk Mall</p>
             </div>
 
-            <div className="gap-5 md:flex lg:flex">
+            <div className="mt-4 gap-5 md:flex lg:flex">
               <Link
                 href="/admin/astrosevatalkmall/allproducts"
                 className=" mt-16 rounded-[10px] border-[1px] border-[#da6468] py-2 px-5 font-bold  hover:bg-[#da6468]"
@@ -33,7 +33,7 @@ const AllProducts = (props: Props) => {
                 All
               </Link>
 
-              <div className="mt-[65px] grid grid-rows-2 gap-10 md:flex lg:flex">
+              <div className="mt-[65px] grid grid-rows-2 gap-5 md:flex lg:flex">
                 <Link href="/admin/astrosevatalkmall/addnew">
                   {" "}
                   <button

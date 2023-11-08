@@ -10,7 +10,7 @@ const Remedies = (props: Props) => {
     <div className="">
       <div
         className="h-[78px]
-     w-full bg-[#d12627cc]"
+     w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
       ></div>
       <div className="lg:flex ">
         <div className="lg:w-1/4">
@@ -18,10 +18,10 @@ const Remedies = (props: Props) => {
         </div>
         <div className="mt-[45px] text-center lg:w-3/4">
           {" "}
-          <span className="mt-[45px]  rounded-[43px] bg-[#CF2927] px-16 py-4 text-xl font-bold text-white">
+          <span className="mt-[45px]  rounded-[43px] bg-[#DC6563] px-16 py-4 text-xl font-bold text-white">
             SUGGESTED REMEDIES
           </span>
-          <div className="mt-[30px] grid gap-[45px] md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="mt-[30px] grid gap-[45px] px-5 md:grid-cols-2 lg:grid-cols-3">
             <RemediesCard
               categoryName="Trending Wears"
               productName="5 Mukhi Rudraksha Tulsi Bracelet"
