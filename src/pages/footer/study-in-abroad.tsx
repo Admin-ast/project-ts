@@ -58,10 +58,10 @@ const studyabroad = (props: Props) => {
           </p>
           <p className="mt-[10px] text-[18px]">
             Since the ancient time astrology has been the powerful tool of
-            getting the life's insight for the natives. It includes their
+            getting the {`life's`} insight for the natives. It includes their
             personality traits, education, profession, marriage and even the
             child birth etc. Education has always been the core aspect of
-            native's life that has always been the significant aspect of
+            {`native's`} life that has always been the significant aspect of
             analysis for the astrologers. In fact in the ancient time the whole
             Education of the Gurukul was based upon the astrological insight by
             assessing the birth chart of native.
@@ -70,7 +70,7 @@ const studyabroad = (props: Props) => {
             Astrology basically works by providing the birth chart analysis of
             the native to figure out the educational success of the native. It
             includes the domain of education and even the place of education
-            whether it's going to be inland or in abroad at a certain point.
+            whether {`it's`} going to be inland or in abroad at a certain point.
             Study abroad astrology involves using astrological principles to
             make informed decisions about educational pursuits in foreign
             countries. It draws upon the birth chart of the student and the
@@ -165,7 +165,7 @@ const studyabroad = (props: Props) => {
           </p>
           <p className="mt-[10px] text-[18px]">
             As an aspiring student to study abroad, we highly recommend you to
-            visit the Astrosevatalk's chat with us portal. You can find and
+            visit the {`Astrosevatalk's`} chat with us portal. You can find and
             interact with the highly proficient and the experienced astrologers
             at Astrosevatalk to get the insight on your dream of studying
             abroad. They will carefully get deeper into the birthchart of the

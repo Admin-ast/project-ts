@@ -33,7 +33,7 @@ const numerology = (props: Props) => {
             Numerology has a wide following practice not just in India but all
             around the world. It has been the potential source of getting into
             the depth of a {`person's'`} inner self and providing insight into
-            every area of an native's life. This is what makes numerology a
+            every area of an{` native's`} life. This is what makes numerology a
             significant alternative oftoedic astrology across the world.
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -56,15 +56,15 @@ const numerology = (props: Props) => {
             the birth chart numbers of the natives. Using these numbers a
             numerogist can get into the entire life map of the native and
             provide accurate insight. Numerology can help in the numerous
-            aspects of a native's life from understanding the personality of the
-            native to making lifelong predictions. This is what makes Numerology
-            a a sta raightforward yet complex scenario to interpret the science
-            of numbers. As per the numerology numbers are associated with all
-            the areas of our life and hold the whole secret of our destiny. A
-            numerologist just needs the birth details of the native such as the
-            date of birth and the timings of birth etc. Using these simple
-            details the numerologist can answer all the questions related to the
-            life of the native.
+            aspects of a {`native's`} life from understanding the personality of
+            the native to making lifelong predictions. This is what makes
+            Numerology a a sta raightforward yet complex scenario to interpret
+            the science of numbers. As per the numerology numbers are associated
+            with all the areas of our life and hold the whole secret of our
+            destiny. A numerologist just needs the birth details of the native
+            such as the date of birth and the timings of birth etc. Using these
+            simple details the numerologist can answer all the questions related
+            to the life of the native.
           </p>
         </div>
 
@@ -140,7 +140,8 @@ const numerology = (props: Props) => {
             the world. All you need to do is visit the official portal of
             Astrosevatalk and chat with the numerologist. Numerology has the
             potential to provide you the solutionss for the various aspects of
-            your life whether it's your career, marriage, health finances etc.
+            your life whether {`it's`} your career, marriage, health finances
+            etc.
           </p>
         </div>
       </Section>

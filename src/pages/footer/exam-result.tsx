@@ -28,15 +28,15 @@ const babynamesuggestions = (props: Props) => {
           </p>
           <p className="mt-[20px] text-[18px]">
             The immense pressure of appearing in the exams and then hanging
-            around the results is the most extreme phase of any student's life.
-            It is the relentless struggle on the head of the student's shoulders
-            that they have to overcome to succeed in exams and life. The life of
-            a student is never easy since they have to keep themselves hanging
-            in the constant phase of the sheer struggle with only the hope of
-            success. Many times the majority of students end up struggling whole
-            their lives without tasting the share of success that they truly
-            deserve. This is disheartening for both the students as well as for
-            their parents to cope with.
+            around the results is the most extreme phase of any {`student's`}{" "}
+            life. It is the relentless struggle on the head of the{" "}
+            {` student's`} shoulders that they have to overcome to succeed in
+            exams and life. The life of a student is never easy since they have
+            to keep themselves hanging in the constant phase of the sheer
+            struggle with only the hope of success. Many times the majority of
+            students end up struggling whole their lives without tasting the
+            share of success that they truly deserve. This is disheartening for
+            both the students as well as for their parents to cope with.
           </p>
           <p className="mt-[10px] text-[18px]">
             At Astrosevatalk we have this dedicated section of exam results for
@@ -79,8 +79,8 @@ const babynamesuggestions = (props: Props) => {
           <p className="mt-[10px] text-[18px]">
             As we know Astrology solely relies on the position of the celestial
             bodies to interpret any kind of prediction for the several areas of
-            native's life. Education is no exception since astrology has a sheer
-            influence on the educational success of the native. There are
+            {`native's`} life. Education is no exception since astrology has a
+            sheer influence on the educational success of the native. There are
             several parameters that are checked by the astrologer to make the
             educational prediction for the native. All these parameters lie and
             begin in the birthchart of the native considering the position of
@@ -95,7 +95,7 @@ const babynamesuggestions = (props: Props) => {
             astrologer checks to make examination success predictions for the
             natives.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Assessment of 10th House
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -103,10 +103,10 @@ const babynamesuggestions = (props: Props) => {
             houses when it comes to determining the professional success of the
             native. 10th house often relates to {`one's`} career and public
             life. Astrologers might examine the planetary positions and aspects
-            in this house to gain insights into a person's potential for success
-            in exams or their chosen field.
+            in this house to gain insights into a {`person's`} potential for
+            success in exams or their chosen field.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px] text-[18px] font-bold">
             ● The Progressions and Transit of Planets
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -118,13 +118,13 @@ const babynamesuggestions = (props: Props) => {
             on changing in the birth chart thus the educational success also
             varies from one specific period to the other.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Favourable Lunar Phase
           </p>
           <p className="mt-[10px] text-[18px]">
             The lunar phase is simply associated with the position of the moon
-            at the time of the native's educational course or the happening of
-            the exam. This is known as the crucial period of educational or
+            at the time of the {`native's`} educational course or the happening
+            of the exam. This is known as the crucial period of educational or
             examination success for the native and thus astrologers pay
             attention to the phase of the Moon at the time of an exam. For
             example, a waxing Moon might be seen as a time of growth and

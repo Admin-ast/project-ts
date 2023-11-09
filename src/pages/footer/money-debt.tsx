@@ -33,8 +33,8 @@ const moneydebt = (props: Props) => {
             life of financial debts lease. Right from our homes to the cars and
             even the modern gadgets everything is running on the financial debts
             in the form of EMIs. Financial debt is that dread swamp in which one
-            feels lifeless and most of the times it's the kind of loop that has
-            no way for the most Middle class individuals.
+            feels lifeless and most of the times {`it's`} the kind of loop that
+            has no way for the most Middle class individuals.
           </p>
           <p className="mt-[10px] text-[18px]">
             Astrology is something that can certainly provide the native with an
@@ -173,13 +173,13 @@ const moneydebt = (props: Props) => {
           </p>
           <p className="mt-[10px] text-[18px]">
             In the vedic astrology Sun is considered to be the Supreme source of
-            life's well being and the positivity. Those who remain close to the
-            Sun reap out the plenty of the benefits and financial stability is
-            one among them. So technically all you need to do is to offer the
+            {` life's`} well being and the positivity. Those who remain close to
+            the Sun reap out the plenty of the benefits and financial stability
+            is one among them. So technically all you need to do is to offer the
             water to the Sun in the early morning each day and get the blessing
-            of Sun while reciting the mantra of " Om Aditya Namah". This simple
-            remedy will remove and curb all the financial issues and the debts
-            from your life gradually.
+            of Sun while reciting the mantra of {`" Om Aditya Namah"`}. This
+            simple remedy will remove and curb all the financial issues and the
+            debts from your life gradually.
           </p>
           <p className="mt-[15px] mb-[15px] text-[18px] font-bold">
             ● Planting the Banana and Ashoka Tree

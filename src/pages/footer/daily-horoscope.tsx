@@ -43,7 +43,7 @@ const dailyhoroscope = (props: Props) => {
             made by our ace experienced astrologers, so one can blindly trust
             all the horoscope predictions made at the portal of Astrosevatalk.
             One can also chat with the astrologers at the Astrosevatalk to get a
-            personal insight into one's day-to-day life horoscope.
+            personal insight into {`one's`} day-to-day life horoscope.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ const dailyhoroscope = (props: Props) => {
             Well, checking the daily horoscope at Astrosevatalk is quite a
             simple task for anyone. All you need to do is visit the official
             website of Astrosevatalk and land on the home page. There is a
-            dedicated menu of "Daily Horoscope" at Astrosevatalk to help the
+            dedicated menu of {`"Daily Horoscope"`} at Astrosevatalk to help the
             visitors navigate there smoothly. One can simply tap or click on the
             same menu and that will open the separate window of the daily
             horoscope. You will there see all the 12 zodiac signs with their
@@ -113,7 +113,7 @@ const dailyhoroscope = (props: Props) => {
             Q. Are the Daily Horoscope Prediction at Astrosevatalk True?
           </p>
           <p className="mt-[10px] text-[18px]">
-            Ans. Yes, Astrosevatalk is the home to the world's renowned
+            Ans. Yes, Astrosevatalk is the home to the {`world's`} renowned
             astrologers who are known for their accurate astrological
             predictions. All these astrologers check and interpret the
             day-to-day influence of the celestial bodies on all the zodiac

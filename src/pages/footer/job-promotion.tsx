@@ -28,16 +28,17 @@ const babynamesuggestions = (props: Props) => {
           </p>
           <p className="mt-[20px] text-[18px]">
             We all want to grow at our workplace since more than half of our
-            life goes to work, however sometimes one truly doesn't get even the
-            well-deserved growth at the workplace. If you are also struggling to
-            get the job promotion at your workplace for your diligent services
-            to your employer then Astrosevatalk can certainly guide you in the
-            same. Astrosevatalk is the fastest-growing online astrology
-            consultancy platform offering 100% accurate astrological insight to
-            the natives. One can get astrological insight from the finest
-            astrologers at the Astrosevatalk in one simple chat. We urge you to
-            check out the Astrosevatalk platform today and get astrological
-            insight and remedies for growth and promotion at your workplace.
+            life goes to work, however sometimes one truly {`doesn't`} get even
+            the well-deserved growth at the workplace. If you are also
+            struggling to get the job promotion at your workplace for your
+            diligent services to your employer then Astrosevatalk can certainly
+            guide you in the same. Astrosevatalk is the fastest-growing online
+            astrology consultancy platform offering 100% accurate astrological
+            insight to the natives. One can get astrological insight from the
+            finest astrologers at the Astrosevatalk in one simple chat. We urge
+            you to check out the Astrosevatalk platform today and get
+            astrological insight and remedies for growth and promotion at your
+            workplace.
           </p>
           <p className="mt-[10px] text-[18px]">
             Getting a job promotion at the workplace these days is getting
@@ -73,14 +74,14 @@ const babynamesuggestions = (props: Props) => {
             listing down the major aspects for the understanding of natives and
             how astrology works in aspects of promotion at the workplace.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● {`10th`} House Placement
           </p>
           <p className="mt-[10px] text-[18px]">
             The {`10th`} house is the ruling house for the career growth or the
             workplace promotion of the native. The {`10th`} house is commonly
             associated with {`one's`} career, public life, and reputation. It
-            often plays a significant role in determining a person's
+            often plays a significant role in determining a {`person's`}
             professional path and potential for job promotions. This is the
             reason why astrologers put a key emphasis on analyzing the 10th
             house to find job promotion prospects. If the 10th house is strong
@@ -89,11 +90,12 @@ const babynamesuggestions = (props: Props) => {
             For instance, Jupiter or Saturn in the 10th house may indicate a
             greater potential for career success and promotions.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Planetary Transition
           </p>
           <p className="mt-[10px] text-[18px]">
-            There is the constant movement of the Planetary Transition in one's
+            There is the constant movement of the Planetary Transition in
+            {` one's`}
             birth chart which also influences the work promotion prospects. For
             instance, if at present there is a major shift of the planets from
             one house to the other and the shift is positive then it may
@@ -121,32 +123,32 @@ const babynamesuggestions = (props: Props) => {
             Here below we are listing down all the remedies for the reference of
             all our readers.
           </p>
-          <p className="mt-[12px] mt-[12px] text-[18px] font-bold">
+          <p className="mt-[12px]  text-[18px] font-bold">
             ● The native should begin with reciting the mantras that are
             associated with the unfavourable placement of planets in the{" "}
             {`10th`} house. One can directly chat with the astrologers at the
             Astrosevatalk to find the right mantras for workplace promotion.
           </p>
-          <p className="mt-[12px] mt-[12px] text-[18px] font-bold">
+          <p className="mt-[12px]  text-[18px] font-bold">
             ● If there are multiple planets with their inauspicious placement to
             hamper the job promotion then the Navgarha havan is recommended. You
             can chat with the astrologers at Astrosevatalk to learn about the
             full-fledged process of Navgarha havan in the right manner.
           </p>
-          <p className="mt-[12px] mt-[12px] text-[18px] font-bold">
+          <p className="mt-[12px]  text-[18px] font-bold">
             ● Sometimes the ill placement of Rahu and Ketu also causes the
             challenges in getting the promotion at the workplace. In such a
             scenario, the Navgarha Abhishek is recommended at the nearest temple
             to curb the negative impact of Rahu and Ketu.
           </p>
-          <p className="mt-[12px] mt-[12px] text-[18px] font-bold">
+          <p className="mt-[12px]  text-[18px] font-bold">
             ● Offering water to the Sun each day in the early morning can also
             help the native boost career advancement and get a promotion at the
             workplace.
           </p>
-          <p className="mt-[12px] mt-[12px] text-[18px] font-bold">
+          <p className="mt-[12px]  text-[18px] font-bold">
             ● Last but not least, lighting the lamp at the Shani temple can also
-            help the native's prospects of workplace promotion.
+            help the {`native's`} prospects of workplace promotion.
           </p>
           <p className="mt-[10px] text-[18px]">
             These are some of the basic remedies to boost the probability of

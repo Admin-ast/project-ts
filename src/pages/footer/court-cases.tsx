@@ -129,9 +129,9 @@ const mantras = (props: Props) => {
           <p className="mt-[10px] text-[18px]">
             As we know that Astrosevatalk is truly the most dedicated astrology
             consultancy platform that serves the native with the resolution of
-            all their life's problems. At the platform of Astrosevatalk we put
-            forward the general remedies for our readers to get freedom from the
-            court cases. Also we provide the fully personalized court cases
+            all their {`life's`} problems. At the platform of Astrosevatalk we
+            put forward the general remedies for our readers to get freedom from
+            the court cases. Also we provide the fully personalized court cases
             remedies to the natives under the guidance of our astrologers. Here
             below are some of the potential Remedies that the natives can try to
             get lifelong freedom from all types of court cases.
@@ -182,7 +182,7 @@ const mantras = (props: Props) => {
             The visitors can thus seek the fully personalized solution or the
             home remedies to get rid of the court cases. The platform of
             Astrosevatalk is available to serve the visitors on the {`24/7`}{" "}
-            basis in all of their life's problems.
+            basis in all of their {`life's`} problems.
           </p>
         </div>
       </Section>

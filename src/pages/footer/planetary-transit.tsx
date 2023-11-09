@@ -112,18 +112,18 @@ const planetary = (props: Props) => {
             astrology needs to be followed carefully. For the same purpose,
             Astrosevatalk has come up with this revolutionary planetary transit
             calendar for all the natives and even the astrologers.
-            Astrosevatalk's transit calendar is a personalized guide that maps
-            out the anticipated movements of planets in the solar system as they
-            interact with an individual's natal birth chart. It serves as a
-            roadmap for understanding when and how planetary energies will
-            influence different aspects of one's life. By using this calendar
-            one can simply track and mark the transit of all the planets in the
-            astrology. This calendar shows the systematic transit of all the
-            planets in a particular year. For instance, one can check out the
-            transit of all the planets in the ongoing year 2023.
+            {`Astrosevatalk's`} transit calendar is a personalized guide that
+            maps out the anticipated movements of planets in the solar system as
+            they interact with an {`individual's`} natal birth chart. It serves
+            as a roadmap for understanding when and how planetary energies will
+            influence different aspects of {`one's`} life. By using this
+            calendar one can simply track and mark the transit of all the
+            planets in the astrology. This calendar shows the systematic transit
+            of all the planets in a particular year. For instance, one can check
+            out the transit of all the planets in the ongoing year 2023.
           </p>
           <div className="mt-[25px]" style={{ textAlign: "center" }}>
-            <table
+            {/* <table
               style={{
                 borderCollapse: "collapse",
                 width: "66%",
@@ -171,13 +171,55 @@ const planetary = (props: Props) => {
                   <td style={tableCellStyle}>2.25 Days Window </td>
                 </tr>
               </tbody>
+            </table> */}
+            <table className="mx-auto mt-20 w-2/3 border-collapse">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border p-2">Planet</th>
+                  <th className="border p-2">Transit Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border">
+                  <td className="border p-2">Sun</td>
+                  <td className="border p-2">30 Days Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Mars</td>
+                  <td className="border p-2">45 Days Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Mercury</td>
+                  <td className="border p-2">21 Days Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Jupiter</td>
+                  <td className="border p-2">12.5 Months Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Venus</td>
+                  <td className="border p-2">26 Days Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Saturn</td>
+                  <td className="border p-2">2.5 Years Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Rahu/Ketu</td>
+                  <td className="border p-2">19 Months Window</td>
+                </tr>
+                <tr className="border">
+                  <td className="border p-2">Moon</td>
+                  <td className="border p-2">2.25 Days Window</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <p className="mt-[10px] text-[18px]">
             So feel free to get in touch with Astrosevatalk to mark the movement
             for the transition of all the planets. At Astrosevatalk we keep the
             secret of the cosmos simple and easy to understand for all the
-            natives. One can also chat with astrologers at Astrosevatalk's
+            natives. One can also chat with astrologers at {`Astrosevatalk's`}
             portal to get personalized results of the planetary transit in life.
           </p>
         </div>
