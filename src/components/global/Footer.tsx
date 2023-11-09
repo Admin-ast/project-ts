@@ -688,17 +688,17 @@ const corporate: Corporate[] = [
   {
     id: 1,
     title: "Refund & Cancellation Policy",
-    url: "/corporate-info/refund",
+    url: "/refund",
   },
   {
     id: 2,
     title: "Terms & Conditions",
-    url: "/corporate-info/terms",
+    url: "/terms-and-conditions",
   },
   {
     id: 3,
     title: " Privacy Policy",
-    url: "/corporate-info/privacy",
+    url: "/privacy-policies",
   },
   {
     id: 4,
@@ -708,12 +708,17 @@ const corporate: Corporate[] = [
   {
     id: 5,
     title: "Disclaimer",
-    url: "/corporate-info/disclaimer",
+    url: "/disclaimer",
   },
   {
     id: 6,
     title: "Pricing Policy",
-    url: "/corporate-info/pricing-policy",
+    url: "/pricing",
+  },
+  {
+    id: 7,
+    title: "Shipping Policy",
+    url: "/shipping",
   },
 ];
 
@@ -1184,7 +1189,7 @@ function Footer({}: Props) {
               </div>
 
               <div className="w-fit space-y-2">
-                <Link href="/contact-us">
+                <Link href="/contactus">
                   {" "}
                   <p className="text-xl font-semibold">Contact Us</p>
                 </Link>
