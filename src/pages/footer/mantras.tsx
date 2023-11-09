@@ -57,7 +57,7 @@ const mantras = (props: Props) => {
             from the Vedas and mantras have also been derived from the Vedas
             itself. Mantras go well along with astrology as the means of
             astrological remedies and the other process of several ceremonies.
-            Mantras can't be separated or bifurcated from the Vedicrology as
+            Mantras {`can't`} be separated or bifurcated from the Vedicrology as
             they both complement each other. Astrology is based on the celestial
             bodies and in a similar manner mantras are also concerned with the 9
             planets.
@@ -65,10 +65,10 @@ const mantras = (props: Props) => {
           <p className="mt-[10px] text-[18px]">
             Chanting of the mantras has been said to be the most potential means
             of worshipping or pleasing God. This is the reason why Mantras are
-            always chanted whether it's the happening of any auspicious act such
-            as marriage or even unfortunate events such as death. Vedic culture
-            is profoundly rich and each event in the culture can simply be
-            associated with the chanting of mantras. One can even chant the
+            always chanted whether {`it's`} the happening of any auspicious act
+            such as marriage or even unfortunate events such as death. Vedic
+            culture is profoundly rich and each event in the culture can simply
+            be associated with the chanting of mantras. One can even chant the
             Navgarha mantras while doing the small stuff in the day to day life.
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -103,29 +103,29 @@ const mantras = (props: Props) => {
             years in the Vedic culture. Here below are some of the specific
             benefits of reciting the mantras.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Reciting the mantras in day-to-day life keeps a positive aura
             around the natives in the mental, physical and spiritual aspects of
             life.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Mantras are considered highly auspicious in the course of
             executing any kind of crucial tasks in life and living the to-day
             life.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Mantras also work as a powerful tool for eliminating negative
             energy from the house and keeping the environment healthy.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Chanting the right Mantras can also help in the weak planetary
             placement and can turn the negative results into positive ones.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Natives can worship and please God with the chanting of mantras
             and attract love, health, money and other aspects of life.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             ● Meditating with the mantras can also help in improving mental and
             physical health and helps in syncing with spirituality.
           </p>

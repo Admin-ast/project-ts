@@ -108,7 +108,7 @@ const kundalimatch = (props: Props) => {
 
         <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">Faqs on the Kundali Milan</p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. Why should I go for the Kundali Milan before the marriage?
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -121,7 +121,7 @@ const kundalimatch = (props: Props) => {
             finances, birth of a child, peace and understanding in the
             relationship etc.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px] text-[18px] font-bold">
             Q. How many guna matches should be there for healthy marriage
             compatibility?
           </p>
@@ -132,8 +132,9 @@ const kundalimatch = (props: Props) => {
             is important to get insight on the same from the astrologer and at
             Astrosevatalk one can chat with wwithnumerousrologers for the same.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
-            Q. Can I still marry my desired life partner if the Kundali doesn't
+          <p className="mt-[15px]  text-[18px] font-bold">
+            Q. Can I still marry my desired life partner if the Kundali{" "}
+            {`doesn't`}
             match?
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -142,14 +143,14 @@ const kundalimatch = (props: Props) => {
             astrologer will guide you further with the home remedies to overcome
             the mismatch and go for a healthy marriage ahead.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. What is the most crucial parameter in the Kundali Milan?
           </p>
           <p className="mt-[10px] text-[18px]">
             Ans. Mangal dosha is something which comes in high regard while
             making the Kundali Milan. If there is a major Mangal dosha in either
-            of the couples then the person can't marry the other non-mangalik
-            individual.
+            of the couples then the person {`can't`} marry the other
+            non-mangalik individual.
           </p>
         </div>
       </Section>

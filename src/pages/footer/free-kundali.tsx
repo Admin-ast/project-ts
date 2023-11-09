@@ -49,8 +49,8 @@ const babynamesuggestions = (props: Props) => {
           <p className=" text-3xl font-bold">What is Kundali?</p>
           <p className="mt-[10px] text-[18px]">
             A Kundali also known as the Janm Kundali provides detailed
-            information about one's birth for various purposes. It is made by
-            using the birth details of the native such as the date of birth,
+            information about{` one's`} birth for various purposes. It is made
+            by using the birth details of the native such as the date of birth,
             place of birth and ngs etc. Janam Kundali takes into consideration
             the position of the celestial bodies at the time of birth for the
             native. Based on the same, the game Kundali determines the sev
@@ -73,8 +73,8 @@ const babynamesuggestions = (props: Props) => {
             Making the janm kundali at Astrosevatalk is like butter easy and
             even a kid can make it all on his own. All one needs to do is just
             visit the Astrosevatalk platform and land at the home page menu.
-            There one will see the option as the "Online Kundali" and need to
-            click on the same. There will be empty fields requiring birth
+            There one will see the option as the{` "Online Kundali"`} and need
+            to click on the same. There will be empty fields requiring birth
             information such as the date of birth, timings, place of birth etc.
             After providing this information one can simply submit the
             information with us and give us a moment. Shortly after that, you
@@ -88,7 +88,7 @@ const babynamesuggestions = (props: Props) => {
 
         <div className="mt-[25px] mb-[35px]">
           <p className=" text-3xl font-bold">FAQS On Janm Kundali</p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. What details do the janm kundali at Astrosevatalk provide?
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -100,7 +100,7 @@ const babynamesuggestions = (props: Props) => {
             and all the planets in it. Moreover, we also provide the complete
             life prediction along with the janm kundali.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. Can I get the Mahadasha dates and details in January Kundali at
             Astrosevatalk?
           </p>
@@ -112,7 +112,7 @@ const babynamesuggestions = (props: Props) => {
             data will affect the life of the native along with the solutions to
             overcome it.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. What are the yogas in my Kundali?
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -123,7 +123,7 @@ const babynamesuggestions = (props: Props) => {
             information about all the yogas and their auspicious or inauspicious
             influence on your life.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             Q. Why is Janm Kundali significant
           </p>
           <p className="mt-[10px] text-[18px]">

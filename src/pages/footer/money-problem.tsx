@@ -56,7 +56,7 @@ const moneyproblem = (props: Props) => {
             Here are some core aspects that astrology identifies as the root of
             money problems:
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             1. Mars in Malefic Houses
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -67,7 +67,7 @@ const moneyproblem = (props: Props) => {
             sources. This placement can also make the native arrogant and
             foolish, leading to further financial losses.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             2. The Malefic Placement of Saturn
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -77,7 +77,7 @@ const moneyproblem = (props: Props) => {
             birth chart, it can cause major money problems, including debt and
             loss of revenue sources.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             3. Rahu, the Planet of Shadow
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -105,18 +105,18 @@ const moneyproblem = (props: Props) => {
             astrological solutions that can help individuals find ideal
             solutions for their financial issues:
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             1. Worshipping the Sun
           </p>
           <p className="mt-[10px] text-[18px]">
             The Sun is a powerful source of positive energy that can eliminate
-            negative aspects from one's life. Worshipping the Sun in the early
-            morning and offering water to it is a solution for all problems,
-            including financial constraints.One can chant the famous mantra of
-            Lord Shiva, "Om Namah Shivaya," while offering water and worshipping
-            the Lord Sun.
+            negative aspects from {`one's`} life. Worshipping the Sun in the
+            early morning and offering water to it is a solution for all
+            problems, including financial constraints.One can chant the famous
+            mantra of Lord Shiva, {`"Om Namah Shivaya,"`} while offering water
+            and worshipping the Lord Sun.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px] text-[18px] font-bold">
             2. Worshipping Lord Kuber
           </p>
           <p className="mt-[10px] text-[18px]">
@@ -125,10 +125,10 @@ const moneyproblem = (props: Props) => {
             worshipping Lord Kuber is highly advisable in day-to-day life for
             financial stability. Where there is the blessing of Lord Kuber,
             adversity always stays away from life. You can do the simple pooja,
-            which means worship, of Lord Kuber, and it doesn't take anything
+            which means worship, of Lord Kuber, and it {`doesn't`} take anything
             special to please Lord Kuber for life.
           </p>
-          <p className="mt-[15px] mt-[15px] text-[18px] font-bold">
+          <p className="mt-[15px]  text-[18px] font-bold">
             3. Worshipping Lord Hanuman
           </p>
           <p className="mt-[10px] text-[18px]">

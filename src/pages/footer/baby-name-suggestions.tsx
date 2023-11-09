@@ -34,10 +34,10 @@ const babynamesuggestions = (props: Props) => {
             significant decision for the parents since it impacts the life of
             their kids being one of the key factors. Astrology offers a unique
             and thought-provoking approach to finding a name that resonates with
-            your child's astrological traits and potential. Whether you're drawn
-            to names that reflect strength, empathy, intelligence, or
-            creativity, there are celestial-inspired options for every zodiac
-            sign.{" "}
+            your {`child's`} astrological traits and potential. Whether{" "}
+            {`you're`} drawn to names that reflect strength, empathy,
+            intelligence, or creativity, there are celestial-inspired options
+            for every zodiac sign.{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
             At Astrosevatalk we are committed to help and guide all the parents
@@ -70,7 +70,7 @@ const babynamesuggestions = (props: Props) => {
             takes the birth details of native into the consideration to
             calculate the ideal name of the native. The numerological
             significance of the name by calculating the {`name's`} numerology to
-            understand its potential impact on your child's life and
+            understand its potential impact on your {`child's`} life and
             personality.
           </p>
         </div>

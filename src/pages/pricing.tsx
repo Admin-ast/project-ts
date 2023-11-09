@@ -42,10 +42,10 @@ const pricingpolicy = (props: Props) => {
           <p className="text-left text-[22px]   font-bold">Price Matching</p>
           <p className="mt-[10px] text-left text-[18px] ">
             At Astrotalk.com we are committed to offering you the best possible
-            prices. We will be glad to meet our competitor's pricing if you ever
-            find a service that we offer, in the similar interest and providing
-            same professionalism and features, available from a similar service
-            provider.
+            prices. We will be glad to meet our {`competitor's `}pricing if you
+            ever find a service that we offer, in the similar interest and
+            providing same professionalism and features, available from a
+            similar service provider.
           </p>
           <p className="mt-[10px] text-left text-[18px] ">
             Our prices do not vary according to the market needs, competitor

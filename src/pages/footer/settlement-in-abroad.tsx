@@ -89,8 +89,8 @@ const settlementinabroad = (props: Props) => {
             birth chart to determine their influence on your desire to settle
             abroad and your adaptability to new environments. Since the
             astrology is all about interpreting the current position and the
-            movement of the celestial bodies thus one can't avoid the role of
-            planets influence.
+            movement of the celestial bodies thus one {`can't`} avoid the role
+            of planets influence.
           </p>
 
           <p className="mt-[15px] mb-[15px] text-[18px] font-bold">
@@ -98,13 +98,13 @@ const settlementinabroad = (props: Props) => {
           </p>
           <p className="mt-[10px] text-[18px]">
             This is probably the least talked about aspect about the Zodiac sign
-            but they actually have the power to reveal more than one's
+            but they actually have the power to reveal more than {`one's`}
             imagination. Each and every zodiac sign is unique within itself and
             it reveals the personality traits and a lot more about the
             individual. Some zodiac signs have the better chance of foreign
-            settlement and the travel than the others. For example, if you're a
-            water sign (Cancer, Scorpio, or Pisces), coastal destinations might
-            be a natural fit.
+            settlement and the travel than the others. For example, if{" "}
+            {`you're`} a water sign (Cancer, Scorpio, or Pisces), coastal
+            destinations might be a natural fit.
           </p>
         </div>
 
@@ -121,7 +121,8 @@ const settlementinabroad = (props: Props) => {
             remedies to make the abroad settlement possible.
           </p>
           <p className="mt-[15px]  text-[18px] font-bold">
-            ● Chanting the mantra of Lord Shiva which goes as "Om Namah Shivay"
+            ● Chanting the mantra of Lord Shiva which goes as{" "}
+            {`"Om Namah Shivay"`}
             immensely help in the foreign travel and the settlement.
           </p>
           <p className="mt-[15px] text-[18px] font-bold">
