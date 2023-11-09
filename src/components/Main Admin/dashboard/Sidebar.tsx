@@ -36,12 +36,12 @@ const Sidebar = (props: Props) => {
         <div className="mx-[16px] border-[1px] border-[#D9D9D9]"></div>
         <div className="">
           <ul>
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/admin/dashboard">Dashboard</Link>
             </li>
 
-            <li className=" border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
-              <button className="flex   lg:px-0  " onClick={toggleOrderHistory}>
+            <li className=" border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+              <button className="flex    " onClick={toggleOrderHistory}>
                 <span className="">Order History</span>
                 <span className={orderHistoryOpen ? "rotate-90 transform" : ""}>
                   &#9662;
@@ -73,31 +73,32 @@ const Sidebar = (props: Props) => {
               )}
             </li>
 
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/">Earnings</Link>
             </li>
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/astrologeradmin/wallet">Wallet</Link>
             </li>
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/admin/user">Users</Link>
             </li>
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/admin/astrologers">Astrologers</Link>
             </li>
 
-            <li className=" border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
-              <button
-                className="flex   lg:px-0  "
-                onClick={toggleAstrosevaTalkMall}
-              >
-                <span className="">AstrosevaTalk Mall</span>
-                <span
-                  className={astrosevaTalkMallOpen ? "rotate-90 transform" : ""}
-                >
-                  &#9662;
-                </span>
-              </button>
+            <li className=" border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+              <div className="flex">
+                <button className="    " onClick={toggleAstrosevaTalkMall}>
+                  <span className="">AstrosevaTalk Mall</span>
+                  <span
+                    className={
+                      astrosevaTalkMallOpen ? "rotate-90 transform" : ""
+                    }
+                  >
+                    &#9662;
+                  </span>
+                </button>
+              </div>
               {astrosevaTalkMallOpen && (
                 <ul className="">
                   <li className="flex  border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px]">
@@ -129,20 +130,21 @@ const Sidebar = (props: Props) => {
                 </ul>
               )}
             </li>
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/admin/management/management">Management</Link>
             </li>
 
-            <li className=" border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
-              <button
-                className="flex w-full gap-4   lg:px-0 "
-                onClick={toggleSupportChat}
-              >
-                <span className="">Support Chat</span>
-                <span className={supportChatOpen ? "rotate-90 transform" : ""}>
-                  &#9662;
-                </span>
-              </button>
+            <li className=" border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+              <div className="flex">
+                <button className="  " onClick={toggleSupportChat}>
+                  <span className="">Support Chat</span>
+                  <span
+                    className={supportChatOpen ? "rotate-90 transform" : ""}
+                  >
+                    &#9662;
+                  </span>
+                </button>
+              </div>
               {supportChatOpen && (
                 <ul className="">
                   <li className="flex  border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px]">
@@ -155,7 +157,7 @@ const Sidebar = (props: Props) => {
               )}
             </li>
 
-            <li className="flex border-b-[1px] border-[#D9D9D9] px-10 py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
+            <li className="flex border-b-[1px] border-[#D9D9D9]  py-[5px] font-[Roboto] text-[24px] hover:bg-[#d12627cc]">
               <Link href="/astrologeradmin/setting">Settings</Link>
             </li>
           </ul>

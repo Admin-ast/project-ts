@@ -9,7 +9,7 @@ type Props = {
 const PersonChat = ({ name, number }: Props) => {
   return (
     <div className="">
-      <div className="mt-10 flex gap-4">
+      <div className="mt-10 flex ">
         <Image
           src="/assets/admin/Dashboard_image.png"
           alt="chat person"
@@ -18,7 +18,7 @@ const PersonChat = ({ name, number }: Props) => {
         />
         <div className="">
           <p className="text-[20px] font-semibold">{name}</p>
-          <p className="text-[18px]">+{number}</p>
+          <p className="lg:text-[18px]">+{number}</p>
         </div>
       </div>
       <div className=" mt-5 border-b-[1px] border-[#D9D9D9]"></div>
