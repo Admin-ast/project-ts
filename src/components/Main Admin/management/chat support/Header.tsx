@@ -12,7 +12,7 @@ const Header = () => {
       <button
         className={`${
           activeButton === "live" ? "bg-[#dc6563]" : "bg-[#D9D9D9]"
-        } rounded py-4 text-[24px] font-bold md:w-1/2 lg:w-1/2`}
+        } rounded-l py-4 text-[24px] font-bold md:w-1/2 lg:w-1/2`}
         onClick={() => handleButtonClick("live")}
       >
         Live Conversation
@@ -20,7 +20,7 @@ const Header = () => {
       <button
         className={`${
           activeButton === "history" ? " bg-[#dc6563]" : "bg-[#D9D9D9]"
-        } rounded py-4 text-[24px] font-bold md:w-1/2 lg:w-1/2`}
+        } rounded-r py-4 text-[24px] font-bold md:w-1/2 lg:w-1/2`}
         onClick={() => handleButtonClick("history")}
       >
         History

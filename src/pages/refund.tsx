@@ -15,7 +15,7 @@ const refund = (props: Props) => {
             <p>
               These terms and conditions of Use (hereinafter referred as “Terms
               of Usage”) describe and govern the User’s use of the content and
-              services offered by ZIABA ITSOLUTIONS PVT. LTD. SERVICES through
+              services offered by V business IT consultant services through
               www.astroSevatalk.com (hereinafter referred as “We”
               “AstroSevatalk” “us” “our” “astroSevatalk application” “Website”).{" "}
             </p>
@@ -930,8 +930,8 @@ const refund = (props: Props) => {
               its suppliers, or advertisers. Moreover, the content such as
               images, text, designs, etc on all of the portals of the Website
               are taken from various online portals such as Google Images.
-              astrosevatalk or ZIABA ITSOLUTIONS PVT LTD. is not liable for any
-              copyrights of that content or data.
+              astrosevatalk or V business IT consultant services is not liable
+              for any copyrights of that content or data.
             </p>
           </div>
 

@@ -19,7 +19,7 @@ const QueueCard = ({
   time,
 }: Props) => {
   return (
-    <div className="w-8/9 rounded-[10px] px-4 py-2 shadow-xl ">
+    <div className="w-8/9 rounded-[10px] bg-white px-4 py-2 shadow-xl ">
       <div className="flex gap-10">
         <p className="">{conversation}</p>
         <button className="rounded-[5px] bg-[#DC6563] px-8 text-white">

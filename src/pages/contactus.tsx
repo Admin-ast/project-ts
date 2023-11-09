@@ -28,7 +28,7 @@ const contactforms = (props: Props) => {
         </p>
       </div>
       <div className="mx-auto mt-[25px] mb-[25px] px-4 lg:max-w-7xl"></div>
-      <div className="container">
+      <div className="container justify-between md:flex lg:flex ">
         <div className="column">
           <div className="mt-[25px]">
             <p className=" text-[20px] font-bold">Address</p>
@@ -45,11 +45,6 @@ const contactforms = (props: Props) => {
           <ContactForm text="" className="" />
         </div>
         <style jsx>{`
-          .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-          }
           .column {
             flex: 1;
             margin: 0 10px;

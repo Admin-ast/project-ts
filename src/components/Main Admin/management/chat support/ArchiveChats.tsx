@@ -7,13 +7,13 @@ type Props = {};
 
 const ArchiveChats = (props: Props) => {
   return (
-    <div className="mt-10 px-4">
-      <div className="">
+    <div className="mt-10 px-4  ">
+      <div className="flex items-center justify-center">
         <button className="w-3/4 rounded-[5px] border-[1px] border-[#da6468] py-2 text-[24px] font-bold">
           Agent Status
         </button>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 flex items-center justify-center">
         <input
           placeholder="Search"
           className="w-3/4 rounded-[28px] bg-[#D9D9D9] py-3 "
