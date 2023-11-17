@@ -6,7 +6,7 @@ type Props = {};
 const RelatedBlogs = (props: Props) => {
   return (
     <div className="mt-[35px]">
-      <BlogsBy heading="Related Blogs" />
+      <BlogsBy heading="Related Blogs" subheading="" className="" />
     </div>
   );
 };

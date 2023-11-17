@@ -64,7 +64,7 @@ const links: Links[] = [
   // },
   {
     name: "Book A Pooja",
-    url: "/shop/online-puja",
+    url: "/book-a-pooja/book-pooja",
   },
   {
     name: "Blog",

@@ -52,16 +52,16 @@ const astrologers: Astrologers[] = [
 function Astrologer({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-20">
+    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] bg-cover py-20">
       <Section>
         <div className="space-y-6">
           <div className="mb-[35px]">
-            <h2 className="mb-[15px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[48px]">
+            <h2 className="mb-[15px] text-center font-[georgia] text-xl font-semibold text-white sm:text-2xl md:text-3xl lg:text-[48px]">
               Our Astrologers
             </h2>
-            <h3 className="text-center text-sm font-semibold sm:text-lg lg:text-2xl">
+            {/* <h3 className="text-center text-sm font-semibold sm:text-lg lg:text-2xl">
               5000+ Best Astrologers from India for Online Consultation
-            </h3>
+            </h3> */}
           </div>
           <Swiper
             navigation={{
@@ -115,13 +115,13 @@ function Astrologer({}: Props) {
           <div className=" flex items-center justify-center  ">
             <div className=" ">
               <button className="prev cursor-pointer">
-                <AiFillCaretLeft className={`text-[40px]    text-black  `} />
+                <AiFillCaretLeft className={`text-[40px]    text-white  `} />
               </button>
             </div>
 
             <div className="  ">
               <button className="next cursor-pointer">
-                <AiFillCaretRight className={`text-[40px]    text-black  `} />
+                <AiFillCaretRight className={`text-[40px]   text-white  `} />
               </button>{" "}
             </div>
           </div>

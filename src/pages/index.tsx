@@ -53,6 +53,17 @@ import Seo from "@/components/Seo";
 import { getFetcher } from "@/service";
 import { useEffect } from "react";
 import Script from "next/script";
+import AstrologerCount from "@/components/home/AstrologerCount";
+import LiveAstrologer from "./live-astrologer/live-astrologer";
+import Icons from "@/components/live-astro/Icons";
+import LIveAstro from "@/components/home/LIveAstro";
+import News from "@/components/home/News";
+import BlogsBy from "@/components/blog/BlogsBy";
+import LatestBlogs from "@/components/home/LatestBlogs";
+import CelebrityCustomers from "@/components/home/CelebrityCustomers";
+import Panchang from "@/components/home/Panchang";
+import Faq from "@/components/home/Faq";
+import Missing from "@/components/home/Missing";
 
 export default function Home() {
   useEffect(() => {
@@ -86,18 +97,36 @@ export default function Home() {
         </Script>
       </div>
       <Hero />
+
       <HeroCard />
-      <About />
-      <WhoWeAre />
-      <Horoscope />
-      <Services />
-      <Appointments />
-      <Shop />
+
+      {/* 
+      
+      <Horoscope /> */}
+      <Services head="Our Free Services" />
+      <AstrologerCount
+        count1="15,462+"
+        total1="Total Astrologers"
+        count2="15,462+"
+        total2="Total Astrologers"
+        count3="15,462+"
+        total3="Total Astrologers"
+      />
+      <LIveAstro />
+
+      {/* <Appointments /> */}
 
       <Astrologer />
-
+      <News />
+      <LatestBlogs />
+      <CelebrityCustomers />
+      <Shop />
+      <Panchang />
+      <About />
+      <Faq />
       <Review />
-      <Membership />
+      <Missing />
+      {/* <Membership /> */}
     </>
   );
 }

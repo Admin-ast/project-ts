@@ -89,7 +89,7 @@ const Blog = (props: Props) => {
   const currentItems = card.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px] ">
       <Section>
         <div className="justify-between  gap-6 md:flex lg:flex lg:items-start">
           <SideNavBlog />

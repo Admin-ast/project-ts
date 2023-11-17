@@ -77,14 +77,14 @@ function Shop({}: Props) {
               <SwiperSlide key={item.src + index}>
                 <Link key={index} href={item?.url}>
                   <div className="overflow-hidden rounded-3xl border-[3px] border-[#DC6563]">
-                    <div className="rounded-t-3xl border-[10px] !border-b-0 border-white lg:h-[390px]">
+                    <div className=" ">
                       <Image
                         src={item.src}
                         alt={item.name}
-                        width={366}
-                        height={618}
+                        width={337}
+                        height={348}
                         loading={"lazy"}
-                        className="h-full w-full object-contain"
+                        className="mx-auto h-full w-full object-contain"
                       />
                     </div>
                     <p className="bg-[#ca2127] py-[14px]  text-center font-[georgia] text-[20px] text-white lg:text-[32px]">
@@ -95,7 +95,7 @@ function Shop({}: Props) {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className=" flex items-center justify-center  lg:relative lg:bottom-[250px] ">
+          {/* <div className=" flex items-center justify-center  lg:relative lg:bottom-[250px] ">
             <div className="z-10  lg:absolute   lg:left-[-100px]">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className={`text-[40px]    text-black  `} />
@@ -103,6 +103,19 @@ function Shop({}: Props) {
             </div>
 
             <div className="z-10 lg:absolute     lg:left-[1290px] ">
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className={`text-[40px]    text-black  `} />
+              </button>{" "}
+            </div>
+          </div> */}
+          <div className=" flex items-center justify-center   ">
+            <div className="     ">
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className={`text-[40px]    text-black  `} />
+              </button>
+            </div>
+
+            <div className=" ">
               <button className="next cursor-pointer">
                 <AiFillCaretRight className={`text-[40px]    text-black  `} />
               </button>{" "}

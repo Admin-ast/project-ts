@@ -1,47 +1,36 @@
 import React, { useState } from "react";
 import Section from "../Section";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { PlayIcon } from "@heroicons/react/24/solid";
-
-// import required modules
-import { Pagination, Navigation, Autoplay } from "swiper";
-import Horoscope from "../home/Horoscope";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import Link from "next/link";
+import Image from "next/image";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
-
-type Service = {
+type Astrologers = {
   name: string;
   src: string;
-  url: string;
 };
 
-const services: Service[] = [
+const services: Astrologers[] = [
   {
-    name: "Compatibility",
-    src: "/assets/home/compatibility.png",
-    url: "/compatibility",
+    name: "Isha",
+    src: "/assets/home/isha.png",
   },
   {
-    name: "Muhurat",
-    src: "/assets/home/muhurat.png",
-    url: "/muhurat",
+    name: "Isha",
+    src: "/assets/home/abhi.png",
   },
   {
-    name: "Palm Reading",
-    src: "/assets/home/palmreading.png",
-    url: "/",
+    name: "Isha",
+    src: "/assets/home/nitin.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/isha.png",
   },
 ];
-type Props = {
-  head: string;
-};
+type Props = {};
 
-function Services({ head }: Props) {
+const LIveAstro = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
     <div className="mt-[35px] bg-[url('/assets/horoscope-bg.webp')] ">
@@ -49,7 +38,7 @@ function Services({ head }: Props) {
         <div className="">
           <div className="space-y-6">
             <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-              {head}
+              Live Astrologers
             </h2>
             <Swiper
               navigation={{
@@ -66,6 +55,10 @@ function Services({ head }: Props) {
                   slidesPerView: 3,
                   spaceBetween: 40,
                 },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
               }}
               autoplay={{
                 delay: 3500,
@@ -75,23 +68,25 @@ function Services({ head }: Props) {
             >
               {services.map((item, index) => (
                 <SwiperSlide key={item.src + index}>
-                  <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl  border-[5px] border-[#DC6563]">
-                      <Image
-                        src={item.src}
-                        alt={item.name}
-                        width={337}
-                        height={348}
-                        loading={"lazy"}
-                        className="mx-auto h-full w-full object-contain"
-                      />
-                      <div className="">
-                        <p className=" rounded-[10px] bg-[#ca2127] py-[14px]  text-center font-[georgia] text-white md:text-2xl lg:text-[32px]">
+                  <div key={index} className="relative">
+                    <Link href="">
+                      <div className=" rounded-3xl ">
+                        <Image
+                          src={item.src}
+                          alt={item.name}
+                          width={250}
+                          height={343}
+                          loading={"lazy"}
+                          className="mx-auto h-full w-full object-contain"
+                        />
+                      </div>
+                      <div className="absolute bottom-[41px] left-[140px] md:left-[80px] lg:left-[100px] ">
+                        <p className=" z-1 rounded-[10px]   py-[14px]  text-center font-[georgia] font-bold text-white   md:text-[21px] lg:text-[21px]">
                           {item.name}
                         </p>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -108,16 +103,11 @@ function Services({ head }: Props) {
                 </button>{" "}
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]   text-[28px] font-bold text-white">
-                View More
-              </button>
-            </div>
           </div>
         </div>
       </Section>
     </div>
   );
-}
+};
 
-export default Services;
+export default LIveAstro;

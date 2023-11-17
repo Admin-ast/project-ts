@@ -1,7 +1,11 @@
-import React from "react";
-
-import Link from "next/link";
+import React, { useState } from "react";
 import Section from "../Section";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+import BlogsBy from "../blog/BlogsBy";
+import Link from "next/link";
+import Image from "next/image";
 
 const card = [
   {
@@ -130,40 +134,81 @@ const card = [
     date: "March 31,2023",
   },
 ];
-type Props = {
-  heading: string;
-  subheading: string;
-  className: string;
-};
-
-const BlogsBy = ({ heading, subheading, className }: Props) => {
+type Props = {};
+const LatestBlogs = (props: Props) => {
+  const [active, setActive] = useState<Number>(0);
   return (
-    <div className={`mt-[49px] ${className}`}>
+    <div className="mt-[35px] bg-[#D9D9D9] py-6">
       <Section>
         <div className="">
-          <p className="text-center text-[32px] font-bold">{heading}</p>
-          <p className="text-center text-[24px] font-bold">{subheading}</p>
-          <div className="grid gap-5 pt-6 lg:grid-cols-3">
-            {card.map((item, index) => (
-              <Link
-                key={index}
-                href={`/blog/${item?.id}`}
-                className="flex  flex-col  rounded-[20px] bg-white shadow-xl"
-              >
-                <img
-                  className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
-                  src={item?.img}
-                  alt=""
-                />
-                <div className="flex flex-col gap-4 p-3">
-                  <p className=" text-lg font-bold">{item?.text}</p>
-                  <div className="flex items-center justify-between text-[12px] text-slate-500">
-                    <p>Kasturi Chaudhary</p>
-                    <p>March 31,2023</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
+          <div className=" ">
+            <h2 className=" text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+              Latest From Blogs
+            </h2>
+            <p className="mt-[18px] text-center text-[24px] font-semibold">
+              Choose your Moon sign and start reading your FREE Daily Horoscope
+            </p>
+            <Swiper
+              navigation={{
+                prevEl: ".prev",
+                nextEl: ".next",
+              }}
+              onActiveIndexChange={(e) => setActive(e.activeIndex)}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Navigation, Autoplay]}
+            >
+              <div className="">
+                {card.map((item, index) => (
+                  <SwiperSlide key={item.img + index}>
+                    <Link key={index} href={`/blog/${item.id}`}>
+                      <div className="mt-[35px] rounded-3xl bg-white shadow-xl">
+                        <Image
+                          src={item.img}
+                          alt={item.name}
+                          width={337}
+                          height={348}
+                          loading={"lazy"}
+                          className="mx-auto h-full w-full object-contain"
+                        />
+                        <div className="flex flex-col gap-4 overflow-hidden p-3">
+                          <p className=" text-[20px] ">{item?.text}</p>
+                          <div className="flex items-center justify-between text-[12px] text-slate-500">
+                            <p>Kasturi Chaudhary</p>
+                            <p>March 31,2023</p>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </SwiperSlide>
+                ))}
+              </div>
+            </Swiper>
+            <div className=" flex items-center justify-center   ">
+              <div className="     ">
+                <button className="prev cursor-pointer">
+                  <AiFillCaretLeft className={`text-[40px]    text-black  `} />
+                </button>
+              </div>
+
+              <div className=" ">
+                <button className="next cursor-pointer">
+                  <AiFillCaretRight className={`text-[40px]    text-black  `} />
+                </button>{" "}
+              </div>
+            </div>
           </div>
         </div>
       </Section>
@@ -171,4 +216,4 @@ const BlogsBy = ({ heading, subheading, className }: Props) => {
   );
 };
 
-export default BlogsBy;
+export default LatestBlogs;

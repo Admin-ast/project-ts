@@ -1,19 +1,12 @@
-import React, { useState } from "react";
-import Section from "../Section";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { PlayIcon } from "@heroicons/react/24/solid";
-
-// import required modules
-import { Pagination, Navigation, Autoplay } from "swiper";
-import Horoscope from "../home/Horoscope";
 import Link from "next/link";
+import React, { useState } from "react";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Section from "../Section";
 
+type Props = {};
 type Service = {
   name: string;
   src: string;
@@ -22,26 +15,22 @@ type Service = {
 
 const services: Service[] = [
   {
-    name: "Compatibility",
-    src: "/assets/home/compatibility.png",
+    name: "Priyanka Chopra",
+    src: "/assets/home/priyanka.png",
     url: "/compatibility",
   },
   {
-    name: "Muhurat",
-    src: "/assets/home/muhurat.png",
-    url: "/muhurat",
+    name: "Compatibility",
+    src: "/assets/home/priyanka.png",
+    url: "/compatibility",
   },
   {
-    name: "Palm Reading",
-    src: "/assets/home/palmreading.png",
-    url: "/",
+    name: "Compatibility",
+    src: "/assets/home/priyanka.png",
+    url: "/compatibility",
   },
 ];
-type Props = {
-  head: string;
-};
-
-function Services({ head }: Props) {
+const News = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
     <div className="mt-[35px] bg-[url('/assets/horoscope-bg.webp')] ">
@@ -49,7 +38,7 @@ function Services({ head }: Props) {
         <div className="">
           <div className="space-y-6">
             <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-              {head}
+              AstroSevaTalk In News
             </h2>
             <Swiper
               navigation={{
@@ -76,7 +65,7 @@ function Services({ head }: Props) {
               {services.map((item, index) => (
                 <SwiperSlide key={item.src + index}>
                   <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl  border-[5px] border-[#DC6563]">
+                    <div className=" rounded-3xl  ">
                       <Image
                         src={item.src}
                         alt={item.name}
@@ -85,11 +74,11 @@ function Services({ head }: Props) {
                         loading={"lazy"}
                         className="mx-auto h-full w-full object-contain"
                       />
-                      <div className="">
-                        <p className=" rounded-[10px] bg-[#ca2127] py-[14px]  text-center font-[georgia] text-white md:text-2xl lg:text-[32px]">
-                          {item.name}
-                        </p>
-                      </div>
+                    </div>
+                    <div className="">
+                      <p className=" rounded-[10px] bg-[#ca2127] py-[14px]  text-center font-[georgia] text-white ">
+                        {item.name}
+                      </p>
                     </div>
                   </Link>
                 </SwiperSlide>
@@ -108,16 +97,11 @@ function Services({ head }: Props) {
                 </button>{" "}
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]   text-[28px] font-bold text-white">
-                View More
-              </button>
-            </div>
           </div>
         </div>
       </Section>
     </div>
   );
-}
+};
 
-export default Services;
+export default News;
