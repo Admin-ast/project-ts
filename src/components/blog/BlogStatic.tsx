@@ -492,7 +492,11 @@ const BlogStatic = (props: Props) => {
         </div>
       </div>
       <div className="">
-        <BlogsBy heading="Blogs By Kasturi Chaudhary" />
+        <BlogsBy
+          className=""
+          heading="Blogs By Kasturi Chaudhary"
+          subheading=""
+        />
         <RelatedBlogs />
         <RecentBlogs />
         <OurAstrologer heading="Our Astrologer" />

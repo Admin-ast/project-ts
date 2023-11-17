@@ -137,7 +137,7 @@ function Review({}: Props) {
     //   </Section>
     // </div>
 
-    <div className="">
+    <div className="bg-white shadow-xl">
       <Section>
         <div className="">
           <div className="mb-[35px]">
@@ -150,7 +150,7 @@ function Review({}: Props) {
           </div>
           {reviews?.map((item, index) => (
             <div
-              className="mt-4 flex gap-4 rounded-[10px] border-[1px] border-[#D9D9D9]"
+              className="mt-4 gap-4 rounded-[10px]  border-[1px] border-[#D9D9D9] md:flex lg:flex"
               key={index}
             >
               <div className="py-2 px-10  ">

@@ -76,7 +76,7 @@ function Hero({}: Props) {
   const router = useRouter();
   return (
     <div>
-      <div className="flex flex-col items-center justify-between bg-[url('/assets/horoscope-bg.webp')]  bg-cover py-4 md:space-y-10 lg:py-[35px]">
+      <div className="flex flex-col items-center justify-between bg-[#000000]  bg-cover py-4 md:space-y-10 lg:py-[35px]">
         <div className="w-full px-2 ">
           <Slider slides={slides} />
         </div>

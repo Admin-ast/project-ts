@@ -256,7 +256,7 @@ function MatchMakingDetails() {
           </div>
         </div>
         <Appointments />
-        <Services />
+        <Services head="Our Services" />
       </Section>
     </>
   );

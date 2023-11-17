@@ -4,6 +4,11 @@ import Link from "next/link";
 
 const card = [
   {
+    img: "/assets/shop/gemstone.svg",
+    name: "Gemstone",
+    url: "/shop/gemstone",
+  },
+  {
     img: "/assets/shop/lovescore.svg",
     name: "Love Score",
     url: "/shop/lovescore",
@@ -18,11 +23,7 @@ const card = [
     name: "Kundli Matching",
     url: "/shop/kundli-matchingProduct",
   },
-  {
-    img: "/assets/shop/gemstone.svg",
-    name: "Gemstone",
-    url: "/shop/gemstone",
-  },
+
   {
     img: "/assets/shop/carreereport.svg",
     name: "Career Report",
@@ -98,21 +99,23 @@ const Card = (props: Props) => {
             </p>
           </div>
           <div>
-            <div className=" grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+            <div className=" grid gap-4  md:gap-6 lg:grid-cols-4">
               {card.map((item, index) => (
                 <Link
                   key={index}
                   href={item?.url}
-                  className="flex  flex-col rounded-[10px] rounded-t-xl border-2 border-[#DC6563]"
+                  className=" rounded-[10px]  border-2 border-[#DC6563]"
                 >
-                  <img
-                    className="h-full w-full object-contain"
-                    src={item?.img}
-                    alt=""
-                  />
-                  <p className="rounded-[10px] bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
-                    {item?.name}
-                  </p>
+                  <div className="h-[331.7px]">
+                    <img
+                      className="h-[281px] w-full rounded-t-[10px] object-cover"
+                      src={item?.img}
+                      alt=""
+                    />
+                    <button className="w-full rounded-[10px]   bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
+                      {item?.name}
+                    </button>
+                  </div>
                 </Link>
               ))}
             </div>

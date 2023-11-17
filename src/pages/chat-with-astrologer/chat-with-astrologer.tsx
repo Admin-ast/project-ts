@@ -10,6 +10,9 @@ import Seo from "@/components/Seo";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
 import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
+import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
+import Review from "@/components/home/Review";
+import Services from "@/components/home/Services";
 
 type Props = {};
 
@@ -60,10 +63,10 @@ function ChatAstrologer({}: Props) {
         metaDescription="Find out what the stars have in store for you with astrology predictions online. Get personalized horoscopes and daily forecasts for your zodiac sign from experts to help guide you through life's decisions. Unlock the secrets of the universe with astrology predictions online with Astrosevatalk"
         keywords="astrosevatalk, chat online, Astrology, Astrology today, Astrology in Hindi, Astrology in Tamil, Astrologer, Astrologer today, Astrologer Tamil, Horoscope, Horoscope today, Horoscope daily, Horoscope 2023, Kundli Bhagya, Kundli, Kundli match, Zodiac Signs, match making horoscope, matchmaking marriage, Jyotish, Talk to Astrologer, plam reading, job prediction by date of birth,career prediction by date of birth indian astrology free"
       />
-      <Hero
+      {/* <Hero
         text="Chat With Astrologer"
         icon="/assets/appointment/chat-hero.png"
-      />
+      /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -92,7 +95,16 @@ function ChatAstrologer({}: Props) {
             />
           </div>
         </Section>
-        <Consultation />
+        <BestAstrologer heading="Find Best Astrologers" />
+        <div className="mt-[33px]">
+          <Review />
+        </div>
+        <div className="">
+          <Services head="Complementary Astrology Serveries" />
+        </div>
+        <div className="mt-5">
+          <Consultation />
+        </div>
         <Faq faqDetail={faqsDetail} />
       </div>
     </>

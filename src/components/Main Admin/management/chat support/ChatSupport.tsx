@@ -29,7 +29,7 @@ const ChatSupport = (props: Props) => {
               <div className="lg:w-1/2">
                 <ArchiveChats />
               </div>
-              <div className="lg:w-1/2 ">
+              <div className="lg:w-3/4 ">
                 <PersonChat name="Prerna Sharma" number={+123} />
                 <ChatLayout />
               </div>

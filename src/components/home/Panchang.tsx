@@ -22,34 +22,32 @@ type Service = {
 
 const services: Service[] = [
   {
-    name: "Compatibility",
-    src: "/assets/home/compatibility.png",
-    url: "/compatibility",
+    name: "Vaar",
+    src: "/assets/home/panchang1.png",
+    url: "/",
   },
   {
-    name: "Muhurat",
-    src: "/assets/home/muhurat.png",
-    url: "/muhurat",
+    name: "Vaar",
+    src: "/assets/home/panchang2.png",
+    url: "/",
   },
   {
-    name: "Palm Reading",
-    src: "/assets/home/palmreading.png",
+    name: "Vaar",
+    src: "/assets/home/panchang3.png",
     url: "/",
   },
 ];
-type Props = {
-  head: string;
-};
+type Props = {};
 
-function Services({ head }: Props) {
+const Panchang = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="mt-[35px] bg-[url('/assets/horoscope-bg.webp')] ">
+    <div className=" mt-[35px] bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-6">
       <Section>
         <div className="">
           <div className="space-y-6">
-            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-              {head}
+            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold text-white sm:text-2xl md:text-3xl lg:text-[40px]">
+              Panchang
             </h2>
             <Swiper
               navigation={{
@@ -76,19 +74,21 @@ function Services({ head }: Props) {
               {services.map((item, index) => (
                 <SwiperSlide key={item.src + index}>
                   <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl  border-[5px] border-[#DC6563]">
-                      <Image
-                        src={item.src}
-                        alt={item.name}
-                        width={337}
-                        height={348}
-                        loading={"lazy"}
-                        className="mx-auto h-full w-full object-contain"
-                      />
+                    <div className="    ">
                       <div className="">
-                        <p className=" rounded-[10px] bg-[#ca2127] py-[14px]  text-center font-[georgia] text-white md:text-2xl lg:text-[32px]">
-                          {item.name}
-                        </p>
+                        <Image
+                          src={item.src}
+                          alt={item.name}
+                          width={280}
+                          height={302}
+                          loading={"lazy"}
+                          className="mx-auto h-full w-full object-contain"
+                        />
+                        <div className="bg-white ">
+                          <p className=" rounded-[10px]  py-[14px]  text-center font-[georgia]  md:text-2xl lg:text-[36px]">
+                            {item.name}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </Link>
@@ -98,26 +98,21 @@ function Services({ head }: Props) {
             <div className=" flex items-center justify-center   ">
               <div className="     ">
                 <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[40px]    text-black  `} />
+                  <AiFillCaretLeft className={`text-[40px]    text-white  `} />
                 </button>
               </div>
 
               <div className=" ">
                 <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[40px]    text-black  `} />
+                  <AiFillCaretRight className={`text-[40px]    text-white `} />
                 </button>{" "}
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]   text-[28px] font-bold text-white">
-                View More
-              </button>
             </div>
           </div>
         </div>
       </Section>
     </div>
   );
-}
+};
 
-export default Services;
+export default Panchang;

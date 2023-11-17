@@ -11,6 +11,9 @@ import React, { Key } from "react";
 import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
 import Calling from "@/components/talk-to-astrologer/Calling";
 import SkillDetail from "@/components/Signup/SkillDetail";
+import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
+import Review from "@/components/home/Review";
+import Services from "@/components/home/Services";
 
 type Props = {};
 
@@ -56,7 +59,7 @@ const astrologerDetail = {
 function TalkAstrologer({}: Props) {
   return (
     <>
-      <Hero text="Talk To Astrologer" icon="" />
+      {/* <Hero text="Talk To Astrologer" icon="" /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -84,8 +87,17 @@ function TalkAstrologer({}: Props) {
             />
           </div>
         </Section>
-        <Consultation />
-
+        <BestAstrologer heading="Find Best Astrologers" />
+        {/*  */}
+        <div className="mt-[33px]">
+          <Review />
+        </div>
+        <div className="">
+          <Services head="Complementary Astrology Serveries" />
+        </div>
+        <div className="mt-5">
+          <Consultation />
+        </div>
         <Faq faqDetail={faqsDetail} />
       </div>
     </>

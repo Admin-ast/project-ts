@@ -29,10 +29,10 @@ const AddNew = (props: Props) => {
                 <p className="text-[20px] font-bold">AstrosevaTalk Mall</p>
               </div>
 
-              <div className="grid grid-rows-1  md:flex lg:flex ">
+              {/* <div className="grid grid-rows-1   md:flex lg:flex ">
                 <Link
                   href="/admin/astrosevatalkmall/allproducts"
-                  className=" mt-2 rounded-[10px] border-[1px] border-[#DA6468] py-2 text-center font-bold hover:bg-[#DA6468] md:mt-16 md:px-5 lg:mt-16 lg:px-10"
+                  className=" rounded-[10px] border-[1px] border-[#DA6468]   font-bold hover:bg-[#DA6468] md:mt-16 md:px-5 "
                 >
                   All
                 </Link>
@@ -40,19 +40,41 @@ const AddNew = (props: Props) => {
                   <Link href="/admin/astrosevatalkmall/addnew">
                     {" "}
                     <button
-                      className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10 `}
+                      className={` rounded-[5px] border-[1px] border-[#da6468]  font-bold hover:bg-[#da6468]  `}
                     >
                       Add New
                     </button>
                   </Link>
                   <button
-                    className={` rounded-[5px] border-[1px] border-[#da6468] py-2 font-bold hover:bg-[#da6468] lg:px-10  `}
+                    className={` rounded-[5px] border-[1px] border-[#da6468]  font-bold hover:bg-[#da6468]   `}
                   >
                     Bulk Delete
                   </button>
                 </div>
                 <Btns />
+              </div> */}
+
+              <div className="mt-[65px] grid grid-rows-2 gap-2 md:flex lg:flex lg:justify-evenly">
+                <Link href="/admin/astrosevatalkmall/allproducts">
+                  <button className="  rounded-[10px] border-[1px]  border-[#DA6468] py-2 px-4 font-bold hover:bg-[#DA6468]  md:px-5 lg:px-10">
+                    All
+                  </button>
+                </Link>
+                <div className="">
+                  <Link href="/admin/astrosevatalkmall/addnew">
+                    <button className="rounded-[10px] border-[1px] border-[#DA6468]  py-2 font-bold hover:bg-[#DA6468] md:px-5 lg:px-10">
+                      Add New
+                    </button>
+                  </Link>
+                </div>
+                <Link href="">
+                  {" "}
+                  <button className="rounded-[10px] border-[1px] border-[#DA6468] py-2 font-bold hover:bg-[#DA6468] md:px-5 lg:px-10">
+                    Bulk Delete
+                  </button>
+                </Link>
               </div>
+              <Btns />
             </div>
           </div>
 

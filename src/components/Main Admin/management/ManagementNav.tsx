@@ -7,7 +7,7 @@ type Props = {
 
 const ManagementNav = ({ page }: Props) => {
   return (
-    <div className="mt-[95px] grid-cols-3 justify-evenly gap-5 md:grid lg:flex">
+    <div className="mt-[95px] justify-evenly  md:flex lg:flex">
       <p className="">{`${page}`}</p>
       <div className="rounded-[5px] border-[1px] border-[#DC6563] px-4 font-bold  hover:bg-[#DC6563] ">
         <Link href="/admin/management/chatsupport">Chat Support</Link>
