@@ -80,17 +80,22 @@ function GetPanchang({}: Props) {
 
   return (
     <div>
-      <div className="bg-[url('/assets/cloud-bg.webp')] py-[55px]">
+      <div className=" py-[55px]">
         <Form onSubmit={handleSubmit(onSubmit)}>
           <div className="mx-auto md:w-[65%]">
-            <div className="col-span-8">
+            <div className="grid  gap-[15px] md:flex  md:gap-[15px] lg:flex  ">
               <Combo
                 hasDefaultValue={true}
                 setValue={setValue}
                 setPlaceName={setPlaceName}
                 placeholder="Enter City Name"
-                className={`bg-[#FFF9EA]] appearance-none rounded-xl border border-gray-400 px-12 !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none md:w-full`}
+                className={`appearance-none rounded-xl border border-gray-400  !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none md:w-full `}
               />
+              <div className="flex justify-center   ">
+                <button className="whitespace-nowrap  rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] px-4  text-[24px] text-white">
+                  Get Panchang
+                </button>
+              </div>
             </div>
           </div>
         </Form>
@@ -105,20 +110,24 @@ function GetPanchang({}: Props) {
               {format(new Date(), "MMMM dd, EEEE")} | {placeName}
             </p>
           </div>
-          <div className="grid grid-cols-12 gap-6">
+          <div className="grid gap-6 lg:grid-cols-12">
             <div className="col-span-8 space-y-6">
               <div className="grid grid-cols-2 gap-8">
-                <div className="rounded-2xl bg-[#E2CB85] p-3">
-                  <p className="text-[22px]">Sunrise</p>
+                <div className="rounded-2xl bg-[#DC6563] p-3">
+                  <p className="text-[18px] md:text-[22px] lg:text-[22px]">
+                    Sunrise
+                  </p>
                   <p className="text-xs">{basicPanchang?.vedic_sunrise}</p>
                 </div>
-                <div className="rounded-2xl bg-[#E2CB85] p-3">
-                  <p className="text-[22px]">Moonrise</p>
+                <div className="rounded-2xl bg-[#DC6563] p-3">
+                  <p className=" text-[18px] md:text-[22px] lg:text-[22px]">
+                    Moonrise
+                  </p>
                   <p className="text-xs">{basicPanchang?.vedic_sunset}</p>
                 </div>
               </div>
 
-              <div className="relative overflow-x-auto border border-gray-400 sm:rounded-lg">
+              <div className="relative  overflow-x-auto border border-gray-400 sm:rounded-lg">
                 <table className="w-full text-left text-base text-gray-900">
                   <tbody>
                     <tr className={`bg-white`}>
@@ -227,7 +236,7 @@ function GetPanchang({}: Props) {
                 </table>
               </div>
             </div>
-            <div className="col-span-4 flex flex-col justify-center space-y-6 rounded-2xl bg-[#FFF7E5] px-12 py-6">
+            <div className="col-span-4 flex flex-col justify-center space-y-6 rounded-2xl bg-white px-12 py-6 shadow-xl">
               <Image
                 src={"/assets/appointment/live-astro.png"}
                 alt={"astrologer"}
@@ -241,7 +250,7 @@ function GetPanchang({}: Props) {
           </div>
           <div className="relative overflow-x-auto rounded-2xl border-r border-l border-gray-300">
             <table className="w-full text-left text-base">
-              <thead className="bg-[#E2CB85] text-center text-gray-900">
+              <thead className="bg-[#DC6563] text-center text-gray-900">
                 <tr>
                   <th colSpan={3} className="px-6 py-3 font-[georgia] text-4xl">
                     Inauspicious Timings (Ashubha Muhurat)
@@ -273,7 +282,7 @@ function GetPanchang({}: Props) {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16">
             <div className="overflow-hidden rounded-lg">
-              <p className="bg-[#E2CB85] p-5 font-[georgia] text-3xl font-semibold">
+              <p className="bg-[#DC6563] p-5 font-[georgia] text-3xl font-semibold">
                 Lagna Chart at Sunrise
               </p>
               <div
@@ -282,9 +291,9 @@ function GetPanchang({}: Props) {
                 }}
               ></div>
             </div>
-            {/* <div className="relative overflow-x-auto rounded-2xl bg-[#FFF7E5]">
+            <div className="relative overflow-x-auto rounded-2xl bg-white shadow-xl">
               <table className="w-full text-left text-base">
-                <thead className="bg-[#E2CB85] text-center text-gray-900">
+                <thead className="bg-[#DC6563] text-center text-gray-900">
                   <tr>
                     <th
                       colSpan={2}
@@ -296,10 +305,10 @@ function GetPanchang({}: Props) {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-400 text-center">
-                    <td className="border-r border-gray-400 px-6 py-4 font-medium">
+                    <td className="border-r border-gray-400 py-4 font-medium lg:px-6">
                       Tara Bhala
                     </td>
-                    <td className="grid grid-cols-3 gap-4 p-6 pb-16">
+                    <td className="grid grid-cols-3 md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 lg:pb-16">
                       <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
                         Bharani
                       </p>
@@ -333,7 +342,7 @@ function GetPanchang({}: Props) {
                     <td className="whitespace-nowrap border-r border-gray-400 px-6 py-4 font-medium">
                       Chandra Bhala
                     </td>
-                    <td className="grid grid-cols-3 gap-4 p-6 pb-16">
+                    <td className="grid grid-cols-3 md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 lg:pb-16">
                       <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
                         Virgo
                       </p>
@@ -352,14 +361,14 @@ function GetPanchang({}: Props) {
                       <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
                         Scorpio
                       </p>
-                      <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
+                      <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-9 text-base">
                         Capricorn
                       </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div> */}
+            </div>
           </div>
           <div className="relative overflow-x-auto rounded-2xl border border-gray-400">
             <table className="w-full text-left text-base">
@@ -367,7 +376,7 @@ function GetPanchang({}: Props) {
                 <tr>
                   <th
                     colSpan={5}
-                    className="bg-[#E2CB85] px-6 py-3 font-[georgia] text-4xl"
+                    className="bg-[#DC6563] px-6 py-3 font-[georgia] text-4xl"
                   >
                     Planetary Position at Sunrise
                   </th>

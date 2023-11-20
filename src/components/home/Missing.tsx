@@ -129,7 +129,7 @@ type Props = {};
 
 const Missing = (props: Props) => {
   return (
-    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] text-white lg:flex ">
+    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] text-white md:flex lg:flex ">
       {/* <div className="text-white bg-gradient-to-b from-[#ef824c] to-[#d84f50] lg:flex ">
         <div className="w-full">
           <div className="p-4">
@@ -196,26 +196,30 @@ const Missing = (props: Props) => {
         <p className="mt-2 text-base lg:text-lg">
           Get solutions from astrologers
         </p>
-        <div className="bg-white  ">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="45"
-            viewBox="0 0 1150 45"
-            fill="none"
-          >
-            <path d="M0 0L1135 1.75L1113.43 49H0V0Z" fill="white" />
-            <foreignObject x="10%" y="10%" width="80%" height="80%">
-              <div className="text-black">
-                <p className="text-lg font-semibold lg:text-xl">
-                  Free Chat with Astrologer
-                </p>
-              </div>
-            </foreignObject>
-          </svg>
+        <div className="mt-[100px] bg-white ">
+          <div className="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="45"
+              viewBox="0 0 1150 45"
+              fill="none"
+            >
+              <path d="M0 0L1135 1.75L1113.43 49H0V0Z" fill="white" />
+              <foreignObject x="10%" y="10%" width="80%" height="80%">
+                <div className="text-black">
+                  <p className="text-lg font-semibold lg:text-xl">
+                    Free Chat with Astrologer
+                  </p>
+                </div>
+              </foreignObject>
+            </svg>
+          </div>
         </div>
       </div>
-
+      <div className="relative ">
+        <div className="absolute h-[45px] bg-white md:bottom-[87px] md:w-[50px] lg:bottom-[79px] lg:w-[100px]"></div>
+      </div>
       <div className=" ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

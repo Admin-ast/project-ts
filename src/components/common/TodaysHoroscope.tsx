@@ -142,8 +142,8 @@ function TodaysHoroscope({}: Props) {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className=" flex items-center justify-center  lg:relative lg:bottom-[250px] ">
-              <div className="z-10  lg:absolute   lg:left-[-40px]">
+            <div className=" flex items-center justify-center   ">
+              <div className="">
                 <button className="prev cursor-pointer ">
                   <AiFillCaretLeft
                     className={`text-[40px] text-black    lg:mt-[60px]  `}
@@ -151,7 +151,7 @@ function TodaysHoroscope({}: Props) {
                 </button>
               </div>
 
-              <div className="z-10 lg:absolute     lg:left-[1250px] ">
+              <div className=" ">
                 <button className="next cursor-pointer">
                   <AiFillCaretRight
                     className={`text-[40px]  text-black  lg:mt-[60px]  `}

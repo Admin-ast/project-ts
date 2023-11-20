@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="relative w-64">
+    <div className="relative mt-10 w-64">
       <input
         type="text"
         className="w-full rounded-md border border-gray-300 py-2 px-3"

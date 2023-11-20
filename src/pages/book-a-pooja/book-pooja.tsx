@@ -1,4 +1,6 @@
 import Section from "@/components/Section";
+import Card from "@/components/book-a-pooja/Card";
+import Line from "@/components/book-a-pooja/Line";
 import Search from "@/components/common/Search";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
@@ -7,10 +9,10 @@ type Props = {};
 
 const bookpooja = (props: Props) => {
   return (
-    <div className="">
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className="">
         <Section>
-          <div className="flex justify-between">
+          <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <HomeIcon className="h-6 w-6  p-1" />
               <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
@@ -20,6 +22,12 @@ const bookpooja = (props: Props) => {
             <div className="">
               <Search />
             </div>
+          </div>
+          <div className="">
+            <Line />
+          </div>
+          <div className="mb-10">
+            <Card date="13 Nov" />
           </div>
         </Section>
       </div>
