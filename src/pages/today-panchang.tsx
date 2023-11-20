@@ -1,4 +1,7 @@
+import AlsoCheck from "@/components/common/AlsoCheck";
 import Hero from "@/components/common/Hero";
+import TodaysHoroscope from "@/components/common/TodaysHoroscope";
+import HoroscopeSign from "@/components/horoscope/horoscope-sign";
 import Durmurtham from "@/components/panchang/Durmurtham";
 import GetPanchang from "@/components/panchang/GetPanchang";
 import Karna from "@/components/panchang/Karna";
@@ -47,14 +50,15 @@ function TodayPanchang({}: Props) {
       </div>
       <Today />
       <GetPanchang />
-      <Panchang />
+      {/* <Panchang /> */}
       <WhyUse />
+      <Vaar />
       <Tithi />
       <Nakshtra />
       <Yoga />
       <Karna />
-      <Vaar />
-      <RahuKaal />
+
+      {/* <RahuKaal />
       <Varjyam />
       <Durmurtham />
       <Significance />
@@ -68,7 +72,9 @@ function TodayPanchang({}: Props) {
       <Ekadashi />
       <Chaturdashi />
       <Amavsya />
-      <WhyPanchang />
+      <WhyPanchang /> */}
+      <AlsoCheck />
+      <TodaysHoroscope />
     </div>
   );
 }

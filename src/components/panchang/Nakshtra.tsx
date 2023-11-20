@@ -38,8 +38,8 @@ const Nakshtra = (props: Props) => {
     <div className="py-8  lg:py-[51px]">
       <Section>
         <div className="flex flex-col space-y-6">
-          <p className=" font-[georgia] text-2xl font-bold md:text-4xl">
-            ● Nakshatra
+          <p className=" text-center font-[georgia] text-2xl font-bold md:text-4xl">
+            Nakshatra
           </p>
           <div className="flex flex-col gap-2 text-justify">
             <p>

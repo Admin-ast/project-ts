@@ -5,11 +5,11 @@ type Props = {};
 
 const Vaar = (props: Props) => {
   return (
-    <div className="bg-[#FFF7E5] py-8 lg:py-[51px]">
+    <div className=" py-8 lg:py-[51px]">
       <Section>
         <div className="flex flex-col space-y-6">
-          <p className=" font-[georgia] text-2xl font-bold md:text-4xl">
-            ● Vaar
+          <p className=" text-center font-[georgia] text-2xl font-bold md:text-4xl">
+            Vaar
           </p>
           <div className="text-justify">
             <p>
