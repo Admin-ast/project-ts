@@ -1,6 +1,30 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/georgia");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/georgia");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #dc6563;
+}
+.w-35 {
+  width: 14rem;
+}
+.w-30 {
+  width: 4rem;
+}
+.text-red {
+  color: red;
+}

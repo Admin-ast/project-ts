@@ -24,7 +24,7 @@ const bookpooja = (props: Props) => {
             </div>
           </div>
           <div className="">
-            <Line />
+            <Line date={13} month="Nov" />
           </div>
           <div className="mb-10">
             <Card date="13 Nov" />
