@@ -751,7 +751,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 6,
     title: "Astrologer Signup",
-    url: "/signup",
+    url: "/footer/astrologer-signup-at-astrosevatalk",
   },
   {
     id: 7,
@@ -811,7 +811,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 18,
     title: "Festival calendar",
-    url: "/festival-calender",
+    url: "/footer/festivals-calendar-at-astrosevatalk",
   },
   {
     id: 19,
@@ -821,7 +821,7 @@ const importantLinks: ImportantLinks[] = [
   {
     id: 20,
     title: "Mole astrology",
-    url: "/mole-astrology",
+    url: "/footer/mole-astrology",
   },
   {
     id: 21,
@@ -1028,7 +1028,7 @@ const importantLinks3: ImportantLinks3[] = [
   {
     id: 18,
     title: "Money recovery",
-    url: "/money-recovery",
+    url: "/footer/money-recovery",
   },
   {
     id: 19,
@@ -1107,12 +1107,11 @@ function Footer({}: Props) {
     <div className=" bg-black py-12 text-white">
       <Section>
         <div className="space-y-6">
-          <div className="flex flex-col gap-4">
-            <p className="text-2xl font-semibold underline underline-offset-[6px]">
-              About AstroSevatalk
-            </p>
+          <div className="flex flex-col ">
+            <p className="text-2xl font-semibold">About AstroSevatalk</p>
+            <hr className="w-35 text-white" />
 
-            <p className="text-justify">
+            <p className="mt-[20px] text-justify">
               AstroSevatalk is the best astrology website for online Astrology
               predictions. Talk to Astrologer on call and get answers to all
               your worries by seeing the future life through Astrology Kundli
@@ -1195,7 +1194,10 @@ function Footer({}: Props) {
                 </Link>
                 <hr className="my-2   w-32 text-white" />
                 <ul className="flex flex-col gap-4 ">
-                  <li className="">We are available to 24*7 chat support.</li>
+                  <li className="">
+                    We are available 24x7 on chat, support{" "}
+                    <span className="text-red">click to start Chat</span>
+                  </li>
                   <li className="">Email ID: Support@astrosevatalk.com</li>
                 </ul>
 
@@ -1233,7 +1235,7 @@ function Footer({}: Props) {
 
               <div className="w-fit space-y-2">
                 <p className="text-xl font-semibold">Secure</p>
-                <hr className="my-2   w-32 text-white" />
+                <hr className="w-30   my-2 text-white" />
 
                 <ul className="flex flex-col gap-4 ">
                   {secure.map((item, index) => (
