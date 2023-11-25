@@ -8,6 +8,7 @@ import BlogsBy from "./BlogsBy";
 import RelatedBlogs from "./RelatedBlogs";
 import RecentBlogs from "./RecentBlogs";
 import OurAstrologer from "./OurAstrologer";
+import Missing from "../home/Missing";
 type Props = {};
 
 const BlogStatic = (props: Props) => {
@@ -28,14 +29,14 @@ const BlogStatic = (props: Props) => {
 
           <div className=" mt-[25px] mb-[48px]  bg-[#DC6563] ">
             {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="842"
-              height="28"
-              viewBox="0 0 842 28"
-              fill="none"
-            >
-              <path d="M0 0L842 1L826 28H0V0Z" fill="#DC6563" />
-            </svg> */}
+      xmlns="http://www.w3.org/2000/svg"
+      width="842"
+      height="28"
+      viewBox="0 0 842 28"
+      fill="none"
+    >
+      <path d="M0 0L842 1L826 28H0V0Z" fill="#DC6563" />
+    </svg> */}
             <p className="  text-base font-semibold">First Chat Free</p>
           </div>
         </div>
@@ -49,6 +50,7 @@ const BlogStatic = (props: Props) => {
           />
         </div>
       </div>
+      {/* <Missing/> */}
       {/* </div> */}
 
       {/* -------------------------MANGAL DOSH___________________________________________________________________ */}

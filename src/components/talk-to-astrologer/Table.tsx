@@ -23,9 +23,9 @@ const tableContent = [
 ];
 const Table = ({ head }: Props) => {
   return (
-    <div className=" mb-[33px] rounded-[15px] shadow-xl ">
-      <div className="flex  items-center justify-center rounded-t-[15px] bg-[#DC6563]">
-        <p className="font-roboto text-[22px] font-semibold text-white">
+    <div className=" mb-[33px] h-[324px] rounded-[15px] bg-white shadow-xl ">
+      <div className=" rounded-t-[15px] bg-[#DC6563]">
+        <p className="font-roboto flex  h-[56px] items-center justify-center text-[22px] font-semibold text-white">
           {head}
         </p>
       </div>

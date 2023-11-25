@@ -142,7 +142,7 @@ function TodaysHoroscope({}: Props) {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className=" flex items-center justify-center   ">
+            {/* <div className=" flex items-center justify-center   ">
               <div className="">
                 <button className="prev cursor-pointer ">
                   <AiFillCaretLeft
@@ -158,6 +158,22 @@ function TodaysHoroscope({}: Props) {
                   />
                 </button>{" "}
               </div>
+            </div> */}
+            <div
+              className="relative  mx-auto flex items-center justify-between"
+              style={{
+                height: "330px",
+                marginTop: "-23%",
+                marginLeft: "-2%",
+                marginRight: "-2%",
+              }}
+            >
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className="text-3xl text-black" />
+              </button>
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className="text-3xl text-black" />
+              </button>
             </div>
           </div>
         </div>

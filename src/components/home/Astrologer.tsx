@@ -52,13 +52,13 @@ const astrologers: Astrologers[] = [
 function Astrologer({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] bg-cover py-20">
+    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] bg-cover py-[30px]">
       <Section>
-        <div className="space-y-6">
-          <div className="mb-[35px]">
-            <h2 className="mb-[15px] text-center font-[georgia] text-xl font-semibold text-white sm:text-2xl md:text-3xl lg:text-[48px]">
+        <div className="">
+          <div className="">
+            <p className=" text-center font-[georgia] text-[15px] text-base font-semibold text-white sm:text-2xl md:text-[30px] lg:text-[30px]">
               Our Astrologers
-            </h2>
+            </p>
             {/* <h3 className="text-center text-sm font-semibold sm:text-lg lg:text-2xl">
               5000+ Best Astrologers from India for Online Consultation
             </h3> */}
@@ -92,38 +92,42 @@ function Astrologer({}: Props) {
             {astrologers?.map((item, index) => (
               <SwiperSlide key={item.src + index}>
                 <div className=" mt-6 flex  flex-col items-center justify-center  space-y-4 rounded-2xl bg-white py-4 px-6 shadow-xl">
-                  <div className="h-[120px]   rounded-full ">
-                    <div className="rounded-full border-[6px] border-[#DC6563]">
+                  <div className="h-[170px]   rounded-full ">
+                    <div className="flex items-center justify-center">
                       <Image
                         src="/assets/home/review.png"
                         alt={item.name}
                         width={108}
                         height={108}
                         loading={"lazy"}
+                        className="rounded-full border-[6px] border-[#DC6563]"
                       />
                     </div>
-                  </div>
-                  <div className="text-center font-[georgia] ">
-                    <p className="text-[22px] font-semibold">{item?.name}</p>
-                    <p className="text-base font-semibold">{item.type}</p>
+                    <div className="text-center font-[georgia] ">
+                      <p className="text-[22px] font-semibold">{item?.name}</p>
+                      <p className="text-base font-semibold">{item.type}</p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          <div className=" flex items-center justify-center  ">
-            <div className=" ">
-              <button className="prev cursor-pointer">
-                <AiFillCaretLeft className={`text-[40px]    text-white  `} />
-              </button>
-            </div>
-
-            <div className="  ">
-              <button className="next cursor-pointer">
-                <AiFillCaretRight className={`text-[40px]   text-white  `} />
-              </button>{" "}
-            </div>
+          <div
+            className="relative z-50   mx-auto flex items-center justify-between"
+            style={{
+              height: "300px",
+              marginTop: "-21%",
+              marginLeft: "-2%",
+              marginRight: "-2%",
+            }}
+          >
+            <button className="prev cursor-pointer">
+              <AiFillCaretLeft className="text-3xl text-black" />
+            </button>
+            <button className="next cursor-pointer">
+              <AiFillCaretRight className="text-3xl text-black" />
+            </button>
           </div>
         </div>
       </Section>

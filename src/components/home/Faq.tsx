@@ -5,17 +5,17 @@ type Props = {};
 
 const Faq = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover  py-[30px]">
       <Section>
         <div className="">
-          <h2 className="mb-[18px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+          <h2 className=" text-center font-[georgia] text-xl text-[20px] font-bold sm:text-2xl md:text-[30px] lg:text-[30px]">
             {`FAQ'S`} ABOUT ASTROLOGY
           </h2>
-          <p className="text-center text-[24px]">
+          <p className="mt-[10px] text-center text-[24px]">
             {" "}
             Why Is Astrology So Accurate?
           </p>
-          <p className="text-justify text-base font-medium">
+          <p className="mt-[20px] text-justify text-base font-medium">
             First of all, the credit for astrology and the predictions we make
             here being so accurate goes to the 100s of learned and
             astrologically-versed astrologers we have on board. And to answer

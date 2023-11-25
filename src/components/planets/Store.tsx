@@ -3,16 +3,16 @@ import Section from "../Section";
 
 const cards = [
   {
-    name: "Love Score",
-    src: "assets/store/Love.svg",
-  },
-  {
     name: "Carrer Report",
-    src: "assets/store/carrer.svg",
+    src: "assets/compatibility/work/career.png",
   },
   {
-    name: "Gem",
-    src: "assets/store/carrer.svg",
+    name: "Kawach",
+    src: "assets/compatibility/work/kawach.png",
+  },
+  {
+    name: "Spell",
+    src: "assets/compatibility/work/spell.png",
   },
 ];
 
@@ -20,23 +20,25 @@ type Props = {};
 
 const Store = (props: Props) => {
   return (
-    <div className="bg-[#FFF7E5] py-8">
+    <div className="mt-5 bg-white py-[30px] shadow-xl">
       <Section>
-        <div className="flex flex-col items-center space-y-6">
+        <div className="flex flex-col items-center ">
           <p className="text-xl font-semibold">Store</p>
-          <p className="text-4xl font-bold">Recommended Reports For You</p>
-          <div className="mb-[42px] grid grid-cols-1 gap-8 md:grid-cols-3">
+          <p className="mt-[10px] text-[30px] font-bold">
+            Recommended Reports For You
+          </p>
+          <div className="mt-[30px] grid grid-cols-1 gap-8 md:grid-cols-3 ">
             {cards.map((item, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-2xl border-[3px] border-black bg-[#FFF7E5]"
+                className="overflow-hidden rounded-2xl border-[3px] border-[#DC6563] bg-[#FFF7E5]"
               >
                 <img
                   src={item.src}
                   alt={item.name}
-                  className="mx-auto h-[319px] w-[296px]"
+                  className="mx-auto h-[289px] w-[296px]"
                 />
-                <p className=" bg-black  py-3 text-center text-[22px] text-white">
+                <p className=" bg-[#DC6563]  py-3 text-center text-[22px] text-white">
                   {item.name}
                 </p>
               </div>

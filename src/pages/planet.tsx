@@ -1,8 +1,11 @@
 import React from "react";
 import { HomeIcon, StarIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
-import Hero from "@/components/appoinments/Hero";
+
 import PlanetsCard from "@/components/planets/PlanetsCard";
+
+import Hero from "@/components/common/Hero";
+import Planets from "@/components/planets/Planets";
 import Store from "@/components/planets/Store";
 
 type Props = {};
@@ -10,7 +13,7 @@ type Props = {};
 const Muhurat = (props: Props) => {
   return (
     <div>
-      <Hero text="Planets" icon="assets/palnet/planetlogo.svg" />
+      <Hero text="Planets" icon="/assets/palnet/planet.png" />
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -21,8 +24,9 @@ const Muhurat = (props: Props) => {
           </div>
         </Section>
       </div>
-      <PlanetsCard />
+      <Planets />
       <Store />
+      {/* <PlanetsCard /> */}
     </div>
   );
 };

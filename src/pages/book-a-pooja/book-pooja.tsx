@@ -9,28 +9,51 @@ type Props = {};
 
 const bookpooja = (props: Props) => {
   return (
+    // <div className="bg-[url('/assets/horoscope-bg.webp')]">
+    //   <div className="">
+    //     <Section>
+    //       {/* <div className="flex items-center justify-between">
+    //         <div className="flex items-center space-x-2">
+    //           <HomeIcon className="h-6 w-6  p-1" />
+    //           <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
+    //             Book A Pooja
+    //           </p>
+    //         </div>
+    //         <div className="">
+    //           <Search />
+    //         </div>
+    //       </div> */}
+    //       <div className="">
+    //         <Line date={13} month="Nov" />
+    //       </div>
+    //       <div className="mb-10">
+    //         <Card date="13 Nov" />
+    //       </div>
+    //     </Section>
+    //   </div>
+    // </div>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <div className="">
+      <div className=" ">
         <Section>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+          <div className="flex items-center justify-between space-x-2 py-[30px]">
+            <div className="flex">
               <HomeIcon className="h-6 w-6  p-1" />
               <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
-                Book A Pooja
+                Chat with Astrologer
               </p>
             </div>
-            <div className="">
-              <Search />
-            </div>
-          </div>
-          <div className="">
-            <Line date={13} month="Nov" />
-          </div>
-          <div className="mb-10">
-            <Card date="13 Nov" />
+            <Search />
           </div>
         </Section>
       </div>
+      <Section>
+        <div className="">
+          <Line date={13} month="Nov" />
+        </div>
+        <div className="mb-10">
+          <Card date="13 Nov" />
+        </div>
+      </Section>
     </div>
   );
 };

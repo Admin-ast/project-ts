@@ -32,7 +32,7 @@ function ChatCard({ detail, service }: Props) {
 
   return (
     <div
-      className="relative flex cursor-pointer justify-evenly space-x-4 overflow-hidden rounded-xl border-4  border-[#DC6563] p-4"
+      className="relative flex cursor-pointer justify-evenly space-x-4 overflow-hidden rounded-xl border-4 border-[#DC6563] bg-white  p-4 shadow-xl"
       onClick={openPopup}
     >
       {isPremium && (

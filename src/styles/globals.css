@@ -28,3 +28,7 @@
 .text-red {
   color: red;
 }
+
+.swiper-backface-hidden .swiper-slide {
+  margin: 0px 8px !important;
+}

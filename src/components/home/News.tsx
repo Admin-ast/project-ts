@@ -17,29 +17,34 @@ const services: Service[] = [
   {
     name: "Priyanka Chopra",
     src: "/assets/home/priyanka.png",
-    url: "/compatibility",
+    url: "/",
   },
   {
-    name: "Compatibility",
+    name: "Priyanka Chopra",
     src: "/assets/home/priyanka.png",
-    url: "/compatibility",
+    url: "/",
   },
   {
-    name: "Compatibility",
+    name: "Priyanka Chopra",
     src: "/assets/home/priyanka.png",
-    url: "/compatibility",
+    url: "/",
+  },
+  {
+    name: "Priyanka Chopra",
+    src: "/assets/home/priyanka.png",
+    url: "/",
   },
 ];
 const News = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="mt-[35px] bg-[url('/assets/horoscope-bg.webp')] ">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] ">
       <Section>
-        <div className="">
-          <div className="space-y-6">
-            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+        <div className=" ">
+          <div className="">
+            <p className=" text-center font-[georgia] text-[20px] font-bold sm:text-2xl md:text-[30px] lg:text-[30px]">
               AstroSevaTalk In News
-            </h2>
+            </p>
             <Swiper
               navigation={{
                 prevEl: ".prev",
@@ -52,8 +57,8 @@ const News = (props: Props) => {
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
+                  slidesPerView: 4,
+                  spaceBetween: 20,
                 },
               }}
               autoplay={{
@@ -63,39 +68,42 @@ const News = (props: Props) => {
               modules={[Pagination, Navigation, Autoplay]}
             >
               {services.map((item, index) => (
-                <SwiperSlide key={item.src + index}>
+                <SwiperSlide key={item.src + index} className="">
                   <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl  ">
+                    <div className="mt-[30px] rounded-t-[10px] ">
                       <Image
                         src={item.src}
                         alt={item.name}
-                        width={337}
-                        height={348}
+                        width={246}
+                        height={175}
                         loading={"lazy"}
-                        className="mx-auto h-full w-full object-contain"
+                        className="  w-full object-contain"
                       />
-                    </div>
-                    <div className="">
-                      <p className=" rounded-[10px] bg-[#ca2127] py-[14px]  text-center font-[georgia] text-white ">
-                        {item.name}
-                      </p>
+                      <div className=" w-full ">
+                        <p className=" rounded-b-[10px] bg-[#ca2127] py-1   text-center font-[georgia] text-white ">
+                          {item.name}
+                        </p>
+                      </div>
                     </div>
                   </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className=" flex items-center justify-center   ">
-              <div className="     ">
-                <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[40px]    text-black  `} />
-                </button>
-              </div>
-
-              <div className=" ">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[40px]    text-black  `} />
-                </button>{" "}
-              </div>
+            <div
+              className="relative z-50 mx-auto flex items-center justify-between"
+              style={{
+                height: "280px",
+                marginTop: "-20%",
+                marginLeft: "-2%",
+                marginRight: "-2%",
+              }}
+            >
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className="text-3xl text-black" />
+              </button>
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className="text-3xl text-black" />
+              </button>
             </div>
           </div>
         </div>

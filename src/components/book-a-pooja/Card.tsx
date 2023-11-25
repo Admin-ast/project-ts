@@ -8,37 +8,37 @@ type Props = {
 const cardItems = [
   {
     id: 1,
-    img: "/assets/book-a-pooja/maha-arti1.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
   {
     id: 2,
-    img: "/assets/book-a-pooja/maha-arti1.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
   {
     id: 3,
-    img: "/assets/book-a-pooja/maha-arti1.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
   {
     id: 4,
-    img: "/assets/book-a-pooja/maha-arti2.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
   {
     id: 5,
-    img: "/assets/book-a-pooja/maha-arti2.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
   {
     id: 6,
-    img: "/assets/book-a-pooja/maha-arti2.png",
+    img: "/assets/book-a-pooja/maha-arti3.png",
     name: "Mahalaxmi Arti",
     desc: "Attract Wealth, Achieve Success in career and Business!",
   },
@@ -64,18 +64,18 @@ const cardItems = [
 
 const Card = ({ date }: Props) => {
   return (
-    <div className="mt-[72px] grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-[72px] grid gap-[30px] md:grid-cols-3 lg:grid-cols-4">
       {cardItems.map((item, index) => (
         <div
           key={index}
-          className="mx-auto max-w-screen-lg  rounded-[15px] border-[3px] border-[#DC6563]"
+          className=" mx-auto rounded-[15px] border-[3px] border-[#DC6563]"
         >
           <div className="relative">
             <Image
               src={item.img}
               alt={item.name}
-              width={364}
-              height={316}
+              width={261}
+              height={227}
               className="rounded-[15px]"
             />
 
@@ -86,9 +86,9 @@ const Card = ({ date }: Props) => {
               </div>
               <div className="flex justify-between rounded-b-[10px] bg-[#DC6563] px-2 py-1 text-white">
                 <p className="">{date}</p>
-                <div className="flex  items-center text-[22px]">
+                <div className="flex  items-center ">
                   <button>Book Now</button>
-                  <IoIosArrowRoundForward />
+                  <IoIosArrowRoundForward className="text-[24px] font-bold" />
                 </div>
               </div>
             </div>

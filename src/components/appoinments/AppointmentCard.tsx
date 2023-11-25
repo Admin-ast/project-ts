@@ -21,7 +21,7 @@ function AppointmentCard({ detail, service }: Props) {
     detail;
 
   return (
-    <div className="relative flex justify-evenly space-x-4 overflow-hidden rounded-xl border-4 border-[#DC6563]  p-4">
+    <div className="relative flex justify-evenly space-x-4 overflow-hidden rounded-xl border-4 border-[#DC6563] bg-white p-4  shadow-xl">
       {isPremium && (
         <div className="absolute left-[42%] top-6 w-full rotate-45 bg-[#DC6563] py-[2px] text-center">
           <p className="text-xs font-semibold">Top Choice</p>

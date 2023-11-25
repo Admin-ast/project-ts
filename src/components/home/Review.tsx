@@ -137,20 +137,20 @@ function Review({}: Props) {
     //   </Section>
     // </div>
 
-    <div className="bg-white shadow-xl">
+    <div className="bg-white shadow-xl ">
       <Section>
-        <div className="">
-          <div className="mb-[35px]">
-            <h2 className="mb-[15px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[48px]">
+        <div className="py-[30px]">
+          <div className="">
+            <h2 className=" text-center font-[georgia]  text-[20px] font-bold sm:text-2xl md:text-[30px] lg:text-[30px]">
               Client Reviews
             </h2>
-            <p className="text-center text-sm font-semibold sm:text-lg lg:text-2xl">
+            <p className="mt-[15px] text-center text-sm font-semibold sm:text-lg lg:text-[24px]">
               Hear about us from our customers
             </p>
           </div>
           {reviews?.map((item, index) => (
             <div
-              className="mt-4 gap-4 rounded-[10px]  border-[1px] border-[#D9D9D9] md:flex lg:flex"
+              className="mt-[25px] items-center gap-4  rounded-[10px] border-[1px] border-[#D9D9D9] md:flex lg:flex"
               key={index}
             >
               <div className="py-2 px-10  ">
@@ -183,8 +183,8 @@ function Review({}: Props) {
               </div>
             </div>
           ))}
-          <div className="mt-5 flex items-center justify-center">
-            <button className="mb-[44px] bg-gradient-to-b from-[#ff5834] to-[#ff160a] px-10 py-3 font-bold text-white">
+          <div className="mt-[30px] flex items-center justify-center">
+            <button className=" rounded-[10px] bg-gradient-to-b from-[#ff5834] to-[#ff160a] px-10 py-3 font-bold text-white">
               View More
             </button>
           </div>
