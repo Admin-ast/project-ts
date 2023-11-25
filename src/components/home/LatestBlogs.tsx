@@ -11,7 +11,7 @@ const card = [
   {
     id: 1,
     url: "/i-was-aware-of-my-agressiveness",
-    img: "/assets/blog/blog aggresion-01.svg",
+    img: "/assets/home/blog2.png",
     text: "I was aware of my agressiveness",
     para: [
       { para: " Dear readers", title: "", img: "" },
@@ -45,8 +45,8 @@ const card = [
   {
     id: 2,
     url: "do-i-posses-the-authority-to-successfully-resolve-ongoing-business-negotiations",
-    img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation C-01-01.svg",
-    text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
+    img: "/assets/home/blog1.png",
+    text: "Do I posses the authority  to successfully resolve ongoing business negotiations   ",
     keywords: [{ key: "business", link: "/" }],
     para: [
       {
@@ -81,7 +81,7 @@ const card = [
   {
     id: 3,
     url: "free-5-minutes-astrology",
-    img: "/assets/blog/five min free consultation-01.svg",
+    img: "/assets/home/blog2.png",
     text: "Free 5 minutes Astrology",
     keywords: [
       { key: "5 minutes astrology", link: "/" },
@@ -138,14 +138,14 @@ type Props = {};
 const LatestBlogs = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="mt-[35px] bg-[#D9D9D9] py-6">
+    <div className=" bg-[#D9D9D9] py-[30px]">
       <Section>
-        <div className="">
+        <div className="  ">
           <div className=" ">
-            <h2 className=" text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+            <h2 className=" text-center font-[georgia] text-xl text-[20px] font-semibold sm:text-2xl md:text-[30px] lg:text-[30px]">
               Latest From Blogs
             </h2>
-            <p className="mt-[18px] text-center text-[24px] font-semibold">
+            <p className="mt-[10px] text-center text-[20px] font-semibold">
               Choose your Moon sign and start reading your FREE Daily Horoscope
             </p>
             <Swiper
@@ -161,7 +161,7 @@ const LatestBlogs = (props: Props) => {
                 },
                 768: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
               }}
               autoplay={{
@@ -172,43 +172,60 @@ const LatestBlogs = (props: Props) => {
             >
               <div className="">
                 {card.map((item, index) => (
-                  <SwiperSlide key={item.img + index}>
+                  <SwiperSlide key={item.img + index} className="">
                     <Link key={index} href={`/blog/${item.id}`}>
-                      <div className="mt-[35px] rounded-3xl bg-white shadow-xl">
-                        <Image
-                          src={item.img}
-                          alt={item.name}
-                          width={337}
-                          height={348}
-                          loading={"lazy"}
-                          className="mx-auto h-full w-full object-contain"
-                        />
-                        <div className="flex flex-col gap-4 overflow-hidden p-3">
-                          <p className=" text-[20px] ">{item?.text}</p>
-                          <div className="flex items-center justify-between text-[12px] text-slate-500">
-                            <p>Kasturi Chaudhary</p>
-                            <p>March 31,2023</p>
+                      <div className="">
+                        <div className="  mt-[10px]  rounded-[10px] border-r-[3px] border-b-[3px]  border-[#DC6563] ">
+                          <div className=" ">
+                            <Image
+                              src={item.img}
+                              alt={item.name}
+                              width={156}
+                              height={145}
+                              loading={"lazy"}
+                              className="  h-full w-full object-contain"
+                            />
+                          </div>
+                          <div className=" h-[76px] overflow-hidden rounded-b-[10px] bg-white px-2 ">
+                            <p className=" truncate text-[20px]">
+                              {item?.text}
+                            </p>
+                            <div className="mt-[10px] flex items-center justify-between text-[12px] text-slate-500">
+                              <p>Kasturi Chaudhary</p>
+                              <p>March 31,2023</p>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      {/* <div className="">
+                        <div className=""></div>
+                      </div> */}
                     </Link>
                   </SwiperSlide>
                 ))}
               </div>
             </Swiper>
-            <div className=" flex items-center justify-center   ">
-              <div className="     ">
-                <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[40px]    text-black  `} />
-                </button>
-              </div>
-
-              <div className=" ">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[40px]    text-black  `} />
-                </button>{" "}
-              </div>
+            <div
+              className="relative z-50    mx-auto flex items-center justify-between"
+              style={{
+                height: "300px",
+                marginTop: "-23%",
+                marginLeft: "-2%",
+                marginRight: "-2%",
+              }}
+            >
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className="text-3xl text-black" />
+              </button>
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className="text-3xl text-black" />
+              </button>
             </div>
+            {/* <div className="flex items-center justify-center">
+              <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]   text-[28px] font-bold text-white">
+                View More
+              </button>
+            </div> */}
           </div>
         </div>
       </Section>

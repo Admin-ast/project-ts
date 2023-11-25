@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="my-10 flex flex-col space-y-8 text-base">
+    <div className="my-10 flex flex-col space-y-8 text-base text-white">
       <Section>
         <div className="flex flex-col space-y-8">
           <div className="flex flex-col space-y-4 text-center">

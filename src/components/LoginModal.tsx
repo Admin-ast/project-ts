@@ -10,7 +10,8 @@ import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
 import { getFetcher, postFetcher } from "@/service";
 import { toast } from "react-toastify";
-
+import { FaArrowRight } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 type Props = {
   isOpen?: boolean;
   setIsOpen: any;
@@ -105,7 +106,7 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-white/40 blur-2xl" />
+            <div className="fixed inset-0 bg-[#7d7d7d] opacity-[50%] blur-2xl" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -123,13 +124,13 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                   <Dialog.Panel className="w-full max-w-sm transform space-y-6 overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all lg:max-w-lg">
                     <Dialog.Title
                       as="h3"
-                      className="text-dark bg-primary relative bg-[#DC6563] py-2 text-lg font-medium leading-6"
+                      className="text-dark bg-primary relative bg-[#DC6563] py-4 text-lg font-medium leading-6"
                     >
                       <p className="text-center text-white">
                         Continue with Phone
                       </p>
-                      <div className="absolute right-4 top-2">
-                        <XMarkIcon
+                      <div className="absolute right-4 top-5">
+                        <ImCross
                           onClick={closeModal}
                           className="w-6 cursor-pointer font-bold text-white hover:text-gray-100"
                         />
@@ -157,10 +158,13 @@ function LoginModal({ isOpen, setIsOpen, setIsLogged }: Props) {
                         </div>
                         <div className="space-y-2">
                           {" "}
-                          <Button
-                            className="mx-auto w-full rounded-lg bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-2 text-lg font-bold text-white"
-                            btnText="GET OTP -->"
-                          />
+                          <div className="relative">
+                            <Button
+                              className="mx-auto w-full rounded-lg bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-2 text-lg font-bold text-white"
+                              btnText="GET OTP "
+                            />
+                            <FaArrowRight className="absolute bottom-[9px] left-[350px] text-white" />
+                          </div>
                           <p className="text-center text-[13px] text-gray-500">
                             By Signing up, you agree to our{" "}
                             <span className="cursor-pointer text-blue-600 underline hover:text-blue-800">

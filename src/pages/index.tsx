@@ -120,7 +120,7 @@ export default function Home() {
       <News />
       <LatestBlogs />
       <CelebrityCustomers />
-      <Shop />
+      <Shop head="Shop" />
       <Panchang />
       <About />
       <Faq />

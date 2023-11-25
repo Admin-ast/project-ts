@@ -13,7 +13,7 @@ const BestAstrologer = ({ heading }: Props) => {
         {heading}
       </p>
       <Section>
-        <div className="mt-10 grid gap-[15px] md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-10   grid gap-[15px] md:grid-cols-3 lg:grid-cols-4">
           <Table head="Consult Astrologer" />
           <Table head="Consult Astrologer" />
           <Table head="Consult Astrologer" />

@@ -25,7 +25,7 @@ function Layout({ children }: Props) {
         <Footer />
         <div className="fixed right-10 bottom-6 z-50 flex items-center  gap-2 md:bottom-12 md:right-20 md:flex-col md:items-stretch">
           <Link
-            href="https://wa.me/9040023006"
+            href="/chat-with-astrologer/chat-with-astrologer"
             className="whatsapp_float"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,8 +36,7 @@ function Layout({ children }: Props) {
             </div>
           </Link>
           <Link
-            // href="https://wa.me/9040023006"
-            href="tel:9040023006"
+            href="/talk-to-astrologer/talk-to-astrologer"
             rel="noopener noreferrer"
           >
             <div className="flex space-x-2 rounded-full bg-[#C83000]/90 p-2 px-2 font-semibold text-white shadow-2xl shadow-gray-900 md:p-3 md:px-5">

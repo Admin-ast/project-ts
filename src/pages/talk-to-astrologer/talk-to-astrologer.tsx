@@ -13,7 +13,7 @@ import Calling from "@/components/talk-to-astrologer/Calling";
 import SkillDetail from "@/components/Signup/SkillDetail";
 import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
 import Review from "@/components/home/Review";
-import Services from "@/components/home/Services";
+import Services from "@/components/talk-to-astrologer/Services";
 
 type Props = {};
 
@@ -60,20 +60,22 @@ function TalkAstrologer({}: Props) {
   return (
     <>
       {/* <Hero text="Talk To Astrologer" icon="" /> */}
-      <div className="bg-[#F5F5F5] py-2">
+      <div className="bg-[url('/assets/horoscope-bg.webp')] ">
         <Section>
-          <div className="flex items-center space-x-2">
-            <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
-              Talk To Astrologer
-            </p>
+          <div className="flex items-center justify-between space-x-2 py-[30px]">
+            <div className="flex">
+              <HomeIcon className="h-6 w-6  p-1" />
+              <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
+                Talk To Astrologer
+              </p>
+            </div>
+            <DetailNavbar bal={10} />
           </div>
         </Section>
       </div>
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
           <div className="py-12 lg:space-y-16">
-            <DetailNavbar bal={10} />
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
@@ -83,13 +85,13 @@ function TalkAstrologer({}: Props) {
             </div>
             <Button
               text="View More"
-              className="mx-auto mt-[88px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
+              className="mx-auto bg-gradient-to-b from-[#FF7646] to-[#FF0600] font-bold lg:text-[24px]"
             />
           </div>
         </Section>
         <BestAstrologer heading="Find Best Astrologers" />
         {/*  */}
-        <div className="mt-[33px]">
+        <div className="">
           <Review />
         </div>
         <div className="">

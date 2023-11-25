@@ -27,19 +27,31 @@ const services: Astrologers[] = [
     name: "Isha",
     src: "/assets/home/isha.png",
   },
+  {
+    name: "Isha",
+    src: "/assets/home/isha.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/isha.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/isha.png",
+  },
 ];
 type Props = {};
 
 const LIveAstro = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="mt-[35px] bg-[url('/assets/horoscope-bg.webp')] ">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] ">
       <Section>
-        <div className="">
-          <div className="space-y-6">
-            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
-              Live Astrologers
-            </h2>
+        <div className="mx-auto max-w-5xl">
+          <p className=" text-center  font-[georgia] text-[20px] font-semibold  md:text-[30px] lg:text-[30px]">
+            Live Astrologers
+          </p>
+          <div className="mt-[30px]">
             <Swiper
               navigation={{
                 prevEl: ".prev",
@@ -53,11 +65,11 @@ const LIveAstro = (props: Props) => {
                 },
                 768: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
                 1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
+                  slidesPerView: 6,
+                  spaceBetween: 20,
                 },
               }}
               autoplay={{
@@ -67,21 +79,21 @@ const LIveAstro = (props: Props) => {
               modules={[Pagination, Navigation, Autoplay]}
             >
               {services.map((item, index) => (
-                <SwiperSlide key={item.src + index}>
+                <SwiperSlide key={item.src + index} className="">
                   <div key={index} className="relative">
                     <Link href="">
-                      <div className=" rounded-3xl ">
+                      <div className=" w-[95%] rounded-[11px] ">
                         <Image
                           src={item.src}
                           alt={item.name}
-                          width={250}
-                          height={343}
+                          width={200}
+                          height={214}
                           loading={"lazy"}
                           className="mx-auto h-full w-full object-contain"
                         />
                       </div>
-                      <div className="absolute bottom-[41px] left-[140px] md:left-[80px] lg:left-[100px] ">
-                        <p className=" z-1 rounded-[10px]   py-[14px]  text-center font-[georgia] font-bold text-white   md:text-[21px] lg:text-[21px]">
+                      <div className="absolute bottom-[31px] left-[10px] md:left-[80px] lg:left-[50px] ">
+                        <p className=" z-1 rounded-[10px]   py-[14px]  text-center font-[georgia] text-base font-bold text-white   md:text-[22px] lg:text-[22px]">
                           {item.name}
                         </p>
                       </div>
@@ -90,18 +102,21 @@ const LIveAstro = (props: Props) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className=" flex items-center justify-center   ">
-              <div className="     ">
-                <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[40px]    text-black  `} />
-                </button>
-              </div>
-
-              <div className=" ">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[40px]    text-black  `} />
-                </button>{" "}
-              </div>
+            <div
+              className="relative z-50  mx-auto flex items-center justify-between"
+              style={{
+                height: "250px",
+                marginTop: "-23%",
+                marginLeft: "-2%",
+                marginRight: "-2%",
+              }}
+            >
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className="text-3xl text-black" />
+              </button>
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className="text-3xl text-black" />
+              </button>
             </div>
           </div>
         </div>

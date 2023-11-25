@@ -20,25 +20,25 @@ const appointment: Appointment[] = [
     url: "/talk-to-astrologer/talk-to-astrologer",
   },
   {
-    name: "Live video chat",
+    name: "Live Video Talk",
     src: "/assets/home/hero-icon-04.webp",
     alt: "test",
     url: "/live-video-chat",
   },
   {
-    name: "Live Astrologers",
-    src: "/assets/home/hero-icon-03.webp",
+    name: "Astrosevamall Shop",
+    src: "/assets/home/",
     alt: "test",
-    url: "/live-astrologer/live-astrologer",
+    url: "/shop/shop",
   },
 ];
 
 function HeroCard({}: Props) {
   return (
-    <div className="bg-black   py-2 md:py-8">
+    <div className="bg-black  py-2 md:py-8">
       <Section>
         <div className="">
-          <div className="grid    grid-cols-4 gap-2 md:gap-6">
+          <div className="flex items-center justify-center gap-[5px] md:gap-[21px] lg:gap-[21px]">
             {appointment?.map((item: Appointment, index: Key) => (
               <div
                 key={index}

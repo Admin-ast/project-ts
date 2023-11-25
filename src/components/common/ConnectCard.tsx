@@ -21,7 +21,7 @@ const ConnectCard = (props: Props) => {
                 Talk To Astrologer
               </button>
             </Link>
-            <Link href="/caht-with-astrologer/chat-with-astrologer">
+            <Link href="/chat-with-astrologer/chat-with-astrologer">
               <button className=" h-[61px] w-[317px] rounded-[20px] bg-[#CA2127] py-2 px-5 text-[24px] font-semibold text-white">
                 Chat With Astrologer
               </button>

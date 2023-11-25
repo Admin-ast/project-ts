@@ -32,19 +32,23 @@ const videoDataArray: VideoData[] = [
     title: "Priyanka Chopra",
     thumbnail: "/assets/home/priyanka.png",
   },
+  {
+    title: "Priyanka Chopra",
+    thumbnail: "/assets/home/priyanka.png",
+  },
 
   // Add more video data as needed
 ];
 const CelebrityCustomers = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-6">
+    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px]">
       <Section>
         <div className="">
-          <div className="space-y-6">
-            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold text-white sm:text-2xl md:text-3xl lg:text-[40px]">
+          <div className="">
+            <p className=" text-center font-[georgia] text-xl text-[20px] font-semibold text-white  md:text-[30px] lg:text-[30px]">
               Our Celebrity Customers
-            </h2>
+            </p>
             <Swiper
               navigation={{
                 prevEl: ".prev",
@@ -57,8 +61,8 @@ const CelebrityCustomers = (props: Props) => {
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
+                  slidesPerView: 4,
+                  spaceBetween: 20,
                 },
               }}
               autoplay={{
@@ -68,25 +72,30 @@ const CelebrityCustomers = (props: Props) => {
               modules={[Pagination, Navigation, Autoplay]}
             >
               {videoDataArray.map((videoData, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="">
                   <Link key={index} href={videoData?.thumbnail}>
-                    <VideoCard key={index} {...videoData} />
+                    <div className="flex justify-center ">
+                      <VideoCard key={index} {...videoData} />
+                    </div>
                   </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className=" flex items-center justify-center   ">
-              <div className="     ">
-                <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[40px]    text-white `} />
-                </button>
-              </div>
-
-              <div className=" ">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[40px]    text-white  `} />
-                </button>{" "}
-              </div>
+            <div
+              className="relative     mx-auto flex items-center justify-between"
+              style={{
+                height: "330px",
+                marginTop: "-23%",
+                marginLeft: "-2%",
+                marginRight: "-2%",
+              }}
+            >
+              <button className="prev cursor-pointer">
+                <AiFillCaretLeft className="text-3xl text-white" />
+              </button>
+              <button className="next cursor-pointer">
+                <AiFillCaretRight className="text-3xl text-white" />
+              </button>
             </div>
           </div>
         </div>
