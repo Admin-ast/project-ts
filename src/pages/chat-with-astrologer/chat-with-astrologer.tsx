@@ -73,7 +73,7 @@ function ChatAstrologer({}: Props) {
             <div className="flex">
               <HomeIcon className="h-6 w-6  p-1" />
               <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
-                Talk To Astrologer
+                Chat with Astrologer
               </p>
             </div>
             <DetailNavbar bal={10} />

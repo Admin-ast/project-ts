@@ -63,7 +63,7 @@ function ChatCard({ detail, service }: Props) {
       </div>
       <div className="space-y-3">
         <p className="font-[georgia] text-[22px] font-semibold ">{name}</p>
-        <div className="space-y-2">
+        <div className="space-y-2 ">
           <p className="text-base ">{expertise}</p>
           <p className="text-xs ">{language}</p>
           <p className="text-xs ">Experience: {experience} years</p>

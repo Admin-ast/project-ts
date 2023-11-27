@@ -24,7 +24,7 @@ const cardDetails: CardDetails[] = [
   {
     name: "Chinese Compatibility",
     img: "/assets/compatibility/chinese-icon.png",
-    link: "/compatibility/chinese",
+    link: "/chines-horoscope",
   },
 ];
 

@@ -57,7 +57,7 @@ function SkillDetail({
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
-      <div className="mx-auto grid max-w-sm grid-cols-2 gap-4 rounded-lg bg-[#FFF7E5] p-4 py-12 lg:max-w-4xl lg:p-16">
+      <div className="mx-auto grid max-w-sm grid-cols-2 gap-4 rounded-lg bg-white p-4 py-12 shadow-xl lg:max-w-4xl lg:p-16">
         <div className="col-span-2 mx-auto flex flex-col items-center justify-center pb-10">
           <div className="mt-1 flex items-center">
             <span className="inline-block h-20 w-20 overflow-hidden rounded-full  bg-gray-100">
