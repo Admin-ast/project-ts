@@ -24,62 +24,62 @@ const todaysHoroscope: TodaysHoroscope[] = [
   {
     name: "Aries",
     src: "/assets/kundli/aries.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Taurus",
     src: "/assets/kundli/taurus.png",
-    url: "/muhurat",
+    url: "/horoscope/daily",
   },
   {
     name: "Gemini",
     src: "/assets/kundli/gemini.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Cancer",
     src: "/assets/kundli/cancer.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Leo",
     src: "/assets/kundli/leo.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Virgo",
     src: "/assets/kundli/virgo.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Libra",
     src: "/assets/kundli/libra.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Scorpio",
     src: "/assets/kundli/scorpio.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Sagittarius",
     src: "/assets/kundli/sagittarius.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Capricorn",
     src: "/assets/kundli/capricorn.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Aquarius",
     src: "/assets/kundli/aquarius.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
   {
     name: "Pieces",
     src: "/assets/kundli/pieces.png",
-    url: "/",
+    url: "/horoscope/daily",
   },
 ];
 type Props = {};

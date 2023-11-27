@@ -106,7 +106,7 @@ function PersonalDetail({
   return (
     <>
       {!showOtp ? (
-        <div className="mx-auto max-w-sm rounded-xl bg-[#FFF7E5] p-8">
+        <div className="mx-auto max-w-sm rounded-xl bg-white p-8 shadow-xl">
           <Form onSubmit={handleSubmit(onSubmit)}>
             <div className="space-y-8">
               <Input
@@ -148,8 +148,8 @@ function PersonalDetail({
                 I agree to the Terms And Conditions*
               </Checkbox>
               <Button
-                className="text-dark mx-auto rounded-lg bg-[#D3B160] py-2 text-lg font-bold"
-                btnText="GET OTP -->"
+                className="mx-auto rounded-lg bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-2 text-lg font-bold text-white"
+                btnText="GET OTP "
               />
             </div>
           </Form>

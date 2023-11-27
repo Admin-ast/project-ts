@@ -162,12 +162,12 @@ const services: Service[] = [
   {
     name: "Palm Reading",
     src: "/assets/home/palm.png",
-    url: "/",
+    url: "",
   },
   {
     name: "Palm Reading",
     src: "/assets/home/palm.png",
-    url: "/",
+    url: "",
   },
 ];
 type Props = {

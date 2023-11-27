@@ -22,13 +22,7 @@ const Store = ({ cardDetails }: Props) => {
             className=" flex w-[90%] max-w-[400px] flex-col justify-end rounded-b-[20px]  rounded-t-3xl border-[3px] border-[#DC6563]  md:w-[300px]"
           >
             <div className="">
-              <Image
-                unoptimized
-                src={item.img}
-                alt="Picture of the author"
-                width={300}
-                height={305}
-              />
+              <Image src={item.img} alt={item.name} width={300} height={305} />
             </div>
             <p className="rounded-[10px] bg-[#Dc6563] py-[11px]  text-center text-[white] lg:text-[22px]">
               {item.name}

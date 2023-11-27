@@ -106,13 +106,13 @@ const Card = (props: Props) => {
                   href={item?.url}
                   className=" rounded-[10px]  border-2 border-[#DC6563]"
                 >
-                  <div className="h-[331.7px]">
+                  <div className=" relative">
                     <img
-                      className="h-[281px] w-full rounded-t-[10px] object-cover"
+                      className="h-[281px] w-full rounded-[10px] object-cover py-[5px] px-[5px]"
                       src={item?.img}
                       alt=""
                     />
-                    <button className="w-full rounded-[10px]   bg-[#DC6563] py-3 text-center text-2xl font-medium text-white">
+                    <button className="absolute bottom-[0px] w-full rounded-t-[10px] rounded-b-[7px] bg-[#DC6563]  px-[4px] py-3 text-center text-2xl font-medium text-white">
                       {item?.name}
                     </button>
                   </div>

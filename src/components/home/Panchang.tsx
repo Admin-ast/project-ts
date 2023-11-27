@@ -25,26 +25,26 @@ const services: Service[] = [
   {
     id: 1,
     name: "Vaar",
-    src: "/assets/home/priyanka.png",
-    url: "/",
+    src: "/assets/panchang/panchang1.jpg",
+    url: "/today-panchang",
   },
   {
     id: 2,
     name: "Vaar",
-    src: "/assets/home/priyanka.png",
-    url: "/",
+    src: "/assets/panchang/panchang2.jpg",
+    url: "/today-panchang",
   },
   {
     id: 3,
     name: "Vaar",
-    src: "/assets/home/priyanka.png",
-    url: "/",
+    src: "/assets/panchang/panchang3.jpg",
+    url: "/today-panchang",
   },
   {
     id: 4,
     name: "Vaar",
-    src: "/assets/home/priyanka.png",
-    url: "/",
+    src: "/assets/panchang/panchang3.jpg",
+    url: "/today-panchang",
   },
 ];
 type Props = {};
@@ -157,7 +157,7 @@ const Panchang = (props: Props) => {
               <div className="">
                 {services.map((item, index) => (
                   <SwiperSlide key={item.src + index} className="">
-                    <Link key={index} href={`/blog/${item.id}`}>
+                    <Link key={index} href={item.url}>
                       <div className="">
                         <div className="  mt-[30px]    ">
                           <div className=" ">
@@ -186,7 +186,7 @@ const Panchang = (props: Props) => {
               </div>
             </Swiper>
             <div
-              className="relative z-50    mx-auto flex items-center justify-between"
+              className="relative     mx-auto flex items-center justify-between"
               style={{
                 height: "330px",
                 marginTop: "-23%",

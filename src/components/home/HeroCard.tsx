@@ -27,7 +27,7 @@ const appointment: Appointment[] = [
   },
   {
     name: "Astrosevamall Shop",
-    src: "/assets/home/",
+    src: "/assets/home/hero-icon-04.webp",
     alt: "test",
     url: "/shop/shop",
   },

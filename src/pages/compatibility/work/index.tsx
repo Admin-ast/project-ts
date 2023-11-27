@@ -2,7 +2,8 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import ChooseSign from "@/components/compatibility/work/ChooseSign";
 import WorkCompatibilityMatches from "@/components/compatibility/work/WorkCompatibilityMatching";
-import Store from "@/components/compatibility/StoreSection";
+import Store from "@/components/planets/Store";
+
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 type Props = {};
@@ -43,7 +44,7 @@ function Compatibility({}: Props) {
         />
       </Section>
       <WorkCompatibilityMatches />
-      <Store
+      {/* <Store
         cardDetails={[
           {
             name: "Career Report",
@@ -61,7 +62,8 @@ function Compatibility({}: Props) {
             link: "",
           },
         ]}
-      />
+      /> */}
+      <Store />
     </div>
   );
 }

@@ -5,14 +5,14 @@ type Props = {};
 
 const AboutHoroscope = (props: Props) => {
   return (
-    <div className="pb-8">
+    <div className=" ">
       <Section>
-        <div className="flex flex-col space-y-6">
-          <div className="flex flex-col space-y-6">
+        <div className="flex flex-col  py-[30px]">
+          <div className="flex flex-col ">
             <p className="text-center text-xl font-bold md:text-3xl">
               Understanding Today horoscope
             </p>
-            <div className="text-justify">
+            <div className="mt-[10px] text-justify">
               <p>
                 {`If you are a follower of astrology, you would know that each
                 zodiac sign in astrology is ruled by a planet. For example, the
@@ -47,8 +47,11 @@ const AboutHoroscope = (props: Props) => {
               </p>
             </div>
           </div>
-
-          <div className="flex flex-col space-y-6">
+        </div>
+      </Section>
+      <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-[30px] text-white">
+        <Section>
+          <div className="flex flex-col space-y-6 ">
             <p className="text-center text-xl font-bold md:text-3xl">
               {`How can Today's horoscope help you?`}
             </p>
@@ -122,8 +125,8 @@ const AboutHoroscope = (props: Props) => {
               </p>
             </div>
           </div>
-        </div>
-      </Section>
+        </Section>
+      </div>
     </div>
   );
 };

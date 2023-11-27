@@ -114,7 +114,7 @@ function Astrologer({}: Props) {
           </Swiper>
 
           <div
-            className="relative z-50   mx-auto flex items-center justify-between"
+            className="relative    mx-auto flex items-center justify-between"
             style={{
               height: "300px",
               marginTop: "-21%",

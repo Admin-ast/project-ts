@@ -534,7 +534,8 @@ function Navbar({}: Props) {
                         setIsOpen(true);
                       }}
                     >
-                      <div className="flex rounded-[17px] bg-[#DC6563] px-2 py-[4px] text-white">
+                      {/* <div className="flex rounded-[17px] bg-[#DC6563] transform hover:translate-y-[-5px] transition-transform duration-300 ease-out px-2 py-[4px] text-white"> */}
+                      <div className="flex transform rounded-[17px] bg-[#DC6563] py-2 px-4 font-bold text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
                         <div className="flex items-center gap-2 py-2 px-2">
                           <FaUserAlt />
                           {/* <Image
