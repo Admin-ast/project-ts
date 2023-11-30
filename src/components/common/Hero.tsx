@@ -22,18 +22,6 @@ function Hero({ icon, text, subText }: Props) {
             </p>
           </div>
         </div>
-        {/* {icon && (
-            <div className="col-span-3 mx-auto flex w-fit items-center lg:p-8">
-              <Image
-                src={icon}
-                alt={"chat-icon"}
-                width={383}
-                height={295}
-                loading={"lazy"}
-                className="h-full w-full object-contain"
-              />
-            </div>
-          )} */}
       </Section>
     </div>
   );

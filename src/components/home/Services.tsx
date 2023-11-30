@@ -103,18 +103,6 @@ function Services({ head }: Props) {
                 </SwiperSlide>
               ))}
             </Swiper>
-            {/* <div className=" flex  relative  ">
-              <div className="  absolute right-[99%]   ">
-                <button className="prev cursor-pointer">
-                  <AiFillCaretLeft className={`text-[30px]    text-black  `} />
-                </button>
-              </div>
-              <div className=" absolute left-[900px] bottom-[150px]">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight className={`text-[30px]    text-black  `} />
-                </button>{" "}
-              </div>
-            </div> */}
 
             <div
               className="relative     mx-auto flex items-center justify-between"
@@ -132,11 +120,6 @@ function Services({ head }: Props) {
                 <AiFillCaretRight className="text-3xl text-black" />
               </button>
             </div>
-            {/* <div className="flex  justify-center">
-              <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]    font-bold text-white">
-                View More
-              </button>
-            </div> */}
           </div>
         </div>
       </Section>
