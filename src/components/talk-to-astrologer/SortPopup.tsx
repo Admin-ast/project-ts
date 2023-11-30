@@ -4,6 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import FilterOptions from "./FilterOptions";
 import { Checkbox } from "../forms";
 import SortByOptions from "./SortByOptions";
+import { ImCross } from "react-icons/im";
 
 interface PopupProps {
   isOpen: boolean;
@@ -58,7 +59,7 @@ const SortPopup = ({ isOpen, onClose }: PopupProps) => {
                         onClick={onClose}
                         className="hover-bg-blue-700 focus-outline-none  mt-4 rounded-full px-4 py-2 text-[22px]"
                       >
-                        X
+                        <ImCross className="w-6 cursor-pointer font-bold  " />
                       </button>
                     </div>
                   </div>

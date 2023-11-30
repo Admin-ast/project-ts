@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import SuggestRemedy from "./orderhistory/SuggestRemedy";
 
 type Props = {
   New: string;
@@ -42,6 +43,10 @@ const HistoryCard = ({
   btn2,
   btn3,
 }: Props) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
   return (
     <div className="rounded-[15px]  border-b-[7px]  border-b-[#DC6563]">
       <div className="px-5 py-5 ">
@@ -97,9 +102,22 @@ const HistoryCard = ({
           <span className="text-green-700">{`${status}`}</span>
         </div>
         <div className="flex">
-          <button className=" rounded-[10px] border-[1px] border-[#FF0600]  px-5 py-2  font-semibold">
+          <button
+            onClick={togglePopup}
+            className=" rounded-[10px] border-[1px] border-[#FF0600]  px-5 py-2  font-semibold"
+          >
             {btn1}
           </button>
+          <SuggestRemedy
+            heading="Suggest Remedy"
+            isOpen={isPopupOpen}
+            onClose={togglePopup}
+          />
+          <div
+            className={`fixed top-0 left-0 h-screen w-screen transition-opacity ${
+              isPopupOpen ? "opacity-50" : "pointer-events-none opacity-0"
+            } bg-gray-500`}
+          ></div>
         </div>
 
         <div className="mt-[20px] flex gap-10">

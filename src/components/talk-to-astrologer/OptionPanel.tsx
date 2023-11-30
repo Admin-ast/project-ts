@@ -9,7 +9,7 @@ interface OptionsPanelProps {
 const OptionsPanel = ({ isOpen, options, closePanel }: OptionsPanelProps) => {
   return (
     <div
-      className={`fixed top-0 right-0 h-full bg-white shadow-lg ${
+      className={`fixed top-0 right-0  h-full bg-white shadow-lg ${
         isOpen ? "w-1/2" : "w-0"
       } `}
     >

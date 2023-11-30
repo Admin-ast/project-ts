@@ -42,11 +42,11 @@ const faqsDetail: Faqs = {
 function KundliMatching({}: Props) {
   return (
     <>
-      <Hero
+      {/* <Hero
         text="Kundli Matching"
         subText="Find your right one, through Kundli Matching"
         icon="/assets/kundli/matching-hero-icon.png"
-      />
+      /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -57,13 +57,14 @@ function KundliMatching({}: Props) {
           </div>
         </Section>
       </div>
-      <div className="bg-[url('/assets/horoscope-bg.webp')]">
+      <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
         <Section>
-          <div className="flex flex-col space-y-8 py-5 pt-16">
-            <p className="text-center text-2xl font-bold md:text-5xl">
-              Match - Making
+          <div className="flex flex-col ">
+            <p className="text-center text-[30px] font-bold ">Match - Making</p>
+            <p className="text-center text-[20px]  ">
+              Find your right one, through Kundli Matching
             </p>
-            <div className="flex flex-col text-justify text-base">
+            <div className="mt-[30px] flex flex-col text-justify text-base">
               <p>
                 Looking for your free Kundli from expert astrologers? Then you
                 have come to the right place. The online free kundali available

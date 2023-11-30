@@ -7,7 +7,7 @@ type Props = {};
 const AlsoCheck = (props: Props) => {
   return (
     <div className=" mt-[5px] bg-white  bg-[url('/assets/home/cloud.png')] py-[30px]  px-4 shadow-md ">
-      <p className="text-center text-[36px] font-bold ">Also Check</p>
+      <p className="text-center text-[30px] font-bold ">Also Check</p>
       <div className="mt-[30px]  grid grid-cols-2 items-center justify-center gap-[51px] md:grid-cols-3 lg:flex">
         <div className="flex h-[135px] w-[142px] items-center justify-center rounded-[10px] border-[3px] border-[#DC6563]">
           <Link href="/horoscope/tomorrow">

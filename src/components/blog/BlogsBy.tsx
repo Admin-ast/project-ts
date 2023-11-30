@@ -138,25 +138,25 @@ type Props = {
 
 const BlogsBy = ({ heading, subheading, className }: Props) => {
   return (
-    <div className={`mt-[49px] ${className}`}>
+    <div className={`mt-[30px] ${className}`}>
       <Section>
         <div className="">
-          <p className="text-center text-[32px] font-bold">{heading}</p>
+          <p className="text-center text-[30px] font-bold">{heading}</p>
           <p className="text-center text-[24px] font-bold">{subheading}</p>
           <div className="grid gap-5 pt-6 lg:grid-cols-3">
             {card.map((item, index) => (
               <Link
                 key={index}
                 href={`/blog/${item?.id}`}
-                className="flex  flex-col  rounded-[20px] bg-white shadow-xl"
+                className="flex  flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
               >
                 <img
                   className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
                   src={item?.img}
                   alt=""
                 />
-                <div className="flex flex-col gap-4 p-3">
-                  <p className=" text-lg font-bold">{item?.text}</p>
+                <div className="flex h-[100px] flex-col gap-4 p-3">
+                  <p className=" truncate text-lg font-bold">{item?.text}</p>
                   <div className="flex items-center justify-between text-[12px] text-slate-500">
                     <p>Kasturi Chaudhary</p>
                     <p>March 31,2023</p>

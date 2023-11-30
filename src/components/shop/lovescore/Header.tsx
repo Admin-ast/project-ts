@@ -11,11 +11,11 @@ const Header = ({ title, text, rs }: Props) => {
   return (
     <div className="">
       <Section>
-        <div className="mt-[35px]">
-          <p className="text-center font-[Georgia] text-[32px] font-bold">
+        <div className="">
+          <p className="text-center font-[Georgia] text-[30px] font-bold">
             {title}
           </p>
-          <p className="mt-[35px] text-justify text-base">{text}</p>
+          <p className="mt-[10px] text-justify text-base">{text}</p>
           <p className="mt-5 text-center font-bold">{rs}</p>
         </div>
       </Section>

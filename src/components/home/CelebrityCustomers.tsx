@@ -44,7 +44,7 @@ const CelebrityCustomers = (props: Props) => {
   return (
     <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px]">
       <Section>
-        <div className="">
+        <div className="mx-auto max-w-7xl">
           <div className="">
             <p className=" text-center font-[georgia] text-xl text-[20px] font-semibold text-white  md:text-[30px] lg:text-[30px]">
               Our Celebrity Customers
@@ -84,8 +84,8 @@ const CelebrityCustomers = (props: Props) => {
             <div
               className="relative     mx-auto flex items-center justify-between"
               style={{
-                height: "330px",
-                marginTop: "-23%",
+                height: "250px",
+                marginTop: "-20%",
                 marginLeft: "-2%",
                 marginRight: "-2%",
               }}

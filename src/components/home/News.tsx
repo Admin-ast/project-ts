@@ -40,7 +40,7 @@ const News = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] ">
       <Section>
-        <div className=" ">
+        <div className="max-w-6.5xl mx-auto ">
           <div className="">
             <p className=" text-center font-[georgia] text-[20px] font-bold sm:text-2xl md:text-[30px] lg:text-[30px]">
               AstroSevaTalk In News
@@ -74,7 +74,7 @@ const News = (props: Props) => {
                       <Image
                         src={item.src}
                         alt={item.name}
-                        width={246}
+                        width={180}
                         height={175}
                         loading={"lazy"}
                         className="  w-full object-contain"
@@ -92,10 +92,10 @@ const News = (props: Props) => {
             <div
               className="relative  mx-auto flex items-center justify-between"
               style={{
-                height: "280px",
-                marginTop: "-20%",
-                marginLeft: "-2%",
-                marginRight: "-2%",
+                height: "255px",
+                marginTop: "-21%",
+                marginLeft: "-3%",
+                marginRight: "-3%",
               }}
             >
               <button className="prev cursor-pointer">

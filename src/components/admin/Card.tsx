@@ -151,7 +151,7 @@ const Card = ({ title, charges, deliver, users, user, para }: any) => {
               <div
                 className={`fixed top-0 left-0 h-screen w-screen transition-opacity ${
                   isPopupOpen ? "opacity-50" : "pointer-events-none opacity-0"
-                } bg-gray-500`}
+                } bg-[#808080]`}
               ></div>
             </div>
           </div>

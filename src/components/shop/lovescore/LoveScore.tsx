@@ -4,6 +4,7 @@ import LoveForm from "./LoveForm";
 import Footer from "./Footer";
 import Header from "./Header";
 import Card from "../karmareport/Card";
+import Store from "@/components/planets/Store";
 
 type Props = {};
 
@@ -18,7 +19,8 @@ const LoveScore = (props: Props) => {
       <LoveForm />
 
       <Footer />
-      <Card title="Recommended Reports For You" />
+      {/* <Card title="Recommended Reports For You" /> */}
+      <Store />
     </div>
   );
 };

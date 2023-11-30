@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "../Section";
 import Link from "next/link";
+import Search from "../common/Search";
 
 const card = [
   {
@@ -90,23 +91,27 @@ type Props = {};
 
 const Card = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat  py-[30px]">
       <Section>
         <div>
           <div>
-            <p className="py-6 text-center text-[36px] font-semibold">
+            <p className=" text-center text-[36px] font-bold">Astroseva Shop</p>
+            <p className=" text-center text-[30px] font-semibold">
               Shop Best Online Astrology Products And Services
             </p>
           </div>
+          <div className="flex justify-end py-[30px]">
+            <Search />
+          </div>
           <div>
-            <div className=" grid gap-4  md:gap-6 lg:grid-cols-4">
+            <div className=" mt-[30px] grid  gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
               {card.map((item, index) => (
                 <Link
                   key={index}
                   href={item?.url}
                   className=" rounded-[10px]  border-2 border-[#DC6563]"
                 >
-                  <div className=" relative">
+                  <div className=" relative ">
                     <img
                       className="h-[281px] w-full rounded-[10px] object-cover py-[5px] px-[5px]"
                       src={item?.img}

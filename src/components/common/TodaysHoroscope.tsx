@@ -87,13 +87,13 @@ type Props = {};
 function TodaysHoroscope({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="mt-[88px] bg-white">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] pt-[30px]">
       <Section>
         <div className="">
-          <div className="space-y-6">
-            <h2 className="mb-[33px] text-center font-[georgia] text-xl font-semibold sm:text-2xl md:text-3xl lg:text-[40px]">
+          <div className="">
+            <p className=" text-center font-[georgia] text-[30px] font-semibold ">
               {`Today's`} Horoscope
-            </h2>
+            </p>
             <Swiper
               navigation={{
                 prevEl: ".prev",
@@ -123,7 +123,7 @@ function TodaysHoroscope({}: Props) {
               {todaysHoroscope.map((item, index) => (
                 <SwiperSlide key={item.src + index}>
                   <Link key={index} href={item?.url}>
-                    <div className=" rounded-3xl border-[10px] border-white">
+                    <div className=" mt-[30px] rounded-3xl border-[10px] border-white">
                       <Image
                         src={item.src}
                         alt={item.name}
@@ -163,7 +163,7 @@ function TodaysHoroscope({}: Props) {
               className="relative  mx-auto flex items-center justify-between"
               style={{
                 height: "330px",
-                marginTop: "-23%",
+                marginTop: "-28%",
                 marginLeft: "-2%",
                 marginRight: "-2%",
               }}

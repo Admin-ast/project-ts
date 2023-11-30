@@ -315,9 +315,9 @@ const Card = ({ horos, predictionArray, type }: Props) => {
   const int_slug: string = router?.query?.slug ? router?.query?.slug[0] : "";
 
   return (
-    <div className="py-8">
+    <div className="">
       <Section>
-        <div className="flex flex-col space-y-4 text-justify">
+        <div className="flex flex-col space-y-2 text-justify">
           <p>
             {` Looking for today's horoscope? Or yesterday's? Well, on
             Astrosevatalk we have covered everything right from Daily horoscope
@@ -330,7 +330,7 @@ const Card = ({ horos, predictionArray, type }: Props) => {
             influences in one's life, and you knowing such things in advance
             helps you in safeguarding yourself from the uncertainties.`}
           </p>
-          <p>
+          <p className="mt-5">
             {`So reading Today's horoscope is like a healthy habit one can
             consider adopting as it shall help in changing the outcomes of your
             life. The daily horoscope on Astrosevatalk is prepared by expert
@@ -341,7 +341,7 @@ const Card = ({ horos, predictionArray, type }: Props) => {
             your life in the right direction. So make sure you give it a read.`}
           </p>
         </div>
-        <div className="mt-4 flex-wrap justify-center gap-5 md:flex">
+        <div className="flex-wrap justify-center gap-5 pt-[30px] md:flex">
           {card.map((item: CardDetail, index: number) => (
             <div
               key={index}

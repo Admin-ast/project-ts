@@ -6,11 +6,11 @@ type Props = {};
 const Karana = (props: Props) => {
   return (
     <div>
-      <div className="flex flex-col gap-5 bg-[url('/horoscope-bg.svg')] bg-cover py-8 shadow-xl lg:py-[51px]">
-        <div>
+      <div className="flex flex-col  bg-[url('/horoscope-bg.svg')] bg-cover py-[30px]  ">
+        <div className="">
           <Section>
             <div className="flex flex-col space-y-6 text-justify">
-              <p className="text-center text-[36px] font-bold">Karana</p>
+              <p className="text-center text-[30px] font-bold">Karana</p>
               <p>
                 A date that splits into two is known as Karana. When the Moon
                 completes 6 degrees, then one Karana is completed. Therefore,
@@ -40,13 +40,13 @@ const Karana = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className=" bg-white">
+        <div className=" bg-white py-[30px] shadow-xl">
           <Section>
-            <div className="flex flex-col space-y-6 py-8 text-justify">
-              <p className="text-center text-[36px] font-bold">
+            <div className="flex flex-col  text-justify">
+              <p className="text-center text-[30px] font-bold">
                 Important things to do at Shubh Muhurat 2023
               </p>
-              <p className="text-[22px] font-semibold">
+              <p className="mt-[10px] text-[20px] font-semibold">
                 Let us know which work should be done by the person at an
                 auspicious time. Considering the auspicious time
               </p>

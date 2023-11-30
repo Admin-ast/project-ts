@@ -15,7 +15,7 @@ const Faq = (props: Props) => {
             {" "}
             Why Is Astrology So Accurate?
           </p>
-          <p className="mt-[20px] text-justify text-base font-medium">
+          <p className="mt-[20px] text-justify ">
             First of all, the credit for astrology and the predictions we make
             here being so accurate goes to the 100s of learned and
             astrologically-versed astrologers we have on board. And to answer

@@ -9,7 +9,7 @@ const AboutHoroscope = (props: Props) => {
       <Section>
         <div className="flex flex-col  py-[30px]">
           <div className="flex flex-col ">
-            <p className="text-center text-xl font-bold md:text-3xl">
+            <p className="text-center text-[30px] font-bold ">
               Understanding Today horoscope
             </p>
             <div className="mt-[10px] text-justify">

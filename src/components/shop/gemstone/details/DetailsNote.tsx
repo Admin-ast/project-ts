@@ -10,7 +10,7 @@ const DetailsNote = (props: Props) => {
         <div className=" bg-white py-6 text-justify shadow-xl">
           <Section>
             <div className="flex flex-col gap-5">
-              <p className="text-center text-[32px] font-bold">
+              <p className="text-center text-[30px] font-bold">
                 What are its Benefits?
               </p>
               <p>
@@ -22,10 +22,10 @@ const DetailsNote = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="py-6 text-justify">
+        <div className=" text-justify">
           <Section>
             <div className="flex flex-col gap-5">
-              <p className="text-center text-[32px] font-bold">
+              <p className="text-center text-[30px] font-bold">
                 Can I get this gemstone with ring/pendant?
               </p>
               <p>
@@ -36,10 +36,10 @@ const DetailsNote = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b]  bg-repeat py-6 text-justify text-white">
+        <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b]  bg-repeat py-[30px] text-justify text-white">
           <Section>
             <div className="flex flex-col gap-5">
-              <p className="text-center text-[32px] font-bold">
+              <p className="text-center text-[30px] font-bold">
                 How are these energized and how can you wear it?
               </p>
               <p>
@@ -49,7 +49,7 @@ const DetailsNote = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="py-6 text-justify">
+        <div className="pb-[30px] text-justify shadow-xl">
           <Section>
             <div className="flex flex-col gap-5">
               <p className="text-center text-[32px] font-bold">

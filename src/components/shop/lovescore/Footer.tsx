@@ -10,15 +10,15 @@ const Footer = (props: Props) => {
   return (
     <div className=" ">
       <Section>
-        <div className="rounded-b-[20px] border-[2px] border-[#A9A9A9] p-5">
-          <div className="">
+        <div className="rounded-b-[20px] border-[2px] border-[#A9A9A9] ">
+          <div className="mt-[30px]">
             <p className="text-center font-[Georgia] text-[22px] font-bold">
               Bundles & Save
             </p>
           </div>
 
-          <div className="gap-[20px] md:flex lg:flex ">
-            <div className="h-[20%] rounded-[20px] border-[3px] border-black md:w-[40%] ">
+          <div className="gap-[20px] px-5 md:flex lg:flex ">
+            <div className="h-[20%]  rounded-[20px] border-[3px] border-[#DC6563] md:w-[40%] ">
               <Image
                 src="/assets/shop/lovescore.svg"
                 alt="raashi"
@@ -44,14 +44,14 @@ const Footer = (props: Props) => {
                 the love you desire. ADD FOR Rs ***
               </p>
 
-              <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] lg:mt-[103px]">
+              <div className="flex  items-center justify-center gap-[21px] pb-[30px] lg:mt-[103px]">
                 <Button
                   btnText="Add To Cart"
                   className="rounded-[10px] bg-[#D9D9D9] text-white md:px-[100px] lg:px-[100px] "
                 />
                 <Button
                   btnText="Buy Now"
-                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] text-white md:px-[100px] lg:px-[100px]"
+                  className="bg-gradient-to-b from-[#fb7038] to-[#FF0600] text-white md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </div>

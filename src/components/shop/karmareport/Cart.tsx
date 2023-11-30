@@ -7,7 +7,7 @@ const Cart = (props: Props) => {
   const [count, setCount] = useState(0);
   return (
     <div className="flex justify-end px-10">
-      <BsFillCartFill className="text-[18px]" />:{count}
+      <BsFillCartFill className="text-[18px]" />:{count} items
     </div>
   );
 };

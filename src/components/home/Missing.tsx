@@ -122,6 +122,45 @@
 
 // export default Missing;
 
+// import Image from "next/image";
+// import React from "react";
+
+// type Props = {};
+
+// const Missing = (props: Props) => {
+// return (
+// <div id="NewRootRoot" className="flex w-full flex-row items-start">
+// <div className="bg-50%_50% flex w-full flex-row items-start gap-0 bg-[linear-gradient(180deg,_rgba(255,_79,_0,_0.8)_0%,rgba(202,_33,_39,_0.72)_100%)] bg-cover bg-no-repeat bg-blend-normal">
+// <div className="mt-10 flex w-4/5 flex-col items-start gap-10">
+// <div className="ml-16 flex flex-col items-start  gap-4">
+// <div className="text-center font-serif text-4xl font-bold text-white">
+// Missing Spark In Marriage?
+// </div>
+// <div className="text-justify font-sans  text-xl leading-[30.1px] tracking-[0.22] text-white">
+// Get solutions from astrologers
+// </div>
+// </div>
+// <div
+// style={{ marginTop: "112px" }}
+// className=" bg-50%_50% absolute flex h-12 w-full flex-row items-start bg-[url(https://file.rendit.io/n/tUfQrhZdnan0NZ7Vy4Tt.svg)] bg-cover bg-no-repeat px-16 pt-2 text-justify font-sans text-xl font-semibold leading-[30.1px] tracking-[0.22] text-black/80 bg-blend-normal"
+// >
+// Free Chat with Astrologer
+// </div>
+// </div>
+
+// <img
+// className="h-[260px] z-50"
+// src="/assets/home/girl.png"
+// alt=""
+// />
+
+// </div>
+// </div>
+// );
+// };
+
+// export default Missing;
+
 import Image from "next/image";
 import React from "react";
 
@@ -129,30 +168,26 @@ type Props = {};
 
 const Missing = (props: Props) => {
   return (
-    <div id="NewRootRoot" className="flex w-full flex-row items-start">
-      <div className="bg-50%_50% flex w-full flex-row items-start gap-0 bg-[linear-gradient(180deg,_rgba(255,_79,_0,_0.8)_0%,rgba(202,_33,_39,_0.72)_100%)] bg-cover bg-no-repeat bg-blend-normal">
-        <div className="mt-16 flex w-4/5 flex-col items-start gap-10">
-          <div className="ml-16 flex flex-col items-start  gap-4">
-            <div className="text-center font-serif text-4xl font-bold text-white">
-              Missing Spark In Marriage?
+    <div className="">
+      <div className="max-w-6.5xl mx-auto flex flex-row  items-start">
+        <div
+          style={{ height: "340px" }}
+          className="bg-50%_50% flex w-full flex-row items-start gap-12 bg-[url(/assets/home/missingw.png)] bg-cover bg-no-repeat bg-blend-normal"
+        >
+          <div className="mt-10 flex flex-col items-start gap-10 px-[30px]">
+            <div className="px-14 ">
+              <div className=" font-serif text-4xl font-bold text-white  ">
+                Missing Spark In Marriage?
+              </div>
+              <div className="mt-4 text-justify font-sans text-xl leading-[30.1px] tracking-[0.22] text-white">
+                Get solutions from astrologers
+              </div>
             </div>
-            <div className="text-justify font-sans  text-xl leading-[30.1px] tracking-[0.22] text-white">
-              Get solutions from astrologers
+            <div className="mt-8 items-start px-14 pt-2 text-justify font-sans text-xl font-semibold  leading-[84.1px] tracking-[0.22] text-black/80">
+              Free Chat with Astrologer
             </div>
-          </div>
-          <div
-            style={{ marginTop: "112px" }}
-            className=" bg-50%_50% absolute flex h-12 w-full flex-row items-start bg-[url(https://file.rendit.io/n/tUfQrhZdnan0NZ7Vy4Tt.svg)] bg-cover bg-no-repeat px-16 pt-2 text-justify font-sans text-xl font-semibold leading-[30.1px] tracking-[0.22] text-black/80 bg-blend-normal"
-          >
-            Free Chat with Astrologer
           </div>
         </div>
-
-        <img
-          src="/assets/home/girl.png"
-          className="z-50"
-          alt="Hmmletmethinkthoughtfulyoungwomanplanningsomethinglookingupperleftcornerponderingimagingthingsemptyspacewhitebackground"
-        />
       </div>
     </div>
   );

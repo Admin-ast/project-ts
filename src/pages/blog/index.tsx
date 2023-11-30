@@ -10,7 +10,7 @@ const blog = (props: Props) => {
   return (
     <div>
       {" "}
-      <Hero text="Blog" icon="" />
+      {/* <Hero text="Blog" icon="" /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">

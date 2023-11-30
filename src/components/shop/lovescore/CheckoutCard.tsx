@@ -20,7 +20,7 @@ const CheckoutCard = (props: Props) => {
             </div>
           </Link>
         </div>
-        <div className="justify-center gap-[51px] rounded-[20px] border-[2px]  border-[#D9D9D9] md:flex lg:flex ">
+        <div className="justify-center  rounded-[20px] border-[2px]  border-[#D9D9D9] md:flex lg:flex ">
           <div className="mt-[48px] px-16">
             <p className="font-bold">Payment Method</p>
             <div className="mt-[25px] flex h-[47px] w-[92px] items-center justify-center rounded-[10px] border-[1px] border-[#D9D9D9]">

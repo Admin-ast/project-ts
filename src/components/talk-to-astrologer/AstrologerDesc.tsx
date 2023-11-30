@@ -25,10 +25,10 @@ const AstrologerDesc = ({ waitTime }: Props) => {
   return (
     <div className="mt-[30px] bg-[url('/assets/horoscope-bg.webp')] ">
       <Section>
-        <div className="items-center justify-center  rounded-[15px] border-[1px] border-[#DC6563] bg-white py-8 md:flex">
+        <div className="relative items-center justify-center  rounded-[15px] border-[1px] border-[#DC6563] bg-white py-8 md:flex">
           {AstrologersList.map((item, index) => (
             <div key={index} className="gap-[91px] px-8 lg:flex ">
-              <div className=" mt-[53px]">
+              <div className=" mt-[53px] ">
                 <Image
                   src={item.src}
                   alt={item.name}
@@ -51,7 +51,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   Exp:{item.experience}
                 </p>
                 <p className="font-[Roboto] text-[24px] ">Rs:{item.price}</p>
-                <div className="gap-[34px] md:flex lg:flex">
+                <div className="grid gap-[34px]  md:flex lg:flex">
                   <div className="flex items-center">
                     <Image
                       src="/assets/talk-to-astrologer/chat.png"
@@ -78,7 +78,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   </div>
                 </div>
 
-                <div className="mt-[76px] gap-[34px] md:flex lg:flex">
+                <div className="mt-[76px] grid gap-[34px] md:flex lg:flex ">
                   <div className="flex  items-center gap-[48px] rounded-[10px] border-[1px] border-[#DC6563] px-4">
                     <Image
                       src="/assets/talk-to-astrologer/chat.png"
@@ -111,7 +111,7 @@ const AstrologerDesc = ({ waitTime }: Props) => {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="absolute top-5 right-5">
                 <ThreeDots />
               </div>
             </div>

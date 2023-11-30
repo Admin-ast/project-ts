@@ -26,15 +26,15 @@ const Output = ({
   landmark,
 }: Props) => {
   return (
-    <>
+    <div className="py-[30px]">
       <div className="">
-        <p className="mt-[35px] text-center text-[22px] font-semibold ">
+        <p className=" text-center text-[22px] font-semibold ">
           Continue With Saved Address
         </p>
       </div>
 
-      <div className="mt-[10px] flex  justify-center">
-        <div className="grid grid-cols-2  rounded-[20px]  border-[2px]   border-[#A9A9A9]">
+      <div className="mt-[10px]  flex  justify-center">
+        <div className="grid rounded-[20px] border-[2px]  border-[#A9A9A9]  pb-[30px]   lg:flex">
           <div className="px-8  font-[Roboto] font-[500]">
             <p className="mt-[24px]">First Name : {firstName}</p>
             <p className="mt-[24px]">Gender : {gender}</p>
@@ -44,7 +44,18 @@ const Output = ({
             <p className="mt-[24px]">City : {city}</p>
             <p className="mt-[24px]">LandMark : {landmark}</p>
             <p className="mt-[24px]">State : {state}</p>
-            <p className="mt-[24px]">Country : {country}</p>
+            <div className="flex items-center gap-5 lg:gap-[200px]">
+              <div className="">
+                {" "}
+                <p className="">Country : {country}</p>
+              </div>
+              <div className="">
+                {" "}
+                <button className="rounded-[10px]  bg-gradient-to-b from-[#FF0600] to-[#d84f50] px-2 py-1 text-white">
+                  Deliver To This Address
+                </button>
+              </div>
+            </div>
           </div>
           <div className="mt-[16px] flex justify-end gap-[10px] px-8">
             <div className="">
@@ -68,7 +79,7 @@ const Output = ({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

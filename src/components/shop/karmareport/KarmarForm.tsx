@@ -29,8 +29,8 @@ const KarmarForm = () => {
               Enter Your Information
             </p>
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className=" mt-[35px] gap-[31px]  md:flex lg:flex">
-                <div className="">
+              <div className=" mt-[30px] gap-[31px]  md:flex lg:flex">
+                <div className="md:w-1/2 lg:w-1/2">
                   <Input
                     placeholder=""
                     label="First Name"
@@ -40,10 +40,10 @@ const KarmarForm = () => {
                     name="name"
                     errors={errors}
                     required="First Name is required"
-                    className="!rounded-md md:w-[247px] lg:w-[458px]"
+                    className="!rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/2 lg:w-1/2">
                   <Input
                     label="Gender"
                     register={register}
@@ -53,12 +53,12 @@ const KarmarForm = () => {
                     errors={errors}
                     required="Gender is required"
                     placeholder={""}
-                    className="!rounded-md md:w-[247px] lg:w-[458px]"
+                    className="!rounded-md "
                   />
                 </div>
               </div>
               <div className="gap-[31px] md:flex lg:flex">
-                <div className="">
+                <div className="md:w-1/2 lg:w-1/2">
                   <Input
                     label="Date of Birth *"
                     register={register}
@@ -68,10 +68,10 @@ const KarmarForm = () => {
                     errors={errors}
                     required="Date of Birth is required"
                     placeholder={""}
-                    className="!rounded-md md:w-[247px] lg:w-[458px]"
+                    className="!rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/2 lg:w-1/2">
                   <Input
                     label="Time Of Birth"
                     name={"timeOfBirth"}
@@ -81,12 +81,12 @@ const KarmarForm = () => {
                     errors={errors}
                     required="Birth Time is required"
                     placeholder={""}
-                    className="!rounded-md md:w-[247px] lg:w-[458px]"
+                    className="!rounded-md "
                   />
                 </div>
               </div>
 
-              <div className="">
+              <div className="md:w-full lg:w-full">
                 <Input
                   label="Birth Location"
                   register={register}
@@ -96,10 +96,10 @@ const KarmarForm = () => {
                   errors={errors}
                   required="Birth Location is required"
                   placeholder={""}
-                  className="!rounded-md lg:w-[950px]"
+                  className="!rounded-md "
                 />
               </div>
-              <div className="">
+              <div className="md:w-full lg:w-full">
                 <Input
                   label="Email"
                   register={register}
@@ -109,7 +109,7 @@ const KarmarForm = () => {
                   errors={errors}
                   required="Email is required"
                   placeholder={""}
-                  className="!rounded-md lg:w-[950px]"
+                  className="!rounded-md "
                 />
               </div>
               <div className="mb-[43px] mt-[20px] flex items-center justify-center gap-[21px] text-white lg:mt-[103px]">
@@ -121,7 +121,7 @@ const KarmarForm = () => {
                 <Button
                   type="submit"
                   btnText="Buy Now"
-                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] md:px-[100px] lg:px-[100px]"
+                  className="bg-gradient-to-b from-[#fb7038] to-[#FF0600] md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </Form>

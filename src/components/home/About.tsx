@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[30px]">
+    <div className=" bg-[url('/assets/horoscope-bg.webp')]  bg-cover py-8 lg:py-[30px]">
       <Section>
         <div className="">
           <h2 className=" text-center font-[georgia] text-xl text-[20px] font-bold sm:text-2xl md:text-[30px] lg:text-[30px]">
@@ -15,7 +15,7 @@ function About({}: Props) {
             {" "}
             Astrology reveals the will of the God
           </p>
-          <p className="mt-[10px] text-justify text-base font-medium">
+          <p className="mt-[10px] text-justify  ">
             Astrology, type of divination that involves the forecasting of
             earthly and human events through the observation and interpretation
             of the fixed stars, the Sun, the Moon, and the planets. Devotees

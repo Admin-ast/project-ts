@@ -9,7 +9,7 @@ const Consultation = (props: Props) => {
       <div
         className="
         bg-gradient-to-b from-[#ef824c] to-[#d84f50] 
-      bg-cover py-8 text-white lg:py-[49px]"
+      bg-cover py-[30px] text-white "
       >
         <Section>
           <div className="space-y-6">
@@ -19,7 +19,7 @@ const Consultation = (props: Props) => {
               </h2>
               <h3 className="text-2xl">Best online astrology consultation</h3>
             </div>
-            <p className="text-justify text-[20px] font-[500] ">
+            <p className="text-justify   ">
               There’s literally no point in overthinking about your concerns
               when the solution to them is just a call away. AstroSevatalk
               brings to you a pool of over 500+ astrologers with whom you can

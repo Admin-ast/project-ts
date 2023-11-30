@@ -177,7 +177,7 @@ type Props = {
 function Services({ head }: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className=" mt-[2px] bg-[url('/assets/home/cloud.png')] py-[30px]">
+    <div className=" mt-[2px] bg-[url('/assets/home/cloud.png')] pt-[30px]">
       <Section>
         <div className="">
           <div className="space-y-[30px]">

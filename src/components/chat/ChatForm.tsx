@@ -9,15 +9,15 @@ type Props = {};
 const ChatForm = (props: Props) => {
   return (
     <div className="">
-      <Hero
+      {/* <Hero
         text="Chat With Astrologer"
         icon="/assets/appointment/chat-hero.png"
-      />
+      /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
               Chat With Astrologer
             </p>
           </div>

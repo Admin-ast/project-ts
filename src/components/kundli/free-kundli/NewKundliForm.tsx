@@ -126,7 +126,7 @@ function NewKundliForm({}: Props) {
             </div>
             <button
               type="submit"
-              className="mx-auto mt-3 w-fit rounded-md bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] px-12 py-2 text-center font-semibold text-white lg:col-span-3 lg:text-[22px]"
+              className="mx-auto mt-3 w-fit rounded-md bg-gradient-to-b from-[#ff6c40] to-[#FF0600] px-12 py-2 text-center font-semibold text-white lg:col-span-3 lg:text-[22px]"
             >
               Generate the Kundli
             </button>

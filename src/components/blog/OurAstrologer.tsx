@@ -27,22 +27,22 @@ const card = [
 ];
 const OurAstrologer = ({ heading }: Props) => {
   return (
-    <div className="mt-[35px]">
+    <div className="py-[30px]">
       <p className="text-center text-[32px] font-bold">{heading}</p>
       <div className="grid gap-5 pt-6 lg:grid-cols-3 ">
         {card.map((item, index) => (
           <Link
             key={index}
             href={`/blog/${item?.id}`}
-            className="flex  flex-col  rounded-[20px] bg-white shadow-xl"
+            className="flex  flex-col rounded-[20px] border-[4px] border-[#DC6563] bg-white py-2 shadow-xl"
           >
-            <div className="ml-20 h-[99px] w-[99px] rounded-full border-[5px] border-[#DC6563] ">
+            <div className="flex items-center justify-center   ">
               <Image
                 src={item.img}
                 alt={item.text}
                 height={99}
                 width={99}
-                className=""
+                className="h-[99px] w-[99px] rounded-full border-[5px] border-[#DC6563] "
               />
             </div>
             <div className=" ">

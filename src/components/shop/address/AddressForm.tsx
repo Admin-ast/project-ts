@@ -14,16 +14,13 @@ const AddressForm = () => {
   };
 
   return (
-    <div className="mt-[35px] bg-white">
+    <div className=" pb-[30px]">
       <Section>
-        <div className="flex items-center justify-center  rounded-[20px] border-[2px] border-[#A9A9A9]">
+        <div className="flex items-center justify-evenly rounded-[20px] bg-white  shadow-xl ">
           <div className="p-5 ">
-            <p className="text-center font-[Georgia] text-[22px] font-bold">
-              Add New Address
-            </p>
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className=" mt-[35px] gap-[30px]   md:flex lg:flex">
-                <div className="">
+              <div className="  gap-[30px]   md:flex lg:flex">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     placeholder="Enter name"
                     label="Name"
@@ -33,10 +30,10 @@ const AddressForm = () => {
                     name="name"
                     errors={errors}
                     required="Name is required"
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="flex gap-5 md:gap-1">
+                <div className="flex gap-5 md:w-1/3 md:gap-1 lg:w-1/3">
                   <CountryCodes />
                   <Input
                     label="Mobile Number:"
@@ -47,10 +44,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="Mobile Number is required"
                     placeholder={"Enter mobile no."}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="flex gap-5 md:gap-1">
+                <div className="flex gap-5 md:w-1/3 md:gap-1 lg:w-1/3">
                   <CountryCodes />
                   <Input
                     label="Alternative Number: "
@@ -61,12 +58,12 @@ const AddressForm = () => {
                     errors={errors}
                     required=""
                     placeholder={"Enter alternative mobile no."}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
               </div>
               <div className="gap-[31px] md:flex lg:flex">
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Email ID:"
                     register={register}
@@ -76,10 +73,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="Email id is required"
                     placeholder={"Enter email id"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Flat No:"
                     name={"flat"}
@@ -89,10 +86,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="Flat No. is required"
                     placeholder={"Flat No/Building No / House No"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Locality:"
                     name={"locality"}
@@ -102,13 +99,13 @@ const AddressForm = () => {
                     errors={errors}
                     required="Locality is required"
                     placeholder={"Locality"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
               </div>
 
               <div className="gap-[31px] md:flex lg:flex">
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="City:"
                     register={register}
@@ -118,10 +115,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="City is required"
                     placeholder={"City"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="State/Province:"
                     name={"state"}
@@ -131,10 +128,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="State is required"
                     placeholder={"State"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Country:"
                     name={"country"}
@@ -144,13 +141,13 @@ const AddressForm = () => {
                     errors={errors}
                     required="Country is required"
                     placeholder={"Country"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
               </div>
 
               <div className="gap-[31px] md:flex lg:flex">
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="PinCode:"
                     register={register}
@@ -160,10 +157,10 @@ const AddressForm = () => {
                     errors={errors}
                     required="PinCode is required"
                     placeholder={"Postal Code/Pincode"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
-                <div className="">
+                <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Landmark:"
                     name={"landmark"}
@@ -172,7 +169,7 @@ const AddressForm = () => {
                     id="landmark"
                     errors={errors}
                     placeholder={"Landmark (Optional)"}
-                    className="md:[180px] !rounded-md lg:w-[280px]"
+                    className=" !rounded-md "
                   />
                 </div>
               </div>

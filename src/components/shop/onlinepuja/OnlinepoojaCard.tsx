@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "@/components/Section";
 import Link from "next/link";
+import Image from "next/image";
 
 const card = [
   {
@@ -80,7 +81,7 @@ type Props = {};
 
 const OnlinepoojaCard = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
+    <div className=" py-8 ">
       <Section>
         <div>
           <div></div>
@@ -91,9 +92,15 @@ const OnlinepoojaCard = (props: Props) => {
                   key={index}
                   className="flex gap-8 rounded-xl bg-white p-2 shadow-xl"
                 >
-                  <div className="rounded-[15px] border-2 border-[#DC6563]">
+                  <div className="my-auto mx-auto rounded-[15px] border-2 border-[#DC6563]">
                     <Link href={item?.url}>
-                      <img className="" src={item?.img} alt="" />
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        width={200}
+                        height={170}
+                        className=" px-[5px] pt-[5px] "
+                      />
                       <p className="rounded-b-[12px] bg-[#DC6563] text-center font-bold text-white">
                         Rs.{item?.name}
                       </p>
@@ -102,7 +109,7 @@ const OnlinepoojaCard = (props: Props) => {
                   <div className="flex flex-col justify-between">
                     <p className="py-4 font-bold">{item?.para}</p>
                     <div className="  ml-24  flex justify-end">
-                      <button className="rounded-md  bg-gradient-to-b from-[#fb7038] to-[#df625b] px-6 py-2 font-bold text-white hover:bg-[#F9B800]">
+                      <button className="rounded-md  bg-gradient-to-b from-[#fb7038] to-[#FF0600] px-6 py-2 font-bold text-white hover:bg-[#F9B800]">
                         BUY
                       </button>
                     </div>

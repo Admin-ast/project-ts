@@ -11,7 +11,7 @@ export default function SortBy() {
     <div className="flex items-center justify-center ">
       <button
         onClick={() => setPopupOpen(true)}
-        className=" hover-bg-blue-700 focus-outline-none  rounded-full px-4 py-2 font-bold text-[#D9D9D9]"
+        className=" hover-bg-blue-700 focus-outline-none whitespace-nowrap  rounded-full px-4 py-2  font-bold text-[#D9D9D9]"
       >
         Sort by
       </button>

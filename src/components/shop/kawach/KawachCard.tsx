@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "@/components/Section";
 import Link from "next/link";
+import Image from "next/image";
 
 const card = [
   {
@@ -221,20 +222,26 @@ type Props = {};
 
 const KawachCard = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
+    <div className="pb-[30px] ">
       <Section>
         <div>
           <div></div>
           <div>
-            <div className="grid gap-4  md:grid-cols-2 md:gap-6 lg:grid-cols-3 ">
+            <div className="mt-[30px] grid  gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
               {card.map((item, index) => (
                 <div
                   key={index}
                   className="flex gap-8 rounded-xl bg-white p-2 shadow-xl"
                 >
-                  <div className="rounded-[15px] border-2 border-[#DC6563]">
+                  <div className="mx-auto my-auto rounded-[15px] border-2 border-[#DC6563]">
                     <Link href={item?.url}>
-                      <img className="" src={item?.img} alt="" />
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        width={200}
+                        height={170}
+                        className=" px-[5px] pt-[5px] "
+                      />
                       <p className="rounded-b-[12px] bg-[#DC6563] text-center font-bold text-white">
                         Rs.{item?.name}
                       </p>
@@ -246,7 +253,7 @@ const KawachCard = (props: Props) => {
                       {/* <button className="rounded-md  bg-[#DC6563] px-6 py-2 font-bold text-white ">
                         Add To Cart
                       </button> */}
-                      <button className="k rounded-md bg-[#DC6563] px-6 py-2 font-bold text-white">
+                      <button className="k rounded-md  bg-gradient-to-b from-[#fb7038] to-[#FF0600] px-6 py-2 font-bold text-white">
                         BUY
                       </button>
                     </div>

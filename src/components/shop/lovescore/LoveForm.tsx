@@ -14,17 +14,17 @@ const LoveForm = (props: Props) => {
   } = useForm();
   const onSubmit = (data: unknown) => console.log(data);
   return (
-    <div className="mt-[35px] ">
+    <div className="mt-[30px] ">
       <Section>
         <div className="">
-          <div className="grid  gap-[36px]    rounded-t-[20px]  border-[2px]  border-[#A9A9A9] lg:flex lg:justify-center ">
-            <div className="p-5">
+          <div className="grid  justify-center  gap-[36px]  rounded-t-[20px]  border-[2px]  border-[#A9A9A9] md:flex lg:flex ">
+            <div className="p-5 lg:w-1/2">
               <p className="text-center font-[Georgia] text-[22px] font-bold">
                 Enter Your Information
               </p>
               <Form onSubmit={handleSubmit(onSubmit)}>
-                <div className=" mt-[35px] gap-[31px]  md:flex lg:flex">
-                  <div className="">
+                <div className=" mt-[30px] gap-[31px]  md:flex lg:flex">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"string"}
                       name={"name"}
@@ -36,7 +36,7 @@ const LoveForm = (props: Props) => {
                       className="!rounded-md "
                     />
                   </div>
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"string"}
                       name={"gender"}
@@ -50,7 +50,7 @@ const LoveForm = (props: Props) => {
                   </div>
                 </div>
                 <div className="gap-[31px] md:flex lg:flex">
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"date"}
                       name={"dateofbirth"}
@@ -62,7 +62,7 @@ const LoveForm = (props: Props) => {
                       className="!rounded-md "
                     />
                   </div>
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"time"}
                       name={"timeofbirth"}
@@ -103,13 +103,13 @@ const LoveForm = (props: Props) => {
               </Form>
             </div>
             <div className="border-[1px]  border-[#A9A9A9] "></div>
-            <div className=" p-5">
+            <div className=" p-5 lg:w-1/2">
               <p className="text-center font-[Georgia] text-[22px] font-bold">
                 Enter Your {`Partner's`} Information
               </p>
               <Form onSubmit={handleSubmit(onSubmit)}>
-                <div className="mt-[35px] gap-[31px] md:flex lg:flex ">
-                  <div className="">
+                <div className="mt-[35px] gap-[31px]  md:flex lg:flex ">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"string"}
                       name={"name"}
@@ -121,7 +121,7 @@ const LoveForm = (props: Props) => {
                       className="!rounded-md "
                     />
                   </div>
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"string"}
                       name={"gender"}
@@ -135,7 +135,7 @@ const LoveForm = (props: Props) => {
                   </div>
                 </div>
                 <div className="gap-[31px] md:flex lg:flex">
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"date"}
                       name={"dateofbirth"}
@@ -147,7 +147,7 @@ const LoveForm = (props: Props) => {
                       className="!rounded-md "
                     />
                   </div>
-                  <div className="">
+                  <div className="md:w-1/2 lg:w-1/2">
                     <Input
                       type={"time"}
                       name={"timeofbirth"}

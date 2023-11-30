@@ -158,7 +158,7 @@ function Shop({ head }: Props) {
 
     <div className=" bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
       <Section>
-        <div className="  ">
+        <div className=" mx-auto max-w-7xl ">
           <div className="">
             <h2 className=" text-center font-[georgia] text-xl text-[20px] font-semibold md:text-[30px] lg:text-[30px]">
               {head}
@@ -189,18 +189,18 @@ function Shop({ head }: Props) {
               {shoppingList.map((item, index) => (
                 <SwiperSlide key={item.src + index} className="">
                   <Link key={index} href={item?.url}>
-                    <div className="mt-[30px]">
-                      <div className=" relative  w-[95%] rounded-[15px] border-[3px] border-[#DC6563]">
+                    <div className="mt-[20px]">
+                      <div className=" relative  w-[100%] rounded-[15px] border-[3px] border-[#DC6563]">
                         <Image
                           src={item.src}
                           alt={item.name}
-                          width={206}
+                          width={220}
                           height={174}
                           loading={"lazy"}
                           className=" h-full  w-full py-[6px] px-[6px] "
                         />
                       </div>
-                      <div className="absolute bottom-[0px] w-[95%]  ">
+                      <div className="absolute bottom-[0px] w-[100%]  ">
                         <p className=" rounded-[6px] bg-[#ca2127] py-1   text-center font-[georgia] text-white md:text-2xl lg:text-[20px]">
                           {item.name}
                         </p>
@@ -213,10 +213,10 @@ function Shop({ head }: Props) {
             <div
               className="relative  mx-auto flex items-center justify-between"
               style={{
-                height: "330px",
-                marginTop: "-26%",
-                marginLeft: "-2%",
-                marginRight: "-2%",
+                height: "350px",
+                marginTop: "-28%",
+                marginLeft: "-3%",
+                marginRight: "-3%",
               }}
             >
               <button className="prev cursor-pointer">
@@ -226,11 +226,11 @@ function Shop({ head }: Props) {
                 <AiFillCaretRight className="text-3xl text-black" />
               </button>
             </div>
-            <div className="mt-[30px] flex items-center justify-center">
+            {/* <div className="mt-[10px] mb-[10px] flex items-center justify-center">
               <button className="rounded-[10px] bg-[#ff3d23] px-4 py-2 font-[Roboto]    font-bold text-white">
                 View More
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </Section>
