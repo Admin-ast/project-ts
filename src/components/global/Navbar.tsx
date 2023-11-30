@@ -615,10 +615,10 @@ function Navbar({}: Props) {
               </div>
               <div className="  mt-[20px] mb-[10px] hidden justify-end gap-x-8 text-[20px]  lg:flex  ">
                 <Link href="/chat-with-astrologer/chat-with-astrologer">
-                  Chat With Astrologer
+                  Chat with Astrologer
                 </Link>
                 <Link href="/talk-to-astrologer/talk-to-astrologer">
-                  Talk To Astrologer
+                  Talk to Astrologer
                 </Link>
                 <Link href="/shop/shop">Astroseva Shop</Link>
                 {/* <Link href="/astrosevatalk">AstrosevaTalk +</Link> */}

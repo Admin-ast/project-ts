@@ -99,9 +99,12 @@ function Hero({}: Props) {
                       Chat With Astrologer
                     </span>
                   </div>
-                  <button className="mt-8  mb-10 rounded-[35px] bg-black py-3 px-12 font-bold text-white ">
-                    Chat Now
-                  </button>
+                  <Link href="/chat-with-astrologer/chat-with-astrologer">
+                    {" "}
+                    <button className="mt-8  mb-10 rounded-[35px] bg-black py-3 px-12 font-bold text-white ">
+                      Chat Now
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
