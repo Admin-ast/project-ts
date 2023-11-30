@@ -142,23 +142,7 @@ function TodaysHoroscope({}: Props) {
                 </SwiperSlide>
               ))}
             </Swiper>
-            {/* <div className=" flex items-center justify-center   ">
-              <div className="">
-                <button className="prev cursor-pointer ">
-                  <AiFillCaretLeft
-                    className={`text-[40px] text-black    lg:mt-[60px]  `}
-                  />
-                </button>
-              </div>
 
-              <div className=" ">
-                <button className="next cursor-pointer">
-                  <AiFillCaretRight
-                    className={`text-[40px]  text-black  lg:mt-[60px]  `}
-                  />
-                </button>{" "}
-              </div>
-            </div> */}
             <div
               className="relative  mx-auto flex items-center justify-between"
               style={{
