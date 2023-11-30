@@ -97,7 +97,7 @@ function TalkAstrologer({}: Props) {
         <div className="">
           <Services head="Complementary Astrology Serveries" />
         </div>
-        <div className="mt-5">
+        <div className="">
           <Consultation />
         </div>
         <Faq faqDetail={faqsDetail} />

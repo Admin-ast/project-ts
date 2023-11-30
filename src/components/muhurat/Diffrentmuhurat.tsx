@@ -6,11 +6,11 @@ type Props = {};
 
 const Diffrentmuhurat = (props: Props) => {
   return (
-    <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
+    <div className="bg-[url('/horoscope-bg.svg')] bg-cover py-[30px]">
       <Section>
         <div className="flex flex-col space-y-10">
           <div className="flex flex-col space-y-6">
-            <p className="text-center text-xl font-bold md:text-3xl">
+            <p className="text-center text-[30px] font-bold ">
               Different Muhurat and its Characteristics
             </p>
             <div className="text-justify">

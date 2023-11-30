@@ -132,11 +132,11 @@ type Props = {};
 
 const Yoga = (props: Props) => {
   return (
-    <div className="mt-4 bg-gradient-to-b from-[#f96e37] to-[#D32E27] bg-cover py-12">
+    <div className=" bg-gradient-to-b from-[#f96e37] to-[#D32E27] bg-cover py-[30px]">
       <Section>
         <div className="">
           <div className="flex flex-col gap-5 text-justify text-white">
-            <p className="text text-center text-4xl font-bold text-white">
+            <p className="text text-center text-[30px] font-bold text-white">
               Yoga
             </p>
             <p>

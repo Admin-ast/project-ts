@@ -47,7 +47,7 @@ const LIveAstro = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] ">
       <Section>
-        <div className="mx-auto max-w-5xl">
+        <div className="max-w-6.5xl mx-auto">
           <p className=" text-center  font-[georgia] text-[20px] font-semibold  md:text-[30px] lg:text-[30px]">
             Live Astrologers
           </p>
@@ -82,11 +82,11 @@ const LIveAstro = (props: Props) => {
                 <SwiperSlide key={item.src + index} className="">
                   <div key={index} className="relative">
                     <Link href="">
-                      <div className=" w-[95%] rounded-[11px] ">
+                      <div className=" w-[100%] rounded-[11px] ">
                         <Image
                           src={item.src}
                           alt={item.name}
-                          width={200}
+                          width={190}
                           height={214}
                           loading={"lazy"}
                           className="mx-auto h-full w-full object-contain"
@@ -105,10 +105,10 @@ const LIveAstro = (props: Props) => {
             <div
               className="relative   mx-auto flex items-center justify-between"
               style={{
-                height: "250px",
-                marginTop: "-23%",
-                marginLeft: "-2%",
-                marginRight: "-2%",
+                height: "260px",
+                marginTop: "-22%",
+                marginLeft: "-3%",
+                marginRight: "-3%",
               }}
             >
               <button className="prev cursor-pointer">

@@ -44,15 +44,19 @@ const faqsDetail: Faqs = {
 const Muhurat = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <Hero text="Shubh Muhurat" icon="/assets/muhurat/muhurat.png" />
-      <Section>
-        <div className="flex items-center space-x-2">
-          <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-          <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
-            Shubh Muhurat
-          </p>
-        </div>
-      </Section>
+      {/* <Hero text="Shubh Muhurat" icon="/assets/muhurat/muhurat.png" /> */}
+      <div className="bg-[#F5F5F5] py-1">
+        <Section>
+          <div className="flex items-center space-x-2">
+            <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
+              {" "}
+              Shubh Muhurat
+            </p>
+          </div>
+        </Section>
+      </div>
+
       <About />
       <ImportenceofMuhurat />
       <Diffrentmuhurat />

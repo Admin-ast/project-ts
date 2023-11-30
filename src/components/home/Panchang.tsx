@@ -25,25 +25,25 @@ const services: Service[] = [
   {
     id: 1,
     name: "Vaar",
-    src: "/assets/panchang/panchang1.jpg",
+    src: "/assets/home/panchang1.png",
     url: "/today-panchang",
   },
   {
     id: 2,
     name: "Vaar",
-    src: "/assets/panchang/panchang2.jpg",
+    src: "/assets/home/panchang2.png",
     url: "/today-panchang",
   },
   {
     id: 3,
     name: "Vaar",
-    src: "/assets/panchang/panchang3.jpg",
+    src: "/assets/home/panchang3.png",
     url: "/today-panchang",
   },
   {
     id: 4,
     name: "Vaar",
-    src: "/assets/panchang/panchang3.jpg",
+    src: "/assets/home/panchang3.png",
     url: "/today-panchang",
   },
 ];
@@ -52,81 +52,9 @@ type Props = {};
 const Panchang = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    // <div className="  bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-[30px]">
-    //   <Section>
-    //     <div className="">
-    //       <div className="space-y-6">
-    //         <p className=" text-center font-[georgia] text-xl font-semibold text-white text-[20px] sm:text-2xl md:text-[30px] lg:text-[30px]">
-    //           Panchang
-    //         </p>
-    //         <Swiper
-    //           navigation={{
-    //             prevEl: ".prev",
-    //             nextEl: ".next",
-    //           }}
-    //           onActiveIndexChange={(e) => setActive(e.activeIndex)}
-    //           breakpoints={{
-    //             640: {
-    //               slidesPerView: 2,
-    //               spaceBetween: 20,
-    //             },
-    //             768: {
-    //               slidesPerView: 3,
-    //               spaceBetween: 20,
-    //             },
-    //           }}
-    //           autoplay={{
-    //             delay: 3500,
-    //             disableOnInteraction: false,
-    //           }}
-    //           modules={[Pagination, Navigation, Autoplay]}
-    //         >
-    //           {services.map((item, index) => (
-    //             <SwiperSlide key={item.src + index}>
-    //               <Link key={index} href={item?.url}>
-    //                 <div className="  mx-auto  ">
-    //                   <div className="">
-    //                     <Image
-    //                       src={item.src}
-    //                       alt={item.name}
-    //                       width={198}
-    //                       height={100}
-    //                       loading={"lazy"}
-    //                       className=" h-[214px]  object-contain"
-    //                     />
-
-    //                   </div>
-    //                   <div className="bg-white w-[198px]  ">
-    //                       <p className=" rounded-[10px]  mx-auto  text-center font-[georgia]  md:text-[20px] lg:text-[20px]">
-    //                         {item.name}
-    //                       </p>
-    //                     </div>
-    //                 </div>
-    //               </Link>
-    //             </SwiperSlide>
-    //           ))}
-    //         </Swiper>
-    //         {/* <div className=" flex items-center justify-center   ">
-    //           <div className="     ">
-    //             <button className="prev cursor-pointer">
-    //               <AiFillCaretLeft className={`text-[40px]    text-white  `} />
-    //             </button>
-    //           </div>
-
-    //           <div className=" ">
-    //             <button className="next cursor-pointer">
-    //               <AiFillCaretRight className={`text-[40px]    text-white `} />
-    //             </button>{" "}
-    //           </div>
-    //         </div> */}
-    //       </div>
-    //     </div>
-    //   </Section>
-    // </div>
-
     <div className=" bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px]">
       <Section>
-        <div className="  ">
+        <div className=" mx-auto max-w-7xl ">
           <div className=" ">
             <h2 className=" text-center font-[georgia] text-xl text-[20px] font-semibold text-white sm:text-2xl md:text-[30px] lg:text-[30px]">
               Panchang
@@ -170,7 +98,7 @@ const Panchang = (props: Props) => {
                               className="h-full  w-full rounded-t-[10px] object-contain"
                             />
                           </div>
-                          <div className="  rounded-b-[10px] bg-white  ">
+                          <div className="  rounded-b-[10px] bg-white  py-[5px] ">
                             <p className=" text-center text-[20px]">
                               {item?.name}
                             </p>
@@ -188,17 +116,17 @@ const Panchang = (props: Props) => {
             <div
               className="relative     mx-auto flex items-center justify-between"
               style={{
-                height: "330px",
-                marginTop: "-23%",
-                marginLeft: "-2%",
-                marginRight: "-2%",
+                height: "367px",
+                marginTop: "-30%",
+                marginLeft: "-3%",
+                marginRight: "-3%",
               }}
             >
               <button className="prev cursor-pointer">
-                <AiFillCaretLeft className="text-3xl text-black" />
+                <AiFillCaretLeft className="text-3xl text-white" />
               </button>
               <button className="next cursor-pointer">
-                <AiFillCaretRight className="text-3xl text-black" />
+                <AiFillCaretRight className="text-3xl text-white" />
               </button>
             </div>
             {/* <div className="flex items-center justify-center">

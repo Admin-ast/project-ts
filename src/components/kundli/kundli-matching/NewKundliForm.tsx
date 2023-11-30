@@ -317,7 +317,7 @@ function NewKundliForm({}: Props) {
         </div>
         <button
           type="submit"
-          className="mx-auto mt-3 w-full rounded-xl  bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] px-12 py-2 text-center font-semibold text-white lg:col-span-2 lg:text-[22px]"
+          className="mx-auto mt-3 w-full rounded-xl  bg-gradient-to-b from-[#ff6c40] to-[#ff0600] px-12 py-2 text-center font-semibold text-white lg:col-span-2 lg:text-[22px]"
         >
           Match Kundli
         </button>

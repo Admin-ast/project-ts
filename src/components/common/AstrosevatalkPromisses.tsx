@@ -22,7 +22,7 @@ const appointment = [
 
 const AstrosevatalkPromisses = (props: Props) => {
   return (
-    <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b] py-8 lg:py-[51px] ">
+    <div className="bg-gradient-to-b from-[#fb7038] to-[#df625b] py-8  ">
       <Section>
         <div className="flex flex-col gap-5 text-justify text-white">
           <p className="text-center text-[32px] ">AstroSevaTalk Promises</p>

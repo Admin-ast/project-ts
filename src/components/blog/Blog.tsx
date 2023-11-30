@@ -1,56 +1,3 @@
-// import React from "react";
-// import Section from "../Section";
-// import { FaSearch } from "react-icons/fa";
-// import Link from "next/link";
-// import { card } from "../../../utils/list";
-// import SideNavBlog from "./SideNavBlog";
-
-// type Props = {};
-
-// const Blog = (props: Props) => {
-//   return (
-//     <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
-//       <Section>
-//         <div className="flex items-start justify-between gap-6">
-//           <SideNavBlog />
-
-//           <div className="flex w-full flex-col gap-2">
-//             <div className="flex items-center gap-2">
-//               <FaSearch />
-//               <p>Let’s find what you are looking for</p>
-//             </div>
-//             <hr className=" mr-5 w-full border border-[#D9D9D9]" />
-//             <div className="grid grid-cols-3 gap-5 pt-6">
-//               {card.map((item, index) => (
-//                 <Link
-//                   key={index}
-//                   href={`/blog/${item?.id}`}
-//                   className="flex w-[286px] flex-col  rounded-[20px] bg-[#FFF7E5]"
-//                 >
-//                   <img
-//                     className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
-//                     src={item?.img}
-//                     alt=""
-//                   />
-//                   <div className="flex flex-col gap-4 p-3">
-//                     <p className=" text-lg font-bold">{item?.text}</p>
-//                     <div className="flex items-center justify-between text-[12px] text-slate-500">
-//                       <p>Kasturi Chaudhary</p>
-//                       <p>March 31,2023</p>
-//                     </div>
-//                   </div>
-//                 </Link>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </Section>
-//     </div>
-//   );
-// };
-
-// export default Blog;
-
 import React, { useState } from "react";
 import Section from "../Section";
 import { FaSearch } from "react-icons/fa";
@@ -89,7 +36,7 @@ const Blog = (props: Props) => {
   const currentItems = card.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px] ">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-[30px]">
       <Section>
         <div className="justify-between  gap-6 md:flex lg:flex lg:items-start">
           <SideNavBlog />
@@ -100,23 +47,25 @@ const Blog = (props: Props) => {
               <p>Let’s find what you are looking for</p>
             </div>
             <hr className=" w-full border border-[#D9D9D9] shadow-xl" />
-            <div className="grid pt-6 md:px-16  lg:grid-cols-3 lg:gap-5 lg:px-1 ">
+            <div className="grid pt-6  md:px-16  lg:grid-cols-3 lg:gap-5 lg:px-1 ">
               {currentItems.map((item, index) => (
                 <Link
                   key={index}
                   href={`/blog/${item?.id}`}
-                  className="flex  flex-col rounded-[20px] bg-white"
+                  className="flex  flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
                 >
                   <img
-                    className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
+                    className="h-[151px]  w-full rounded-t-[20px]  object-cover object-top"
                     src={item?.img}
                     alt=""
                   />
-                  <div className="flex flex-col gap-4 p-3">
-                    <p className="text-lg font-bold">{item?.text}</p>
-                    <div className="flex items-center justify-between text-[12px] text-slate-500">
-                      <p>Kasturi Chaudhary</p>
-                      <p>March 31, 2023</p>
+                  <div className="">
+                    <div className="flex  h-[100px] flex-col gap-4 p-3 ">
+                      <p className=" truncate">{item?.text}</p>
+                      <div className="flex items-center justify-between text-[12px] text-slate-500">
+                        <p>Kasturi Chaudhary</p>
+                        <p>March 31, 2023</p>
+                      </div>
                     </div>
                   </div>
                 </Link>

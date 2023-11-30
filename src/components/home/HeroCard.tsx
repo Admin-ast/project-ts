@@ -26,7 +26,7 @@ const appointment: Appointment[] = [
     url: "/live-video-chat",
   },
   {
-    name: "Astrosevamall Shop",
+    name: "Astroseva Shop",
     src: "/assets/home/hero-icon-04.webp",
     alt: "test",
     url: "/shop/shop",
@@ -35,26 +35,26 @@ const appointment: Appointment[] = [
 
 function HeroCard({}: Props) {
   return (
-    <div className="bg-black  py-2 md:py-8">
+    <div className="bg-black   ">
       <Section>
         <div className="">
-          <div className="flex items-center justify-center gap-[5px] md:gap-[21px] lg:gap-[21px]">
+          <div className="grid items-center justify-center gap-[5px] py-5 md:flex md:gap-[21px] lg:flex lg:gap-[21px]">
             {appointment?.map((item: Appointment, index: Key) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center space-y-2 rounded-2xl  bg-white shadow-xl  md:p-4  lg:h-[130px]  lg:w-[225px]"
+                className="mx-auto flex w-[235px] flex-col items-center justify-center rounded-2xl  bg-white shadow-xl  md:w-[235px]  md:p-4 lg:h-[150px] lg:w-[275px]"
               >
                 <Link href={item?.url} className="">
-                  <div className="mx-auto h-[30px]   w-[30px] sm:h-[100px] sm:w-[79px] ">
+                  <div className="flex items-center justify-center  ">
                     <Image
                       src={item.src}
                       alt={item.alt}
-                      width={4195}
-                      height={4265}
+                      width={100}
+                      height={100}
                       loading={"eager"}
                     />
                   </div>
-                  <p className="items-center text-center font-[georgia] text-[12px] font-[700]   md:text-sm lg:text-[14px]">
+                  <p className="flex items-center justify-center text-center font-[georgia] text-[20px] font-bold">
                     {item.name}
                   </p>
                 </Link>

@@ -6,14 +6,14 @@ type Props = {};
 const TithiPakshaNashtra = (props: Props) => {
   return (
     <div>
-      <div className="flex flex-col gap-5 bg-[url('/horoscope-bg.svg')] bg-cover py-8 lg:py-[51px]">
-        <div>
+      <div className="flex flex-col  bg-[url('/horoscope-bg.svg')] bg-cover ">
+        <div className="py-[30px] shadow-xl">
           <Section>
-            <div className="flex flex-col space-y-6 text-justify">
-              <p className="text-center text-[36px] font-bold">
+            <div className="flex flex-col  text-justify  ">
+              <p className="text-center text-[30px]  font-bold">
                 Panchang Tithi
               </p>
-              <p>
+              <p className="mt-[20px]">
                 {` One of the first components in the Hindu calendar is the
                 Panchang Tithi. However, knowing the date and the lucky moment
                 is crucial at the same time. The time between the Moon's two
@@ -27,22 +27,22 @@ const TithiPakshaNashtra = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div className="bg-white shadow-xl">
+        <div className="bg-white py-[30px] shadow-xl">
           <Section>
-            <div className="flex flex-col space-y-6 py-8 text-justify">
-              <p className="text-center text-[36px] font-bold">
+            <div className="flex flex-col   text-justify">
+              <p className="text-center text-[30px] font-bold">
                 Name of pakshas:
               </p>
               <p>
-                <span className="text-[22px] font-bold">
+                <span className="text-[20px] font-bold">
                   Krishna-Paksha Tithis -
                 </span>{" "}
                 Pratipada, Dwitiya, Tritiya, Chaturthi, Panchmi, Shashti,
                 Saptami, Ashtami, Navmi, Dashmi, Ekadashi, Dwadashi, Trayodashi,
                 Chaturdashi, Poornima, Amavasya.
               </p>
-              <p>
-                <span className="text-[22px] font-bold">
+              <p className="mt-[10px]">
+                <span className="text-[20px]  font-bold">
                   {" "}
                   Shukla-Paksha Tithis -
                 </span>{" "}
@@ -53,10 +53,10 @@ const TithiPakshaNashtra = (props: Props) => {
             </div>
           </Section>
         </div>
-        <div>
+        <div className="py-[30px]">
           <Section>
-            <div className="flex flex-col space-y-6 py-6 text-justify">
-              <p className="text-center text-[36px] font-bold">Nakshatra</p>
+            <div className="flex flex-col  text-justify">
+              <p className="text-center text-[30px] font-bold">Nakshatra</p>
               <p>
                 According to astrology, Ashwani, Bharani, Kritika, Rohini,
                 Mrigashira, Ardra, Punarvasu, Pushya, Ashlesha, Magha,
@@ -65,11 +65,11 @@ const TithiPakshaNashtra = (props: Props) => {
                 Dhanishta, Shatabhisha, Uttara Purva Bhadrapada Bhadrapada and
                 Revathi are the constellations.
               </p>
-              <p className="text-[22px] font-semibold">
+              <p className="mt-[15px] text-[22px] font-semibold">
                 Nakshatras Ruling Lord
               </p>
             </div>
-            <div className="flex flex-col gap-2 px-4 py-2">
+            <div className="flex flex-col   ">
               <p>. Ketu - Ashwani, Magha, And Mool </p>
               <p>. Venus - Bharani, Poorva Phalguni , and Poorvashadha.</p>
               <p>. Sun - Kritika, Uttaraphalguni, and Uttarashada.</p>

@@ -4,6 +4,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import Hero from "@/components/common/Hero";
+import AlsoCheck from "@/components/common/AlsoCheck";
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -69,9 +70,9 @@ const Index = (props: Props) => {
   }, []);
 
   return (
-    <div>
-      <Hero text="Tomorrow Horoscope" />
-      <div className="bg-[url('/assets/horoscope-bg.webp')] pb-6">
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
+      {/* <Hero text="Tomorrow Horoscope" /> */}
+      <div className="bg-[#F5F5F5] py-1">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
@@ -81,9 +82,14 @@ const Index = (props: Props) => {
             </p>
           </div>
         </Section>
+      </div>
+      <div className="py-[30px]">
+        <p className="text-center text-[30px] font-bold ">Tomorrow Horoscope</p>
+      </div>
+      <div className=" ">
         <Card horos={horos} type="tomorrow" predictionArray={false} />
         <AboutHoroscope />
-        <Check />
+        <AlsoCheck />
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>

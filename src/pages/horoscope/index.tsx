@@ -89,10 +89,12 @@ function Index() {
   }, [type, zodiac]);
 
   return (
-    <>
-      <Hero text=" Horoscope" />
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
+      <div className="py-[30px]">
+        <p className="text-center text-[30px] font-bold ">Horoscope</p>
+      </div>
       <Section>
-        <div className="my-5 justify-start  gap-5 md:flex">
+        <div className="my-5 justify-start  gap-5 md:flex ">
           <div>
             <div className="whitespace-nowrap font-semibold capitalize">
               <div className="text-[23px]">SELECT OTHER SIGN</div>
@@ -121,7 +123,7 @@ function Index() {
                 <option value="pisces">Pisces</option>
               </select>
             </div>
-            <div className="mt-4 text-[23px] font-bold">Horoscops:</div>
+            <div className="mt-4 text-[23px] font-bold">Horoscopes:</div>
             <div className="mt-2 ml-5 flex flex-col gap-5  text-[darkgray]">
               {availType.map((item, index) => {
                 return (
@@ -204,13 +206,13 @@ function Index() {
             </>
           )}
         </div>
-        <ConnectCard />
-        <SignsCard />
-
-        <Compatibility horoscopeType="Aries" />
       </Section>
+      <ConnectCard />
+      <SignsCard />
+
+      <Compatibility horoscopeType="Aries" />
       <Faq faqDetail={faqsDetail} />
-    </>
+    </div>
   );
 }
 

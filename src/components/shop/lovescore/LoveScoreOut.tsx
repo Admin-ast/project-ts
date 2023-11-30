@@ -94,7 +94,7 @@ const LoveScoreOut = ({
               <div className="absolute top-[50px] left-[20px] md:left-[200px] lg:left-[180px]">
                 <p className="text-center">SubTotal : {subtotal}</p>
                 <p className="text-center">Total : {total}</p>
-                <button className="rounded-[10px]  bg-gradient-to-b from-[#fb7038] to-[#df625b] px-4 py-2 text-center text-white">
+                <button className="whitespace-nowrap rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#df625b] px-4 py-2 text-center text-white">
                   Proceed To Checkout
                 </button>
               </div>

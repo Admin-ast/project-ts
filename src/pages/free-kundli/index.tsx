@@ -42,11 +42,11 @@ const faqsDetail: Faqs = {
 function FreeKundli({}: Props) {
   return (
     <>
-      <Hero
+      {/* <Hero
         text="Free Kundli"
         subText="Get instant and accurate Janam Kundli"
         icon="/assets/kundli/free-kundli-icon.png"
-      />
+      /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -57,13 +57,16 @@ function FreeKundli({}: Props) {
           </div>
         </Section>
       </div>
-      <div className="">
+      <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
         <Section>
-          <div className="flex flex-col space-y-8 bg-[url('/assets/horoscope-bg.webp')] py-5 pt-16">
-            <p className="text-center text-2xl font-bold md:text-5xl">
+          <div className="flex flex-col   ">
+            <p className="text-center text-[30px] font-bold ">
               Free Kundli Online
             </p>
-            <div className="flex flex-col text-justify text-base">
+            <p className="text-center text-[21px] font-bold  ">
+              Get instant and accurate Janam Kundli
+            </p>
+            <div className="mt-[20px] flex flex-col text-justify text-base">
               <p>
                 Looking for your free Kundli from expert astrologers? Then you
                 have come to the right place. The online free kundali available

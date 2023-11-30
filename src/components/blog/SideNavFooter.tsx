@@ -60,7 +60,7 @@ const SideNavFooter = ({ headText, subText }: Props) => {
           ))}
         </div>
         <div className="  mt-[23px] flex items-center justify-center">
-          <button className="bg-gradient-to-b from-[#fb7038] to-[#df625b]  px-4 py-2 text-[10px] font-semibold text-white">
+          <button className="rounded-[5px] bg-gradient-to-b from-[#fb7038] to-[#df625b]  px-4 py-2 text-[10px] font-semibold text-white">
             {" "}
             Check Your Love Compatibility
           </button>

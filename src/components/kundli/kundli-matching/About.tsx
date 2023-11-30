@@ -67,7 +67,7 @@ function About({}: Props) {
           </div>
         </div>
       </Section>
-      <div className="bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] py-6">
+      <div className="bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] py-6 text-white">
         <Section>
           <div className="flex flex-col space-y-8  ">
             <p className="text-center text-2xl font-bold md:text-[36px] ">

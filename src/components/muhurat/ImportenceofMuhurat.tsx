@@ -10,7 +10,7 @@ const ImportenceofMuhurat = (props: Props) => {
         <Section>
           <div className="flex flex-col space-y-6">
             <div>
-              <p className="text-center text-2xl font-bold md:text-4xl">
+              <p className="text-center text-[30px] font-bold ">
                 Importance Of Shubh Muhurta 2023
               </p>
             </div>

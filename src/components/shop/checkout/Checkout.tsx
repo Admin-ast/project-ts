@@ -24,6 +24,7 @@ const Checkout = (props: Props) => {
         country="India"
         landmark="Kuch kuch"
       />
+      <p className="text-center text-[20px] font-bold">Add New Address</p>
       <AddressForm />
     </div>
   );

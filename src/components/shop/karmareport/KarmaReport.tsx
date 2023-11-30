@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../lovescore/Header";
 import KarmarForm from "./KarmarForm";
 import Card from "./Card";
+import Store from "@/components/planets/Store";
 
 type Props = {};
 
@@ -14,7 +15,7 @@ const KarmaReport = (props: Props) => {
         rs="Rs ***"
       />
       <KarmarForm />
-      <Card title="People Also Bought" />
+      <Store />
     </div>
   );
 };

@@ -12,7 +12,6 @@ type Props = {};
 const astrologerdesc = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
-      <Hero text="Talk To Astrologer" icon="" />
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">

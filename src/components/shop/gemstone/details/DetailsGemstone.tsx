@@ -29,7 +29,7 @@ type Props = {};
 
 const DetailsGemstone = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat py-8 ">
       <Section>
         <div>
           <div className="flex flex-col items-start justify-center gap-4 text-gray-700 md:flex-row">
@@ -89,16 +89,16 @@ const DetailsGemstone = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-5 py-10">
+          <div className="flex items-center justify-center gap-5 py-10 text-white">
             <Link
               href="/"
-              className="rounded-[10px]  bg-[#e2e0e0] px-8 py-3 font-semibold text-black md:px-16"
+              className="rounded-[10px]  bg-[#e2e0e0] px-8 py-3 font-semibold  md:px-16"
             >
               Add To Cart
             </Link>
             <Link
               href="/"
-              className="rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#df625b] px-8 py-3 font-semibold text-black md:px-16"
+              className="rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#df625b] px-8 py-3 font-semibold  md:px-16"
             >
               Buy Now
             </Link>

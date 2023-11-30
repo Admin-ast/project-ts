@@ -24,7 +24,7 @@ function SavedKundli({}: Props) {
             <p className="text-center text-[22px]">
               Please Log in to see your saved Kundli
             </p>
-            <button className="rounded-lg bg-gradient-to-b from-[#ff6c40] to-[#ff4b2c] px-3 py-1 font-bold text-white">
+            <button className="rounded-lg bg-gradient-to-b from-[#ff6c40] to-[#FF0600] px-3 py-1 font-bold text-white">
               Login
             </button>
           </div>

@@ -51,7 +51,7 @@ import Shop from "@/components/home/Shop";
 import WhoWeAre from "@/components/home/WhoWeAre";
 import Seo from "@/components/Seo";
 import { getFetcher } from "@/service";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 import AstrologerCount from "@/components/home/AstrologerCount";
 import LiveAstrologer from "./live-astrologer/live-astrologer";
@@ -64,6 +64,7 @@ import CelebrityCustomers from "@/components/home/CelebrityCustomers";
 import Panchang from "@/components/home/Panchang";
 import Faq from "@/components/home/Faq";
 import Missing from "@/components/home/Missing";
+import PersonalDetail from "@/components/Signup/PersonalDetail";
 
 export default function Home() {
   useEffect(() => {
@@ -104,6 +105,7 @@ export default function Home() {
       
       <Horoscope /> */}
       <Services head="Our Free Services" />
+
       <AstrologerCount
         count1="15,462+"
         total1="Total Astrologers"
@@ -120,7 +122,7 @@ export default function Home() {
       <News />
       <LatestBlogs />
       <CelebrityCustomers />
-      <Shop head="Shop" />
+      <Shop head="Astroseva Shop" />
       <Panchang />
       <About />
       <Faq />

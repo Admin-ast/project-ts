@@ -163,7 +163,7 @@ function Review({}: Props) {
                   className="rounded-full border-4 border-[#DC6563]"
                 />
               </div>
-              <div className="w-full ">
+              <div className="w-full pb-4">
                 <div className="flex justify-between ">
                   <div className="">
                     <p className="py-4 text-xl font-bold ">{item.name}</p>

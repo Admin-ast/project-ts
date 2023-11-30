@@ -45,7 +45,7 @@ const BlogDesc = (props: Props) => {
   return (
     <>
       <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat ">
-        <Hero text="Blog" icon="" />
+        {/* <Hero text="Blog" icon="" /> */}
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
@@ -55,7 +55,7 @@ const BlogDesc = (props: Props) => {
           </div>
         </Section>
         <Section>
-          <div className=" gap-6 pt-8 md:flex lg:flex">
+          <div className="  pt-8 md:flex lg:flex">
             <SideNavBlog />
             <div className="">
               <Section>

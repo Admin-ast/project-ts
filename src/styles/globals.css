@@ -28,7 +28,30 @@
 .text-red {
   color: red;
 }
-
+body:not(:empty)::before {
+  content: "abc";
+  display: none;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:link,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:visited,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:hover,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
+  display: none !important;
+}
 .swiper-backface-hidden .swiper-slide {
   margin: 0px 8px !important;
+}
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  display: none !important;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+}
+.body {
+  top: 0px !important;
+}
+body {
+  font-family: "Noto Sans Malayalam", arial, sans-serif !important;
+  top: 0px !important;
 }

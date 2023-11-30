@@ -54,7 +54,7 @@ function Astrologer({}: Props) {
   return (
     <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] bg-cover py-[30px]">
       <Section>
-        <div className="">
+        <div className="max-w-6.5xl mx-auto">
           <div className="">
             <p className=" text-center font-[georgia] text-[15px] text-base font-semibold text-white sm:text-2xl md:text-[30px] lg:text-[30px]">
               Our Astrologers
@@ -103,7 +103,7 @@ function Astrologer({}: Props) {
                         className="rounded-full border-[6px] border-[#DC6563]"
                       />
                     </div>
-                    <div className="text-center font-[georgia] ">
+                    <div className="w-[100%] text-center font-[georgia] ">
                       <p className="text-[22px] font-semibold">{item?.name}</p>
                       <p className="text-base font-semibold">{item.type}</p>
                     </div>
@@ -116,17 +116,17 @@ function Astrologer({}: Props) {
           <div
             className="relative    mx-auto flex items-center justify-between"
             style={{
-              height: "300px",
-              marginTop: "-21%",
-              marginLeft: "-2%",
-              marginRight: "-2%",
+              height: "250px",
+              marginTop: "-20%",
+              marginLeft: "-3%",
+              marginRight: "-3%",
             }}
           >
             <button className="prev cursor-pointer">
-              <AiFillCaretLeft className="text-3xl text-black" />
+              <AiFillCaretLeft className="text-3xl text-white" />
             </button>
             <button className="next cursor-pointer">
-              <AiFillCaretRight className="text-3xl text-black" />
+              <AiFillCaretRight className="text-3xl text-white" />
             </button>
           </div>
         </div>

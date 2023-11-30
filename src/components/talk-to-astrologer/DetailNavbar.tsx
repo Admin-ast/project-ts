@@ -16,7 +16,7 @@ type Props = {
 const DetailNavbar = ({ bal }: Props) => {
   return (
     <Section>
-      <div className="items-center justify-end  gap-[13px]  lg:flex  ">
+      <div className="grid items-center justify-end  gap-[13px]  md:flex lg:flex ">
         <p className="py-2">Available Balance:Rs{bal}</p>
         <Link href="/talk-to-astrologer/price">
           <div className="rounded-[5px] border-[1px] border-[#00AF1C] px-2 py-3">
@@ -26,7 +26,7 @@ const DetailNavbar = ({ bal }: Props) => {
         <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9] px-2 py-1 ">
           <Filter />
         </div>
-        <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9] px-2 py-1 ">
+        <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9]  px-2 py-1 ">
           <SortBy />
         </div>
         <div className="flex items-center gap-2 rounded-[5px] border-[1px] border-[#D9D9D9] px-2 py-3 ">
