@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { RiFlag2Fill } from "react-icons/ri";
+import ReplyAnjali from "./ReplyAnjali";
 
 type Props = {
   id: number;
@@ -13,6 +14,10 @@ type Props = {
 };
 
 const ReviewCard = ({ id, name, Name, service, date, desc, text }: Props) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
   return (
     <div className="mt-[25px]  flex  min-h-[231px] items-center  rounded-[15px] border-b-[7px]  border-b-[#DC6563]  shadow-xl">
       <div className="px-5 py-5 ">
@@ -56,9 +61,16 @@ const ReviewCard = ({ id, name, Name, service, date, desc, text }: Props) => {
           <p className="text-justify">{`${desc}`}</p>
         </div>
 
-        <div className="">
-          <p className="text-[16px] text-[#00AF1C]">{text}</p>
+        <div className="cursor-pointer">
+          <p onClick={togglePopup} className="text-[16px] text-[#00AF1C]">
+            {text}
+          </p>
         </div>
+        <ReplyAnjali
+          heading="Replay ANJALI review for CHAT"
+          isOpen={isPopupOpen}
+          onClose={togglePopup}
+        />
       </div>
     </div>
   );

@@ -240,14 +240,6 @@ function Navbar({}: Props) {
                       <div className="flex transform rounded-[17px] bg-[#DC6563]  px-4 text-[20px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
                         <div className="flex items-center gap-2 py-2 px-2">
                           <FaUserAlt />
-                          {/* <Image
-                        src="/assets/home/user-icon.png"
-                        alt={"chat-icon"}
-                        width={20}
-                        height={15}
-                        loading={"lazy"}
-                        className="w-full object-contain "
-                      /> */}
                         </div>
                         <p className="flex items-center">Login</p>
                       </div>
