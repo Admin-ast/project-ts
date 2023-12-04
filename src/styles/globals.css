@@ -1,12 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/georgia");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/georgia");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,6 +11,21 @@
   border-style: solid;
   border-color: #dc6563;
 }
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  font-family: "Poppins" !important;
+}
 .w-35 {
   width: 14rem;
 }
@@ -28,9 +35,9 @@
 .text-red {
   color: red;
 }
-body:not(:empty)::before {
-  content: "abc";
-  display: none;
+body {
+  font-family: "Poppins" !important;
+  overflow-x: hidden !important;
 }
 .VIpgJd-ZVi9od-l4eHX-hSRGPd,
 .VIpgJd-ZVi9od-l4eHX-hSRGPd:link,
@@ -52,6 +59,48 @@ body:not(:empty)::before {
   top: 0px !important;
 }
 body {
-  font-family: "Noto Sans Malayalam", arial, sans-serif !important;
+  font-family: poppins !important;
   top: 0px !important;
+}
+.font-normal {
+  font-weight: 400;
+  font-family: poppins !important;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-family: "Poppins";
+}
+ol,
+ul,
+menu {
+  font-family: "Poppins" !important;
+}
+.font-sans {
+  font-family: "Poppins" !important;
+}
+.font-\[georgia\] {
+  font-family: "Poppins" !important;
+}
+
+.font-\[roboto\] {
+  font-family: "Poppins" !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 0px 0 !important;
+  font-family: "Poppins";
+  font-size: 17px;
+  color: #515151;
+}
+.goog-te-gadget {
+  font-family: arial;
+  font-size: 0px !important;
+  color: #666;
+  white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  .lg\:max-w-7xl {
+    max-width: 80% !important;
+  }
 }

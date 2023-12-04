@@ -18,26 +18,28 @@ const AstrologerCount = ({
   total3,
 }: Props) => {
   return (
-    <div id="NewRootRoot" className="flex w-full flex-row items-start">
-      <div className="bg-50%_50% flex h-32 w-full flex-row items-start justify-center gap-[203px] bg-gradient-to-b from-[#ffd491] to-[#aa6d34] bg-cover bg-no-repeat pt-8 bg-blend-normal mix-blend-hard-light">
-        <div className=" flex w-1/6 flex-col items-start gap-1">
-          <div className="ml-8 text-center font-sans text-3xl font-bold text-white">
+    <div id="" className="flex w-full flex-row items-start">
+      <div className=" bg-50%_50% flex flex w-full flex-col items-start  justify-center  bg-gradient-to-b from-[#ffd491]  to-[#aa6d34] bg-cover bg-no-repeat py-4 bg-blend-normal mix-blend-hard-light md:flex-row lg:px-20">
+        <div className=" p-4 sm:w-full md:w-1/3">
+          <div className=" text-center font-sans text-3xl font-bold text-white">
             15,462+
           </div>
           <div className="text-center font-sans text-xl font-bold text-white">
             Total Astrologers
           </div>
         </div>
-        <div className=" flex w-1/6 flex-col items-start gap-1">
-          <div className="ml-8 text-center font-sans text-3xl font-bold text-white">
+
+        <div className="  p-4 sm:w-full  md:w-1/3">
+          <div className=" text-center font-sans text-3xl font-bold text-white">
             15,462+
           </div>
           <div className="text-center font-sans text-xl font-bold text-white">
             Total Astrologers
           </div>
         </div>
-        <div className=" flex w-1/6 flex-col items-start gap-1">
-          <div className="ml-8 text-center font-sans text-3xl font-bold text-white">
+
+        <div className="  p-4 sm:w-full  md:w-1/3">
+          <div className=" text-center font-sans text-3xl font-bold text-white">
             15,462+
           </div>
           <div className="text-center font-sans text-xl font-bold text-white">
