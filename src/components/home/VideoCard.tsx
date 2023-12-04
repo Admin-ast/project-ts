@@ -10,7 +10,7 @@ const VideoCard = ({ title, thumbnail }: Props) => {
   return (
     <div className="">
       <Section>
-        <div className="relative mt-[30px]  overflow-hidden ">
+        <div className="relative mt-[30px]  overflow-hidden rounded-[10px] border-r-[1px] border-b-[1px] border-[#DC6563]">
           <img className="w-full" src={thumbnail} alt="Video Thumbnail" />
           <div className="absolute bottom-[130px] left-[140px] md:bottom-[110px] md:left-[110px]">
             <FaYoutube className="text-[47px] text-[#ff0000]" />
