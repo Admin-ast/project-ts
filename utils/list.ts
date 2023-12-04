@@ -3,7 +3,7 @@ export const card = [
     id: "i_was_aware_of_my_agressiveness",
     url: "/i-was-aware-of-my-agressiveness",
     img: "/assets/blog/blog aggresion-01.svg",
-    text: "I was aware of my agressiveness",
+    text: "I Was Aware of my Agressiveness",
     para: [
       { para: " Dear readers", title: "", img: "" },
       {
@@ -37,7 +37,7 @@ export const card = [
     id: "do_i_posses_the_authority_to_successfully_resolve_ongoing_business_negotiations",
     url: "do-i-posses-the-authority-to-successfully-resolve-ongoing-business-negotiations",
     img: "/assets/blog/do i possess the authority to successfully resolve ongoing business negotiation C-01-01.svg",
-    text: "Do I posses the authority  to successfully resolve ongoing business negotiations ",
+    text: "Do I Posses the Authority  to Successfully Resolve Ongoing Business Negotiations ",
     keywords: [{ key: "business", link: "/" }],
     para: [
       {
@@ -73,7 +73,7 @@ export const card = [
     id: "free_5_minutes_astrology",
     url: "free-5-minutes-astrology",
     img: "/assets/blog/five min free consultation-01.svg",
-    text: "Free 5 minutes Astrology",
+    text: "Free 5 Minutes Astrology",
     keywords: [
       { key: "5 minutes astrology", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -175,7 +175,7 @@ export const card = [
     id: "astroseva_talk_to_astrologer_online",
     url: "astroseva-talk-to-astrologer-online",
     img: "/assets/blog/astroseva  talk and talk to astrologer online-01.svg",
-    text: "Astroseva Talk & Talk to Astrologer online",
+    text: "Astroseva Talk & Talk to Astrologer Online",
     keywords: [{ key: "astrology ", link: "/" }],
     para: [
       {
@@ -232,7 +232,7 @@ export const card = [
     id: "chat_with_us_at_astrosevatalk_for_job_career_promotions_and_more",
     url: "chat-with-us-at-astrosevatalk-for-job-career-promotions-and-more",
     img: "/assets/blog/CHAT WITH US AT ASTROSEVA TALK FOR JOB, CAREER, PROMOTION, AND MORE-01-01.svg",
-    text: "Chat with us at AstrosevaTalk for job,career,promotions,and more  ",
+    text: "Chat With us at AstrosevaTalk for Job,Career,Promotions,and More  ",
     keywords: [
       { key: "Job ", link: "/" },
       { key: "Career ", link: "/" },
@@ -513,7 +513,7 @@ export const card = [
     id: "astrosevatalk_chat_for_marriage",
     url: "astrosevatalk-chat-for-marriage",
     img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01-01.svg",
-    text: "AstrosevaTalk chat for marriage ",
+    text: "AstrosevaTalk Chat for Marriage ",
     keywords: [
       { key: "marriage", link: "/" },
       { key: " astro@astrosevatalk.com", link: "/" },
@@ -550,7 +550,7 @@ export const card = [
     id: "best_online_astrology_website_in_India",
     url: "best-online-astrology-website-in-India",
     img: "/assets/blog/Welcome to Astroseva Talk.svg",
-    text: "Best Online Astrology website in India ",
+    text: "Best Online Astrology Website in India ",
 
     keywords: [
       { key: "best online astrology websites in India", link: "/" },
@@ -684,7 +684,7 @@ export const card = [
     id: "how_healing_helps_in_balance_chakras",
     url: "how-healing-helps-in-balance-chakras",
     img: "/assets/blog/How healing helps in balance chakras [Recovered]-01-01.svg",
-    text: "How healing helps in balance chakras",
+    text: "How Healing Helps in Balance Chakras",
     keywords: [
       { key: "healing", link: "/" },
       { key: "helps", link: "/" },
@@ -808,7 +808,7 @@ export const card = [
     id: "online_chat_with_astrologer_and_astrology_consultation",
     url: "online-chat-with-astrologer-and-astrology-consultation",
     img: "/assets/blog/Online chat with Astrologer and 24 astrology consultation.svg",
-    text: "Online chat with Astrologer and 24*7 Astrology Consultation.",
+    text: "Online Chat With Astrologer and 24*7 Astrology Consultation.",
     keywords: [
       { key: "online chat", link: "/" },
       { key: "consultation", link: "/" },
@@ -945,7 +945,7 @@ export const card = [
     id: "welcome_to_astrosevva_talk_where_we_explore_the_characteristics_and_traits_of_zodiac_signs",
     url: "welcome-to-astrosevva-talk-where-we-explore-the-characteristics-and-traits-of-zodiac-signs",
     img: "/assets/blog/Welcome to Astroseva Talk [Recovered]-01-01.svg",
-    text: "Welcome to Astrosevva talk, where we explore the characteristics and traits of zodiac signs.",
+    text: "Welcome to Astrosevva talk, Where We Explore the Characteristics and Traits of Zodiac Signs.",
     keywords: [
       { key: "zodiac", link: "/" },
       { key: "signs", link: "/" },
@@ -1465,7 +1465,7 @@ export const card = [
     id: "online_astrology_by_date_of_birth",
     url: "online-astrology-by-date-of-birth",
     img: "/assets/blog/online astrology by date of birth.svg",
-    text: "Online Astrology by date of birth",
+    text: "Online Astrology by Date of Birth",
     keywords: [
       { key: "Astrology by date of birth", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -1608,7 +1608,7 @@ export const card = [
     id: "when_will_i_get_married_astrology_predication",
     url: "when-will-i-get-married-astrology-predication",
     img: "/assets/blog/when will i get married.png",
-    text: "When will I get married astrology predication",
+    text: "When will I get Married Astrology Predication",
     keywords: [
       { key: "married ", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -1742,7 +1742,7 @@ export const card = [
     id: "astrology_free_marriage_prediction",
     img: "/assets/blog/ASTROSEVATALK CHAT FOR MARRIAGE-01.svg",
     url: "Astrology free marriage prediction",
-    text: "  Astrology free marriage prediction",
+    text: "  Astrology Free Marriage Prediction",
     keywords: [
       { key: "Marriage Prediction", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -1845,7 +1845,7 @@ export const card = [
     id: "best_astrology_courses_in_india",
     url: "/best-astrology-courses-in-india",
     img: "/assets/blog/best astrology courses.png",
-    text: " Best Astrology courses in India",
+    text: " Best Astrology Courses in India",
     keywords: [
       { key: " Course", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -1914,7 +1914,7 @@ export const card = [
     id: "career",
     url: "/career",
     img: "/assets/blog/career.png",
-    text: " career",
+    text: " Career",
     keywords: [
       { key: "career", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -1983,7 +1983,7 @@ export const card = [
     id: "discover_the_benefits_of_online_astrology_consultation",
     url: "/discover-the-benefits-of-online-astrology-consultation",
     img: "/assets/blog/Discover the benefits of online consultancy.png",
-    text: " DISCOVER THE BENEFITS OF ONLINE ASTROLOGY CONSULTATION",
+    text: " Discover the Benifits of Online Astrology Consultation",
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -2077,7 +2077,7 @@ export const card = [
     id: "discover_trusted_online_astrologers",
     url: "/discover-trusted-online-astrologers",
     img: "/assets/blog/discover trusted online astrologer.jpg",
-    text: " DISCOVER TRUSTED ONLINE ASTROLOGERS",
+    text: " Discover Trusted Online Astrologers",
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -2135,7 +2135,7 @@ export const card = [
     id: "gain_insights_from_your_financial_horoscope",
     url: "gain-insights-from-your-financial-horoscope",
     img: "/assets/blog/Gain insights from your financial horoscope.png",
-    text: "GAIN INSIGHTS FROM YOUR FINANCIAL HOROSCOPE",
+    text: "Gain Insights From Your Financial Horoscope",
     keywords: [
       { key: "Astrosevatalk", link: "/" },
       { key: "chat with an expert", link: "/" },
@@ -2201,7 +2201,7 @@ export const card = [
 
     url: "/todays-horoscope-for-health-and-wellness",
     img: "/assets/blog/today's horoscope for health and wellness.png",
-    text: " Todays horoscope for health and wellness",
+    text: " Todays horoscope for Health and Wellness",
     keywords: [
       { key: "health", link: "/" },
       { key: "wellness", link: "/" },
@@ -2313,7 +2313,7 @@ export const card = [
     id: "unveiling_the_power_of_astrology_consultation_online",
     url: "/unveiling-the-power-of-astrology-consultation-online",
     img: "/assets/blog/unveiling the cosmos@2x.png",
-    text: "  UNVEILING THE POWER OF ASTROLOGY CONSULTATION ONLINE ",
+    text: "  Unveiling the Power of Astrology Consultation Online ",
     keywords: [
       { key: "power", link: "/" },
       { key: "Astrosevatalk", link: "/" },
@@ -2383,7 +2383,7 @@ export const card = [
     id: "when_is_the_best_time_to_launch_a_business_according_to_astrology",
     url: "/when-is-the-best-time-to-launch-a-business-according-to-astrology",
     img: "/assets/blog/when is the best time to launch a business according to astrology.png",
-    text: " When is the best time to launch a business according to astrology",
+    text: " When is the Best Time to Launch a Business According to Astrology",
     keywords: [
       { key: "business", link: "/" },
       { key: "https://www.AstrosevaTalk.com", link: "/" },
@@ -2447,7 +2447,7 @@ export const card = [
     id: "how_can_we_predict_childbirth_using_vedic_astrology",
     url: "/how-can-we-predict-childbirth-using-vedic-astrology",
     img: "/assets/blog/How can we predict childbirth using Vedic astrology-01.svg",
-    text: "How can we predict childbirth using vedic astrology",
+    text: "How can We Predict Childbirth Using Vedic Astrology",
     keywords: [
       { key: "childbirth", link: "/" },
       { key: "AstrosevaTalk.com", link: "/" },
@@ -2534,7 +2534,7 @@ export const card = [
     id: "how_can_you_choose_a_lucky_mobile_number_using_numerology",
     url: "/how-can-you-choose-a-lucky-mobile-number-using-numerology",
     img: "/assets/blog/how can you choose a lucky mobile number.png",
-    text: "HOW CAN YOU CHOOSE A LUCKY MOBILE NUMBER USING NUMEROLOGY ",
+    text: "How Can You Choose a Lucky Mobile Number Using Numerology ",
     keywords: [
       { key: "numerology", link: "/" },
       { key: "AstrosevaTalk.com", link: "/" },
@@ -2585,7 +2585,7 @@ export const card = [
     id: "what_tarot_card_means_someone_loves_you",
     url: "what-tarot-card-means-someone-loves-you",
     img: "/assets/blog/WHICH tarot card means that someone loves you-01.svg",
-    text: "WHAT TAROT CARD MEANS SOMEONE LOVES YOU ",
+    text: "What Tarot Card Means Somemone Loves You",
     keywords: [
       { key: "tarot", link: "/" },
       { key: "love", link: "/" },
@@ -2680,7 +2680,7 @@ export const card = [
     id: "which_zodiac_signs_are_the_most_annoying",
     url: "/which-zodiac-signs-are-the-most-annoying",
     img: "/assets/blog/Which zodiac signs are the most annoying-01.svg",
-    text: "Which zodiac signs are the most annoying? ",
+    text: "Which Zodiac Signs are the Most Annoying? ",
     keywords: [
       { key: "zodiac", link: "/" },
       { key: "signs", link: "/" },
@@ -2770,7 +2770,7 @@ export const card = [
     id: "which_zodiac_signs_are_the_most_evil_in_2023",
     url: "which-zodiac-signs-are-the-most-evil-in-2023",
     img: "/assets/blog/Which zodiac signs are the most evil in 2023-01.svg",
-    text: "Which zodiac signs are the most evil in 2023 ",
+    text: "Which Zodiac Signs are the Most Evil in 2023 ",
     keywords: [
       { key: "zodiac", link: "/" },
       { key: "evil", link: "/" },
@@ -2860,7 +2860,7 @@ export const card = [
     id: "can_astrology_predict_why_you_are_facing_problems_in_your_career",
     url: "/can-astrology-predict-why-you-are-facing-problems-in-your-career",
     img: "/assets/blog/Can astrology predict why you're facing problems in your career-01.svg",
-    text: "Can astrology predict why you are facing problems in your career  ",
+    text: "Can Astrology Predict Why You Are Facing Problems in Your Career  ",
     keywords: [
       { key: "predict", link: "/" },
       { key: "problems", link: "/" },
@@ -2920,7 +2920,7 @@ export const card = [
     id: "is_your_life_partner_pre_decided",
     url: "/is-your-life-partner-pre-decided",
     img: "/assets/blog/Is your life partner pre-decided-01.svg",
-    text: "Is your life partner pre-decided   ",
+    text: "Is Your Life Partner Pre-Decided   ",
     keywords: [
       { key: "life partner", link: "/" },
       { key: "pre-decided", link: "/" },
@@ -2986,7 +2986,7 @@ export const card = [
     id: "which_zodiac_signs_are_the_most_incompatible",
     url: "/which-zodiac-signs-are-the-most-incompatible",
     img: "/assets/blog/Which zodiac signs are the most incompatible-01.svg",
-    text: " Which zodiac signs are the most incompatible   ",
+    text: " Which Zodiac Signs Are the Most Incompatible   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
       { key: "incompatible", link: "/" },
@@ -3070,7 +3070,7 @@ export const card = [
     id: "which_zodiac_signs_lead_a_luxurious_life",
     url: "/which-zodiac-signs-lead-a-luxurious-life",
     img: "/assets/blog/Which zodiac signs lead a luxurious life-01-01.svg",
-    text: "     Which zodiac signs lead a luxurious life   ",
+    text: "     Which Zodiac Signs Lead a Luxurious Life   ",
     keywords: [
       { key: "zodiac signs", link: "/" },
       { key: "luxurious life", link: "/" },
@@ -3149,7 +3149,7 @@ export const card = [
     id: "how_can_marriage_lines_create_problems_in_marriage",
     url: "/how-can-marriage-lines-create-problems-in-marriage-",
     img: "/assets/blog/How can marriage lines create problems in marriage-01-01.svg",
-    text: " How can marriage lines create problems in marriage   ",
+    text: " How Can Marriage Lines Create Problems in Marriage   ",
     keywords: [
       { key: "Marriage", link: "/" },
       { key: "problems", link: "/" },
@@ -3239,7 +3239,7 @@ export const card = [
     id: "how_will_your_love_life_be_according_to_your_zodiac_sign",
     url: "/how-will-your-love-life-be-according-to-your-zodiac-sign",
     img: "/assets/blog/How will your love life be according to your zodiac sign.svg",
-    text: "How will your love life be according to your zodiac sign    ",
+    text: "How Will Your Love Life be According to Your Zodiac Sign    ",
     keywords: [
       { key: "love", link: "/" },
       { key: "life", link: "/" },
@@ -3359,7 +3359,7 @@ export const card = [
     id: "should_you_marry_your_boyfriend_despite_your_astrolgers_warning_about_your_horoscope_mismatch",
     url: "/should-you-marry-your-boyfriend-despite-your-astrolgers-warning-about-your-horoscope-mismatch",
     img: "/assets/blog/Should you marry your boyfriend despite your astrologer's warning about your horoscope mismatch-01.svg",
-    text: " Should you marry your boyfriend despite your astrolger’s warning about your horoscope mismatch   ",
+    text: " Should You Marry Your Boyfriend Despite Your Astrolger’s Warning About Your Horoscope Mismatch   ",
     keywords: [
       { key: "MARRY YOUR BOYFRIEND ", link: "/" },
       { key: "ASTROLGER’S WARNING ", link: "/" },
@@ -3468,7 +3468,7 @@ export const card = [
     id: "why_is_the_love_for_your_twin_flame_so_strong",
     url: "/why-is-the-love-for-your-twin-flame-so-strong",
     img: "/assets/blog/Why is the love for your twin flame so strong-01-01.png",
-    text: " WHY IS THE LOVE FOR YOUR TWIN FLAME SO STRONG   ",
+    text: " Why Is The Love for Your Twin Flame So Strong   ",
     keywords: [
       { key: "LOVE FOR YOUR TWIN", link: "/" },
       { key: "SO STRONG", link: "/" },
@@ -3552,7 +3552,7 @@ export const card = [
     id: "how_can_the_auspicious_and_inauspicious_position_of_mars_bring_big_changes_in_life",
     url: "/how-can-the-auspicious-and-inauspicious-position-of-mars-bring-big-changes-in-life",
     img: "/assets/blog/How can the auspicious and inauspicious position of Mars bring big changes in life-01.svg",
-    text: "How can the auspicious and inauspicious position of mars bring big changes in life?  ",
+    text: "How Can The Auspicious and Inauspicious Position of Mars Bring Big Changes in Life?  ",
     keywords: [
       { key: "AUSPICIOUS AND INAUSPICIOUS POSITION", link: "/" },
       { key: "MARS", link: "/" },
@@ -3679,7 +3679,7 @@ export const card = [
     id: "what_are_the_indications_of_no_marriage_in_vedic_astrology",
     url: "/what-are-the-indications-of-no-marriage-in-vedic-astrology",
     img: "/assets/blog/no marriage.png",
-    text: " What are the indications of no marriage in vedic astrology?   ",
+    text: " What Are the Indications of No Marriage in Vedic Astrology?   ",
     keywords: [
       { key: "Marriage", link: "/" },
       { key: "vedic Astrology", link: "/" },
@@ -3775,7 +3775,7 @@ export const card = [
     id: "which_zodiac_signs_are_pisces_soulmates",
     url: "/which-zodiac-signs-are-pisces-soulmates",
     img: "/assets/blog/pisces soulmates.png",
-    text: " Which zodiac signs are pisces soulmates   ",
+    text: " Which Zodiac Signs are Pisces Soulmates   ",
     keywords: [
       { key: "Zodiac Signs", link: "/" },
       { key: "Pisces Soulmate", link: "/" },

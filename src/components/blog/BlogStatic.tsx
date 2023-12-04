@@ -381,7 +381,7 @@ const BlogStatic = (props: Props) => {
 
       {/* --------------------------------Remedies for Mangal Dosha------------------------------------------------------ */}
       <Section>
-        <div className="mt-[30px] ">
+        <div className="py-[30px] ">
           <div className=" ">
             <p className="text-center text-3xl font-bold">
               Remedies for Mangal Dosha
@@ -476,7 +476,7 @@ const BlogStatic = (props: Props) => {
 
       {/* ---------------------------------Connect with astrologer------------------------------------------------------------ */}
 
-      <div className=" bg-white py-[18px] shadow-xl ">
+      {/* <div className=" bg-white py-[18px] shadow-xl ">
         <div className=" ">
           <p className="text-center font-[georgia] text-xl font-bold  ">
             Connect with an Astrologer on Call or Chat for more personalised
@@ -511,17 +511,8 @@ const BlogStatic = (props: Props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="">
-        {/* <BlogsBy
-          className=""
-          heading="Blogs By Kasturi Chaudhary"
-          subheading=""
-        />
-        <RelatedBlogs />
-        <RecentBlogs />
-        <OurAstrologer heading="Our Astrologer" /> */}
-      </div>
+      </div> */}
+      <div className=""></div>
     </div>
   );
 };
