@@ -42,19 +42,19 @@ function HeroCard({}: Props) {
             {appointment?.map((item: Appointment, index: Key) => (
               <div
                 key={index}
-                className="mx-auto flex w-[235px] flex-col items-center justify-center rounded-2xl  bg-white shadow-xl  md:w-[235px]  md:p-4 lg:h-[150px] lg:w-[275px]"
+                className="mx-auto flex w-[235px] flex-col items-center justify-center rounded-2xl  bg-white shadow-xl  md:w-[235px]  md:p-4 lg:h-[130px] lg:w-[275px]"
               >
                 <Link href={item?.url} className="">
                   <div className="flex items-center justify-center  ">
                     <Image
                       src={item.src}
                       alt={item.alt}
-                      width={100}
+                      width={80}
                       height={100}
                       loading={"eager"}
                     />
                   </div>
-                  <p className="flex items-center justify-center text-center font-[georgia] text-[20px] font-bold">
+                  <p className="flex items-center justify-center text-center font-[georgia] text-[16px]">
                     {item.name}
                   </p>
                 </Link>

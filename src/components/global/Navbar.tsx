@@ -105,7 +105,7 @@ function Navbar({}: Props) {
       <div className="sticky top-0 z-10 w-full bg-white shadow-xl ">
         <Section>
           <div className="flex items-center  py-2 px-2">
-            <div className="block cursor-pointer text-[25px] lg:hidden ">
+            <div className="block cursor-pointer text-[16px] lg:hidden ">
               <TemporaryDrawer
                 content={<NavMobileData />}
                 anchor="left"
@@ -133,7 +133,7 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full ">
-              <div className=" mt-[10px] hidden justify-end gap-x-8 text-[20px]  lg:flex">
+              <div className=" mt-[10px] hidden justify-end gap-x-8 text-[17px]  lg:flex">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
 
@@ -154,7 +154,7 @@ function Navbar({}: Props) {
                       <ul className="">
                         <div className="relative  z-10 px-2 shadow-xl">
                           <div className="absolute right-[-25px] top-[10px] rounded-[20px] bg-white lg:w-[300px]">
-                            <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]">
+                            <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]">
                               <li onClick={toggleHoroscope}>
                                 <Link href="/horoscope/yearly">
                                   Horoscope 2023
@@ -164,14 +164,14 @@ function Navbar({}: Props) {
 
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/daily">{`Today's Horroscope`}</Link>
                             </li>
 
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/daily">
                                 Weekly Horoscope
@@ -179,7 +179,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/monthly">
                                 Monthly Horoscope
@@ -187,7 +187,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/yearly">
                                 Yearly Horoscope
@@ -195,7 +195,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/daily">
                                 Daily Horoscope
@@ -203,7 +203,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/tomorrow">
                                 {`Tomorrow's Horoscope`}
@@ -211,7 +211,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[20px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/yesterday">
                                 {`Yesterday's Horoscope`}
@@ -237,7 +237,7 @@ function Navbar({}: Props) {
                       }}
                     >
                       {/* <div className="flex rounded-[17px] bg-[#DC6563] transform hover:translate-y-[-5px] transition-transform duration-300 ease-out px-2 py-[4px] text-white"> */}
-                      <div className="flex transform rounded-[17px] bg-[#DC6563]  px-4 text-[20px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
+                      <div className="flex transform rounded-[17px] bg-[#DC6563]  px-2 text-[16px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
                         <div className="flex items-center gap-2 py-2 px-2">
                           <FaUserAlt />
                         </div>
@@ -294,7 +294,7 @@ function Navbar({}: Props) {
                   <div className="mt-2">{/* <MainPage /> */}</div>
                 </div>
               </div>
-              <div className="  mt-[20px] mb-[10px] hidden justify-end gap-x-8 text-[20px]  lg:flex  ">
+              <div className="  mt-[10px] mb-[10px] hidden justify-end gap-x-8 text-[17px]  lg:flex  ">
                 <Link href="/chat-with-astrologer/chat-with-astrologer">
                   Chat with Astrologer
                 </Link>
