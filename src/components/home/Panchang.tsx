@@ -43,7 +43,7 @@ const services: Service[] = [
   {
     id: 4,
     name: "Vaar",
-    src: "/assets/home/panchang3.png",
+    src: "/assets/home/vaar.jpg",
     url: "/today-panchang",
   },
 ];
@@ -87,7 +87,7 @@ const Panchang = (props: Props) => {
                   <SwiperSlide key={item.src + index} className="">
                     <Link key={index} href={item.url}>
                       <div className="">
-                        <div className="  mt-[30px]    ">
+                        <div className="  my-auto  mt-[30px]  ">
                           <div className=" ">
                             <Image
                               src={item.src}

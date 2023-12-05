@@ -37,9 +37,9 @@ const services: Service[] = [
     url: "",
   },
   {
-    name: "Palm Reading",
-    src: "/assets/home/palm.png",
-    url: "",
+    name: "Free Kundli",
+    src: "/assets/home/kundli.jpg",
+    url: "/free-kundli",
   },
 ];
 type Props = {
@@ -90,7 +90,7 @@ function Services({ head }: Props) {
                           width={206}
                           height={174}
                           loading={"lazy"}
-                          className=" h-full  w-full py-[6px] px-[6px] "
+                          className=" h-full w-full  rounded-[10px] py-[6px] px-[6px] "
                         />
                       </div>
                       <div className="absolute bottom-[2px] w-[100%]  ">

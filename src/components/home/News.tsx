@@ -20,18 +20,18 @@ const services: Service[] = [
     url: "/",
   },
   {
-    name: "Priyanka Chopra",
-    src: "/assets/home/priyanka.png",
+    name: "Irfan Khan",
+    src: "/assets/home/irfan.png",
     url: "/",
   },
   {
-    name: "Priyanka Chopra",
-    src: "/assets/home/priyanka.png",
+    name: "Genelia",
+    src: "/assets/home/gen.png",
     url: "/",
   },
   {
-    name: "Priyanka Chopra",
-    src: "/assets/home/priyanka.png",
+    name: "Shahrukh Khan",
+    src: "/assets/home/shah.jpg",
     url: "/",
   },
 ];

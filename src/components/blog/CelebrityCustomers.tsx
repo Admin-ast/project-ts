@@ -51,7 +51,7 @@ const CelebrityCustomers = (props: Props) => {
               OUR CELEBRITY CUSTOMERS
             </p>
 
-            <div className="grid lg:grid-cols-4 ">
+            <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-4">
               {videoDataArray.map((videoData, index) => (
                 <Link key={index} href={videoData?.thumbnail}>
                   <div className="flex justify-center ">

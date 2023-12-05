@@ -25,16 +25,16 @@ const videoDataArray: VideoData[] = [
     thumbnail: "/assets/home/priyanka.png",
   },
   {
-    title: "Priyanka Chopra",
-    thumbnail: "/assets/home/priyanka.png",
+    title: "Irfan Khan",
+    thumbnail: "/assets/home/irfan.png",
   },
   {
-    title: "Priyanka Chopra",
-    thumbnail: "/assets/home/priyanka.png",
+    title: "Genelia",
+    thumbnail: "/assets/home/gen.png",
   },
   {
-    title: "Priyanka Chopra",
-    thumbnail: "/assets/home/priyanka.png",
+    title: "Shahrukh Khan",
+    thumbnail: "/assets/home/shah.jpg",
   },
 
   // Add more video data as needed
@@ -44,7 +44,7 @@ const CelebrityCustomers = (props: Props) => {
   return (
     <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px]">
       <Section>
-        <div className="mx-auto max-w-7xl">
+        <div className="">
           <div className="">
             <p className=" text-center font-[georgia] text-xl text-[20px] font-semibold text-white  md:text-[30px] lg:text-[30px]">
               Our Celebrity Customers
@@ -74,7 +74,7 @@ const CelebrityCustomers = (props: Props) => {
               {videoDataArray.map((videoData, index) => (
                 <SwiperSlide key={index} className="">
                   <Link key={index} href={videoData?.thumbnail}>
-                    <div className="flex justify-center ">
+                    <div className="flex justify-center  ">
                       <VideoCard key={index} {...videoData} />
                     </div>
                   </Link>
