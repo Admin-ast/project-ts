@@ -25,16 +25,16 @@ const videoDataArray: VideoData[] = [
     thumbnail: "/assets/home/priyanka.png",
   },
   {
-    title: "Priyanka Chopra",
+    title: "Irfan Khan",
     thumbnail: "/assets/home/irfan.png",
   },
   {
-    title: "Priyanka Chopra",
+    title: "Genelia",
     thumbnail: "/assets/home/gen.png",
   },
   {
-    title: "Priyanka Chopra",
-    thumbnail: "/assets/home/priyanka.png",
+    title: "Shahrukh Khan",
+    thumbnail: "/assets/home/shah.jpg",
   },
 
   // Add more video data as needed

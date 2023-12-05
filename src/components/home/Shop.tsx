@@ -41,9 +41,9 @@ const shoppingList: ShoppingList[] = [
     url: "/shop/gemstone",
   },
   {
-    name: "Gemstone",
-    src: "/assets/shop/gemstone.svg",
-    url: "/shop/gemstone",
+    name: "Kawach",
+    src: "/assets/shop/kawach.svg",
+    url: "/shop/kawach",
   },
 ];
 
