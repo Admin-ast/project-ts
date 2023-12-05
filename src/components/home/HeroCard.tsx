@@ -37,7 +37,7 @@ function HeroCard({}: Props) {
   return (
     <div className="bg-black   ">
       <Section>
-        <div className="">
+        <div className="px-2">
           <div className="grid items-center justify-center gap-[5px] py-5 md:flex md:gap-[21px] lg:flex lg:gap-[21px]">
             {appointment?.map((item: Appointment, index: Key) => (
               <div

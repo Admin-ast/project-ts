@@ -25,27 +25,27 @@ const astrologers: Astrologers[] = [
   {
     name: "Devarshi Ojha",
     type: "Taroyt",
-    src: "",
+    src: "/assets/home/deva.png",
   },
   {
     name: "Nitika",
     type: "Taroyt",
-    src: "",
+    src: "/assets/home/astra.png",
   },
   {
     name: "Bharat Singh",
     type: "Taroyt",
-    src: "",
+    src: "/assets/home/astro1.jpeg",
   },
   {
     name: "Nidhi",
     type: "Taroyt",
-    src: "",
+    src: "/assets/home/astro4.jpeg",
   },
   {
     name: "Anil",
     type: "Taroyt",
-    src: "",
+    src: "/assets/home/astro1.jpeg",
   },
 ];
 
@@ -95,7 +95,7 @@ function Astrologer({}: Props) {
                   <div className="h-[170px]   rounded-full ">
                     <div className="flex items-center justify-center">
                       <Image
-                        src="/assets/home/review.png"
+                        src={item.src}
                         alt={item.name}
                         width={108}
                         height={108}

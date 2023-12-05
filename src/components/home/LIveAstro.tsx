@@ -13,6 +13,22 @@ type Astrologers = {
 const services: Astrologers[] = [
   {
     name: "Isha",
+    src: "/assets/home/astro1.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/astro2.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/astro3.png",
+  },
+  {
+    name: "Isha",
+    src: "/assets/home/astro4.png",
+  },
+  {
+    name: "Isha",
     src: "/assets/home/isha.png",
   },
   {
@@ -22,22 +38,6 @@ const services: Astrologers[] = [
   {
     name: "Isha",
     src: "/assets/home/nitin.png",
-  },
-  {
-    name: "Isha",
-    src: "/assets/home/isha.png",
-  },
-  {
-    name: "Isha",
-    src: "/assets/home/isha.png",
-  },
-  {
-    name: "Isha",
-    src: "/assets/home/isha.png",
-  },
-  {
-    name: "Isha",
-    src: "/assets/home/isha.png",
   },
 ];
 type Props = {};
@@ -89,7 +89,7 @@ const LIveAstro = (props: Props) => {
                           width={190}
                           height={214}
                           loading={"lazy"}
-                          className="mx-auto h-full w-full object-contain"
+                          className="mx-auto h-full w-full rounded-[10px] object-contain"
                         />
                       </div>
                       <div className="absolute bottom-[31px] left-[10px] md:left-[80px] lg:left-[50px] ">
