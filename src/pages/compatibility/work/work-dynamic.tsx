@@ -1,7 +1,8 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
-import Store from "@/components/compatibility/StoreSection";
+
 import Comp from "@/components/compatibility/love/Comp";
+import Store from "@/components/planets/Store";
 
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
@@ -30,25 +31,7 @@ const WorkDynamic = (props: Props) => {
           subText="Do you make an outstanding team or will working together be a real pain? Know how to interact most effectively with all your colleagues, bosses, and partners."
         />
       </Section>
-      <Store
-        cardDetails={[
-          {
-            name: "Career Report",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Kawach",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Spell",
-            img: "/assets/compatibility/work/Rectangle_130.png",
-            link: "",
-          },
-        ]}
-      />
+      <Store />
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import ChooseSign from "@/components/compatibility/love/ChooseYourSign";
-import Store from "@/components/compatibility/StoreSection";
+import Store from "@/components/planets/Store";
+
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 type Props = {};
@@ -29,25 +30,7 @@ function Compatibility({}: Props) {
         <ChooseSign headText="Choose Your Sign" />
       </Section>
 
-      <Store
-        cardDetails={[
-          {
-            name: "Career Report",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Kawach",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Spell",
-            img: "/assets/compatibility/work/Rectangle_130.png",
-            link: "",
-          },
-        ]}
-      />
+      <Store />
     </div>
   );
 }

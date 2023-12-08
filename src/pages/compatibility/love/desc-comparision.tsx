@@ -1,8 +1,9 @@
 import Section from "@/components/Section";
 import Hero from "@/components/compatibility/Hero";
-import Store from "@/components/compatibility/StoreSection";
+
 import Header from "@/components/compatibility/love/Header";
 import WorkCompatibilityMatches from "@/components/compatibility/work/WorkCompatibilityMatching";
+import Store from "@/components/planets/Store";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
@@ -29,7 +30,7 @@ const desccomparision = (props: Props) => {
       </div>
       <Header head="Virgo And Taurus Love Compatibility" />
       <WorkCompatibilityMatches />
-      <Store
+      {/* <Store
         cardDetails={[
           {
             name: "Career Report",
@@ -47,7 +48,8 @@ const desccomparision = (props: Props) => {
             link: "",
           },
         ]}
-      />
+      /> */}
+      <Store />
     </div>
   );
 };

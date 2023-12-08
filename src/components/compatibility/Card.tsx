@@ -52,7 +52,7 @@ const Card = (props: Props) => {
                   loading={"lazy"}
                 />
               </div>
-              <p className="bg-[#DC6563] py-[14px] px-[90px] text-center text-2xl text-white lg:text-[20px]">
+              <p className="h-full whitespace-nowrap bg-[#DC6563] py-[14px]  text-center text-2xl text-white lg:text-[20px]">
                 {item.name}
               </p>
             </Link>

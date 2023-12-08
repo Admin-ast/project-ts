@@ -94,7 +94,7 @@ function OurAstrologer({}: Props) {
                 contribute to their earnings by the means of donations.
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-2 lg:grid-cols-4 ">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 ">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
                   <Link href="/live-astrologer/tarot-live-astrologer">

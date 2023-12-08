@@ -93,7 +93,7 @@ function LiveVideoChat({}: Props) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
                   <Link href="/live-astrologer/tarot-live-video-chat">
@@ -104,7 +104,7 @@ function LiveVideoChat({}: Props) {
             </div>
             <Button
               text="View More"
-              className="mx-auto bg-gradient-to-b from-[#fb7038] to-[#df625b] lg:text-[28px]"
+              className="mx-auto mt-[10px] bg-gradient-to-b from-[#fb7038] to-[#FF0600] lg:text-[28px]"
             />
           </div>
         </Section>

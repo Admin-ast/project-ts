@@ -4,7 +4,7 @@ import LiveVideoChat from "../live-video-chat";
 import TarotLiveVideoChat from "@/components/live-astro/live-video/TarotLiveVideoChat";
 
 type Props = {};
-const astrologer = [1, 2, 3, 4];
+// const astrologer = [1, 2, 3, 4];
 const astrologerDetail = {
   img: "/assets/appointment/live-astro.png",
   name: "Abha",
@@ -13,11 +13,11 @@ const astrologerDetail = {
 const TarotliveVideoChat = (props: Props) => {
   return (
     <div className="">
-      {astrologer?.map((item, index) => (
-        <div key={index} className="">
-          <TarotLiveVideoChat detail={astrologerDetail} />
-        </div>
-      ))}
+      {/* {astrologer?.map((item, index) => ( */}
+      <div className="">
+        <TarotLiveVideoChat detail={astrologerDetail} />
+      </div>
+      {/* ))} */}
     </div>
   );
 };

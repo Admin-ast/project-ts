@@ -5,7 +5,7 @@ type Props = {};
 
 const Note = (props: Props) => {
   return (
-    <div className="flex flex-col space-y-6 bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[51px]">
+    <div className="flex flex-col space-y-6 bg-[url('/assets/horoscope-bg.webp')] bg-cover py-[30px]">
       <div className="py-8 lg:py-[51px]">
         <Section>
           <div className="flex flex-col space-y-6">
@@ -39,7 +39,7 @@ const Note = (props: Props) => {
         </Section>
       </div>
 
-      <div className=" bg-gradient-to-b from-[#fb7038] to-[#df625b] py-8 lg:py-[51px]">
+      <div className=" bg-gradient-to-b from-[#fb7038] to-[#df625b] py-[30px] text-white">
         <Section>
           <div className="flex flex-col space-y-6">
             <p className="text-center text-[36px] font-bold">
@@ -89,7 +89,7 @@ const Note = (props: Props) => {
         </Section>
       </div>
 
-      <div className="py-8 lg:py-[51px]">
+      <div className="py-[30px]">
         <Section>
           <div className="flex flex-col space-y-6">
             <p className="text-center text-[36px] font-bold">

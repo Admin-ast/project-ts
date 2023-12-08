@@ -5,7 +5,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-8 lg:py-[51px]">
+    <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover py-[30px]">
       <Section>
         <div className="">
           <div className="flex flex-col space-y-6">

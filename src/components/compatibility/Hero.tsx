@@ -24,7 +24,7 @@ function Hero({ icon, icons, text, subText }: Props) {
               className="h-full w-full object-contain"
             />
           </div>
-          <div className="mt-[86px]">
+          <div className="mt-[86px] md:mt-[70px]">
             <p className="font-[Georgia] text-[40px] font-bold text-white">
               {text}
             </p>
@@ -33,7 +33,7 @@ function Hero({ icon, icons, text, subText }: Props) {
             </p> */}
           </div>
 
-          <div className=" mt-[86px]">
+          <div className=" mt-[86px] md:mt-[70px]">
             <Image
               src={icon}
               alt={"chat-icon"}
