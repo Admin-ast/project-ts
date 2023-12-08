@@ -46,16 +46,16 @@ const Blog = (props: Props) => {
               <FaSearch />
               <p>Let’s find what you are looking for</p>
             </div>
-            <hr className=" w-full border border-[#D9D9D9] shadow-xl" />
-            <div className="grid pt-6  md:px-16  lg:grid-cols-3 lg:gap-5 lg:px-1 ">
+            <hr className=" w-full  border border-[#D9D9D9] shadow-xl" />
+            <div className="gap-5 pt-6   md:grid  md:grid-cols-2  md:px-16 lg:grid lg:grid-cols-3 lg:px-1 ">
               {currentItems.map((item, index) => (
                 <Link
                   key={index}
                   href={`/blog/${item?.id}`}
-                  className="flex  flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
+                  className="mt-5  flex flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
                 >
                   <img
-                    className="h-[151px]  w-full rounded-t-[20px]  object-cover object-top"
+                    className="h-[151px]  rounded-t-[20px] object-cover  object-top lg:w-full"
                     src={item?.img}
                     alt=""
                   />

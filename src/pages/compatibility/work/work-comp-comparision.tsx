@@ -1,8 +1,9 @@
 import Section from "@/components/Section";
 import Hero from "@/components/compatibility/Hero";
-import Store from "@/components/compatibility/StoreSection";
+
 import Header from "@/components/compatibility/love/Header";
 import WorkCompatibilityMatches from "@/components/compatibility/work/WorkCompatibilityMatching";
+import Store from "@/components/planets/Store";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
@@ -29,25 +30,7 @@ const Workcomparision = (props: Props) => {
       </div>
       <Header head="Virgo And Taurus Work Compatibility" />
       <WorkCompatibilityMatches />
-      <Store
-        cardDetails={[
-          {
-            name: "Career Report",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Kawach",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Spell",
-            img: "/assets/compatibility/work/Rectangle_130.png",
-            link: "",
-          },
-        ]}
-      />
+      <Store />
     </div>
   );
 };

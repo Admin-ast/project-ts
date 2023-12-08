@@ -5,12 +5,12 @@ import Link from "next/link";
 type Props = {};
 const card = [
   {
-    img: "/assets/home/compatibility.png",
+    img: "/assets/home/compat.png",
     name: "Compatibility",
     url: "/compatibility",
   },
   {
-    img: "/assets/home/muhurat.png",
+    img: "/assets/home/muhu.png",
     name: "Muhurat",
     url: "/muhurat",
   },

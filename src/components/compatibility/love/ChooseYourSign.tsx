@@ -88,7 +88,7 @@ const ChooseSign = ({ headText }: Props) => {
     },
     {
       link: "/horoscope/daily-horoscope/pisces",
-      src: "/assets/kundli/pieces.png",
+      src: "/assets/kundli/pisces.png",
       icon: "/assets/single-horoscope/pisces.svg",
       id: "pisces",
       name: "Pieces",

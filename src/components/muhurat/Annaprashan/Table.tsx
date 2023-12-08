@@ -10,7 +10,7 @@ type Props = {
 const Table = ({ title, title2, className }: Props) => {
   return (
     <div
-      className={`w-full gap-[83px] px-4 py-8 text-black md:px-16 lg:flex lg:px-32 ${className}`}
+      className={`w-full gap-[83px]  px-4 py-8 text-black md:px-16 lg:flex lg:px-32 ${className}`}
     >
       <div className="  rounded-[20px] border-[1px] border-white lg:w-1/2">
         <div className="mb-4  text-center font-bold">{title}</div>
@@ -52,7 +52,7 @@ const Table = ({ title, title2, className }: Props) => {
           </table>
         </div>
       </div>
-      <div className="mx-auto max-w-screen-xl rounded-[20px] border-[1px] border-white lg:w-1/2">
+      <div className="mx-auto mt-5 max-w-screen-xl rounded-[20px] border-[1px] border-white lg:w-1/2">
         <div className="mb-4  text-center font-bold">{title2}</div>
         <div className="overflow-x-auto">
           <table className="min-w-full table-fixed border-collapse">

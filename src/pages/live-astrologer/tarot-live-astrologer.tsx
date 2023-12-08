@@ -5,7 +5,7 @@ type Props = {};
 
 const TarotLiveAstro = (props: Props) => {
   return (
-    <div>
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <TarotLiveAstrologer />
     </div>
   );

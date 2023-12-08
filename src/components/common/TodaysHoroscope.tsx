@@ -144,7 +144,7 @@ function TodaysHoroscope({}: Props) {
             </Swiper>
 
             <div
-              className="relative  mx-auto flex items-center justify-between"
+              className="relative mx-auto  flex items-center justify-center  md:justify-center  lg:justify-between"
               style={{
                 height: "330px",
                 marginTop: "-28%",
@@ -152,10 +152,10 @@ function TodaysHoroscope({}: Props) {
                 marginRight: "-2%",
               }}
             >
-              <button className="prev cursor-pointer">
+              <button className="prev cursor-pointer md:mt-[20px]">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>
-              <button className="next cursor-pointer">
+              <button className="next cursor-pointer md:mt-[20px]">
                 <AiFillCaretRight className="text-3xl text-black" />
               </button>
             </div>

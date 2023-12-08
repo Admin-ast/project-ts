@@ -62,7 +62,7 @@ function TalkAstrologer({}: Props) {
       {/* <Hero text="Talk To Astrologer" icon="" /> */}
       <div className="bg-[url('/assets/horoscope-bg.webp')] ">
         <Section>
-          <div className="flex items-center justify-between space-x-2 py-[30px]">
+          <div className="items-center justify-between space-x-2 py-[30px] lg:flex">
             <div className="flex">
               <HomeIcon className="h-6 w-6  p-1" />
               <p className="bg-[#bd6d7b] p-1 px-4 text-[10px] font-medium text-white">
@@ -76,7 +76,7 @@ function TalkAstrologer({}: Props) {
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
           <div className="py-12 lg:space-y-16">
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {astrologersDetails?.map((item, index: Key) => (
                 <div key={index}>
                   <AppointmentCard detail={astrologerDetail} service={"Talk"} />

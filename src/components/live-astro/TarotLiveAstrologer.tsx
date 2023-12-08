@@ -36,7 +36,7 @@ const faqsDetail: Faqs = {
 
 const TarotLiveAstrologer = (props: Props) => {
   return (
-    <>
+    <div className="">
       <Hero
         text="Tarot-Live Astrologer"
         icon="/assets/appointment/live-hero.png"
@@ -45,24 +45,24 @@ const TarotLiveAstrologer = (props: Props) => {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
               Live Astrologer
             </p>
           </div>
         </Section>
       </div>
       <Section>
-        <div className="mt-[115px] grid items-center justify-center gap-[20px] md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid items-center justify-center gap-[20px] py-[30px] md:grid-cols-2 lg:grid-cols-3">
           <div className="relative">
             <Image
               src={"/assets/appointment/live-astro.png"}
               alt={"chat-icon"}
               width={300}
-              height={370}
+              height={270}
               loading={"lazy"}
               className="h-full w-full object-contain"
             />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
+            <div className="absolute top-[10px]  left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
               <p className="text-white">Live</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const TarotLiveAstrologer = (props: Props) => {
               loading={"lazy"}
               className="h-full w-full object-contain"
             />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
+            <div className="absolute top-[10px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
               <p className="text-white">Live</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const TarotLiveAstrologer = (props: Props) => {
               loading={"lazy"}
               className="h-full w-full object-contain"
             />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
+            <div className="absolute top-[10px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
               <p className="text-white">Live</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ const TarotLiveAstrologer = (props: Props) => {
               loading={"lazy"}
               className="h-full w-full object-contain"
             />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
+            <div className="absolute top-[10px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
               <p className="text-white">Live</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ const TarotLiveAstrologer = (props: Props) => {
       </Section>
       <Consultation />
       <Faq faqDetail={faqsDetail} />
-    </>
+    </div>
   );
 };
 

@@ -52,7 +52,7 @@ const TarotLiveVideoChat = ({ detail }: Props) => {
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium">
+            <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
               Live Astrologer
             </p>
           </div>
@@ -69,7 +69,7 @@ const TarotLiveVideoChat = ({ detail }: Props) => {
               loading={"lazy"}
               className="h-full w-full object-contain"
             />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
+            <div className="absolute top-[20px] flex h-[31px] w-[60px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563] md:left-[15px] md:w-[70px] lg:left-[15px] lg:w-[70px]">
               <p className="text-white">Live</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,76 +81,6 @@ const TarotLiveVideoChat = ({ detail }: Props) => {
                 <circle cx="6" cy="6" r="6" fill="#8A1316" />
               </svg>
             </div>
-            {/* <div className="absolute bottom-[42px] right-[108px]">
-              <p className="text-[36px] text-white font-[Roboto] font-semibold ">{name}</p>
-            </div>
-          </div>
-          <div className="relative">
-            <Image
-              src={"/assets/appointment/live-astro.png"}
-              alt={"chat-icon"}
-              width={300}
-              height={370}
-              loading={"lazy"}
-              className="h-full w-full object-contain"
-            />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
-              <p className="text-white">Live</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-              >
-                <circle cx="6" cy="6" r="6" fill="#8A1316" />
-              </svg>
-            </div>
-          </div>
-          <div className="relative">
-            <Image
-              src={"/assets/appointment/live-astro.png"}
-              alt={"chat-icon"}
-              width={300}
-              height={370}
-              loading={"lazy"}
-              className="h-full w-full object-contain"
-            />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
-              <p className="text-white">Live</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-              >
-                <circle cx="6" cy="6" r="6" fill="#8A1316" />
-              </svg>
-            </div>
-          </div>
-          <div className="relative">
-            <Image
-              src={"/assets/appointment/live-astro.png"}
-              alt={"chat-icon"}
-              width={300}
-              height={370}
-              loading={"lazy"}
-              className="h-full w-full object-contain"
-            />
-            <div className="absolute bottom-[320px] left-[15px] flex h-[31px] w-[70px] items-center justify-center gap-2 rounded-[40px] bg-[#DC6563]">
-              <p className="text-white">Live</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-              >
-                <circle cx="6" cy="6" r="6" fill="#8A1316" />
-              </svg>
-            </div>
-          </div> */}
           </div>
         </div>
       </Section>

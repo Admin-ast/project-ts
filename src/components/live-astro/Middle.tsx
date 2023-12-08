@@ -6,9 +6,9 @@ type Props = {};
 
 const Middle = (props: Props) => {
   return (
-    <div className=" mt-[100px] rounded-[200%]  ">
+    <div className=" mt-[50px] rounded-[200%]  ">
       <div className="grid items-center  justify-center gap-[20px] bg-white py-8 shadow-xl md:flex lg:relative">
-        <div className="flex  h-[132px] w-[132px] items-center justify-center rounded-[20px] bg-[#DC6563] lg:absolute lg:top-[10px] lg:right-[0px]">
+        <div className="flex  h-[132px] w-[100px] items-center justify-center rounded-[20px] bg-[#DC6563] lg:absolute lg:top-[10px] lg:right-[0px]">
           <Image
             src={"/assets/appointment/live-astro.png"}
             alt={"chat-icon"}

@@ -416,12 +416,12 @@ const BlogsBy = ({ heading, subheading, className }: Props) => {
         <div className="">
           <p className="text-center text-[30px] font-bold">{heading}</p>
           <p className="text-center text-[24px] font-bold">{subheading}</p>
-          <div className="grid gap-5 pt-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="gap-5 pt-6 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4">
             {card.map((item, index) => (
               <Link
                 key={index}
                 href={`/blog/${item?.id}`}
-                className="flex  flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
+                className="mt-5  flex flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
               >
                 <img
                   className="h-[151px] w-full rounded-t-[20px] object-cover object-top"
