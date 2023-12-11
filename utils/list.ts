@@ -232,7 +232,7 @@ export const card = [
     id: "chat_with_us_at_astrosevatalk_for_job_career_promotions_and_more",
     url: "chat-with-us-at-astrosevatalk-for-job-career-promotions-and-more",
     img: "/assets/blog/CHAT WITH US AT ASTROSEVA TALK FOR JOB, CAREER, PROMOTION, AND MORE-01-01.svg",
-    text: "Chat With us at AstrosevaTalk for Job,Career,Promotions,and More  ",
+    text: "Chat With us at AstrosevaTalk for Job,Career",
     keywords: [
       { key: "Job ", link: "/" },
       { key: "Career ", link: "/" },
