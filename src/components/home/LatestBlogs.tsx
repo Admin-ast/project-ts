@@ -287,7 +287,7 @@ const LatestBlogs = (props: Props) => {
                               width={156}
                               height={145}
                               loading={"lazy"}
-                              className="  h-full w-full object-contain"
+                              className="  h-full w-full rounded-[10px] object-contain"
                             />
                           </div>
                           <div className=" h-[76px] overflow-hidden rounded-b-[10px] bg-white px-2 ">

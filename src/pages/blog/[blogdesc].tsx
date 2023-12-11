@@ -102,7 +102,9 @@ const BlogDesc = (props: Props) => {
                     </div>
                   ))}
                   {/* </Section> */}
-                  <BlogStatic />
+                  <div className="">
+                    <BlogStatic />
+                  </div>
                 </div>
               </div>
               <div className="md:w-1/3 lg:w-1/3">

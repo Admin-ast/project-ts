@@ -55,13 +55,13 @@ const Blog = (props: Props) => {
                   className="mt-5  flex flex-col rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
                 >
                   <img
-                    className="h-[151px]  rounded-t-[20px] object-cover  object-top lg:w-full"
+                    className="h-[151px]   rounded-t-[20px] object-cover  object-top lg:w-full"
                     src={item?.img}
                     alt=""
                   />
                   <div className="">
-                    <div className="flex  h-[100px] flex-col gap-4 p-3 ">
-                      <p className=" truncate">{item?.text}</p>
+                    <div className="flex  h-[100px]  flex-col gap-4 p-3 ">
+                      <p className="  overflow-y-hidden">{item?.text}</p>
                       <div className="flex items-center justify-between text-[12px] text-slate-500">
                         <p>Kasturi Chaudhary</p>
                         <p>March 31, 2023</p>
