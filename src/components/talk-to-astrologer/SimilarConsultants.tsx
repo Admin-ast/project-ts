@@ -15,9 +15,9 @@ const SimilarConsultants = (props: Props) => {
           Check Similar Consultants
         </p>
         <div className="mt-[25px] grid justify-center gap-[24px] py-5 px-5  md:flex lg:flex">
-          <SimilarConsultantsCard name="Devarshi" spec="Taryot" />
-          <SimilarConsultantsCard name="Devarshi" spec="Taryot" />
-          <SimilarConsultantsCard name="Devarshi" spec="Taryot" />
+          <SimilarConsultantsCard name="Anil" spec="palm reading" />
+          <SimilarConsultantsCard name="Nidhi" spec="" />
+          <SimilarConsultantsCard name="Devarshi" spec="palm reading" />
         </div>
       </div>
     </div>

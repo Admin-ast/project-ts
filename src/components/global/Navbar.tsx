@@ -116,13 +116,14 @@ function Navbar({}: Props) {
             <div className="">
               <Link href="/" className="text-2xl  ">
                 <div className="flex items-center justify-center gap-[7px] md:justify-start">
-                  <div className="w-[25%]">
+                  <div className="w-[35%]">
                     <Image
                       src="/assets/home/logo.png"
                       alt="logo"
-                      width={123}
+                      width={150}
                       height={203}
                       loading={"eager"}
+                      className="md:w-[200px] "
                     />
                   </div>
                   <p className="font-[ Roboto] text-[30px] font-[600]">
@@ -227,8 +228,6 @@ function Navbar({}: Props) {
                   <GoogleTranslateComponent />
                 </ul>
 
-                {/* <Link href="/muhurat">Shubh Muhurat</Link> */}
-
                 <div className=" flex   text-base  ">
                   {!isLogged ? (
                     <button
@@ -237,11 +236,11 @@ function Navbar({}: Props) {
                       }}
                     >
                       {/* <div className="flex rounded-[17px] bg-[#DC6563] transform hover:translate-y-[-5px] transition-transform duration-300 ease-out px-2 py-[4px] text-white"> */}
-                      <div className="flex transform rounded-[17px] bg-[#DC6563]  px-2 text-[16px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
-                        <div className="flex items-center gap-2 py-2 px-2">
+                      <div className="flex transform gap-2 rounded-[17px] bg-[#DC6563]  px-3 text-[16px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
+                        <div className="flex items-center  py-2  ">
                           <FaUserAlt />
                         </div>
-                        <p className="flex items-center">Login</p>
+                        <p className="flex items-center ">Login</p>
                       </div>
                     </button>
                   ) : (

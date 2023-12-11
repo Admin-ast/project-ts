@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { Key } from "react";
-// import AppointmentsHero from "./AppoinmentsHero";
+
 import Link from "next/link";
 type Props = {};
 type Links = {
@@ -49,19 +49,12 @@ const links: Links[] = [
     name: "Daily Horoscope",
     url: "/horoscope/daily",
   },
-  // {
-  //   name: "Live Video Chat",
-  //   url: "/live-video-chat",
-  // },
 
   {
     name: "Shubh Muhurat",
     url: "/muhurat",
   },
-  // {
-  //   name: "Compatibility",
-  //   url: "/compatibility",
-  // },
+
   {
     name: "Book A Pooja",
     url: "/book-a-pooja/book-pooja",
@@ -79,7 +72,7 @@ function NavMobileData() {
       {links.map((item: Links, index: Key) => (
         <Link key={index} href={item?.url}>
           <p
-            className={`cursor-pointer text-[16px] font-bold text-[black] ${
+            className={`cursor-pointer text-[16px] font-bold text-white ${
               router.pathname === item.url
                 ? "underline decoration-[#DC6563] underline-offset-8"
                 : ""

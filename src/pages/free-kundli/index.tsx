@@ -42,11 +42,6 @@ const faqsDetail: Faqs = {
 function FreeKundli({}: Props) {
   return (
     <>
-      {/* <Hero
-        text="Free Kundli"
-        subText="Get instant and accurate Janam Kundli"
-        icon="/assets/kundli/free-kundli-icon.png"
-      /> */}
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">

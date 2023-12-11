@@ -23,8 +23,10 @@ function AppointmentCard({ detail, service }: Props) {
   return (
     <div className="relative flex justify-evenly space-x-4 overflow-hidden rounded-xl border-4 border-[#DC6563] bg-white p-4  shadow-xl">
       {isPremium && (
-        <div className="absolute left-[42%] top-6 w-full rotate-45 bg-[#DC6563] py-[2px] text-center">
-          <p className="text-xs font-semibold">Top Choice</p>
+        <div className="absolute right-[41%] top-8 w-full -rotate-45 bg-[#DC6563] py-[2px] text-center">
+          <p className="rotate-0 text-xs font-semibold text-white">
+            Top Choice
+          </p>
         </div>
       )}
       <div className="flex flex-col items-center justify-center space-y-2">
@@ -51,8 +53,10 @@ function AppointmentCard({ detail, service }: Props) {
       </div>
       <div className="space-y-3">
         <p className="font-[georgia] text-[22px] font-semibold ">{name}</p>
-        <div className="space-y-2">
-          <p className="text-base ">{expertise}</p>
+        <div className="space-y-2  ">
+          <div className="">
+            <p className="w-[150px]  truncate text-base">{expertise}</p>
+          </div>
           <p className="text-xs ">{language}</p>
           <p className="text-xs ">Experience: {experience} years</p>
         </div>

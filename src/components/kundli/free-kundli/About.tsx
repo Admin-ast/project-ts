@@ -5,9 +5,9 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="my-10 flex flex-col space-y-8 bg-[url('/assets/horoscope-bg.webp')] text-base ">
+    <div className=" flex flex-col  bg-[url('/assets/horoscope-bg.webp')] text-base ">
       <Section>
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col py-[30px]">
           <div className="flex flex-col space-y-4 text-center">
             <p className="text-2xl font-bold md:text-[36px] ">
               {" "}
