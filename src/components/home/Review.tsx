@@ -57,7 +57,7 @@ function Review({}: Props) {
           </div>
           {reviews?.map((item, index) => (
             <div
-              className="mt-[25px] items-center gap-4  rounded-[10px] border-[1px] border-[#D9D9D9] md:flex lg:flex"
+              className="mt-[25px] items-center gap-4 rounded-[10px]  border-[1px] border-[#D9D9D9] px-4 md:flex lg:flex"
               key={index}
             >
               <div className="py-2 px-10  ">

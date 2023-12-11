@@ -47,7 +47,8 @@ const astrologersDetails = [
 ];
 const astrologerDetail = {
   name: "Aakash Shah",
-  expertise: "Vedic, Vastu, Face reading",
+  expertise:
+    "Vedic, Vastu, Face reading,Face reading,Face reading,truncate,truncate",
   experience: 3,
   language: "English, Hindi, Punjabi",
   ratings: 5,
@@ -92,7 +93,7 @@ function ChatAstrologer({}: Props) {
             </div>
             <Button
               text="View More"
-              className="mx-auto bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
+              className="mx-auto mt-5 bg-gradient-to-b from-[#FF7646] to-[#FF0600] lg:text-[28px]"
             />
           </div>
         </Section>
