@@ -87,7 +87,7 @@ type Props = {};
 function TodaysHoroscope({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] pt-[30px]">
+    <div className=" pt-[30px]">
       <Section>
         <div className="">
           <div className="">

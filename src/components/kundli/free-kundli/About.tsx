@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className=" flex flex-col  bg-[url('/assets/horoscope-bg.webp')] text-base ">
+    <div className=" flex flex-col  text-base ">
       <Section>
         <div className="flex flex-col py-[30px]">
           <div className="flex flex-col space-y-4 text-center">

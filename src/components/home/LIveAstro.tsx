@@ -102,15 +102,7 @@ const LIveAstro = (props: Props) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div
-              className="relative   mx-auto flex items-center justify-between"
-              style={{
-                height: "260px",
-                marginTop: "-22%",
-                marginLeft: "-3%",
-                marginRight: "-3%",
-              }}
-            >
+            <div className="astroslideliveastrologer   relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>

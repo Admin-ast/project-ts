@@ -29,14 +29,12 @@ const SideNavFooter = ({ headText, subText }: Props) => {
   return (
     <Section>
       <div className="mt-10 w-[216px] rounded-[10px] border-[2px] border-black py-4  ">
-        <p className="text-center text-[12px] font-bold">{headText}</p>
-        <div className="mt-[5px] text-center text-[12px] font-bold">
-          {subText}
-        </div>
+        <p className="text-center text-[12px] ">{headText}</p>
+        <div className="mt-[5px] text-center text-[12px] ">{subText}</div>
         <div className="mt-[10px] flex justify-center  gap-[9px] ">
           {cardDetails.map((item: any, index: Key) => (
             <div key={index} className="">
-              <p className="text-center text-[8px] font-bold">{item.person}</p>
+              <p className="text-center text-[8px] ">{item.person}</p>
               <Link
                 href={item.link}
                 className=" flex  flex-col justify-end rounded-[10px]   border-[2px] border-[#DC6563]  bg-white shadow-xl"

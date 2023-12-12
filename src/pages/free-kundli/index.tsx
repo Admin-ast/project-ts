@@ -41,8 +41,8 @@ const faqsDetail: Faqs = {
 
 function FreeKundli({}: Props) {
   return (
-    <>
-      <div className="bg-[#F5F5F5] py-2">
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
+      <div className="bg-[#F5F5F5] py-2 ">
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
@@ -52,7 +52,7 @@ function FreeKundli({}: Props) {
           </div>
         </Section>
       </div>
-      <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
+      <div className=" py-[30px]">
         <Section>
           <div className="flex flex-col   ">
             <p className="text-center text-[30px] font-bold ">
@@ -87,7 +87,7 @@ function FreeKundli({}: Props) {
               </p>
             </div>
           </div>
-          <div className="my-8 grid grid-cols-2 gap-y-6 bg-[url('/assets/horoscope-bg.webp')] lg:grid-cols-5 lg:gap-6">
+          <div className="my-8 grid grid-cols-2 gap-y-6  lg:grid-cols-5 lg:gap-6">
             <div className="col-span-2 grid">
               <SavedKundli />
             </div>
@@ -102,7 +102,7 @@ function FreeKundli({}: Props) {
         <AlsoCheck />
         <TodaysHoroscope />
       </div>
-    </>
+    </div>
   );
 }
 

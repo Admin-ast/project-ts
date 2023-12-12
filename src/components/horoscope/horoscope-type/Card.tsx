@@ -341,14 +341,14 @@ const Card = ({ horos, predictionArray, type }: Props) => {
             your life in the right direction. So make sure you give it a read.`}
           </p>
         </div>
-        <div className="flex-wrap justify-center gap-5 pt-[30px] md:flex">
+        <div className="grid gap-10 pt-[30px] md:grid-cols-1 lg:grid-cols-2">
           {card.map((item: CardDetail, index: number) => (
             <div
               key={index}
               onClick={() => {
                 router.push(`/horoscope?type=${type}&zodiac=${item.url}`);
               }}
-              className="my-1 flex flex-col rounded-xl border-2 border-[#DC6563] p-4 md:my-0 md:grid md:!w-[570px] md:grid-cols-12 md:gap-6"
+              className="my-1 flex flex-col  rounded-xl border-2 border-[#DC6563] p-4 md:my-0 md:grid  md:grid-cols-12 md:gap-6"
             >
               <div className="col-span-4 mx-auto">
                 <Image

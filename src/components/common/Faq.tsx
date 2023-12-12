@@ -7,7 +7,7 @@ type Props = {
 
 const Faq = ({ faqDetail }: Props) => {
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] shadow-xl">
+    <div className=" py-[30px] shadow-xl">
       <Section>
         <div className=" ">
           <div className="text-center font-[georgia]">

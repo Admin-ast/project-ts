@@ -42,7 +42,7 @@ const videoDataArray: VideoData[] = [
 const CelebrityCustomers = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px]">
+    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50]  py-[30px] ">
       <Section>
         <div className="">
           <div className="">
@@ -81,15 +81,7 @@ const CelebrityCustomers = (props: Props) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div
-              className="relative     mx-auto flex items-center justify-between"
-              style={{
-                height: "250px",
-                marginTop: "-20%",
-                marginLeft: "-2%",
-                marginRight: "-2%",
-              }}
-            >
+            <div className="astroslidecelbrity     relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-white" />
               </button>
