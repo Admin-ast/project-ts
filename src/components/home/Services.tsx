@@ -32,14 +32,19 @@ const services: Service[] = [
     url: "/muhurat",
   },
   {
-    name: "Palm Reading",
-    src: "/assets/home/palm.png",
-    url: "",
+    name: "Chinese Horoscope",
+    src: "/assets/home/cheinese-horoscope.png",
+    url: "/chines-horoscope",
   },
   {
     name: "Free Kundli",
     src: "/assets/home/kundli.jpg",
     url: "/free-kundli",
+  },
+  {
+    name: "Festival 2024",
+    src: "/assets/home/festival-2024.png",
+    url: "/horoscope/yearly",
   },
 ];
 type Props = {
@@ -90,7 +95,7 @@ function Services({ head }: Props) {
                           width={206}
                           height={174}
                           loading={"lazy"}
-                          className=" h-full w-full  rounded-[10px] py-[6px] px-[6px] "
+                          className=" h-full w-full  rounded-[20px] py-[6px] px-[6px] "
                         />
                       </div>
                       <div className="absolute bottom-[2px] w-[100%]  ">
@@ -104,15 +109,7 @@ function Services({ head }: Props) {
               ))}
             </Swiper>
 
-            <div
-              className="relative     mx-auto flex items-center justify-between"
-              style={{
-                height: "330px",
-                marginTop: "-25%",
-                marginLeft: "-3%",
-                marginRight: "-3%",
-              }}
-            >
+            <div className="astroslidefreeservice     relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>

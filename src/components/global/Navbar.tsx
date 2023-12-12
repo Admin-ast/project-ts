@@ -116,12 +116,12 @@ function Navbar({}: Props) {
             <div className="">
               <Link href="/" className="text-2xl  ">
                 <div className="flex items-center justify-center gap-[7px] md:justify-start">
-                  <div className="w-[35%]">
+                  <div className="w-[15%]">
                     <Image
                       src="/assets/home/logo.png"
                       alt="logo"
                       width={150}
-                      height={203}
+                      height={51}
                       loading={"eager"}
                       className="md:w-[200px] "
                     />
@@ -134,14 +134,9 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full ">
-              <div className=" mt-[10px] hidden justify-end gap-x-8 text-[17px]  lg:flex">
+              <div className=" mt-[10px] hidden justify-end gap-x-5 text-[17px]  lg:flex">
                 <Link href="/free-kundli">Free Kundli</Link>
                 <Link href="/kundli-matching">Kundli Matching</Link>
-
-                {/* <Link href="live-astrologer/live-astrologer">
-                  Live Astrologers
-                </Link> */}
-                {/* <Link href="/horoscope/today">Horoscope</Link> */}
 
                 <ul className="">
                   <li className="">
@@ -252,7 +247,7 @@ function Navbar({}: Props) {
                           width={30}
                           height={40}
                           loading={"lazy"}
-                          className="w-full object-contain"
+                          className="w-full rounded-full border-[1px] border-[#DC6563] object-contain"
                         />
                       }
                       content={

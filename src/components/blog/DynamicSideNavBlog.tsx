@@ -112,7 +112,7 @@ const DynamicSideNavBlog = (props: Props) => {
       <div className="flex items-center gap-1">
         <AiFillFire size={45} className="" />
         <div>
-          <p className="text-2xl font-bold">Trending Now</p>
+          <p className="text-2xl ">Trending Now</p>
           <p className="text-[10px]">Trending Stories</p>
         </div>
       </div>
@@ -127,7 +127,7 @@ const DynamicSideNavBlog = (props: Props) => {
       <div className="mt-[40px] flex items-center gap-1">
         <AiFillFire size={45} className="" />
         <div>
-          <p className="text-2xl font-bold">Recent Blog</p>
+          <p className="text-2xl ">Recent Blog</p>
           <p className="text-[10px]">Recent Stories</p>
         </div>
       </div>
@@ -142,7 +142,7 @@ const DynamicSideNavBlog = (props: Props) => {
       <div className="mt-[40px] flex items-center gap-1">
         <AiFillFire size={45} className="" />
         <div>
-          <p className="text-2xl font-bold">Related Blog</p>
+          <p className="text-2xl ">Related Blog</p>
           <p className="text-[10px]">Related Stories</p>
         </div>
       </div>
@@ -159,7 +159,7 @@ const DynamicSideNavBlog = (props: Props) => {
         <div className="flex items-center gap-1">
           <BiCategory size={45} className="" />
           <div>
-            <p className="text-2xl font-bold">Categories</p>
+            <p className="text-2xl ">Categories</p>
             <p className="text-[10px]">Select Topic</p>
           </div>
         </div>

@@ -113,15 +113,7 @@ const Panchang = (props: Props) => {
                 ))}
               </div>
             </Swiper>
-            <div
-              className="relative     mx-auto flex items-center justify-between"
-              style={{
-                height: "367px",
-                marginTop: "-30%",
-                marginLeft: "-3%",
-                marginRight: "-3%",
-              }}
-            >
+            <div className="astroslidepanchang     relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-white" />
               </button>

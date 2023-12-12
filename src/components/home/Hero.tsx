@@ -76,7 +76,7 @@ const slides = [
 function Hero({}: Props) {
   const router = useRouter();
   return (
-    <div className="bg-[black]">
+    <div className="px44e bg-[black]">
       <Section>
         <div className="flex flex-col items-center justify-between bg-[url('/assets/horoscope-bg.webp')]  bg-cover  pt-5 md:space-y-10">
           <div className="w-full px-2 ">
@@ -87,21 +87,21 @@ function Hero({}: Props) {
                     src="/assets/home/banner.png"
                     alt="Untitled"
                     id="Untitled"
-                    className="   top-8 left-8"
+                    className="  imgt top-8 left-8"
                   />
                 </div>
-                <div className="7/10 content-center p-4">
-                  <div className="mb-4 mt-4  font-sans  text-3xl  capitalize">
+                <div className="7/10 content-center ">
+                  <div className="fontsmall mb-4  mt-4  font-sans  text-3xl capitalize">
                     Astrological Remedies for love Marriage
                   </div>
                   <div className="font-sans text-3xl  capitalize  ">
-                    <span className="mb-5 text-left text-5xl font-normal">
+                    <span className="fontsmall mb-5  text-left text-5xl font-normal">
                       Chat With Astrologer
                     </span>
                   </div>
                   <Link href="/chat-with-astrologer/chat-with-astrologer">
                     {" "}
-                    <button className="mt-8  mb-10 rounded-[35px] bg-black py-3 px-12 font-bold text-white ">
+                    <button className="fontsmallbu mt-8 mb-10 rounded-[35px] bg-black py-3 px-12 font-bold text-white ">
                       Chat Now
                     </button>
                   </Link>

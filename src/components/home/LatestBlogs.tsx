@@ -309,15 +309,7 @@ const LatestBlogs = (props: Props) => {
                 ))}
               </div>
             </Swiper>
-            <div
-              className="relative    mx-auto flex items-center justify-between"
-              style={{
-                height: "330px",
-                marginTop: "-26%",
-                marginLeft: "-3%",
-                marginRight: "-3%",
-              }}
-            >
+            <div className="astroslideblog    relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>

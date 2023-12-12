@@ -77,7 +77,7 @@ const News = (props: Props) => {
                         width={180}
                         height={175}
                         loading={"lazy"}
-                        className="  w-full object-contain"
+                        className="  w-full rounded-t-[10px] object-contain"
                       />
                       <div className=" w-full ">
                         <p className=" rounded-b-[10px] bg-[#ca2127] py-1   text-center font-[georgia] text-white ">
@@ -89,15 +89,7 @@ const News = (props: Props) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div
-              className="relative  mx-auto flex items-center justify-between"
-              style={{
-                height: "255px",
-                marginTop: "-21%",
-                marginLeft: "-3%",
-                marginRight: "-3%",
-              }}
-            >
+            <div className="astroslidenews  relative mx-auto flex items-center justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>

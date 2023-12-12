@@ -135,7 +135,9 @@ const BlogStatic = (props: Props) => {
         </div>
 
         <div className="text-justify ">
-          <p className=" text-xl font-bold">Effects of Kuja Dosha on female</p>
+          <p className=" py-3 text-xl font-bold">
+            Effects of Kuja Dosha on female
+          </p>
           <li>Delay in marriage or difficulty finding a suitable partner</li>
           <li>Unhappiness and conflicts in marital life</li>
           <li>Increased chances of marital discord and separation</li>
@@ -157,7 +159,9 @@ const BlogStatic = (props: Props) => {
         </div>
 
         <div className="text-justify ">
-          <p className=" text-xl font-bold">Effects of Kuja Dosha on Male</p>
+          <p className=" py-3 text-xl font-bold">
+            Effects of Kuja Dosha on Male
+          </p>
           <li>Delay in marriage or difficulty finding a suitable partner</li>
           <li>Unhappiness and conflicts in marital life</li>
           <li>Increased chances of marital discord and separation</li>

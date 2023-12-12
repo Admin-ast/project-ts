@@ -52,7 +52,7 @@ const HoroscopeSign = ({ data, slug }: Props) => {
   const remainingSign = cards.filter((item) => item.id !== slug);
 
   return (
-    <div className="bg-[url('/assets/horoscope-bg.webp')]">
+    <div className="">
       <Hero activeSign={activeSign[0]} />
       <AboutSign
         activeSign={activeSign[0]}

@@ -41,12 +41,7 @@ const faqsDetail: Faqs = {
 
 function KundliMatching({}: Props) {
   return (
-    <>
-      {/* <Hero
-        text="Kundli Matching"
-        subText="Find your right one, through Kundli Matching"
-        icon="/assets/kundli/matching-hero-icon.png"
-      /> */}
+    <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className="bg-[#F5F5F5] py-2">
         <Section>
           <div className="flex items-center space-x-2">
@@ -57,7 +52,7 @@ function KundliMatching({}: Props) {
           </div>
         </Section>
       </div>
-      <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
+      <div className=" py-[30px]">
         <Section>
           <div className="flex flex-col ">
             <p className="text-center text-[30px] font-bold ">Match - Making</p>
@@ -105,7 +100,7 @@ function KundliMatching({}: Props) {
         <AlsoCheck />
         <TodaysHoroscope />
       </div>
-    </>
+    </div>
   );
 }
 
