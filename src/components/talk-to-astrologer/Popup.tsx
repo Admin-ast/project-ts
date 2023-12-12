@@ -902,9 +902,7 @@ const FilterPanel: React.FunctionComponent<FilterPanelProps> = ({
       setSelectedCategory(categories[0].id);
     }
   }, [isOpen]);
-  const toggleFilter = () => {
-    set;
-  };
+
   const handleSelectAll = () => {
     const allOptionIds = categories.flatMap((category) =>
       category.options.map((option) => option.id)
