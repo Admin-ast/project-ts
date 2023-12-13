@@ -78,6 +78,8 @@ const card = [
   },
 ];
 
+// ... (your imports)
+
 const Planets = (props: Props) => {
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] py-[30px] shadow-xl">
@@ -92,16 +94,14 @@ const Planets = (props: Props) => {
           </div>
           <div className="mt-[30px] grid gap-[30px] md:grid-cols-3 lg:grid-cols-5">
             {card.map((item, index) => (
-              <div key={index} className="">
-                <div className="h-[235px] rounded-[20px] border-r-[2px] border-b-[2px] border-[#DC6563] bg-white shadow-xl">
-                  <div className="flex items-center justify-center ">
+              <div key={index} className="flex flex-col">
+                <div className="flex-grow rounded-[20px] border-r-[2px] border-b-[2px] border-[#DC6563] bg-white shadow-xl">
+                  <div className="flex items-center justify-center">
                     <img src={item.src} alt={item.name} className="" />
                   </div>
-                  <div className="flex items-center justify-center">
-                    <div className="">
-                      <p className="text-center text-[22px] font-semibold">
-                        {item.name}
-                      </p>
+                  <div className="flex flex-grow items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-[22px] font-semibold">{item.name}</p>
                       <p className="text-center">{item.sub}</p>
                     </div>
                   </div>
