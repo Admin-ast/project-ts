@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 
 type Props = {
@@ -256,15 +257,17 @@ const WeeklyTimeTable = ({
                 </div>
               </div>
             </div>
-            <div className="flex justify-end ">
-              <button
-                className="cursor-pointer rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#df625b] py-1 px-2 text-white "
-                onClick={onClose}
-              >
-                OK
-              </button>
-            </div>
           </div>
+        </div>
+        <div className=" ">
+          <Link href="/astrologeradmin/time-table">
+            <button
+              className="mt-5 w-full cursor-pointer rounded-[10px] bg-gradient-to-b from-[#fb7038] to-[#ff0600] py-1 px-2 text-[24px] text-white "
+              onClick={onClose}
+            >
+              Edit Time Table
+            </button>
+          </Link>
         </div>
       </div>
     </div>
