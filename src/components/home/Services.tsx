@@ -38,8 +38,13 @@ const services: Service[] = [
   },
   {
     name: "Free Kundli",
-    src: "/assets/home/kundli.jpg",
+    src: "/assets/home/kundli.png",
     url: "/free-kundli",
+  },
+  {
+    name: "Panchang",
+    src: "/assets/home/Panchang.png",
+    url: "/today-panchang",
   },
   {
     name: "Festival 2024",
