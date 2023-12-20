@@ -54,7 +54,7 @@ function HeroCard({}: Props) {
                       loading={"eager"}
                     />
                   </div>
-                  <p className="flex items-center justify-center text-center font-[georgia] text-[16px]">
+                  <p className="flex items-center justify-center text-center font-[georgia] text-[16px] md:text-[12px]">
                     {item.name}
                   </p>
                 </Link>
