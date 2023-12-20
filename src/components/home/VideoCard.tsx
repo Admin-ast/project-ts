@@ -11,7 +11,7 @@ const VideoCard = ({ title, thumbnail }: Props) => {
     <div className="">
       <div className="relative mt-[30px]  overflow-hidden rounded-[10px] border-r-[1px] border-b-[1px] border-[#DC6563]">
         <img className="w-full " src={thumbnail} alt="Video Thumbnail" />
-        <div className="absolute top-[50px] right-[120px] md:bottom-[110px] md:left-[110px]">
+        <div className="absolute top-[60px] right-[120px] md:bottom-[110px] md:left-[60px]">
           <FaYoutube className="text-[47px] text-[#ff0000]" />
         </div>
         <div className=" rounded-b-[10px] bg-white py-1 px-2 ">{title}</div>

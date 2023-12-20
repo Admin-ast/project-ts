@@ -104,7 +104,7 @@ function Services({ head }: Props) {
                         />
                       </div>
                       <div className="absolute bottom-[2px] w-[100%]  ">
-                        <p className=" rounded-[10px] bg-[#ca2127]    text-center font-[georgia] text-white md:text-2xl lg:text-[20px]">
+                        <p className=" rounded-[10px] bg-[#ca2127]    text-center font-[georgia] text-white md:text-[16px] lg:text-[20px]">
                           {item.name}
                         </p>
                       </div>

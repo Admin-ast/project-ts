@@ -95,7 +95,7 @@ function Shop({ head }: Props) {
                         />
                       </div>
                       <div className="absolute bottom-[0px] w-[100%]  ">
-                        <p className=" rounded-[6px] bg-[#ca2127] py-1   text-center font-[georgia] text-white md:text-2xl lg:text-[20px]">
+                        <p className=" rounded-[6px] bg-[#ca2127] py-1   text-center font-[georgia] text-white md:text-xl lg:text-[20px]">
                           {item.name}
                         </p>
                       </div>

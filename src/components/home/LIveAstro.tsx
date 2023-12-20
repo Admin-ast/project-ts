@@ -92,7 +92,7 @@ const LIveAstro = (props: Props) => {
                           className="mx-auto h-full w-full rounded-[10px] object-contain"
                         />
                       </div>
-                      <div className="absolute bottom-[31px] left-[10px] md:left-[80px] lg:left-[50px] ">
+                      <div className="absolute bottom-[31px] left-[140px] md:left-[80px] lg:left-[50px] ">
                         <p className=" z-1 rounded-[10px]   py-[14px]  text-center font-[georgia] text-base font-bold text-white   md:text-[22px] lg:text-[22px]">
                           {item.name}
                         </p>

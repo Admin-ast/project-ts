@@ -213,6 +213,14 @@ function Navbar({}: Props) {
                                 {`Yesterday's Horoscope`}
                               </Link>
                             </li>
+                            <li
+                              onClick={toggleHoroscope}
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
+                            >
+                              <Link href="/chines-horoscope">
+                                {`Chinese Horoscope`}
+                              </Link>
+                            </li>
                           </div>
                         </div>
                       </ul>
