@@ -1,18 +1,16 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Section from "../Section";
 import Link from "next/link";
+import { getFetcher, postFetcher } from "@/service";
+import Image from 'next/image';
 import Search from "../common/Search";
 
 const card = [
   {
-    img: "/assets/shop/gemstone.svg",
-    name: "Gemstone",
-    url: "/shop/gemstone",
-  },
-  {
     img: "/assets/shop/lovescore.svg",
     name: "Love Score",
-    url: "/shop/lovescore",
+    url: "",
   },
   {
     img: "/assets/shop/onlinepuja.svg",
@@ -22,13 +20,17 @@ const card = [
   {
     img: "/assets/shop/kundlimatching.svg",
     name: "Kundli Matching",
-    url: "/shop/kundli-matchingProduct",
+    url: "/shop/kundli-matchingproduct",
   },
-
+  {
+    img: "/assets/shop/gemstone.svg",
+    name: "Gemstone",
+    url: "/shop/gemstone",
+  },
   {
     img: "/assets/shop/carreereport.svg",
     name: "Career Report",
-    url: "/shop/career-report",
+    url: "",
   },
   {
     img: "/assets/shop/kawach.svg",
@@ -90,10 +92,33 @@ const card = [
 type Props = {};
 
 const Card = (props: Props) => {
+  const [categories, setCategories] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    
+       
+  const shopResponse = async () => {
+    const allCategories = await getFetcher("/categories");
+    
+    if(allCategories?.status){
+      setCategories(allCategories?.res);
+      setIsLoading(false);
+    }
+    
+  }  
+  
+  
+  shopResponse();
+ 
+  
+  
+}, []);
+  if(!isLoading){
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat  py-[30px]">
       <Section>
-        <div>
+      <div>
           <div>
             <p className=" text-center text-[36px] font-bold">Astroseva Shop</p>
             <p className=" text-center text-[30px] font-semibold">
@@ -105,16 +130,16 @@ const Card = (props: Props) => {
           </div>
           <div>
             <div className=" mt-[30px] grid  gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
-              {card.map((item, index) => (
+              {categories.map((item:any, index:any) => (
                 <Link
                   key={index}
-                  href={item?.url}
+                  href={"/shop/shop/products?categories=" + item._id}
                   className=" rounded-[10px]  border-2 border-[#DC6563]"
                 >
                   <div className=" relative ">
                     <img
                       className="h-[281px] w-full rounded-[10px] object-cover py-[5px] px-[5px]"
-                      src={item?.img}
+                      src={item?.image}
                       alt=""
                     />
                     <button className="absolute bottom-[0px] w-full rounded-t-[10px] rounded-b-[7px] bg-[#DC6563]  px-[4px] py-3 text-center text-2xl font-medium text-white">
@@ -126,9 +151,28 @@ const Card = (props: Props) => {
             </div>
           </div>
         </div>
+        <div>
+          
+        </div>
       </Section>
     </div>
   );
+              }
+              else{
+                return (
+                  <div className="text-center content-center flex w-full items-center py-3">
+                    <Image 
+                    src="/assets/img/loading.gif"
+                    width={50}
+                    height={50}
+                    alt="Loading.."
+                    className="text-center mx-auto"
+                    >
+
+                    </Image>
+                  </div>
+                )
+              }
 };
 
 export default Card;

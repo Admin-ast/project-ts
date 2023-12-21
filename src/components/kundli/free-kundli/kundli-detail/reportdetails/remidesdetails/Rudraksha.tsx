@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/components/Section";
 import React, { useEffect, useState } from "react";
 

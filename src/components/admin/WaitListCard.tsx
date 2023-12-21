@@ -46,7 +46,7 @@ const WaitListCard = ({
           Status: <span>{`${status}`}</span>
         </p>
         <p className="font-bold">
-          Duration: <span>{`${duration}`}</span>
+          Duration: <span>{`${duration}`} min</span>
         </p>
 
         <button className="rounded-[10px] border-[1px] border-[#FF0600] bg-[#FF7646] px-10 py-2 font-semibold">

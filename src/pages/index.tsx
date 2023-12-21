@@ -14,7 +14,6 @@ import { getFetcher } from "@/service";
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import AstrologerCount from "@/components/home/AstrologerCount";
-import LiveAstrologer from "./live-astrologer/live-astrologer";
 import Icons from "@/components/live-astro/Icons";
 import LIveAstro from "@/components/home/LIveAstro";
 import News from "@/components/home/News";

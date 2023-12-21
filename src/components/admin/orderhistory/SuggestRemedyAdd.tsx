@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { ImCross } from "react-icons/im";
-import CreateYourOwn from "./CreateYourOwn";
 
 type Props = {};
 interface PopupProps {
@@ -9,10 +8,6 @@ interface PopupProps {
   heading: string;
 }
 const SuggestRemedyAdd = ({ isOpen, onClose, heading }: PopupProps) => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const togglePopup = () => {
-    setIsPopupOpen(!isPopupOpen);
-  };
   return (
     <div
       className={`fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center transition-opacity ${
@@ -51,22 +46,9 @@ const SuggestRemedyAdd = ({ isOpen, onClose, heading }: PopupProps) => {
               <button className="w-1/2 rounded-[10px] bg-[#00AF1C] py-2 text-[20px] font-bold text-white">
                 Search from AstrosevaMall
               </button>
-              <button
-                onClick={togglePopup}
-                className="w-1/2 rounded-[10px] bg-[#D9D9D9] py-2 text-[20px] font-bold text-white"
-              >
+              <button className="w-1/2 rounded-[10px] bg-[#D9D9D9] py-2 text-[20px] font-bold text-white">
                 Create your own
               </button>
-              <CreateYourOwn
-                heading="Suggest Remedy"
-                isOpen={isPopupOpen}
-                onClose={togglePopup}
-              />
-              <div
-                className={`fixed top-0 left-0 h-screen w-screen transition-opacity ${
-                  isPopupOpen ? "opacity-50" : "pointer-events-none opacity-0"
-                } bg-[#808080]`}
-              ></div>
             </div>
           </div>
           <div className="mt-[200px] py-[30px]">

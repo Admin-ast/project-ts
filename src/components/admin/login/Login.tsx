@@ -1,8 +1,11 @@
 import Section from "@/components/Section";
 import { Button, Form, Input } from "@/components/forms";
+import { postFetcher } from "@/service";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -13,6 +16,19 @@ const Login = () => {
     setValue,
     formState: { errors },
   } = useForm();
+  const router = useRouter();
+  const onSubmit = async(data:any) => {
+  let uuser = JSON.stringify(data);
+        const login = await postFetcher('/astrologer/login',uuser);
+        if(login?.status){
+          toast.success("Successfully logged in");
+          router.push("/astrologeradmin");
+          console.log("loggedin");
+        }
+        else{
+          toast.success("Invalid email and password");
+        }
+  }
   return (
     <div className="flex  min-h-screen items-center justify-center bg-gray-100 bg-[url('')] bg-cover bg-no-repeat py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md ">
@@ -24,14 +40,14 @@ const Login = () => {
             Login Form
           </h2>
         </div>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit(onSubmit)}>
           <div className="-space-y-px rounded-md shadow-sm">
             <div>
               <Input
                 label="Username or Email"
                 type={"string"}
                 placeholder="Enter username or email here"
-                name={"username"}
+                name={"emailId"}
                 required={true}
                 id="username"
                 register={register}
@@ -66,7 +82,7 @@ const Login = () => {
             </div>
           </div>
 
-          <Link href="/admin/signup">
+          <Link href="/astrologeradmin/signup">
             <Button
               btnText="Create new account"
               className="group relative flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"

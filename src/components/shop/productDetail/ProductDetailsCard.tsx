@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Section from "../../Section";
 import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
@@ -6,18 +7,18 @@ import Link from "next/link";
 import ImageDrawer from "./ImageDrawer";
 import DetailCard from "./DetailCard";
 
-type Props = {};
 
-const ProductDetailsCard = (props: Props) => {
+const ProductDetailsCard = (props:any) => {
+
   return (
     <div className="">
       <Section>
         <div className=" gap-[50px]  md:flex lg:flex">
-          <ImageDrawer />
-          <DetailCard />
+          <ImageDrawer image = {props?.props}   />
+          <DetailCard  props =   {props?.props}/>
         </div>
         <div className="">
-          <Footer />
+          <Footer props = {props?.props} />
         </div>
       </Section>
     </div>

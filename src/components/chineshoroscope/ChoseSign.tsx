@@ -55,7 +55,7 @@ const ChoseSign = (props: Props) => {
             Choose Your Sign
           </p>
         </div>
-        <div className="py-8 px-16">
+        <div className="py-8">
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
             {card.map((item, index) => (
               <div key={index}>

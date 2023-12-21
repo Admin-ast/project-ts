@@ -300,7 +300,7 @@ const card: CardDetail[] = [
   },
   {
     id: 12,
-    img: "/assets/kundli/pieces.png",
+    img: "/assets/kundli/pisces.png",
     name: "Aries Daily Horoscope",
     url: "aries",
     date: "March 21 - April 19",

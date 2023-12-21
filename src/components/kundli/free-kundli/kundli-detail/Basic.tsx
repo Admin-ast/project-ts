@@ -1,3 +1,4 @@
+"use client";
 import ConnectCard from "@/components/common/ConnectCard";
 import Section from "@/components/Section";
 import React, { useEffect, useState } from "react";
@@ -7,18 +8,6 @@ import { toast } from "react-toastify";
 
 type Props = {};
 
-// const basicDetails = {
-//   Name: "Satyam Dahlan",
-//   Date: "26/11/1997",
-//   Time: "03:22 PM",
-//   Place: "Begusrai, Bihar, India",
-//   Latitude: "25.42",
-//   Longitude: "86.13",
-//   TimeZone: "GMT+5.5",
-//   Sunrise: "6:11:12",
-//   Sunset: "16:5:45",
-//   Ayanamsha: "23.82775",
-// };
 
 const panchangDetails = {
   Tithi: "KrishnaDwadashi",
@@ -27,23 +16,6 @@ const panchangDetails = {
   Nakshatra: "Chitra",
 };
 
-// const avakhadaDetails = {
-//   Varna: "Shudra",
-//   Vashya: "Nara",
-//   Yoni: "Vyaghra",
-//   Gan: "Rakshasa",
-//   Nadi: "Madhya",
-//   Sign: "Virgo",
-//   "Sign Lord": "Mercury",
-//   "Nakshatra-Charan": "Chitra",
-//   Yog: "Ayushman",
-//   Karan: "Kaulav",
-//   Tithi: "KrishnaDwadashi",
-//   Yunja: "Madhya",
-//   Tatva: "Earth",
-//   Name: "alphabet	Po",
-//   Paya: "Silver",
-// };
 
 function Basic({}: Props) {
   const [basicDetails, setBasicDetails] = useState<any>({});

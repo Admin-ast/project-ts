@@ -1,14 +1,16 @@
+"use client";
 import { Form, Input, Select } from "@/components/forms";
-import { useRouter } from "next/router";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { numberOptions, monthOptions } from "../../../../utils";
 import Combo from "@/components/common/Combo";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
 function NewKundliForm({}: Props) {
   const router = useRouter();
+  const { push } = useRouter();
   const {
     register,
     handleSubmit,
@@ -18,7 +20,7 @@ function NewKundliForm({}: Props) {
 
   const onSubmit = (data: any) => {
     localStorage.setItem("kundliData", JSON.stringify(data));
-    router.push("/free-kundli/basic-detail");
+    push("/free-kundli/basic-detail");
   };
   return (
     <div className="space-y-4 ">

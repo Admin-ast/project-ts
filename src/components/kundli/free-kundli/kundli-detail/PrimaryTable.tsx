@@ -1,3 +1,4 @@
+"use client";
 import React, { Key } from "react";
 import { startCase, toLower } from "lodash";
 

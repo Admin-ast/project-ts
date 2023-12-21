@@ -6,7 +6,7 @@ import OfferCard from "./OfferCard";
 
 type Props = {};
 
-const Offer = (props: Props) => {
+const Offer = (props: any) => {
   return (
     <div className="">
       <div

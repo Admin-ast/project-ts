@@ -4,9 +4,12 @@ import CallIntakeForm from "../appoinments/CallIntakeForm";
 import Section from "../Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 
-type Props = {};
+type Props = {
+  id:any;
+  name:any;
+};
 
-const ChatForm = (props: Props) => {
+const ChatForm = ({id, name}: Props) => {
   return (
     <div className="">
       {/* <Hero
@@ -25,7 +28,7 @@ const ChatForm = (props: Props) => {
       </div>
       <div className="bg-[url('/assets/horoscope-bg.webp')]">
         <Section>
-          <CallIntakeForm text="Chat Form" className="border-none lg:w-full" />
+          <CallIntakeForm id={id} text="Chat Form" type="Chat" className="border-none lg:w-full" name={name} />
         </Section>
       </div>
     </div>

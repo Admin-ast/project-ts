@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/components/Section";
 import React, { Key, useEffect, useState } from "react";
 import Planetary from "./generaldetails/Planetary";

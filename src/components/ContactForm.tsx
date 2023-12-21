@@ -23,7 +23,7 @@ const ContactForm = ({ text, className }: Props) => {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
+  //  console.log(data);
   };
 
   return (

@@ -1,4 +1,3 @@
-// components/ContactList.tsx
 import React from "react";
 
 interface Contact {

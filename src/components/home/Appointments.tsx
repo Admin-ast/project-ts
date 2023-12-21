@@ -17,13 +17,13 @@ const appointment: Appointment[] = [
     name: "Chat with Astrologer",
     src: "/assets/home/icon-01.png",
     alt: "chat-astrologer",
-    url: "/chat-with-astrologer/chat-with-astrologer",
+    url: "/chat-with-astrologer",
   },
   {
     name: "Talk to Astrologer",
     src: "/assets/home/icon-02.png",
     alt: "talk-astrologer",
-    url: "/talk-to-astrologer/talk-to-astrologer",
+    url: "/talk-to-astrologer",
   },
   {
     name: "Live Astrologers",

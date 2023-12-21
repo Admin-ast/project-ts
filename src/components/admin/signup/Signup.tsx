@@ -1,5 +1,6 @@
 import Section from "@/components/Section";
 import { Button, Form, Input } from "@/components/forms";
+import { postFetcher } from "@/service";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -13,6 +14,13 @@ const Signup = () => {
     setValue,
     formState: { errors },
   } = useForm();
+
+  const onSubmit = async(data:any) => {
+      const registered = await postFetcher("/astrologer/register",data);
+      if(registered?.status){
+        console.log("successfully registerd");
+      }
+  }
   return (
     <div className="flex  min-h-screen items-center justify-center bg-gray-100 bg-[url('')] bg-cover bg-no-repeat py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md ">
@@ -24,7 +32,7 @@ const Signup = () => {
             Signup Form
           </h2>
         </div>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit(onSubmit)}>
           <div className="-space-y-px rounded-md shadow-sm">
             <div>
               <Input
@@ -44,7 +52,7 @@ const Signup = () => {
                 label="Username or Email"
                 type={"string"}
                 placeholder="Enter username or email here"
-                name={"username"}
+                name={"email"}
                 required={true}
                 id="username"
                 register={register}
@@ -54,7 +62,7 @@ const Signup = () => {
             <div>
               <Input
                 label="Password"
-                type={"string"}
+                type={"password"}
                 placeholder="Enter password here"
                 name={"password"}
                 required={true}
@@ -72,7 +80,7 @@ const Signup = () => {
             />
 
             <div className="mt-5">
-              <Link href="/admin/login">
+              <Link href="/astrologeradmin/login">
                 {" "}
                 <p className="text-center text-blue-700">
                   Already Member, Plaese Login

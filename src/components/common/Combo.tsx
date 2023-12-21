@@ -68,13 +68,13 @@ export default function Combo({
   };
 
   return (
-    <div className="w-full">
+    <div className="">
       <Combobox
         value={selected || (hasDefaultValue && "New Delhi, DL, India")}
         onChange={(e) => locationSelection(e)}
       >
         <div className="relative">
-          <div className="relative flex w-full cursor-default justify-center overflow-hidden text-left focus:!border-none focus:!outline-none focus-visible:ring-0 focus-visible:ring-opacity-0 sm:text-sm">
+          <div className="relative w-full cursor-default overflow-hidden text-left focus:!border-none focus:!outline-none focus-visible:ring-0 focus-visible:ring-opacity-0 sm:text-sm">
             <Combobox.Input
               className={className}
               displayValue={selected}
@@ -83,7 +83,7 @@ export default function Combo({
                 setQuery(event.target.value);
               }}
             />
-            <Combobox.Button className="absolute inset-y-0 right-16  flex items-center pr-2 md:right-0 lg:right-0">
+            <Combobox.Button className="absolute inset-y-0 right-0 flex items-center pr-2">
               <ChevronDownIcon
                 className="h-5 w-5 text-gray-400"
                 aria-hidden="true"

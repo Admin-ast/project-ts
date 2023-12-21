@@ -61,29 +61,29 @@ const TrendingVideos = (props: Props) => {
     <div className="">
       <div
         className="h-[78px]
-     w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
+     w-full bg-[#d12627cc]"
       ></div>
       <div className="lg:flex ">
         <div className="lg:w-1/4">
           <Sidebar />
         </div>
-        <div className="  lg:w-3/4">
-          <div className="mt-[45px] grid items-center justify-around px-4 md:flex lg:flex">
+        <div className="min-h-screen px-10 lg:w-3/4">
+          <div className="mt-[45px] grid items-center justify-between  md:flex lg:flex">
             {" "}
             <button className="rounded-[6px] border-[1px] border-red-700 py-2 md:px-5 lg:px-10">
               Search reels,categories
             </button>
-            <span className="  rounded-[43px] bg-[#DC6563]   px-10 text-center text-[24px] font-bold text-white ">
-              TRAINING VIDEOS
+            <span className=" mt-2 rounded-[43px] bg-[#CF2927] px-10 text-center text-[24px] font-bold text-white lg:py-4 ">
+              TRENDING VIDEOS
             </span>
             <button className="mt-2 rounded-[6px] border-[1px] border-red-700 py-2 md:px-4 lg:px-10">
               All
             </button>
           </div>
           <div className=""></div>
-          <div className="mt-[10px] grid justify-center gap-[10px] md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid justify-center p-8 md:grid-cols-2 lg:grid-cols-4">
             {videos.map((video, index) => (
-              <div key={index} className="px-[10px]  ">
+              <div key={index} className="m-4 ">
                 <VideoCard title={video.title} imageUrl={video.imageUrl} />
               </div>
             ))}

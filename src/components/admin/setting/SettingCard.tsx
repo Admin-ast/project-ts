@@ -62,7 +62,7 @@ const items = [
 
 const SettingCard = (props: Props) => {
   return (
-    <div className="mt-[20px]  grid gap-5 px-5 md:grid-cols-2 lg:grid-cols-4">
+    <div className="mt-[20px] grid-cols-4 gap-5 px-5 lg:grid">
       <PhoneNumber />
       <ImportantContact />
 

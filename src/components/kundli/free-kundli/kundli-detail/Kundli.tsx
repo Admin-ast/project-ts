@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import React, { Key, useEffect, useState } from "react";
@@ -42,25 +43,26 @@ function Kundli({ horoCharts, southHoroCharts }: Props) {
   useEffect(() => {
     const planetResponse = async () => {
       let bodyData: any;
-      let kundliplanet: any;
+      let kundliplanet:any;
       if (typeof window !== "undefined") {
         console.log("kundilll", localStorage.getItem("kundliData"));
         bodyData = localStorage.getItem("kundliData");
         kundliplanet = localStorage.getItem("kundliplanet");
       }
-      if (!kundliplanet) {
-        const result = await postFetcher("/kundli/planets", bodyData);
-        console.log(result);
-        if (result.status) {
-          setPlanetDetails(result?.res ?? "");
-          localStorage.setItem("kundliplanet", planetDetails);
-        } else {
-          toast.error(result.msg);
-        }
+      if(!kundliplanet){
+      const result = await postFetcher("/kundli/planets", bodyData);
+      console.log(result);
+      if (result.status) {
+        setPlanetDetails(result?.res ?? "");
+        localStorage.setItem("kundliplanet",planetDetails);
       } else {
-        setPlanetDetails(localStorage.getItem("kundliplanet"));
+        toast.error(result.msg);
       }
-    };
+    }
+    else{
+      setPlanetDetails(localStorage.getItem("kundliplanet"));
+    }
+  }
     planetResponse();
   }, []);
 

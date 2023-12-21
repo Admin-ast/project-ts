@@ -3,35 +3,34 @@ import "@/styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import type { AppProps } from "next/app";
 import { ToastContainer } from "react-toastify";
-import Head from "next/head"; // Import Head component from next/head
+import Script from "next/script";
+import { CartProvider } from "@/components/shop/context/ShopContext";
+import { AuthProvider } from "@/components/contexts/AuthProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="dRenVoeNGJ-sE6nGJ8061HYadizm-44jKBSWXuehqNo"
-        />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-5KRKV05N06"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-5KRKV05N06');
-            `,
-          }}
-        />
-      </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-5WH6NSHYF5"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5WH6NSHYF5');
+        `}
+      </Script>
+      <AuthProvider>
+      <CartProvider>
       <Layout>
         <ToastContainer />
         <Component {...pageProps} />
-      </Layout>
+       </Layout>
+      </CartProvider>
+      </AuthProvider>
     </>
   );
 }

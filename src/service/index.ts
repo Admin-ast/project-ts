@@ -1,4 +1,4 @@
-const baseUrl = "https://api.astrosevatalk.com/api/v1";
+const baseUrl = "http://localhost:8000/api/v1"; //"https://api.astrosevatalk.com/api/v1";
 
 export const postFetcher = async (
   url: string,
@@ -6,10 +6,11 @@ export const postFetcher = async (
   method: string = "POST"
 ) => {
   try {
+   // console.log(body);
     const result = await fetch(`${baseUrl}${url}`, {
       method,
-      headers: {
-        Accept: "application/json",
+      headers: { 
+        Accept:  "application/json",
         "Content-Type": "application/json",
       },
       body,
@@ -23,9 +24,17 @@ export const postFetcher = async (
   }
 };
 
+
 export const getFetcher = async (url: string) => {
   try {
-    const result = await fetch(`${baseUrl}${url}`, {});
+    const result = await fetch(`${baseUrl}${url}`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      credentials: "include",  
+    });
     const response = await result.json();
     return response;
   } catch (err) {

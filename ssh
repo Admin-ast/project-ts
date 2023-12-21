@@ -1,0 +1,2 @@
+ssh -i "astro1.pem" ubuntu@ec2-52-90-143-242.compute-1.amazonaws.com
+

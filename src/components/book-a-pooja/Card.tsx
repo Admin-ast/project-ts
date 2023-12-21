@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -48,10 +49,12 @@ const Card = ({ date }: Props) => {
   return (
     <div className="mt-[72px] grid gap-[30px] md:grid-cols-3 lg:grid-cols-4">
       {cardItems.map((item, index) => (
+        <Link href="/book-a-pooja/book-a-pooja">
         <div
           key={index}
           className=" mx-auto rounded-[15px] border-[3px] border-[#DC6563]"
         >
+          
           <div className="relative">
             <Image
               src={item.img}
@@ -76,6 +79,7 @@ const Card = ({ date }: Props) => {
             </div>
           </div>
         </div>
+        </Link>
       ))}
     </div>
   );

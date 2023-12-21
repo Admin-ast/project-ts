@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/components/Section";
 import React from "react";
 import { returnDetails } from "./VdashaCardDetails";
@@ -11,6 +12,7 @@ const Vimshottari = ({ majorVdasha }: Props) => {
       <Section>
         <p>Understanding your dasha</p>
         <div className="flex flex-col gap-2 py-4">
+          {console.log(majorVdasha)}
           {majorVdasha &&
             majorVdasha?.map((item: any, index: any) => (
               <div

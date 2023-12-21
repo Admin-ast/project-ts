@@ -5,7 +5,7 @@ import Btns from "./Btns";
 
 type Props = {};
 
-const LiveEvents = (props: Props) => {
+const LiveEvents = (props: any) => {
   return (
     <div className="">
       <div

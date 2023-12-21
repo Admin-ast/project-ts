@@ -16,12 +16,12 @@ const ConnectCard = (props: Props) => {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 py-6 sm:flex-row">
-            <Link href="/talk-to-astrologer/talk-to-astrologer">
+            <Link href="/talk-to-astrologer">
               <button className=" h-[61px] w-[317px] rounded-[46px] bg-white   py-2 px-5 text-[24px] font-semibold text-black">
                 Talk To Astrologer
               </button>
             </Link>
-            <Link href="/chat-with-astrologer/chat-with-astrologer">
+            <Link href="/chat-with-astrologer">
               <button className=" h-[61px] w-[317px] rounded-[46px] bg-white py-2 px-5 text-[24px] font-semibold text-black">
                 Chat With Astrologer
               </button>

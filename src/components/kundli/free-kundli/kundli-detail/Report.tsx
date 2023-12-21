@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/components/Section";
 import React, { Key, useState } from "react";
 import General from "./reportdetails/General";

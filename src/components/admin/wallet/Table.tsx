@@ -23,7 +23,7 @@ const Table = (props: Props) => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+      <table className="w-full table-fixed border-collapse border border-gray-300">
         <thead>
           <tr className="bg-gray-200">
             <th className="w-1/6 border border-gray-300 px-4 py-2">Order ID</th>
@@ -42,19 +42,19 @@ const Table = (props: Props) => {
         <tbody>
           {Data.map((item) => (
             <tr key={item.orderId} className="bg-white hover:bg-gray-100">
-              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#3E5DAB]">
+              <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.orderId}
               </td>
               <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.description}
               </td>
-              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#CA2127]">
+              <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.category}
               </td>
               <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.transactionAmount}
               </td>
-              <td className="w-1/5 border border-gray-300 px-4 py-2 text-[#A9A9A9]">
+              <td className="w-1/5 border border-gray-300 px-4 py-2">
                 {item.dateTime}
               </td>
             </tr>
