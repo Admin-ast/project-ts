@@ -8,6 +8,7 @@ import Link from "next/link";
 import Comp from "../compatibility/love/Comp";
 import SideNavFooter from "./SideNavFooter";
 import Section from "../Section";
+import FooterSideNav from "./FooterSideNav";
 
 function SideNavBlog() {
   const categories = [
@@ -157,8 +158,12 @@ function SideNavBlog() {
             <p>HINDI</p>
             <p>ENGLISH</p>
           </div>
-          <div className="">
-            <SideNavFooter
+          <div className="mr-4 mt-5 ">
+            {/* <SideNavFooter
+              headText="Are You Compatible?"
+              subText="Choose your and your partner's zodiac sign to check compatibility"
+            /> */}
+            <FooterSideNav
               headText="Are You Compatible?"
               subText="Choose your and your partner's zodiac sign to check compatibility"
             />

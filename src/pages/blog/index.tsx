@@ -21,7 +21,7 @@ const blog = (props: Props) => {
           </div>
         </Section>
       </div>
-      <Blog />
+      <Blog count="12,120" />
     </div>
   );
 };

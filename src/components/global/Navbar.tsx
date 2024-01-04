@@ -116,7 +116,7 @@ function Navbar({}: Props) {
             <div className="">
               <Link href="/" className="text-2xl  ">
                 <div className="flex items-center justify-center gap-[7px] md:justify-start">
-                  <div className="w-[15%]">
+                  <div className="l w-full">
                     <Image
                       src="/assets/home/logo.png"
                       alt="logo"
@@ -126,9 +126,6 @@ function Navbar({}: Props) {
                       className="md:w-[200px] "
                     />
                   </div>
-                  <p className="font-[ Roboto] text-[30px] font-[600]">
-                    AstroSevaTalk
-                  </p>
                 </div>{" "}
               </Link>
             </div>
@@ -139,8 +136,12 @@ function Navbar({}: Props) {
                 <Link href="/kundli-matching">Kundli Matching</Link>
 
                 <ul className="">
-                  <li className="">
-                    <button className="flex    " onClick={toggleHoroscope}>
+                  <li
+                    className=""
+                    onMouseEnter={toggleHoroscope}
+                    onMouseLeave={toggleHoroscope}
+                  >
+                    <button className="flex    ">
                       <span className="">Horoscope</span>
                       <span className={horoScopeOpen ? " transform" : ""}>
                         &#9662;

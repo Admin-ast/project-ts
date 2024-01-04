@@ -411,12 +411,12 @@ type Props = {
 
 const BlogsBy = ({ heading, subheading, className }: Props) => {
   return (
-    <div className={`mt-[30px] ${className}`}>
+    <div className={`pt-[30px] ${className}`}>
       <Section>
         <div className="">
           <p className="text-center text-[30px] font-bold">{heading}</p>
           <p className="text-center text-[24px] font-bold">{subheading}</p>
-          <div className="gap-5 pt-6 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4">
+          <div className="gap-5  md:grid md:grid-cols-2 lg:grid lg:grid-cols-4">
             {card.map((item, index) => (
               <Link
                 key={index}
