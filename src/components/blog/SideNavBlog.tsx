@@ -9,6 +9,7 @@ import Comp from "../compatibility/love/Comp";
 import SideNavFooter from "./SideNavFooter";
 import Section from "../Section";
 import FooterSideNav from "./FooterSideNav";
+import TodayPanchng from "../panchang/TodayPanchng";
 
 function SideNavBlog() {
   const categories = [
@@ -112,7 +113,7 @@ function SideNavBlog() {
   return (
     <div className="lg:w-1/3 ">
       <Section>
-        <div className=" gap-2 border-r border-[#D9D9D9] lg:pl-[100px]">
+        <div className="blogsidebar gap-2 border-r border-[#D9D9D9] pl-[100px]">
           {/* <div className=" border-r border-[#D9D9D9]"> */}
           <div className="flex items-center gap-1">
             <BiCategory size={45} className="" />
@@ -157,6 +158,9 @@ function SideNavBlog() {
             <p>ALL LANGUAGES</p>
             <p>HINDI</p>
             <p>ENGLISH</p>
+          </div>
+          <div className="pr-2">
+            <TodayPanchng />
           </div>
           <div className="mr-4 mt-5 ">
             {/* <SideNavFooter

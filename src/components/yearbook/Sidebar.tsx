@@ -32,21 +32,21 @@ const Sidebar = (props: Props) => {
           </p>
         </div>
         <div className="">
-          <div className="flex items-center">
+          <div className=" flex items-center justify-center">
             <Image
               src="/assets/yearbook/line.png"
               alt="line"
               width={73}
               height={1}
-              className="  "
+              className=" test "
             />
-            <p className="font-bold">Testimonials</p>
+            <p className="text-center font-bold">Testimonials</p>
             <Image
               src="/assets/yearbook/line.png"
               alt="line"
               width={73}
               height={1}
-              className="  "
+              className="test  "
             />
           </div>
           <div className="px-[20px] text-justify">

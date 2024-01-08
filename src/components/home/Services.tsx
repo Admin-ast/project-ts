@@ -49,7 +49,7 @@ const services: Service[] = [
   {
     name: "Festival 2024",
     src: "/assets/home/festival-2024.png",
-    url: "/horoscope/yearly",
+    url: "/festival",
   },
 ];
 type Props = {

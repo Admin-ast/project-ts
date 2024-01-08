@@ -27,6 +27,7 @@ import Missing from "@/components/home/Missing";
 import PersonalDetail from "@/components/Signup/PersonalDetail";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Faq from "@/components/common/Faq";
+import NewReview from "@/components/home/NewReview";
 const faqsDetail: Faqs = {
   title: "FAQ'S ABOUT ASTROLOGY",
   faq: [
@@ -110,6 +111,7 @@ export default function Home() {
       <CelebrityCustomers />
       <Shop head="Astroseva Shop" />
       <Panchang />
+      {/* <NewReview/> */}
       <Review />
       <About />
       {/* <Faq /> */}

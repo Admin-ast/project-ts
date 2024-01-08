@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
 const TodayPanchng = (props: Props) => {
   return (
-    <div className="w-[20%] bg-white py-[15px] shadow-xl">
+    <div className=" bg-white pb-[15px] shadow-xl">
       <div className="flex items-center justify-center rounded-t-[6px] bg-[#DC6563]">
         <p className="text-center font-bold text-white">Panchang</p>
       </div>
@@ -43,9 +44,11 @@ const TodayPanchng = (props: Props) => {
           <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
         </div>
         <div className="flex items-center justify-center">
-          <button className="rounded-[2px] bg-gradient-to-b from-[#fb7038] to-[#FF0600] px-2 py-1 text-[12px] font-semibold text-white">
-            Today Panchang
-          </button>
+          <Link href="/today-panchang">
+            <button className="rounded-[2px] bg-gradient-to-b from-[#fb7038] to-[#FF0600] px-2 py-1 text-[12px] font-semibold text-white">
+              Today Panchang
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const Story = (props: Props) => {
   return (
     <div className="py-[30px]">
       <p className="text-[36px] font-bold">AstrosevaTalk Year Book</p>
-      <div className="text-justify">
+      <div className="py-[25px] text-justify">
         <p className="">
           In Hinduism, consulting an auspicious time or muhurat before
           commencing any big task, yagna, ritual or ceremony is practiced since

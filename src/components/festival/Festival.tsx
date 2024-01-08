@@ -75,7 +75,7 @@ const Festival = ({ head }: Props) => {
   ];
 
   return (
-    <div className="pb-[30px]">
+    <div className="pb-[30px] ">
       <Section>
         <div className="">
           <p className="text-center text-[48px] font-bold">{head}</p>
@@ -106,7 +106,7 @@ const Festival = ({ head }: Props) => {
         <div className="md:flex md:gap-[50px] lg:flex lg:gap-[77px]">
           <div className="md:ml-[2%] lg:ml-[10%] lg:w-[80%]">
             <div className="container mx-auto my-8">
-              <div className="grid  gap-8 md:grid-cols-1  lg:grid-cols-2">
+              <div className="festcard grid  gap-8 md:grid-cols-1  lg:grid-cols-2">
                 {cardData.map((card) => (
                   <Card
                     key={card.id}
@@ -130,7 +130,7 @@ const Festival = ({ head }: Props) => {
 
         {/* -------------------------------------SideBar-------------------------------------------- */}
       </div>
-      <div className="lg:px-[150px]">
+      <div className="px-2 text-justify md:px-[20px] lg:px-[150px]">
         <p className="">
           Hindu festivals are observed on the basis of movements and position of
           Moon (Lunar Month) & Sun (Solar Month) in the celestial belt. The

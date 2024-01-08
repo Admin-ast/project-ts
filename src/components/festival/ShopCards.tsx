@@ -5,7 +5,7 @@ type Props = {};
 
 const ShopCards = (props: Props) => {
   return (
-    <div className=" ">
+    <div className="mb-5 ">
       <div className=" mt-[10px] bg-white pb-[10px] shadow-xl">
         <div className="rounded-t-[3px] bg-[#DC6563] py-1 px-1">
           <p className="font-bold text-white">Buy Gemstones</p>

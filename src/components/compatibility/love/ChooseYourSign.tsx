@@ -109,11 +109,11 @@ const ChooseSign = ({ headText }: Props) => {
                 <Image
                   src={item.src}
                   alt={item.name}
-                  width={171}
-                  height={238}
+                  width={141}
+                  height={218}
                   loading={"lazy"}
                 />
-                <p className="text-center text-[40px]">{item.name}</p>
+                <p className="text-center text-[30px]">{item.name}</p>
               </div>
             </Link>
           ))}

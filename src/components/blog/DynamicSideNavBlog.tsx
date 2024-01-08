@@ -5,6 +5,7 @@ import { BiCategory } from "react-icons/bi";
 import { GrLanguage } from "react-icons/gr";
 import SideNavFooter from "./SideNavFooter";
 import FooterSideNav from "./FooterSideNav";
+import TodayPanchng from "../panchang/TodayPanchng";
 
 type Props = {};
 
@@ -172,7 +173,9 @@ const DynamicSideNavBlog = (props: Props) => {
             </Link>
           ))}
         </div>
-
+        <div className="">
+          <TodayPanchng />
+        </div>
         <div className="">
           {/* <SideNavFooter
             headText="Are You Compatible?"

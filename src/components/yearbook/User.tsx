@@ -22,7 +22,7 @@ const User = (props: Props) => {
         <p className="">+91-1234-123-123</p>
         <p className="">(9AM to 6PM IST)</p>
         <p className="font-bold">Email Id:</p>
-        <p className="">support@astrosevatalk.com</p>
+        <p className="text-[12px]">support@astrosevatalk.com</p>
       </div>
     </div>
   );

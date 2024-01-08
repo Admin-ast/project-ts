@@ -4,7 +4,7 @@ type Props = {};
 
 const Bottom = (props: Props) => {
   return (
-    <div className="bg-white px-[20px] shadow-xl ">
+    <div className="bg-white px-[20px] py-[20px] shadow-xl ">
       <p className=" font-bold  ">Our Exclusive Spiritual Store</p>
       <p className="text-justify ">
         Home, car, job, business, marriage and family - how you can achieve

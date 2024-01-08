@@ -14,7 +14,7 @@ const FestivalDynamic = ({ head }: Props) => {
           <div className="float-right flex gap-[20px]">
             <div className="flex items-center py-[30px]">
               <p className="">Year</p>
-              <select className="border-[1px] border-[#D9D9D9] px-4 ">
+              <select className="border-[1px] border-[#D9D9D9] px-2 md:px-4 lg:px-4 ">
                 <option className="">YYYY</option>
                 <option value="option1">2024</option>
                 <option value="option2">2023</option>

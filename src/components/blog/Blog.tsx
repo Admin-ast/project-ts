@@ -62,7 +62,7 @@ const Blog = ({ count }: Props) => {
                   src={item?.img}
                   alt=""
                 />
-                <div className="absolute top-10 left-[220px] flex gap-2 rounded-[17px] bg-[#dbd3cf] py-1 px-2 md:top-3 md:right-3 lg:top-3  lg:right-3">
+                <div className="eye absolute top-10  left-[220px] flex gap-2 rounded-[17px] bg-[#dbd3cf] px-2 py-1  md:top-3 md:right-3 lg:top-3  lg:right-3">
                   <FaEye />
                   <p className="text-[12px]">{count}</p>
                 </div>

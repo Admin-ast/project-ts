@@ -68,7 +68,7 @@ const YearBook = (props: Props) => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2 py-[30px]">
+              <div className="py-[30px] md:w-1/2 lg:w-1/2">
                 <div className="flex gap-[4px] ">
                   <FaCircle className="mt-[3px] text-[#d32e27]" />
                   <div className="">
@@ -121,6 +121,7 @@ const YearBook = (props: Props) => {
             </div>
             <Solution />
             <Story />
+            <Report />
           </div>
           {/* -----------------2nd div sidebar------------------------------- */}
           <div className="mt-[20px] lg:w-[23%]">
@@ -128,7 +129,6 @@ const YearBook = (props: Props) => {
           </div>
         </div>
         <div className="">
-          <Report />
           <Faq faqDetail={faqsDetail} />
           <Services head="Complementary Astrology Serveries" />
         </div>

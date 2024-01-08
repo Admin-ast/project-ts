@@ -11,7 +11,7 @@ const Solution = (props: Props) => {
       <p className="py-[20px] text-[20px] font-bold">
         Step 1...2...3... And Your Solution in Your Hands{" "}
       </p>
-      <div className="flex w-full gap-[33px]">
+      <div className="w-full gap-[33px] md:flex lg:flex">
         <div className="">
           <div className="flex items-center">
             <Image
@@ -19,7 +19,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className=" md:w-[64px] lg:w-[95px] "
+              className=" w-[125px] md:w-[64px] lg:w-[95px] "
             />
             <div className="flex h-[32px] w-[32px] items-center justify-center rounded-[100%] border-[1px] border-[#D9D9D9]">
               1
@@ -29,7 +29,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className=" md:w-[64px] lg:w-[95px] "
+              className=" w-[125px] md:w-[64px] lg:w-[95px]"
             />
           </div>
           <div className="">
@@ -52,7 +52,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className="  md:w-[64px] lg:w-[95px]"
+              className="  w-[125px] md:w-[64px] lg:w-[95px]"
             />
             <div className="flex h-[32px] w-[32px] items-center justify-center rounded-[100%] border-[1px] border-[#D9D9D9]">
               2
@@ -62,7 +62,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className=" md:w-[64px] lg:w-[95px]"
+              className=" w-[125px] md:w-[64px] lg:w-[95px]"
             />
           </div>
           <div className="">
@@ -85,7 +85,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className="  md:w-[64px] lg:w-[95px]"
+              className="  w-[125px] md:w-[64px] lg:w-[95px]"
             />
             <div className="flex h-[32px] w-[32px] items-center justify-center rounded-[100%] border-[1px] border-[#D9D9D9]">
               3
@@ -95,7 +95,7 @@ const Solution = (props: Props) => {
               alt="line"
               width={95}
               height={1}
-              className="  md:w-[64px]lg:w-[95px]"
+              className="  md:w-[64px]lg:w-[95px] w-[125px]"
             />
           </div>
           <div className="">
