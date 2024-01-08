@@ -1,38 +1,102 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 import { useForm } from "react-hook-form";
 import { Button, Form, Input } from "../forms";
+import { toast } from "react-toastify";
+import { useAuth } from "../contexts/AuthProvider";
+import { useCart } from "../shop/context/ShopContext";
+import { postFetcher } from "@/service";
+import { useRouter } from "next/router";
 
 type FormData = {
-  fname: string;
-  lname: string;
+  firstname: string;
+  lastname: string;
   gender: string;
-  dob: string;
-  tob: string;
-  toc: string;
-  bplace: string;
-  mstatus: string;
+  dateofbirth: string;
+  timeofbirth: string;
+  topicofconcern: string;
+  birthplace: string;
+  maritalstatus: string;
   occupation: string;
+  astrologerid:string;
 };
 type Props = {
+  id:string;
   text: string;
   className: string;
+  type:string;
+  name:string;
 };
 
-const CallIntakeForm = ({ text, className }: Props) => {
+const CallIntakeForm = ({ id, text, className, type, name }: Props) => {
+    const {  setIsOpen } = useCart();
+    const { push } = useRouter();
+    const [loading, setLoading] = useState(false);
+    const [btnloading, setbtnloading] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>();
 
+  let {  isuserLogged } = useAuth();
   const onSubmit = (data: FormData) => {
-    console.log(data);
+    data.astrologerid = id;
+    if(isuserLogged){
+      send(data);
+  //  console.log(data);
+    
+  }
+  else{
+  //  console.log(isuserLogged);
+      if(!isuserLogged){
+      setIsOpen(true);
+      }
+  }
   };
-
+  
+  const send = async(detail:any) => {
+      
+      const sending = JSON.stringify(detail);
+      setbtnloading(true);
+      let senddetail:any;
+      let route:any;
+      if(type === "Chat"){
+         senddetail = await postFetcher("/chat/requestchat", sending);
+         route = "/chat-with-astrologer/astrologerchat";
+      }
+      else{
+       senddetail = await postFetcher("/call/requestcall", sending);
+        route = "/talk-to-astrologer/astrologercall";
+      }
+    //  console.log(senddetail);
+      if(senddetail?.status){
+    //    console.log("send");
+    //    console.log(senddetail);
+        toast.success(senddetail?.message);
+        reset();
+        setbtnloading(false);
+        push({
+          pathname:route,
+          query:{name:senddetail?.astrologer?.name,id:senddetail?.astrologer?._id, chatcallid:senddetail?.chatcall?._id, image:senddetail?.astrologer?.image}
+        });
+        
+      }
+      else{
+        
+        toast.error(senddetail?.message);
+      }
+  }
+  if(loading) {
+    return (<div>
+          <p> Loading ...</p>
+    </div>)
+  }
   return (
     <div
-      className={`border-[1px] border-[#D9D9D9] px-8  py-4 lg:w-2/3
+      className={`border-[1px] border-[#D9D9D9] px-8  py-4 
      
       
        ${className} `}
@@ -47,9 +111,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="fname"
+              id="firstname"
               placeholder=""
-              name="fname"
+              name="firstname"
               label=" First Name"
               register={register}
               errors={errors}
@@ -60,9 +124,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="lname"
+              id="lastname"
               placeholder=""
-              name="lname"
+              name="lastname"
               label=" Last Name"
               register={register}
               errors={errors}
@@ -103,9 +167,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="dob"
+              id="dateofbirth"
               placeholder=""
-              name="dob"
+              name="dateofbirth"
               label=" Date Of Birth"
               register={register}
               errors={errors}
@@ -116,9 +180,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="tob"
+              id="timeofbirth"
               placeholder=""
-              name="tob"
+              name="timeofbirth"
               label=" Time Of Birth"
               register={register}
               errors={errors}
@@ -131,9 +195,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="bplace"
+              id="birthplace"
               placeholder=""
-              name="bplace"
+              name="birthplace"
               label="Birth Place"
               register={register}
               errors={errors}
@@ -144,9 +208,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[50px]  text-[16px] font-bold "
               type="text"
-              id="mstatus"
+              id="maritalstatus"
               placeholder=""
-              name="mstatus"
+              name="maritalstatus"
               label=" Marital Status"
               register={register}
               errors={errors}
@@ -159,9 +223,9 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Input
               className=" h-[150px]  text-[16px] font-bold "
               type="text"
-              id="toc"
+              id="topicofconcern"
               placeholder=""
-              name="toc"
+              name="topicofconcern"
               label=" Topic Of Concern"
               register={register}
               errors={errors}
@@ -173,7 +237,8 @@ const CallIntakeForm = ({ text, className }: Props) => {
             <Button
               type="submit"
               className="bg-gradient-to-b from-[#FF7646]  to-[#FF0600] text-[16px] font-[500] text-white"
-              btnText="Start Call With Anupam "
+              btnText= {" Start " + type + " With " + name}
+              isLoading={btnloading ? true : false}
             />
           </div>
         </div>

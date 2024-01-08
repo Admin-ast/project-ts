@@ -208,7 +208,7 @@ function Index() {
         </div>
       </Section>
       <ConnectCard />
-      <SignsCard />
+      <SignsCard  />
 
       <Compatibility horoscopeType="Aries" />
       <Faq faqDetail={faqsDetail} />

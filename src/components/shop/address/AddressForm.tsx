@@ -1,25 +1,52 @@
+'use client';
 import Section from "@/components/Section";
 import { Button, Form, Input } from "@/components/forms";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import CountryCodes from "./CountryCodes";
+import { postFetcher } from "@/service";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/navigation';
+
 const AddressForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
+  const {push} = useRouter();
   const onSubmit = (data: FormData) => {
     console.log(data);
+
+    const savedata = async() => {
+      const saveaddress = await postFetcher('/address/save', JSON.stringify(data));
+      console.log(saveaddress);
+      if(saveaddress?.status){
+          toast.success('Successfully saved address');
+          push('/shop/checkout');
+
+      }
+      else{
+        toast.error('Failed to save address');
+      }
+    }
+
+    savedata();
+
+
   };
 
   return (
-    <div className=" pb-[30px]">
+    <div className="pb-[30px]">
       <Section>
         <div className="flex items-center justify-evenly rounded-[20px] bg-white  shadow-xl ">
           <div className="p-5 ">
+            <p className="text-center font-[Georgia] text-[22px] font-bold">
+              Add New Address
+            </p>
             <Form onSubmit={handleSubmit(onSubmit)}>
-              <div className="  gap-[30px]   md:flex lg:flex">
+              <div className=" gap-[30px]   md:flex lg:flex">
                 <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     placeholder="Enter name"
@@ -30,7 +57,7 @@ const AddressForm = () => {
                     name="name"
                     errors={errors}
                     required="Name is required"
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="flex gap-5 md:w-1/3 md:gap-1 lg:w-1/3">
@@ -39,12 +66,12 @@ const AddressForm = () => {
                     label="Mobile Number:"
                     register={register}
                     type="number"
-                    id="mobNumber"
-                    name="mobNumber"
+                    id="mobileno"
+                    name="mobileno"
                     errors={errors}
                     required="Mobile Number is required"
                     placeholder={"Enter mobile no."}
-                    className=" !rounded-md "
+                    className="!rounded-md "
                   />
                 </div>
                 <div className="flex gap-5 md:w-1/3 md:gap-1 lg:w-1/3">
@@ -53,12 +80,12 @@ const AddressForm = () => {
                     label="Alternative Number: "
                     register={register}
                     type="number"
-                    id="altNumber"
-                    name="altNumber"
+                    id="alternative"
+                    name="alternative"
                     errors={errors}
                     required=""
                     placeholder={"Enter alternative mobile no."}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
               </div>
@@ -73,20 +100,20 @@ const AddressForm = () => {
                     errors={errors}
                     required="Email id is required"
                     placeholder={"Enter email id"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="md:w-1/3 lg:w-1/3">
                   <Input
                     label="Flat No:"
-                    name={"flat"}
+                    name={"flatno"}
                     register={register}
                     type="text"
-                    id="flat"
+                    id="flatno"
                     errors={errors}
                     required="Flat No. is required"
                     placeholder={"Flat No/Building No / House No"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="md:w-1/3 lg:w-1/3">
@@ -99,7 +126,7 @@ const AddressForm = () => {
                     errors={errors}
                     required="Locality is required"
                     placeholder={"Locality"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
               </div>
@@ -115,7 +142,7 @@ const AddressForm = () => {
                     errors={errors}
                     required="City is required"
                     placeholder={"City"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="md:w-1/3 lg:w-1/3">
@@ -128,7 +155,7 @@ const AddressForm = () => {
                     errors={errors}
                     required="State is required"
                     placeholder={"State"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="md:w-1/3 lg:w-1/3">
@@ -141,7 +168,7 @@ const AddressForm = () => {
                     errors={errors}
                     required="Country is required"
                     placeholder={"Country"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
               </div>
@@ -157,7 +184,7 @@ const AddressForm = () => {
                     errors={errors}
                     required="PinCode is required"
                     placeholder={"Postal Code/Pincode"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
                 <div className="md:w-1/3 lg:w-1/3">
@@ -169,7 +196,7 @@ const AddressForm = () => {
                     id="landmark"
                     errors={errors}
                     placeholder={"Landmark (Optional)"}
-                    className=" !rounded-md "
+                    className="!rounded-md"
                   />
                 </div>
               </div>
@@ -177,7 +204,7 @@ const AddressForm = () => {
                 <Button
                   type="submit"
                   btnText="Save Address"
-                  className="bg-gradient-to-b from-[#fb7038] to-[#df625b] font-bold text-white md:px-[100px] lg:px-[100px]"
+                  className="bg-[#D3B160] font-bold md:px-[100px] lg:px-[100px]"
                 />
               </div>
             </Form>

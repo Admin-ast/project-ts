@@ -8,12 +8,12 @@ type Props = {
 
 const GalleryImageCard = ({ Pending }: Props) => {
   return (
-    <div className="mx-auto">
+    <div className="">
       <div className="">
         <img src="/assets/appointment/live-astro.png" alt="" className="" />
       </div>
 
-      <div className="flex items-center  justify-between rounded-b-[15px] bg-[#DC6563] px-2 text-white">
+      <div className="flex items-center justify-between rounded-b-[15px] bg-[#DC6563] px-2">
         <div className="flex items-center gap-2">
           <p className="">{Pending}</p>
           <p className="text-red-700">

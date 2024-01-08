@@ -15,11 +15,11 @@ const links: Links[] = [
   },
   {
     name: "Talk To Astrologer",
-    url: "/talk-to-astrologer/talk-to-astrologer",
+    url: "/talk-to-astrologer",
   },
   {
     name: "Chat With Astrologer",
-    url: "/chat-with-astrologer/chat-with-astrologer",
+    url: "/chat-with-astrologer",
   },
   {
     name: "AstrosevaTalk +",

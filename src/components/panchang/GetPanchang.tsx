@@ -43,127 +43,31 @@ function GetPanchang({}: Props) {
       lon: getValues("lon"),
       tzone: getValues("tzone"),
     });
-    // const basicPanchang = async () => {
-    //   const result = await postFetcher("/panchang/basic-panchang", bodyData);
-    //   const data = result?.res ? JSON.parse(result?.res) : "";
-    //   setBasicPanchang(data);
-    // };
-
     const basicPanchang = async () => {
-      try {
-        const result = await postFetcher("/panchang/basic-panchang", bodyData);
-        console.log("Result from /panchang/basic-panchang:", result);
-
-        if (result?.res) {
-          console.log(
-            "Raw response from /panchang/basic-panchang:",
-            result?.res
-          );
-
-          // Check if the response is already an object
-          const data =
-            typeof result?.res === "object"
-              ? result.res
-              : JSON.parse(result?.res);
-
-          console.log("Parsed data from /panchang/basic-panchang:", data);
-
-          setBasicPanchang(data);
-        } else {
-          console.error("No valid response data found.");
-        }
-      } catch (error) {
-        console.error("Error in /panchang/basic-panchang request:", error);
-      }
+      const result = await postFetcher("/panchang/basic-panchang", bodyData);
+      const data = result?.res ? result?.res : "";
+      setBasicPanchang(data);
     };
-
     const ashubhaMuhurat = async () => {
-      try {
-        const result = await postFetcher("/panchang/ashubhaMuhurat", bodyData);
-        console.log("Result from /panchang/ashubhaMuhurat:", result);
-
-        if (result?.res) {
-          console.log(
-            "Raw response from /panchang/ashubhaMuhurat:",
-            result?.res
-          );
-
-          // Check if the response is already an object
-          const data =
-            typeof result?.res === "object"
-              ? result.res
-              : JSON.parse(result?.res);
-
-          console.log("Parsed data from /panchang/ashubhaMuhurat:", data);
-
-          const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
-          setAshubhaMuhurat({
-            abhijit_muhurta,
-            rahukaal,
-            guliKaal,
-            yamghant_kaal,
-          });
-        } else {
-          console.error("No valid response data found.");
-        }
-      } catch (error) {
-        console.error("Error in /panchang/ashubhaMuhurat request:", error);
-      }
+      const result = await postFetcher("/panchang/ashubhaMuhurat", bodyData);
+      const data = result?.res ? result?.res : "";
+      // console.log(data);
+      const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
+      setAshubhaMuhurat({ abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal });
     };
-
-    // const ashubhaMuhurat = async () => {
-    //   const result = await postFetcher("/panchang/ashubhaMuhurat", bodyData);
-    //   const data = result?.res ? JSON.parse(result?.res) : "";
-    //   // console.log(data);
-    //   const { abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal } = data;
-    //   setAshubhaMuhurat({ abhijit_muhurta, rahukaal, guliKaal, yamghant_kaal });
-    // };
-    // const chalitChart = async () => {
-    //   const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
-    //   if (chalit.status) {
-    //     console.log(JSON.parse(chalit?.res));
-    //     setChalitChart(JSON.parse(chalit?.res));
-    //   }
-    // };
     const chalitChart = async () => {
-      try {
-        const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
-        if (chalit.status) {
-          console.log(chalit?.res); // Log the SVG string
-          setChalitChart(chalit?.res);
-        }
-      } catch (error) {
-        console.error("Error in /horo_chart_image/chalit request:", error);
+      const chalit = await postFetcher("/horo_chart_image/chalit", bodyData);
+      if (chalit.status) {
+
+        setChalitChart(chalit?.res);
       }
     };
-
-    // const planetPosSun = async () => {
-    //   const result = await postFetcher("/panchang/planetPos", bodyData);
-    //   const data = result?.res ? JSON.parse(result?.res) : "";
-    //   console.log(data);
-    //   setPlanetPos(data);
-    // };
-
     const planetPosSun = async () => {
-      try {
-        const result = await postFetcher("/panchang/planetPos", bodyData);
-        console.log("Result from /panchang/planetPos:", result);
-
-        if (result?.res) {
-          console.log("Raw response from /panchang/planetPos:", result?.res);
-
-          const data = JSON.parse(result?.res);
-          console.log("Parsed data from /panchang/planetPos:", data);
-
-          setPlanetPos(data);
-        } else {
-          console.error("No valid response data found.");
-        }
-      } catch (error) {
-        console.error("Error in /panchang/planetPos request:", error);
-      }
+      const result = await postFetcher("/panchang/planetPos", bodyData);
+      const data = result?.res ? result?.res : "";
+      console.log(data);
+      setPlanetPos(data);
     };
-
     chalitChart();
     planetPosSun();
     basicPanchang();

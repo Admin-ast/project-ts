@@ -1,15 +1,22 @@
-import React from "react";
+import React, {Key, useState} from "react";
 import HistoryCard from "../HistoryCard";
 import Sidebar from "../Sidebar";
+import { getFetcher } from "@/service";
+import { useEffect } from "react";
 
-type Props = {};
 
-const CallingHistory = (props: Props) => {
+type Props = {
+  getusercalls:any;
+};
+const CallingHistory = ({getusercalls}: Props) => {
+    
+
+
   return (
     <div className="">
       <div
-        className="from-0%
-     to-68% h-[78px] w-full bg-gradient-to-b  from-[#ee6522cc] to-[#d12627cc]"
+        className="h-[78px]
+     w-full bg-[#d12627cc]"
       ></div>
       <div className="lg:flex">
         <div className="lg:w-1/4">
@@ -17,98 +24,46 @@ const CallingHistory = (props: Props) => {
         </div>
         <div className="mt-[45px] text-center lg:w-3/4">
           {" "}
-          <span className="mt-[45px] rounded-[43px] bg-[#DC6563]  px-10 py-4 text-xl font-bold text-white ">
+          <span className="mt-[45px] rounded-[43px] bg-[#CF2927]  px-16 py-4 text-xl font-bold text-white lg:px-[300px]">
             CALLING HISTORY
           </span>
           <div className="mt-[30px] grid gap-[45px] md:grid-cols-2 lg:grid-cols-3 ">
-            <div className="shadow-2xl ">
+            {console.log(getusercalls[0].start.slice(0,10))}
+            
+          {getusercalls.map((item: any, index: Key) => (
+           
+
+                
+<div className="shadow-2xl ">
               <HistoryCard
+              key={index}
                 New="New"
-                country="India"
+                country={item?.country}
                 offer="Offer Applied"
-                order={12345}
-                name="Rashi"
-                rs={21.6}
-                gender="female"
-                dob="30-08-1995"
-                pob="panipat,haryana"
+                order={item?._id}
+                name={item?.name}
+                rs={item?.amount}
+                gender={item?.gender}
+                dob={item?.dateofbirth}
+                pob={item?.birthplace}
                 copy="copy"
-                orderDate="20 jul 2023"
-                orderTime="11:33PM"
-                duration="20 minutes"
-                rate="7.2/minutes"
-                status="completed"
+                orderDate={item?.start.slice(0,10)}
+                orderTime={item?.start.slice(11,19)}
+                duration={item?.duration}
+                rate={item?.rate}
+                status={item?.status}
                 btn1="Suggest Remedy"
                 btn2="Refund Amount"
                 btn3="Open Kundli"
               />
-            </div>
-            <div className="shadow-2xl">
-              <HistoryCard
-                New="New"
-                country="India"
-                offer="Offer Applied"
-                order={12345}
-                name="Rashi"
-                rs={21.6}
-                gender="female"
-                dob="30-08-1995"
-                pob="panipat,haryana"
-                copy="copy"
-                orderDate="20 jul 2023"
-                orderTime="11:33PM"
-                duration="20 minutes"
-                rate="7.2/minutes"
-                status="completed"
-                btn1="Suggest Remedy"
-                btn2="Refund Amount"
-                btn3="Open Kundli"
-              />
-            </div>
-            <div className="shadow-2xl ">
-              <HistoryCard
-                New="New"
-                country="India"
-                offer="Offer Applied"
-                order={12345}
-                name="Rashi"
-                rs={21.6}
-                gender="female"
-                dob="30-08-1995"
-                pob="panipat,haryana"
-                copy="copy"
-                orderDate="20 jul 2023"
-                orderTime="11:33PM"
-                duration="20 minutes"
-                rate="7.2/minutes"
-                status="completed"
-                btn1="Suggest Remedy"
-                btn2="Refund Amount"
-                btn3="Open Kundli"
-              />
-            </div>
-            <div className="shadow-2xl ">
-              <HistoryCard
-                New="New"
-                country="India"
-                offer="Offer Applied"
-                order={12345}
-                name="Rashi"
-                rs={21.6}
-                gender="female"
-                dob="30-08-1995"
-                pob="panipat,haryana"
-                copy="copy"
-                orderDate="20 jul 2023"
-                orderTime="11:33PM"
-                duration="20 minutes"
-                rate="7.2/minutes"
-                status="completed"
-                btn1="Suggest Remedy"
-                btn2="Refund Amount"
-                btn3="Open Kundli"
-              />
-            </div>
+            
+                  </div>
+             
+            
+            ))};
+            
+            
+            
           </div>
         </div>
       </div>

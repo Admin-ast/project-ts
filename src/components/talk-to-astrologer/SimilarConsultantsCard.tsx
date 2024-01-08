@@ -3,10 +3,11 @@ import React from "react";
 
 type Props = {
   name: string;
+  image: string;
   spec: string;
 };
 
-const SimilarConsultantsCard = ({ name, spec }: Props) => {
+const SimilarConsultantsCard = ({ name, image, spec }: Props) => {
   return (
     <div className="flex h-[174px] w-[186px]  items-center justify-center rounded-[20px] shadow-lg">
       <div className="">

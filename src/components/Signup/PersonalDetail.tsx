@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Checkbox, Form, Input } from "../forms";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import OtpInput from "react-otp-input";
 import { postFetcher } from "@/service";
+import { PhoneAuthProvider, RecaptchaVerifier, getAuth, onAuthStateChanged, signInWithCredential, signInWithPhoneNumber } from 'firebase/auth';
+import firebase from 'firebase/compat/app';
+import { useAuth } from "../contexts/AuthProvider";
 
 type Props = {
   setActiveId: any;
@@ -21,6 +24,35 @@ function PersonalDetail({
   const [otpValue, setOtpValue] = useState<any>();
   const [personalInfo, setPersonalInfo] = useState<any>();
   const [error, setError] = useState<string>();
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [verificationCode, setVerficationCode] = useState('');
+  const [recaptcha, setrecaptcha] = useState('');
+  const [verificationId, setVerficationId] = useState('');
+  const [token, setToken] = useState('');
+  const [signed, setSigned] = useState(false);
+  const [confirm, setConfirm] = useState(false);
+  const [otpsend, setOtpsend] = useState(false);
+  const [buttontext, setButtontext] = useState('');
+ 
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyCB1gF8RPB2MkMMSq1FBeOw61VOHdoqp7Y",
+
+    authDomain: "astrotalk-3ed3b.firebaseapp.com",
+
+    projectId: "astrotalk-3ed3b",
+
+    storageBucket: "astrotalk-3ed3b.appspot.com",
+
+    messagingSenderId: "871346163694",
+
+    appId: "1:871346163694:web:4bc8bfa2e316529fd508ff",
+
+    measurementId: "G-JZ1Z6JRJ06"
+
+  };
+
+  firebase.initializeApp(firebaseConfig);
 
   const FormSchema = yup.object().shape({
     name: yup
@@ -67,6 +99,35 @@ function PersonalDetail({
   const onSubmit = async (data: any) => {
     setPersonalInfo(data);
     const body = JSON.stringify({ mobileNumber: data.mobileNumber });
+    const phone = "+91" + data.mobileNumber;
+    setPhoneNumber(data.mobileNumber);
+    setButtontext('hidden');
+    setOtpsend(true);
+    const recaptchaVerfier = new RecaptchaVerifier(getAuth(), 'send-code-button', { size: 'invisible' });
+
+    onAuthStateChanged(getAuth(), (userCred) => {
+      userCred?.getIdToken().then((token) => {
+        window.localStorage.setItem('auth', 'true');
+        
+        setToken(token);
+      }
+
+      );
+    });
+        signInWithPhoneNumber(getAuth(), phone, recaptchaVerfier)
+      .then((verificationId) => {
+        console.log('confirmation : ' +   JSON.stringify(verificationId));
+        
+        setVerficationId(verificationId.verificationId);
+        setMobileNumber(data.mobileNumber);
+        setPersonalInfo(data);
+        setShowOtp(true);
+        setOtpsend(false);
+      })
+      .catch((error) => {
+
+        console.error(error);
+      });
     // const result = await ("/otp/generate-otp", body);
     // if (result.msg  === "Otp has been sent successfully on your mobile number") {
     //   setPersonalInfo(data);
@@ -82,33 +143,72 @@ function PersonalDetail({
   };
 
   const onOtpSubmit = async () => {
+    console.log('otpsubmit' + verificationId + " otpvalue " + otpValue);
     try {
       const body = JSON.stringify({
         otp: otpValue,
         mobileNumber: personalInfo.mobileNumber,
       });
-      const result = await postFetcher("/otp/verify-otp", body);
-      if ((result.msg = "Otp verified successfully")) {
-        const body = JSON.stringify(personalInfo);
-        const response = await postFetcher("/astrologer/register", body);
-        if (response.msg === "added successfully") {
-          setCandidateDetails(response?.candidate);
-          setActiveId(2);
-        } else {
-          setError("Please try after sometime");
+
+      var credential = PhoneAuthProvider.credential(verificationId, otpValue);
+      const result = await signInWithCredential(getAuth(), credential).then(
+        () => {
+          setSigned(true);
+          
         }
+      ).catch(
+        (error) => {
+          console.log("serror" + error);
+         // toast.error("Otp Not Matched");
+        }
+      );
       }
-    } catch (err) {
-      console.log(err);
+      catch(error){
+        console.log(error);
+      }
     }
-  };
+      
+      useEffect(() => {
+        if(signed){
+        const body = JSON.stringify({
+          mobileNumber: phoneNumber,
+          token:token
+        });
+
+        const verify = async() => {
+      
+       const result = await postFetcher("/otp/verify-otp", body);
+        
+       if (result.status) {
+
+         const body = JSON.stringify(personalInfo);
+         console.log('otp  verified' + body);
+         const response = await postFetcher("/astrologer/register", body);
+         if (response.msg === "added successfully") {
+          console.log('registerd');
+           setCandidateDetails(response?.candidate);
+           setActiveId(2);
+         } else {
+          setError("Please try after sometime");
+         }
+       }
+      }
+
+      verify();
+    }
+      },[signed]);
+      
+ 
 
   return (
     <>
       {!showOtp ? (
         <div className="mx-auto max-w-sm rounded-xl bg-white p-8 shadow-xl">
+          
           <Form onSubmit={handleSubmit(onSubmit)}>
+            {!otpsend ? (
             <div className="space-y-8">
+              
               <Input
                 type="string"
                 id="name"
@@ -147,12 +247,18 @@ function PersonalDetail({
               >
                 I agree to the Terms And Conditions*
               </Checkbox>
-              <Button
-                className="mx-auto rounded-lg bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-2 text-lg font-bold text-white"
+              </div>
+              ) : (
+                <div>                <h3 className="text-center"> Sending Otp ....</h3>
+              
+              </div>
+              )}
+            <Button id="send-code-button"
+                className={"mx-auto rounded-lg bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-2 text-lg font-bold text-white" + buttontext}
                 btnText="GET OTP "
               />
-            </div>
           </Form>
+          
         </div>
       ) : (
         <div className="mx-auto max-w-xl space-y-6 rounded-xl bg-[#FFF7E5] p-8">

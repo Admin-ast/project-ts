@@ -35,9 +35,8 @@ function Input({
   return (
     <div className="relative">
       <div className="relative space-y-2">
-        <label htmlFor={id} className="text-base font-bold">
+        <label htmlFor={id} className="text-base">
           {label}
-          {/* <span className="text-lg text-red-600">*</span> */}
         </label>
         <input
           type={type}

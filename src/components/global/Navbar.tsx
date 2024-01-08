@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Section from "../Section";
@@ -9,11 +10,14 @@ import TemporaryDrawer from "../common/Drawer";
 // @ts-ignore
 import Cookies from "js-cookie";
 import NavMobileData from "../NavMobileData";
-import { useRouter } from "next/router";
 import { FaBars, FaUserAlt } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import CartDrawer from "../shop/minicart/CartDrawer";
 import MainPage from "../shop/minicart/MainPage";
+import { usePathname } from 'next/navigation';
+import { useCart } from '@/components/shop/context/ShopContext';
+import { useAuth } from "../contexts/AuthProvider";
+import { useRouter } from "next/navigation";
 declare global {
   interface Window {
     googleTranslateElementInit: () => void;
@@ -34,11 +38,13 @@ type Links = {
 
 function Navbar({}: Props) {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
-  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null);
-  const [isLogged, setIsLogged] = useState(false);
-  const [horoScopeOpen, setHoroScopeOpen] = useState(false);
+
+  const { isOpen, setIsOpen, isLogged, setIsLogged } = useCart(); 
+  const { isuserLogged, setuserIsLogged } = useAuth();
+   const [horoScopeOpen, setHoroScopeOpen] = useState(false);
+
   const [languageOpen, setLanguageOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const accessToken = Cookies.get("accessToken");
@@ -52,6 +58,7 @@ function Navbar({}: Props) {
     Cookies.remove("refreshToken");
     toast.success("Logout successfully");
     setIsLogged(false);
+    setuserIsLogged(true);
   };
 
   const toggleHoroscope = () => {
@@ -80,6 +87,7 @@ function Navbar({}: Props) {
   const toggleLogin = () => {
     setIsLogged((prev) => !prev);
   };
+
   const GoogleTranslateComponent = () => {
     useEffect(() => {
       const checkIfScriptExists = document.getElementById(
@@ -123,7 +131,7 @@ function Navbar({}: Props) {
       <div className="sticky top-0 z-10 w-full bg-white shadow-xl ">
         <Section>
           <div className="flex items-center  py-2 px-2">
-            <div className="block cursor-pointer text-[16px] lg:hidden ">
+            <div className="block cursor-pointer text-[16px] lg:hidden">
               <TemporaryDrawer
                 content={<NavMobileData />}
                 anchor="left"
@@ -132,7 +140,7 @@ function Navbar({}: Props) {
             </div>
 
             <div className="">
-              <Link href="/" className="text-2xl  ">
+              <Link href="/" className="text-2xl ">
                 <div className="flex items-center justify-center gap-[7px] md:justify-start">
                   <div className="l w-full">
                     <Image
@@ -149,9 +157,23 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full ">
-              <div className=" mt-[10px] hidden justify-end gap-x-5 text-[17px]  lg:flex">
+              <div className="mt-[10px] hidden justify-end gap-x-5 text-[17px]  lg:flex">
+              {isuserLogged ? 
                 <Link href="/free-kundli">Free Kundli</Link>
+                :<Link href="#" onClick={() => {
+                  setIsOpen(true);
+                }}>Free Kundli</Link>
+              }
+              {isuserLogged ?
                 <Link href="/kundli-matching">Kundli Matching</Link>
+                : <Link href="#"  onClick={() => {
+                  setIsOpen(true);
+                }}>Kundli Matching</Link>
+                }
+                {/* <Link href="live-astrologer/live-astrologer">
+                  Live Astrologers
+                </Link> */}
+                {/* <Link href="/horoscope/today">Horoscope</Link> */}
 
                 <ul className="">
                   <li
@@ -181,7 +203,7 @@ function Navbar({}: Props) {
                               onClick={toggleHoroscope}
                               className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
-                              <Link href="/horoscope/daily">{`Today's Horroscope`}</Link>
+                              <Link href="/horoscope/daily">Today's Horoscope</Link>
                             </li>
 
                             <li
@@ -210,7 +232,7 @@ function Navbar({}: Props) {
                             </li>
                             <li
                               onClick={toggleHoroscope}
-                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
+                              className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]"
                             >
                               <Link href="/horoscope/daily">
                                 Daily Horoscope
@@ -247,8 +269,10 @@ function Navbar({}: Props) {
                   </li>
                 </ul>
                 <ul className="">
-                  <GoogleTranslateComponent />
+                <GoogleTranslateComponent />
                 </ul>
+
+                {/* <Link href="/muhurat">Shubh Muhurat</Link> */}
 
                 <div className=" flex   text-base  ">
                   {!isLogged ? (
@@ -258,27 +282,31 @@ function Navbar({}: Props) {
                       }}
                     >
                       {/* <div className="flex rounded-[17px] bg-[#DC6563] transform hover:translate-y-[-5px] transition-transform duration-300 ease-out px-2 py-[4px] text-white"> */}
-                      <div className="flex transform gap-2 rounded-[17px] bg-[#DC6563]  px-3 text-[16px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563] ">
+                      <div className="flex transform gap-2 rounded-[17px] bg-[#DC6563]  px-3 text-[16px] text-white transition-transform duration-300 ease-out hover:translate-y-[-5px] hover:bg-[#DC6563]">
                         <div className="flex items-center  py-2  ">
                           <FaUserAlt />
+                          {/* <Image
+                        src="/assets/home/user-icon.png"
+                        alt={"chat-icon"}
+                        width={20}
+                        height={15}
+                        loading={"lazy"}
+                        className="w-full object-contain "
+                      /> */}
                         </div>
-                        <p className="flex items-center ">Login</p>
+                        <p className="flex items-center">Login</p>
                       </div>
                     </button>
                   ) : (
                     <PopoverComp
-                      button={
-                        <Image
+                        button={<Image
                           src="/assets/home/user.svg"
                           alt={"chat-icon"}
                           width={30}
                           height={40}
                           loading={"lazy"}
-                          className="w-full rounded-full border-[1px] border-[#DC6563] object-contain"
-                        />
-                      }
-                      content={
-                        <div className="flex flex-col gap-2 whitespace-nowrap px-5 py-5 text-left font-normal text-[black] ">
+                          className="w-full rounded-full border-[1px] border-[#DC6563] object-contain" />}
+                        content={<div className="flex flex-col gap-2 whitespace-nowrap px-5 py-5 text-left font-normal text-[black] ">
                           <Link href="/notification">
                             <div className="cursor-pointer">Notificaton</div>
                           </Link>
@@ -307,19 +335,17 @@ function Navbar({}: Props) {
                               Logout From Other Devices
                             </div>
                           </Link>
-                        </div>
-                      }
-                    />
+                        </div>}                     />
                   )}
 
                   <div className="mt-2">{/* <MainPage /> */}</div>
                 </div>
               </div>
               <div className="  mt-[10px] mb-[10px] hidden justify-end gap-x-8 text-[17px]  lg:flex  ">
-                <Link href="/chat-with-astrologer/chat-with-astrologer">
+                <Link href="/chat-with-astrologer">
                   Chat with Astrologer
                 </Link>
-                <Link href="/talk-to-astrologer/talk-to-astrologer">
+                <Link href="/talk-to-astrologer">
                   Talk to Astrologer
                 </Link>
                 <Link href="/shop/shop">Astroseva Shop</Link>

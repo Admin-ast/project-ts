@@ -7,7 +7,7 @@ interface ChatBubbleProps {
 
 const ChatBubble = ({ text, isSender }: ChatBubbleProps) => {
   const containerClass = isSender ? "self-end" : "self-start";
-  const bubbleClass = isSender ? "bg-[#DC6563] " : "bg-gray-200 text-gray-800";
+  const bubbleClass = isSender ? "bg-[#F9D101] " : "bg-gray-200 text-gray-800";
 
   return (
     <div className={`flex ${containerClass} mb-2 flex-row-reverse`}>

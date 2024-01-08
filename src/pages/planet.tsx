@@ -26,6 +26,7 @@ const Muhurat = (props: Props) => {
       </div>
       <Planets />
       <Store />
+      {/* <PlanetsCard /> */}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 type Props = {};
@@ -18,7 +19,7 @@ const HeaderNav = (props: Props) => {
     setActiveLink(link === activeLink ? "" : link);
   };
   return (
-    <div className=" font-bold md:flex lg:flex ">
+    <div className=" flex font-bold ">
       {links.map((link, index) => (
         <button
           key={index}

@@ -1,3 +1,4 @@
+"use client";
 // components/CountryCodeSelect.tsx
 
 import React from "react";

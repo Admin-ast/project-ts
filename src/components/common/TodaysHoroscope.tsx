@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Section from "../Section";
 import { Swiper, SwiperSlide } from "swiper/react";

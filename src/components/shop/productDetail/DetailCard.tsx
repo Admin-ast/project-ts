@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
@@ -12,139 +13,169 @@ import {
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { SiTelegram } from "react-icons/si";
-type Props = {};
+import setDate from "date-fns/setDate";
+import { postFetcher } from "@/service";
+import { useCart } from "../context/ShopContext";
+import { toast } from "react-toastify";
 
-const DetailCard = (props: Props) => {
+
+const DetailCard = (props: any) => {
+  
   const [quantity, setQunatity] = useState(1);
+  const price = props?.props?.price;
+  const priceid = props?.props?.id;
+  const productname = props?.props?.name;
+  const image = props?.props?.image;
+  const [totalPrice, setTotalPrice] = useState(price);
+  const [baseprice, setBaseprice] = useState(price);
+  const [id, setId] = useState(priceid);
+  const [name, setName] = useState(productname);
+  const [img, setImg] = useState(image);
+
+
+
+  //setId(props.props.id);
+  const product = props?.props;
+  const { addToCart } = useCart();
 
   const handleInc = () => {
+    
     setQunatity(quantity + 1);
+    setTotalPrice((quantity +1) * price);
+    
   };
   const handleDec = () => {
+    
     setQunatity(quantity - 1);
+    setTotalPrice((quantity - 1) * price);
+    
   };
+
+  const handleAddtocart = (product: {}) => {
+        console.log(quantity);
+        /* const addtocart = async () => {
+           const body = [{
+               product: id,
+               quantity: quantity
+            }]
+            const cart = await postFetcher("/cart/addtocart", JSON.stringify(body));
+            console.log(cart);string
+        } */
+        
+       // addtocart();
+       let addtocartproduct = { id:id, title:name, image:image, price:baseprice, description:'',category:'',quantity:quantity};
+       addToCart(addtocartproduct);
+       toast.success('Product Successfully Added to Cart');
+        console.log('addtocart');
+  }
   return (
     <div className="mt-[40px] px-[25px]">
       <p className="mb-2 text-3xl font-bold md:text-2xl lg:text-3xl">
-        Black Tourmaline Healing Crystal Palm Stone
+        {props?.props?.name}
       </p>
 
       <div className="mb-4 flex items-center gap-5">
+        {props?.props?.hasOwnProperty('sale_price') ? (
+          <div>
         <span className="text-3xl text-[#c0c0c0] line-through">₹ 600</span>
         <span className="text-3xl font-bold text-[#eea112]">₹ 393</span>
+        <span className="">You save:₹ 247 (35%)</span>
+        </div>
+        ) : (<span className="text-3xl font-bold text-[#eea112]">₹ {props?.props?.price}</span>) }
       </div>
-      <span className="">You save:₹ 247 (35%)</span>
+      
+
       <div className="mt-4 flex gap-1">
         <span className="text-xl">
           <AiOutlineCheck />
         </span>
-        <p className="">In stock(can be backoredrd)</p>
+        <p className="">In stock (can be back orederd)</p>
       </div>
       <div className="mt-10">
-        <p className="text-xl">Pre Activated</p>
-        <p className="border-top mt-4 border-2 border-[#949494]"></p>
-        <div className="mt-4 flex gap-5">
-          <p className="text-xl font-bold">Charged and Activated</p>
-          <p className="text-base">₹ 99</p>
-        </div>
+                
         <p className="border-top mt-4 border-[1px] "></p>
 
         <div className="mt-5">
           <p className="">Final total</p>
-          <p className="text-xl font-bold text-[#949494]">₹ 492</p>
+          <p className="text-xl font-bold text-[#949494]">₹ {totalPrice === undefined ? props?.props?.price : totalPrice} </p>
           <div className="mt-5 grid gap-5 lg:flex">
-            <div className=" flex w-[40%] rounded-[15px] border-[1px] md:w-[40%] lg:w-[15%]">
+            <div className=" flex w-[40%] rounded-[15px] border-[1px] md:w-[40%] lg:w-[35%]">
               <button
                 disabled={quantity === 1}
                 onClick={handleDec}
-                className="  border-1 border-r px-3 py-2 text-black hover:bg-teal-900"
+                className="  border-1 border-r px-2 py-2 text-black hover:bg-teal-900"
               >
                 -
               </button>
-              <p className="border-1 border-r px-3 py-2 text-black">
+              <p className="border-1 border-r px-2 py-2 text-black">
                 {quantity}
               </p>
               <button
                 onClick={handleInc}
-                className="px-3 py-2 text-black hover:bg-teal-900"
+                className="border-1 border-r px-2 py-2 text-black hover:bg-teal-900"
               >
                 +
               </button>
             </div>
             <div className="rounded-[5px] bg-teal-900">
-              <button className="px-5 py-3 text-center text-white">
+              <button onClick={handleAddtocart} className="px-5 py-3 text-center text-white">
                 ADD TO CART
               </button>
             </div>
           </div>
-          <div className="mt-5 flex gap-10">
-            <div className="flex gap-2">
-              <span className="text-xl">
-                <IoIosGitCompare />
-              </span>
-              <Link href="/">Compare</Link>
-            </div>
-
-            <div className="flex">
-              <span className="text-xl">
-                <AiOutlineHeart />
-              </span>
-              <Link href="/">ADD TO WISHLIST</Link>
-            </div>
-          </div>
+          
           <p className="mt-4 border-[1px] border-b "></p>
           <div className="mt-5">
             <div className="flex gap-2">
               <p className="">SKU:</p>
-              <p className="text-[#C0C0C0]">12345</p>
+              <p className="text-[#C0C0C0]">{props?.props?.sku_id}</p>
             </div>
             <div className="mt-2 flex gap-2">
               <p className="">Category:</p>
-              <p className="text-[#C0C0C0]">Palm Stone</p>
+              <p className="text-[#C0C0C0]">{props?.props?.category.name}</p>
             </div>
-            <div className="mt-2 flex gap-2">
-              <p className="">Tag:</p>
-              <p className="text-[#C0C0C0]">Black Tourmaline</p>
-            </div>
-            <div className="mt-2 flex gap-3">
+            <p >
+        Short description : 
+      {props?.props?.short_description} </p>
+            <div className="mt-2 flex gap-3 py-3">
               <p className="">Share:</p>
-              <Link href="/">
+              <Link href= {"https://facebook.com/sharer/sharer.php?u=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id}>
                 <span className="text-blue-700">
                   {" "}
                   <FaFacebookF />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href= {"https://twitter.com/intent/tweet?url=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id}>
                 <span className="text-blue-700">
                   {" "}
                   <FaTwitter />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href= {"https://plus.google.com/share?url=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id}>
                 <span className="text-red-700">
                   {" "}
                   <GrMail />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href={"http://pinterest.com/pin/create/button/?url=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id + "&media=" + props?.props?.image + "&description=" + props?.props?.short_description + "class='pin-it-button' count-layout='horizontal'"}>
                 <span className="text-red-700">
                   {" "}
                   <FaPinterest />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href={"https://linkedin.com/shareArticle?url=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id}>
                 <span className="text-blue-700">
                   {" "}
                   <FaLinkedinIn />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href={"https://web.whatsapp.com/send?text=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id } target="blank">
                 <span className="text-green-700">
                   {" "}
                   <FaWhatsapp />
                 </span>
               </Link>
-              <Link href="/">
+              <Link href={"https://telegram.me/share/url?url=https://astrosevatalk.com/shop/shop/product?id=" + props?.props?._id + "&text=" + props?.props?.name}>
                 <span className="text-blue-700">
                   {" "}
                   <SiTelegram />
@@ -155,7 +186,7 @@ const DetailCard = (props: Props) => {
         </div>
       </div>
       <div className=""></div>
-      {/* Replace the following with your product data */}
+      
     </div>
   );
 };

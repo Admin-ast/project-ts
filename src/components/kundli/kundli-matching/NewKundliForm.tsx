@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+"use client";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { numberOptions, monthOptions } from "../../../../utils";
@@ -6,6 +6,8 @@ import { Form, Input, Select } from "@/components/forms";
 import Combo from "@/components/common/Combo";
 import LoveForm from "@/components/shop/lovescore/LoveForm";
 import LoveScore from "@/components/shop/lovescore/LoveScore";
+import { useRouter } from "next/navigation";
+
 
 type Props = {};
 
@@ -16,6 +18,7 @@ function NewKundliForm({}: Props) {
   const [femalePlace, setFemalePlace] = useState<any>("");
   const [femalePlaceName, setFemalePlaceName] = useState<any>("");
   const router = useRouter();
+  const { push } = useRouter();
   const {
     register,
     setValue,
@@ -26,7 +29,7 @@ function NewKundliForm({}: Props) {
   const onSubmit = (data: any) => {
     console.log("data is", JSON.stringify(data));
     localStorage.setItem("match-making", JSON.stringify(data));
-    router.push("kundli-matching/match-making-details");
+    push("kundli-matching/match-making-details");
   };
   useEffect(() => {
     setValue("m_lat", malePlace?.lat);

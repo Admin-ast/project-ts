@@ -30,14 +30,14 @@ const RemediesCard = ({
   btn1,
 }: Props) => {
   return (
-    <div className=" rounded-[15px] border-b-[7px]   border-b-[#DC6563] shadow-md">
+    <div className=" rounded-[15px] border-b-[7px]  border-b-[#DC6563] shadow-md">
       <div className="px-5 py-5 ">
         <div className="flex gap-1">
-          <p className="font-semibold">Category name:</p>
+          <p className="">Category name:</p>
           <p className="text-[#CDB06F]">{`${categoryName}`}</p>
         </div>
 
-        <p className="  text-left font-semibold">
+        <p className="text-sm  font-semibold">
           Product name:{" "}
           <span className="text-[#CDB06F]">{`${productName}`}</span>
         </p>
@@ -69,7 +69,7 @@ const RemediesCard = ({
         </div>
 
         <div className="mt-[20px] text-start">
-          <button className="rounded-[10px] border-[1px] border-[#FF0600]  bg-gradient-to-b from-[#fb7038] to-[#df625b] px-10 py-2 font-semibold text-white">
+          <button className="rounded-[10px] border-[1px] border-[#FF0600]  bg-[#FF7646] px-10 py-2 font-semibold text-white">
             {btn1}
           </button>
         </div>

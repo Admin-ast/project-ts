@@ -15,8 +15,8 @@ const TermsCard = (props: Props) => {
               className="  mx-auto mb-8 "
             />
 
-            <p className=" flex items-center justify-center whitespace-nowrap font-bold ">
-              Terms & Conditions
+            <p className=" whitespace-nowrap text-center font-bold ">
+              Trending Videos
             </p>
           </div>
         </div>

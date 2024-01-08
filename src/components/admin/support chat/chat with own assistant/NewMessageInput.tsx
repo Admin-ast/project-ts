@@ -1,4 +1,3 @@
-// components/NewMessageInput.tsx
 import React, { useState } from "react";
 import { BsChevronDoubleRight } from "react-icons/bs";
 

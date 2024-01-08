@@ -4,7 +4,7 @@ import MyFollowerCard from "./MyFollowerCard";
 
 type Props = {};
 
-const MyFollower = (props: Props) => {
+const MyFollower = (props: any) => {
   return (
     <div className="">
       <div
