@@ -6,8 +6,8 @@ type Props = {};
 function Karna({}: Props) {
   return (
     <Section>
-      <div className="flex flex-col space-y-6 py-8 lg:py-[51px]">
-        <h2 className="mb-[18px] text-center  font-[georgia] text-2xl font-semibold md:text-[36px]">
+      <div className="flex flex-col space-y-6 py-8 ">
+        <h2 className=" text-center  font-[georgia] text-2xl font-semibold md:text-[36px]">
           Karna
         </h2>
         <div className="flex flex-col space-y-4">

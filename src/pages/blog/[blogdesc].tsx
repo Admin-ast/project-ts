@@ -54,7 +54,6 @@ const BlogDesc = (props: Props) => {
   return (
     <>
       <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat ">
-        {/* <Hero text="Blog" icon="" /> */}
         <Section>
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
@@ -64,60 +63,58 @@ const BlogDesc = (props: Props) => {
           </div>
         </Section>
         <div className="">
-          <Section>
-            <div className="gap-[30px] md:flex lg:flex">
-              <div className="  pt-8 md:w-2/3 lg:w-2/3">
-                <div className="">
-                  {/* <Section> */}
-                  {blogde?.map((item: any, index: any) => (
-                    // console.log(item)
-                    <div key={index} className="px-3 md:px-10">
-                      <div className=" flex items-center justify-center text-[32px] font-bold">
-                        {item.text}
-                      </div>
-                      <img
-                        className="  mx-auto my-auto mt-[30px] rounded-[20px] object-cover object-top  "
-                        src={item.img}
-                        alt=""
-                      />
-                      {item.para?.map((itemTwo: any, index: any) => {
-                        return (
-                          <div key={index} className="my-2 text-justify ">
-                            <div className="text-[22px] font-bold">
-                              {findAndReplaceKeywordsInString(
-                                item.keywords,
-                                itemTwo.title
-                              )}
-                            </div>
-                            <div className="">
-                              <span className="font-bold">{itemTwo.head}</span>
-                              {findAndReplaceKeywordsInString(
-                                item.keywords,
-                                itemTwo.para
-                              )}
-                            </div>
-                          </div>
-                        );
-                      })}
+          <div className=" justify-center md:flex lg:flex lg:pl-[100px]">
+            <div className="  pt-8 md:w-3/4 lg:w-2/3">
+              <div className="">
+                {/* <Section> */}
+                {blogde?.map((item: any, index: any) => (
+                  // console.log(item)
+                  <div key={index} className="px-3 md:px-10">
+                    <div className=" flex items-center justify-center text-[32px] font-bold">
+                      {item.text}
                     </div>
-                  ))}
-                  {/* </Section> */}
-                  <div className="">
-                    <BlogStatic />
+                    <img
+                      className="   mt-[30px] rounded-[20px] object-cover object-top  "
+                      src={item.img}
+                      alt=""
+                    />
+                    {item.para?.map((itemTwo: any, index: any) => {
+                      return (
+                        <div key={index} className="my-2 text-justify ">
+                          <div className="text-[22px] font-bold">
+                            {findAndReplaceKeywordsInString(
+                              item.keywords,
+                              itemTwo.title
+                            )}
+                          </div>
+                          <div className="">
+                            <span className="font-bold">{itemTwo.head}</span>
+                            {findAndReplaceKeywordsInString(
+                              item.keywords,
+                              itemTwo.para
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
+                ))}
+                {/* </Section> */}
+                <div className="">
+                  <BlogStatic />
                 </div>
               </div>
-              <div className="md:w-1/3 lg:w-1/3">
-                <DynamicSideNavBlog />
-              </div>
             </div>
-          </Section>
+            <div className=" md:w-1/3 lg:w-1/3">
+              <DynamicSideNavBlog />
+            </div>
+          </div>
         </div>
         <ConnectCard />
         <BlogsBy className="" heading="BLOGS BY JYOTI" subheading="" />
         <RelatedBlogs />
         <RecentBlogs />
-        <CelebrityCustomers />
+        {/* <CelebrityCustomers /> */}
         <Astrologer />
       </div>
     </>

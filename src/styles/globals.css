@@ -351,3 +351,86 @@ menu {
   overflow: hidden;
   height: 49px;
 }
+
+/* ----------------------my css----------- */
+.myBox {
+  border: none;
+
+  width: 310px;
+  height: 225px;
+  overflow: y;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc6563;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: DC6563;
+}
+
+/* Default styles for all views */
+
+/* Scrollbar styles */
+
+/* Media query for tablets (landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .myBox {
+    width: 310px; /* Adjust the width as per your design */
+    height: 225px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .myBox {
+    width: 190px; /* Adjust the width as per your design */
+    height: 225px;
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .myBox {
+    width: 330px;
+    height: 225px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .test {
+    width: 53px; /* Adjust the width as per your design */
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .blogsidebar {
+    padding-left: 50px; /* Adjust the width as per your design */
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .eye {
+    position: absolute;
+    left: 100px; /* Adjust the width as per your design */
+  }
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .blogsidebar {
+    padding-left: 30px;
+  }
+}
+
+.truncate-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

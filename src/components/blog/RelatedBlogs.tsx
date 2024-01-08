@@ -5,7 +5,7 @@ type Props = {};
 
 const RelatedBlogs = (props: Props) => {
   return (
-    <div className="mt-[35px]">
+    <div className="">
       <BlogsBy heading="RELATED BLOGS" subheading="" className="" />
     </div>
   );

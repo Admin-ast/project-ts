@@ -74,7 +74,7 @@ export default function Combo({
         onChange={(e) => locationSelection(e)}
       >
         <div className="relative">
-          <div className="relative w-full cursor-default overflow-hidden text-left focus:!border-none focus:!outline-none focus-visible:ring-0 focus-visible:ring-opacity-0 sm:text-sm">
+
             <Combobox.Input
               className={className}
               displayValue={selected}

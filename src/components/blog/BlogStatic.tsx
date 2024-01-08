@@ -16,31 +16,31 @@ const BlogStatic = (props: Props) => {
     <div className="">
       {/* ----------------------------------Missing spark in marriage--------------------------------------------------------  */}
 
-      <div className="md:pl-10 lg:pl-10">
-        <div className=" mt-[35px]  flex h-[189px] bg-gradient-to-b from-[#ef824c]  to-[#d84f50]  ">
-          <div className="mt-5 w-3/4 px-5 ">
-            <div className="px-2  text-white">
-              <p className="  text-3xl    font-bold ">
-                Missing Spark In Marriage?
-              </p>
-              <p className=" mt-[10px] pl-[50px] text-base">
-                Get solutions from astrologers
-              </p>
-              <div className="mt-[10px] lg:mt-[25px]">
-                <Link href="/chat-with-astrologer/chat-with-astrologer">
-                  <button className="rounded-[10px] bg-white px-2 text-base font-semibold text-black md:py-2 lg:mb-[24px] lg:py-3 lg:px-10  ">
-                    First Chat Free
-                  </button>
-                </Link>
-              </div>
+      <div className="md:pl-5 lg:px-10 ">
+        <div className=" mt-[30px] flex  justify-between  bg-[#FFDCD1] ">
+          <div className=" px-[44px]  py-[40px]  ">
+            <p className="  font-bold lg:text-[35px] ">
+              Facing Problems In Love Life?
+            </p>
+            <p className=" mt-[11px] text-[25px]">
+              Get solutions from astrologers
+            </p>
+            <div className="mt-[10px] lg:mt-[25px]">
+              <Link href="/chat-with-astrologer/chat-with-astrologer">
+                <button className="rounded-[10px] bg-gradient-to-b from-[#ef824c]  to-[#ff0600] px-2 py-1 text-[20px] font-semibold text-white  lg:px-10  ">
+                  First Chat Free
+                </button>
+              </Link>
             </div>
           </div>
-
-          <div className=" w-1/4 bg-white ">
-            <img
-              src="/assets/blog/bloggirl.png"
-              alt="girl"
-              className="h-[189px]"
+          <div className=" bg-white shadow-xl  ">
+            <Image
+              src="/assets/blog/raashi.png"
+              alt="raashi"
+              width={184}
+              height={187}
+              loading={"lazy"}
+              className="  h-full w-full "
             />
           </div>
         </div>
@@ -318,16 +318,18 @@ const BlogStatic = (props: Props) => {
       </div>
 
       {/* --------------------------------------Problems in Marriage---------------------------------------------------------- */}
-      <div className="md:pl-5 lg:px-10">
-        <div className=" mt-[30px] flex h-[189px] justify-between  bg-gradient-to-b from-[#ef824c] to-[#d84f50] ">
-          <div className="mt-5 px-[33px] text-white ">
-            <p className="  font-bold lg:text-[30px] ">Problems in Marriage?</p>
-            <p className=" mt-[11px] text-base">
+      <div className="md:pl-5 lg:px-10 ">
+        <div className=" mt-[30px] flex  justify-between  bg-[#FFDCD1] ">
+          <div className=" px-[44px]  py-[40px]  ">
+            <p className="  font-bold lg:text-[35px] ">
+              Facing Problems In Love Life?
+            </p>
+            <p className=" mt-[11px] text-[25px]">
               Get solutions from astrologers
             </p>
             <div className="mt-[10px] lg:mt-[25px]">
               <Link href="/chat-with-astrologer/chat-with-astrologer">
-                <button className="rounded-[10px] bg-white px-2 py-3 text-base font-semibold text-black lg:mb-[24px] lg:px-10  ">
+                <button className="rounded-[10px] bg-gradient-to-b from-[#ef824c]  to-[#ff0600] px-2 py-1 text-[20px] font-semibold text-white  lg:px-10  ">
                   First Chat Free
                 </button>
               </Link>
@@ -340,7 +342,7 @@ const BlogStatic = (props: Props) => {
               width={184}
               height={187}
               loading={"lazy"}
-              className=" relative right-[60px] top-2 h-full w-full md:right-[90px] lg:right-[90px]"
+              className="  h-full w-full "
             />
           </div>
         </div>
@@ -442,42 +444,6 @@ const BlogStatic = (props: Props) => {
 
       {/* ---------------------------------Connect with astrologer------------------------------------------------------------ */}
 
-      {/* <div className=" bg-white py-[18px] shadow-xl ">
-        <div className=" ">
-          <p className="text-center font-[georgia] text-xl font-bold  ">
-            Connect with an Astrologer on Call or Chat for more personalised
-            detailed predictions.
-          </p>
-        </div>
-        <div className="mt-[30px]  mb-5 flex justify-center md:gap-5 lg:gap-10 ">
-          <div className="w-[190px] rounded-[20px] border-[4px] border-[#DC6563] bg-white shadow-xl ">
-            <div className="">
-              <Image
-                src="/assets/home/icon-01.png"
-                alt="chatIcon"
-                width={100}
-                height={80}
-                className="m-auto"
-              />
-              <p className="text-center font-bold ">Chat with Astrologer</p>
-            </div>
-          </div>
-          <div className="w-[190px] rounded-[20px] border-[4px] border-[#DC6563] bg-white shadow-xl">
-            <div className="">
-              <Image
-                src="/assets/home/icon-02.png"
-                alt="callIcon"
-                width={100}
-                height={80}
-                className="m-auto"
-              />
-              <p className=" w-[171px] text-center text-[16px] font-bold ">
-                Talk to Astrologer
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className=""></div>
     </div>
   );

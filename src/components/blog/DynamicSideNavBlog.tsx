@@ -4,6 +4,8 @@ import { AiFillFire } from "react-icons/ai";
 import { BiCategory } from "react-icons/bi";
 import { GrLanguage } from "react-icons/gr";
 import SideNavFooter from "./SideNavFooter";
+import FooterSideNav from "./FooterSideNav";
+import TodayPanchng from "../panchang/TodayPanchng";
 
 type Props = {};
 
@@ -116,7 +118,7 @@ const DynamicSideNavBlog = (props: Props) => {
           <p className="text-[10px]">Trending Stories</p>
         </div>
       </div>
-      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[316px]" />
+      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
       <div className="mr-6 flex flex-col gap-2 py-5">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
@@ -131,7 +133,7 @@ const DynamicSideNavBlog = (props: Props) => {
           <p className="text-[10px]">Recent Stories</p>
         </div>
       </div>
-      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[316px]" />
+      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
       <div className="mr-6 flex flex-col gap-2 py-5">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
@@ -146,7 +148,7 @@ const DynamicSideNavBlog = (props: Props) => {
           <p className="text-[10px]">Related Stories</p>
         </div>
       </div>
-      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[316px]" />
+      <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
       <div className="mr-6 flex flex-col gap-2 py-5">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
@@ -163,7 +165,7 @@ const DynamicSideNavBlog = (props: Props) => {
             <p className="text-[10px]">Select Topic</p>
           </div>
         </div>
-        <hr className=" mr-5 border border-[#D9D9D9] lg:w-[316px]" />
+        <hr className=" mr-5 border border-[#D9D9D9] lg:w-[250px]" />
         <div className="flex flex-col gap-2">
           {categories.map((item, index) => (
             <Link key={index} href={item?.url}>
@@ -171,22 +173,15 @@ const DynamicSideNavBlog = (props: Props) => {
             </Link>
           ))}
         </div>
-
-        {/* <div className="flex items-center gap-1 pt-5">
-              <GrLanguage size={45} className="" />
-              <div>
-                <p className="text-2xl font-bold">Languages</p>
-                <p className="text-[10px]">Select Language</p>
-              </div>
-            </div>
-            <hr className=" mr-5 w-[216px] border border-[#D9D9D9]" />
-            <div className="flex flex-col gap-2">
-              <p>ALL LANGUAGES</p>
-              <p>HINDI</p>
-              <p>ENGLISH</p>
-            </div> */}
         <div className="">
-          <SideNavFooter
+          <TodayPanchng />
+        </div>
+        <div className="">
+          {/* <SideNavFooter
+            headText="Are You Compatible?"
+            subText="Choose your and your partner's zodiac sign to check compatibility"
+          /> */}
+          <FooterSideNav
             headText="Are You Compatible?"
             subText="Choose your and your partner's zodiac sign to check compatibility"
           />

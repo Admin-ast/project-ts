@@ -72,7 +72,7 @@ function NavMobileData() {
       {links.map((item: Links, index: Key) => (
         <Link key={index} href={item?.url}>
           <p
-            className={`cursor-pointer text-[16px] font-bold text-white ${
+            className={`cursor-pointer text-[16px]  font-bold text-white ${
               router.pathname === item.url
                 ? "underline decoration-[#DC6563] underline-offset-8"
                 : ""
@@ -80,6 +80,7 @@ function NavMobileData() {
           >
             {item.name}
           </p>
+          <div className="w-full  border-b-[1px] border-[#D9D9D9] py-[1px] "></div>
         </Link>
       ))}
     </div>

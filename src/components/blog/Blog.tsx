@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import Section from "../Section";
-import { FaSearch } from "react-icons/fa";
+import { FaEye, FaSearch } from "react-icons/fa";
 import Link from "next/link";
 import { card } from "../../../utils/list";
 import SideNavBlog from "./SideNavBlog";
 
-type Props = {};
+type Props = {
+  count: string;
+};
 
-const Blog = (props: Props) => {
-  const itemsPerPage = 10;
+const Blog = ({ count }: Props) => {
+  const itemsPerPage = 24;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(card.length / itemsPerPage);
@@ -48,18 +50,22 @@ const Blog = (props: Props) => {
             <p>Let’s find what you are looking for</p>
           </div>
           <hr className=" w-full  border border-[#D9D9D9] shadow-xl" />
-          <div className="gap-5 pt-6  md:grid md:grid-cols-1  md:px-16  lg:grid lg:grid-cols-3 lg:px-1 lg:pr-[50px] ">
+          <div className="gap-5 px-6 pt-6  md:grid md:grid-cols-1  md:px-16  lg:grid lg:grid-cols-3 lg:px-1 lg:pr-[50px] ">
             {currentItems.map((item, index) => (
               <Link
                 key={index}
                 href={`/blog/${item?.id}`}
-                className="mt-5 rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
+                className="relative mt-5 rounded-[20px] border-r-[3px] border-b-[3px] border-[#DC6563] bg-white shadow-xl"
               >
                 <img
                   className=" w-full   rounded-t-[20px] object-cover  object-top "
                   src={item?.img}
                   alt=""
                 />
+                <div className="eye absolute top-10  left-[220px] flex gap-2 rounded-[17px] bg-[#dbd3cf] px-2 py-1  md:top-3 md:right-3 lg:top-3  lg:right-3">
+                  <FaEye />
+                  <p className="text-[12px]">{count}</p>
+                </div>
                 <div className="">
                   <div className="flex    flex-col gap-4 p-3 ">
                     <p className=" blog2 overflow-x-hidden">{item?.text}</p>

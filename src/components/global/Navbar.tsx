@@ -38,9 +38,11 @@ type Links = {
 
 function Navbar({}: Props) {
   const router = useRouter();
+
   const { isOpen, setIsOpen, isLogged, setIsLogged } = useCart(); 
   const { isuserLogged, setuserIsLogged } = useAuth();
    const [horoScopeOpen, setHoroScopeOpen] = useState(false);
+
   const [languageOpen, setLanguageOpen] = useState(false);
   const pathname = usePathname();
 
@@ -62,6 +64,23 @@ function Navbar({}: Props) {
   const toggleHoroscope = () => {
     setHoroScopeOpen((prev) => !prev);
   };
+
+  const closeHoroscope = () => {
+    // Add a delay before closing the dropdown
+    const timeout = setTimeout(() => {
+      setHoroScopeOpen(false);
+    }, 300); // Adjust the delay time as needed
+    setCloseTimeout(timeout);
+  };
+
+  const cancelCloseHoroscope = () => {
+    // Cancel the close timeout when the mouse re-enters the dropdown
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
+  };
+
   const toggleLanguage = () => {
     setLanguageOpen((prev) => !prev);
   };
@@ -123,7 +142,7 @@ function Navbar({}: Props) {
             <div className="">
               <Link href="/" className="text-2xl ">
                 <div className="flex items-center justify-center gap-[7px] md:justify-start">
-                  <div className="w-[15%]">
+                  <div className="l w-full">
                     <Image
                       src="/assets/home/logo.png"
                       alt="logo"
@@ -133,9 +152,6 @@ function Navbar({}: Props) {
                       className="md:w-[200px] "
                     />
                   </div>
-                  <p className="font-[ Roboto] text-[30px] font-[600]">
-                    AstroSevaTalk
-                  </p>
                 </div>{" "}
               </Link>
             </div>
@@ -160,15 +176,19 @@ function Navbar({}: Props) {
                 {/* <Link href="/horoscope/today">Horoscope</Link> */}
 
                 <ul className="">
-                  <li className="">
-                    <button className="flex    " onClick={toggleHoroscope}>
+                  <li
+                    className=""
+                    onMouseEnter={toggleHoroscope}
+                    onMouseLeave={closeHoroscope}
+                  >
+                    <button className="flex    ">
                       <span className="">Horoscope</span>
                       <span className={horoScopeOpen ? " transform" : ""}>
                         &#9662;
                       </span>
                     </button>
                     {horoScopeOpen && (
-                      <ul className="">
+                      <ul onMouseEnter={cancelCloseHoroscope} className="">
                         <div className="relative  z-10 px-2 shadow-xl">
                           <div className="absolute right-[-25px] top-[10px] rounded-[20px] bg-white lg:w-[300px]">
                             <div className="flex items-center justify-around border-b-[1px] border-[#D9D9D9] py-[5px] font-[Roboto] text-[16px] hover:bg-[#DC6563]">

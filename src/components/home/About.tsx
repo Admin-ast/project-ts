@@ -21,32 +21,47 @@ function About({}: Props) {
             of the fixed stars, the Sun, the Moon, and the planets. Devotees
             believe that an understanding of the influence of the planets and
             stars on earthly affairs allows them to both predict and affect the
-            destinies of individuals, groups, and nations. Though often regarded
-            as a science throughout its history, astrology is widely considered
-            today to be diametrically opposed to the findings and theories of
-            modern Western science. Astrology, type of divination that involves
-            the forecasting of earthly and human events through the observation
-            and interpretation of the fixed stars, the Sun, the Moon, and the
-            planets. Devotees believe that an understanding of the influence of
-            the planets and stars on earthly affairs allows them to both predict
-            and affect the destinies of individuals, groups, and nations. Though
-            often regarded as a science throughout its history, astrology is
-            widely considered today to be diametrically opposed to the findings
-            and theories of modern Western science. Astrology, type of
+            destinies of individuals, groups, and nations.
+          </p>
+          <p className="mt-[10px]">
+            Though often regarded as a science throughout its history, astrology
+            is widely considered today to be diametrically opposed to the
+            findings and theories of modern Western science. Astrology, type of
             divination that involves the forecasting of earthly and human events
             through the observation and interpretation of the fixed stars, the
-            Sun, the Moon, and the planets. Devotees believe that an
-            understanding of the influence of the planets and stars on earthly
-            affairs allows them to both predict and affect the destinies of
-            individuals, groups, and nations. Though often regarded as a science
-            throughout its history, astrology is widely considered today to be
-            diametrically opposed to the findings and theories of modern Western
-            science. Astrology, type of divination that involves the forecasting
-            of earthly and human events through the observation and
-            interpretation of the fixed stars, the Sun, the Moon, and the
-            planets. Devotees believe that an understanding of the influence of
-            the planets and stars on earthly affairs allows them to both predict
-            and affect the destinies of individuals, groups, and nations. Though
+            Sun, the Moon, and the planets.
+          </p>
+          <p className="mt-[10px]">
+            {" "}
+            Devotees believe that an understanding of the influence of the
+            planets and stars on earthly affairs allows them to both predict and
+            affect the destinies of individuals, groups, and nations. Though
+            often regarded as a science throughout its history, astrology is
+            widely considered today to be diametrically opposed to the findings
+            and theories of modern Western science.
+          </p>
+          <p className="mt-[10px]">
+            {" "}
+            Astrology, type of divination that involves the forecasting of
+            earthly and human events through the observation and interpretation
+            of the fixed stars, the Sun, the Moon, and the planets. Devotees
+            believe that an understanding of the influence of the planets and
+            stars on earthly affairs allows them to both predict and affect the
+            destinies of individuals, groups, and nations.
+          </p>
+          <p className="mt-[10px]">
+            Though often regarded as a science throughout its history, astrology
+            is widely considered today to be diametrically opposed to the
+            findings and theories of modern Western science. Astrology, type of
+            divination that involves the forecasting of earthly and human events
+            through the observation and interpretation of the fixed stars, the
+            Sun, the Moon, and the planets.
+          </p>
+          <p className="mt-[10px]">
+            {" "}
+            Devotees believe that an understanding of the influence of the
+            planets and stars on earthly affairs allows them to both predict and
+            affect the destinies of individuals, groups, and nations. Though
             often regarded as a science throughout its history, astrology is
             widely considered today to be diametrically opposed to the findings
             and theories of modern Western science.

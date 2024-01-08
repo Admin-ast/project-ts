@@ -13,7 +13,7 @@ import Calling from "@/components/talk-to-astrologer/Calling";
 import SkillDetail from "@/components/Signup/SkillDetail";
 import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
 import Review from "@/components/home/Review";
-import Services from "@/components/talk-to-astrologer/Services";
+import Services from "@/components/home/Services";
 
 type Props = {};
 

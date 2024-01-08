@@ -5,7 +5,7 @@ type Props = {};
 
 const RecentBlogs = (props: Props) => {
   return (
-    <div className="mt-[35px]">
+    <div className="mb-[30px]">
       <BlogsBy heading="RECENT BLOGS" subheading="" className="" />
     </div>
   );
