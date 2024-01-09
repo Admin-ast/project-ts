@@ -18,6 +18,7 @@ const Zodiac = (props: Props) => {
               <p className="text-[32px]">Zodiac Man</p>
               <div className="flex flex-col gap-6 md:flex-row">
                 <div className="flex h-[272px] items-center justify-center rounded-xl  md:w-2/4">
+                  <Link href="/compatibility/zodiacMan">
                   <Image
                     src={"/assets/compatibility/men.png"}
                     alt={"men"}
@@ -26,6 +27,7 @@ const Zodiac = (props: Props) => {
                     loading={"lazy"}
                     className="h-full object-contain"
                   />
+                  </Link>
                 </div>
                 <div className="flex w-full flex-col justify-between">
                   <p className="text-justify">
@@ -66,14 +68,15 @@ const Zodiac = (props: Props) => {
             <p className="text-[32px]">Zodiac Women</p>
             <div className="flex flex-col gap-6 md:flex-row">
               <div className="flex h-[272px] items-center  justify-center rounded-xl  md:w-2/4">
-                <Image
+               <Link href="/compatibility/zodiacWomen">
+               <Image
                   src={"/assets/compatibility/women.png"}
                   alt={"men"}
                   width={244}
                   height={14}
                   loading={"lazy"}
                   className="h-full object-contain"
-                />
+                /></Link>
               </div>
               <div className="flex w-full flex-col justify-between">
                 <p className="text-justify">

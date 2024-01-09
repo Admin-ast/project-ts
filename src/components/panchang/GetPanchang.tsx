@@ -80,16 +80,17 @@ function GetPanchang({}: Props) {
 
   return (
     <div>
-      <div className=" py-[55px]">
+      <div className=" bg-white shadow-xl bg-[url('/assets/home/cloud.png')] ">
+        <Section>
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <div className="mx-auto md:w-[65%]">
-            <div className="grid  gap-[15px]  px-2 md:flex  md:gap-[15px] lg:flex  ">
+          <div className=" mx-auto ">
+            <div className="grid  gap-[15px]  md:flex  md:gap-[15px] lg:flex py-[50px]  ">
               <Combo
                 hasDefaultValue={true}
                 setValue={setValue}
                 setPlaceName={setPlaceName}
                 placeholder="Enter City Name"
-                className={`appearance-none  rounded-xl border border-gray-400  !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none md:w-full `}
+                className={`appearance-none  px-[35px] rounded-xl border border-gray-400  !py-3 !text-[22px] text-sm text-gray-900 placeholder:text-[22px] placeholder:font-normal focus:border-[#0B8188] focus:outline-none md:w-full `}
               />
               <div className="flex justify-center   ">
                 <button className="whitespace-nowrap  rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] px-4  text-[24px] text-white">
@@ -99,9 +100,10 @@ function GetPanchang({}: Props) {
             </div>
           </div>
         </Form>
+        </Section>
       </div>
       <Section>
-        <div className="space-y-12 py-8 text-center lg:py-[55px]">
+        <div className="space-y-12 py-8 text-center ">
           <div className="space-y-4">
             <p className="font-[georgia] text-2xl font-semibold md:text-4xl">
               Today’s Panchang
@@ -292,7 +294,18 @@ function GetPanchang({}: Props) {
                 dangerouslySetInnerHTML={{
                   __html: chalitChart && chalitChart.svg && chalitChart.svg,
                 }}
-              ></div>
+              >
+                
+              </div>
+             <div className="bg-white shadow-xl  rounded-[20px]">
+             <Image
+    src="/assets/panchang/chart.png"
+    alt="chart"
+    width={514}
+    height={424}
+    className='  '
+    />
+             </div>
             </div>
             <div className="relative overflow-x-auto rounded-2xl bg-white shadow-xl">
               <table className="w-full text-left text-base">
@@ -300,7 +313,7 @@ function GetPanchang({}: Props) {
                   <tr>
                     <th
                       colSpan={2}
-                      className="p-5 font-[georgia] text-3xl font-semibold text-white"
+                      className="p-5  font-[georgia] text-[30px] font-semibold text-white"
                     >
                       Chandrabalam And Tarabalam
                     </th>
@@ -311,7 +324,7 @@ function GetPanchang({}: Props) {
                     <td className="border-r border-gray-400 py-4 font-medium lg:px-6">
                       Tara Bhala
                     </td>
-                    <td className="grid grid-cols-3 md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 lg:pb-16">
+                    <td className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 ">
                       <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
                         Bharani
                       </p>
@@ -345,7 +358,7 @@ function GetPanchang({}: Props) {
                     <td className="whitespace-nowrap border-r border-gray-400 px-6 py-4 font-medium">
                       Chandra Bhala
                     </td>
-                    <td className="grid grid-cols-3 md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 lg:pb-16">
+                    <td className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2  md:gap-4 md:p-6 md:pb-16 lg:gap-4 lg:p-6 ">
                       <p className="mx-auto flex w-full items-center justify-center rounded-lg border border-gray-400 py-2 px-7 text-base">
                         Virgo
                       </p>

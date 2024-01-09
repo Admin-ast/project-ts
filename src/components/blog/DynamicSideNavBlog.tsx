@@ -119,10 +119,10 @@ const DynamicSideNavBlog = (props: Props) => {
         </div>
       </div>
       <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
-      <div className="mr-6 flex flex-col gap-2 py-5">
+      <div className="mr-6 flex flex-col gap-2 py-5 lg:w-[268px]">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
-            <p className="text-justify ">{item?.title}</p>
+            <p className="trending text-justify py-[5px]">{item?.title}</p>
           </Link>
         ))}
       </div>
@@ -134,10 +134,10 @@ const DynamicSideNavBlog = (props: Props) => {
         </div>
       </div>
       <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
-      <div className="mr-6 flex flex-col gap-2 py-5">
+      <div className="mr-6 flex flex-col gap-2 py-5 lg:w-[268px]">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
-            <p className="text-justify ">{item?.title}</p>
+            <p className="trending text-justify py-[5px]">{item?.title}</p>
           </Link>
         ))}
       </div>
@@ -149,10 +149,10 @@ const DynamicSideNavBlog = (props: Props) => {
         </div>
       </div>
       <hr className=" mr-5 mt-[10px] border border-[#D9D9D9] lg:w-[250px]" />
-      <div className="mr-6 flex flex-col gap-2 py-5">
+      <div className="mr-6 flex flex-col gap-2 py-5 lg:w-[268px]">
         {trending.map((item, index) => (
           <Link key={index} href={item?.url}>
-            <p className="text-justify ">{item?.title}</p>
+            <p className="trending text-justify py-[5px]">{item?.title}</p>
           </Link>
         ))}
       </div>
@@ -166,17 +166,17 @@ const DynamicSideNavBlog = (props: Props) => {
           </div>
         </div>
         <hr className=" mr-5 border border-[#D9D9D9] lg:w-[250px]" />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 lg:w-[268px]">
           {categories.map((item, index) => (
             <Link key={index} href={item?.url}>
               <p className="text-lg ">{item?.name}</p>
             </Link>
           ))}
         </div>
-        <div className="">
+        <div className="mt-[20px] lg:w-[268px]">
           <TodayPanchng />
         </div>
-        <div className="">
+        <div className="mt-[20px] lg:w-[280px]">
           {/* <SideNavFooter
             headText="Are You Compatible?"
             subText="Choose your and your partner's zodiac sign to check compatibility"

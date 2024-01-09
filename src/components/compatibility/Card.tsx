@@ -14,7 +14,7 @@ const cardDetails: CardDetails[] = [
   {
     name: "Love Compatibility",
     img: "/assets/compatibility/love-icon.png",
-    link: "/compatibility/love",
+    link: "/compatibility/select-sign",
   },
   {
     name: "Work Compatibility",
@@ -36,20 +36,21 @@ const Card = (props: Props) => {
           Find out how your compatibility compares with your lover, friends,
           family, and more with our compatibility reading for all zodiac signs.
         </p>
-        <div className="mb-[42px] grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className=" grid grid-cols-1 gap-6 lg:grid-cols-3">
           {cardDetails.map((item: CardDetails, index: Key) => (
             <Link
               href={item.link}
               key={index}
               className="overflow-hidden rounded-3xl border-[3px] border-[#Dc6563] bg-white"
             >
-              <div className="mx-auto h-[275px] w-[150px]">
+              <div className="flex justify-center items-center">
                 <Image
                   src={item.img}
                   alt={item.name}
                   width={150}
                   height={275}
                   loading={"lazy"}
+                  className="h-[275px] w-[150px]"
                 />
               </div>
               <p className="h-full whitespace-nowrap bg-[#DC6563] py-[14px]  text-center text-2xl text-white lg:text-[20px]">

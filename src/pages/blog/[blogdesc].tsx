@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
+import React, { Key, useEffect, useState } from "react";
 import { card } from "../../../utils/list";
 import { useRouter } from "next/router";
 import Section from "@/components/Section";
@@ -21,7 +21,38 @@ import OurAstrologer from "@/components/blog/OurAstrologer";
 import Astrologer from "@/components/blog/Astrologer";
 
 type Props = {};
-
+type Social = {
+  icon: string;
+  url: string;
+  label: string;
+};
+const social: Social[] = [
+  {
+    icon: "/assets/footer/facebook.png",
+    label: "facebook",
+    url: "https://www.facebook.com/profile.php?id=100089188385234",
+  },
+  {
+    icon: "/assets/footer/instagram.png",
+    label: "instagram",
+    url: "https://www.instagram.com/astrosevatalk/",
+  },
+  {
+    icon: "/assets/footer/twitter.png",
+    label: "twitter",
+    url: "https://twitter.com/AstrosevaTalk",
+  },
+  {
+    icon: "/assets/footer/pinterest.png",
+    label: "pinterest",
+    url: "https://in.pinterest.com/astrosevatalk/",
+  },
+  {
+    icon: "/assets/footer/linkedin.png",
+    label: "Linkedin",
+    url: "https://www.linkedin.com/company/astro-seva-talk/",
+  },
+];
 const BlogDesc = (props: Props) => {
   const [blogde, setBlogde] = useState<any>([]);
   const router = useRouter();
@@ -55,6 +86,7 @@ const BlogDesc = (props: Props) => {
     <>
       <div className="bg-[url('/assets/horoscope-bg.webp')] bg-cover bg-repeat ">
         <Section>
+       
           <div className="flex items-center space-x-2">
             <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
             <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
@@ -78,6 +110,22 @@ const BlogDesc = (props: Props) => {
                       src={item.img}
                       alt=""
                     />
+                     <div className="w-fit  py-2 text-white">
+      <ul className=" grid grid-cols-5 justify-center items-center">
+                  {social.map((item: Social, index: Key) => (
+                    <li key={index} className="cursor-pointer">
+                      {" "}
+                      <Link
+                        href={item?.url}
+                        aria-label={item.label}
+                        target="_blank"
+                      >
+                        <img src={item?.icon} alt={item.label} className="w-[40px] h-[36px]" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+      </div>
                     {item.para?.map((itemTwo: any, index: any) => {
                       return (
                         <div key={index} className="my-2 text-justify ">

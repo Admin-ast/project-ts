@@ -100,18 +100,20 @@ export default function Home() {
         count3="15,462+"
         total3="Total Astrologers"
       />
-      <LIveAstro />
+      {/* <LIveAstro /> */}
 
       {/* <Appointments /> */}
 
-      <Astrologer />
+     <div className="">
+     <Astrologer />
+     </div>
       <News />
       <LatestBlogs />
       <CelebrityCustomers />
       <Shop head="Astroseva Shop" />
       <Panchang />
-      {/* <NewReview/> */}
-      <Review />
+      <NewReview/>
+      {/* <Review /> */}
       <About />
       {/* <Faq /> */}
 

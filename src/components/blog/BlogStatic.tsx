@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Key } from "react";
 import Image from "next/image";
 import Section from "@/components/Section";
 import { BsDot } from "react-icons/bs";
@@ -15,7 +15,7 @@ const BlogStatic = (props: Props) => {
   return (
     <div className="">
       {/* ----------------------------------Missing spark in marriage--------------------------------------------------------  */}
-
+      
       <div className="md:pl-5 lg:px-10 ">
         <div className=" mt-[30px] flex  justify-between  bg-[#FFDCD1] ">
           <div className=" px-[44px]  py-[40px]  ">
