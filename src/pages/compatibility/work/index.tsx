@@ -28,41 +28,12 @@ function Compatibility({}: Props) {
         <ChooseSign
           headText="Choose 2 Signs To Create Your Match"
           btn="Try Another Match"
-          cardDetails={[
-            {
-              name: "Taurus",
-              img: "/assets/kundli/taurus.png",
-              link: "",
-            },
-            {
-              name: "Virgo",
-              img: "/assets/kundli/virgo.png",
-              link: "",
-            },
-          ]}
+          
           subText="Since both Taurus and Virgo are Earth Signs, they see life and work from much the same perspective. Both are focused on building more stability and security, which makes them like-minded when it comes to working together. Taurus desires more creature comforts and sensual pleasures, while Virgo is busy building a nest egg for the future. Together, these two signs can provide a real boost to any organization lucky enough to have them. These two power through any obstacles and offer loyalty to thei employers. The sky's the limit for these two signs"
         />
       </Section>
       <WorkCompatibilityMatches />
-      {/* <Store
-        cardDetails={[
-          {
-            name: "Career Report",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Kawach",
-            img: "/assets/compatibility/work/Rectangle_109.png",
-            link: "",
-          },
-          {
-            name: "Spell",
-            img: "/assets/compatibility/work/Rectangle_130.png",
-            link: "",
-          },
-        ]}
-      /> */}
+     
       <Store />
     </div>
   );

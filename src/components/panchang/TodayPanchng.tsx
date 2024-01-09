@@ -5,43 +5,43 @@ type Props = {};
 
 const TodayPanchng = (props: Props) => {
   return (
-    <div className=" bg-white pb-[15px] shadow-xl">
+    <div className=" bg-white pb-[15px] shadow-xl ">
       <div className="flex items-center justify-center rounded-t-[6px] bg-[#DC6563]">
         <p className="text-center font-bold text-white">Panchang</p>
       </div>
-      <div className="text-center">
+      <div className="text-center px-2">
         <p className="py-[8px] text-[12px] font-bold">
           New Delhi, India (18 December, 2023)
         </p>
         <div className="border-b-[1px] border-[#D9D9D9]"></div>
-        <div className="flex justify-center py-[8px]">
-          <p className="text-[12px] font-bold">Tithi:</p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40</p>
+        <div className="  py-[8px]">
+          <p className="text-[12px] font-bold">Tithi:<span className="text-[12px] font-normal">Shukla Shashti upto 15:15:40</span></p>
+          
         </div>
-        <div className="flex justify-center">
-          <p className="text-[12px] font-bold">Month Amanta: </p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className=" ">
+          <p className="text-[12px] font-bold ">Month Amanta:<span className="text-[12px] font-normal">Shukla Shashti upto 15:15:40 </span> </p>
+          
         </div>
-        <div className="flex justify-center py-[8px]">
-          <p className="text-[12px] font-bold">Month Purnimata:</p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className=" py-[8px]">
+          <p className="text-[12px] font-bold">Month Purnimata:<span className="text-[12px] font-normal ">Shukla Shashti upto 15:15:40 </span></p>
+          
         </div>
-        <div className="flex justify-center pb-[8px]">
-          <p className="text-[12px] font-bold">Day:</p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className=" pb-[8px]">
+          <p className="text-[12px] font-bold">Day: <span className="text-[12px] font-normal  ">Shukla Shashti upto 15:15:40 </span></p>
+         
         </div>
         <div className="border-b-[1px] border-[#D9D9D9]"></div>
-        <div className="flex justify-center py-[8px]">
-          <p className="text-[12px] font-bold">Tithi:</p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className=" py-[8px]">
+          <p className="text-[12px] font-bold">Tithi: <span className="text-[12px] font-normal">Shukla Shashti upto 15:15:40 </span></p>
+         
         </div>
-        <div className="flex justify-center">
-          <p className="text-[12px] font-bold">Month Amanta: </p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className="">
+          <p className="text-[12px] font-bold">Month Amanta: <span className="text-[12px] font-normal">Shukla Shashti upto 15:15:40 </span></p>
+          
         </div>
-        <div className="flex justify-center py-[8px]">
-          <p className="text-[12px] font-bold">Month Purnimata:</p>
-          <p className="text-[12px] ">Shukla Shashti upto 15:15:40 </p>
+        <div className="py-[8px]">
+          <p className="text-[12px] font-bold">Month Purnimata:<span className="text-[12px] font-normal">Shukla Shashti upto 15:15:40 </span></p>
+          
         </div>
         <div className="flex items-center justify-center">
           <Link href="/today-panchang">

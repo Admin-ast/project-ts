@@ -28,7 +28,7 @@ const Workcomparision = (props: Props) => {
           </div>
         </Section>
       </div>
-      <Header head="Virgo And Taurus Work Compatibility" />
+      <Header />
       <WorkCompatibilityMatches />
       <Store />
     </div>

@@ -52,7 +52,7 @@ const astrologers: Astrologers[] = [
 function Astrologer({}: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className="bg-gradient-to-b from-[#ef824c] to-[#d84f50] bg-cover py-[30px]">
+    <div className="bg-gradient-to-b  from-[#ef824c] to-[#d84f50] bg-cover py-[30px]">
       <Section>
         <div className="max-w-6.5xl mx-auto">
           <div className="">

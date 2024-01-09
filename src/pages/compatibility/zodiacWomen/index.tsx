@@ -1,13 +1,19 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
-import ChooseSign from "@/components/compatibility/love/ChooseYourSign";
+import Sign from "@/components/compatibility/love/Sign";
+
 import Store from "@/components/planets/Store";
 
 import { HomeIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import React, { useState } from "react";
 type Props = {};
 
 function Compatibility({}: Props) {
+  const [yourSign, setYourSign] =useState<string | null>(null);
+
+  const handleSelectYourSign = (selectedSign: string) => {
+    setYourSign(selectedSign);
+  };
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero text="Zodiac Women" icon="/assets/compatibility/love/7-01.png" />
@@ -27,7 +33,7 @@ function Compatibility({}: Props) {
           woman in your life has everything you need to know from sex, career,
           home life, gift ideas, and love compatibility.
         </div>
-        <ChooseSign headText="Choose Your Sign" />
+        <Sign headText="Choose Your Sign" onSelect={handleSelectYourSign}/>
       </Section>
 
       <Store />

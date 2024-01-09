@@ -64,7 +64,7 @@ const NewReview = (props: Props) => {
   return (
     <div className=" bg-[#D9D9D9] py-[30px]">
       <Section>
-        <div className=" max-w-6.5xl mx-auto ">
+        <div className=" max-w-6.5xl ">
           <div className=" ">
             <h2 className=" text-center font-[georgia] text-xl text-[20px] font-semibold sm:text-2xl md:text-[30px] lg:text-[30px]">
               Client Reviews
@@ -72,7 +72,7 @@ const NewReview = (props: Props) => {
             <p className="mt-[10px] text-center text-[20px] font-semibold">
               Hear about us from our customers
             </p>
-            <Swiper
+            <Swiper className=""
               navigation={{
                 prevEl: ".prev",
                 nextEl: ".next",
@@ -97,11 +97,12 @@ const NewReview = (props: Props) => {
               <div className="">
                 {card.map((item, index) => (
                   <SwiperSlide key={item.img + index} className="">
-                    <div key={index} className="">
-                      <div className="">
-                        <div className=" mt-[10px] flex  items-center rounded-[10px]  border-r-[3px] border-b-[3px] border-[#DC6563]  bg-white ">
+                    <div key={index} className="mt-10 cursor-pointer">
+                     <Link href="/review/review">
+                     <div className="">
+                        <div className="pb-[30px] pt-[20px] px-[20px] mt-[10px] flex gap-4  items-center rounded-[10px]  border-r-[3px] border-b-[3px] border-[#DC6563]  bg-white ">
                           <div className="">
-                            <div className=" flex items-center">
+                            <div className=" flex  ">
                               <Image
                                 src={item.img}
                                 alt={item.name}
@@ -121,12 +122,13 @@ const NewReview = (props: Props) => {
                           </div>
                         </div>
                       </div>
+                     </Link>
                     </div>
                   </SwiperSlide>
                 ))}
               </div>
             </Swiper>
-            <div className="astroslideblog    relative mx-auto flex items-center justify-between">
+            <div className="astroslideblo    relative mx-auto  flex  justify-between">
               <button className="prev cursor-pointer">
                 <AiFillCaretLeft className="text-3xl text-black" />
               </button>

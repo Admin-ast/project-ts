@@ -10,11 +10,11 @@ type Props = {
 const WorkCompatibilityMatches = ({}: Props) => {
   return (
     <Section>
-      <div className="space-y-6 py-8  lg:py-[50px]">
+      <div className="space-y-6 py-8  ">
         <div className="text-center text-[36px] font-bold">
           More Work Compatibility Matches
         </div>
-        <div className="mb-[42px] flex flex-wrap justify-center gap-20 ">
+        <div className=" flex flex-wrap justify-center gap-20 ">
           <div>
             <div className="text-[22px] font-bold">Virgo Compatibility</div>
             <div>VIRGO AND ARIES</div>

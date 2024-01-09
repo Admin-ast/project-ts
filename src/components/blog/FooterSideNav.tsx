@@ -8,7 +8,7 @@ type Props = {
 const FooterSideNav = ({ headText, subText }: Props) => {
   return (
     <div className="">
-      <div className="rounded-[10px] border-[2px] border-[#DC6563] py-4">
+      <div className="rounded-[10px] border-[2px] border-[#DC6563] py-4 px-2">
         <p className="text-center text-[24px] font-bold">{headText}</p>
         <p className="mt-[5px] text-center text-[14px] ">
           Choose your and your {`partner's`} <br /> zodiac sign to check

@@ -111,7 +111,7 @@ function SideNavBlog() {
   ];
 
   return (
-    <div className="lg:w-1/3 ">
+    <div className="lg:w-[40%] ">
       <Section>
         <div className="blogsidebar gap-2 border-r border-[#D9D9D9] pl-[100px]">
           {/* <div className=" border-r border-[#D9D9D9]"> */}
@@ -141,7 +141,7 @@ function SideNavBlog() {
           <div className="mr-6 mt-2 flex flex-col gap-2">
             {trending.map((item, index) => (
               <Link key={index} href={item?.url}>
-                <p className="text-justify ">{item?.title}</p>
+                <p className="trending text-justify  py-[7px]">{item?.title}</p>
               </Link>
             ))}
           </div>
@@ -159,18 +159,15 @@ function SideNavBlog() {
             <p>HINDI</p>
             <p>ENGLISH</p>
           </div>
-          <div className="pr-2">
+          <div className="pr-2 mt-5">
             <TodayPanchng />
           </div>
           <div className="mr-4 mt-5 ">
-            {/* <SideNavFooter
+            
+            {/* <FooterSideNav
               headText="Are You Compatible?"
               subText="Choose your and your partner's zodiac sign to check compatibility"
             /> */}
-            <FooterSideNav
-              headText="Are You Compatible?"
-              subText="Choose your and your partner's zodiac sign to check compatibility"
-            />
           </div>
         </div>
       </Section>

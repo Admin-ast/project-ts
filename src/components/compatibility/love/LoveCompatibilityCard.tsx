@@ -1,6 +1,9 @@
+
 import Section from "@/components/Section";
 import React from "react";
-import ChooseSign from "./ChooseYourSign";
+
+import { useRouter } from "next/router";
+
 
 type Props = {
   title: string;
@@ -8,14 +11,29 @@ type Props = {
 };
 
 const LoveCompatibilityCard = ({ title, text }: Props) => {
+  const router = useRouter();
+
+  const handleChoosePartner = () => {
+    // Assuming you have a route like /compatibility/love/choose-partner
+    router.push("/compatibility/love/desc-comparision");
+  };
+
   return (
     <div className="">
       <Section>
+       
+
+<div className="">
+      <Section>
         <p className="text-center font-[Georgia] text-[36px] font-bold">
-          {title}
+         {title}
         </p>
         <div className="mt-5">{text}</div>
-        <ChooseSign headText="Choose Your Sign" />
+       <div className="">
+      
+       </div>
+      </Section>
+    </div>
       </Section>
     </div>
   );

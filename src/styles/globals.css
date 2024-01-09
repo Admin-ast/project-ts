@@ -133,6 +133,12 @@ menu {
     margin-right: -3%;
     padding-bottom: 17%;
   }
+  .astroslideblo {
+    margin-top: -10%;
+    margin-left: -3%;
+    margin-right: -3%;
+    padding-bottom: 17%;
+  }
   .astroslidecelbrity {
     margin-top: -11%;
     margin-left: -3%;
@@ -210,6 +216,13 @@ menu {
   }
   .astroslideblog {
     margin-top: -50%;
+    margin-left: -7%;
+    margin-right: -7%;
+    padding-bottom: 50%;
+    z-index: 1;
+  }
+  .astroslideblo {
+    margin-top: -35%;
     margin-left: -7%;
     margin-right: -7%;
     padding-bottom: 50%;
@@ -301,6 +314,13 @@ menu {
   }
   .astroslideblog {
     margin-top: -17%;
+    margin-left: -2%;
+    margin-right: -2%;
+    padding-bottom: 17%;
+    z-index: 1;
+  }
+  .astroslideblo {
+    margin-top: -14%;
     margin-left: -2%;
     margin-right: -2%;
     padding-bottom: 17%;
@@ -431,6 +451,12 @@ menu {
 .truncate-lines {
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.trending {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
