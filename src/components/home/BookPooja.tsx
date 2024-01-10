@@ -10,7 +10,7 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
-import Horoscope from "../home/Horoscope";
+import Horoscope from "./Horoscope";
 import Link from "next/link";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
@@ -22,7 +22,7 @@ type Service = {
 
 const services: Service[] = [
   {
-    name: "Compatibility",
+    name: "Pitra Dosh Shanti Pooja",
     src: "/assets/home/compat.png",
     url: "/compatibility",
   },
@@ -32,32 +32,32 @@ const services: Service[] = [
   //   url: "/muhurat",
   // },
   {
-    name: "Chinese Horoscope",
+    name: "Buri Nazar Nivaran Pooja",
     src: "/assets/home/cheinese-horoscope.png",
     url: "/chines-horoscope",
   },
   {
-    name: "Free Kundli",
+    name: "Manokamna Siddhi Pooja",
     src: "/assets/home/kundli.png",
     url: "/free-kundli",
   },
   {
-    name: "Kundli Matching",
+    name: "Bagalamukhi Mata Pooja",
     src: "/assets/home/kundli-matching.png",
     url: "/kundli-matching",
   },
   {
-    name: "Horoscope",
+    name: "Dhan Prapti Laxmi Pooja",
     src: "/assets/home/Horoscope.png",
     url: "/horoscope/daily",
   },
   {
-    name: "Panchang",
+    name: "Devi Mahakali Pooja",
     src: "/assets/home/Panchang.png",
     url: "/today-panchang",
   },
   {
-    name: "Festival 2024",
+    name: "Shani Graha Shanti Pooja",
     src: "/assets/home/festival-2024.png",
     url: "/festival",
   },
@@ -66,7 +66,7 @@ type Props = {
   head: string;
 };
 
-function Services({ head }: Props) {
+function BookPooja({ head }: Props) {
   const [active, setActive] = useState<Number>(0);
   return (
     <div className=" bg-[url('/assets/horoscope-bg.webp')] py-[30px]">
@@ -114,7 +114,7 @@ function Services({ head }: Props) {
                         />
                       </div>
                       <div className="absolute bottom-[-1px] w-[100%]  ">
-                        <p className=" rounded-[5px] bg-[#ca2127] py-1   text-center font-[georgia] text-white md:text-[16px] lg:text-[20px]">
+                        <p className="bookpooja rounded-[5px] bg-[#ca2127] py-1   text-center font-[georgia] text-white md:text-[16px] lg:text-[20px]">
                           {item.name}
                         </p>
                       </div>
@@ -139,4 +139,4 @@ function Services({ head }: Props) {
   );
 }
 
-export default Services;
+export default BookPooja;

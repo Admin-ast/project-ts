@@ -98,7 +98,7 @@ function ChatAstrologer({}: Props) {
           </div>
         </Section>
         <BestAstrologer heading="Find Best Astrologers" />
-        <div className="mt-[33px]">
+        <div className="">
           <Review />
         </div>
         <div className="">

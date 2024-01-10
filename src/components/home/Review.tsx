@@ -200,14 +200,14 @@ const card = [
 const Review = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
-    <div className=" bg-[#D9D9D9] py-[30px]">
+    <div className=" bg-gradient-to-b from-[#ef824c] to-[#d84f50] py-[30px]">
       <Section>
         <div className=" max-w-6.5xl ">
           <div className=" ">
-            <h2 className=" text-center font-[georgia] text-xl text-[20px] font-semibold sm:text-2xl md:text-[30px] lg:text-[30px]">
+            <h2 className="text-white text-center font-[georgia] text-xl text-[20px] font-semibold sm:text-2xl md:text-[30px] lg:text-[30px]">
               Client Reviews
             </h2>
-            <p className="mt-[10px] text-center text-[20px] font-semibold">
+            <p className="text-white mt-[10px] text-center text-[20px] font-semibold">
               Hear about us from our customers
             </p>
             <Swiper className=""
@@ -266,12 +266,12 @@ const Review = (props: Props) => {
                 ))}
               </div>
             </Swiper>
-            <div className="astroslideblo    relative mx-auto  flex  justify-between">
+            <div className="astroslideblo  text-white  relative mx-auto  flex  justify-between">
               <button className="prev cursor-pointer">
-                <AiFillCaretLeft className="text-3xl text-black" />
+                <AiFillCaretLeft className="text-3xl " />
               </button>
               <button className="next cursor-pointer">
-                <AiFillCaretRight className="text-3xl text-black" />
+                <AiFillCaretRight className="text-3xl " />
               </button>
             </div>
           </div>
