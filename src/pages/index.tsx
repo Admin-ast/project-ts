@@ -112,8 +112,8 @@ export default function Home() {
       <CelebrityCustomers />
       <Shop head="Astroseva Shop" />
       <Panchang />
-      <NewReview/>
-      {/* <Review /> */}
+      {/* <NewReview/> */}
+      <Review />
       <About />
       {/* <Faq /> */}
 
