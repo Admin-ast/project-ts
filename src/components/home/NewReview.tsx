@@ -59,7 +59,7 @@ const card = [
       " I have the mangal dosha in my Kundali which was causing me extreme stress towards taking the marriage decision. I thankfully came across the Astrosevatalk website and got my birth chart analysis from one of their astrologers. He told me to do some home remedies and pool for 3 months and then advised me to go for the marriage. I followed the suggested solution and I couldn't believe all of a sudden I started getting decent numbers of marriage proposals. Today I'm happily arranged married and living the best of my life",
   },
 ];
-const NewReview = (props: Props) => {
+const Review = (props: Props) => {
   const [active, setActive] = useState<Number>(0);
   return (
     <div className=" bg-[#D9D9D9] py-[30px]">
@@ -143,4 +143,4 @@ const NewReview = (props: Props) => {
   );
 };
 
-export default NewReview;
+export default Review;
