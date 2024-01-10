@@ -27,6 +27,7 @@ import PersonalDetail from "@/components/Signup/PersonalDetail";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Faq from "@/components/common/Faq";
 import NewReview from "@/components/home/NewReview";
+import BookPooja from "@/components/home/BookPooja";
 const faqsDetail: Faqs = {
   title: "FAQ'S ABOUT ASTROLOGY",
   faq: [
@@ -100,6 +101,7 @@ export default function Home() {
         count3="15,462+"
         total3="Total Astrologers"
       />
+      <BookPooja head="Book A Pooja"/>
       {/* <LIveAstro /> */}
 
       {/* <Appointments /> */}
