@@ -466,3 +466,112 @@ menu {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* styles/globals.css */
+
+/* styles/globals.css */
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px; /* space for the checkbox icon */
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0; /* hide the actual checkbox */
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* circular checkbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s; /* smooth transition */
+}
+
+.checkmark:after {
+  content: "";
+  font-size: 12px;
+  color: white;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #4caf50; /* green background when checked */
+  border-color:white;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+  content: "";
+  color: white; /* white color for check sign when checked */
+}
+
+.popup{
+  position: fixed;
+  top: 85%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .popup {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+}
+/* Media query for mobile devices */
+@media only screen and (min-width:767px ) and (max-width: 1024px) {
+  .popup {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .popup {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+}

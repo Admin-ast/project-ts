@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 type Props = {
@@ -46,6 +46,7 @@ const cardItems = [
 ];
 
 const Card = ({ date }: Props) => {
+  
   return (
     <div className="mt-[72px] grid gap-[30px] md:grid-cols-3 lg:grid-cols-4">
       {cardItems.map((item, index) => (
