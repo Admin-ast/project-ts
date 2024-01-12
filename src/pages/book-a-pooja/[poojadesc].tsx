@@ -1,15 +1,22 @@
 import Section from "@/components/Section";
 import Benifits from "@/components/book-a-pooja/Benifits";
 import MasterAstrologer from "@/components/book-a-pooja/MasterAstrologer";
+import Popup from "@/components/book-a-pooja/Popup";
 import AstrosevatalkPromisses from "@/components/common/AstrosevatalkPromisses";
 import Review from "@/components/home/Review";
+import Payment from "@/components/payment/Payment";
+
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 type Props = {};
 
 const poojadesc = (props: Props) => {
+  const [isPopupOpen,setIsPopupOpen]=useState(false)
+  const togglePopup=()=>{
+    setIsPopupOpen(!isPopupOpen)
+  }
   return (
     <div className="bg-[url('/assets/horoscope-bg.webp')] ">
       <div className="bg-[#F5F5F5] py-2">
@@ -38,9 +45,25 @@ const poojadesc = (props: Props) => {
             <p className="text-[22px] ">
               Attract Wealth, Achieve Success in Career and Business!
             </p>
-            <button className="mt-[44px] w-full rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-2 text-[22px] font-bold text-white">
+            <button onClick={togglePopup} className="mt-[44px] w-full rounded-[10px] bg-gradient-to-b from-[#FF7646] to-[#FF0600] py-2 text-[22px] font-bold text-white">
               Book Now
             </button>
+            <Popup
+            name="Anupama"
+            date="10 Jan 2024,"
+            time="10:00 PM"
+            price1={499}
+            indcontent="Keep away bad luck, conquer enemies, and enjoy good health!"
+            price2={499}
+            offcontent="Keep away bad luck, conquer enemies, and enjoy good health!"
+            price3={499}
+            famcontent="Keep away bad luck, conquer enemies, and enjoy good health!"
+            amount={780}
+            isOpen={isPopupOpen}
+            onClose={togglePopup}
+            heading="Buri Nazar Nivaran Pooja"
+            
+            />
           </div>
         </div>
       </Section>
@@ -72,9 +95,9 @@ const poojadesc = (props: Props) => {
           />
         </div>
       </Section>
-      <div className="mt-[60px]">
-        <Review />
-      </div>
+     
+     <Review/>
+    
       <AstrosevatalkPromisses />
     </div>
   );
