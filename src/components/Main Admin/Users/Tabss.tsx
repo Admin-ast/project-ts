@@ -321,6 +321,8 @@ import Link from "next/link";
 
 import UsersCard from "./UsersCard";
 import Card from "./Card";
+import AstrosevaTalkHistorycard from '@/components/admin/astrosevatalk histrory/AstrosevaTalkHistorycard';
+import RemediesCard from '@/components/admin/remedies/RemediesCard';
 type Props = {}
 
 const Tabss = (props: Props) => {
@@ -546,35 +548,43 @@ const Tabss = (props: Props) => {
             </div>
             {/* 2nd tab content start */}
             <div className="relative mb-6 flex w-full min-w-0 flex-col break-words bg-white ">
-              <div className="flex-auto">
-                <div className="tab-content tab-space ">
+              <div className="">
+                <div className=" grid grid-cols-3">
                   <div
                     className={openTab === 10 ? "block" : "hidden"}
                     id="link1"
                   >
-                    <p>
-                      Completely synergize resource taxing relationships via
-                      premier niche markets. Professionally cultivate one-to-one
-                      customer service with robust ideas.
-                      <br />
-                      <br />
-                      Dynamically innovate resource-leveling customer service
-                      for state of the art customer service.
-                    </p>
+                     <AstrosevaTalkHistorycard
+              name="Nikita"
+              num={1015573}
+              product="Crystal with Tulsi Bracelet"
+              id={245674}
+              date="23 Jul 2023"
+              time="7:33PM"
+              details="Details"
+              status="Closed"
+              category="Trending Wears"
+              quantity={1}
+            />
                   </div>
                   <div
                     className={openTab === 11 ? "block" : "hidden"}
                     id="link2"
                   >
-                    <p>
-                      Completely synergize resource taxing relationships via
-                      premier niche markets. Professionally cultivate one-to-one
-                      customer service with robust ideas.
-                      <br />
-                      <br />
-                      Dynamically innovate resource-leveling customer service
-                      for state of the art customer service.
-                    </p>
+                   <RemediesCard
+              categoryName="Trending Wears"
+              productName="5 Mukhi Rudraksha Tulsi Bracelet"
+              name="Shaurya "
+              performedBy="AstrosevaTalk"
+              date="21 Jul 23"
+              time="7:33 PM"
+              price="Rs 1000"
+              type="Paid Remedy"
+              status=" Not Booked"
+              description=" Wear this ..also .. try to drink kesar milk or water either everyday or on Thursday.. Try to donate pencil lead black stuff Give coins to needy not to kids .. read hanuman chalisha"
+              productNum={1292}
+              btn1="Suggest Next Remedy"
+            />
                   </div>
                   <div
                     className={openTab === 12 ? "block" : "hidden"}
