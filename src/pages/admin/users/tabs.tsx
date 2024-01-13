@@ -1,4 +1,4 @@
-import Tabsss from "@/components/Main Admin/Users/Tabs";
+import Tabsss from "@/components/Main Admin/Users/Tabss";
 import React from "react";
 
 const TabsPage2 = () => {
