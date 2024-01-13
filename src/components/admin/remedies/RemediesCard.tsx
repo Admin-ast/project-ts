@@ -69,7 +69,7 @@ const RemediesCard = ({
         </div>
 
         <div className="mt-[20px] text-start">
-          <button className="rounded-[10px] border-[1px] border-[#FF0600]  bg-[#FF7646] px-10 py-2 font-semibold text-white">
+          <button className="rounded-[10px] border-[1px] bg-gradient-to-b from-[#fb7038] to-[#FF0600] px-10 py-2 font-semibold text-white">
             {btn1}
           </button>
         </div>
