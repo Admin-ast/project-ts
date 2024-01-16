@@ -1,10 +1,22 @@
 import Section from "@/components/Section";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const refund = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Refund - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore our seamless refund procedure at Astroseva Talk. Hassle-free returns for a satisfying experience. Your satisfaction is our priority. Visit now!"
+          key="desc"
+        />
+      </Head>
     <div className="py-10">
       <Section>
         <p className="text-primary py-6 text-center text-2xl font-bold md:text-4xl">
@@ -1018,6 +1030,7 @@ const refund = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

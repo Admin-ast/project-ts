@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const mangladosha = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Astroseva Talk: Unveiling Insights on manglik dosh for Harmonious Living
+        </title>
+        <meta
+          name="description"
+          content=" Explore the profound impact of Mangal Dosha with Astroseva Talk. Gain expert insights, remedies, and guidance for a balanced and harmonious life. Navigate the influence of Mars with our trusted astrological wisdom"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -199,6 +211,7 @@ const mangladosha = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

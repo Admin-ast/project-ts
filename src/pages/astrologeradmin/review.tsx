@@ -6,7 +6,7 @@ type Props = {};
 const review = (props: Props) => {
   return (
     <div>
-      <Reviews />
+      <Reviews userreviews=""/>
     </div>
   );
 };

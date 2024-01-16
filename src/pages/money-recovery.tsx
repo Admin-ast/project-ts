@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const moneyrecovery = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Money Recovery prediction by best astrologer in india | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content=" Struggling with financial setbacks? Astroseva Talk offers specialized money recovery prediction by best astrologer to help you regain control. Trust our experts for effective solutions and get back on track with your finances"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -194,6 +206,7 @@ const moneyrecovery = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

@@ -1,10 +1,22 @@
 import Section from "@/components/Section";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const refund = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Astroseva Talk - Terms & Conditions
+        </title>
+        <meta
+          name="description"
+          content="Explore Astroseva Talk's terms and conditions to ensure a seamless experience. Understand our guidelines for accurate, insightful, and confidential astrological consultations. Your cosmic journey starts with clarity and trust."
+          key="desc"
+        />
+      </Head>
     <div className="py-10">
       <Section>
         <p className="text-primary py-6 text-center text-2xl font-bold md:text-4xl">
@@ -1018,6 +1030,7 @@ const refund = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

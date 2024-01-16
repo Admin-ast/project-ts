@@ -35,7 +35,7 @@ const appointment: Appointment[] = [
 
 function HeroCard({}: Props) {
   return (
-    <div className="bg-black   ">
+    <div className="bg-black   dext">
       <Section>
         <div className="px-2">
           <div className="grid items-center justify-center gap-[5px] py-5 md:flex md:gap-[21px] lg:flex lg:gap-[21px]">
@@ -54,7 +54,7 @@ function HeroCard({}: Props) {
                       loading={"eager"}
                     />
                   </div>
-                  <p className="flex items-center justify-center text-center font-[georgia] text-[16px] md:text-[12px]">
+                  <p className="flex items-center justify-center text-center font-[georgia] text-[16px] md:text-[16px]">
                     {item.name}
                   </p>
                 </Link>

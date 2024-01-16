@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const studyabroad = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Study Abroad Guidance | Chat with Astrologers for a Bright Future - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore the world of opportunities with expert astrologers. Navigate your path through abroad study horoscope 2024 effortlessly. Unlock a brighter future through personalized guidance at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -179,6 +191,7 @@ const studyabroad = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

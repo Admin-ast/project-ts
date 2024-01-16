@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
-const mantras = (props: Props) => {
+const courtcases = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Astrological Remedies for Court Cases | Resolve Legal Issues with Cosmic Guidance
+        </title>
+        <meta
+          name="description"
+          content="Discover potent court cases astrological remedies at Astroseva Talk. Unlock cosmic guidance to navigate legal challenges effectively. Seek solutions for a favorable outcome now"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -187,7 +199,8 @@ const mantras = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 
-export default mantras;
+export default courtcases;

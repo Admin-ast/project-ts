@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
 const astrologysignup = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Astroseva Talk - Astrologer Login 
+        </title>
+        <meta
+          name="description"
+          content="Connect with astrologers instantly on Astroseva Talk, a new service allowing you to login and chat live with experts in Vedic astrology, numerology, and more."
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -172,6 +184,7 @@ const astrologysignup = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

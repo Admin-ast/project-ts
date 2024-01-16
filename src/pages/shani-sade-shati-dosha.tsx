@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const shanisadeshatidosha = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Unlocking Insights: Shani Sade Sati Dosha, Remedies, and Expert Astrology Prediction
+        </title>
+        <meta
+          name="description"
+          content="Discover the impact of Shani Sade Shati Dosha on your life and explore effective remedies. Talk to experienced astrologers at Astroseva Talk for personalized insights and guidance"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -207,6 +219,7 @@ const shanisadeshatidosha = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

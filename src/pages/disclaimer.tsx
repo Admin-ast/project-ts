@@ -1,9 +1,21 @@
 import React from "react";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 type Props = {};
 
 const disclaimer = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Read Our Disclaimer - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore our disclaimer to understand the terms and conditions of our astrology services at Astroseva Talk. Your journey into the cosmos begins with clarity and transparency. Learn more now."
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
@@ -30,6 +42,7 @@ const disclaimer = (props: Props) => {
         </p>
       </div>
     </div>
+	</div>
   );
 };
 

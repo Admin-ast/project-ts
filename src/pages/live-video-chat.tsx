@@ -8,6 +8,7 @@ import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React, { Key } from "react";
+import Head from 'next/head';
 
 type Props = {};
 
@@ -50,6 +51,17 @@ const astrologerDetail = {
 
 function LiveVideoChat({}: Props) {
   return (
+   <div>
+  <Head>
+        <title>
+          Connect through Live Video Chat with Online Astrologers at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Unleash the power of personalized astrology guidance through Astroseva Talk's Live Video Chat with Astrologer. Connect now for an enlightening experience!"
+          key="desc"
+        />
+      </Head>
     <>
       <Hero
         text="Live Video Chat with Astrologers"
@@ -112,6 +124,7 @@ function LiveVideoChat({}: Props) {
         <Faq faqDetail={faqsDetail} />
       </div>
     </>
+	</div>
   );
 }
 

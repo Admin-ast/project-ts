@@ -4,11 +4,23 @@ import Line from "@/components/book-a-pooja/Line";
 import Search from "@/components/common/Search";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const bookpooja = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Get a Wide Range of Online Puja Remedies and Products for Doshas
+        </title>
+        <meta
+          name="description"
+          content="Now there's no need to search  pooja shop near me just simply explore a diverse selection of online Puja remedies and products at Astroseva Talk to alleviate Doshas and experience spiritual healing for a blissful journey ahead."
+          key="desc"
+        />
+      </Head>
     
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className=" ">
@@ -35,6 +47,7 @@ const bookpooja = (props: Props) => {
       </Section>
     
     </div>
+	</div>
   );
 };
 

@@ -6,6 +6,7 @@ import { postFetcher } from "@/service";
 import { useRouter } from "next/router";
 import Hero from "@/components/common/Hero";
 import AlsoCheck from "@/components/common/AlsoCheck";
+import Head from 'next/head';
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -72,6 +73,17 @@ const Index = (props: Props) => {
   }, []);
 
   return (
+   <div>
+  <Head>
+        <title>
+         know your yeasterday horoscope by date of birth | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore your yesterday horoscope now! Consult with the best astrologers and know the accurate insights of your horoscope by date of birth for free at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div>
       <div className="bg-[url('/assets/horoscope-bg.webp')] ">
         <div className="bg-[#F5F5F5] py-1">
@@ -95,6 +107,7 @@ const Index = (props: Props) => {
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>
+	</div>
   );
 };
 

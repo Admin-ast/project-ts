@@ -14,6 +14,7 @@ import SkillDetail from "@/components/Signup/SkillDetail";
 import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
 import Review from "@/components/home/Review";
 import Services from "@/components/home/Services";
+import Head from 'next/head';
 
 type Props = {};
 
@@ -58,6 +59,17 @@ const astrologerDetail = {
 
 function TalkAstrologer({}: Props) {
   return (
+  <div>
+  <Head>
+        <title>
+         Talk to Astrologer and discover your destiny
+        </title>
+        <meta
+          name="description"
+          content="Get instant sewa from our astrology specialists, do free chat with astrologer regarding your astrological doubts and problems. Chat anytime, anywhere hassle free at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <>
       {/* <Hero text="Talk To Astrologer" icon="" /> */}
       <div className="bg-[url('/assets/horoscope-bg.webp')] ">
@@ -103,6 +115,7 @@ function TalkAstrologer({}: Props) {
         <Faq faqDetail={faqsDetail} />
       </div>
     </>
+	</div>
   );
 }
 

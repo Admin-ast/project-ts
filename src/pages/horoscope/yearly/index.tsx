@@ -4,6 +4,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import AlsoCheck from "@/components/common/AlsoCheck";
+import Head from 'next/head';
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -56,6 +57,17 @@ const Index = (props: Props) => {
   const [horos, setHoros] = useState<any>({});
 
   return (
+   <div>
+  <Head>
+        <title>
+         Free 2024 yearly horoscope by best astrologers | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore your yearly horoscope by date of birth now! Consult with the best astrologers to know the astrological insights of your horoscope 2024 for free at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div>
       {/* <Hero text="Yearly Horoscope" /> */}
       <div className="bg-[url('/assets/horoscope-bg.webp')] ">
@@ -78,6 +90,7 @@ const Index = (props: Props) => {
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>
+	</div>
   );
 };
 

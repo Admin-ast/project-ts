@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
-const babynamesuggestions = (props: Props) => {
+const jobpromotion = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Unlock Career Success with Astrology. Job Promotion and Workplace Advancement Insights
+        </title>
+        <meta
+          name="description"
+          content="Explore your career growth prediction guide! Discover astrological remedies for job promotion and workplace success at Astroseva Talk. Gain valuable insights and personalized advice to elevate your professional journey"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -163,7 +175,8 @@ const babynamesuggestions = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 
-export default babynamesuggestions;
+export default jobpromotion;

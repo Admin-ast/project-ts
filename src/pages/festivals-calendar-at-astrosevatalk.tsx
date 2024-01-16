@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const festivalscalendar = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Explore 2024 Festivals Calendar. Astroseva Talk: Your Guide to Auspicious Celebrations
+        </title>
+        <meta
+          name="description"
+          content="Dive into the Festival Calendar at Astroseva Talk and discover auspicious celebrations. Stay connected with cosmic energies and plan your festivities for joyous moments ahead"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -157,6 +169,7 @@ const festivalscalendar = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const planetary = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          2024 Planetary Transit Calendar at Astroseva Talk to track Celestial Movements
+        </title>
+        <meta
+          name="description"
+          content="Explore the dynamic celestial dance with our 2024 Planetary Transit Calendar at Astroseva Talk. Stay informed about significant planetary movements and their astrological impacts. Plan your cosmic journey today"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -225,6 +237,7 @@ const planetary = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 const tableHeaderStyle = {

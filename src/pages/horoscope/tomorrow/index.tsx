@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import Hero from "@/components/common/Hero";
 import AlsoCheck from "@/components/common/AlsoCheck";
+import Head from 'next/head';
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -70,6 +71,17 @@ const Index = (props: Props) => {
   }, []);
 
   return (
+   <div>
+  <Head>
+        <title>
+         Get tommorow horoscope astrology prediction 2024 | Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Get into the insights of your tomorrow horoscope now! Consult with the top astrologers and know the exact details of your horoscope by date of birth at Astroseva Talk for free"
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       {/* <Hero text="Tomorrow Horoscope" /> */}
       <div className="bg-[#F5F5F5] py-1">
@@ -93,6 +105,7 @@ const Index = (props: Props) => {
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>
+	</div>
   );
 };
 

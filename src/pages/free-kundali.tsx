@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
-const babynamesuggestions = (props: Props) => {
+const freekumdali = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Get accurate Janam Kundli online for Free
+        </title>
+        <meta
+          name="description"
+          content="Get your free Janam Kundli online and gain access to a detailed analysis of your birth chart, which includes information about your personality, strengths, weaknesses, and potential life events at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -139,7 +151,8 @@ const babynamesuggestions = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 
-export default babynamesuggestions;
+export default freekumdali;

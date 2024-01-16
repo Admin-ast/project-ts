@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Appointments from "@/components/home/Appointments";
 import Astrologer from "@/components/home/Astrologer";
 import Hero from "@/components/home/Hero";
+import Heromobile from "@/components/home/Heromobile";
 import HeroCard from "@/components/home/HeroCard";
 import Horoscope from "@/components/home/Horoscope";
 import Membership from "@/components/home/Membership";
@@ -28,6 +29,7 @@ import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Faq from "@/components/common/Faq";
 import NewReview from "@/components/home/NewReview";
 import BookPooja from "@/components/home/BookPooja";
+import Head from 'next/head';
 const faqsDetail: Faqs = {
   title: "FAQ'S ABOUT ASTROLOGY",
   faq: [
@@ -62,6 +64,17 @@ export default function Home() {
     apiCall();
   }, []);
   return (
+   <div>
+  <Head>
+        <title>
+          Lookout for free online astrology predictions by best astrologer near me  - Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Astroseva Talk is one of the best websites for free online astrology predictions. The best astrologers are available here to serve you with accurate horoscopic insight each time"
+          key="desc"
+        />
+      </Head>
     <>
       <Seo
         metaTitle="Astrosevatalk - Get Free Online Astrology Predictions by world Best Astrologers"
@@ -86,6 +99,7 @@ export default function Home() {
       </div>
       <Hero />
 
+     <Heromobile />
       <HeroCard />
 
       {/* 
@@ -123,5 +137,6 @@ export default function Home() {
       {/* <Missing /> */}
       {/* <Membership /> */}
     </>
+	</div>
   );
 }

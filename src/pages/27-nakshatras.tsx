@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
 const nakshatra = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Explore Nakshatras: Your Guide to Celestial Insights at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Dive into the mystique of 27 Nakshatra characteristics on Astroseva Talk. Uncover celestial secrets, meanings, and astrological significance. Illuminate your cosmic journey with our profound insights"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -175,6 +187,7 @@ const nakshatra = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

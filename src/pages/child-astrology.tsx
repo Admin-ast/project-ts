@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
 const childastrology = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Unlock the Future: Child Astrology Insights at Astroseva Talk
+        </title>
+       <meta
+          name="description"
+          content="Discover the secrets of your child's destiny with Child Astrology at Astroseva Talk. Learn about their birth sign, and personality traits, and get expert guidance. Talk to astrologers for personalized insights into your child's unique journey"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -218,6 +230,7 @@ const childastrology = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

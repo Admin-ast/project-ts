@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import { postFetcher } from "@/service";
 import Hero from "@/components/common/Hero";
 import AlsoCheck from "@/components/common/AlsoCheck";
+import Head from 'next/head';
 
 const Card = dynamic(
   () => import("@/components/horoscope/horoscope-type/Card")
@@ -70,6 +71,17 @@ const Index = (props: Props) => {
   }, []);
 
   return (
+   <div>
+  <Head>
+        <title>
+         Get free dialy Horoscope by Top Astrologers | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Get an accurate daily horoscope by date of birth! To explore your day to day astrological insights, visit Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div>
       {/* <Hero text="" subText="" /> */}
       <div className="bg-[url('/assets/horoscope-bg.webp')] ">
@@ -95,6 +107,7 @@ const Index = (props: Props) => {
         <Faq faqDetail={faqsDetail} />
       </div>
     </div>
+	</div>
   );
 };
 

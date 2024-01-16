@@ -4,11 +4,23 @@ import PlanetDynamic from "@/components/planets/PlanetDynamic";
 import Store from "@/components/planets/Store";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const planetDynamic = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          
+        </title>
+        <meta
+          name="description"
+          content=""
+          key="desc"
+        />
+      </Head>
     <div className="">
       <Hero text={`Sun`} icon={`/assets/planet/sun.png`} />
       <div className="bg-[#F5F5F5] py-2">
@@ -31,6 +43,7 @@ The sun spends about a month visiting each sign and takes a year to journey thro
       />
       <Store />
     </div>
+	</div>
   );
 };
 

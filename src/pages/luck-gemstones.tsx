@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const luckgemstones = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Luck Gemstones for Positive Vibes. Vedic Astrology Insights - Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Explore the power of a lucky gemstone in Vedic astrology. Enhance positivity and balance cosmic energies with our expert insights on lucky stones at Astroseva Talk. Uncover the secrets to aligning your destiny with the right gemstones for lasting fortune "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -217,6 +229,7 @@ const luckgemstones = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

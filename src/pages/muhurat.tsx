@@ -13,6 +13,7 @@ import Faq from "@/components/common/Faq";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import AlsoCheck from "@/components/common/AlsoCheck";
 import TodaysHoroscope from "@/components/common/TodaysHoroscope";
+import Head from 'next/head';
 
 type Props = {};
 const faqsDetail: Faqs = {
@@ -43,6 +44,17 @@ const faqsDetail: Faqs = {
 
 const Muhurat = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Enjoy the power of auspicious moments with our Shubh Muhurat 2024 Seva
+        </title>
+        <meta
+          name="description"
+          content="Find the perfect Shubh Muhurat for your special occasions and create magical memories that will last a lifetime. Embrace positivity and abundance with Astroseva Talk!  "
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       {/* <Hero text="Shubh Muhurat" icon="/assets/muhurat/muhurat.png" /> */}
       <div className="bg-[#F5F5F5] py-1">
@@ -68,6 +80,7 @@ const Muhurat = (props: Props) => {
       <AlsoCheck />
       <TodaysHoroscope />
     </div>
+	</div>
   );
 };
 

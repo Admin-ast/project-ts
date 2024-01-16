@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const moneyproblem = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Astrological Remedies for Money Problems | Transform Your Finances - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore powerful astrological solutions to overcome money problem. Discover effective remedies to attract prosperity and financial abundance. Take control of your financial destiny with expert guidance at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -154,6 +166,7 @@ const moneyproblem = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

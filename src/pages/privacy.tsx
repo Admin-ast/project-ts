@@ -1,10 +1,22 @@
 import Section from "@/components/Section";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const privacy = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Astroseva Talk - Terms & Conditions
+        </title>
+        <meta
+          name="description"
+          content="Explore Astroseva Talk's privacy policies to understand how we prioritize and protect your confidential information. Trust in our commitment to a secure and trustworthy online experience."
+          key="desc"
+        />
+      </Head>
     <div className="py-10">
       <Section>
         <p className="text-primary py-6 text-center text-2xl font-bold md:text-4xl">
@@ -402,6 +414,7 @@ const privacy = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

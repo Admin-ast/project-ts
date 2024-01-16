@@ -2,29 +2,41 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const luckgemstones = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          "Luck Gemstones for Positive Vibes. Vedic Astrology Insights - Astroseva Talk"
+        </title>
+        <meta
+          name="description"
+          content="Explore the power of a lucky gemstone in Vedic astrology. Enhance positivity and balance cosmic energies with our expert insights on lucky stones at Astroseva Talk. Uncover the secrets to aligning your destiny with the right gemstones for lasting fortune "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
-        text="LUCK GEMSTONES"
+        text="LUCK GEM STONES"
         subText=""
       />
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
           <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
           <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
-            LUCK GEMSTONES
+            LUCK GEM STONES
           </p>
         </div>
       </div>
       <Section>
         <div className="">
           <p className="mt-[20px] text-center text-3xl font-bold">
-            LUCK GEMSTONES{" "}
+            LUCK GEM STONES{" "}
           </p>
           <p className="mt-[10px] text-[18px]">
             Gemstones have been widely used in Vedic astrology for their
@@ -217,6 +229,7 @@ const luckgemstones = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

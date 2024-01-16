@@ -2,29 +2,41 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const loverelation = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Solve Love Problems with Expert Astrology Guidance at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Navigate the complexities of love with Astroseva Talk's expert astrology solutions. Find clarity, understanding, and lasting solutions to your love problems. Connect with our skilled astrologers today"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
-        text="  LOVE RELATION  "
+        text="  LOVE PROBLEMS  "
         subText=""
       />
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
           <HomeIcon className="h-6 w-6 bg-[#D9D9D9] p-1" />
-          <p className="bg-[#C6A65A] p-1 px-4 text-[10px] font-medium">
-            LOVE RELATION
+          <p className="bg-[#DC6563] p-1 px-4 text-[10px] font-medium text-white">
+           LOVE PROBLEMS
           </p>
         </div>
       </div>
       <Section>
         <div className="">
           <p className="mt-[20px] text-center text-3xl font-bold">
-            LOVE RELATION{" "}
+           LOVE PROBLEMS{" "}
           </p>
           <p className="mt-[20px] text-[18px]">
             Love is the essence of life and we humans are rightly the seekers of
@@ -146,6 +158,7 @@ const loverelation = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

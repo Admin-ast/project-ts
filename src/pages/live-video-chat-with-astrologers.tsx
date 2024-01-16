@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const livevideochat = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Get Free Live Astrology Sessions and Discover Your Destiny 
+        </title>
+        <meta
+          name="description"
+          content="Connect through Live Video Chat with Online Astrologers at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -220,6 +232,7 @@ const livevideochat = (props: Props) => {
             live video chat with astrologers today.
           </p>
         </div>
+		</div>
       </Section>
     </div>
   );

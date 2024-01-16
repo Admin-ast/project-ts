@@ -6,7 +6,7 @@ type Props = {};
 const remedies = (props: Props) => {
   return (
     <div>
-      <Remedies />
+      <Remedies remedies="" />
     </div>
   );
 };

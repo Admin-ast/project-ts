@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const settlementinabroad = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Seamless Settlement Abroad: study abroad astrology & Get free predictions by best astrologers - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Navigate the journey of settle in abroad effortlessly with Astroseva Talk. Expert advice, valuable insights, and personalized guidance to ensure your overseas settlement is a resounding success. Start your new chapter confidently"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -152,6 +164,7 @@ const settlementinabroad = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

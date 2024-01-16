@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
 const childeducation = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Unlocking the Potential: Astrology in Child Education. Talk to Astrologers at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Discover child education prediction by date of birth at Astroseva Talk. Consult our expert astrologers for valuable insights and guidance for nurturing your child's potential"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -116,6 +128,7 @@ const childeducation = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

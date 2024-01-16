@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const loverelation = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Astrological Insights for Love Relation horoscope Predictions at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Explore profound astrological guidance on love relation horoscope by date of birth. Navigate through challenges with expert insights and find the path to enduring love at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -146,6 +158,7 @@ const loverelation = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

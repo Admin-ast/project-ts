@@ -1,10 +1,22 @@
 import React from "react";
+import Head from 'next/head';
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 type Props = {};
 
 const shipingpolicy = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Shipping Solutions for Seamless Deliveries - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore Astroseva Talk's shipping services for reliable and swift deliveries. Our tailored solutions ensure your packages reach their destination seamlessly. Trust us for hassle-free shipping experiences."
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero icon="" text="Shipping & Delivery Policy" subText="" />
       <div className="bg-[#F5F5F5] py-1">
@@ -40,6 +52,7 @@ const shipingpolicy = (props: Props) => {
       </div>
       <div className="container"></div>
     </div>
+	</div>
   );
 };
 

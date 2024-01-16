@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const pitradosha = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Unlocking Harmony: Understanding and Remedying Pitra Dosha | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Discover insights into Pitra Dosha and effective remedies to restore the cosmic balance. Talk to experienced astrologers at Astroseva Talk for personalized guidance. Explore Pitra Dosha Nivaran remedies with our expert advisors"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -174,6 +186,7 @@ const pitradosha = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

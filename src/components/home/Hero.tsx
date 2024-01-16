@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { Key } from "react";
 
 import Link from "next/link";
@@ -73,7 +74,7 @@ const slides = [
 ];
 
 function Hero({}: Props) {
-  
+  const router = useRouter();
   return (
     <div className="px44e bg-[black]">
       <Section>
@@ -98,7 +99,7 @@ function Hero({}: Props) {
                       Chat With Astrologer
                     </span>
                   </div>
-                  <Link href="/chat-with-astrologer">
+                  <Link href="/chat-with-astrologer/chat-with-astrologer">
                     {" "}
                     <button className="fontsmallbu mt-8 mb-10 rounded-[35px] bg-black py-3 px-12 font-bold text-white ">
                       Chat Now

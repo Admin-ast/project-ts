@@ -13,6 +13,7 @@ import DetailNavbar from "@/components/talk-to-astrologer/DetailNavbar";
 import BestAstrologer from "@/components/talk-to-astrologer/BestAstrologer";
 import Review from "@/components/home/Review";
 import Services from "@/components/home/Services";
+import Head from 'next/head';
 
 type Props = {};
 
@@ -58,6 +59,17 @@ const astrologerDetail = {
 
 function ChatAstrologer({}: Props) {
   return (
+   <div>
+  <Head>
+        <title>
+         Chat with astrologers to get instant astrological sewa
+        </title>
+        <meta
+          name="description"
+          content="Get instant sewa from our astrology specialists, do free chat with astrologer regarding your astrological doubts and problems. Chat anytime, anywhere hassle free at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <>
       <Seo
         metaTitle="Online Chat with Astrologers  24 x 7 Astrology Consultation | Astrosevatalk"
@@ -110,6 +122,7 @@ function ChatAstrologer({}: Props) {
         <Faq faqDetail={faqsDetail} />
       </div>
     </>
+	</div>
   );
 }
 

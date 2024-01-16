@@ -100,8 +100,11 @@ menu {
 
 @media (min-width: 1200px) {
   .lg\:max-w-7xl {
-    max-width: 1140px !important;
+    max-width: 1180px !important;
   }
+  .hide {display: block;}
+.hides{display: block;}
+  .mob{display:none;}
   .astroslidefreeservice {
     margin-top: -12%;
     margin-left: -3%;
@@ -159,20 +162,50 @@ menu {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 912px) {
   .lg\:max-w-7xl {
     max-width: 960px;
   }
+   .mob{display:none;}
+   .goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    display: none;
+}
 }
 @media (min-width: 768px) {
   .lg\:max-w-7xl {
     max-width: 720px;
   }
+  .hide{display:block;}
+  .hides{display:none;}
+  .goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    display: none;
 }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .hides{display:block;}
+  }
 @media (min-width: 360px) and (max-width: 767px) {
   .lg\:max-w-7xl {
     max-width: 540px;
   }
+  .goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    display: none;
+}
+  .dext{display:none;}
+  .hides{display:none;}
+  .pl6{padding-left:14px;}
   .blog2 {
     overflow: hidden;
     height: auto !important;
@@ -283,6 +316,7 @@ menu {
   .lg\:max-w-7xl {
     max-width: 960px !important;
   }
+  .mrt{margin-right: 18px;}
   .astroslidefreeservice {
     margin-top: -12%;
     margin-left: -2%;
@@ -290,6 +324,13 @@ menu {
     padding-bottom: 11%;
     z-index: 1;
   }
+  .goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    display: none;
+}
   .astroslideliveastrologer {
     margin-top: -12%;
     margin-left: -2%;
@@ -574,4 +615,10 @@ menu {
     justify-content: center;
     transition: opacity 0.3s ease;
   }
+}
+.footer-top[_ngcontent-serverApp-c101] .discript_link[_ngcontent-serverApp-c101] .newftrcolr[_ngcontent-serverApp-c101] {
+    color: #000;
+    border: 1px solid #f0df35;
+    background-color: #f0df35;
+    right: 1px;
 }

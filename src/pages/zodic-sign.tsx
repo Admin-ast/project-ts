@@ -2,11 +2,23 @@ import React from "react";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import ZodicSign from "@/components/zodic/ZodicSign";
+import Head from 'next/head';
 
 type Props = {};
 
 const zodicsign = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Dive into zodiac signs' character traits in detail
+        </title>
+        <meta
+          name="description"
+          content="Find out about the unique personality traits of each zodiac sign and explore your destiny with Astroseva Talk's detailed astrology predictions.  Let's discover your zodiac compatibility and destiny!"
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero icon="" text="Zodiac signs" subText="" />
       <div className="bg-[#F5F5F5] py-1">
@@ -19,6 +31,7 @@ const zodicsign = (props: Props) => {
       </div>
       <ZodicSign />
     </div>
+	</div>
   );
 };
 

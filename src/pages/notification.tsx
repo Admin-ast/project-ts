@@ -3,11 +3,23 @@ import Hero from "@/components/appoinments/Hero";
 import NotificationCard from "@/components/notification/NotificationCard";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const Notification = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          
+        </title>
+        <meta
+          name="description"
+          content=""
+          key="desc"
+        />
+      </Head>
     <div className='bg-[url("/assets/horoscope-bg.webp")]'>
       <Hero text="Notification" icon="" />
       <div className="bg-[#F5F5F5] py-2">
@@ -22,6 +34,7 @@ const Notification = (props: Props) => {
         <NotificationCard />
       </div>
     </div>
+	</div>
   );
 };
 

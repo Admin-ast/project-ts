@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
-const babynamesuggestions = (props: Props) => {
+const examresult = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Exam result prediction by astrology free | Prediction of exam result by date of birth free - AstrosevaTalk 
+        </title>
+        <meta
+          name="description"
+          content="Explore the power of astrology at Astroseva Talk. Get accurate prediction of exam result by date of birth free. Trust our expertise for a glimpse into your academic success. Discover the key to examination triumph now"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -159,7 +171,8 @@ const babynamesuggestions = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 
-export default babynamesuggestions;
+export default  examresult;

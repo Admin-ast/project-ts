@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const numerology = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Unlock Your Destiny with Expert Numerology Insights at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Discover the power of numerology with personalized insights and guidance. Chat with our expert numerologists to unravel the secrets of your life path, destiny, and relationships shown according to the numerology chart"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -146,6 +158,7 @@ const numerology = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

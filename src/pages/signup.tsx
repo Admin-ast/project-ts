@@ -5,6 +5,8 @@ import OtherDetail from "@/components/Signup/OtherDetail";
 import PersonalDetail from "@/components/Signup/PersonalDetail";
 import SkillDetail from "@/components/Signup/SkillDetail";
 import React, { useState } from "react";
+import Head from 'next/head';
+
 
 type Props = {};
 const details = [
@@ -70,6 +72,17 @@ function Signup({}: Props) {
     }
   };
   return (
+   <div>
+  <Head>
+        <title>
+          Astroseva Talk - Astrologer Login 
+        </title>
+        <meta
+          name="description"
+          content="Connect with astrologers instantly on Astroseva Talk, a new service allowing you to login and chat live with experts in Vedic astrology, numerology, and more."
+          key="desc"
+        />
+      </Head>
     <>
       <Hero text="Astrologer Login" icon="/assets/signup/hero.png" />
       <div className="bg-[url('/assets/horoscope-bg.webp')] py-20">
@@ -131,6 +144,7 @@ function Signup({}: Props) {
         </Section>
       </div>
     </>
+	</div>
   );
 }
 

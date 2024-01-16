@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const mantras = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Unlock Wisdom and Harmony with Powerful Mantras, Vedic Astrology Insights
+        </title>
+        <meta
+          name="description"
+          content=" Discover the transformative power of ancient positive mantras and delve into the profound world of Vedic Astrology at Astroseva Talk. Explore sacred mantras for insight and balance in your life through the lens of Vedic wisdom"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -140,6 +152,7 @@ const mantras = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

@@ -2,6 +2,7 @@ import AstrologerDetails from "@/components/appoinments/AstrologerDetails";
 import Calling from "@/components/talk-to-astrologer/Calling";
 import MoreAstro from "@/components/talk-to-astrologer/MoreAstro";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 

@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const kundalimatch = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Planning to get married? Get a free Kundali Matching at our website
+        </title>
+        <meta
+          name="description"
+          content="Discover the cosmic harmony between you and your partner and embark on a journey of love and togetherness. Don't miss out on this opportunity to find your perfect match by online kundali matching at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -155,6 +167,7 @@ const kundalimatch = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

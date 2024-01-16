@@ -1,12 +1,24 @@
 import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Head from 'next/head';
 import React from "react";
 
 type Props = {};
 
 const babynamesuggestions = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Discover Meaningful Baby Names | Astrology-Inspired Suggestions at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Explore unique baby name suggestions by best astrologer for free with Astroseva Talk. Find the perfect name for your child with personalized insights and meaningful choices"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -119,6 +131,7 @@ const babynamesuggestions = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

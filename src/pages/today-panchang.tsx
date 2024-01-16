@@ -29,11 +29,23 @@ import Yoga from "@/components/panchang/Yoga";
 import Section from "@/components/Section";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 function TodayPanchang({}: Props) {
   return (
+   <div>
+  <Head>
+        <title>
+          {`Today's`} Panchang: Look out Panchang 2024 tithi, purnima night, shubh mahurat at Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Today's Panchang: Look out Panchang 2024 tithi, purnima night, shubh mahurat at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -76,6 +88,7 @@ function TodayPanchang({}: Props) {
       <AlsoCheck />
       <TodaysHoroscope />
     </div>
+	</div>
   );
 }
 

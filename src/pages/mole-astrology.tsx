@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const moleastrology = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Decode Your Destiny: Mole Astrology Insights with Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Dive into the fascinating world of Mole Astrology at Astroseva Talk. Uncover the hidden meanings behind moles on body parts and their impact on your life's journey. Discover your unique story today "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -212,6 +224,7 @@ const moleastrology = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

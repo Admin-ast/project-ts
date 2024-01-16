@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const moneydebt = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Financial Stability Through Astrology, Chat with Experts at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content="Navigate the path to financial security with insights from astrologers at Astroseva Talk. Uncover solutions to money challenges and debt issues through Money dept Astrological Prediction for personalized guidance "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -239,6 +251,7 @@ const moneydebt = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const solareclipse = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Unlocking the Wonders: Solar Eclipse 2024 Guide | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Discover the secrets of solar eclipse 2024 and learn how to make the most of this celestial phenomenon for free at Astroseva Talk "
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -405,6 +417,7 @@ const solareclipse = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

@@ -7,6 +7,7 @@ import { Faqs } from "@/components/horoscope/horoscope-sign";
 import Compatibility from "@/components/horoscope/horoscope-sign/Compatibility";
 import SignsCard from "@/components/horoscope/horoscope-sign/SignsCard";
 import { postFetcher } from "@/service";
+import Head from 'next/head';
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -89,6 +90,17 @@ function Index() {
   }, [type, zodiac]);
 
   return (
+   <div>
+  <Head>
+        <title>
+         Horoscope 2024: Know Your 2024 horoscope by date of birth - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Get to know about your horoscope by date of birth for free! Consult with the best astrologers and explore Daily, Weekly, and Monthly horoscope 2024 at Astroseva Talk"
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className="py-[30px]">
         <p className="text-center text-[30px] font-bold ">Horoscope</p>
@@ -213,6 +225,7 @@ function Index() {
       <Compatibility horoscopeType="Aries" />
       <Faq faqDetail={faqsDetail} />
     </div>
+	</div>
   );
 }
 

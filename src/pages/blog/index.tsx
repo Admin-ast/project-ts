@@ -3,11 +3,23 @@ import Hero from "@/components/appoinments/Hero";
 import Blog from "@/components/blog/Blog";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const blog = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+         Looking for some insightful astrology blogs? Check out Astroseva Talk's enlightening blogs. 
+        </title>
+        <meta
+          name="description"
+          content="Explore a collection of fascinating astrology blogs on Astroseva Talk. Learn more about the captivating realm of astrology and gain valuable cosmic insights into its mystical wonders."
+          key="desc"
+        />
+      </Head>
     <div>
       {" "}
       {/* <Hero text="Blog" icon="" /> */}
@@ -23,6 +35,7 @@ const blog = (props: Props) => {
       </div>
       <Blog count="12,120" />
     </div>
+	</div>
   );
 };
 

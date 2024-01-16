@@ -9,6 +9,7 @@ import Faq from "@/components/common/Faq";
 import { Faqs } from "@/components/horoscope/horoscope-sign";
 import AlsoCheck from "@/components/common/AlsoCheck";
 import TodaysHoroscope from "@/components/common/TodaysHoroscope";
+import Head from 'next/head';
 
 type Props = {};
 const faqsDetail: Faqs = {
@@ -38,6 +39,17 @@ const faqsDetail: Faqs = {
 };
 const Muhurat = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Get instant Namakran Muhurat 2024 for the Namkaran of your newly-born | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content=" Discover auspicious Namakran Muhurat 2024 for the Namakaran ceremony at Astroseva Talk. Find the perfect moment to name your little one and invoke blessings for their bright future"
+          key="desc"
+        />
+      </Head>
     <div>
       <Hero text="Namakaran Muhurat" icon="" />
       <Section>
@@ -55,6 +67,7 @@ const Muhurat = (props: Props) => {
       <AlsoCheck />
       <TodaysHoroscope />
     </div>
+	</div>
   );
 };
 

@@ -7,11 +7,23 @@ import PlanetsCard from "@/components/planets/PlanetsCard";
 import Hero from "@/components/common/Hero";
 import Planets from "@/components/planets/Planets";
 import Store from "@/components/planets/Store";
+import Head from 'next/head';
 
 type Props = {};
 
 const Muhurat = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Uncover the Mysteries of the Planet related to our lives | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Embark on a cosmic journey to explore the profound influence of planet astrology on our lives at Astroseva Talk. Discover the celestial secrets that guide our destinies and unlock the power of the stars."
+          key="desc"
+        />
+      </Head>
     <div>
       <Hero text="Planets" icon="/assets/palnet/planet.png" />
       <div className="bg-[#F5F5F5] py-2">
@@ -26,8 +38,8 @@ const Muhurat = (props: Props) => {
       </div>
       <Planets />
       <Store />
-      {/* <PlanetsCard /> */}
     </div>
+	</div>
   );
 };
 

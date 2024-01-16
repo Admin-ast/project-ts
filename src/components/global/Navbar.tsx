@@ -106,7 +106,7 @@ function Navbar({}: Props) {
       <div className="sticky top-0 z-10 w-full bg-white shadow-xl ">
         <Section>
           <div className="flex items-center  py-2 px-2">
-            <div className="block cursor-pointer text-[16px] lg:hidden ">
+            <div className="block mrt cursor-pointer text-[16px] lg:hidden ">
               <TemporaryDrawer
                 content={<NavMobileData />}
                 anchor="left"
@@ -121,10 +121,10 @@ function Navbar({}: Props) {
                     <Image
                       src="/assets/home/logo.png"
                       alt="logo"
-                      width={150}
+                      width={350}
                       height={51}
                       loading={"eager"}
-                      className="md:w-[200px] "
+                      className="md:w-[325px] pl6 "
                     />
                   </div>
                  
@@ -133,13 +133,13 @@ function Navbar({}: Props) {
             </div>
 
             <div className="w-full ">
-              <div className=" mt-[10px] hidden justify-end gap-x-5 text-[17px]  lg:flex">
-                <Link href="/free-kundli">Free Kundli</Link>
-                <Link href="/kundli-matching">Kundli Matching</Link>
+             <div className=" mt-[10px] justify-end gap-x-5 text-[17px]  lg:flex ">
+               <span class="hides"> <Link href="/free-kundli">Free Kundli</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link href="/kundli-matching">Kundli Matching</Link></span>
 
               
-                <ul className="relative">
-  <li
+                <ul className="relative hides">
+  <li 
     onMouseEnter={toggleHoroscope}
     onMouseLeave={toggleHoroscope}
     className="flex"
@@ -186,7 +186,7 @@ function Navbar({}: Props) {
                   <GoogleTranslateComponent />
                 </ul>
 
-                <div className=" flex   text-base  ">
+                <div className=" flex float-right  text-base    ">
                   {!isLogged ? (
                     <button
                       onClick={() => {

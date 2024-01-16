@@ -1,9 +1,21 @@
 import React from "react";
+import Head from 'next/head';
 import { HomeIcon } from "@heroicons/react/24/solid";
 type Props = {};
 
 const pricingpolicy = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Transparent and Affordable Astrology Services - Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Explore our astrology services pricing. Affordable and transparent rates for insightful consultations. Unlock the secrets of your destiny with Astroseva Talk's expert guidance. Discover your path today."
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <div className="bg-[#F5F5F5] py-1">
         <div className="mx-auto flex max-w-7xl items-center space-x-2">
@@ -84,6 +96,7 @@ const pricingpolicy = (props: Props) => {
         </div>
       </div>
     </div>
+	</div>
   );
 };
 

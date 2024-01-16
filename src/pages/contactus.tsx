@@ -2,11 +2,23 @@ import React from "react";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import ContactForm from "@/components/ContactForm";
+import Head from 'next/head';
 
 type Props = {};
 
 const contactforms = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Contact Astroseva Talk Customer Care, Reach Out for Inquiries and Assistance
+        </title>
+        <meta
+          name="description"
+          content="Have questions or concerns? Contact us for online astrology prediction and reach out for inquiries and assistance. We're here to address your queries and provide the support you need. Get in touch today"
+          key="desc"
+        />
+      </Head>
     <div className="bg-[url('/assets/horoscope-bg.webp')]">
       <Hero icon="" text="Customer care" subText="" />
       <div className="bg-[#F5F5F5] py-1">
@@ -53,6 +65,7 @@ const contactforms = (props: Props) => {
         `}</style>
       </div>
     </div>
+	</div>
   );
 };
 

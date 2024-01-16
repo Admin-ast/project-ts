@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const settlementinabroad = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Unlock Peace and Harmony: Remedies for Kaal Sarp Dosha at Astroseva Talk
+        </title>
+        <meta
+          name="description"
+          content=""
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -152,6 +164,7 @@ const settlementinabroad = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 

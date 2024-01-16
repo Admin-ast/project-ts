@@ -2,11 +2,23 @@ import Section from "@/components/Section";
 import Hero from "@/components/common/Hero";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import Head from 'next/head';
 
 type Props = {};
 
 const namakaramuhurat = (props: Props) => {
   return (
+   <div>
+  <Head>
+        <title>
+          Get instant Namakran Muhurat 2024 for the Namkaran of your newly-born | Astroseva Talk 
+        </title>
+        <meta
+          name="description"
+          content="Discover auspicious Namakran Muhurat 2024 for the Namakaran ceremony at Astroseva Talk. Find the perfect moment to name your little one and invoke blessings for their bright future"
+          key="desc"
+        />
+      </Head>
     <div className="min-h-screen bg-[url('/assets/horoscope-bg.webp')]">
       <Hero
         icon="/assets/panchang/panchang-hero.png"
@@ -119,6 +131,7 @@ const namakaramuhurat = (props: Props) => {
         </div>
       </Section>
     </div>
+	</div>
   );
 };
 
